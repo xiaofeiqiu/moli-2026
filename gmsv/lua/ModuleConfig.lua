@@ -27,3 +27,5 @@ loadModule('sharedTaskGuide')
 loadModule('gameQoL')
 
 loadModule('autoStat')
+
+loadModule('gameDifficulty')

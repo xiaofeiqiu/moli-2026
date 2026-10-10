@@ -1,0 +1,56 @@
+游戏难度命令（2026-10-10）
+
+服务端启动或重启加载后，在游戏聊天栏输入：
+/difficulty      查看个人设置、队伍生效档位及五档倍率
+/difficulty 1    正常
+/difficulty 2    困难
+/difficulty 3    极难
+/difficulty 4    地狱
+/difficulty 5    炼狱（最高难度）
+也支持 /难度 1～5。
+
+以下倍率作用于敌方怪物，整数属性及伤害按四舍五入处理：
+档位  名称  生命倍率  伤害倍率  防御倍率  敏捷倍率
+1     正常  ×1       ×1       ×1       ×1
+2     困难  ×1.3     ×1.2     ×1.15    ×1.1
+3     极难  ×1.8     ×1.5     ×1.3     ×1.15
+4     地狱  ×2.5     ×2       ×1.5     ×1.2
+5     炼狱  ×4       ×3       ×2       ×1.3
+
+设置成功后在游戏系统消息中打印确认和所选档位的全部倍率。例如：
+个人难度已设为【炼狱】，从下一场战斗生效。
+5 炼狱：怪物生命 ×4，伤害 ×3，防御 ×2，敏捷 ×1.3。
+
+每个角色分别保存设置，退出游戏和服务端重启后保留。
+未设置的角色默认使用 2 困难，延续提高挑战性的设置。
+组队战斗使用队长难度；队员离队后使用自己的设置。
+战斗期间不能切换，设置成功后从下一场战斗生效；之后切换无需重启。
+非法输入不会改变已保存档位。没有新增 NPC。
+
+影响敌方 PvE 怪物的生命、防御、敏捷以及物理和魔法伤害。
+PvP、人物和宠物属性不增加；成功捕获时清除怪物临时属性增幅。
+难度不改变经验倍率、掉落规则或任务奖励。
+怪物每回合重算属性后重新应用倍率，同一场战斗不重复叠加倍率。
+
+实现：gmsv/lua/Modules/gameDifficulty.lua
+加载入口：gmsv/lua/ModuleConfig.lua
+UTF-8 源码及验证工具：tools/game-qol/gameDifficulty.lua、build_difficulty_command.py。
+服务端 Lua 文件按现有 GBK 编码安装。
+此前直接增加 cgmsv.cf 怪物系数的方案已被命令替代，五组系数恢复原值，避免叠加。
+
+原生服务端验证使用独立 SQLite、19108 端口和临时角色，不写入生产数据库。
+报告：docs/game_difficulty/command_native.json、command_restart.json。
+安装记录：docs/game_difficulty/command_installed.json。
+本次本机安装前备份及测试副本：
+D:\Games\CrossGate\backups\game_difficulty_command_20261010_154521_UTC
+
+请以 command_installed.json 和上面的命令为准；旧 installed.json 仅保留静态方案历史。
+
+从 GitHub 新拉取的仓库已包含难度模块和加载入口，启动服务端即可使用。
+如需在 Windows 上重新验证，在仓库根目录使用 Python 3.10 或以上依次运行：
+python tools/game-qol/build_difficulty_command.py stage
+python tools/game-qol/build_difficulty_command.py native
+python tools/game-qol/build_difficulty_command.py restart
+stage 创建隔离副本，不要求已有的本机安装报告；native、restart 生成上述报告。
+验证不会改动生产数据库或自动启动生产服务端。
+本机已经安装并有 command_staged.json 时，可直接运行 native 和 restart。
