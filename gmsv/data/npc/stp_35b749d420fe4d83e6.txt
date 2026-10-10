@@ -1,0 +1,10 @@
+block floor == 27611 && xpos == 13 && Ypos == 28
+window 501274,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88072
+Warp 0,45178,40,57
+
+block
+endwindow 501275

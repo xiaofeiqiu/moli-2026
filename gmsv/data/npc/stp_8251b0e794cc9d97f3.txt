@@ -1,0 +1,32 @@
+block item 86295 >= 1 && item 86296 >= 1 && StrCmpChat == 85243 && jobs >= 84 && item 86297 >= 1
+window 85295,ok
+window_ok
+window 85296,yes,no
+window_yes
+window 85297,ok
+window_ok
+killitem 86297
+Warp 0,28147,27,25
+window_no
+endwindow 85298
+
+block item 86287 >= 1 && item 86291 >= 1 && item 86292 < 1
+window 85299,next
+window 85300,yes,no
+window_no
+window 85301,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86292
+window_ok ItemSpace < 1
+endwindow 85302
+window_yes
+window 85303,ok
+window_ok
+leavegroup
+killitem 86287
+killitem 86291
+endwindow 85304
+
+block
+endwindow 85305

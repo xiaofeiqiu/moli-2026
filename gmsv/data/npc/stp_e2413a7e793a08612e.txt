@@ -1,0 +1,4 @@
+block
+window "\n\n好大的胆子!",ok
+window_ok
+Encount 2|0,57114,15,70||0|||||0|21197|||||||||

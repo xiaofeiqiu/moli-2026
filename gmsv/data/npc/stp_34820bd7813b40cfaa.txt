@@ -1,0 +1,124 @@
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 10
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n看起来似乎保养的还不错,跟新的一样.\n这样吧!我出100万元跟你收购\n不知道你愿不愿意割爱?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 10 && Gold >= 1
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 10 && Gold == 0
+KillItem 715327
+AddGold +1000000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 9
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n不过,已经有一点破损了.\n这样吧!我出90万元跟你收购\n不知道你愿不愿意割爱?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 9 && Gold >= 100001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 9 && Gold <= 100000
+KillItem 715327
+AddGold +900000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 8
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,已经有些许破损了.\n这样吧!我出80万元跟你收购\n不知道你愿不愿意割爱?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 8 && Gold >= 200001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 8 && Gold <= 200000
+KillItem 715327
+AddGold +800000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 7
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,破损的程度似乎有点多.\n这样吧!我出70万元跟你收购\n不知道你愿不愿意割爱?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 7 && Gold >= 300001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 7 && Gold <= 300000
+KillItem 715327
+AddGold +700000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 6 
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,破损的程度似乎到了快要龟裂的阶段.\n这样吧!我出60万元跟你收购\n不知道你愿不愿意割爱?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 6 && Gold >= 400001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 6 && Gold <= 400000
+KillItem 715327
+AddGold +600000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 5
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,这个物品已经龟裂了.\n这样吧!我出50万元跟你收购\n就看你现在要不要卖?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 5 && Gold >= 500001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 5 && Gold <= 500000
+KillItem 715327
+AddGold +500000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 4
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,这个物品损坏的程度有点严重.\n这样吧!我出40万元跟你收购\n就看你现在要不要卖?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 4 && Gold >= 600001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 4 && Gold <= 600000
+KillItem 715327
+AddGold +400000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 3
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,这个物品损坏的程度有点糟糕.\n这样吧!我出30万元跟你收购\n就看你现在要不要卖?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 3 && Gold >= 700001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 3 && Gold <= 700000
+KillItem 715327
+AddGold +300000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 2
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,这个物品损坏的非常严重.\n这样吧!我出20万元跟你收购\n就看你现在要不要卖?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 2 && Gold >= 800001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 2 && Gold <= 800000
+KillItem 715327
+AddGold +200000
+
+
+block Item 715327 >= 1 && ItemDur 715327 == 1
+window "\n\n这不就是传说中的2005守岁好野人!\n我打算收藏这个物品已经很久了\n没想到竟然可以在这里找到\n可是,这个物品根本就快要坏掉了.\n这样吧!我出10万元跟你收购\n就看你现在要不要卖?",yes,no
+Window_NO 
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 1 && Gold >= 900001
+endwindow "\n\n你没有办法拿这么多钱了\n每个人身上只能携带100万\n所以麻烦先把身上的现金放到银行里."
+
+Window_YES Item 715327 >= 1 && ItemDur 715327 == 1 && Gold <= 900000
+KillItem 715327
+AddGold +100000
+
+
+block 
+endwindow "\n\n你好!我是来自于邱家庄的古董商人\n大家都叫我邱董,当然你也可以叫我邱董.\n今天来到贵宝地,所图的并非钱财也非名利\n只是想要收购一些稀有的物品做为个人收藏.\n最近听说有个物品叫做2005守岁好野人\n因此来看看是否有机会将其纳入我的收藏."

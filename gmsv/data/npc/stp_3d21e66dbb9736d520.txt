@@ -1,0 +1,5 @@
+block item 72010 == 1
+	Window"\n\n突然靠近井口的青苔处好象闪了一下，于是你伸手摸摸青苔，找到了一颗黑色石头。",ok
+		Window_ok item 72010 == 1
+			killitem 72010,1
+			giveitem 72011,1

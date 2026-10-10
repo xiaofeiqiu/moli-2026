@@ -1,0 +1,22 @@
+block Item 1000197 >= 1
+window "\n\n哎哟哟哟,居然稍微大意了下中了那女人暗算,不过这个身体的痛苦我根本没有感觉呢.",next
+window "\n\n对咯,你大概从没听说过一个自古流传的传说吧,这个传说可是曾经盛传于各个大陆的故事哦,大概现在知道的只有我这个超级美少女咯!",next
+window "\n\n传说每300年,被神所眷顾者就会自我觉醒为审判所有人类罪过的判官哦,判官会制造一个塔.",next
+window "\n\n但那个塔可不是现实的东西,至于详细情况如何我也不得而知了,不过判官中的审判长好象只会托生在兰国的公主身上呢...",next
+window "\n\n看来这个传说和兰国王室那群笨蛋扼杀历代公主的秘史挂钩咯!",next
+window "\n\n准备好了就凭借这个笛子做为信物来找我吧!",next
+window "\n\n我的记性可不是很好呢,如果没有这个我可能会把你忘光光哦!",ok
+window_ok ItemSpace < 2
+endwindow "\n\n你好象已经没有地方存放我给你的东西了."
+window_ok Item 1000197 >= 1
+KillItem 1000197,1
+GiveLeak1Item 1000199
+LeaveGroup
+Warp 0,1626,12,26
+
+	
+block
+window "\n\n异界的勇者啊,你知道了不该知道的事情,让我送你回去吧...",ok
+window_ok
+LeaveGroup
+Warp 0,1530,15,6

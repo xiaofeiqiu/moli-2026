@@ -1,0 +1,21 @@
+block item 200541 >= 1
+endwindow "\n\n你们去天空之城路上要注意安全,不过看你周围那么多伙伴,我也就放心了."
+
+
+
+block item 200540 >= 1
+window "\n\n这不是我们家法拉吗?你跑到这里来有什么事嘛.",next
+window "\n\n你这么急着来找我,就是想让我看看这卷轴上的文字认不认识.",next
+window "\n\n不好意思啊法拉,怪你伯父我才疏学浅,卷轴的字一个都不认识,这样吧,我到可以给你推荐一个人,他是位语言文字专家,估计他能帮得上你的忙.",next
+window "\n\n这位语言文字专家叫基尔博士,他就住在天空之城里很好找到,这封推荐信你带着,让他看了后定会帮你的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200541
+
+
+
+block
+endwindow "\n\n今年的收成肯定不错."
+
+

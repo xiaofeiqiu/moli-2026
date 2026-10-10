@@ -1,0 +1,15 @@
+block item 87924 == 1
+window 933598,next
+window 933599,ok
+window_ok
+Encount 2|0,27355,23,16||0|||||0|88032|||||||||
+
+block item 87923 == 1
+window 933600,ok
+window_ok
+killitem 87923
+giveitem 87924
+endwindow 933601
+
+block
+endwindow 933602

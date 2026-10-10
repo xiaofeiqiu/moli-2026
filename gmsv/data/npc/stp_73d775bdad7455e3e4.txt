@@ -1,0 +1,148 @@
+Block 
+localcount1 = random 6,0
+Window "\n\n　　小赌怡情,大赌发家.游戏之余,无聊的时候,可以找我来玩两吧,嘿嘿!仅仅是玩哦!点到为止,纯粹找开心,赢了不要太得意,输了也不要哭鼻子!我这里只收筹码,『下一步』开始选择你想压入的筹码最大数量.",next
+Window" \n\n\n　　　5个筹码起押.\n\n　　　想压入更多请选择『否』.",yes,no
+Window_no
+GotoF case1
+Window_yes
+Window"\n\n\n　　　当前赔率是 1:1.\n\n　　　 你身上需要携带5个筹码.\n\n　　　 更高的赔率请选择『否』.",yes,no
+Window_no
+GotoF case5
+Window_yes
+Window"\n\n\n　　　压『大』请选择『是』.\n\n　　　压『小』请选择『否』.",yes,no
+Window_no
+GotoF case2
+Window_yes
+Window"\n\n　　　你目前压入了5个筹码.\n\n　　　选择的赔率是1：1.\n\n　　　压的是『大』.\n\n　　　确定继续吗?",yes,no
+Window_yes item 576 <= 4
+EndWindow "\n\n\n　　　　　　你身上的筹码数量不足5个!"
+Window_no
+Window_yes item 576 >= 5
+if localcount1 == 1
+Killitem 576,5
+EndWindow "\n\n\n　　　　　　　1点小!你输了!下次请再来!"
+Endif
+if localcount1 == 2
+Killitem 576,5
+EndWindow "\n\n\n　　　　　　　2点小!你输了!下次请再来!"
+Endif
+if localcount1 == 3
+Killitem 576,5
+EndWindow "\n\n\n　　　　　　　3点小!你输了!下次请再来!"
+Endif
+if localcount1 == 4
+Giveitem 576,5
+EndWindow "\n\n\n　　　　　　　4点大!你赢了!下次请再来!"
+Endif
+if localcount1 == 5
+Giveitem 576,5
+EndWindow "\n\n\n　　　　　　　5点大!你赢了!下次请再来!"
+Endif
+if localcount1 == 6
+Giveitem 576,5
+EndWindow "\n\n\n　　　　　　　6点大!你赢了!下次请再来!"
+Endif
+*case2*
+Window"\n\n　　　你目前压入了5个筹码.\n\n　　　选择的赔率是1：1.\n\n　　　压的是『小』.\n\n　　　确定继续吗?",yes,no
+Window_yes item 576 <= 4
+EndWindow "\n\n\n　　　　　　你身上的筹码数量不足5个!"
+Window_no
+Window_yes item 576 >= 5
+if localcount1 == 1
+Giveitem 576,5
+EndWindow "\n\n\n　　　　　　　1点小!你赢了!下次请再来!"
+Endif
+if localcount1 == 2
+Giveitem 576,5
+EndWindow "\n\n\n　　　　　　　2点小!你赢了!下次请再来!"
+Endif
+if localcount1 == 3
+Giveitem 576,5
+EndWindow "\n\n\n　　　　　　　3点小!你赢了!下次请再来!"
+Endif
+if localcount1 == 4
+Killitem 576,5
+EndWindow "\n\n\n　　　　　　　4点大!你输了!下次请再来!"
+Endif
+if localcount1 == 5
+Killitem 576,5
+EndWindow "\n\n\n　　　　　　　5点大!你输了!下次请再来!"
+Endif
+if localcount1 == 6
+Killitem 576,5
+EndWindow "\n\n\n　　　　　　　6点大!你输了!下次请再来!"
+Endif
+*case1*
+Window"\n\n\n　　　　　　目前最大只开放压入10个哦!",next
+Window"\n\n\n　　　当前赔率是 1:1.\n\n　　　 你身上需要携带10个筹码.\n\n　　　 更高的赔率请选择『否』.",yes,no
+Window_no
+GotoF case5
+Window_yes
+Window"\n\n\n　　　压『大』请选择『是』.\n\n　　　压『小』请选择『否』.",yes,no
+Window_no
+GotoF case3
+Window_yes
+Window"\n\n　　　你目前压入了10个筹码.\n\n　　　选择的赔率是1：1.\n\n　　　压的是『大』.\n\n　　　确定继续吗?",yes,no
+Window_yes item 576 <= 9
+EndWindow "\n\n\n　　　　　　你身上的筹码数量不足10个!"
+Window_no
+Window_yes item 576 >= 10
+if localcount1 == 1
+Killitem 576,10
+EndWindow "\n\n\n　　　　　　　1点小!你输了!下次请再来!"
+Endif
+if localcount1 == 2
+Killitem 576,10
+EndWindow "\n\n\n　　　　　　　2点小!你输了!下次请再来!"
+Endif
+if localcount1 == 3
+Killitem 576,10
+EndWindow "\n\n\n　　　　　　　3点小!你输了!下次请再来!"
+Endif
+if localcount1 == 4
+Giveitem 576,10
+EndWindow "\n\n\n　　　　　　　4点大!你赢了!下次请再来!"
+Endif
+if localcount1 == 5
+Giveitem 576,10
+EndWindow "\n\n\n　　　　　　　5点大!你赢了!下次请再来!"
+Endif
+if localcount1 == 6
+Giveitem 576,10
+EndWindow "\n\n\n　　　　　　　6点大!你赢了!下次请再来!"
+Endif
+*case3*
+Window"\n\n　　　你目前压入了10个筹码.\n\n　　　选择的赔率是1：1.\n\n　　　压的是『小』.\n\n　　　确定继续吗?",yes,no
+Window_yes item 576 <= 9
+EndWindow "\n\n\n　　　　　　你身上的筹码数量不足10个!"
+Window_no
+Window_yes item 576 >= 10
+if localcount1 == 1
+Giveitem 576,10
+EndWindow "\n\n\n　　　　　　　1点小!你赢了!下次请再来!"
+Endif
+if localcount1 == 2
+Giveitem 576,10
+EndWindow "\n\n\n　　　　　　　2点小!你赢了!下次请再来!"
+Endif
+if localcount1 == 3
+Giveitem 576,10
+EndWindow "\n\n\n　　　　　　　3点小!你赢了!下次请再来!"
+Endif
+if localcount1 == 4
+Killitem 576,10
+EndWindow "\n\n\n　　　　　　　4点大!你输了!下次请再来!"
+Endif
+if localcount1 == 5
+Killitem 576,10
+EndWindow "\n\n\n　　　　　　　5点大!你输了!下次请再来!"
+Endif
+if localcount1 == 6
+Killitem 576,10
+EndWindow "\n\n\n　　　　　　　6点大!你输了!下次请再来!"
+Endif
+
+
+
+*case5*
+EndWindow"\n\n\n　　　　　　　暂时只开放1：1的赔率!"

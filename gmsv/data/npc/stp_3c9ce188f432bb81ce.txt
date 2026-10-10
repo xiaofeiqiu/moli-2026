@@ -1,0 +1,11 @@
+block	item 599143	>=	1
+Endwindow"\n\n .................."
+block	item 599142	>=	1
+window"\n\n 你们是来帮(汉克)拿猪菌的吧？",yes,no
+window_no
+killitem 599142
+Endwindow"\n\n\n 你们还不是开启者吧,请努力."
+window_yes
+Encount 3|0,53,9,8||0|||||0|454007|||||||||
+block
+Endwindow"\n\n .................."

@@ -1,0 +1,24 @@
+block item 600042 >= 1 || item 600060 >= 1
+window "\n\n......",ok
+window_ok
+leavegroup
+Warp 0,45110,7,15
+
+
+block item 600040 >= 1 || item 600059 >= 1
+window "\n\n你使用曙光徽记将索耶的灵魂凝集成水晶.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包不够位置了!"
+window_ok 600040 >= 1
+giveitem 600041
+giveitem 600042
+leavegroup
+Warp 0,45110,7,15
+window_ok item 600059 >= 1
+giveitem 600041
+giveitem 600060
+leavegroup
+Warp 0,45110,7,15
+
+
+

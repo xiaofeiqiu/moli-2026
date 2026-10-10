@@ -1,0 +1,5 @@
+block Item 800099 == 1
+	Window"\n\n嗷嗷！女神将由我守护！！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18096,22,26|800099|||||||800047|||||||||

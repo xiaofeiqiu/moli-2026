@@ -1,0 +1,16 @@
+
+
+
+block item 18195 >= 10 && level >=30
+	Window "\n\n那是哥布林的绿头盔...\n\n『@n』你要参加雷锋魔力的神灯活动吗?",yes,no
+	Window_yes
+	killitem 18195,10
+	leaveGroup
+	Warp 0,105,16,43
+
+block item 18195 >= 10 
+	Window "\n\n你已经筹齐了绿头盔了么,可以我很想让你进去\n\n但是你的级别不能完成任务吧,先去锻炼到30级吧!",yes,no
+
+
+block
+	Window "\n\n『@n』你要参加雷锋魔力的 神灯活动么?\n\n请携带10个哥布林的绿头盔来找我吧!",ok

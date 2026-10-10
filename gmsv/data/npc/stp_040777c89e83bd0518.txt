@@ -1,0 +1,8 @@
+block Item 795020 >= 1 && level >= 160
+	Window "\n\n@c修罗印记？又是个痴心的男人？怎么你想见我们大姐么？给我我就让你进去",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c那滚吧，别在这里逗留！",OK
+	Window_YES
+	leavegroup
+	KillItem 795020,1
+	Warp 0,309,27,7

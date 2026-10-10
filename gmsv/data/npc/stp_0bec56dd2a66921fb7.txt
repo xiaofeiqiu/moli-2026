@@ -1,0 +1,13 @@
+block NowEvent 550 == 1
+endwindow "\n\n你已经向遇难矿工的墓上过香了."
+
+
+block item 730111 >= 1
+window "\n\n要向遇难矿工的墓上一炷香吗?",yes,no
+window_no
+window_yes
+NowEvent 550 = 1
+
+
+block
+EndWindow 15123,OK

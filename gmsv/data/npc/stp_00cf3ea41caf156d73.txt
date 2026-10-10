@@ -1,0 +1,5 @@
+block Item 670008 == 1 && Item 670030 == 1 && Item 670009 == 1
+Encount 2|0,1000,233,78||0|||||0|6700010|
+
+block
+	EndWindow 670034,OK

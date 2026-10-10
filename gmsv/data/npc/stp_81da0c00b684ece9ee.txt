@@ -1,0 +1,19 @@
+block item 60512 >= 1
+endwindow "\n\n你已经有一个了!"
+
+
+block
+window "\n\n不知道当初为什么会被囚禁在这里,也不知道被囚禁了多久......我只知道我必须等待拥有暗之气息的人的降临,并把那个东西托付给他",next
+window "\n\n等待了那么久...总算是等到了.",next
+window "\n\n你是来取那个东西的吧?按照规矩,还得通过考验才行.",next
+window "\n\n这是我以自己的灵魂为媒介制作的小道具,不过如此飘渺的东西,应该坚持不了太久.",next
+window "\n\n你把它带上,然后通过5重考验.如果考验结束后它仍旧存在,那我就将从前我族与神战争时夺取的那件秘宝托付给你.反之,就是考验失败.",next
+window "\n\n我坚持不了多久,尽快吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 60512
+leavegroup
+Warp 0,64079,11,8
+
+

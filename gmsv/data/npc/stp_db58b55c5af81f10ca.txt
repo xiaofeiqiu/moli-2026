@@ -1,0 +1,2 @@
+block
+endwindow "\n\n别管我，看看圣女的情况！"

@@ -1,0 +1,10 @@
+block xpos == 1 && ypos > 9 && ypos < 12
+window "\n\n　外面好象打雷了，似乎比较危险，要出去看看吗？",yes,no
+window_no
+window "\n\n　嗯？虽然在房间里比较安全，不过为了小命着想，还是去问问船长情况吧",ok
+window_ok
+leavegroup
+Warp 0,60192,35,16
+window_yes
+leavegroup
+Warp 0,60192,35,16

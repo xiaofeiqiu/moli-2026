@@ -1,0 +1,9 @@
+block item 87195 == 1
+Warp 0,25178,168,266
+
+block
+window "\n\n我们败于你们之手，这个黄金你们拿去吧！这笔帐我们会记在沃坦你主人身上的，你们现在给我出去吧！",ok
+window_ok
+LeaveGroup
+giveitem 87195
+Warp 0,25178,157,205

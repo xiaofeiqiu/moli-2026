@@ -1,0 +1,30 @@
+block	nowevent 579 == 1
+window"\n\n@c什么?原来是这样啊,我去告诉Ｌ,你继续去调查吧",ok
+window_OK
+giveitem 95025,1
+LeaveGroup
+Warp 0,12582,11,13
+
+
+block	item 95021 >=1 && nowevent 577 == 1
+window"\n\n\n@c快去吧!  Ｌ正在城堡调查",next
+window"\n\n\n@c你想放弃吗?看来不能勉强你呢",yes,no
+window_yes
+KillItem 95021,1
+nowevent 578 = 0
+nowevent 577 = 0
+nowevent 579 = 0
+window"\n\n\n@c很无奈呢!对你提出这样的要求真是不好意思",OK
+window_no
+window"\n\n\n@c哦,是吗?那快去城堡找他吧",OK
+
+block	level >= 120 
+window"\n\n\n最近法兰城内发生了连环杀人事件,我们正需要人手",OK
+window_OK
+window"\n\n\n@c你愿意来帮助我们吗?",yes,no
+window_yes
+nowevent 577 = 1
+giveitem 95021,1
+endwindow"\n\n@c带着这封信去城堡里找Ｌ吧!他会告诉你需要做什么"
+window_NO
+endwindow"\n\n@c这样啊.算了吧.对于你来说杀人也应该是件小事情"

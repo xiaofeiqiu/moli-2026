@@ -1,0 +1,16 @@
+block item 61062 >= 1
+window 900706,next
+window 900707,next
+window 900708,ok
+window_ok ItemSpace >= 1 && gold >= 5000 
+LeaveGroup
+killitem 61062
+addgold -5000
+giveitem 61058
+window_ok ItemSpace < 1
+endwindow 900709
+window_ok gold < 5000
+endwindow 900710
+
+block
+endwindow 900711

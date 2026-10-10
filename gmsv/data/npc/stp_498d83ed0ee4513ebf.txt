@@ -1,0 +1,7 @@
+block item 86637 == 1
+window "\n\n哦? 你回来拉? 干的很不错嘛.",next
+window "\n\n我是骑士王的手下巫师莫琳, 现在来看,只是个糟老头吧,嘿嘿.",next
+window "\n\n年轻人, 你做的很不错,我送你去见骑士王.",ok
+window_ok
+leavegroup
+Warp 0,28360,58,62

@@ -1,0 +1,78 @@
+##############################
+block item 70027 == 1
+window 910245,next
+window 910246,next
+window 910247,next
+window 910248,next
+window 910249,next
+window 910250,next
+window 910251,ok
+window_ok
+Encount 3|0,25069,14,38|||910070|||||70047|6||||||||
+##########################
+block item 70027 != 0
+endwindow 910252,OK
+###########################
+block item 70026 == 1
+endwindow 910253
+############################
+block HaveLeak1Item == 70025 && EquipItem == 70025 && item 70028 < 1
+window 910254,next
+window 910255,next
+window 910256,next
+window 910257,next
+window 910258,next
+window 910259,next
+window 910260,next
+window 910261,next
+window 910262,next
+window 910263,next
+window 910264,next
+window 910265,next
+window 910266,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 70026
+window_ok ItemSpace < 1
+endwindow 910267
+#####################
+block item 70022 != 0
+endwindow 910268,OK
+####################
+block item 70024 == 1
+window 910269,next
+window 910270,next
+window 910271,next
+window 910272,next
+window 910273,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 70024
+giveitem 70025
+window_ok ItemSpace < 1
+endwindow 910274
+######################
+block HaveTitle == 61 && item 70025 < 1
+window 910275,next
+window 910276,next
+window 910277,next
+window 910278,next
+window 910279,next
+window 910280,next
+window 910281,next
+window 910282,next
+window 910283,next
+window 910284,next
+window 910285,next
+window 910286,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 70022
+window_ok ItemSpace < 1
+endwindow 910287
+#####################
+block HaveTitle != 61
+window 910288,next
+window 910289,next
+endwindow 910290,ok
+########################

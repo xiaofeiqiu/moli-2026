@@ -1,0 +1,5 @@
+block item 87525 == 1
+window "\n\n呜呜呜~你身上的是什么东西？快把它扔掉！",ok
+window_ok
+killitem 87525
+Encount 2|0,29702,63,49||0|||||0|86719|||||||||

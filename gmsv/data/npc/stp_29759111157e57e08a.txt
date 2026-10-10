@@ -1,0 +1,46 @@
+
+
+block item 7153123 > 0
+endwindow "\n\n麻烦您了."
+
+block item 7153122 > 0
+endwindow "\n\n这有张地图,事主说有埋一个盒子,挖到后麻烦再拿给小希吧."
+
+block item 7153111 > 0 && item 715310 > 0
+endwindow "\n\n这有张地图,事主说有埋一个盒子,挖到后麻烦再拿给小希吧."
+
+block item 7153111 > 0
+GiveLeak1Item 715310,1
+endwindow "\n\n这有张地图,事主说有埋一个盒子,挖到后麻烦再拿给小希吧."
+
+block item 7153114 > 0
+GiveLeak1Item 715309,1
+endwindow "\n\n这有张地图,事主说有埋一个盒子,挖到后麻烦再拿给小希吧."
+
+block item 715308 > 0 && item 16379> 5 && item 12811 > 19
+killitem 715308,1
+killitem 12811,20
+killitem 16379,6
+GiveLeak1Item 715309,1
+GiveLeak1Item 715310,1
+endwindow "\n\n这有张地图,事主说有埋一个盒子,挖到后麻烦再拿给小希吧."
+
+block item 715308 > 0 
+endwindow "\n\n麻烦您了."
+
+block item 715307 > 0
+endwindow "\n\n唉～～我怎么这么心软,这可是流放之罪呢～～"
+
+block item 715306 > 0
+endwindow "\n\n唉～～我怎么这么心软,这可是流放之罪呢～～"
+
+block item 715305 > 0
+endwindow "\n\n唉～～我怎么这么心软,这可是流放之罪呢～～"
+
+block itemspace > 0
+GiveLeak1Item 715305,1
+endwindow "\n\n您来自哥拉尔城吧\n不知您是否要回王城\n我这有封密信\n麻烦您帮我送给王宫的侍女小希."
+
+block 
+window "\n\n您来自哥拉尔城吧\n不知您是否要回王城\n我这有封密信\n麻烦您帮我送给王宫的侍女小希.",next
+endwindow "\n\n你好像没有空位可以拿喔．．．"

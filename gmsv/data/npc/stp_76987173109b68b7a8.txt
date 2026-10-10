@@ -1,0 +1,43 @@
+block gold < 800000
+	endWindow "\n\n\n@c全新的特殊装备制作方法学习费用需要800000，您的金钱似乎不够。"
+block	Window "\n\n\n\n@c 要学习全新的特殊装备制作方法吗，需要金币800000？",yes,no
+	Window_yes
+		addgold -800000
+		GiveRecipe 1085
+		GiveRecipe 1086
+		GiveRecipe 1087
+		GiveRecipe 1088
+		GiveRecipe 1089
+		GiveRecipe 1090
+		GiveRecipe 1091
+		GiveRecipe 1092
+		GiveRecipe 1093
+		GiveRecipe 1094
+		GiveRecipe 1095
+		GiveRecipe 1096
+		GiveRecipe 1097
+		GiveRecipe 1098
+		GiveRecipe 1099
+		GiveRecipe 1100
+		GiveRecipe 1101
+		GiveRecipe 1102
+		GiveRecipe 1103
+		GiveRecipe 1104
+		GiveRecipe 1105
+		GiveRecipe 1106
+		GiveRecipe 1107
+		GiveRecipe 86
+		GiveRecipe 1109
+		GiveRecipe 1110
+		GiveRecipe 1111
+		GiveRecipe 1112
+		GiveRecipe 1113
+		GiveRecipe 1114
+		GiveRecipe 1115
+		GiveRecipe 1116
+		GiveRecipe 1117
+		GiveRecipe 1118
+		GiveRecipe 1119
+		GiveRecipe 1120
+		GiveRecipe 1121
+		GiveRecipe 1122

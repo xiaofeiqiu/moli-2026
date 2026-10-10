@@ -1,0 +1,17 @@
+block Item 591378 >= 1 && Item 591377 >= 1
+Window "\n\n          要使用手电筒么？",Yes,No
+Window_Yes
+ChangePal 14,30
+ChangePal 13,30
+ChangePal 12,30
+ChangePal 11,30
+ChangePal 10,30
+ChangePal 30,30
+Window "\n\n          手电筒照明了地图",ok
+window_ok
+Killitem 591378,99
+LeaveGroup
+Warp 0,502,77,8
+window_no
+block
+window"\n\n\n @c  物品不全 …… "

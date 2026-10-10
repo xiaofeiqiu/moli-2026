@@ -1,0 +1,7 @@
+block
+	Window "\n\n\n@c很好，感谢伟大的勇者 ，愿意光明与你同在！请带着这个去火风地水死斗神的洞穴吧，光靠光明的力量是无法与黑暗神战斗的。我们必须得到四元素的帮助。?",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c想不到你是这种人。哼!",OK
+	Window_YES
+	GiveItem 39723,1
+	Warp 0,1000,242,100

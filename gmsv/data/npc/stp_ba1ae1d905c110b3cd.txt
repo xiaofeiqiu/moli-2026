@@ -1,0 +1,8 @@
+block
+window "\n\n上面刻着迷乱,确定要进去看看吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200156
+leavegroup
+Warp 0,130,17,52

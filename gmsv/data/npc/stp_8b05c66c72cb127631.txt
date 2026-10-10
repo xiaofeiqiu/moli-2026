@@ -1,0 +1,10 @@
+block
+window "\n\n把你的武器交出来!",ok
+window_ok
+Encount 2|||0|||||0|21255|||||||||
+
+
+
+
+
+

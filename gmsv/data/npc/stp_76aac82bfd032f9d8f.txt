@@ -1,0 +1,100 @@
+#############■情人节活动,花店老板小莎
+
+block Group > 2
+endwindow "\n\n呃...你们好奇怪喔,情侣不是都该一男一女的吗?这么多人,人家怕怕耶!"
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+window "\n\n谢谢光临,祝你们一生一世,白头到老～请继续逛逛月光大道吧!",ok
+Window_OK BBImage >= 100250 && BBImage <= 100423 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+Warp 0,32644,35,39
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+window "\n\n谢谢光临,祝你们一生一世,白头到老～请继续逛逛月光大道吧!",ok
+Window_OK BBImage >= 105250 && BBImage <= 105423 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+Warp 0,32644,35,39
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+window "\n\n谢谢光临,祝你们一生一世,白头到老～请继续逛逛月光大道吧!",ok
+Window_OK BBImage >= 106250 && BBImage <= 106423 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+Warp 0,32644,35,39
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+endwindow "\n\n看你女朋友多漂亮,还不把花送给你女朋友,她在等着呢～"
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+endwindow "\n\n看你女朋友多漂亮,还不把花送给你女朋友,她在等着呢～"
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715230 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group == 2
+endwindow "\n\n看你女朋友多漂亮,还不把花送给你女朋友,她在等着呢～"
+
+block ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0 && Item 715219 == 0
+window "\n\n欢迎光临!先生买束花送给你女朋友吧,情人节耶～偶尔浪漫一下也不为过嘛!今天是情人节特价,一束只算你2000啦!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 100000 && BBImage <= 100173 && Group == 2 && Gold >= 2000 && Item 715230 == 0 && Item 715219 == 0
+AddGold -2000
+GiveLeak1Item 715230
+endwindow "\n\n你是个好男人,你女朋友真幸福,赶快送给她吧!"
+Window_YES ItemSpace > 0 && BBImage >= 100000 && BBImage <= 100173 && Group == 2 && Gold < 2000
+endwindow "\n\n钱不够啊?那...怎么办?"
+
+Window_NO Group == 2
+Encount 3|0,32644,35,39||0|||||0|613171|||||||||
+
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0 && Item 715219 == 0
+window "\n\n欢迎光临!先生买束花送给你女朋友吧,情人节耶～偶尔浪漫一下也不为过嘛!今天是情人节特价,一束只算你2000啦!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 105000 && BBImage <= 105173 && Group == 2 && Gold >= 2000 && Item 715230 == 0 && Item 715219 == 0
+AddGold -2000
+GiveLeak1Item 715230
+endwindow "\n\n你是个好男人,你女朋友真幸福,赶快送给她吧!"
+Window_YES ItemSpace > 0 && BBImage >= 105000 && BBImage <= 105173 && Group == 2 && Gold < 2000
+endwindow "\n\n钱不够啊?那...怎么办?"
+
+Window_NO Group == 2
+Encount 3|0,32644,35,39||0|||||0|613171|||||||||
+
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0 && Item 715219 == 0
+window "\n\n欢迎光临!先生买束花送给你女朋友吧,情人节耶～偶尔浪漫一下也不为过嘛!今天是情人节特价,一束只算你2000啦!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 106000 && BBImage <= 106173 && Group == 2 && Gold >= 2000 && Item 715230 == 0 && Item 715219 == 0
+AddGold -2000
+GiveLeak1Item 715230
+endwindow "\n\n你是个好男人,你女朋友真幸福,赶快送给她吧!"
+Window_YES ItemSpace > 0 && BBImage >= 106000 && BBImage <= 106173 && Group == 2 && Gold < 2000
+endwindow "\n\n钱不够啊?那...怎么办?"
+
+Window_NO Group == 2
+Encount 3|0,32644,35,39||0|||||0|613171|||||||||
+
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0
+endwindow "\n\n这些花很漂亮吧?叫你男朋友买一束来送你吧!"
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0
+endwindow "\n\n这些花很漂亮吧?叫你男朋友买一束来送你吧!"
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0
+endwindow "\n\n这些花很漂亮吧?叫你男朋友买一束来送你吧!"
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715230 >= 1 && Group == 1
+endwindow "\n\n先生,怎么还不把花送给你女朋友呢?她在等着呢～"
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715230 >= 1 && Group == 1
+endwindow "\n\n先生,怎么还不把花送给你女朋友呢?她在等着呢～"
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715230 >= 1 && Group == 1
+endwindow "\n\n先生,怎么还不把花送给你女朋友呢?她在等着呢～"
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715230 >= 1 && Group == 1
+endwindow "\n\n你男朋友怎么不跟你一起走呢,情侣当然是要一起走的啰～"
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715230 >= 1 && Group == 1
+endwindow "\n\n你男朋友怎么不跟你一起走呢,情侣当然是要一起走的啰～"
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715230 >= 1 && Group == 1
+endwindow "\n\n你男朋友怎么不跟你一起走呢,情侣当然是要一起走的啰～"
+
+block
+endwindow "\n\n欢迎光临～今天是情人节,鲜花大特价喔～也请把两张优待券给我看."

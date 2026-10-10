@@ -1,0 +1,3 @@
+block item 86222 === 1
+killitem 86222
+giveitem 86225

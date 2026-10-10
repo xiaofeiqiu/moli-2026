@@ -1,0 +1,14 @@
+block Luac stp:legacy:a764d8a6a2cdf1a27b56 >= 1
+window "\n\n骑士精神是最厉害的!",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800196 >= 1
+endwindow "\n\n你已经有一个了!"
+window_ok
+giveitem 800196
+endwindow "\n\n不要低估了骑士!"
+
+block
+endwindow "\n\n为了阿夏芙大人!我一定会赴汤蹈火在所不辞的!"
+
+

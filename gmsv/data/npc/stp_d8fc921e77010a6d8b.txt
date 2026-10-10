@@ -1,0 +1,22 @@
+block Item 99883 == 1	
+	Window "\n\n哦~你想要我帮恰丝莉小姐制作演出服装?",yes,no
+	Window_yes
+		Window "\n\n我看看...这个布料虽然很好,但是,这里是破损的!我没有办法把他完全弄成一件完整的衣服...",next
+		Window "\n\n这样吧,你去找阿福,他那里有本天衣无缝的书,应该可以解决这个问题,阿福应该可以在雪山顶上找到!",ok
+		Window_ok
+	Window_no
+		Window "\n\n这样啊...",ok
+		Window_ok
+
+block Item 99884 == 1 
+	Window "\n\n恩,快把演出服交给恰丝莉小姐吧!",ok
+	Window_ok
+	killitem 99884
+	giveitem 99886
+	Window_ok
+	Window "想用挂吗?嘿嘿",ok
+	Window_ok
+
+block	
+	Window "\n\n你好啊~有什么需要我帮助的吗?",ok	
+	Window_ok

@@ -1,0 +1,10 @@
+block
+window 85650,yes,no
+window_no
+window_yes Petspace >= 1
+leavegroup
+killitem 86447
+GivePet (531%50,532%50,533%50,534%50)
+Window_Yes Petspace == 0
+Endwindow 85651
+window_no

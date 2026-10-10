@@ -1,0 +1,11 @@
+block item 87503 == 1
+endwindow "\n\n祝你下一个测试也能顺利完成！"
+
+block item 87502 == 1
+window "\n\n恭喜你完成长老树精的任务，请把入会测试卡交给进行记录。",ok
+window_ok
+killitem 87502
+giveitem 87503
+
+block
+endwindow "\n\n我很忙别来烦我！" 

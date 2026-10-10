@@ -1,0 +1,21 @@
+block item 61093 >= 1 && item 61094 >= 1 && item 61095 >= 1 &&  item 61099 >= 1
+window 900319,next
+window 900320,next
+window 900321,ok
+window_ok
+LeaveGroup
+killitem 61093
+killitem 61094
+killitem 61095
+killitem 61099
+giveitem 61100
+
+block item 61098 >= 1
+window 900322,next
+window 900323,ok
+window_ok
+killitem 61098
+giveitem 61099
+
+block
+endwindow 900324

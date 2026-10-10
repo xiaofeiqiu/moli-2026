@@ -1,0 +1,10 @@
+block item 90854 == 1 && item 90855 == 1 && item 90856 == 0
+window"@c\n\n你们手上是瓦忍家族的镇守石吗？给我看看！",yes,no
+window_yes item 90854 == 1 && item 90855 == 1 && item 90856 == 0
+killitem 90854
+killitem 90855
+giveitem 90856
+Endwindow"@c\n\n你别听瓦忍三石在那瞎叭叭\n\n我才是那间古宅的主人！\n\n拿着这个钥匙去古宅吧\n\n里面有数不尽的财宝,交给你们了！"
+
+block
+Endwindow"@c\n瓦忍咪咪我的婆~\n\n我住邻村我姓王~\n\n啦啦啦啦啦啦啦\n\n路边的野花我非要采\n\n别人的饭菜就是香呀就是香~"

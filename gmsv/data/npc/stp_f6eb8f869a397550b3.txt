@@ -1,0 +1,5 @@
+block
+	window"\n\n无数的光点将你围绕，突然时光飞转！\n \n你的身体化做点点星斑.\n \n渐渐的你失去了意识",ok
+	window_ok
+	leavegroup
+	Warp 0,60000,65,107

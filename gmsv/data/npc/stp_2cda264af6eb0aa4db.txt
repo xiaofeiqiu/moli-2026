@@ -1,0 +1,13 @@
+block item 200555 >= 1 && item 200556 >= 1
+endwindow "\n\n我心意已决,实验室快爆炸了,你们快走,不然这通道会塌方的,你们快带公主陛下走."
+
+
+
+block
+window "\n\n公…公主…陛下,您怎么在这里,博士呢.",next
+window "\n\n他还在实验室,哎～还好有你在,我可以回到博士身边了,按将军的命令把秘密武器的启动钥匙就交给你了,这把钥匙是打开通道最后大门用的,之后就能到外面了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200555
+giveitem 200556

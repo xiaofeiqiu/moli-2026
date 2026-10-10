@@ -1,0 +1,21 @@
+block item 15206 >= 5 && item 15207 >= 5 && item 60003 >= 1 && item 60002 >= 1
+window "\n\n带回来那么多好吃的不错,果然是一把好手，呵呵...",next
+window "\n\n可惜啊～我刚拿到密报,说你是奸细,所以呢,你得把小命留在这里.",ok
+window_ok
+killitem 15206,5
+killitem 15207,5
+killitem 60003
+killitem 60002
+Encount 2|0,19053,19,17||0|||||0|60000|||||||||
+
+block item 60001>= 1
+window "\n\n回来的真及时,怎么你脸好陌生啊,是新来的吗,东西带来了吗?",yes,no
+window_yes
+window "\n\n这真是我们需要的兵器,干得好兄弟,现在由于外面全是士兵把守,巢穴内的食品快消耗完了,你是生面孔,那些傻头傻脑的士兵发现不了你的身份,你快到外面给我弄5个烧鸡、5个青椒肉丝、1瓶葡萄酒回来.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 60001
+giveitem 60002
+leavegroup
+Warp 0,1000,153,149

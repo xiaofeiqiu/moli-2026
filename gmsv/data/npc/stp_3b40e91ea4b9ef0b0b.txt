@@ -1,0 +1,18 @@
+block item 87971 == 1
+endwindow 933561
+
+block item 87970 == 1
+window 933562,next
+window 933563,next
+window 933564,next
+window 933565,next
+window 933566,next
+window 933567,yes,no
+window_no
+window_yes
+killitem 87970
+giveitem 87971
+endwindow 933568
+
+block
+endwindow 933569

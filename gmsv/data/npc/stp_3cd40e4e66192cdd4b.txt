@@ -1,0 +1,33 @@
+
+
+block item 200122 >= 1
+endwindow "\n\n快去吧,博士肯定会喜欢这个研究."
+
+
+block item 200120 >= 1 && item 200121 >= 1
+window "\n\n这个是.",next
+window "\n\n死了之后会变成这个吗?",next
+window "\n\n那么你去找希堤博士,他或许知道这个是什么...",ok
+window_ok
+killitem 200120
+killitem 200121
+giveitem 200122
+
+
+block item 200120 >= 1
+endwindow "\n\n就在南恰拉山第一通道内,你应该知道路吧."
+
+
+block item 200117 >= 1
+window "\n\n最近有人说,在南恰拉山见到一种变异甲虫.",next
+window "\n\n按理来讲甲虫不应该会出现变异呀...",next
+window "\n\n真想知道是为什么,你可以帮我去探查一下吗?",next
+window "\n\n顺手收集一些血清,看一下到底是什么导致的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200120
+
+
+block
+endwindow "\n\n最近有人说,在南恰拉山见到一种变异甲虫."

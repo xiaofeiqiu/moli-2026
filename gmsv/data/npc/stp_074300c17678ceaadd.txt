@@ -1,0 +1,11 @@
+block Item 1000811 == 1
+	Window "\n\n　小山茶的妈妈是被无名的黑衣人劫持走的",next
+	Window "\n\n　我把这个交给你，全权委托你解决此事",OK
+		Window_OK
+			killitem 1000811
+			giveitem 1000812
+block item 1000812 == 1
+	window"\n\n 拜托你了！",ok
+		window_ok
+block
+	endwindow "您有何贵干？",OK

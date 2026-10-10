@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【绿色口臭鬼】吗？",ok
+			Window_ok
+Luac stp:legacy:005216e1925e42cb561b
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【黄色口臭鬼】吗？",ok
+			Window_ok
+Luac stp:legacy:61ad913096b17fa9b4fa
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【蓝色口臭鬼】吗？",ok
+			Window_ok
+Luac stp:legacy:cb15925dca3ea69c8a55
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【红色口臭鬼】吗？",ok
+			Window_ok
+Luac stp:legacy:102810c0c31dfd307a27
+				endif

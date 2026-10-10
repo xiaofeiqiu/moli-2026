@@ -1,0 +1,6 @@
+block nowevent 556 == 1
+endwindow "\n\n那个老头子肯定和蒂娜村有些联系!"
+
+
+block 
+endWindow "\n\n欢迎光临!"

@@ -1,0 +1,9 @@
+block globalFlag 357 == 1 && globalFlag 356 == 0
+window 910185,next
+window 910186,next
+window 910187,ok
+window_ok
+Encount 3|0,25027,10,9||0|||||0|6000182|
+
+block
+endwindow 910188

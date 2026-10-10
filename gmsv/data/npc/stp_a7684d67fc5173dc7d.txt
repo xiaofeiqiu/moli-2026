@@ -1,0 +1,23 @@
+block NowEvent 521 == 1
+Window "\n\n快点上船吧,我们出发喽!",ok
+Window_ok
+LeaveGroup
+Warp 0,57176,65,98
+
+
+block item 141186 >= 1
+Window "\n\n快点上船吧,我们出发喽!",ok
+Window_ok item 141186 >= 1
+LeaveGroup
+Warp 0,57176,65,98
+
+
+block item 141178 >= 1
+Window "\n\n哇哦!未知的航海图!达尔文岛...从来没听说过!真有趣!你们要去探险对不对!?",next
+Window "\n\n我送你们去好不好?我一定会保守这个秘密的!",next
+Window "\n\n啥?你问我会不会开船?开玩笑!我早偷学会了!快点上船吧!我们出发喽!",ok
+Window_ok item 141178 >= 1
+killitem 141178
+giveitem 141179
+LeaveGroup
+Warp 0,57179,43,25

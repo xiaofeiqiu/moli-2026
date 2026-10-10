@@ -1,0 +1,15 @@
+block item 87039 >= 1
+endwindow "\n\n这盒子留在人界简直就是祸害！"
+
+block item 87038 == 1 && StrCmpChat == 85780
+window "\n\n你怎么知道我的神名？是我哥哥找你来的？",next
+window "\n\n我哥哥叫你来让我不要接受一个叫潘多拉赠与的盒子？可是我已经收下了！",next
+window "\n\n不过我还没来得及打开，还好...还好...",next
+window "\n\n宙斯老儿现在很正狠毒，用这下三滥的招数！你把这盒子交给我哥哥看看如何能毁掉它。",ok
+window_ok
+LeaveGroup
+killitem 87038
+giveitem 87039
+
+block
+endwindow "\n\n我可是本村的元老了！"

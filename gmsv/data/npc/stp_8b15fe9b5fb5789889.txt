@@ -1,0 +1,17 @@
+
+block item 652643 >= 1
+window "\n\n要进入龙族练功厅吗?",yes,no
+window_yes
+leavegroup
+Warp 0,56024,5,7
+
+
+
+block
+endwindow "\n\n......"
+
+
+
+
+
+

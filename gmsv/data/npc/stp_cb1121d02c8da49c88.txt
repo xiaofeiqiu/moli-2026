@@ -1,0 +1,17 @@
+
+block
+window "\n\n勇者,想不到你能走到这里,还带来了几种凤凰的羽毛\n\n交给我吧,这是给你的奖励...",yes,no
+window_yes item 715333 >= 10 && item 715334 >= 10 && item 715335 >= 10 && item 715336 >= 10
+killitemall 715333
+killitemall 715334
+killitemall 715335
+killitemall 715336
+giveitem 715337
+leavegroup
+Warp 0,1530,15,6
+window_yes item 715333 >= 1 || item 715334 >= 1 || item 715335 >= 1 || item 715336 >= 1
+endwindow "\n\n你带来的羽毛数量好像不够呢!"
+window_yes
+endwindow "\n\n好像你并没有羽毛呢!"
+window_no
+endwindow "\n\n那些羽毛,可是很值钱的呢!"

@@ -1,0 +1,8 @@
+block item 86307 >= 1 && item 86308 >= 1 && item 86309 >= 1
+window 85389,ok
+window_ok
+leavegroup
+killitem 86307
+killitem 86308
+killitem 86309
+Warp 0,28174,25,40

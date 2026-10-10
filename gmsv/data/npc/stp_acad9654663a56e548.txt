@@ -1,0 +1,14 @@
+block item 88205 == 1
+LeaveGroup
+Warp 0,45246,217,118
+
+block
+window 501596,next
+window 501597,next
+window 501598,ok
+window_ok ItemSpace < 1
+endwindow 501599
+window_ok
+LeaveGroup
+giveitem 88205
+Warp 0,27706,29,33

@@ -1,0 +1,11 @@
+block havetitle == 61 && EndEvent 92 == 1 && item 86286 < 1
+window 85307,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86286
+window_ok ItemSpace < 1
+endwindow 85308
+
+
+block
+endwindow 85309

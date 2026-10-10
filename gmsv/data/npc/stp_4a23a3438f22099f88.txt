@@ -1,0 +1,58 @@
+
+
+
+block Item 715326 >= 1 && Xpos == 24 && Ypos == 23 && Group == 1 
+KillItem 715326
+Message 777569 
+Warp 0,1194,23,21
+
+block Item 715326 >= 1 && Xpos == 24 && Ypos == 23 && Group > 1 
+LeaveGroup 
+KillItem 715326
+Message 777569 
+Warp 0,1194,23,21
+
+block Xpos == 24 && Ypos == 23 && Group == 1 
+Warp 0,1194,23,21
+
+block Xpos == 24 && Ypos == 23 && Group > 1 
+LeaveGroup 
+Warp 0,1194,23,21
+
+
+block Item 715326 >= 1 && Xpos == 25 && Ypos == 22 
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 25 && Ypos == 23
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 25 && Ypos == 24
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 24 && Ypos == 22
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 24 && Ypos == 23 
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 24 && Ypos == 24
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 23 && Ypos == 22 
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 23 && Ypos == 23
+Message 777569 
+KillItem 715326
+
+block Item 715326 >= 1 && Xpos == 23 && Ypos == 24 
+Message 777569 
+KillItem 715326
+

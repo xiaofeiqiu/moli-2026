@@ -1,0 +1,13 @@
+block
+window"\n\n\n@c多亏了你,犯人才能抓住啊,真没想到犯人会是他",next
+window"\n\n\n@c事件圆满完成了呢,没什么好给你的呢,给你个纪念品吧",ok
+window_OK
+killitem 95025,1
+killitem 95021,1
+nowevent 578 = 0
+nowevent 577 = 0
+nowevent 579 = 0
+nowevent 580 = 0
+giveitem (95023%1$1,95024%1$1)
+leavegroup
+Warp 0,1000,242,88

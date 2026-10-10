@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【2D利侧诺顿】吗？",ok
+			Window_ok
+Luac stp:legacy:9483f7a5234a4e349870
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【2D扬奇洛斯】吗？",ok
+			Window_ok
+Luac stp:legacy:ab57994713011ecccbe1
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【2D邦奇诺】吗？",ok
+			Window_ok
+Luac stp:legacy:ca624de81bf2b51935c0
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【2D布鲁顿】吗？",ok
+			Window_ok
+Luac stp:legacy:b1a7ec6f5b01ba756a41
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【2D邦浦洛斯】吗？",ok
+			Window_ok
+Luac stp:legacy:66c0969603b390a2eb16
+				endif
+

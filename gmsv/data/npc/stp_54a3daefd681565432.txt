@@ -1,0 +1,8 @@
+block item 1000716 >= 1
+window 7020240,next
+window 7020241,next
+window 7020242,ok
+window_ok
+
+block
+endwindow 7020243

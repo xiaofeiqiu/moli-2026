@@ -1,0 +1,14 @@
+block item 88026 == 1 && ItemCreateTime 88025 > 60
+window 501003,ok
+window_ok
+LeaveGroup
+killitem 88026
+Warp 0,27539,10,28
+
+block item 88026 == 1 && ItemCreateTime 88025 <= 60
+window 501004,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88026
+Warp 0,45158,37,38

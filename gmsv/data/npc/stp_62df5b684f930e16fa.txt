@@ -1,0 +1,11 @@
+block	item 22220001 < 1 || item 88880006 < 5
+	window"\n\n 滚出去，这里岂能让你随便来！",ok
+
+block	item 22220001 >= 1 && item 88880006 >= 5
+	Window "\n\n 哎，看来邪恶始终不能战胜正义！",ok
+                Window_ok
+	killitem 22220001,1
+	killitem 88880006,5
+	Giveitem 22220011
+                leavegroup
+               Warp 0,1000,238,88

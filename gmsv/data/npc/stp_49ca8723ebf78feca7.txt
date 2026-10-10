@@ -1,0 +1,8 @@
+block
+window "\n\n谜之男人：哈哈~~太好了，终于把你们一网打尽了。快搜那兄妹看看有没有项链！",next
+window "\n\n士兵：报告！正如大人所说这男孩身上确有一条奇特的项链。",next
+window "\n\n谜之男人：把他们连同这陌生人统统抓起来关进大牢。",next
+window "\n\n士兵：遵命~~大人！",ok
+window_ok
+LeaveGroup
+Warp 0,28645,26,9

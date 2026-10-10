@@ -1,0 +1,10 @@
+block Item 22742 >= 1
+window "\n\n败了,我无话可说.我不会告诉你任何事情的.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok Item 22742 >= 1
+killitem 22742
+GiveItem 22746
+GiveItem 22751
+leavegroup
+Warp 0,33000,180,486

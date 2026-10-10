@@ -1,0 +1,14 @@
+block item 40580 == 1 && item 505601 == 1 && item 505611 == 1 && item 505621 == 1
+window"\n\n@c ……精灵之声！多么优美的旋律啊！",next
+window"\n\n@c ……使用圣之力量，引导着，牵引着，",OK
+window_OK
+leavegroup
+Warp 0,13710,79,58
+
+block item 40580 == 1 || item 505601 == 1 || item 505611 == 1 || item 505621 == 1
+window"\n\n\n@c ……树欢快地歌唱着",OK
+window_OK
+endwindow"\n\n\n@c ……树的歌唱声停止了"
+
+block
+endwindow"\n\n\n@c ………………"

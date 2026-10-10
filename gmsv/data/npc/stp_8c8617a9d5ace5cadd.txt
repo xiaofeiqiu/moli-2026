@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【巨人】吗？",ok
+			Window_ok
+Luac stp:legacy:83cbdd086f4ba89c7cda
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【单眼巨人】吗？",ok
+			Window_ok
+Luac stp:legacy:5093e591c7faca120ef6
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【泰坦巨人】吗？",ok
+			Window_ok
+Luac stp:legacy:63c38a486ab126ea6778
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【亚特拉斯巨神】吗？",ok
+			Window_ok
+Luac stp:legacy:c2fa8b72c2b598edff8a
+				endif

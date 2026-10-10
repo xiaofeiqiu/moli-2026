@@ -1,0 +1,10 @@
+block item 146 >= 1
+endwindow "\n\n我是森林之王,ＨＯＨＯ..."
+
+
+block item 119 == 1
+window "\n\n我像森林里的国王吧,哈哈~~~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 146,1

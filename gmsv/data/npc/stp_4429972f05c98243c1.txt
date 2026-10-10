@@ -1,0 +1,48 @@
+##奈九兄弟任务
+##奈九王
+
+
+block Group > 1
+window "\n\n请一个一个来才不会出差错.",ok
+Window_OK
+LeaveGroup
+
+
+block Level < 20
+window "\n\n以你现在能力还不能驾驭合成饰品的能力,还是等你20级再来吧.",ok
+
+
+block Item 47795 >= 1 && Item 47797 >= 1
+window "\n\n想不到你居然有晴月守护神及暴怒之心这两件宝物,如果你愿意付出20000魔币我就帮你把它合成为效果更好耐久更高的饰品.",yes,no
+Window_YES Gold >= 20000
+AddGold -20000
+window "\n\n稍待一下,马上就好.",ok
+Window_OK Item 47795 >= 1 && Item 47797 >= 1
+KillItem 47795,1
+KillItem 47797,1
+GiveItem (1000028%40,1000029%30,1000030%20,1000031%10)
+Window_YES Gold < 20000
+endwindow "\n\n你的钱还不够喔."
+Window_NO
+endwindow "\n\n真可惜."
+
+
+
+
+block Item 47795 >= 1 && Item 47796 >= 1
+window "\n\n想不到你居然有夜光守护者及暴怒之心这两件宝物,如果你愿意付出20000魔币我就帮你把它合成为效果更好耐久更高的饰品.",yes,no
+Window_YES Gold >= 20000
+AddGold -20000
+window "\n\n稍待一下,马上就好.",ok
+Window_OK Item 47795 >= 1 && Item 47796 >= 1
+KillItem 47795,1
+KillItem 47796,1
+GiveItem (1000024%40,1000025%30,1000026%20,1000027%10)
+Window_YES Gold < 20000
+endwindow "\n\n你的钱还不够喔."
+Window_NO
+endwindow "\n\n真可惜."
+
+
+block
+endwindow "\n\n最近终于被我研究出来,将夜光守护者或晴月守护神与爆怒之心合成可以变成效果更强耐久更高的物品,可惜这三样宝物都很稀有,不好收集到,一直没办法证实我的理论."

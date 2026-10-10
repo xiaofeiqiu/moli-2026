@@ -1,0 +1,12 @@
+#本任务由兰纳的弟弟（IKKI制作）
+block item 990901 >= 1
+	endwindow "\n\n这不是王妃的手谕么,看来你真是个好心人啊,谢谢你先.",ok
+
+block item 990900 >= 1
+	endwindow "\n\n还不快去拜见王妃?",ok
+
+block level >= 120
+	window "\n\n最近王妃贵体欠安,急招天下名医前来会诊.",ok
+	window_ok
+		giveitem 990900,1
+	endblock

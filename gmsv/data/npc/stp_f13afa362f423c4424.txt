@@ -1,0 +1,14 @@
+############NPC#
+block endevent 676 == 1 && StrCmpChat == 412051
+endwindow"\n\n\n@c 很抱歉 已经没有多余的袜子给你了!"
+
+block StrCmpChat == 412051 && level >= 120
+window"\n\n\n@c 圣诞树上有好多好多袜子!",next
+window"\n\n\n@c 要取下来吗?…………",yes,no
+window_yes
+giveitem (5510111%30,5510112%30,5510113%30,5510114%30,5510115%30,5510116%30,5510117%30,5510118%30,5510119%30,5510120%30,5510121%1,5510122%1)
+endevent 676 = 1
+CheckTitle
+
+block
+endwindow"\n\n\n@c 圣诞树没有任何反映,就如同普通的圣诞树一样"

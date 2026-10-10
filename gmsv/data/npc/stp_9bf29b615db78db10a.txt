@@ -1,0 +1,16 @@
+
+block	StrCmpChat == 70029
+	Window"\n\n什么？你竟然知道史坎布雷骑士团？\n这个组织已经有上千年的历史,\n历代骑士团成员都会以平民身份隐藏在法兰各处\n只有在法兰城遭遇危机之时他们才会出现一起保护法兰王国,\n那勇士你见过见过大魔导师巴雷哈克吗？",yes,no
+	window_no
+	window_yes item 799117 == 1 && item 72023 == 1
+	Window"\n年轻人，既然你见过大魔导师巴雷哈克那就好办了，我相信他一定能解读这本古老的书籍",ok
+	window_ok
+	giveitem 72024
+	window_yes item 72023 == 1
+	Window"\n你太年轻了 等更强大一点再来",ok
+
+block item 72023 == 1
+	endWindow"\n\n我对这本书所知甚少 我想你问错人了。"
+
+block
+	endWindow"\n皇宫寝室，外人不可随便闯入！"

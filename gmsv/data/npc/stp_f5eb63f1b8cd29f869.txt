@@ -1,0 +1,24 @@
+block item 61201 >= 1
+LeaveGroup
+killitem 61201
+window 1900641,next
+window 1900642,next
+window 1900643,next
+window 1900644,yes,no
+window_no
+window_yes
+LeaveGroup
+giveitem 61202
+endwindow 1900645
+
+block item 61194 >= 1 && item 61195 < 1
+window 1900646,next
+window 1900647,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61195
+window_ok ItemSpace < 1
+endwindow 1900648
+
+block
+endwindow 1900649

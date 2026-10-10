@@ -1,0 +1,12 @@
+block item 3805 == 1
+Warp 0,1000,141,148
+	
+	
+block
+window "\n\n\n年轻人,记得来找我!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3805,1
+leaveGroup
+Warp 0,1000,141,148

@@ -1,0 +1,12 @@
+#清明节任务.
+#作者：Get out
+#时间：2008.04.05
+block Item 6001502 >= 1
+Changepal 15,120
+Window "\n\n\n@c诡异的牌子发出刺耳的声音..",Next
+Window "\n\n\n@c眼前忽然黑暗..",Next
+Window "\n\n\n@c莫名奇妙的昏倒了...",OK
+Window_OK
+Warp 0,60117,4,2
+block
+Endwindow "\n\n\n@c吱吱吱....(很难听的声音)??"

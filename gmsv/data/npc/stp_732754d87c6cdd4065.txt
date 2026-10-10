@@ -1,0 +1,24 @@
+block item 500149 == 1
+endwindow "\n\n寒冰巨龙王现在在魔法大学内的青龙的洞窟中养伤！"
+
+block item 500148 >= 1
+window "\n\n真是谢谢你的帮忙！这是龙之徽章，是寒冰巨龙送我的信物，你拿着他只要看见是不会攻击你的。",ok
+window_ok
+killitemall 500148
+giveitem 500149
+endwindow "\n\n寒冰巨龙王现在在魔法大学内的青龙的洞窟中养伤！"
+
+block item 500147 == 1
+endwindow "\n\n他就在不远处的绿洲附近！"
+
+block item 500134 == 1 && item 500146 == 1
+window "\n\n迷你要找寒冰巨龙王？我劝你还是别去招惹他，自从他的城堡被冰雪皇后占据后心情不是很好。只要是龙族以为的生物他都会立马攻击。",next
+window "\n\n冰雪宫殿？我可不知道怎么去，虽然我们以前关系很好，聚会一般都是他手下的小飞龙带我去的。如果你要去冰雪宫殿现在非得去找寒冰巨龙王。",next
+window "\n\n你要是想见寒冰巨龙王的话我可以帮你引荐下。不过你要先帮我个忙，就是夺回我被山贼戴密斯抢去的研究工具！你愿意吗？",yes,no
+window_no
+window_yes
+killitem 500146
+giveitem 500147
+
+block
+endwindow "\n\n怎么你也对龙有兴趣？"

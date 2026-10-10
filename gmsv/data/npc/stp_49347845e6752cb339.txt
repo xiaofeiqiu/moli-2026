@@ -1,0 +1,20 @@
+block item 3510 >= 1
+window "\n我就知道我不会看错人的?谢谢你啊开启者.",ok
+window_OK 
+killitem 3510,1
+giveitem 3506,1
+giveitem (3507%50,3508%50),1
+
+
+
+
+BLock 
+Window "\n什么都没了...什么都没了...\n\n多年收藏的古董不知道被谁偷走了,你愿意帮我吗?",yes,no
+window_YES item 3500 < 1 && itemSpace >= 1
+giveitem 3500,1
+leaveGroup
+Warp 0,1600,13,4
+window_YES item 3500 >= 1 
+endWindow "\n那就拜托你了!",ok
+window_YES itemSpace < 1
+endWindow "\n你的物品满啦!",ok

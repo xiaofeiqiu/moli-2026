@@ -1,0 +1,14 @@
+block item 600040 >= 1 || item 600059 >= 1
+window "\n\n你使用曙光徽记将西尔弗伯格的灵魂凝集成水晶.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包不够位置了!"
+window_ok item 600040 >= 1
+giveitem 600043
+leavegroup
+Warp 0,5005,18,19
+window_ok item 600059 >= 1
+giveitem 600061
+leavegroup
+Warp 0,5005,18,19
+
+

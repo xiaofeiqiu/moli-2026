@@ -1,0 +1,18 @@
+block  item 87088 == 1
+window "\n\n你确定要把手上的盒子放在神台上吗？",yes,no
+window_no
+window_yes  item 87088 == 1
+LeaveGroup
+killitem 87088
+window "\n\n神台上好像有个结晶体，要不要拿回去看看是什么？",yes,no
+window_no
+Warp 0,25115,151,165
+window_yes
+LeaveGroup
+giveitem (87104%100,87105%60,87106%20,87107%10,87108%1)
+givepet (31%50,111%50,101039%50,301%10,31%10,111%10)
+Warp 0,25115,151,165
+
+block
+LeaveGroup
+Warp 0,25115,151,165

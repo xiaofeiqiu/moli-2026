@@ -1,0 +1,9 @@
+##战后使者##
+block EndEvent 683 == 0
+	Window "\n\n你好，我是精灵使凯茨，您就是传说中给我族带来希望的人类吧!",NEXT
+	Window "\n\n请您随我来吧！请记住！不管何时何地！精灵一族和人类永远是朋友！",OK
+	Window_OK
+	EndEvent 683 = 1
+	CheckTitle
+	LeaveGroup
+	Warp 0,45256,58,32

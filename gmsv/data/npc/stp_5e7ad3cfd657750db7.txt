@@ -1,0 +1,55 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 1000324 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 1000324,1
+block item 60415 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60415,1
+block item 60421 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60421,1
+block item 60422 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60422,1
+block item 60421 >= 1 && item 60422 >= 1
+	window"\n\n巨大的黑暗开始笼罩法兰城，要继续去挑战吗？",yes,no
+	window_yes
+		LeaveGroup
+		Warp 0,45119,130,145
+	window_no
+		EndWindow "\n\n	那就在做点准备工作吧。"
+block item 60411 >= 1 && item 60412 >= 1 && item 60413 >= 1 && item 60414 >= 1 && item 60415 >= 1
+	window"\n\n从丘比手中夺回少女们的灵核吧，要继续去挑战吗？",yes,no
+	window_yes
+		LeaveGroup
+		Warp 0,45120,241,88
+	window_no
+		EndWindow "\n\n	那就在做点准备工作吧。"
+block item 1000324 >= 1 && item 60415 >= 1
+	window"\n\n冒险者们信的内容我看了，能说明下事情的经过吗？",next
+	window"\n\n（仔细回忆了事件的细节……）",next
+	window"\n\n泽尔里奇的身后闪出一个黑影……",ok
+		window_ok
+			killitem 1000324,1
+Encount 2|0,45115,2,4||||||||6000057|||||||||
+block item 60415 >= 1 && item 60421 >= 1
+	window"\n\n看来遇到些麻烦，你们不该这么急着出手……",next
+	window"\n\n（你继续讲述事件细节……）",next
+	window"\n\n很有意思……我年轻的时候也干过一段时间的侦探，和汉克搭档的日子想想还真是值得纪念……",next
+	window"\n\n请您先说正事……",next
+	window"\n\n咳咳……我需要整理一下线索，不过请你们做好最坏的打算，事情既然已经发生便无可挽回……奥对了，灵核又我来保管吧，稍后我会转交给奎因。",next
+	window"\n\n但是……这个是丘比的东西……",next
+	window"\n\n还不明白吗，冒险者？丘比才是这一切的元凶，不要再被它欺骗了……",next
+	window"\n\n（巨大的黑暗开始笼罩法兰城……一只利箭从远方射来……）",next
+	window"\n\n呜呜……你们……你们到底做了什么……把我的伙伴们还给我！",ok
+		window_ok
+Encount 2|0,45119,130,145||||||||6000056|||||||||
+block
+	window "\n\n您好冒险者，有什么需要帮忙的吗？",ok
+		window_ok
+			EndWindow "\n\n	有空常来看看，冒险者。"

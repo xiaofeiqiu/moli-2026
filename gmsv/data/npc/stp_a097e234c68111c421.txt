@@ -1,0 +1,6 @@
+Block
+Window "要返回曙光骑士团营地吗？请先解散队伍。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:ce41ecadeb7b2ef94cf3

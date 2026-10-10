@@ -1,0 +1,12 @@
+block group > 1
+endwindow "\n\n请解散队伍."
+
+
+block
+window "\n\n@n,你是否愿意穿越重重阻碍\n\n告诉绝望的人们,希望在哪吗?",yes,no
+window_no
+window_yes group > 1
+endwindow "\n\n请解散队伍"
+window_yes
+LeaveGroup
+Warp 0,32214,36,35

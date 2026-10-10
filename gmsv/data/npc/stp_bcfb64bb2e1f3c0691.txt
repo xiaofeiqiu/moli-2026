@@ -1,0 +1,20 @@
+〓Get修改系列脚本〓
+block Item 13405 == 1
+	Window "\n\n@c你完成了连邱特都没有完成的任务，你确实非常的英勇，你与邱特一样的出色，我代表世界人们对你表示谢意",ok
+	Window_ok Item 13405 == 1
+	KillItem 13405,1
+	EndEvent 629 == 0
+
+block EndEvent 629 == 1
+	Endwindow "\n\n@c快去吧…",ok
+
+block Item 13401 == 1 && Item 13402 == 1 && Item 13403 == 1
+	Window "\n\n@c你是一位精明强壮的小伙子，我可以从你那坚定的眼神中得到肯定，并且你已经做好了准备，我相信你会像骑士邱特一样的英勇",ok
+	window_ok Item 13401 == 1 && Item 13402 == 1 && Item 13403 == 1
+	KillItem 13401,1
+	KillItem 13402,1
+	KillItem 13403,1
+	EndEvent 629 = 1
+	Endwindow "\n\n@c快快去雷克塔村吧……"
+block
+	Endwindow "\n\n@c骑士邱特真是一位了不起的英雄，他为了国家可以付出生命."

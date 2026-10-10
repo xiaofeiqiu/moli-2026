@@ -1,0 +1,17 @@
+block item 123 >= 1
+endwindow "\n\n黑夜给了我黑色的眼睛,我却用它来翻白眼..."
+
+
+block item 119 == 1
+window "\n\n好黑好黑,有没有人借我一双明亮的眼睛...不,一只都好~~~",yes,no
+window_no
+endwindow "\n\n你是坏蛋...走开..."
+window_yes item 18443 >= 1
+window "\n\n谢谢你的眼睛,呵呵,我还想在这里多找些,这个给你~~~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 18443
+giveitem 123,1
+window_yes
+endwindow "\n\n你有了神眼我再用礼物跟你换..."

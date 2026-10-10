@@ -1,0 +1,10 @@
+block itemspace < 1
+
+window"\n\n @c 物品栏请留空位",ok
+
+block item 58860 >=1
+	Window "\n\n@c获得了一副不起眼的看似幽暗的头盔...",ok
+	Window_ok
+        LeaveGroup
+        giveitem 58857,1
+        Warp 0,1000,239,100

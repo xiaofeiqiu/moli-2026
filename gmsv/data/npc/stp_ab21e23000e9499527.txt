@@ -1,0 +1,132 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block item 60800 >= 1 && item 18236 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60800,1
+			killitem 18236,1
+			GiveItem 60290,1
+			addgold 1000
+			EndEvent 628 = 0
+block item 60801 >= 1 && item 18215 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60801,1
+			killitem 18215,1
+			GiveItem 60290,1
+			addgold 800
+			EndEvent 628 = 0
+block item 60802 >= 1 && item 18234 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60802,1
+			killitem 18234,1
+			GiveItem 60290,1
+			addgold 1000
+			EndEvent 628 = 0
+block item 60803 >= 1 && item 17600 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60803,1
+			killitem 17600,1
+			GiveItem 60290,1
+			addgold 2000
+			EndEvent 628 = 0
+block item 60804 >= 1 && item 18395 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60804,1
+			killitem 18395,1
+			GiveItem 60290,2
+			addgold 2000
+			EndEvent 628 = 0
+block item 60805 >= 1 && item 18303 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60805,1
+			killitem 18303,1
+			GiveItem 60290,1
+			addgold 1000
+			EndEvent 628 = 0
+block item 60806 >= 1 && item 18443 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60806,1
+			killitem 18443,1
+			GiveItem 60290,1
+			addgold 1500
+			EndEvent 628 = 0
+block item 60807 >= 1 && item 18196 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60807,1
+			killitem 18196,1
+			GiveItem 60290,2
+			addgold 1200
+			EndEvent 628 = 0
+block EndEvent 628 == 1
+	window "\n\n\n\n@c　　　请完成任务后再来接受新的委托。",ok
+		Window_ok
+block itemspace < 1
+	window "\n\n\n\n@c您的背包空间不足，请清理一下。",ok
+		Window_ok
+block EndEvent 628 == 0
+	window "\n\n\n　　要领取D级佣兵任务吗？\n\n　　完成接受的任务后，才可领取下个佣兵任务。",next
+		LocalCount8 = random 8,0
+		if localcount8==8
+			window "\n\n　　【任务】挚爱的誓言\n\n　　【概要】前往灵堂寻找毕安礼，将誓言的念珠交还他的妻子。\n\n　　【任务物品】祈祷的耳饰\n\n　　【奖励】金币1000G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60800,1
+				endif
+			Window_no
+		if localcount8==7
+			window "\n\n　　【任务】香草店的友情\n\n　　【概要】前往法兰东南的里玲香料店帮助莉莉露\n\n　　【任务物品】全套香料优待卷\n\n　　【奖励】金币800G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60801,1
+				endif
+			Window_no
+		if localcount8==6
+			window "\n\n　　【任务】绿头盔与面包\n\n　　【概要】帮助法兰拿潘饰品店的波月收集绿头盔\n\n　　【任务物品】全套面包招待劵\n\n　　【奖励】金币1000G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60802,1
+				endif
+			Window_no		
+		if localcount8==5
+			window "\n\n　　【任务】灵堂的地下迷宫\n\n　　【概要】前往灵堂寻找调查员421，用蛋包饭兑换红色三菱镜\n\n　　【任务物品】红色三菱镜\n\n　　【奖励】金币2000G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60803,1
+				endif
+			Window_no		
+		if localcount8==4
+			window "\n\n　　【任务】霞之洞窟\n\n　　【概要】前往霞之洞窟寻找巴鲁斯并获得玻璃耳环\n\n　　【任务物品】玻璃耳环\n\n　　【奖励】金币2000G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60804,1
+				endif
+			Window_no		
+		if localcount8==3
+			window "\n\n　　【任务】寻找雷兹\n\n　　【概要】协助伊尔村医院的柯萨裘寻找他的儿子雷兹\n\n　　【任务物品】旅行干粮\n\n　　【奖励】金币1000G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60805,1
+				endif
+			Window_no
+		if localcount8==2
+			window "\n\n　　【任务】真实之眼\n\n　　【概要】前往角笛大风洞击杀水蜘蛛并获得神眼\n\n　　【任务物品】神眼\n\n　　【奖励】金币1500G　　任务完成证明*1",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60806,1
+				endif
+			Window_no
+		if localcount8==1
+			window "\n\n　　【任务】改造实验\n\n　　【概要】前往亚留特村外奇怪的洞窟寻找无照护士米内鲁帕\n\n　　【任务物品】实验药\n\n　　【奖励】金币1200G　　任务完成证明*2",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60807,1
+				endif
+			Window_no

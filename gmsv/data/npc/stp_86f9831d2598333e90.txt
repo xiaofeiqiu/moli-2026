@@ -1,0 +1,16 @@
+block item 87633 == 1
+window "\n\n我感到一股神秘且不适的感觉，瞬间被吸入一个四处黑暗的地方.",ok
+window_ok
+LeaveGroup
+killitem 87633
+Warp 0,29773,17,4
+
+block item 87627 == 1
+window "\n\n上没怎么会有文字？这字而且还是这么眼熟！跟阿巴尼斯村的那个是同一个文字。",next
+window "\n\n赶快吧这些字抄下来给历史学家雷柏尔森看看。",ok
+window_ok
+killitem 87627
+giveitem 87628
+
+block
+endwindow "\n\n...................."

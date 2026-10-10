@@ -1,0 +1,12 @@
+block item 88201 == 1
+endwindow 501575
+
+block StrCmpChat == 278968 && item 88200 == 1
+window 501576,next
+window 501577,ok
+window_ok
+killitem 88200
+giveitem 88201
+
+block
+endwindow 501578

@@ -1,0 +1,6 @@
+block item 141201 >= 1 && item 141202 >= 1 && item 141203 >= 1 && item 141203 >= 1
+killitem 141201
+killitem 141202
+killitem 141203
+killitem 141204
+giveitem 141205

@@ -1,0 +1,10 @@
+block item 200245 >= 1
+window "\n\n你要使用魔杖破解挡住道路的结界吗?",yes,no
+window_yes
+killitem 200245
+leavegroup
+Warp 0,27168,337,454
+
+
+block
+endwindow "\n\n有道强大的结界挡住了你的去路."

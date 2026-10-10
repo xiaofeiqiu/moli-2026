@@ -1,0 +1,16 @@
+block Level >= 100 && item 16424 >= 1
+window "\n\n你就是打破时之沙漏的冒险者?",next
+window "\n\n都怪你,打破了沙漏,我们已无处容身,你去死吧!!!",yes,no
+window_yes
+Encount 2|0,21510,27,30||0|||||0|28018|||||||||
+window_no
+endwindow "\n\n那我要找的不是你!滚粗"
+
+block
+endwindow "\n\n柯马特依发生大事了,都怪那个冒冒失失的冒险者打破了沙漏"
+
+
+
+
+
+

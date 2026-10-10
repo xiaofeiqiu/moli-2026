@@ -1,0 +1,19 @@
+block item 200501 >= 1
+endwindow "\n\n你为什么找希瑞啊,她还没回家吗?不可能啊,去找季德密又不用花很长时间,估计现在在哪里偷玩呢."
+
+
+block item 200500 >= 1
+window "\n\n希瑞啊～她不久前来找我买鱼,可惜我的鱼都被厨师用完了,所以呢…我也就介绍她去找季德密买.",next
+window "\n\n季德密很好找的呢,看见在钓鱼的就是他了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200501
+
+
+block
+endwindow "\n\n你要买点什么呢."
+
+
+
+

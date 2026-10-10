@@ -1,0 +1,22 @@
+block Luac stp:legacy:48da0656c1917a2c9ed0 >= 1 && Group == 1 && item 90001 == 1
+
+        	window "\n\n　不好意思，我的父亲最近身体不好无法见客。",next
+		window "\n\n　哦哦，你就是医护人员啊！就请顺便给我父亲检查下身体吧。",next
+		window "\n\n　我只能给医护人员通过哦，毕竟他老人家不喜欢人多嘴杂！",next
+		window "\n\n　那么调查信就给我吧。",ok		
+	Window_ok 
+	killitem 90001
+	Warp 0,30309,3,14
+
+	
+block  Group > 1
+	window "\n\n　请不要带闲杂人等进来哦，我父亲怎么说也是个管家，要是泄露什么消息对谁都不好的，请不要太难为我们了！"
+	
+
+block  item 90002 == 1 && item 90001 == 0
+		window "\n\n　答应了父亲他老人家的事就要快点解决哦，这是种高贵的品质！",ok
+	window_ok
+	
+
+block
+	endwindow "\n\n　你有事吗？我的父亲最近身体不好不能见客！"

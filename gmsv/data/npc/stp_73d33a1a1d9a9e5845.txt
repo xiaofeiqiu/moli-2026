@@ -1,0 +1,7 @@
+block SkillLevel 206 == 10
+window"\n\n\n@c 即将学习 10C小刀 防身之刺 制作！",ok
+window_ok
+	KillItem 591367,1
+	GiveRecipe 1129
+block
+Endwindow"\n\n\n@c 你的造小刀技能还未10级，无法学习！"

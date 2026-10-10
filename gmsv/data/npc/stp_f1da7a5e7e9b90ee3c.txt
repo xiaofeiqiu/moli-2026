@@ -1,0 +1,58 @@
+block item 39837 >= 1
+Window "\n\n居然被你拆穿了,不过我们的目的已经达到了,有本事就来抓我呀!",ok
+window_ok
+leavegroup
+Warp 0,19000,10,66
+
+
+block item 39836 == 1
+Endwindow "\n\n这个徽章就是你的荣耀!"
+
+
+block item 39835 >= 1
+Window "\n\n哈哈哈哈哈哈,你还真是倒霉啊!也许世界上真的不存在水怪呢,谢谢你为探险队做了那么多,回去吧,这是你的报酬!",ok
+window_ok
+killitem 39835
+giveitem 39836
+
+
+block item 39832 == 2
+Endwindow "\n\n你要分别到莎莲娜海底洞窟地下2层(29.26)和索奇亚海底洞窟地下2层(49.9)放置陷阱!"
+
+
+block item 39831 >= 1
+LocalCount8 = random 10,0
+if LocalCount8 < 6
+Window "\n\n小伙手儿脚挺麻溜的嘛,有没有兴趣到我兵工厂里打工啊?咳咳!离题了,既然你已经得到赤红章鱼了,那么也请你到莎莲娜海底洞窟和索奇亚海底洞窟放置一下陷阱吧!",ok
+window_ok
+killitem 39831
+giveitem 39832,2
+nowevent 527 = 1
+endif
+if LocalCount8 > 5
+Window "\n\n小伙手儿脚挺麻溜的嘛,有没有兴趣到我兵工厂里打工啊?咳咳!离题了,既然你已经得到赤红章鱼了,那么也请你到莎莲娜海底洞窟和索奇亚海底洞窟放置一下陷阱吧!",ok
+window_ok
+killitem 39831
+giveitem 39832,2
+nowevent 528 = 1
+endif
+
+
+block item 39830 == 1
+Endwindow "\n\n还没钓到赤红章鱼吗?年轻人做事要有耐心,加油!我看好你哟!"
+
+block StrCmpChat == 777040 && item 39829 == 1
+Window "\n\n这是特维斯的介绍信,你也有兴趣加入到我们的水怪探险队吗?虽说这只是传说中的生物,可是我们都无比坚定的相信着它的存在哟!",next
+Window "\n\n终究有一天我们会找它的!最早的文献记载水怪第一次被发现是在索奇亚地低湖,此后在世界各地的海底洞窟也都有发现过它的踪迹的记载!",next
+Window "\n\n根据我多年的研究,水怪喜欢吃索奇亚地底湖里一种叫赤红章鱼,你可以为探险队找到一些吗?这里有个稀有的钓竿,可以在索奇亚地底湖钓到赤红章鱼,可是不能白白给你,拿1万魔币来买走吧!",yes,no
+window_yes gold < 10000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -10000
+killitem 39829
+giveitem 39830
+window_no
+endwindow "\n\n带够钱在来找我."
+
+block
+Endwindow "\n\n请问找我有什么事吗?"

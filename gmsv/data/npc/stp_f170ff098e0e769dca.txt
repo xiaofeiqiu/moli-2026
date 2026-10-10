@@ -1,0 +1,50 @@
+#
+#无赖所说的话
+#
+
+#######################################
+#括号的是对话,请自行修改msg#
+
+block Item 430001 >= 1
+#\n\n\n\n﹛谢谢，那麻烦你了!
+	EndWindow 430004,OK
+
+block Item 430002 >= 1
+#\n\n\n\n﹛请等等,等我想想办法给引人流,我不能死掉的!
+	EndWindow 430000,OK
+
+#block Item 430003 >= 1 && ItemSpace == 0
+#\n\n\n\n﹛要清空身上的物品才能跑得快喔!
+#	EndWindow 430007,OK
+
+block Item 430003 >= 1
+#\n\n﹛呜呜呜。。。国王真的那么绝!要我英年早逝。。。
+	Window 430008,NEXT
+#\n\n﹛我要再想想办法给引人流。这是你的报酬!拿去吧,不用担心小弟。小弟会长命百岁的!
+	Window 430009,YES,NO
+	Window_NO
+	EndWindow 430002,OK
+	Window_YES ItemSpace == 0
+#\n\n\n\n﹛要清空身上的物品才能跑得快喔!
+	EndWindow 430007,OK
+	Window_YES
+	GiveItem 430000
+	KillItem 430003
+block
+#\n\n﹛呜呜呜。。。麻烦了，本私服人数不多，国王要冶我管理不当之罪，要把我砍头。。。
+	Window 430001,NEXT
+#\n\n﹛我要想想办法给引人流，你帮我把这封信件交给国王，好让他给我可以活多几天。
+	Window 430002,NEXT
+#\n\n﹛我需要玩家的支持，请你帮我交这封信给国王和说声“支持YAHO魔力”，可以吗？
+	Window 430003,YES,NO
+	Window_NO
+#\n\n﹛还是算了!我只好另找他人吧!
+	EndWindow 430006,OK
+	Window_YES ItemSpace == 0
+#\n\n\n\n﹛要清空身上的物品才能跑得快喔!
+	EndWindow 430007,OK
+	Window_YES
+	GiveItem 430001,1
+#	EndEvent 9 = 1
+#\n\n\n\n﹛谢谢，那麻烦你了!
+	EndWindow 430004,OK

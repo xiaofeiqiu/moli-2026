@@ -1,0 +1,14 @@
+block item 200545 >= 1 && item 200547 >= 1
+window "\n\n奎斯特大主教:快说你妹到底是什么人,为什么有这么强大的力量.",next
+window "\n\n奎斯特大主教:你妹怀疑文稿上的文字跟你们手上的吟文上的字是同一种.",next
+window "\n\n奎斯特大主教:看你们这群小孩也不像他们口中的敌人,那就大家一同拿出来对比一下吧.",next
+window "\n\n梅洛蒂:不错,这上面的字的确是我们那个世界的,马赛特将军看来我终于找到你了.",next
+window "\n\n丛人:马赛特将军?.",next
+window "\n\n梅洛蒂:等见到马赛特将军后你们就会知道事情原委了.",ok
+window_ok
+killitem 200545
+killitem 200547
+leavegroup
+Warp 0,27584,38,18
+
+

@@ -1,0 +1,17 @@
+##阿鲁巴斯兑换##
+block petlevel 330010 == 1 && petlevel 330011 == 1 && petlevel 330012 == 1 && petlevel 330013 == 1 && item 509 >= 1 && item 510 >= 1 && item 511 >= 1 && item 512 >= 1 && item 513 >= 1 && item 514 >= 1
+window"\n\n我在祈祷忏悔呢,你怎么找到这里来的?\n\n既然来了,就把奇美拉都交给我吧!\n\n放心,我会还给你更好的宠物(阴笑)",yes,no
+window_yes itemSpace >= 1
+killpetl 330010
+killpetl 330011
+killpetl 330012
+killpetl 330013
+killitem 509,1
+killitem 510,1
+killitem 511,1
+killitem 512,1
+killitem 513,1
+killitem 514,1
+giveitem 515,1
+Endwindow"\n\n还给你啦,真是的,这么不情愿!",ok
+window_no

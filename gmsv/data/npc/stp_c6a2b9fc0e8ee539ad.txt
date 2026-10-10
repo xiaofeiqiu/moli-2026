@@ -1,0 +1,22 @@
+block	level >= 140 && item 795018 < 1 && item 795019 < 1
+window"\n\n\n你世道这召唤之间的后面是什么吗？",OK
+window_OK
+window"\n\n@c你相信有地狱这个传说吗?召唤之间的背面，其实就是通往地狱的啊修罗密道！你愿意帮我帮我探察吗？我这有线索！",yes,no
+window_yes
+giveitem 795018,1
+endwindow"\n\n@c这个戒指似乎和这道门有着密切的关系，但是我就是找不到答案，希望你能找到"
+window_NO
+endwindow"\n\n@c那算了吧，你当我没说过"
+
+block	item 795018 >=1
+window"\n\n\n@c怎么？还在这里逗留？",next
+window"\n\n\n@c你想放弃吗?看来不能勉强你呢",yes,no
+window_yes
+KillItem 795018,1
+window"\n\n\n@c那抱歉了，戒指我要收回了",OK
+window_no
+window"\n\n\n@c那快去吧！",OK
+
+block	item 795019 >=1
+window"\n\n\n@c调查的怎么样了",OK
+window_ok

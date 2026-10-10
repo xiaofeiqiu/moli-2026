@@ -1,0 +1,2875 @@
+block item 86430 >= 1 && item 86431 >= 1 && item 86432 < 1 && item 86409 >= 1
+window "\n\n调查已经结束了啊。干得不错，你的能力还是相当强的，希望还能再和你一起调查。",ok
+window_ok
+leavegroup
+killitem 86409
+killitem 86430
+killitem 86431
+giveitem 86432
+
+block item 86410 >= 1
+endwindow "\n\n来自圣拉鲁卡的旅行商人塔达斯？他好像在城北的旅馆附近出现过，你可以去旅馆问问。"
+
+block item 86408 >= 1 && item 86409 < 1
+window "\n\n原来如此，摩尔家的赫顿失踪了，突然间来了动力，让我们一起开始调查吧！要成为我的助手吗？在做调查的时候将会很便利哦！",yes,no
+window_no
+window_yes
+window "\n\n赫顿已经失踪了三天，法兰城内多多少少也有了一些风声，我想城内的人如果有消息就会告诉摩尔一家的。我们应该把调查范围锁定在经常出入法兰城的旅行商人身上，询问他们是否见过赫顿。",next
+window "\n\n把这个给你，这是我随身携带的放大镜，很多人都认识的，这样就能证明你是我的助手。",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86409
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block item 86407 >= 1 && item 86409 < 1
+window "\n\n原来如此，摩尔家的赫顿失踪了，突然间来了动力，让我们一起开始调查吧！要成为我的助手吗？在做调查的时候将会很便利哦！",yes,no
+window_no
+window_yes
+window "\n\n赫顿已经失踪了三天，法兰城内多多少少也有了一些风声，我想城内的人如果有消息就会告诉摩尔一家的。我们应该把调查范围锁定在经常出入法兰城的旅行商人身上，询问他们是否见过赫顿。",next
+window "\n\n把这个给你，这是我随身携带的放大镜，很多人都认识的，这样就能证明你是我的助手。",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86409
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block
+window "\n\n哟嘿！我是汉克，又见面啦，请多关照啊！",next
+window "\n\n最近在忙些什么？有没有什么有趣的消息？虽然最近魔物增加了，但王国的贸易往来还是蛮顺利的，欣慰啊！",next
+window "\n\n我听说摩尔一家遇到了一些困难？",ok
+window_ok
+
+###########　囱磊 涅胶飘 吝　##############
+
+block nowevent 7 == 1
+
+
+
+	EndWindow 206150,OK
+
+
+
+###########　檬措厘 乐澜　##############
+
+block Item 18891 != 0
+
+
+
+	Window 206168,YES,NO
+
+	Window_YES
+
+	EndWindow 206169,OK
+
+	Window_NO
+
+	Endwindow 206170,OK
+
+
+
+###########　囱磊 涅胶飘 吝　##############
+
+block nowevent 7 == 1
+
+
+
+	EndWindow 206150,OK
+
+
+
+###########　农肺胶 霸捞飘２捞寇　##############
+
+block trialflg == 1 || trialflg == 0 || trialflg == 2
+
+
+
+	EndWindow 206151,OK
+
+
+
+##########　珐农 诀 炼扒 葛烙　##############
+
+#block job == 413 && fame >=        && endevent93 == 1 
+
+#
+
+#	Window 206155,YES,NO
+
+#	Window_YES
+
+#	Window 206156,OK
+
+#	Window_OK
+
+#	Warp 0,33253,7,9
+
+#	Window_NO
+
+#	EndWindow 206157,OK
+
+#
+
+###########　珐农 诀 炼扒 葛烙　##############
+
+#block job == 412 && fame >=        && endevent92 == 1 
+
+#
+
+#	Window 206154,YES,NO
+
+#	Window_YES
+
+#	Window 206156,OK
+
+#	Window_OK
+
+#	Warp 0,33253,7,9
+
+#	Window_NO
+
+#	EndWindow 206157,OK
+
+#
+
+###########　珐农 诀 炼扒 葛烙　##############
+
+#block job == 411 && fame >=        && endevent91 == 1 
+
+#
+
+#	Window 206153,YES,NO
+
+#	Window_YES
+
+#	Window 206156,OK
+
+#	Window_OK
+
+#	Warp 0,33253,7,9
+
+#	Window_NO
+
+#	EndWindow 206157,OK
+
+#
+
+###########　捞固 沤沥　##############
+
+block Luac stp:legacy:6344ec5a7230448f4368 >= 1 && nowevent 584 == 1 && nowevent 592 == 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:8f3e9c728eaf37a07253 >= 1 && nowevent 584 == 1 && nowevent 592 == 1 && nowevent 585 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:e5800179c0e28718eeba >= 1 && nowevent 584 == 1 && nowevent 592 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:45dca0177dc63362d42a >= 1 && nowevent 592 == 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:bd20f805d4f0c6d3a445 >= 1 && nowevent 584 == 1 && nowevent 592 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:44ab4b1b729d22d9d3a8 >= 1 && endevent 684 == 1 && nowevent 592 == 1
+
+
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:48a35ab64152ec7057ba >= 1 && nowevent 585 == 1 && nowevent 592 == 1
+
+
+
+	nowevent 585 = 0
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:7dd5a82a366d8ef4444f >= 1 && nowevent 592 == 1 
+
+
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:74488a17a26f4a353512 >= 1 && nowevent 584 == 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:0550213120c61298b46f >= 1 && nowevent 584 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	endevent 684 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:a471762b3896cd37d39f >= 1 && nowevent 584 == 1 && nowevent 585 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:f36e7da675d7290b2a74 >= 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:0792b005e40a2903d33c >= 1 && nowevent 584 == 1
+
+
+
+	nowevent 584 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:f06b8ba263bfca61aa9b >= 1 && endevent 684 == 1
+
+
+
+	endevent 684 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:246bd5d0ccab5db51da8 >= 1 && nowevent 585 == 1
+
+
+
+	nowevent 585 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:bf81cfa9c62f51ce1c92 >= 1 && nowevent 586 == 1 && nowevent 587 == 1 && endevent 686 == 1
+
+
+
+	endevent 686 = 0
+
+	nowevent 587 = 0
+
+	nowevent 586 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:50de3f546e0ec84a3ed8 >= 1 && nowevent 586 == 1 && endevent 686 == 1
+
+
+
+	nowevent 586 = 0
+
+	endevent 686 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:2fdf49f3a4d1920aeb2e >= 1 && nowevent 586 == 1 && nowevent 587 == 1
+
+
+
+	nowevent 587 = 0
+
+	nowevent 586 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:ecfaf2d81a80ba845005 >= 1 && nowevent 586 == 1 
+
+
+
+	nowevent 586 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:7e4b93afabf7e5d22bcf >= 1 && endevent 686 == 1 
+
+
+
+	endevent 686 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:be7f420edcdef61272d0 >= 1 && nowevent 587 == 1 
+
+
+
+	nowevent 587 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:ebe66aea9caf24415ecd >= 1 && endevent 687 == 1 
+
+
+
+	endevent 687 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:39d399a583b34312e463 >= 1 && nowevent 588 == 1 
+
+
+
+	nowevent 588 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:60ea58f3204adc5f8a50 >= 1 && endevent 688 == 1 
+
+
+
+	endevent 688 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:e56c05dd138e454676bb >= 1 && nowevent 589 == 1 
+
+
+
+	nowevent 589 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:1cb40f67ca773f29249d >= 1 && endevent 689 == 1 
+
+
+
+	endevent 689 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:cd490384db8af118f45d >= 1 && nowevent 590 == 1 
+
+
+
+	nowevent 590 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:4758daf4617d83f265ac >= 1 && endevent 690 == 1 && nowevent 591 == 1 && endevent 691 == 1
+
+
+
+	nowevent 591 = 0
+
+	endevent 691 = 0
+
+	endevent 690 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:b11a215f26006fd2daf3 >= 1 &&  endevent 690 == 1 && nowevent 591 == 1
+
+
+
+	nowevent 591 = 0
+
+	endevent 690 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:023bef3af488fa24decc >= 1 && endevent 690 == 1 && endevent 691 == 1
+
+
+
+	endevent 691 = 0
+
+	endevent 690 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:2896dd5016beddf31c2c >= 1 && endevent 685 == 1 
+
+
+
+	endevent 685 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:4169202fc16bf93cbb3a >= 1 && endevent 690 == 1 
+
+
+
+	endevent 690 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:fac4f151874117858cd2 >= 1 && nowevent 591 == 1 
+
+
+
+	nowevent 591 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:b6f92dc31d56a11a96ab >= 1 && endevent 691 == 1 
+
+
+
+	endevent 691 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:d8ed3628040c39c72765 >= 1 && nowevent 592 == 1 
+
+
+
+	nowevent 592 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:e3c6349f33408ddf49f9 >= 1 && endevent 692 == 1 
+
+
+
+	endevent 692 = 0
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+block Luac stp:legacy:848468b694398a84ef36 >= 1
+
+
+
+	Window 206154,YES,NO
+
+	Window_YES
+
+	leavegroup
+
+	Warp 0,33253,7,9
+
+	Window_NO
+
+	Window 206157,OK
+
+	Window_OK
+
+	Window 206969,YES,NO
+
+	Window_YES
+
+	Window 206970,OK
+
+	Window_OK
+
+	leavegroup
+
+	playse 270,1,1
+
+	Warp 0,33251,7,9
+
+	Window_NO
+
+	EndWindow 206157
+
+
+
+###########　器惑 酒捞袍 乐澜　##############
+
+block Item 18899 >= 1 || Item 18900 >= 1 || Item 18901 >= 1
+
+
+
+	EndWindow 206158,OK
+
+
+
+###########　农肺胶 霸捞飘２捞瘤父 去磊啊 酒聪促　##############
+
+#block group >= 2 && trialflg != 1 || trialflg != 0 || trialflg != 2
+
+#
+
+#	EndWindow 206163,OK
+
+#
+
+###########　涅胶飘 吝俊 冻绢柳 荤恩　橇贰弊 绝沮　　##############
+
+block nowevent 584 == 1 && nowevent 592 == 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 584 == 1 && nowevent 592 == 1 && nowevent 585 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 584 == 1 && nowevent 592 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 592 == 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+
+
+block nowevent 584 == 1 && nowevent 592 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 684 == 1 && nowevent 592 == 1
+
+
+
+	endevent 684 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 585 == 1 && nowevent 592 == 1
+
+
+
+	nowevent 585 = 0
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 592 == 1 
+
+
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 584 == 1 && nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 584 == 1 && endevent 684 == 1
+
+
+
+	nowevent 584 = 0
+
+	endevent 684 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 584 == 1 && nowevent 585 == 1
+
+
+
+	nowevent 584 = 0
+
+	nowevent 585 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 585 == 1 && endevent 684 == 1
+
+
+
+	nowevent 585 = 0
+
+	endevent 684 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 584 == 1
+
+
+
+	nowevent 584 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 684 == 1
+
+
+
+	endevent 684 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 585 == 1
+
+
+
+	nowevent 585 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+
+
+block nowevent 586 == 1 && nowevent 587 == 1 && endevent 686 == 1
+
+
+
+	endevent 686 = 0
+
+	nowevent 587 = 0
+
+	nowevent 586 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 586 == 1 && endevent 686 == 1
+
+
+
+	nowevent 586 = 0
+
+	endevent 686 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 586 == 1 && nowevent 587 == 1
+
+
+
+	nowevent 587 = 0
+
+	nowevent 586 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 586 == 1 
+
+
+
+	nowevent 586 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	Warp 0,33251,7,9
+
+	leavegroup
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+
+
+block endevent 686 == 1 
+
+
+
+	endevent 686 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	Warp 0,33251,7,9
+
+	leavegroup
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 587 == 1 
+
+
+
+	nowevent 587 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 687 == 1 
+
+
+
+	endevent 687 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 588 == 1 
+
+
+
+	nowevent 588 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 688 == 1 
+
+
+
+	endevent 688 = 0
+
+	Window 206159,YES,NO
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 589 == 1 
+
+
+
+	nowevent 589 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 689 == 1 
+
+
+
+	endevent 689 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+Block nowevent 590 == 1 
+
+
+
+	nowevent 590 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 690 == 1 && nowevent 591 == 1 && endevent 691 == 1
+
+
+
+	nowevent 591 = 0
+
+	endevent 691 = 0
+
+	endevent 690 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 690 == 1 && nowevent 591 == 1
+
+
+
+	nowevent 591 = 0
+
+	endevent 690 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 690 == 1 && endevent 691 == 1
+
+
+
+	endevent 691 = 0
+
+	endevent 690 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 685 == 1 
+
+
+
+	endevent 685 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 690 == 1 
+
+
+
+	endevent 690 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+
+
+block nowevent 591 == 1 
+
+
+
+	nowevent 591 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+
+
+block endevent 691 == 1 
+
+
+
+	endevent 691 = 0
+
+	Window 206159,YES,NO
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block nowevent 592 == 1 
+
+
+
+	nowevent 592 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+block endevent 692 == 1 
+
+
+
+	endevent 692 = 0
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+###########　农肺胶 霸捞飘２去磊　##############
+
+block group == 1 && trialflg != 1 || trialflg != 0 || trialflg != 2
+
+
+
+	Window 206159,YES,NO
+
+	Window_YES
+
+	Window 206160,NEXT
+
+	Window 206161,OK
+
+	Window_OK group == 1
+
+	leavegroup
+
+	Warp 0,33251,7,9
+
+	Window_OK group != 1
+
+	EndWindow 206542,OK
+
+	Window_NO
+
+	EndWindow 206162,OK
+
+
+
+

@@ -1,0 +1,12 @@
+block item 88380 == 1
+endwindow "\n\n我还是奉劝长高别拿自己小命开玩笑！"
+
+block item 88379 == 1
+window "\n\n可疑船只？报告长官就在你来不久之前刚好有艘小船经过，朝着西方的一个群岛驶去。",next
+window "\n\n我希望长官能打消前往那个群岛，按我们当地人对其的称呼为【恶魔岛】，凡是登岛的游客或在附近捕鱼的渔船均是有去无回！",ok
+window_ok
+killitem 88379
+giveitem 88380
+
+block
+endwindow "\n\n在这瞭望塔台上能看到前往西南方向的所有船只！"

@@ -1,0 +1,6 @@
+block
+	Window 7020534,NEXT
+	Window 7020535,YES,NO
+	Window_YES
+	Warp 0,9311,7,17
+	Window_no

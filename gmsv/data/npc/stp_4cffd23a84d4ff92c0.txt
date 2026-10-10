@@ -1,0 +1,46 @@
+block item 87675 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87674 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87673 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87672 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87671 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87670 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87669 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87668 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87667 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87666 == 1
+endwindow "\n\n我到底怎么了！"
+
+block item 87665 == 1
+endwindow "\n\n你要把他找回来，以免落入魔族手中。"
+
+block item 87664 == 1
+window "\n\n我这到底是怎么了，那个人怎么长的一模一样。",next
+window "\n\n冒险者你不认识我了吗？我是给你称号的阿蒙。",next
+window "\n\n我是传承秘宝守护家族唯一的嫡系子孙。看来你们已经完全通过了鲁耶利莲娜大姐姐的测试。",next
+window "\n\n那趁我真正意识没消失的时候有必要跟你透露下我们家族守护的秘宝的秘密。这秘宝长久以来一直在维持着人类与魔族的平衡，但是现在魔族想打破这个平衡。为了毁掉这个秘宝，他们开始对我们家族进行残酷的追杀。",next
+window "\n\n由于我们家族能力有限无法守护这个秘宝，我们的所有家族成员为了躲避追杀隐姓埋名生活在各地。",next
+window "\n\n而唯一能打开秘宝所在地的钥匙就在我这里，为了保护这把钥匙我把自己的魂魄附在了上面。当这把钥匙离开我时，我的魂魄就会离肉身渐行渐远。",next
+window "\n\n对那晚夺取我钥匙的人一无所知，不过你放心我已经拜托汉克从旁协助你了。",ok
+window_ok
+giveitem 87665
+
+block
+endwindow "\n\n我到底怎么了！"

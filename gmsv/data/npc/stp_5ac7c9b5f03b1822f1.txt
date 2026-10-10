@@ -1,0 +1,6 @@
+Block
+Window "将上一位村民的线索交给我，我会帮你核实，并给你下一份调查凭证。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:3f7ee28e44711fae9c72

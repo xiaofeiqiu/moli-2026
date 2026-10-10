@@ -1,0 +1,4 @@
+block
+Window "\n\n『火把上点燃了冥炎的火焰』",ok
+Window_ok
+ChangePal 13,600

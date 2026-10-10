@@ -1,0 +1,13 @@
+###dodo_item_715236.txt
+###月饼	里面藏有纸条的月饼
+###跟工读生拿的第一个月饼
+
+block Item 715236 >= 1
+window "\n\n你已经将月饼拿在手上,现在是否要吃月饼?",yes,no
+Window_NO 
+Window_YES ItemSpace < 1
+endwindow "\n\n你的身上物品携带的太多了."
+
+Window_YES Item 715236 >= 1 && ItemSpace >= 1
+KillItem 715236,(777452) 
+GiveLeak1Item 715238 

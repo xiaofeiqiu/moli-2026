@@ -1,0 +1,27 @@
+block EndEvent 513 == 1
+EndWindow "\n\n年轻人要多读书,将来才能有所作为."
+
+block item 141186 >= 1
+EndWindow "\n\n多谢你,我学到了新知识."
+
+block item 141185 >= 1
+Window "\n\n奇怪的大鸟?这世上竟然还有我没有见过的物种,真是长见识了,呵呵.谢谢你,这个就送给你吧.",ok
+Window_ok item 141185 >= 1
+killitem 141185
+giveitem 141186
+
+block item 141180 >= 1
+EndWindow "\n\n没帮上忙真是不好意思."
+
+block EndEvent 512 == 1 && item 141178 == 0 && item 141177 == 0 && item 141180 == 0
+Window "\n\n你是来问那条项链的吧?我看了一辈子的书,却从没见过有记载这种味道的书.",next
+Window "\n\n说起来真是古怪啊...闻久了这个我感觉记忆力都衰退了,还伴有头晕.我要马上处理掉这个危险的东西...",next
+Window "\n\n诶?这个吊坠好像可以打开呀!你拿去看看对你有没有帮助吧.",ok
+Window_ok itemspace < 2
+EndWindow "\n\n你的背包满啦!",ok
+Window_ok
+giveitem 141177
+giveitem 141180
+
+block
+EndWindow "\n\n年轻人要多读书,将来才能有所作为."

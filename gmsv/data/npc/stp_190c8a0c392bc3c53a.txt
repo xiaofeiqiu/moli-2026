@@ -1,0 +1,15 @@
+block item 87514 == 1
+window "\n\n真不愧是开启者啊，是你拯救了法兰城，法兰城将恢复以前的平静，我将代表法蓝城的所有人感谢你们。",ok
+window_ok
+killitem 87514
+giveitem 87515
+
+block item 87511 == 1
+endwindow "\n\n谢谢你勇士，我派的士兵已经往法兰城西边追去。"
+
+block item 18443 == 1
+window "\n\n法兰城四周最近出现了很多魔物，传说中的勇者，你愿意帮助法兰消灭魔物吗？",yes,no
+window_no
+window_yes
+giveitem 87511
+endwindow "\n\n谢谢你勇士，我派的士兵已经往法兰城西边追去。"

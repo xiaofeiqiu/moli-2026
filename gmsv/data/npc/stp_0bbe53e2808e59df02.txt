@@ -1,0 +1,9 @@
+block EndEvent 515 == 1
+setaction 10
+Window "\n\n咕?咕咕...!",next
+Window "\n\n咕咕咕! 咕...咕咕!",next
+Window "\n\n『虽然听不懂它在说什么,但是可以感觉到它在向你传达着什么重要消息』",next
+Window "\n\n『它在死亡的边缘挣扎着,声音越来越低,最后用嘴摘下了身上的一根羽毛,吹向了你』",ok
+Window_ok
+LeaveGroup
+Warp 0,57404,23,25

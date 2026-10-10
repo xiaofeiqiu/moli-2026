@@ -1,0 +1,13 @@
+block item 200771 >= 1
+window "\n\n我这里有可以深入海底的重力头盔.\n\n你需要吗?一个只需5000魔币.",yes,no
+window_yes gold < 5000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -5000
+killitem 200771
+giveitem 200772
+
+
+
+block
+endwindow "\n\n海底的东西我这里全部都有."

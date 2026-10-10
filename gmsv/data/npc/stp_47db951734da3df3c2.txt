@@ -1,0 +1,10 @@
+block item 1002024 >= 1
+window "\n\n　那水果很诱人的样子。。能给我吗。。",yes,no
+window_no
+window_yes
+killitem 1002024
+giveitem 1002027
+endwindow "\n\n　真是好吃的水果，对了，这个是我捡到的，好象是人类的食谱呢，给你了，做出好吃的记得给我也尝尝啊。"
+
+block
+endwindow "\n\n　哪里来的人类，怎么这么没礼貌乱闯民居啊。\n　信不信我给你一棍子？"

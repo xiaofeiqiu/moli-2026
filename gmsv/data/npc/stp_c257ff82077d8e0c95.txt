@@ -1,0 +1,18 @@
+
+block
+	Window "\n\n恭喜你通过虚空幻境低阶迷宫的考验，如果你想继续挑战下一阶段，我会将你传送回法兰城进行补给，只要再带着证明和祭奠主持者对话就可以直接挑战下一阶段；",next
+	Window "\n\n如果你不想继续挑战，那么我会给予你通过当前挑战的奖励。",next
+	Window "\n\n那么。你是否要继续接受挑战呢？",yes,no
+		window_no ItemSpace < 1
+			EndWindow"\n\n@c抱歉，你的物品栏不够了。"
+		Window_no
+			giveitem (51016%1,51017%1,51018%1)
+	EndWindow"\n\n愿诸神词福予勇敢者！"
+		Window_yes
+	Window "\n\n请继续努力。",ok
+		window_ok ItemSpace < 1
+			EndWindow"\n\n@c抱歉，你的物品栏不够了。"
+		Window_ok
+			LeaveGroup
+			giveitem 51014
+			Warp 0,1000,153,33

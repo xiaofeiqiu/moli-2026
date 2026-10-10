@@ -1,0 +1,7 @@
+block Item 60463 >= 1
+Window "\n\n需要住店休息吗?",yes,no
+Window_no
+Window_yes
+killitem 60463
+LeaveGroup
+Warp 0,64060,35,33

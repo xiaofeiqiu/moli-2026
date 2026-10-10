@@ -1,0 +1,37 @@
+
+block Item 39652 >= 1
+window "\n\n什么!\n你说你有了小姐的消息吗?\n快进去找老爷吧!\n老爷他相当担心小姐的事情.",ok
+window_ok
+LeaveGroup
+Warp 0,32239,15,36
+
+block Item 39653 >= 1
+window "\n\n什么!\n你说你有了小姐的消息吗?\n快进去找老爷吧!\n老爷他相当担心小姐的事情.",ok
+window_ok
+LeaveGroup
+Warp 0,32239,15,36
+
+block Item 39650 >= 1
+window "\n\n啊!贵客!\n欢迎光临!\n快进去吧,老爷等很久了\n婚礼要开始了.",ok
+window_ok
+LeaveGroup
+Warp 0,64049,15,36
+
+block
+endwindow "\n\n很抱歉!\n今天是我家小姐大喜的日子!\n没有邀请函者一律不能进入观礼\n所以,我不能够让你进去."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

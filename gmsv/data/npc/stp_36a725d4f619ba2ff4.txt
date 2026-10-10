@@ -1,0 +1,5 @@
+block item 86249 >= 1
+window "\n\n三棱石的大小与凹槽的大小非常匹配,通往巢穴的大门开启了.",ok
+window_ok item 86249 >= 1
+leavegroup
+Warp 0,28093,5,8

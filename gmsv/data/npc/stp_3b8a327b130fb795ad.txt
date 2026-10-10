@@ -1,0 +1,8 @@
+block
+window "\n\n什么!我做的实验品被你打败了?可恶!我毒化计划居然也被你破坏了!什么?你还想抓住我?呵呵~自不量力的家伙!我闪~~~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 795069
+leavegroup
+Warp 0,32034,40,53

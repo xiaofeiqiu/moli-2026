@@ -1,0 +1,7 @@
+block item 500154 == 1
+window "\n\n嗯哼~~就是这个冰柱，你要用手摸一下冰柱吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 500154
+Warp 0,14237,9,9

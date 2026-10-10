@@ -1,0 +1,9 @@
+block item 86420 >= 1 && item 86421 < 1
+window "\n\n这个是在东部发现的东西吗？嗯，交给我吧，我先研究一下，这个记录给你，你拿着记录去下一个区域继续勘探吧。",ok
+window_ok
+leavegroup
+killitemall 86420
+giveitem 86421
+
+block
+endwindow "\n\n..............."

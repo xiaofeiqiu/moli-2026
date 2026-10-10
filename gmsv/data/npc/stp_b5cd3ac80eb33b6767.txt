@@ -1,0 +1,9 @@
+block Item 6516 >= 1
+Window "\n\n头儿在他屋子里好象开始仪式了,你这小子上去时候小心些,否则别怪头儿对你不客气哦.",OK
+Window_OK Item 6516 >= 1
+KillItem 6516,1
+LeaveGroup
+Warp 0,41032,60,21
+
+block
+EndWindow "\n\n祭品快滚回去,谁让你随便走动的?"

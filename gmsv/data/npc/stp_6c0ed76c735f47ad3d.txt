@@ -1,0 +1,18 @@
+
+
+#block item 619 >= 1 || item 47215 >= 1 || item 950016 >= 1 || item 950088 >= 1 || item 950089 >= 1 || item 950090 >= 1 || item 950111 >= 1 || item 950079 >= 1 || item 950080 >= 1 || item 950081 >= 1 || item 950082 >= 1
+#endwindow "\n\n\n\n@c岛内禁止携带驱魔类物品和GPRS导航!"
+
+
+block level >= 100
+window "\n\n岛内很大,怪物很多\n\n而且没有补给,请准备充足再进入!",yes
+#window "\n\n\n\n@c岛内禁止携带驱魔类物品和GPRS导航哦!",yes,no
+window_yes
+leavegroup
+Warp 0,64000,399,420
+window_no
+endwindow "\n\n想不到你真那么差劲..."
+
+
+block
+endwindow "\n\n要参加亡命岛之旅吗?\n\n没有强大的耐力,是无法通过的哦!"

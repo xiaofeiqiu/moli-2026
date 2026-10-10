@@ -1,0 +1,8 @@
+block item 200110 >= 1
+window "\n\n什么人.",ok
+window_ok
+Encount 2|0,4408,35,6||0|||||0|50109|||||||||
+
+
+block
+endwindow "\n\n「真中的请求」任务..."

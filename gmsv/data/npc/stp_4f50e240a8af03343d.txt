@@ -1,0 +1,18 @@
+#WatchEx01102225
+#102767没有钥匙进不去.
+#102768要使用钥匙进屋吗?
+
+
+block Item 715294 >= 1 && Xpos == 61 && Ypos >= 56 && Ypos <= 57
+window "\n\n要使用钥匙进屋吗?",YES,NO 
+Window_YES Group > 1
+endwindow "\n\n请解散队伍."
+Window_YES
+LeaveGroup
+Warp 0,45063,4,9
+Endblock
+Window_NO 
+Endblock  
+  
+block Xpos == 61 && Ypos >= 56 && Ypos <= 57
+endwindow "\n\n没有钥匙进不去."

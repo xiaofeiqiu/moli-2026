@@ -1,0 +1,49 @@
+
+
+block BBImage == 101803
+endwindow "\n\n．．．．．．"
+
+
+block BBImage == 101613
+endwindow "\n\n．．．．．．"
+
+
+
+block Item 715248 >= 1 
+endwindow "\n\n．．．．．．"
+
+block Item 715244 >= 1
+endwindow "\n\n．．．．．．"
+
+block Group > 1
+endwindow "\n\n请解散队伍!"
+Window_OK 
+LeaveGroup  
+
+block Item 715239 >= 1 || Item 715240 >= 1 || Item 715241 >= 1
+endwindow "\n\n还不快出发到安其摩酒吧\n小心等等迟到团长会骂人."
+
+
+block Item 715236 >= 1 || Item 715237 >= 1
+endwindow "\n\n月饼这种东西冷掉了就不好吃啰!!"
+
+
+block Item 715238 >= 1 
+window "\n\n你来啦!记得聚会时不要迟到呦!\n你是知道的,团长最不喜欢人迟到\n这边人潮太多\n关于秘密集会的地点到安其摩酒吧找小朱.\n记得要说纸条上的暗号.\n有人来了那我就先说到这里.",next
+window "\n\n嗯!这位先生你不要胡说了\n我的月饼里面怎么会有问题呢?\n我们月饼都是集体制作\n如果有问题怎么可能只有你一个月饼有问题.",next
+window "\n\n这样吧!我再给你一个月饼.\n好了好了!不要在闹了我看你一定是喝醉了.\n你再去安其摩酒吧喝一杯吧!(眨眼)\n(小声说:记得把月饼打开.)",ok
+Window_OK ItemSpace < 1
+endwindow "\n\n你没有空间可以放月饼."
+Window_OK ItemSpace >= 1
+KillItem 715238
+GiveLeak1Item 715237
+
+
+block 
+window "\n\n你好!\n我们是远从苏之国来的日月商人.\n因为适逢中秋节.\n所以举办中秋节月饼大放送活动.\n这是你的月饼.",ok
+Window_OK ItemSpace < 1
+endwindow "\n\n你没有空间可以放月饼."
+Window_OK ItemSpace >= 1
+GiveLeak1Item 715236
+
+

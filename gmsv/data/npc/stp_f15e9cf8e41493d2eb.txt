@@ -1,0 +1,16 @@
+block equipItem == 60512
+window "\n\n准备好了吗...那就开始吧?",yes,no
+window_no
+window_yes
+Encount 2|0,64083,11,8||0|||||0|50216|||||||||
+
+
+block
+window "\n\n要通过考验,必须在我的灵魂见证下才可以进行,你要放弃了吗?",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,64078,11,8
+
+
+

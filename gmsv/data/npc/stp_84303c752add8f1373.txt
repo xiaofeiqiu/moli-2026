@@ -1,0 +1,5 @@
+block
+window "\n\n这堵墙似乎很松软，是否要挖开呢？",yes,no
+window_no
+window_yes
+Warp 0,28646,47,9

@@ -1,0 +1,11 @@
+block item 50815 >=1
+	Window"\n\n你真是太厉害了，恭喜你通过了全部测试，这是送给您的谢礼。",ok
+		window_ok ItemSpace < 3
+			EndWindow"\n\n@c你的物品栏不够了。"
+		Window_ok
+			LeaveGroup
+			killitem 50815
+			giveitem 50813
+			giveitem 50814
+			giveitem (50816%30,50817%30,50818%30,50819%30,60017%40,60018%50,60019%50,60020%50,60021%20)
+			Warp 0,4410,54,46

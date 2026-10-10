@@ -1,0 +1,14 @@
+block Luac stp:legacy:60f667cd65a525dfa4c9 >= 1
+window "\n\n你在实战中缺少信心!不要认为我们空手就比其他人弱!",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800198 >= 1
+endwindow "\n\n你已经有一个了!"
+window_ok
+giveitem 800198
+endwindow "\n\n努力吧!空手夺白刃是需要信心的!"
+
+block
+endwindow "\n\n东部城门由我们格斗家控制!你快去协助里雍大人!"
+
+

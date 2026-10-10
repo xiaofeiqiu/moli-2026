@@ -1,0 +1,3 @@
+block
+window"\n\n 这个风景..哎,",next
+endwindow"\n\n 好久没下过雪了.可怎么还是那么冷呢"

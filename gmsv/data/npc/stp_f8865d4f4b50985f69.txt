@@ -1,0 +1,25 @@
+block item 86395 >= 1
+window 85605,ok
+window_ok  ItemSpace >= 1
+leavegroup
+killitem 86395
+giveitem (86396%50,86397%50,86398%50)
+window_ok ItemSpace < 1
+endwindow 85606
+
+block item 86394 < 1 && level >= 40
+window 85607,next
+window 85608,next
+window 85609,next
+window 85610,next
+window 85611,yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86394
+endwindow 85612
+window_yes ItemSpace < 1
+endwindow 85613
+
+block
+endwindow 85614

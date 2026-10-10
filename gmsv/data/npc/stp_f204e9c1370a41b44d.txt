@@ -1,0 +1,42 @@
+Block Item 800171 >= 1 && item 800181 >= 1
+EndWindow "\n\n回去吧!"
+
+
+Block Item 800181 >= 1
+Window "\n\n这是我家世代相传的宝物,但我不知道它来自何方,也不知道如何使用.",next
+Window "\n\n怎么可能!他惨遭不测...我妹妹这后半辈子该如何是好啊!他们还有一个孩子...虽然不是什么好消息,但我信守诺言,这传世之宝送给你,要收好啊!",yes,no
+window_yes Luac stp:legacy:534a69e53c786e692e9d >= 1
+killitem 800181
+giveitem 800174,1
+endWindow "\n\n一切都是宿命,你的到来是必然发生的,但我担心这个世界的安宁,我听到了生命的哭喊声...无助感应然而生..."
+window_yes Luac stp:legacy:5b943ddfaa6106e6202b >= 1
+killitem 800181
+giveitem 800185,1
+endWindow "\n\n一切都是宿命,你的到来是必然发生的,但我担心这个世界的安宁,我听到了生命的哭喊声...无助感应然而生..."
+window_yes Luac stp:legacy:2b8c9359444226372dce >= 1
+killitem 800181
+giveitem 800183,1
+endWindow "\n\n一切都是宿命,你的到来是必然发生的,但我担心这个世界的安宁,我听到了生命的哭喊声...无助感应然而生..."
+window_yes Luac stp:legacy:d4a2236dbb2c8fd2b96c >= 1
+killitem 800181
+giveitem 800182,1
+endWindow "\n\n一切都是宿命,你的到来是必然发生的,但我担心这个世界的安宁,我听到了生命的哭喊声...无助感应然而生..."
+
+
+Block Item 800171 >= 1
+Window "\n\n开启者啊!这生命之源无法使人长生不老,它只能赋予新的生命.我们在这里,是为了保护大地的生命之源而存在.",next
+Window "\n\n至于你口中的七罪之魂,很遗憾,你被骗了!",next
+Window "\n\n七罪之魂并非元素精灵所有,也并非固有形态,它们是一个拥有独自思想的实体!",next
+Window "\n\n其中七罪之一的贪婪之魂格利德在四千年前就被一个男人封印到这里,至今仍然在此长眠,你可不要把他吵醒啊.",ok
+window_ok Item 800171 >= 1
+killitem 800171,1
+giveitem 800175,1
+
+	
+Block item 800175 >= 1
+EndWindow "\n\n回去吧!"
+
+
+
+Block	
+EndWindow "\n\n回去吧!"

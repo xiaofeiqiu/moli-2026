@@ -1,0 +1,2 @@
+block 
+	window "\n\n\n\n@c你好.我是这里奇奥村庄的村长米西.",ok

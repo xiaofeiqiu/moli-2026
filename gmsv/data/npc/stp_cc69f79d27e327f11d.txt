@@ -1,0 +1,7 @@
+block globalFlag 341 == 1
+window 7020521,ok
+window_ok
+Encount 3|0,23330,18,15||0|||||0|6000275|
+
+block
+endwindow 7020522

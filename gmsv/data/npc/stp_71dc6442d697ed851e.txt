@@ -1,0 +1,35 @@
+block item 50971 >= 1
+Endwindow"\n\n\n在我家中有隐藏的通道,可以快速的通向龙神大人的据说,麻烦你快去阻止对方吧."
+
+
+######获得任务物品【钥匙】
+block item 50970 >= 1
+Window "\n\n什么,入侵的敌人已经知道了龙神大人抚育后代的地方了么,该死的.",next
+Window "\n\n请带上这个要是,在我家中有隐藏的通道,可以快速的通向龙神大人的据说,麻烦你快去阻止对方吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 50970 >= 1
+killitem 50970
+giveitem 50971
+
+
+######判定是否有任务物品【通行证】
+block item 50962 >= 1
+Endwindow"\n\n\n请去村庄的广场那里,找村庄的护卫队长吧,他应当会给你安排任务的."
+
+		
+######获得任务物品【通行证】
+block item 50961 >= 1
+Window "\n\n一路上辛苦了,来访者.",next
+Window "\n\n我们这里是由龙神大人皮肤的小小村庄,由于厌倦了世间的战争和斗争,所以龙神大人用结界将村子封闭了起来,让我们可以安静的生活下去.",next
+Window "\n\n不过呢,最近龙神大人由于要生下后代,所以魔力衰退了,我们得到消息,许多魔物和居心叵测的人趁机想要袭击村庄,因此紧急向冒险者们救援.",next
+Window "\n\n你能来帮忙太好了,请去村庄的广场那里,找村庄的护卫队长吧,他应当会给你安排任务的.",next
+Window "\n\n那么,愿龙神的祝福常在你身.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 50961 >= 1
+giveitem 50962
+
+
+block
+Endwindow"\n\n\n愿龙神的祝福常在你身."

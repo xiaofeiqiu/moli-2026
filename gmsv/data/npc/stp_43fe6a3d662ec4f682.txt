@@ -1,0 +1,22 @@
+block item 800110 == 1 && item 800107 == 1 && itemspace >= 2
+	window "\n\n呜,谢谢你陌生人,无论怎么样\n\n我的身体已经无法恢复了\n\n把这个东西交给我们的首领\n\n他会好好款待你们的",ok
+	window_ok
+	LeaveGroup
+	killleak1item 800107
+	killleak1item 800110
+	giveleak1item 800108
+
+block item 800109 == 1 && itemspace >= 2
+	window "\n\n呜,陌生人,你可以帮我一个忙吗?",yes,no
+	window_no
+	endwindow "\n\n原来你是这样的人,快离开吧",ok	
+	window_yes
+	window "\n我们本来是一队迁徙的树精,准备从阿凯鲁法迁徙到深绿的山道中去\n可是当我睡醒的时候,发现我的同伴们全不见了\n而我的身体也遍体磷伤,后来才知道\n是一伙非法砍树者,掠夺了我的同伴的生命\n他们现在一定就在这座岛上,请你帮我夺回那些树枝\n我需要修复自己的身体",next
+	window "\n\n现在那个樵夫正在坎那贝拉村旅馆!",ok
+	window_ok
+	LeaveGroup
+	killleak1item 800109
+	giveleak1item 800110
+
+block
+	endwindow "\n\n我是谁?我怎么在这里?",ok

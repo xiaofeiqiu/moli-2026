@@ -1,0 +1,5 @@
+block 
+	Window"\n\n要去海湾之村吗？",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18016,16,10

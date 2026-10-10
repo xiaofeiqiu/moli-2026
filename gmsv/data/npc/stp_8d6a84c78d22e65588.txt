@@ -1,0 +1,10 @@
+block item 86264 == 1 &&  havetitle == 61
+window 7019462,yes,no
+window_yes
+window 7019463,ok
+window_ok
+leavegroup
+killitem 86264
+GiveItem 86265
+window_no
+endwindow 7019464

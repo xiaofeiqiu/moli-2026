@@ -1,0 +1,14 @@
+block item 730027 >= 1
+Window "\n\n那是艾克玛莎的照片!你是?",next
+Window "\n\n哦,原来如此我正在为此事担心,诺伦科这几天经常说不回来就不回来,看上去失魂落魄的,而且好几天也没见他的夫人了,原来是这样啊,你说他的夫人被魔物带走了.",next
+EndWindow "\n\n对了,也是最近几天,不少村民对我说半夜时会在村子北边的墓地哪里看见游荡的幽灵出现......令他们很不安,我想也许跟这件事会有关系吧."
+
+Block
+localcount1 = random 2,0
+if localcount1 == 1
+Message 2163
+EndIf
+#
+if localcount1 == 2
+Message 2164
+EndIf

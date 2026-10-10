@@ -1,0 +1,4 @@
+block item 200353 >= 1 && item 200354 >= 1
+killitem 200353
+killitem 200354
+giveitem 200355

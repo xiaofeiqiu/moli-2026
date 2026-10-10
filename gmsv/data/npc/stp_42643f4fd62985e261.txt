@@ -1,0 +1,5 @@
+block item 800026 == 1
+	Window"\n\n我不行了，请你把我的剑带回去交给我的爱人，她。。叫。。艾。丽。。。西。。亚。",ok
+		Window_ok item 800026 == 1 && item 800029 == 0
+		giveitem 800029
+		Window_ok

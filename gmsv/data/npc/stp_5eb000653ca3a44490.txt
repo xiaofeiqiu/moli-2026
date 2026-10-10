@@ -1,0 +1,30 @@
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200578 >= 1
+window "\n\n我看中这花瓶很久了,这玩意能在黑市卖个大价钱,这回我可算发财了.\n\n　　　　　　　　这破镜子你拿去吧.",ok
+window_ok
+killitem 200578
+giveitem 200579
+leavegroup
+Warp 0,27633,217,118
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200576 >= 1
+window "\n\n我知道你们在找心之镜,所以我也料到你们还会回来找我.",next
+window "\n\n咋们长说短说,想要我的心之镜条件很简单,只要你们到富商科洛迪祖传的古代花瓶给我,我就把镜子给你们,他家就在村长家隔壁,至于用什么方法获得就看你们了.",ok
+window_ok
+killitem 200576
+giveitem 200577
+leavegroup
+Warp 0,27633,217,118
+
+
+
+block
+window "\n\n卡纳鲁德,你不会就是他孙子吧,咳～原来你是帮忙找卡纳鲁德的.",next
+window "\n\n不过你来晚一步了,卡纳鲁德受我的佣雇已经前往古代神庙替我寻找上古神器…灵武了,也可能你们永远都见不到他了.",next
+window "\n\n如果你们能去帮他一把或许拿到神器的机率会增加,这也是你们能找他并能救他的唯一法子,你们只要出村进入305.156处的洞窟就明白该怎么做了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200564
+leavegroup
+Warp 0,27633,217,118

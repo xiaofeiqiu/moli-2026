@@ -1,0 +1,11 @@
+block
+window "\n\n你要打开冥界宝箱吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem (200302%30$1,200303%70$1)
+leavegroup
+Warp 0,1533,15,6
+
+
+

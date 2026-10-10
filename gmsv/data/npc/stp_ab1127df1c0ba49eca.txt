@@ -1,0 +1,49 @@
+block item 39720 >= 1 && itemcreatetime 39720 > 2
+window "\n\n好像已有鱼脱钩,你要抬杆么?",yes,no
+window_no
+window_yes item 39720 >= 1
+killitem 39720
+giveitem (39721%99,39722%1)
+
+
+block item 39720 >= 1 && itemcreatetime 39720 == 2
+localcount1 = random 10,0
+if localcount1 >= 2
+window "\n\n好像已有鱼上钩,你要抬杆么?",yes,no
+window_no
+window_yes item 39720 >= 1
+killitem 39720
+giveitem (39725%10,39722%50,39723%40,39724%30,39726%20)
+EndIf
+if localcount1 == 1
+window "\n\n好像已有鱼上钩,你要抬杆么?",yes,no
+window_no
+window_yes item 39720 >= 1
+killitem 39720
+Encount 2|||0|||||0|613061|||||||||
+EndIf
+
+
+block item 39720 >= 1 && itemcreatetime 39720 < 2
+window "\n\n好像没有鱼上钩,你要抬杆么?",yes,no
+window_no
+window_yes item 39720 >= 1
+killitem 39720
+giveitem (39721%99,39722%1)
+
+
+block item 39719 >= 1
+window "\n\n你要开始钓鱼么?",yes,no
+window_no
+window_yes
+window "\n\n远远的抛出一杆,静待鱼上钩.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 39719 >= 1
+killitem 39719,1
+giveitem 39720
+
+
+block
+endwindow "\n\n这里是钓鱼的位置."
+

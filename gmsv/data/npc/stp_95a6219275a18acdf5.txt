@@ -1,0 +1,5 @@
+block item 800026 == 1
+	Window"\n\n侦察兵已死，从他身上找到了遗物",ok
+		Window_ok item 800026 == 1 && item 800028 == 0
+		giveitem 800028
+		Window_ok

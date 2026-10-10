@@ -1,0 +1,26 @@
+block item 86287 >= 1 && item 86289 >= 1 && item 86290 < 1
+window 85280,ok
+window_ok
+leavegroup
+killitem 86289
+GiveItem 86290
+
+block item 86287 >= 1 && StrCmpChat == 85240 && item 86288 < 1
+window 85281,next
+window 85282,next
+window 85283,next
+window 85284,next
+window 85285,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86288
+window_ok ItemSpace < 1
+endwindow 85286
+
+block
+window 85287,next
+window 85288,next
+window 85289,next
+window 85290,next
+window 85291,ok
+window_ok

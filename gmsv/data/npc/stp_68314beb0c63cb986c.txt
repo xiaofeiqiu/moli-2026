@@ -1,0 +1,6 @@
+block EndEvent 516 == 1 && item 141196 >= 1 && item 141200 >= 1
+Window "\n\n『裂口还在,要下去吗?』",yes,no
+Window_no
+Window_yes item 141196 >= 1 && item 141200 >= 1
+LeaveGroup
+Warp 0,57480,16,12

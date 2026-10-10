@@ -1,0 +1,8 @@
+block
+window 7020428,next
+window 7020429,next
+window 7020430,next
+window 7020431,ok
+window_ok
+LeaveGroup
+Warp 0,23232,36,29

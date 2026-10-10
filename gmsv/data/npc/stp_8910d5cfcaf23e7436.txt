@@ -1,0 +1,9 @@
+block item 200020 >= 1 && floor == 25206 && Xpos == 130 && Ypos == 348
+window "\n\n吸水镜发出了声音...",ok
+window_ok
+killitem 200020
+giveitem 200021
+endwindow "\n\n已经装满水了...",ok
+
+block
+endwindow "\n\n附近没有水源可以吸取."

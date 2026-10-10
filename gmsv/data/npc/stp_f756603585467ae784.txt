@@ -1,0 +1,13 @@
+###ÐþÎä´óÈË
+block item 18233>0
+	 Window 7019154,ok
+	 Window_ok
+	 killitem 18233,1
+Encount 2|0,45106,26,25||0|||||0|6000046|||||||||	 
+	 Endblock
+block 
+	endWindow 7019154
+	
+
+
+	

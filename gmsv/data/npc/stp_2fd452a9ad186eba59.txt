@@ -1,0 +1,46 @@
+#本脚本 饕饕不绝 编写 
+block Item 90900 >= 1
+	window	"得到了他的推荐么...\n那你一定不简单了，可以帮帮我么？\n为了世界的和平为了世界的安定（其实是为了奖品）,请你帮助我吧！",Yes,No	
+
+	window_YES
+		window	"你真是好人~",next
+		window	"事情是这样Di..我们的老板在打麻将的时候被人陷害...\n结果被人抓起来了..虽然我们知道是什么人干的可是他们太NB了偶怕怕..",next
+		window	"所以我招募不怕死的...(不好说漏嘴了)..\n没什么\n招募英勇的勇士来帮助我解救老板，至于报酬吗你是不用担心了，绝对吓死你！",next
+		window	"什么，现在叫我说，现在把你吓死了谁去9偶Di老板啊？去吧"	,OK
+		WINDOW_OK itemspace >=1
+		killitem 90900
+		giveitem 90901
+		endwindow "你们好好加油哦。。\n(HOHO又赚了一笔，他们看来是有去无回，和那家伙分了这100W吧，我9他1？……%%￥%%……%—……)"
+		Window_OK itemspace <= 0
+		endwindow "你的东西满了"
+
+block item 90905 <= 0 && item 90900 <= 0 && 90901 <= 0
+	endwindow "最近都被这件事快烦死了..."
+
+block item 90905 >= 1 && item 90901 >= 1
+	window	"没想到你居然活着回来，恩这是...\n看来我要给你奖品咯，收好哦!",OK
+	window_OK itemspace >= 1
+	killitem 90905
+	killitem 90901
+	giveitem (90902%25,90903%20,90904%5,90906%50)
+	endwindow "怎么样，被吓到了吧，HOHO~"
+	window_ok itemspace <= 0
+	endwindow "你的东西满了，想要奖品就丢掉没用的东东-.-"
+block item 90901 >= 1
+	window	"还在这做什么还不快去99偶的老板！",ok
+	window_OK
+		Warp 0,45289,4,3
+
+
+block item 90905 >= 1 && item 90901 <= 0
+	endwindow "我的委托书呢?...\n(迟疑几秒)..\n请问你是？(装成不认识.)"
+
+block item 90902 >= 1 && item 90903 >= 1 && item 90904 >= 1
+	window "你居然收集了这3枚勋章么？\n\n看来你真是太牛了.\n大侠收下偶Di礼物吧",OK
+	window_OK petspace >= 1
+	killitem 90902,1
+	killitem 90903,1
+	killitem 90904,1
+	GivePet (90901%15,90902%5,90912%1,616%79) 
+	window_OK petspace <= 0
+	endwindow "你的宠物栏满了，想要奖品就丢掉没用的宝宝-.-"

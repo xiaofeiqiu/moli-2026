@@ -1,0 +1,18 @@
+block item 500144 == 1
+endwindow "\n\n放心好了，去找我收下吧！我们不会白拿你钱的，我们团队可是最专业的！"
+
+block item 500143 == 1
+window "\n\n你就是委托梅尔大姐让我们找人的人？你要找的人我们已经获知他的行踪了。",next
+window "\n\n不过要想知道详细情况，你得给我点小费，不然我和我那帮兄弟就白忙活了。你原意给吗？",yes,no
+window_no
+window_yes item 500125 == 1
+killitem 500125
+killitem 500143
+giveitem 500144
+endwindow "\n\n谢谢你的赏钱~~你要找的那位夫人是被我一位手下发现的，他从莎莲娜洞窟一路尾随她，结果看见她进入了里谢里雅堡。如果你想进皇宫找到他，可以去里谢里雅堡外的花园附近找我的收下，他现在还在那盯梢呢！"
+
+window_yes
+endwindow "\n\n看来你不知道我们道上的规矩！再见~~"
+
+block
+endwindow "\n\n别妨碍本大爷喝酒！"

@@ -1,0 +1,8 @@
+block
+Window"\n\n啊啊啊!我投降！把「勇气」还给你们吧,我以后不会再这样了!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 50863
+LeaveGroup
+Warp 0,57463,48,56

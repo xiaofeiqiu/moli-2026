@@ -1,0 +1,59 @@
+block endevent 93 == 1 && endevent 91 == 1 && endevent 92 == 1 && item 800117 == 1
+window "\n\n伟大的解放者、一等勋章持有者,今天,你又一次拯救了我们,拯救了这个世界",next
+window "\n\n回去法兰吧,你的阶级不应该再以师范称呼了",next
+killitem 800117
+endevent 587 = 1
+Endwindow "\n\n恭喜你获得了4转资格"
+
+block item 800113 >= 1
+window "\n\n我们伟大的解放者来了?那么你手里的是什么?",next
+window "\n\n你说什么?因为你打破沙漏,柯马特依发生的了巨大的变化?",next
+window "\n\n原来如此,看来又要麻烦您了解放者\n\n现在我以女王命令你,前往柯马特依调查此次事件",yes,no
+window_yes itemspace >= 1
+giveitem 800114
+leaveGroup
+Warp 0,45096,114,70
+
+block item 730005 >= 5
+window "\n\n这个是给你的特殊奖励哦!",ok
+window_ok item 730005 >= 1
+killitem 730005,5
+giveitem 730007,1
+
+block nowevent 564 == 1
+window "\n\n早就听说兰国的勇者们都非常有正义感,并且英勇善战,果然如此.真的谢谢你消灭了他们并且带回梅库塞特的东西,剩下的就由我来完成梅库塞特的遗愿.为了表示感激,特为你准备了礼物请笑纳.",ok
+window_ok nowevent 564 == 1 && itemspace >= 1
+nowevent 564 = 0
+Endevent 589 = 0
+giveitem 730006
+window_ok
+Endwindow "\n\n物品栏不足"
+
+block Endevent 131 == 1 && StrCmpChat == 73500 && nowevent 565 == 0 && level >= 120
+window "\n\n你是说梅库塞特?你是前来帮助我们的法国勇者吧?那是很多年前的事情了,我们曾经都试着去讨伐那群可恶的家伙,但是每次到那里去的人都没有在回来过,现在这里的人们都弄得人心惶惶.",next
+window "\n\n我们想请你去帮助我们杀死那些可恶的家伙,你愿意接受我的请求吗?",yes,no
+window_no
+Endwindow "\n\n哦,是这样啊,他们真的很可怕."
+window_yes
+nowevent 565 =1
+Endwindow "我会在这里祝福你的."
+
+#郡乔呈胶 咯空
+
+###　矫刮鼻阑 啊瘤绊 乐绰 版快　###
+block Item 16228 >= 1
+	Window 21627,next
+	Window 21628,next
+	Window 21629,next
+	Window 21630,next
+	Window 21631,next
+	Window 21632,next
+	Window 21633,next
+	Window 21634,OK
+		Window_OK
+		KillItemall 16228
+		EndEvent 588 = 1
+
+block
+#15839·\n\n　郡官聪酒俊 肋 坷继嚼聪促. 快府 唱扼绰 颇坊 空惫苞狼 焊促 亮篮 包拌甫 官扼绊 乐嚼聪促. 寸脚 鞍篮 咯青磊甫 烹茄 惑龋捞秦甫 快府甸篮 酒林 扁措窍绊 乐瘤夸. 弥辟俊绰 糠 唱扼 鄂苞狼 包拌厩拳啊 捌沥涝聪促父, 攫哩啊绰 辑肺 捞秦且 荐 乐阑 芭扼绊 瓜绊 乐嚼聪促.
+	Endwindow "\n\n欢迎来到艾尔尼巴亚.期待经由你们的到来,能为我国与法兰建立更好的同盟关系.虽然最近我国于兰国的关系日渐恶化,但是我相信总有一天一定能改善这个情况的."

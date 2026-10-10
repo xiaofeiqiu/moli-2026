@@ -1,0 +1,12 @@
+block item 86535 == 1 && item 12001 >= 10 && item 86537 < 1
+window "\n\n不错不错正是我要做菜用的姜,给这是你需要的白酒拿着.",ok
+window_ok item 86535 == 1 && item 12001 >= 10 && item 86537 < 1
+leavegroup
+killitem 12001,10
+giveitem 86537
+
+block item 86535 == 1 && item 12001 < 1
+endwindow "\n\n你想要白酒的话就带10个姜来跟我换!"
+
+block
+endwindow "\n\n中国有句古话:民以食为天,说的一点都不错!"

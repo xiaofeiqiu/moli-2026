@@ -1,0 +1,10 @@
+block
+Window "\n\n  请问您是要进下层挑战？还是领取奖励？进去下层请选是，领取奖励请选否",yes,no
+	Window_yes
+        giveitem 795002,1
+        leavegroup
+        Warp 0,1000,242,85
+        Window_no
+        giveitem 1000508,100
+        leavegroup
+        Warp 0,1000,242,85

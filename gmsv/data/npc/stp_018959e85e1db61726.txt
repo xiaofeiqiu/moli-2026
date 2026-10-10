@@ -1,0 +1,10 @@
+block Luac stp:legacy:c2016166a58a4fd6b83b >= 1
+window "\n\n你的能力可以学习我的厨艺喔？给我10000就教你，要学吗？",yes,no
+window_no
+endwindow "\n\n不学算了，是你的损失"
+window_yes
+addgold -10000
+GiveRecipe 1150
+
+block job <=350 || job >=356
+endwindow "\n你又不是厨师,别来捣乱啦!",ok

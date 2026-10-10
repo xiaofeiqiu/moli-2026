@@ -1,0 +1,26 @@
+block item 200522 >= 1
+endwindow "\n\n希望能从菲利普斯那得到答案."
+
+
+
+block item 200521 >= 1
+window "\n\n天空之剑你已经拿到了,怎么回事,为什么这把剑暗淡无光,而且毫无灵气.",next
+window "\n\n你确定以及肯定这是你内心世界拿回来的天空之剑.",next
+window "\n\n我瞧着这把剑有问题,你去装备店咨询下,菲利普斯他可是这方面的权威.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200522
+
+
+block item 200520 >= 1
+window "\n\n看来国王陛下已经给你都讲过了吧,我就不发唇舌了,来吧～让我引导你进入你的内心世界.",ok
+window_ok
+killitem 200520
+leavegroup
+Warp 0,27531,2,2
+
+
+block
+endwindow "\n\n我们通灵师并非同占卜师,我们通过察觉利用万物灵气来感知事态."
+

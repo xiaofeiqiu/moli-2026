@@ -1,0 +1,33 @@
+block item 86287 >= 1 && item 86291 >= 1 && item 86293 >= 1 && ItemCreateTime 86291 <= 3600 && item 86295 < 1
+leavegroup
+killitem 86291
+window 85327,next
+window 85328,ok
+window_ok
+leavegroup
+killitem 86287
+giveitem 86295
+
+block item 86287 >= 1 && item 86288 >= 1 && item 86289 < 1
+window 85329,next
+window 85330,ok
+window_ok
+leavegroup
+killitem 86288
+giveitem 86289
+
+block item 86286 >= 1 && item 86287 < 1
+window 85331,next
+window 85332,ok
+window_ok
+leavegroup
+killitem 86286
+window 85333,next
+window 85334,next
+window 85335,yes,no
+window_yes
+leavegroup
+giveitem 86287
+endwindow 85336
+window_no
+endwindow 85337

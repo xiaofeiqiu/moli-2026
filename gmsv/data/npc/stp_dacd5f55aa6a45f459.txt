@@ -1,0 +1,17 @@
+block	item 52204 >= 1 && item 52205 >= 1 && item 52206 >= 1 && item 52207 >= 1
+window"\n\n\n什么？？？你竟然集齐了四神兽的晶核！",OK
+window_OK
+window"\n\n@c我期待了它们好久了！你愿意将它送与我么？",yes,no
+window_yes
+KillItem 52204,1
+KillItem 52205,1
+KillItem 52206,1
+KillItem 52207,1
+giveitem 52208,1
+endwindow"\n\n@c拿着吧，这个能帮助你..."
+window_NO
+endwindow"\n\n@c那算了吧，你当我没说过"
+
+block
+window"\n\n\n唉，我最喜欢的就是收集魔兽或者圣兽的神兽的晶核了",OK
+window_OK

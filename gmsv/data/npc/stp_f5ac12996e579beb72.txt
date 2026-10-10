@@ -1,0 +1,25 @@
+
+block item 800087 == 1 && item 800088 == 0 
+	Window"\n\n终于等到这一天了！这把是我屋里宝箱的钥匙，拿去吧，去选一件称心的武器！",ok
+window_ok
+killitem 800087,1
+giveitem 800088,1
+
+block item 800082 == 1 && item 800083 == 0 
+	Window"\n\n太感谢你了，这个勋章给你，拿着它去找勇者村找一下雷奥。",ok
+window_ok
+killitem 800082,1
+giveitem 800083,1
+
+block item 800083 == 1
+	Window"\n\n勇者村就在破屋的北面。",ok
+
+block nowevent 567 == 1 && item 800081 == 0
+	Window"\n\n终于有勇气来到这里，但前面路程很危险，你们要千万小心！",next
+	Window"\n\n这个你拿去，找我的侍从，找到我的家，帮我拿回我的备用武器。",ok
+		Window_ok
+		nowevent 567 = 0
+		giveitem 800081,1
+
+block item 800081 == 1
+	Window"\n\n要先到达海风村。",ok

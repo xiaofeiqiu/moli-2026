@@ -1,0 +1,122 @@
+
+
+
+block Xpos == 15 && Ypos == 9 && Group == 1
+Warp 0,1187,16,7
+
+block Xpos == 15 && Ypos == 9 && Group > 1
+LeaveGroup 
+Warp 0,1187,16,7
+
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 12 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 11 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 10
+Message 777570 
+ 
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 9
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 8
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 12 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 11 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 10
+Message 777570 
+ 
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 9
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 8
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 12 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 11 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 10
+Message 777570 
+ 
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 9
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 8
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 14 && Ypos == 12 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 14 && Ypos == 11 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 14 && Ypos == 10
+Message 777570 
+ 
+block Item 715325 >= 1 && Xpos == 14 && Ypos == 9
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 14 && Ypos == 8
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 13 && Ypos == 12 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 13 && Ypos == 11 
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 13 && Ypos == 10
+Message 777570 
+ 
+block Item 715325 >= 1 && Xpos == 13 && Ypos == 9
+Message 777570 
+
+block Item 715325 >= 1 && Xpos == 13 && Ypos == 8
+Message 777570 
+
+
+block Item 715325 >= 1 && Xpos == 11 && Ypos == 19
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 11 && Ypos == 18
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 11 && Ypos == 17
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 11 && Ypos == 16
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 10 && Ypos == 19
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 10 && Ypos == 18
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 10 && Ypos == 17
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 10 && Ypos == 16
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 9 && Ypos == 19
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 9 && Ypos == 18
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 9 && Ypos == 17
+Message 777571
+
+block Item 715325 >= 1 && Xpos == 9 && Ypos == 16
+Message 777571

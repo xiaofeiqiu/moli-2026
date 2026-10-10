@@ -1,0 +1,22 @@
+block globalFlag 301 == 1 && globalFlag 303 == 0
+window 7020387,next
+window 7020388,ok
+window_ok
+globalFlag 303 = 1
+Encount 2|0,23261,87,135||0|||||0|6000229|||||||||
+
+block globalFlag 301 == 1 && item 11201 >= 20 && item 11200 >= 40
+window 7020389,OK
+window_ok
+killitem 11201,20
+killitem 11200,40
+globalFlag 302 = 1
+
+block globalFlag 299 == 1 && globalFlag 300 == 0
+window 7020390,next
+window 7020391,ok
+window_ok
+globalFlag 300 = 1
+
+block
+endwindow 7020392

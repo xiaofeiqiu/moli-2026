@@ -1,0 +1,25 @@
+block item 87705 == 1
+endwindow "\n\n神器已经制作完成，快去向阿尔杰斯报到吧，貌似他有任务委托你。"
+
+block item 87704 == 1 && item 87695 == 1 && item 87696 == 1 && item 87697 == 1 && item 87698 == 1
+window "\n\n制造图拿来了吗，赶快把四象珠交给我赶快打造。",ok
+window_ok
+killitem 87704
+killitem 87695
+killitem 87696
+killitem 87697
+killitem 87698
+giveitem 87705
+
+block item 87703 == 1
+endwindow "\n\n快去找武神吧，他就在对面的房间里。
+
+block item 87702 == 1
+window "\n\n四象珠已经修复了吗？太好了~~这下神界将胜券在握。阿尔杰斯那时绝对没看走眼，你绝非等闲之辈。",next
+window "\n\n不过目前神器图纸被武神所看管，你去找他拿图纸吧。",ok
+window_ok
+killitem 87702
+giveitem 87703
+
+block
+endwindow "\n\n你好像不是我们神界之人啊！"

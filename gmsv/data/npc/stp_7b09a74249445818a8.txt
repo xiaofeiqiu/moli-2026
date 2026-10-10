@@ -1,0 +1,17 @@
+#本任务由兰纳的弟弟（IKKI制作）
+block item 990901 >= 1
+	window "\n\n哈哈哈哈,看来王妃叫你来的啊,我的诅咒终于灵验了!",next
+	window "\n\n我劝你还是回去吧,要不然,我叫你知道什么叫做生不如死!",yes,no
+	window_yes
+		killitem 990901,1
+		giveitem 990902,1
+		endwindow "\n\n原来是个胆小鬼啊,哈哈哈哈,\n\n王妃真是个大笨蛋啊,派个胆小鬼来送死,\n\n不怕让人笑掉大牙啊,哈哈!",ok
+	window_no
+		window "\n\n我要让你知道什么是死亡的滋味!",ok
+		window_ok
+		killitem 990901,1
+Encount 3|0,307,0,4|||||0|||991003|||||||||
+
+
+block
+	endwindow "\n\n你是什么人?你是怎么进来的?",ok

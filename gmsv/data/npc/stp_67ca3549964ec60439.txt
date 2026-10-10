@@ -1,0 +1,29 @@
+block item 200235 >= 1
+endwindow "\n\n考虑一下,要不要来做我的伙计."
+
+
+
+block item 200234 >= 1
+window "\n\n啊哦～这么快就把大米拿来啦,给我酿酒了.",ok
+window_ok
+killitem 200234
+giveitem 200235
+
+
+
+block item 200233 >= 1
+endwindow "\n\n你看见村里谁家有种米的就是查尔斯家了."
+
+
+
+block item 200232 >= 1
+window "\n\n竟然～竟然有外国的人知道我酿造的美酒,太好了.",next
+window "\n\n什么?只是酒吧里的酒鬼要,啊～算了,给你是可以,不过外面传闻黑巫师那帮人在城外转悠,害的我不敢去谢奈斯村找查尔斯索要大米来酿酒.",next
+window "\n\n如果你能帮我跑趟腿,我会把珍藏的陈酒给你,那可是上品哦.",ok
+window_ok
+killitem 200232
+giveitem 200233
+
+
+block
+endwindow "\n\n欢迎到我家里来做客."

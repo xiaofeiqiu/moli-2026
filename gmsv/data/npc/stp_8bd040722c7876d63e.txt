@@ -1,0 +1,14 @@
+block item 87931 == 1
+endwindow 933510
+
+block item 87930 == 1
+window 933511,next
+window 933512,next
+window 933513,next
+window 933514,ok
+window_ok
+killitem 87930
+giveitem 87931
+
+block
+endwindow 933515

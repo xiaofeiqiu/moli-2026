@@ -1,0 +1,6 @@
+Block
+Window "玛雅族族长塞西：请带来土龙×10，我会交给你下一步的调查资料。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:2e431cab2ecf9e8e8cd3

@@ -1,0 +1,12 @@
+block item 54011 >=1 ||54012 >=1
+	endwindow "\n\n\n@c呵呵~~宴会我会继续举办下去的~~\n\n\n大家一起尽情得玩吧~！"
+block item 54010 >= 1 && item 54000 >= 1
+	window "\n\n\n\n@c 呜........头好痛.......",next
+	window "\n\n@c 你.....\n\n原来是这样......\n\n是你让我摆脱那个人的控制的吧！\n\n这次真的谢谢你了...",next
+	window "\n\n\n@c 请接受我最真诚的感谢！",ok
+	window_ok
+	killitem 54000,99
+	killitem 54010,99
+	giveitem (54017%1,54018%1,54019%1,54020%1,54021%1,54022%1)
+block
+	endwindow"\n\n\n\n@c 欢迎大家到我的宫殿里做客~~呵呵"

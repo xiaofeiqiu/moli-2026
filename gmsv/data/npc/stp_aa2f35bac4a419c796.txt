@@ -1,0 +1,9 @@
+block item 72006 == 1
+	Window"\n\n是会长派你来的？\n据我调查,狗洞不知道为何,结界附近的防御越来越弱,那里一定有古怪,\n但是我要守护这个存在英雄你能否替我走一趟?",next
+	Window"\n\n这个拿着 也许你会用得上",ok
+		Window_ok item 72006 == 1
+			killitem 72007,1
+			giveitem 72007,1
+
+block 
+	endWindow"\n\n最近村外不要安全 如果没事的少出去走动"

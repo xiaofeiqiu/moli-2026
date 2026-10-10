@@ -1,0 +1,8 @@
+block Endevent 656 == 0
+	window "\n\n你就是帮助使者送来物资的善良的法兰勇者吧。\n\n界王已经送来通知，今后我星灵界与法兰友好交往，你们随时都可以来玩。",ok
+	window_ok Endevent 656 == 0
+	Endevent 656 = 1
+	checktitle
+
+block
+	Endwindow "\n\n@c欢迎常来我们村里逛逛，这里的村民们都很热情的。"

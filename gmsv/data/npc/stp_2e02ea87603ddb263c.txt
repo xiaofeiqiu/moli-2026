@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【围巾兔】吗？",ok
+			Window_ok
+Luac stp:legacy:8b2f0fde1b64abbe69c7
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【灰兔】吗？",ok
+			Window_ok
+Luac stp:legacy:f21bf99fe5725bb1b88c
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【黄兔】吗？",ok
+			Window_ok
+Luac stp:legacy:cf1e777b48408a1011a9
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【红兔】吗？",ok
+			Window_ok
+Luac stp:legacy:e2ce0b937a8775b8a0da
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【雪兔】吗？",ok
+			Window_ok
+Luac stp:legacy:43c7c8230fd31abd7387
+				endif
+

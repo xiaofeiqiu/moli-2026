@@ -1,0 +1,9 @@
+block item 141179 >= 1 && ItemCreateTime 141179 >= 5
+Window "\n\n真不容易!我们到了!咦???那边好像有个死气沉沉的村子?不不不!!我可不跟你们去了!你们想去就下船吧!我可要回去了!这张航海图等我返航以后就会烧掉的!你们放心吧!",ok
+Window_ok item 141179 >= 1
+killitem 141179
+LeaveGroup
+Warp 0,57176,65,100
+
+block item 141179 == 1
+endwindow "\n\n真的是好远啊~~趁这时间你们不如在甲板上决斗吧!我想看看呢!"

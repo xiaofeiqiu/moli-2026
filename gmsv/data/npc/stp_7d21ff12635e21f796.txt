@@ -1,0 +1,12 @@
+block item 88388 == 1
+endwindow "\n\n这...这...就是冰蚕丝好美啊！"
+
+block item 88387 == 1
+window "\n\n传闻这池塘下面住着一只冰蚕，所以我在此守候了一辈子想一睹其芳容。只怪老头我是旱鸭子不会潜水，不然...不然...",next
+window "\n\n你真的肯替我下去瞧瞧冰蚕的样子吗？太感谢您了！",ok
+window_ok
+LeaveGroup
+Warp 0,14319,77,80
+
+block
+endwindow "\n\n你说我是老年痴呆？哈哈~~"

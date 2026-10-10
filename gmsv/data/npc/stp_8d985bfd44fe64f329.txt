@@ -1,0 +1,24 @@
+block group > 1
+window "\n\n请解散队伍",yes,no
+window_no
+window_yes
+LeaveGroup
+
+
+block Level >= 50 && endevent 573 == 1 && Item 39660 >= 1
+window "\n\n这是通往汉米顿村的传送石,要使用吗?\n\n费用是3000元.",yes,no
+window_no
+window_yes gold < 3000 || item 39660 < 1
+endwindow "\n\n你带的钱不够\n\n你少了磁石定位仪,无法传送."
+window_yes Item 39660 >= 1
+killitem 39660,1
+addgold -3000
+Warp 0,32203,120,107
+
+
+block Item 39660 < 1
+endwindow "\n\n你少了磁石定位仪,无法传送."
+
+
+block
+endwindow "\n\n你没有使用此传送石的资格."

@@ -1,0 +1,3 @@
+block
+		Killitem 1000485
+		SetFp -5000

@@ -1,0 +1,7 @@
+block item 87960 == 1 && StrCmpChat == 278808
+window 933685,ok
+window_ok
+Encount 2|0,27244,42,116||0|||||0|88071|||||||||
+
+block
+endwindow 933686

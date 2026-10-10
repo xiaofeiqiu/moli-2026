@@ -1,0 +1,15 @@
+block item 72031 == 1
+	Window"\n\n父亲啊……我……最爱的父亲啊……终于安息了。",next
+	Window"\n巴尔梅莉擦擦眼泪，抬起头来对你笑道：对不起失态了，我应该高兴才是……",next
+	Window"\n慈爱之神戴尼雅,请帮助您的信徒吧! ",next
+	Window"\n巴尔梅莉手中的恶魔之星发出耀眼的闪光.",next
+	Window"感谢您的辛劳，请让我致上我的谢意",ok
+		Window_ok
+			killitem 72030,1
+			killitem 72031,1
+			giveitem 72032
+
+block StrCmpChat == 70033 && item 72040 == 0 && item 72032 == 1
+	Window"\n\n这一切跟恶魔莫多拉一定有关系，能解开这些谜并将莫多拉送入地狱的，只有你了",ok
+	window_ok
+	giveitem 72040

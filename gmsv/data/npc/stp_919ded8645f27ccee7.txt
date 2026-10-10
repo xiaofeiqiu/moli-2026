@@ -1,0 +1,14 @@
+block item 87204 == 1
+endwindow "\n\n好啦~~我把知道的写在纸上了，你们赶快滚出我家！"
+
+block item 87203 == 1 && StrCmpChat == 378652
+window "\n\n你...你...怎么发现我是矮人的，村里人几百年来都只是认为我家族历代是侏儒。",next
+window "\n\n你想知道我们一族的矿洞入口？真不巧，从我这代起早就不和矿洞里的同族来往了。",next
+window "\n\n如果你能给我10W金币的话...嘻嘻~~说不定我会给个知道那洞入口的线索。",ok
+window_ok gold >= 100000
+addgold -100000
+killitem 87203
+giveitem 87204
+endwindow "\n\n呵呵~~看来你是有钱的主，这个线索绝对值这价！",
+window_ok
+endwindow "\n\n貌似你没那么多钱，等有的话再来找我！"

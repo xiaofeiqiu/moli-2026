@@ -1,0 +1,33 @@
+######## 灰熊厉害擂台赛########
+##S级勋章收集熊
+
+
+
+
+####有25个S级勋章
+block Item 715269 >= 25
+window "\n\n您要用25个S级勋章兑换一只巨龙艾汀宠物吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES PetSpace < 1
+endwindow "\n\n你的宠物拦位不够喔!"
+Window_YES PetSpace >= 1 && Item 715269 >= 25
+KillItem 715269,25
+GivePet 27160
+
+####有5个S级勋章
+block Item 715269 >= 5
+window "\n\n您要用5个S级勋章兑换一只海贼王宠物吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES PetSpace < 1
+endwindow "\n\n你的宠物拦位不够喔!"
+Window_YES PetSpace >= 1 && Item 715269 >= 5 
+KillItem 715269,5
+GivePet 27161
+
+
+block
+EndWindow "\n\n只要收集S级勋章就可以跟我换奖品喔!\n\n＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n@c盲目之龙艾汀宠物一只=25枚S级勋章\n\n@c海贼王宠物一只=5枚S级勋章"
+
+ 

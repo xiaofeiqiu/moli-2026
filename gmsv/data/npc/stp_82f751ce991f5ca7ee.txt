@@ -1,0 +1,8 @@
+block item 800083 == 1 && item 800084 == 0 
+	Window"\n\n小家伙们不错！有勇气来到这里，拿着我的信去找占卜师吧。",ok
+window_ok
+killitem 800083,1
+giveitem 800084,1
+
+block item 800084 == 1
+	Window"\n\n占卜师就在北边海滩上的小屋里。",ok

@@ -1,0 +1,7 @@
+block item 87198 == 1
+window "\n\n根据地图所示此处应该有暗道通往山贼老窝，你要打开暗道入口机关吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87198
+Warp 0,25211,47,20

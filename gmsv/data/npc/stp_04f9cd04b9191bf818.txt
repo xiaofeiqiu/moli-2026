@@ -1,0 +1,6 @@
+block item 72009 == 1
+	Window"\n\n我用一个秘密跟你交换，请你不要杀我，饶我一命吧。",next
+	Window"\n\n城里，某个井内藏有黑色宝石，价值非凡 我想那就是你要的。",ok
+		Window_ok item 72009 == 1
+			killitem 72009,1
+			giveitem 72010,1

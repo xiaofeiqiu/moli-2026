@@ -1,0 +1,28 @@
+block item 86606 == 1
+endwindow "\n\n听说有人看见特鲁一直在亚留特村酒吧喝闷酒！"
+
+block item 86605 == 1
+window "\n\n唉~~没想到一件小小的事情，让一位父亲失去了女儿，一位哥哥失去了妹妹。",next
+window "\n\n我知道凯斯这辈子都不会原谅我，你能帮我去找下凯斯的父亲特鲁，问一下小慧的坟墓在哪我想去祭拜下！",ok
+window_ok
+leavegroup
+killitem 86605
+giveitem 86606
+
+
+block item 86604 == 1
+endwindow "\n\n这件事纯属意外，没想到对他的打击这么大！"
+
+block item 18236 == 1
+window "\n\n你好！愿意帮我个忙吗？",yes,no
+window_no
+window_yes
+window "\n\n前段时间我跟未婚夫的妹妹为了一张明星片而起了争端。结果他妹妹一气之下在晚上出城，结果离奇死在野外水塘边。",next
+window "\n\n这件事最后成了我俩的隔膜。请你帮我跑下阿凯鲁法村把这张明信片交给他，希望能得到他的谅解！",ok
+window_ok
+leavegroup
+killitem 18236
+giveitem 86604
+
+block
+endwindow "\n\n凯斯为什么不理我呢？为了躲开我居然跑去阿凯鲁法村了。"

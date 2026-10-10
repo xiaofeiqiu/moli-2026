@@ -1,0 +1,8 @@
+block itemspace == 0 || petspace == 0
+	window"物品栏或宠物栏已满！",ok
+
+block item 52224 == 1
+	window"要打开高级Q零件兑换卡么？",yes,no
+	window_yes
+	killitem 52224
+	giveitem (554105%80,554106%10,660140%10)

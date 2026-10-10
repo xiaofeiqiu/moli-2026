@@ -1,0 +1,27 @@
+block item 70009 >= 1 && item 70014 >= 1 && globalFlag 354 == 0 && globalFlag 355 == 1 
+endwindow 910114
+
+block item 70013 >= 1 && item 70009 == 1 && globalFlag 354 == 0 && globalFlag 355 == 1
+window 910115,yes,no
+window_yes
+killitem 70013
+window 910116,OK
+window_ok
+globalFlag 354 = 1
+Encount 3|0,25024,12,6||0|||||0|70021|||||||||
+window_no
+
+block item 70009 >=1 && item 70010 >= 1 && globalFlag 355 == 1
+killitem 70010
+window 910117,next
+window 910118,next
+window 910119,next
+window 910120,next
+window 910121,ok
+window_ok ItemSpace >= 1
+giveitem 70011
+window_ok ItemSpace < 1
+endwindow 910122
+
+block
+endwindow 910123

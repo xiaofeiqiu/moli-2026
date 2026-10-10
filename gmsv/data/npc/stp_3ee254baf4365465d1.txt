@@ -1,0 +1,11 @@
+block item 87696 == 1
+endwindow "\n\n看来你已经通过白虎大人的考验了！"
+
+block item 87695 == 1
+window "\n\n你就是来找四圣兽之一的白虎吗？村长已经预知你即将到来，故派我来迎你参见白虎大人。",ok
+window_ok
+leavegroup
+Warp 0,29952,19,58
+
+block
+endwindow "\n\n来者何人？"

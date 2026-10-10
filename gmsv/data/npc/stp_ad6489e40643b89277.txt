@@ -1,0 +1,28 @@
+block xpos >=52 && ypos >=51 && xpos <=54 && ypos <= 54 && group > 1
+leavegroup
+
+block xpos == 58 && ypos ==51
+if item 1002000 == 1 && item 1002001 == 1
+window "\n\n　要把供品放到祭坛上吗？",yes,no
+window_yes item 1002000 == 1
+killitem 1002000,(8105128)
+NowEvent 581 = 1
+window_no
+endwindow "\n\n　放在哪里好呢？"
+endif
+if item 1002000 == 0
+endwindow "\n\n　这个台子应该是用来摆放供品的"
+endif
+
+block xpos == 58 && ypos ==54
+if item 1002000 == 1 && item 1002001 == 1
+window "\n\n　要把供品放到祭坛上吗？",yes,no
+window_yes item 1002000 == 1
+killitem 1002000,(8105128)
+NowEvent 581 = 1
+window_no
+endwindow "\n\n　放在哪里好呢？"
+endif
+if item 1002000 == 0
+endwindow "\n\n　这个台子应该是用来摆放供品的"
+endif

@@ -1,0 +1,10 @@
+block item 87088 == 1 && item 87089 == 1 && item 87103 < 1
+window "\n\n教皇大人尸体边好像有卷手札，你要把它们收起来吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+giveitem 87103
+Warp 0,25115,151,165
+
+block
+Warp 0,25115,151,165

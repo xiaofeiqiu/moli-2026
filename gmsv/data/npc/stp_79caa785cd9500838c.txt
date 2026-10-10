@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至贝利斯遗迹 ？",yes,no
+		Window_yes
+			KillItem 60233,1
+			Warp 0,30002,313,166
+		Window_no

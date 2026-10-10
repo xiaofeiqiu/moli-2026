@@ -1,0 +1,8 @@
+block item 90003 == 1 && item 90001 == 0 && item 90002 == 0 && item 90004 == 0
+
+	window "\n\n　当你能够运用逻辑去解决问题的时候，世界就简单多了，只有是与否，你说呢？我看到了魔鬼在侵犯我们的家园可是我却没办法，我够理性吗？",ok
+	window_ok itemspace != 0
+		giveitem 90004
+		
+	window_ok itemspace == 0
+		window "\n\n　贪心会害你走向绝路的！"

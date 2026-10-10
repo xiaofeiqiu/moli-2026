@@ -1,0 +1,25 @@
+block Luac stp:legacy:680731b3865626b2639c >= 1
+	window "\n\n\n@c上面介绍了奇怪的配方，要学习吗？",yes,no
+	window_yes Skilllevel 200 ==10 ||Skilllevel 201 ==10 ||Skilllevel 202 ==10 ||Skilllevel 203 ==10 ||Skilllevel 204 ==10 ||Skilllevel 205 ==10 ||Skilllevel 206 ==10 ||Skilllevel 207 ==10 ||Skilllevel 208 ==10 ||Skilllevel 209 ==10 ||Skilllevel 210 ==10 ||Skilllevel 211 ==10 ||Skilllevel 212 ==10 ||Skilllevel 213 ==10 ||Skilllevel 214 ==10 ||Skilllevel 215 ==10 || Skilllevel 216 ==10
+	giverecipe 1134
+	giverecipe 1135
+	giverecipe 1136
+	giverecipe 1137
+	giverecipe 1138
+	giverecipe 1139
+	giverecipe 1140
+	giverecipe 1141
+	giverecipe 1142
+	giverecipe 1143
+	giverecipe 1144
+	giverecipe 1145
+	giverecipe 1146
+	giverecipe 1147
+	giverecipe 1148
+	giverecipe 1149
+	killitem 54008
+	window_yes
+	endwindow "\n\n\n@c很可惜，以您的智商，恐怕是学不会这个配方的"
+	window_no
+block
+	Endwindow "\n\n\n@c必须为生产系,而且得有1个生产技能达到10.\n\n 才可以使用这张卷轴"

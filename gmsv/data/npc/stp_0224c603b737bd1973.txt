@@ -1,0 +1,14 @@
+block item 121 >= 1
+endwindow "\n\n我想飞过去~"
+
+
+block item 119 == 1
+window "\n\n看见那个心形的小岛了吗?我想要过去玩~你愿意帮我吗?",yes,no
+window_no
+endwindow "\n\n你是坏人..."
+window_yes
+window "\n\n真的啊?不过还是不用了,你还是先把这个东西带去给我的主人吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 121,1

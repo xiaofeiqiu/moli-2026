@@ -1,0 +1,8 @@
+block
+window 85600,yes,no
+window_no
+leavegroup
+Warp 0,1000,233,78
+window_yes
+leavegroup
+Warp 0,28204,37,71

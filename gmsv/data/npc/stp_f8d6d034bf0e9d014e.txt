@@ -1,0 +1,58 @@
+block endevent 601 == 1
+window "\n\n『女武士看到照片后,默默地留下了眼泪...』",next
+window "\n\n『女武士慢慢抬起头,对你露出了微笑』",next
+window "\n\n『我全都记起来了...那场战斗,我中毒后感到一阵头晕,在仅有的一点意识中,我看到他为了保护我而收到了致命伤,随后我便彻底昏过去了.』",next
+window "\n\n在我醒来的时候,我只看到敌人的尸体,却没看到他的身影...现在想想,他是不想让我知道他出事了吧...对不起在这个节日里对你说这些话.",next
+window "\n\n希望你能珍惜眼前的人,珍惜在一起的每一分每一秒,祝有情人终成眷属.",ok
+window_ok
+killitem 730063
+giveitem 730064
+
+
+block item 730063 >= 1
+window "\n\n『女武士看到照片后,默默地留下了眼泪...』",next
+window "\n\n『女武士慢慢抬起头,对你露出了微笑』",next
+window "\n\n『我全都记起来了...那场战斗,我中毒后感到一阵头晕,在仅有的一点意识中,我看到他为了保护我而收到了致命伤,随后我便彻底昏过去了.』",next
+window "\n\n在我醒来的时候,我只看到敌人的尸体,却没看到他的身影...现在想想,他是不想让我知道他出事了吧...对不起在这个节日里对你说这些话.",next
+window "\n\n希望你能珍惜眼前的人,珍惜在一起的每一分每一秒,祝有情人终成眷属.",ok
+window_ok
+killitem 730063
+giveitem 730064
+endevent 601 = 1
+checktitle
+
+
+block item 730062 >= 1
+window "\n\n这个是?要让我先入睡?虽然不明白,但是感觉很厉害的样子!试试看吧,就拜托你了,我先睡了!",ok
+window_ok
+changepal 20,120
+window "\n\n『眼前白光一闪,巫术生效了.你似乎进入了她的梦中』",ok
+window_ok
+killitem 730062
+leavegroup
+Warp 0,57420,50,63
+
+
+block item 730060 >= 1
+endwindow "\n\n在法兰城当中,谁最了解毒呢?"
+
+
+block
+window "\n\n我和我的未婚夫在一次冒险途中失败了,我中了绿色口臭鬼的毒,使我失去了很多记忆.",next
+window "\n\n都到情人节了,他现在都没有回来找我,真可气!因为这可恶的毒,我都快记不清他的模样了...你可以帮我解毒吗?",yes,no
+window_no
+endwindow "\n\n好吧,我不会勉强你的.祝你情人节快乐,珍惜身边的人."
+window_yes
+window "\n\n谢谢你愿意帮我,在我的身体里还有残存的毒液,我划破手指取给你一些,希望能有什么线索.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 730060
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+block item 60408 >= 1
+	window"\n\n（几近崩溃的少女……）",next
+	window"\n\n为什么丘比要做这样的事……",next
+	window"\n\n既然灵魂宝石会孕育出魔女，大家不都只有去死了吗，你也是，我也是……",ok
+		window_ok
+Encount 2|0,45118,2,4||||||||6000059|||||||||
+block item 60409 >= 1 && item 60415 >= 1
+	window"\n\n…………",ok
+		window_ok
+Encount 2|0,45118,2,4||||||||6000065|||||||||
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【大地鼠】吗？",ok
+			Window_ok
+Luac stp:legacy:16f913969a787a31d987
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【恶梦鼠】吗？",ok
+			Window_ok
+Luac stp:legacy:3438fe0aa5e474052e9f
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【火焰鼠】吗？",ok
+			Window_ok
+Luac stp:legacy:192250f7769e220a4848
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【宝石鼠】吗？",ok
+			Window_ok
+Luac stp:legacy:b0e26c1462bd5852b5dd
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【水蓝鼠】吗？",ok
+			Window_ok
+Luac stp:legacy:d10509a7aebda77d41c7
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【鼠王】吗？",ok
+			Window_ok
+Luac stp:legacy:fd4f87cc01323494b01a
+				endif
+

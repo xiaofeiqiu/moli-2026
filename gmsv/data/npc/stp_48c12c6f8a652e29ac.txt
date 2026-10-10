@@ -1,0 +1,6 @@
+Block
+Window "请把这条线索带给长老穆拉，再调查老界神的古墓。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:f55ec623304bc3a4bd5c

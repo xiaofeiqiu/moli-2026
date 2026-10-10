@@ -1,0 +1,8 @@
+block
+window "\n\n你要取出火种吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200573
+leavegroup
+Warp 0,27631,313,332

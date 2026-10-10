@@ -1,0 +1,14 @@
+block Item 715181 >= 1
+Window "\n\n出口在这边请,小心滑倒!",ok
+Window_ok
+LeaveGroup
+Warp 0,2100,62,45
+
+
+
+block Item 715179 >= 1
+Window "\n\n勇士饶命啊!您要什么我都给您!请绕小女子蛟龙一条小命吧!饶了我吧!",next
+Window "\n\n研究工具?给!您要什么我都给您",ok
+Window_ok
+killitem 715179
+giveitem 715181

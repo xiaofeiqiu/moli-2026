@@ -1,0 +1,7 @@
+block
+window "\n\n你确定要使用佣兵身份卡[Ｃ]吗?",yes,no
+window_yes
+killitem 795200
+EndEvent 590 = 1
+checktitle
+window_no

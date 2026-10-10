@@ -1,0 +1,17 @@
+block Item 14034 == 0 && Item 12402 == 0 && Item 12410 == 0
+	Window 33380,Next
+	EndWindow 33381,OK
+
+block Item 14034 < 25 && Item 12402 < 10 0 && Item 12410 < 30
+	EndWindow 33382,OK
+
+block Item 14034 >= 25 && Item 12402 >= 10 0 && Item 12410 >= 30
+	Window "\n\n 材料够啦！\n\n 马上就开始做特制韩式泡菜稀饭咯。对了,还得付我500加工费哦。",YES,NO
+        	Window_NO
+        	EndWindow "\n\n\n@c　不想做了吗?太可惜了... 
+		Window_yes
+		AddGold -500
+		KillItem 14034,5
+		KillItem 12402,3
+		KillItem 12410,10
+		GiveItem 360310,3	

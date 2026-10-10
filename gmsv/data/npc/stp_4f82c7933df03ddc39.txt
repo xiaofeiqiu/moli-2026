@@ -1,0 +1,11 @@
+block item 60008>= 1
+endwindow "\n\n虽然你来晚了,也算你命大,不然哼哼..."
+
+
+block item 60007>= 1
+window "\n\n教主的手令带来了吗?教主吩咐你立马赶回位于黄陵内的总坛,这是你的通行令牌.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 60007
+giveitem 60008

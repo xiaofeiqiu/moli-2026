@@ -1,0 +1,6 @@
+block item 18443 >= 5
+killitem 18443,5
+LeaveGroup
+Warp 0,205,51,40
+block
+	Window "\n\n@c回荡着一股幽怨的气息....",ok

@@ -1,0 +1,10 @@
+block ItemSpace < 1
+EndWindow "\n\n您的物品栏满了"
+
+block ItemDur 715182 == 1
+KillItem 715182,1
+GiveLeak1Item (715213%10,715214%10,715215%5,715216%10)
+
+block ItemDur 715182 >= 2
+SetDur 715182,-1
+GiveLeak1Item (715213%10,715214%10,715215%5,715216%10)

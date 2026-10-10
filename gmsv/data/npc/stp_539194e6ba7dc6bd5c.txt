@@ -1,0 +1,6 @@
+block item 87453 >= 1
+window "\n\n你要用水桶爬下去吗？",yes,no
+window_no
+window_yes
+killitemall 87453
+Warp 0,29645,127,18

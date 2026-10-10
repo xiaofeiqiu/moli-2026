@@ -1,0 +1,31 @@
+block item 90857 == 1
+localcount20 = random 3,0
+
+if localcount20 == 1
+window"@c\n\n是这口井吧..绳索放下去看看",ok
+window_ok
+killitem 90857
+giveitem 90858
+leavegroup
+message 378678
+Warp 0,400,677,319
+endif
+
+if localcount20 == 2
+window"@c\n\n是这口井吧..绳索放下去看看",ok
+window_ok
+killitem 90857
+message 378679
+Warp 0,44,18,21
+endif
+
+if localcount20 == 3
+window"@c\n\n是这口井吧..绳索放下去看看",ok
+window_ok
+killitem 90857
+message 378679
+Warp 0,45,18,21
+endif
+
+block
+Endwindow"@c\n\n这里有三口井..只有木桶..需要一根绳子打捞一下"

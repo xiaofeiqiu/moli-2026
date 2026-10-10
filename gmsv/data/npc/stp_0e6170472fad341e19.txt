@@ -1,0 +1,5 @@
+block
+window "\n\n你要进入芙蕾雅深海吗?",yes,no
+window_yes
+leavegroup
+Warp 0,32744,202,36

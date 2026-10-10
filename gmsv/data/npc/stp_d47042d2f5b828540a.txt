@@ -1,0 +1,14 @@
+
+
+
+block item 715164 > 0
+window "\n\n你说～我的女儿想见我??\n可是我已经变成魔物了．．．．",next
+window "\n\n啊～～你手上的是．．．．",ok
+Window_OK item 715164 > 0
+KillItem 715164,1
+Warp 0,32272,13,7
+Endblock
+
+
+block
+Endwindow "\n\n啊～～你手上的是．．．．"

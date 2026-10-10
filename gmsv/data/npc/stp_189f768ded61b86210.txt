@@ -1,0 +1,7 @@
+block globalFlag 339 == 1 && globalFlag 340 == 0
+window 900604,ok
+window_ok
+Encount 3|0,23318,10,2||0|||||0|61043|
+
+block
+endwindow 900605

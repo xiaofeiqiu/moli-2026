@@ -1,0 +1,12 @@
+block item 86604 == 1 && item 86605 < 1
+window "\n\n是那丑女人叫你把这张明星片拿来的吗？现在这东西有什么用，我妹妹又不会复活。",next
+window "\n\n是她间接害死我妹妹的，我一辈子都不想见到他。",next
+window "\n\n凯斯一气之下把明星片撕得粉碎。",ok
+window_ok
+leavegroup
+killitem 86604
+giveitem 86605
+
+
+block
+endwindow "\n\n............."

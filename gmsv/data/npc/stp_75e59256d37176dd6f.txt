@@ -1,0 +1,10 @@
+block checkskillslot == 10
+window "\n\n是否要使用技能格增长卡Lv1使你的技能格数从10个升级到11个?",yes,no
+window_yes
+killitem 730059,(17142)
+addskillslot
+
+
+block
+endwindow "\n\n技能格10格时才能使用."
+

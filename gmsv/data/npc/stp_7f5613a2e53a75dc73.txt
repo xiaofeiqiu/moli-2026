@@ -1,0 +1,5 @@
+block Luac stp:legacy:5428088f432a1862570d >= 1
+	Window "\n\n　这里是极限挑战场，欢迎进入！。",ok
+	window_ok
+        leavegroup
+        Warp 0,60110,16,23

@@ -1,0 +1,16 @@
+block Item 1000256>0
+	 EndWindow 7001035
+block gold >= 1000
+	 Window 7001036,YES,NO
+	 Window_YES ItemSpace == 0
+	 EndWindow 1100001
+	 Window_YES Gold < 1000
+	 EndWindow 3	 
+	 Window_YES 
+	 AddGold -1000
+	 GiveLeak1Item 1000256,1	 	 
+	 EndWindow 7001037
+	 Window_NO
+	 EndWindow 7001038
+	 
+

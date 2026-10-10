@@ -1,0 +1,8 @@
+block item 87438 == 1
+endwindow "\n\n快去救博士，不要管我，我休息下就没事了。"
+
+block
+window "\n\n太恐怖了...太恐怖了。那个幸存者突然开始变异了。",next
+window "\n\n快去...快去...救博士，他和几个研究员还没有跑出来，这是病毒隔离实验室的钥匙。",ok
+window_ok
+giveitem 87438

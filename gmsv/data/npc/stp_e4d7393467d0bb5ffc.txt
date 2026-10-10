@@ -1,0 +1,10 @@
+block globalFlag 297 == 0
+window 900536,next
+window 900537,next
+window 900538,ok
+window_ok
+LeaveGroup
+globalFlag 297 = 1
+
+block
+endwindow 900539

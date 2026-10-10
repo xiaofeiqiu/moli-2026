@@ -1,0 +1,10 @@
+block item 652595 >= 1
+window "\n\n你,我见过你.",ok
+window_ok item 652595 >= 1
+Encount 2|0,44709,6,8||0|||||0|21202|||||||||
+
+
+block
+endwindow "\n\n这里是禁地,请立刻离开."
+
+

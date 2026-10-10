@@ -1,0 +1,6 @@
+block Item 800097 == 1
+	Window"\n\n小鬼！",next
+	Window"\n\n来到了我的领地，让你们有来无回！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18093,23,19|800097|||||||800045|||||||||

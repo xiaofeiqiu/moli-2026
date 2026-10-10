@@ -1,0 +1,10 @@
+block item 115 >= 1
+endwindow "\n\n你看这里好多花啊,好好看!"
+
+
+block item 119 == 1
+window "\n\n这里好多花呀...\n\n好啦,知道你来做什么,这个星星给你!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 115,1

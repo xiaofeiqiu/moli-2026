@@ -1,0 +1,58 @@
+
+
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 7 && Group == 1 
+KillItem 715325
+Message 777569 
+Warp 0,1188,15,9
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 7 && Group > 1 
+LeaveGroup 
+KillItem 715325
+Message 777569 
+Warp 0,1188,15,9
+
+block Xpos == 16 && Ypos == 7 && Group == 1 
+Warp 0,1188,15,9
+
+block Xpos == 16 && Ypos == 7 && Group > 1 
+LeaveGroup 
+Warp 0,1188,15,9
+ 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 6 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 7 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 15 && Ypos == 8
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 6 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 7 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 16 && Ypos == 8 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 6 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 7 
+Message 777569 
+KillItem 715325 
+
+block Item 715325 >= 1 && Xpos == 17 && Ypos == 8 
+Message 777569 
+KillItem 715325 
+

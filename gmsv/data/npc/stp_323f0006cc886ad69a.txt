@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至曙光骑士营地 ？",yes,no
+		Window_yes
+			KillItem 60214,1
+			Warp 0,100,511,281
+		Window_no

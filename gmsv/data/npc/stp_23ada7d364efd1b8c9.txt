@@ -1,0 +1,8 @@
+Block
+Window"\n\n\n就以你们的实力休想和魔族对抗....既然你们打倒了我 告诉你们吧 阿尔杰斯被囚禁在哥拉而城.....,魔族终会统治世界!!",ok
+Window_ok
+EndEvent 694 = 1
+GiveItem 661202
+CheckTitle
+LeaveGroup
+Warp 0,1000,242,100

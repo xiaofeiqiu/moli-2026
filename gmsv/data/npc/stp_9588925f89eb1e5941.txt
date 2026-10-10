@@ -1,0 +1,29 @@
+block item 60005 >= 1
+endwindow "\n\n到他家去调查一下吧!"
+
+
+block item 60004 >= 1
+window "\n\n从你获得的特殊情报来看,国王有危险,至于土匪能知道你的身份,看来我已经开始怀疑我的副手,自从你走后,他就无故失踪了,看来你要到他家里进行调查一下.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 60004
+giveitem 60005
+
+
+block item 60001 >= 1
+endwindow "\n\n勇士请注意安全!"
+
+
+block item 60000 >= 1
+window "\n\n现在情况比较复杂,那些匪帮一听到剿匪都趴窝不敢出来,所以我们一直找不到其巢穴.",next
+window "\n\n还好我们巡逻队误打误撞,歼灭了在附近野外的流窜匪帮小队,正好你能带着这些诱饵,冒充这些土匪回巢,乘机和我们里应外合端掉他.",next
+window "\n\n根据被俘土匪提供的情报,在维诺亚村附近晚上会有接头人跟你接应,带你回巢.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 60000
+giveitem 60001
+
+block
+endwindow "\n\n剿匪比跟魔族打仗更累!"

@@ -1,0 +1,70 @@
+block strCmpChat == 66611
+window "\n\n你要兑换四级支援者奖励吗",yes,no
+window_no
+window_yes item 652620 < 1 || item 652621 < 1 || item 652622 < 1 || item 652623 < 1
+endwindow "\n\n你好像没有能完全消灭敌人,所以我不能给你."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满了!"
+window_yes
+killitem 652620
+killitem 652621
+killitem 652622
+killitem 652623
+giveleak1item (18452%5,18454%5,18455%5,18456%5)
+
+
+block strCmpChat == 66612
+window "\n\n你要兑换三级支援者奖励吗",yes,no
+window_no
+window_yes item 652624 < 1 || item 652625 < 1
+endwindow "\n\n你好像没有能完全消灭敌人,所以我不能给你."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满了!"
+window_yes
+killitem 652624
+killitem 652625
+giveleak1item (18452%5,18454%5,18455%5,18456%5,652630%1)
+
+
+block strCmpChat == 66613
+window "\n\n你要兑换二级支援者奖励吗",yes,no
+window_no
+window_yes item 652626 < 1 || item 652627 < 1 || item 652628 < 1
+endwindow "\n\n你好像没有能完全消灭敌人,所以我不能给你."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满了!"
+window_yes
+killitem 652626
+killitem 652627
+killitem 652628
+giveleak1item (18452%5,18454%5,18455%5,18456%5,652631%1)
+
+
+block strCmpChat == 66614
+window "\n\n你要兑换一级支援者奖励吗",yes,no
+window_no
+window_yes item 652620 < 1 || item 652621 < 1 || item 652622 < 1 || item 652623 < 1 || item 652624 < 1 || item 652625 < 1 || item 652626 < 1 || item 652627 < 1 || item 652628 < 1
+endwindow "\n\n你好像没有能完全消灭敌人,所以我不能给你."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满了!"
+window_yes
+killitem 652620
+killitem 652621
+killitem 652622
+killitem 652623
+killitem 652624
+killitem 652625
+killitem 652626
+killitem 652627
+killitem 652628
+giveleak1item (18452%5$2,18454%5$2,18455%5$2,18456%5$2,652629%1,652632%1)
+
+
+
+block
+window "\n\n目前,一直侵扰法兰王国的魔族数量急剧增加,同时它们组建了庞大的部队攻击我国多个城镇.但是,法兰王国的军队数量有限,村庄保卫战的增援是非常困难的!",next
+window "\n\n如果你有能力,希望你能够为法兰人民,以及法尔尼亚付出你自己的一份力量!请代表法兰消灭它们!",next
+window "\n\n法兰王国目前9个主要村镇需要进行支援,它们分别是:",next
+window "\n\n“圣拉鲁卡村”,“伊尔村”,“亚留特村”,“维诺亚镇”,“奇利村”,“加纳村”,“杰诺瓦镇”,“蒂娜村”和“阿巴尼斯村”.",next
+window "\n\n另外,你可以看看我身边的悬赏公告栏,上面注明的指定道具均是从这些家伙头目身上获得的!如果你持有这些道具,那么你可以和我兑换相应的奖励.",next
+endwindow "\n\n兑换奖励时,请先确认你身上是否拥有指定道具,并且在对话框中输入你要兑换奖励名称.请注意错别字喔!"

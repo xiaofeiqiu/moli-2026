@@ -1,0 +1,11 @@
+block item 87193 == 1 && item 87194 == 1
+window "\n\n黄金？我已近按主人的吩咐将其送于巨人了。如果想要的话自己去找巨人吧！",next
+window "\n\n巨人巢穴的入口不是人类能找到的，如果你确定要去找巨人我可以带你们进去，我可提醒你们他们可不是省油的灯。",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87194
+Warp 0,45276,18,17
+
+block
+endwindow "\n\n.................."

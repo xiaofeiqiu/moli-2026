@@ -1,0 +1,16 @@
+block NowEvent 553 == 1
+Window "\n\n『把事情的经过告诉了年迈的掘地族...』",next
+Window "\n\n原来如此,感谢你拯救了小古.",next
+Window "\n\n在我的脚下有一条还未挖掘完的地道,我年事已高,不能在挖掘了.你自己下去走一趟吧,就剩下一些碎石没处理了,在对面有我们的族人在等你.今后你再来找我的时候,我会带你迅速走通地道的.",ok
+Window_ok
+LeaveGroup
+Warp 0,57461,10,48
+
+block EndEvent 155 == 1
+Window "\n\n欢迎使用我们的地底通道,朋友.",ok
+Window_ok EndEvent 155 == 1
+LeaveGroup
+Warp 0,43000,590,380
+
+block
+EndWindow "\n\n吱~！"

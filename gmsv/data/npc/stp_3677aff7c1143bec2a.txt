@@ -1,0 +1,6 @@
+Block
+Window "接受幻想乡的单人入门挑战，胜利后可领取挑战勋章；连战试炼请向北侧各级接待员报名。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:0492e1c97533b7566c2a

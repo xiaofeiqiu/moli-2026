@@ -1,0 +1,23 @@
+#钱箱脚本 饕饕不绝 编写 13:03 2008-2-19
+
+
+
+block Gold >= 1000000 && Item 90906 >= 1
+	EndWindow "\n\n　喂喂。。我说你的钱满了我怎么给?～"
+
+
+
+############## 双击增加金钱开始,看到这些的玩家只能崩溃... ##############
+
+block Gold <= 999999 && Item 90906 >= 1
+	window "真的要打开古钱的钱箱吗？别吓到哦!",YES,NO
+	Window_Yes Endevent 698 ==0
+        	AddGold 1
+		KillItem 90906,1
+		Endevent 698 = 1
+		CheckTitle
+		EndWindow "\n\@c ....无语..."
+	Window_Yes Endevevt 90906 = 1
+		addgold 1
+		KillItem 90906,1
+		EndWindow "\n\@c ....无语..."

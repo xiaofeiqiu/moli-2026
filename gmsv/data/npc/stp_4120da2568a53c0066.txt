@@ -1,0 +1,15 @@
+#°ÙÈË½±Æ·10²ã
+block Item 1000769 >= 1
+	Window 790002,OK
+	Window_OK
+	giveitem (661044%12,661045%20,661046%34,661047%34)
+	LeaveGroup
+	Warp 0,1000,141,148
+block Item 1000769 == 0 && ItemSpace != 0
+	Window 790002,OK
+	Window_OK Item 1000769 == 0 && ItemSpace != 0
+	giveitem (661044%12,661045%20,661046%34,661047%34)
+#	giveitem (14837%20,14846%20,14877%20,18562%25,18958%25,18581%25)
+	giveitem 1000769,1
+	LeaveGroup
+	Warp 0,1000,141,148

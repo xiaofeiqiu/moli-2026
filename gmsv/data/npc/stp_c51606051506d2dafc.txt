@@ -1,0 +1,22 @@
+
+block item 715165 > 0
+endwindow "\n\n我终于见到爸爸了,谢谢你."
+
+
+block item 715163 > 0
+window "\n\n我只是想知道爸爸是什么样的人\n妈咪就很生气～",next
+endwindow "\n\n呜～呜～呜～"
+
+
+block
+window "\n\n我只是想知道爸爸是什么样的人\n妈咪就很生气～",next
+window "\n\n我听说这个城的通灵师,可以帮人到地狱寻人.通灵师爷爷说我太小,不让我到地狱找爸爸\n他说只要有人愿意帮我就可以了.",yes,no
+Window_NO 	
+endwindow "\n\n呜～呜～呜～我讨厌你～～～"
+Window_YES  ItemSpace < 1
+endwindow "\n\n你的背包满啦!"
+Window_YES 
+GiveLeak1Item 715163,1
+endwindow "\n\n你真是个好人,我听过月心爷爷说过\n我爸爸叫作”仲时”\n听说莲花可以超渡恶鬼\n麻烦你带给我爸爸."
+	
+

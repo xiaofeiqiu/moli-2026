@@ -1,0 +1,6 @@
+block
+Window "\n\n确定要离开这里吗?",yes,no
+Window_no
+Window_yes
+LeaveGroup
+Warp 0,400,571,271

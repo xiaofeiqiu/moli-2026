@@ -1,0 +1,19 @@
+
+
+block ItemDur 715322 == 1
+Window "\n\n无论选择【是】或【否】都会减少耐久度\n\n\n如果不想打卡,请选择取消",yes,no,Cancel
+Window_yes ItemDur 715322 == 1
+Setfeverflg 1
+killitem 715322
+Window_no ItemDur 715322 == 1
+Setfeverflg 0	
+killitem 715322
+
+block ItemDur 715322 >= 2
+Window "\n\n无论选择【是】或【否】都会减少耐久度\n\n\n如果不想打卡,请选择取消",yes,no,Cancel
+Window_yes ItemDur 715322 >= 2
+Setfeverflg 1
+SetDur 715322,-1		
+Window_no ItemDur 715322 >= 2
+Setfeverflg 0	
+SetDur 715322,-1

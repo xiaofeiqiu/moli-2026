@@ -1,0 +1,8 @@
+block item 87667 == 1
+endwindow "\n\n周围没有可疑的线索了！"
+
+block item 87666 == 1
+window "\n\n咦~~脚印到这里就没有了！咦~~树上好像有个手印，肯定是那神秘人的。我们把他的手印摘取下来做线索。",ok
+window_ok
+killitem 87666
+giveitem 87667

@@ -1,0 +1,11 @@
+block item 500131 == 1
+LeaveGroup
+Warp 0,400,88,347
+
+block
+window "\n\n你要摘取花瓣上的露水吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_yes
+giveitem 500131

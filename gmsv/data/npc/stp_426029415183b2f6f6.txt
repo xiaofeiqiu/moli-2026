@@ -1,0 +1,10 @@
+block item 81035 >= 1
+	window "\n\n@c哦?这是星灵镇老镇长交给界神大人的信件吗?\n\n好吧...看来是有事情发生了。那么您请通过吧。",ok
+	window_ok item 81035 >= 1
+	killitem 81035,1
+Luac stp:star_letter
+	LeaveGroup
+	Warp 0,229,14,54
+
+block
+	Endwindow "\n\n@c这里不是你来的地方，快走开。"

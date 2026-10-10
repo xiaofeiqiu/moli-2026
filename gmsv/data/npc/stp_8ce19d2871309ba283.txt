@@ -1,0 +1,19 @@
+block  item 86274 >= 1 && item 86275 >= 1 && item 86276 >= 1 && item 86277 >= 1
+window 7019283,yes,no
+window_yes
+leavegroup
+killItem 86274
+killItem 86275
+killItem 86276
+killItem 86277
+giveitem 86280
+Warp 0,28128,78,119
+window_no
+leavegroup
+killItem 86274
+killItem 86275
+killItem 86276
+killItem 86277
+giveitem 86281
+giveitem 86280
+Warp 0,1000,233,78

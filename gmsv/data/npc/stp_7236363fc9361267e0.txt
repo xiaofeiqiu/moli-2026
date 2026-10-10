@@ -1,0 +1,3 @@
+block item 87656 == 1
+LeaveGroup
+Warp 0,29826,46,54

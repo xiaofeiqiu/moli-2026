@@ -1,0 +1,50 @@
+
+
+block Item 715295 > 0
+endwindow "\n\n热带的花朵真奇妙."
+
+block Item 715294 > 0
+endwindow "\n\n希望能多了解一点有关巨花的事."
+
+block Item 715293 > 0
+endwindow "\n\n希望能多了解一点有关巨花的事."
+ 
+block Item 715292 > 0
+window "\n\n芬芬是热带植物学者的助理呀～\n我听说她要去坎那贝拉～",OK
+Window_OK Item 715292> 0
+KillItem 715292,1
+GiveLeak1Item 715293,1
+endwindow "\n\n我写封信给你～\n你带去坎那贝拉给芬芬吧!"
+Window_OK
+endwindow "\n\n咦～你的东西突然不见,是不是掉了."
+ 
+
+
+block Item 715291 > 0
+endwindow "\n\n你可以到阿凯鲁法村找惠惠\n她叔叔是热带植物学者!"
+
+
+block Item 715290 > 0
+window "\n\n喔喔～又学了一课\n我想想还有谁对热带植物比较了解.",next
+window "\n\n我想到了～\n你可以到阿凯鲁法村找惠惠\n她叔叔是热带植物学者!",ok
+Window_OK Item 715290 > 0
+KillItem 715290,1
+GiveLeak1Item 715291,1
+endwindow "\n\n你可以到阿凯鲁法村找惠惠\n她叔叔是热带植物学者!"
+Window_OK
+endwindow "\n\n咦～你的东西突然不见,是不是掉了."
+
+ 
+block Item 715289 > 0
+endwindow "\n\n琪琪应该是在南恰特拉第一与第二通道之间的海岸吧!"
+
+block
+window "\n\n我想打听苏之国传说中的巨花,你有兴趣吗??",yes,no
+Window_YES ItemSpace < 1
+endwindow "\n\n我听说植物学家琪琪有研究\n你去找琪琪吧!\n她可能在南恰特拉山的海岸研究!"
+Window_YES
+window "\n\n我听说植物学家琪琪有研究\n你去找琪琪吧!\n她可能在南恰特拉山的海岸研究!",next
+GiveLeak1Item 715289,1
+endwindow "\n\n琪琪应该是在南恰特拉第一与第二通道之间的海岸吧!"
+Window_NO
+endwindow "\n\n有兴趣再找我吧!"

@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【瓦奇肯】吗？",ok
+			Window_ok
+Luac stp:legacy:a21d65644b7f04eff7c8
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【弗奇肯】吗？",ok
+			Window_ok
+Luac stp:legacy:333fb93bcb1e5adaebf4
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【欧奇肯】吗？",ok
+			Window_ok
+Luac stp:legacy:f41df08c669529fe0619
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【波奇肯】吗？",ok
+			Window_ok
+Luac stp:legacy:8a0c2e13db2102862e22
+				endif

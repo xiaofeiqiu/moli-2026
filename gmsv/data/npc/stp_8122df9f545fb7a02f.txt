@@ -1,0 +1,7 @@
+block
+	window 7019423,yes,no
+	window_yes
+	leavegroup
+	killitem 6610371,1
+	Warp 0,531,14,25
+	window_no

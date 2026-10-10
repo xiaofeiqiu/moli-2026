@@ -1,0 +1,28 @@
+block item 88389 == 1
+endwindow "\n\n绳子终于弄好了，咱们出发去火山顶吧。"
+
+block item 88386 == 1 && item 88387 >= 1 && item 88388 >= 1 && item 9630 >= 1
+window "\n\n嗯...嗯...东西已经备齐了，还愣着干什么一起来搭把手编织成绳子啊！",ok
+window_ok
+killitemall 88386
+killitemall 88387
+killitemall 88388
+killitem 9630,1
+giveitem 88389
+endwindow "\n\n绳子终于弄好了，咱们出发去火山顶吧。"
+
+block item 88386 == 1
+endwindow "\n\n还有什么疑问吗？我告诉你的已经很详细了。"
+
+block item 88385 == 1
+window "\n\n我知错了，我为他们做了那么多事，居然...居然...",next
+window "\n\n他们不仁我就不义，放心我会全力配合你们的，只要我知道的都会告诉你。",next
+window "\n\n月魔宫的确是在库鲁克斯的火山上，但是即使你知道详细的地址也进不去。有我在你大可放心，你别忘了我是干什么的，没有我去不了的地方。",next
+window "\n\n首先我们要做一根经得起炽热的玄冰绳索，别问为什么到时候你自然就懂了。制作玄冰绳索所用到的材料分别是永久冰石、冰蚕丝和曼陀罗藤。",ok
+window_ok
+killitem 88385
+giveitem 88386
+endwindow "\n\n永久冰石你应该最熟悉不过了，至于冰蚕丝和曼陀罗藤么对你这么强的人来说也很容易。\n他们分别在库鲁克斯552.739处的水池下和414.291处。"
+
+block
+endwindow "\n\n看什么看没见过长我这么帅的吗？"

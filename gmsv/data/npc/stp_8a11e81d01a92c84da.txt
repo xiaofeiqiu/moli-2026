@@ -1,0 +1,15 @@
+block item 22341 > 1
+endwindow "\n你这个外挂,等着被封号吧."
+
+
+block item 22342 >= 1
+endwindow "\n快去把这封信带给那个恶劣卑鄙的女人,让她赶快放了我的公主!"
+
+
+block item 22341 == 1
+window "\n\n唉?能动了?谢谢你!勇者!我被关在这里好久了呢,你说什么?是那个魔女叫你來救我的?別开玩笑了!她把我们玩弄得还不夠吗!",OK
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_OK item 22341 == 1
+GiveItem 22342
+endwindow "\n给,请帮我把这封信带给那个恶劣卑鄙的女人,让她赶快放了我的公主!"

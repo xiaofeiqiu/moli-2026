@@ -1,0 +1,9 @@
+########## 完成收集 ##########	
+block Luac stp:legacy:e583ef00e0a0c1ffa03f >= 1
+	Window "\n\n\n@c快跟我来，这里有我们的专属技能可以供你学习",ok
+	Window_ok
+	Leavegroup
+	Warp 0,934,5,19
+	
+block 
+	Window "\n\n\n@c……(沉默是最好的拒绝方式，还是离开吧)",OK

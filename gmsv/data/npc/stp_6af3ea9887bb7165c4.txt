@@ -1,0 +1,6 @@
+block
+window "\n\n我这把老骨头,好久没有活动活动筋骨了.\n\n你想来和我过过招吗?",yes,no
+window_yes
+Encount 2|0,132,17,52||0|||||0|6000005|||||||||
+window_no
+endwindow "\n\n找个过招的人都没有."

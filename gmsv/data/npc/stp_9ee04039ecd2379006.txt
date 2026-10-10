@@ -1,0 +1,13 @@
+			 
+block Item 39655 >= 1
+window "\n\n拿着魔族火把在雪人底下晃了一下\n雪人底部的积雪渐渐融化\n藉由魔族火把的火光出现了神秘的房间\n你要进去这地下的房间吗?",yes,no
+window_yes
+LeaveGroup
+KillItem 39655
+Warp 0,32244,18,4
+
+
+
+
+
+

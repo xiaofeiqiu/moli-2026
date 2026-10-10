@@ -1,0 +1,8 @@
+block item 50969 >= 1
+Window "\n\n要点燃祭坛的火焰么?",yes,no
+Window_no
+Window_yes
+Window "\n\n祭坛的火焰燃烧起来,你似乎听到了龙神巫女的祈祷声回荡在圣域里.",next
+Window "\n\n有什么东西突然出现了.",ok
+Window_ok item 50969 >= 1
+Encount 3|0,57131,61,14|||||0|||6000039|

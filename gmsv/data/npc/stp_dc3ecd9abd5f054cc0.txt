@@ -1,0 +1,77 @@
+block item 60406==1
+
+Endwindow "真是太感谢您了,您真是英雄!",ok
+
+block item 60405==1
+
+window "真是太感谢您了,我终於找回我3件宝物了!",next
+window "请您收下这件礼物吧,当作我对您的谢意!",yes,no
+        Window_no
+        Killitem 60405
+window "那好吧,谢谢您!~",ok
+Endwindow
+        Window_yes Itemspace >= 1
+        Killitem 60405
+        GiveItem 60406
+window_ok 
+        Window_yes Itemspace <= 1
+Endwindow "但您好像没有空位哩!",ok
+
+block item 60402==1
+
+window "请您一定要小心......",ok
+Endwindow
+
+block item 60404==1
+
+window "您好像又打败了一个,请继续努力!",next
+window "您拿著这块镜子再去帮我找吧!",yes
+        Window_yes Itemspace >= 1
+        Killitem 60404   
+        GiveItem 60402
+window_ok 
+        Window_yes Itemspace <= 1
+Endwindow "但您好像没有空位哩!",ok
+
+block item 60401==1
+
+window "请您一定要小心......",ok
+Endwindow
+
+block item 60403==1
+window "您好像打败了一个,请继续努力!",next
+window "您拿著这块镜子再去帮我找吧!",yes
+        Window_yes Itemspace >= 1
+        Killitem 60403        
+        GiveItem 60401
+window_ok 
+	Window_yes Itemspace <= 1
+Endwindow "但您好像没有空位哩!",ok
+
+block item 60400==1
+
+window "请您一定要小心......",ok
+Endwindow
+
+block HaveTitle ==61 && level >= 70
+window "\n\n您是传说中的勇者吗?那太好了,我有件事想求您帮帮我,您愿意听吗?",yes,no
+window_no
+Endwindow "你真是无情啊......",ok
+
+window_yes
+window "\n\n我是从西方来的宝物收藏家,打算来法城收集各种稀有的宝物.但是在来法城的途中不幸遇上了人形化的强盗,他们不但打了我一身,还把我3件名贵的宝物都给拿走了.",next
+window "  您愿意帮我拿回我的东西吗?如果您愿意帮我,我会送您一件神秘的宝物作谢礼的!",yes,no
+
+window_no
+Endwindow "那算了吧.....",ok
+
+window_yes
+window "\n\n那太好了,真是太感谢您了!",next
+window "\n\n我看见那群强盗拿走我的东西之後分别走向伊尔村,圣村以及维村.我还听说他们要分头去洗劫那些村子......",next
+window "\n\n请您拿著这块破妖之镜,只要有了它就能看到他们的真身了......",yes
+	Window_yes Itemspace >= 1
+        GiveItem 60400
+window "\n\n请您一定要帮我拿回我的东西,并且阻止他们的行动!他们很厉害的,请您加倍小心......",ok
+window_ok 
+	Window_yes Itemspace <= 1
+Endwindow "但您好像没有空位哩!",ok

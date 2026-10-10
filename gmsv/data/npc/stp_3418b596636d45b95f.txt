@@ -1,0 +1,8 @@
+block item 200790 >= 1
+window "\n\nÎáĞØÖĞµÄÅ­»ğÉĞÎ´Ï¨Ãğ.",ok
+window_ok itemspace < 1
+endwindow "\n\nÄãµÄ±³°üÂúÀ²!"
+window_ok item 200790 >= 1
+giveitem 200792
+leavegroup
+Warp 0,57155,24,30

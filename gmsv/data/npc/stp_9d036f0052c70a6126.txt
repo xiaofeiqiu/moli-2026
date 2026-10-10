@@ -1,0 +1,18 @@
+block Luac stp:legacy:b302e26f313be8318eee == 1 && Luac stp:legacy:b302e26f313be8318eee == 1 && Luac stp:legacy:b302e26f313be8318eee == 1 && Luac stp:legacy:b302e26f313be8318eee == 1 && Luac stp:legacy:b302e26f313be8318eee == 1 && item 1000201 >= 1
+window "\n\n确定要交出所有水精合成布特拉吗?",yes,no
+window_no
+window_yes Luac stp:legacy:27daccb45db9b028fdcb == 1 || Luac stp:legacy:fff37e67b21180c15624 == 1 || Luac stp:legacy:49914dbfcdda234c1ddd == 1 || petspace >= 1
+endwindow "\n\n携带5个水精才能合成!"
+window_yes Luac stp:legacy:619d983947b4acb69d8f == 1 && Luac stp:legacy:619d983947b4acb69d8f == 1 && Luac stp:legacy:619d983947b4acb69d8f == 1 && Luac stp:legacy:619d983947b4acb69d8f == 1 && Luac stp:legacy:619d983947b4acb69d8f == 1 && item 1000201 >= 1
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killitem 1000201,1
+givepet 330070
+endwindow "\n\n恭喜你合成了布特拉!"
+
+
+block
+endwindow "\n\n似乎缺少了某些宠物,无法使用!"

@@ -1,0 +1,29 @@
+#远古之卵
+
+
+############## 持有两个 ##############
+block Item 375001 >= 2
+	EndWindow "\n\n\n\n\n　　持有两个远古之卵时将会无法使用.",OK
+
+############## 道具满 ##############
+block ItemSpace == 0
+	EndWindow "\n\n\n\n\n您的道具栏已满.@c",OK
+
+############## 耐久度为1 ##############
+block ItemDur 375001 == 1
+	Window "\n\n\n\n\n@c要使用远古之卵的能力开启另一个时空吗?",YES,NO
+	Window_YES ItemDur 375001 == 1
+	KillItem 375001,1,(21283)
+	Warp 0,1000,241,87
+
+	Window_NO
+
+############## 耐久度超过2 ##############
+block ItemDur 375001 >= 2
+	Window "\n\n\n\n\n@c要使用远古之卵的能力开启另一个时空吗?",YES,NO
+	Window_YES ItemDur 375001 >= 2
+	SetDur 375001,-1
+	Warp 0,1000,241,87
+
+	Window_NO
+

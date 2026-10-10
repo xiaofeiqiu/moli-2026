@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至艾儿卡丝之家 ？",yes,no
+		Window_yes
+			KillItem 60231,1
+			Warp 0,43000,22,21
+		Window_no

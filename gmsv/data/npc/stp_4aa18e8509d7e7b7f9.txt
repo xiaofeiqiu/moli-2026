@@ -1,0 +1,17 @@
+block globalFlag 311 == 1 && globalFlag 312 == 0
+window 900345,ok
+window_ok gold <= 998000
+LeaveGroup
+addgold 2000
+globalFlag 312 = 1
+window_ok gold > 998000
+endwindow 900346
+
+block globalFlag 311 == 0
+window 900347,yes,no
+window_yes
+endwindow 900348
+window_no
+
+block
+endwindow 900349

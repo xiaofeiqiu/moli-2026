@@ -1,0 +1,7 @@
+block petspace == 0
+endwindow "\n\n　你的宠物栏已经满了，再也拿不下"
+block petspace != 0 && item 1002012 != 0
+window "\n\n　贝壳里面好象有活的生物，要调查看看吗？",yes,no
+window_yes item 1002012 != 0
+killitem 1002012,(8105130)
+givepet 1005000

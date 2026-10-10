@@ -1,0 +1,8 @@
+block EndEvent 593 == 1
+window "\n\n你确定要使用佣兵身份卡[ＳＳ]吗?",yes,no
+window_yes
+killitem 795204
+EndEvent 593 = 0
+EndEvent 594 = 1
+checktitle
+window_no

@@ -1,0 +1,148 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block item 60818 >= 1 && EndEvent 603 == 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60818,1
+			GiveItem 60290,8
+			addgold 7000
+			EndEvent 603 = 0
+			EndEvent 628 = 0
+			CheckTitle
+block item 60819 >= 1 && item 18975 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60819,1
+			killitem 18975,1
+			GiveItem 60290,10
+			addgold 8000
+			EndEvent 628 = 0
+block item 60820 >= 1 && item 18335 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60820,1
+			killitem 18335,1
+			GiveItem 60290,10
+			addgold 7000
+			EndEvent 628 = 0
+block item 60821 >= 1 && item 18505 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60821,1
+			killitem 18505,1
+			GiveItem 60290,6
+			addgold 4000
+			EndEvent 628 = 0
+block item 60822 >= 1 && item 18506 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60822,1
+			killitem 18506,1
+			GiveItem 60290,6
+			addgold 4500
+			EndEvent 628 = 0
+block item 60823 >= 1 && item 18507 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60823,1
+			killitem 18507,1
+			GiveItem 60290,6
+			addgold 5000
+			EndEvent 628 = 0
+block item 60824 >= 1 && item 18508 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60824,1
+			killitem 18508,1
+			GiveItem 60290,6
+			addgold 5500
+			EndEvent 628 = 0
+block item 60825 >= 1 && item 18580 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60825,1
+			killitem 18580,1
+			GiveItem 60290,10
+			addgold 7000
+			EndEvent 628 = 0
+block item 60826 >= 1 && item 16359 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60826,1
+			killitem 16359,1
+			GiveItem 60290,10
+			addgold 8000
+			EndEvent 628 = 0
+block EndEvent 628 == 1
+	window "\n\n\n\n@c　　　请完成任务后再来接受新的委托。",ok
+		Window_ok
+block itemspace < 1
+	window "\n\n\n\n@c您的背包空间不足，请清理一下。",ok
+		Window_ok
+block EndEvent 628 == 0
+	window "\n\n\n　　要领取B级佣兵任务吗？\n\n　　完成接受的任务后，才可领取下个佣兵任务。",next
+		LocalCount9 = random 9,0
+		if localcount9==9
+			window "\n\n　　【任务】开启者\n\n　　【概要】通过犹大的试炼获得开启者称号\n\n　　【任务物品】开启者称号\n\n　　【奖励】金币7000G　　任务完成证明*8",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60818,1
+				endif
+			Window_no
+		if localcount9==8
+			window "\\n\n　　【任务】火之洞窟\n\n　　【概要】前往火之洞窟击败火之斗神并获得火之乐谱\n\n　　【任务物品】火之乐谱\n\n　　【奖励】金币8000G　　任务完成证明*10",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60819,1
+				endif
+			Window_no		
+		if localcount9==7
+			window "\n\n　　【任务】捉迷藏的铁人\n\n　　【概要】前往维诺亚帮助一郎寻找躲藏起来的孩子并击败试作型牛鬼\n\n　　【任务物品】鬼的标志\n\n　　【奖励】金币7000G　　任务完成证明*10",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60820,1
+				endif
+			Window_no		
+		if localcount9==6
+			window "\n\n　　【任务】诅咒的迷宫Ⅰ\n\n　　【概要】前往诅咒迷宫通过第一个难关\n\n　　【任务物品】圣诏之一\n\n　　【奖励】金币4000G　　任务完成证明*6",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60821,1
+				endif
+			Window_no		
+		if localcount9==5
+			window "\n\n　　【任务】诅咒的迷宫Ⅱ\n\n　　【概要】前往诅咒迷宫通过第二个难关\n\n　　【任务物品】圣诏之二\n\n　　【奖励】金币4500G　　任务完成证明*6",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60822,1
+				endif
+			Window_no
+		if localcount9==4
+			window "\n\n　　【任务】诅咒的迷宫Ⅲ\n\n　　【概要】前往诅咒迷宫通过第三个难关\n\n　　【任务物品】圣诏之三\n\n　　【奖励】金币5000G　　任务完成证明*6",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60823,1
+				endif
+			Window_no
+		if localcount9==3
+			window "\n\n　　【任务】诅咒的迷宫Ⅳ\n\n　　【概要】前往诅咒迷宫通过第四个难关\n\n　　【任务物品】圣诏之四\n\n　　【奖励】金币5500G　　任务完成证明*6",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60824,1
+				endif
+			Window_no
+		if localcount9==2
+			window "\n\n　　【任务】冰雪的牢城\n\n　　【概要】前往佛利波罗岛的冰之洞窟击败露比\n\n　　【任务物品】冰之约束\n\n　　【奖励】金币7000G　　任务完成证明*10",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60825,1
+				endif
+			Window_no
+		if localcount9==1
+			window "\n\n　　【任务】人鱼之泪\n\n　　【概要】前往阿凯鲁法城完成七等勋章任务并获得钱袋\n\n　　【任务物品】钱袋\n\n　　【奖励】金币8000G　　任务完成证明*10",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60826,1
+				endif
+			Window_no

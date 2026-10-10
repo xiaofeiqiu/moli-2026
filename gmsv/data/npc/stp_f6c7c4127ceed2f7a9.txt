@@ -1,0 +1,8 @@
+block
+	window"\n\n是否变成草盏（紫）形象，更改后头像将变为影角（男）？",ok
+	window_ok
+Luac stp:legacy:c0ebe299cf4d8757a112
+Luac stp:legacy:9b0492737a74e7d00bc6
+Luac stp:legacy:93b6f74517a74d24ff4a
+Luac stp:legacy:d0bf88f67421f56b75ed
+		killitem 60268,1

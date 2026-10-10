@@ -1,0 +1,12 @@
+block item 21020 >= 1
+	endwindow "\n石头已经破碎了.里面已经没有有价值的东西了"
+block item 21010 >= 1 && item 21015 >= 1
+	window "\n@n拿出铁锤和钻子敲了敲石块",ok
+	window_ok item 21010 >= 1 && item 21015 >= 1
+	killitem 21010,1
+	killitem 21015,1
+	giveitem 21020,1
+	endwindow "\n得到了酷似地元素的东西?"
+
+block
+	endwindow "\n一个非常奇怪的石头..."

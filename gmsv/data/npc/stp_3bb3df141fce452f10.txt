@@ -1,0 +1,417 @@
+###100##
+block	level	==	100	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	100	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:7bc24f3dceb14285f924
+
+
+###101##
+block	level	==	101	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	101	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:f5682fdf8edbd5449ca6
+
+
+###102##
+block	level	==	102	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	102	&&	item 588999	==	1
+
+killitem 588999,1
+Luac stp:legacy:0fddba532ee3e7de99a2
+
+
+###103##
+block	level	==	103	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	103	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:3ba7bf425b4f10869b69
+
+
+###104##
+block	level	==	104	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	104	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:2adec9cfb42266afa3a2
+
+
+###105##
+block	level	==	105	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	105	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:31bdd9197fd18c62b884
+
+
+###106##
+block	level	==	106	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	106	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:32e483d7544afdec1bcc
+
+
+###107##
+block	level	==	107	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	107	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:d272789038cbde1dc6ac
+
+
+
+###108##
+block	level	==	108	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	108	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:7bea6ff5a1c0fdb01ef2
+
+
+
+###109##
+block	level	==	109	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	109	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:4a43880060c3a57f51be
+
+
+###110##
+block	level	==	110	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	110	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:3d8705947e7f3315d561
+
+
+
+
+###111##
+block	level	==	111	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	111	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:46525c0a9e59c02e7b1e
+
+
+
+###112##
+block	level	==	112	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	112	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:ef0e8b2f030a6ed34213
+
+
+
+###113##
+block	level	==	113	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	113	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:28a459308b555b400fd7
+
+
+
+
+###114##
+block	level	==	114	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	114	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:624958bf863295c9aeb2
+
+
+
+
+
+###115##
+block	level	==	115	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	115	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:ff60e412fb0b534c50da
+
+
+
+
+
+
+###116##
+block	level	==	116	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	116	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:78cf78e1051f0e208306
+
+
+
+###117##
+block	level	==	117	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	117	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:cb59b4336c7e67e00c99
+
+
+
+###118##
+block	level	==	118	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	118	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:5cc55803252c9b119a3b
+
+
+###119##
+block	level	==	119	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	119	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:78e7a4f35fe62329c7d8
+
+
+
+###120##
+block	level	==	120	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	120	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:fd2117c33fc987f67cb5
+
+
+###121##
+block	level	==	121	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	121	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:4d45e80797a5f2728fac
+
+###122##
+block	level	==	122	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	122	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:bbfd6d4b9b3630bd4d72
+
+
+###123##
+block	level	==	123	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	123	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:47edb81a7c5f6dac63f0
+
+
+###124##
+block	level	==	124	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	124	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:2edfb40fcf330d0de829
+
+
+###125##
+block	level	==	125	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	125	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:627326255140757e41d3
+
+
+###126##
+block	level	==	126	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	126	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:22ed0aea39d1dc4de1d6
+
+
+###127##
+block	level	==	127	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	127	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:224d513319a68b7bfa39
+
+
+###128##
+block	level	==	128	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	128	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:2e6807415e13a82e37bb
+
+
+###129##
+block	level	==	129	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	129	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:5eb41a6102a8b982c846
+
+
+###130##
+block	level	==	130	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	130	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:d3ce1ee2be472a43eff0
+
+
+###131##
+block	level	==	131	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	131	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:81d8f641c9a41eda0445
+
+
+###132##
+block	level	==	132	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	132	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:db6c0309aa68d69df865
+
+
+###133##
+block	level	==	133	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	133	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:e2b55ba63c37ee75fd55
+
+
+###134##
+block	level	==	134	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	134	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:1114344cb39587ec2c9a
+
+
+###135##
+block	level	==	135	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	135	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:7348911b17e301d4b884
+
+
+###136##
+block	level	==	136	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	136	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:b561414a9a2c98436b17
+
+
+###137##
+block	level	==	137	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	137	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:bdc2f275172e950129c7
+
+
+###138##
+block	level	==	138	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	138	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:db209bb02dfd065fc05e
+
+
+###139##
+block	level	==	139	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	139	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:a015a7cfae4bf1976054
+
+###140##
+block	level	==	140	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	140	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:d9fe3eb0327022c035ca
+
+
+###141##
+block	level	==	141	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	141	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:bcf646527057ee3d4e05
+
+###142##
+block	level	==	142	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	142	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:db852dc8571cfd2100fb
+
+
+###143##
+block	level	==	143	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	143	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:c49902a9a7a0c3797986
+
+###144##
+block	level	==	144	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	144	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:10991f6aaec6f90a3e34
+
+###145##
+block	level	==	145	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	145	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:25187107ac328b040c2c
+
+###146##
+block	level	==	146	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	146	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:e1950c5233b480bf8b5a
+
+###147##
+block	level	==	147	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	147	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:d47f9f8e0dfd699479b7
+
+###148##
+block	level	==	148	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	148	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:43d0e13972e7421846ee
+
+
+###149##
+block	level	==	149	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	149	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:2d2488f8497ee34ea54d
+
+
+###150##
+block	level	==	150	&&	item 588999	==	1
+window"\n\n 恭喜您的经验增加了..",ok
+window_ok	level	==	150	&&	item 588999	==	1
+killitem 588999,1
+Luac stp:legacy:2eebeb975eff4dd376b8

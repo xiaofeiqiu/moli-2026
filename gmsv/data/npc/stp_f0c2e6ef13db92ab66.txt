@@ -1,0 +1,15 @@
+block item 200777 >= 1 && item 200778 >= 1 && item 200779 >= 1 && item 200780 >= 1 && item 200781 >= 1 && item 200782 >= 1
+window "\n\n动了…它动了…",ok
+window_ok
+killitem 200777
+killitem 200778
+killitem 200779
+killitem 200780
+killitem 200781
+killitem 200782
+Encount 2|0,32751,17,21||0|||||0|50746|||||||||
+
+
+
+block
+endwindow "\n\n虽然看上去很吓人,但是并不会动耶."

@@ -1,0 +1,9 @@
+block item 87634 == 1
+Warp 0,300,542,441
+
+block
+window "\n\nÄãÒª»÷ËéÕâË®¾§Âğ£¿",yes,no
+window_no
+window_yes
+giveitem 87634
+Warp 0,300,542,441

@@ -1,0 +1,10 @@
+block item 730048 >= 1
+Window "\n\n你完成了老师的委托了吗,怎么样,要试试看引发陨石碎片的力量么?",yes,no
+Window_no
+Window_yes item 730048 >= 1
+killitem 730048
+Encount 2|||0|||||0|28108|||||||||
+
+
+block
+EndWindow "\n\n老师拥有很多奇怪的东西哦,其中的陨石碎片据说可以召来很稀奇的怪物哦."

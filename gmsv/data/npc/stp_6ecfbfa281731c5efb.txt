@@ -1,0 +1,29 @@
+#mayko_gm_1102652.txt
+#1110762	\n\n\n@c我回忆起公主殿就头痛～	1
+#1110763	\n\n\n@c也许忘记公主的一切就好了～	1
+#1110764	\n\n\n@c请你离开，我只想静一静～	1
+#1110745	\n\n\n\n@c另外这小东西也送你～	1
+#1110746	\n\n\n\n@c吃了药头好昏～我要睡觉了～	1
+
+block item 1000294 >0
+	Window 7019155,next
+	Window 7019156,next
+	Window 7019157,ok
+	window_ok
+	Warp 0,34003,42,37
+	endblock
+block 
+	window 7019155,next
+	window 7019156,next
+
+	window 7019137,ok
+	Window_ok ItemSpace < 2
+	
+	endwindow 7019128
+	Window_ok
+	GiveLeak1Item 1000294,1
+	window 7019138,ok
+	Window_ok 
+	GiveLeak1Item 1000295,1
+	Warp 0,34003,42,37
+	endwindow 7019157

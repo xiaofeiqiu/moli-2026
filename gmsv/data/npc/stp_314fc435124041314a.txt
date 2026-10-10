@@ -1,0 +1,29 @@
+######判定是否有任务物品【通行证】
+block item 50966 >= 1
+Endwindow"\n\n\n村子的龙神巫女大人应当也在找人帮忙,不过她现在不在,等她回来你去东边的海边找她吧."
+
+		
+######判定是否有任务物品【通行证】
+block item 50963 >= 1
+Endwindow"\n\n\n请去西北的矿洞找到失去联络的采矿队伍."
+
+
+######获得任务物品【证明信】
+block item 50974 >= 1
+Window "\n\n已经找到了采矿小队了么,辛苦了.",next
+Window "\n\n村子的龙神巫女大人应当也在找人帮忙,不过她现在不在,等她回来你去东边的海边找她吧.",ok
+window_ok item 50974 >= 1
+killitem 50974
+giveitem 50966
+
+
+######获得任务物品【通行证】
+block item 50962 >= 1
+Window "\n\n恩,先多谢你来帮忙.",next
+Window "\n\n去村子西北的采矿队伍已经失去联络几天了,我们现在护卫村庄不受怪物的袭击已经很吃力了,无法派出人手去寻找他们,所以希望你能帮忙去矿洞搜索一下他们的消息.",next
+Window "\n\n请带好这个包裹,里面是一些救急的屋子,请多加小心.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+Window_ok item 50962 >= 1
+killitem 50961
+giveitem 50963

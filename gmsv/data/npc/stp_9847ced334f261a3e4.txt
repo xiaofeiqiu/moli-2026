@@ -1,0 +1,19 @@
+block Item 6520 >= 1
+	Window "\n\n虽然这个男人被你打败了失去了一切的骄傲与尊严,但是现在我对他已经没有了感情,愤怒和仇恨的火焰依旧煎熬着我的内心.",NEXT
+	Window "\n\n对我的伤害已经造成了,你让我如何能忘却这一切呢?",NEXT
+	Window "\n\n所谓的错误犹如破碎的镜子一样是再也无法重新回到最初的,补过的镜子依然充满着裂痕.",NEXT
+	Window "\n\n这个给你了!我要亲手杀掉依莉丝那个女人!",NEXT
+	Window "\n\n（罗琪拿着刀跑了出去.）",OK
+	Window_OK itemspace <= 1
+	endWindow "\n\n背包满了,整理一下吧"
+	Window_OK Item 6520 >= 1 && itemspace >= 2
+	KillItem 6520,1
+	GiveItem (6533%1,6534%1,6535%1,6536%1)
+	GiveItem 6532,10
+	LeaveGroup
+	Warp 0,1530,15,6
+
+block
+	Window "\n\n...",OK
+	Window_OK
+	Warp 0,1530,15,6

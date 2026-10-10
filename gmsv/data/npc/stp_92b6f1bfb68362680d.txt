@@ -1,0 +1,15 @@
+block item 800126 >= 1
+endwindow "\n\n快去看看吧!"
+
+
+block
+window "\n\n嗯?你是从哪来的?为什么衣着这么奇怪?",next
+window "\n\n你是说,你被人传送来的?等等,传送又是什么?你说的我都听不懂...搞什么啦?",next
+window "\n\n你想问村里有什么奇怪的事?我们村子很和平,没什么怪事,倒是隔壁瓦尼尔村有些古怪.",next
+window "\n\n那里的村民一夜之间消失的无影无踪,什么都没有留下,你要去看看么?",next
+window "\n\n那把这个给你吧.",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 800126,1

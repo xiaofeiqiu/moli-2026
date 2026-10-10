@@ -1,0 +1,7 @@
+block item 86626 >= 1
+window "\n\n能来到这，证明汝有点实力.不过...！",ok
+window_ok
+Encount 3|||0|||||3|86289|6|0|||||||
+
+block
+endwindow "\n\n................"

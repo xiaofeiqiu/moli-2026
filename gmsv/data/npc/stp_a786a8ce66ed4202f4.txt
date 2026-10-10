@@ -1,0 +1,7 @@
+block SkillLevel 207 == 10
+window"\n\n\n@c 即将学习 10C头盔 将领之盔 制作！",ok
+window_ok
+	KillItem 591266,1
+	GiveRecipe 1130
+block
+Endwindow"\n\n\n@c 你的造头盔技能还未10级，无法学习！"

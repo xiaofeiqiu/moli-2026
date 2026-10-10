@@ -1,0 +1,19 @@
+block item 86624 >= 1 && item 15615 >= 1
+window "\n\n真是麻烦你了，看来你真的是勇者，我就带你去圣殿迷宫吧！",ok
+window_ok
+leavegroup
+killitem 86624
+killitem 15615
+Warp 0,28345,71,28
+
+
+block item 86624 >= 1
+window "\n\n你...你拿着的是勇者召集令！",next
+window "\n\n终于...国王终于派勇者来了！",next
+window "\n\n我刚被迷宫里的恶灵所伤，你能帮我去买点药么？",yes,no
+window_no
+Window_Yes
+endwindow "\n\n那就劳烦你了！"
+
+block
+endwindow "\n\n....................."

@@ -1,0 +1,60 @@
+block Luac stp:legacy:18db8235e69eb43c6a1d >= 1
+	Window "\n\n　欢迎来到白色方舟！",next
+	Window "\n\n　这里是为了给像你这样不断磨练自己的人一个获得更高能力的机会而秘密建造的试炼设施。",next
+	Window "\n\n　如果有接受这个艰难试炼的思想准备的话，那么简单说明一下，怎么样？",yes,no
+	window_yes Luac stp:legacy:cbf0e2a5c49d05892d3f >= 1
+	Window "\n\n  你的战斗能力好象很强呢！",next
+	Window "\n\n  这样的话，请到最上面的入口进入吧！",next
+	Window "\n\n  试着以到达这个建筑的内部最深处为目标而努力吧！",ok
+	window_no
+	window "\n\n  这里不是用自己一个人的力量就能完成的哦，与同伴们一起努力到达目的地吧！",ok
+block Luac stp:legacy:d2b60844277033383568 >= 1
+	Window "\n\n　欢迎来到白色方舟！",next
+	Window "\n\n　这里是为了给像你这样不断磨练自己的人一个获得更高能力的机会而秘密建造的试炼设施。",next
+	Window "\n\n　如果有接受这个艰难试炼的思想准备的话，那么简单说明一下，怎么样？",yes,no
+	window_yes Luac stp:legacy:6ba1ae34a7168e64598d >= 1
+	Window "\n\n  你的战斗能力好象很强呢！",next
+	Window "\n\n  这样的话，请到最上面的入口进入吧！",next
+	Window "\n\n  试着以到达这个建筑的内部最深处为目标而努力吧！",ok
+	window_no
+	window "\n\n  这里不是用自己一个人的力量就能完成的哦，与同伴们一起努力到达目的地吧！",ok
+block Luac stp:legacy:79ffeb8be7eba40dbbe2 >= 1
+	Window "\n\n　欢迎来到白色方舟！",next
+	Window "\n\n　这里是为了给像你这样不断磨练自己的人一个获得更高能力的机会而秘密建造的试炼设施。",next
+	Window "\n\n　如果有接受这个艰难试炼的思想准备的话，那么简单说明一下，怎么样？",yes,no
+	window_yes Luac stp:legacy:83bb2cef27d7b76071e9 >= 1
+	Window "\n\n  你是特别的存在哦，通过了种种考验才成长到现在的局面吧？",next
+	Window "\n\n  这样的话，请到最下面的入口进入吧！",next
+	Window "\n\n  试着以到达这个建筑的内部最深处为目标而努力吧！",ok
+	window_no
+	window "\n\n  这里不是用自己一个人的力量就能完成的哦，与同伴们一起努力到达目的地吧！",ok
+block Luac stp:legacy:b045ccfc2cb3de3b4ac9 >= 1
+	Window "\n\n　欢迎来到白色方舟！",next
+	Window "\n\n　这里是为了给像你这样不断磨练自己的人一个获得更高能力的机会而秘密建造的试炼设施。",next
+	Window "\n\n　如果有接受这个艰难试炼的思想准备的话，那么简单说明一下，怎么样？",yes,no
+	window_yes Luac stp:legacy:c718c5f96a0f0cbe895a >= 1
+	Window "\n\n  你是特别的存在哦，通过了种种考验才成长到现在的局面吧？",next
+	Window "\n\n  这样的话，请到最下面的入口进入吧！",next
+	Window "\n\n  试着以到达这个建筑的内部最深处为目标而努力吧！",ok
+	window_no
+	window "\n\n  这里不是用自己一个人的力量就能完成的哦，与同伴们一起努力到达目的地吧！",ok
+block Luac stp:legacy:01a02b741df3200e8db5 >= 1
+	Window "\n\n　欢迎来到白色方舟！",next
+	Window "\n\n　这里是为了给像你这样不断磨练自己的人一个获得更高能力的机会而秘密建造的试炼设施。",next
+	Window "\n\n　如果有接受这个艰难试炼的思想准备的话，那么简单说明一下，怎么样？",yes,no
+	window_yes Luac stp:legacy:d4f3924d697a9967bfcd >= 1
+	Window "\n\n  制作者吗？看来你的能力已经相当强了，应该可以达到一个新的境界呢！",next
+	Window "\n\n  这样的话，请到最上面的第二个入口进入吧！",next
+	Window "\n\n  试着以到达这个建筑的内部最深处为目标而努力吧！",ok
+	window_no
+	window "\n\n  这里不是用自己一个人的力量就能完成的哦，与同伴们一起努力到达目的地吧！",ok
+block  job >= 451 && job >= 477
+	Window "\n\n　欢迎来到白色方舟！",next
+	Window "\n\n　这里是为了给像你这样不断磨练自己的人一个获得更高能力的机会而秘密建造的试炼设施。",next
+	Window "\n\n　如果有接受这个艰难试炼的思想准备的话，那么简单说明一下，怎么样？",yes,no
+	window_yes Luac stp:legacy:d96b19346a2f0e1f0eba >= 1
+	Window "\n\n  经过了很多深远之处不断的依靠自己能力而获取材料的人啊，应该有提高自己能力的觉悟了吧？",next
+	Window "\n\n  这样的话，请到最下面的第二个入口进入吧！",next
+	Window "\n\n  试着以到达这个建筑的内部最深处为目标而努力吧！",ok
+	window_no
+	window "\n\n  这里不是用自己一个人的力量就能完成的哦，与同伴们一起努力到达目的地吧！",ok

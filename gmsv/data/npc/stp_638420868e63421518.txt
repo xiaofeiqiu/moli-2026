@@ -1,0 +1,9 @@
+block item 87903 == 1
+window 933706,yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,27211,16,55
+
+block
+endwindow 933707

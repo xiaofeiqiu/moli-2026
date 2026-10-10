@@ -1,0 +1,9 @@
+block item 500133 == 1
+window "\n\n你是什么人？卫兵...卫兵...有刺客！",ok
+window_ok
+LeaveGroup
+killitem 500133
+Warp 0,14209,33,28
+
+block
+endwindow "\n\n这里是国王和皇妃就寝的地方不能随意进入！"

@@ -1,0 +1,7 @@
+block item 141212 >= 1
+Window "\n\n『伴随着恐怖的低吼声,一个黑影从中缓缓飘出』",ok
+Window_YES PetSpace == 0 
+EndWindow "\n\n宠物栏已经满了."
+Window_ok item 141212 >= 1
+killitem 141212
+GivePet 21104

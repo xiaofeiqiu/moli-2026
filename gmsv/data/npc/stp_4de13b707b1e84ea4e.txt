@@ -1,0 +1,12 @@
+block Item 60453 == 1
+EndWindow "\n\n不能再拿了..."
+
+
+block
+Window "\n\n要取水吗?",yes,no
+Window_no
+Window_yes ItemSpace <= 1
+endWindow "\n\n\n请整理下包裹再来"
+Window_yes ItemSpace >= 1
+GiveItem 60453,1
+EndWindow"\n\n水流变小了"

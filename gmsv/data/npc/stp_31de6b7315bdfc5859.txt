@@ -1,0 +1,5 @@
+block item 400071 == 1
+	Window"\n\n@c¾ŞÊ¯ÄëÑ¹ÄãÃÇ£¡£¡£¡",ok
+		Window_ok item 400071 == 1
+		Setaction 5
+Encount 3|0,18061,9,8|400071|||||||800036|||||||||

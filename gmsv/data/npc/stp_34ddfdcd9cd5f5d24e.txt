@@ -1,0 +1,37 @@
+block item 88306 == 1
+endwindow "\n\n这果子我们先拿回城仔细研究下会有什么启示！"
+
+block item 88305 == 1 && ItemCreateTime 88305 >= 720
+window "\n\n这...就是种子生长后的样子吗？上面结的果实真奇怪，从来没见过要采摘下来吗？",yes,no
+window_no
+window_yes
+killitem 88305
+giveitem 88306
+endwindow "\n\n或许这个果子是王子暗示我们行踪的线索？"
+
+block item 88305 == 1 && ItemCreateTime 88305 < 720
+endwindow "\n\n种子刚入土怎么会马上生长呢？过会再来看看吧！"
+
+block item 88304 == 1
+window "\n\n要再次把种子播下去吗？",yes,no
+window_no
+window_yes
+killitem 88304
+giveitem 88305
+
+block item 88302 == 1 && ItemCreateTime 88302 >= 1440
+window "\n\n咦~~土壤怎么被翻出来了，种子也没了。旁边怎么又像便便的东西？要捡起来吗？",yes,no
+window_no
+window_yes
+killitem 88302
+giveitem 88303
+
+block item 88302 == 1 && ItemCreateTime 88302 < 1440
+endwindow "\n\n种子刚入土怎么会马上生长呢？过会再来看看吧！"
+
+block item 88301 == 1
+window "\n\n你要把种子种如这块泥土中吗？",yes,no
+window_no
+window_yes
+killitem 88301
+giveitem 88302

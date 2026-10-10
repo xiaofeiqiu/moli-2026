@@ -1,0 +1,14 @@
+block floor == 23310 && XPos >= 376 && YPos >=621 && globalFlag 332 == 1
+window 900555,yes,no
+window_yes
+killitem 61122
+Warp 0,23305,24,27
+window_no
+
+block floor == 23310 && XPos >= 376 && YPos >=621 && globalFlag 332 == 0
+window 900556,yes,no
+window_yes
+killitem 61122
+globalFlag 332 = 1
+Warp 0,23303,24,27
+window_no

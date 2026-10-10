@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【树精】吗？",ok
+			Window_ok
+Luac stp:legacy:6072fae58a52d45f57e3
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【死亡树精】吗？",ok
+			Window_ok
+Luac stp:legacy:764feed15396038d3b25
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【黄金树精】吗？",ok
+			Window_ok
+Luac stp:legacy:f93136b691aa27032fee
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【惨白树精】吗？",ok
+			Window_ok
+Luac stp:legacy:80da465d0e02ce4e43bc
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【冰冷树精】吗？",ok
+			Window_ok
+Luac stp:legacy:99bf12497a35ac1b5bf3
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【冰冷树精】吗？",ok
+			Window_ok
+Luac stp:legacy:99c2b0c24eccb1120e67
+				endif
+

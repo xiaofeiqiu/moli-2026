@@ -1,0 +1,19 @@
+block item 800054 == 1
+	Window"\n\n这是你应得的！",ok
+	Window_ok
+		killitem 800053
+		killitem 800054
+		giveitem 800055
+
+block item 800052 == 1
+	Window"\n\n年轻人非常感谢你帮助我们族人，为了击退海贼团就必须击败他们的首脑。",next
+	Window"\n\n一定要小心，拜托你了！",ok
+	Window_ok
+		killitem 800052
+		giveitem 800053
+
+block item 800045 == 1
+	Window"\n\n什么？？？你竟然击败了艾娜？！你这混账！我要杀了你！！！咳！咳！",ok
+		Window_ok item 800045 == 1 && Group == 1
+		Setaction 5
+Encount 3|0,18046,10,10|800045|||||||800022|||||||||

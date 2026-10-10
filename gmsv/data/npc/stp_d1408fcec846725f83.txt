@@ -1,0 +1,2 @@
+block
+endwindow "\n\n快听外面有惨叫声！"

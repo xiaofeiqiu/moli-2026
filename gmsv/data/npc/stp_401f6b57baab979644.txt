@@ -1,0 +1,9 @@
+block
+Window "\n\n\n\n　　　　　　　要使用代金券吗？",yes,no
+Window_yes item 652104 >=1 && Gold<=1
+killItem 652104,1
+addgold 950000
+Window_yes item 652104 >=1 && Gold>=2
+EndWindow "\n\n\n\n　　　　　　请先把身上的现金清空。"
+Window_no
+Endblock

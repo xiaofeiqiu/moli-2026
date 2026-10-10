@@ -1,0 +1,17 @@
+block item 86333 >= 1 && item 86334 >= 1 && item 86335 >= 1 && item 86335 >= 1
+window 85474,next
+window 85475,next
+window 85476,next
+window 85477,next
+window 85478,ok
+window_ok
+killitem 86333
+killitem 86334
+killitem 86335
+killitem 86336
+Encount 3|0,28196,75,34||0|||||0|86145||||||||
+
+block
+window 85479,ok
+window_ok
+Warp 0,1000,233,78

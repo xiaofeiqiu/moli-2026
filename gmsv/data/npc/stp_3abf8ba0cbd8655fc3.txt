@@ -1,0 +1,10 @@
+block item 200538 >= 1
+window "\n\n别～别以为你们打倒了那个怪物我就会妥协,什么事都可以答应,唯独这事我不同意,我心意已决.",next
+window "\n\n这是我的逐客令,限你们在一天之内赶她出村,不然的话我亲自动手.",next
+window "\n\n我现在不想见到你们,都给我滚出去.",ok
+window_ok
+killitem 200538
+giveitem 200539
+leavegroup
+Warp 0,27572,2,11
+

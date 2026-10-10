@@ -1,0 +1,9 @@
+block	gold>=3000
+window"\n\n@c 通过这里需要交3000g给我,是否通过?",yes,no
+window_no
+window_yes
+Addgold	-3000
+LeaveGroup
+Warp 0,702,14,13
+block
+Endwindow"\n\n@c 这里是费好大劲才挖出来的!每通过一位,收费3000G."

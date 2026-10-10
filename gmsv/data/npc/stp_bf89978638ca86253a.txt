@@ -1,0 +1,8 @@
+block item 86532 < 1
+window "\n\n土里好像埋着什么东西,你要挖出来吗?",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+leavegroup
+giveitem 86532

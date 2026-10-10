@@ -1,0 +1,255 @@
+#守卫
+#持有道具
+
+##############  ##############
+block Item 900019 != 0 && Item 18989 != 0
+	KillItem 900019
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900020 != 0 && Item 18989 != 0
+	KillItem 900020
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900021 != 0 && Item 18989 != 0
+	KillItem 900021
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900022 != 0 && Item 18989 != 0
+	KillItem 900022
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900023 != 0 && Item 18989 != 0
+	KillItem 900023
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900024 != 0 && Item 18989 != 0
+	KillItem 900024
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900025 != 0 && Item 18989 != 0
+	KillItem 900025
+	EndWindow 900035,OK
+
+##############  ##############
+block Item 900026 != 0 && Item 18989 != 0
+	KillItem 900026
+	EndWindow 900035,OK
+
+############## 男性角色 ##############
+block BBImage >= 100000 && BBImage <= 100173 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 100800 && BBImage <= 100805 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 106425 && BBImage <= 106580 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 100525 && BBImage <= 100630 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 105500 && BBImage <= 105523 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+############## 女性角色 ##############
+block BBImage >= 100250 && BBImage <= 100423 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 106601 && BBImage <= 106755 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 100650 && BBImage <= 100755 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 105525 && BBImage <= 105548 && Item 18989 != 0	&& Item 900017 == 1 && Item 900018 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+############持有结晶时############
+############## 男性角色 ##############
+block BBImage >= 100000 && BBImage <= 100173 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 100800 && BBImage <= 100805 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 106425 && BBImage <= 106580 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 100525 && BBImage <= 100630 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+block BBImage >= 105500 && BBImage <= 105523 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,9,24
+
+############## 女性角色 ##############
+block BBImage >= 100250 && BBImage <= 100423 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 106601 && BBImage <= 106755 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 100650 && BBImage <= 100755 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75
+
+block BBImage >= 105525 && BBImage <= 105548 && Item 18989 != 0	&& Item 900028 == 1 && Item 900029 == 1	
+
+	Window 900036,OK
+	Window_OK
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,932,10,75

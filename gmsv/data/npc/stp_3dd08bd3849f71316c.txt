@@ -1,0 +1,14 @@
+block item 87512 == 1
+endwindow "\n\n谢谢你，法兰城的勇士，他们往深渊方向追去了"
+
+block item 87511 == 1
+window "\n\n原来是士兵长派来的勇士啊，我们已经战斗得筋疲力尽了，我们的士兵已向魔物源头追去，你愿意赶去帮助他们吗？",yes,no
+window_no
+killitem 87511
+window_yes
+killitem 87511
+giveitem 87512
+endwindow "\n\n谢谢你，法兰城的勇士，他们往深渊方向追去了"
+
+block
+endwindow "\n\n我们誓死也要保卫法兰城。"

@@ -1,0 +1,10 @@
+block item 111 >= 1
+endwindow "\n\n我想要去山男家玩,你知道他家在哪吗?"
+
+
+block item 119 == 1
+window "\n\n什么?主人要我回去啊?我不我不...\n\n我要去山男家玩,既然被你逮到了,棒棒糖归你!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 111,1

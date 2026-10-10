@@ -1,0 +1,11 @@
+block item 200226 >= 1
+endwindow "\n\n你还不快去."
+
+
+block
+window "\n\n可恶的伊莉露背叛了我和国家,我绝不饶她,我可怜的女儿莉莉丝.",next
+window "\n\n御医说公主伤势过重,撑不了多久了,你快去找切露西婆婆,无论如何也要想办法救活我女儿.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200226

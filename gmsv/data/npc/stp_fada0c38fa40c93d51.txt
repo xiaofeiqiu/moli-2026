@@ -1,0 +1,9 @@
+block item 200590 >= 1
+window "\n\n呜呜…",ok
+window_ok
+Encount 2|0,27689,9,47||0|||||0|50616|||||||||
+
+
+
+block
+endwindow "\n\n这里不是你该来的地方."

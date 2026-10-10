@@ -1,0 +1,14 @@
+Block item 361041 == 1
+Window"\n\n干的不错!这是给你的奖励!",ok
+Window_ok
+Killitem 361041
+GiveLeak1Item (361039%1$1,361040%1$1)
+EndWindow"\n\n勇者,继续去冒险吧"
+Block item 361038 == 1
+EndWindow "\n\n快去快回,我在这里等你!"
+Block level >= 80
+Window "\n\n最近法兰接二连三有人蹊跷死亡,都是毫无特征的离奇死去,我最近很为这个事情头疼,你能帮我调查一下吗?",yes,no
+Window_no
+Window_yes
+Giveleak1item 361038,1
+EndWindow "\n\n那么就拜托你了!拿着这本书,去找里谢里雅堡的松田联系吧!"

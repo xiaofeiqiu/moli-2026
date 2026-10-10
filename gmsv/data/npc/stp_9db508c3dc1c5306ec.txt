@@ -1,0 +1,13 @@
+block item 39837 >= 1
+Endwindow "\n\n这位教授很狡猾,我们都找了他很久了!"
+
+
+block item 39836 >= 1
+Window "\n\n这个标志的徽章,是盗猎集团的标志!你怎么会有这个徽章?是某位教授给你的?请一定要抓住那个坏蛋,他就是这个盗猎集团的首脑!",ok
+window_ok
+killitem 39836
+giveitem 39837
+
+
+block
+Endwindow "\n\n找我有什么事情吗?"

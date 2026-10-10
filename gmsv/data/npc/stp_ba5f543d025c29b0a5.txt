@@ -1,0 +1,39 @@
+block item 70038 == 1
+window 910404,next
+window 910405,next
+window 910406,next
+window 910407,next
+window 910408,next
+window 910409,yes,no
+window_yes
+window 910410,next
+window 910411,next
+window 910412,next
+window 910413,next
+window 910414,next
+window 910415,next
+window 910416,next
+window 910417,next
+window 910418,next
+window 910419,next
+window 910420,next
+window 910421,next
+window 910422,ok
+window_ok
+killitem 70038
+Encount 2|0,25081,16,18||0|||||0|70058|||||||||
+window_no
+window 910423,next
+window 910424,next
+window 910425,next
+window 910426,next
+window 910427,next
+window 910428,next
+window 910429,next
+window 910430,ok
+window_ok
+killitem 70038
+Encount 2|0,25082,16,18||0|||||0|70057|||||||||
+
+block
+endwindow 910431

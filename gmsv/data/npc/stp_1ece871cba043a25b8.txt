@@ -1,0 +1,5 @@
+block
+	Window "\n\n\n@c你竟然能活着回来，准备好，我们要回村子了。",yes,no
+	window_yes
+		Warp 0,38110,21,58
+	window_no

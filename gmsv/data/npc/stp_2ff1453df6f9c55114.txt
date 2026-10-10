@@ -1,0 +1,8 @@
+block Item 798205 >= 1 
+        Window "\n\n\@n\n\n@c　真的要打开猎人的蛋吗?",Yes,No
+        Window_Yes Item 798205 >= 1 && Petspace >= 1
+        KillItem 798205
+        GivePet 454021
+        
+	Window_Yes Item 798205 >= 1 && Petspace == 0
+	Endwindow "你的宠物栏满了!"

@@ -1,0 +1,18 @@
+
+block item 3812 >= 1
+endwindow "\n\n这里魔族的情绪比刚才安稳些了,多谢你."
+
+
+
+block item 3811 >= 1
+window "\n\n太好了,多谢你带来圣水,现在就开始相关工作!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3812
+
+
+block
+endwindow "\n\n圣水用光了,如果有人带圣水来就好了."
+
+

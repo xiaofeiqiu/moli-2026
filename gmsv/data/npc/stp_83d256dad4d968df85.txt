@@ -1,0 +1,6 @@
+block
+window "\n\n你确定要回到[法兰城]吗?",yes,no
+window_yes
+leaveGroup
+Warp 0,1000,233,78
+window_no

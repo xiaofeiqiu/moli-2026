@@ -1,0 +1,99 @@
+#############■情人节活动,餐厅老板鲁克
+
+block Group > 2
+endwindow "\n\n我也想加入你们多P团!!喔喔喔!!"
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+window "\n\n你女朋友送你的蛋糕喔!哎哟～真幸福呢!",ok
+Window_OK BBImage >= 100000 && BBImage <= 100173 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+Warp 0,32655,70,90
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+window "\n\n你女朋友送你的蛋糕喔!哎哟～真幸福呢!",ok
+Window_OK BBImage >= 105000 && BBImage <= 105173 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+Warp 0,32655,70,90
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+window "\n\n你女朋友送你的蛋糕喔!哎哟～真幸福呢!",ok
+Window_OK BBImage >= 106000 && BBImage <= 106173 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+Warp 0,32655,70,90
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+endwindow "\n\n情人节送蛋糕,两个人甜甜蜜蜜,真是太幸福啦～"
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+endwindow "\n\n情人节送蛋糕,两个人甜甜蜜蜜,真是太幸福啦～"
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715233 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+endwindow "\n\n情人节送蛋糕,两个人甜甜蜜蜜,真是太幸福啦～"
+
+block ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715233 == 0 && Item 715219 == 0
+window "\n\n小姐小姐买蛋糕,草莓奇异果和樱桃、巧克力冰淇淋加香草,一个只要5000元,包你男友吃的哈哈笑!!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 100250 && BBImage <= 100423 && Group == 2 && Gold >= 5000 && Item 715233 == 0 && Item 715219 == 0
+AddGold -5000
+GiveLeak1Item 715233
+endwindow "\n\n今天情人节买个蛋糕过节刚刚好."
+Window_YES ItemSpace > 0 && BBImage >= 100250 && BBImage <= 100423 && Group == 2 && Gold < 5000
+endwindow "\n\n钱不够?!我拿蛋糕砸你咧!"
+
+Window_NO Group == 2
+Encount 3|0,32655,70,90||0|||||0|613174|||||||||
+
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715233 == 0 && Item 715219 == 0
+window "\n\n小姐小姐买蛋糕,草莓奇异果和樱桃、巧克力冰淇淋加香草,一个只要5000元,包你男友吃的哈哈笑!!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 105250 && BBImage <= 105423 && Group == 2 && Gold >= 5000 && Item 715233 == 0 && Item 715219 == 0
+AddGold -5000
+GiveLeak1Item 715233
+endwindow "\n\n今天情人节买个蛋糕过节刚刚好."
+Window_YES ItemSpace > 0 && BBImage >= 105250 && BBImage <= 105423 && Group == 2 && Gold < 5000
+endwindow "\n\n钱不够?!我拿蛋糕砸你咧!"
+
+Window_NO Group == 2
+Encount 3|0,32655,70,90||0|||||0|613174|||||||||
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715233 == 0 && Item 715219 == 0 
+window "\n\n小姐小姐买蛋糕,草莓奇异果和樱桃、巧克力冰淇淋加香草,一个只要5000元,包你男友吃的哈哈笑!!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 106250 && BBImage <= 106423 && Group == 2 && Gold >= 5000 && Item 715233 == 0 && Item 715219 == 0
+AddGold -5000
+GiveLeak1Item 715233
+endwindow "\n\n今天情人节买个蛋糕过节刚刚好."
+Window_YES ItemSpace > 0 && BBImage >= 106250 && BBImage <= 106423 && Group == 2 && Gold < 5000
+endwindow "\n\n钱不够?!我拿蛋糕砸你咧!"
+
+Window_NO Group == 2
+Encount 3|0,32655,70,90||0|||||0|613174|||||||||
+
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715233 == 0
+endwindow "\n\n先生,请你的女朋友买个蛋糕送你吧!蛋糕粉好吃喔!买了还可以请你女朋友喂你吃喔!嘿嘿......"
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715233 == 0
+endwindow "\n\n先生,请你的女朋友买个蛋糕送你吧!蛋糕粉好吃喔!买了还可以请你女朋友喂你吃喔!嘿嘿......"
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715233 == 0
+endwindow "\n\n先生,请你的女朋友买个蛋糕送你吧!蛋糕粉好吃喔!买了还可以请你女朋友喂你吃喔!嘿嘿......"
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715233 >= 1 && Group == 1
+endwindow "\n\n你一个人拿着蛋糕跑来跑去干麻?你女朋友呢?"
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715233 >= 1 && Group == 1
+endwindow "\n\n你一个人拿着蛋糕跑来跑去干麻?你女朋友呢?"
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715233 >= 1 && Group == 1
+endwindow "\n\n你一个人拿着蛋糕跑来跑去干麻?你女朋友呢?"
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715233 >= 1 && Group == 1
+endwindow "\n\n买了蛋糕找不到你的男伴喔?他人咧?"
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715233 >= 1 && Group == 1
+endwindow "\n\n买了蛋糕找不到你的男伴喔?他人咧?"
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715233 >= 1 && Group == 1
+endwindow "\n\n买了蛋糕找不到你的男伴喔?他人咧?"
+
+block
+endwindow "\n\n来喔!来买最好吃的蛋糕喔!有鸡蛋糕、小蛋糕、蜂蜜蛋糕、还有发糕、年糕......不买你就糟糕喔!来喔!也请把两张优待券给我看."

@@ -1,0 +1,16 @@
+block item 1000466 == 1 && item 1000465 == 0
+	Window"\n\n你见到桂大人了是吗？她是不是安然无恙呀？这个是？我明白了！剩下的交给我，你稍等一下。",next
+	Window"\n成功了！来给你，快交给村长吧！",ok
+	Window_ok 	
+killitem 1000466,1
+giveitem 1000465,1
+
+block item 1000470 == 1 
+	Window"\n\n村长叫你们来的吗？！",next
+	Window"\n太好了桂大人有救了！她就在外面通往冰晶之地的山顶上面。现在很危险，麻烦你把这件衣服拿给她。",ok
+	Window_ok 	
+killitem 1000470,1
+giveitem 1000469,1
+
+block item 1000469 == 1
+	Window"\n\n要小心山顶的冰雪一样白的鸟人那是个怪物！",ok

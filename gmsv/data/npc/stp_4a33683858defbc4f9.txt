@@ -1,0 +1,4 @@
+block
+window "\n\n　很深，看不到底。",ok
+window_ok
+Encount 3|0,60501,36,15||||||||800064|||||||||

@@ -1,0 +1,16 @@
+block Luac stp:legacy:730e8f461f372d0a13e9 >= 1
+window "\n\n强大的咒术师啊!我将赐予你更强的能力.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800202 >= 1
+endwindow "\n\n你已经有一个了!"
+window_ok
+giveitem 800202
+
+block
+endwindow "\n\n如果你是一名咒术师，或许我能助你一臂之力."
+
+
+
+
+

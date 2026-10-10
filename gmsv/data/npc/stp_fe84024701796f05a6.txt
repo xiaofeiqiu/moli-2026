@@ -1,0 +1,14 @@
+block item 70029 == 1
+window 910374,next
+window 910375,next
+window 910376,next
+window 910377,next
+window 910378,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 70029
+GiveItem 70030
+givepet 211
+Warp 0,25013,24,73
+window_ok ItemSpace < 1
+endwindow 910379

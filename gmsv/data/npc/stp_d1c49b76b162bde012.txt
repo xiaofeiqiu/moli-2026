@@ -1,0 +1,12 @@
+block item 39674 == 1
+Window "\n\n哎呦,哎呦,您大人有大量,放过小的一马吧.",next
+Window "\n\n什么乌克兰村我不知道,哎呦,哎呦...",next
+Window "\n\n您别动怒,我真的是不知道,我就是来这钓两条鱼的,哎呀妈呀,手下留情啊.",next
+Window "\n\n啊!啊!我说,我说.",next
+Window "\n\n我只是个放哨的,前面有我们的一个据点,是我们最近刚建的,以前我们都在索奇亚那边讨生活的,至于他们想干什么我这种小角色真的不知道.",ok
+Window_ok item 39674 == 1
+LeaveGroup
+Warp 0,45090,214,35
+
+block
+Endwindow"\n\n朋友,没事别乱走,这边是我们的地头!"

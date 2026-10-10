@@ -1,0 +1,23 @@
+
+block item 15689 == 1 && item 15687 == 1
+window "\n\n\n@c你不用说了,事情我已经知道了,哎,哪个老太婆,有好事从来不找我,坏事从来没把我丢下过.这个给你,他可以将这只恶魔永久的封印在寄生体里.",yes,no
+window_no gold > 990000
+endwindow "\n\n\n@c你身上的钱太多了!"
+window_no
+KillItem 15687
+KillItem 15689
+Addgold 10000
+endwindow "\n\n\n@c那你把它给我,我来封印住它.这是给你的酬劳."
+window_yes
+KillItem 15689
+giveitem 15690
+endwindow "\n\n\n@c赶紧去吧,别妨碍我喝酒..."
+
+############## 封印魔鬼失败 ##############
+block item 15692 == 1 && group <= 2
+window "\n\n\n@c唔,从新得到躯体的感觉真好.这次将是我要击败你.\n\n\n(原来酒鬼的身体被魔鬼占据了,必须将它打败)",yes,no
+window_no
+endwindow "\n\n\n@c逃跑吧,胆小鬼."
+window_yes
+KillItem 15692
+Encount 3|||0|||||0|15681|||||||||

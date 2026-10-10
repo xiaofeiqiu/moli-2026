@@ -1,0 +1,17 @@
+block item 88204 == 1
+endwindow 501590
+
+block item 88203 == 1
+window 501591,yes,no
+window_no
+endwindow 501592
+window_yes gold < 5000
+endwindow 501593
+window_yes gold >= 5000 && item 88203 == 1
+LeaveGroup
+killitem 88203
+addgold -5000
+giveitem 88204
+
+block
+endwindow 501594

@@ -1,0 +1,10 @@
+block item 200794 >= 1
+window "\n\n镇压并不能熄灭四精的暴戾之气,唯有理解四精之源才是安抚他们的正路.",next
+window "\n\n不要忘记四精的正路,心之所向既为天道所向.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok item 200794 >= 1
+giveitem 200795
+giveitem 200796
+leavegroup
+Warp 0,57306,27,39

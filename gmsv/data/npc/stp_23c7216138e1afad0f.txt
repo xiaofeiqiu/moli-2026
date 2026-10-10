@@ -1,0 +1,8 @@
+block itemspace == 0 || petspace == 0
+	window"物品栏或宠物栏已满！",ok
+
+block item 57725 >= 1
+	window"要打海豚兑换蛋么？",yes,no
+	window_yes item 57725 >= 1
+	killitem 57725
+	givepet (98810%25,98811%25,98812%25,98813%25)

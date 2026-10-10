@@ -1,0 +1,6 @@
+block
+	Window "\n\n\n\n　　　　　　　　　要去竞技场吗?",YES,NO
+		Window_YES
+			Warp 0,1400,15,16
+		Window_NO
+Endblock

@@ -1,0 +1,8 @@
+block item 22001 == 1 && endevent 162 == 1
+	window "\n　　确定要进入决策层之地下迷宫？",yes,no
+	window_yes
+	leavegroup
+	killitem 22001,1
+	Warp 0,7217,8,19
+
+	window_no

@@ -1,0 +1,43 @@
+block item 87705 == 1 && item 87658 == 1 && item 87664 == 1 && item 87675 == 1 && item 87684 == 1 && item 87693 == 1 && item 87700 == 1 && Luac stp:legacy:f868a2b7f05ec6951f41 >= 1
+window "\n\n托你的洪福，我们击溃了魔族大军。也因你出色的表现，击伤了魔王使他逃进了黑色深渊。",next
+window "\n\n这下人界神界能获得一段时间的安宁，瞧这状况魔族需要几百年或更长的时间才能恢复元气。",next
+window "\n\n由于你卓越的战绩表现，救世主的称号当之无愧啊，为了表彰你，我将赐予一件神界的宝物。",next
+window "\n\n不过要获得这件宝物就要你把先前得到的6件奖励交与我，你愿意吗？",yes,no
+window_no
+window_yes
+killitem 87705
+killitem 87658
+killitem 87664
+killitem 87675
+killitem 87684
+killitem 87693
+killitem 87700
+Warp 0,1533,15,6
+
+block item 87705 == 1 && item 87658 == 1 && item 87664 == 1 && item 87675 == 1 && item 87684 == 1 && item 87692 == 1 && item 87700 == 1
+window "\n\n托你的洪福，我们击溃了魔族大军。也因你出色的表现，击伤了魔王使他逃进了黑色深渊。",next
+window "\n\n这下人界神界能获得一段时间的安宁，瞧这状况魔族需要几百年或更长的时间才能恢复元气。",next
+window "\n\n由于你卓越的战绩表现，救世主的称号当之无愧啊，为了表彰你，我将赐予一件神界的宝物。",next
+window "\n\n不过要获得这件宝物就要你把先前得到的6件奖励交与我，你愿意吗？",yes,no
+window_no
+window_yes
+killitem 87705
+killitem 87658
+killitem 87664
+killitem 87675
+killitem 87684
+killitem 87692
+killitem 87700
+givepet 101058
+Warp 0,1533,15,6
+
+block item 87705 == 1
+window "\n\n托你的洪福，我们击溃了魔族大军。也因你出色的表现，击伤了魔王使他逃进了黑色深渊。",next
+window "\n\n这下人界神界能获得一段时间的安宁，瞧这状况魔族需要几百年或更长的时间才能恢复元气。",next
+window "\n\n由于你卓越的战绩表现，救世主的称号当之无愧啊，为了表彰你，我将赐予一件神界的宝物。",next
+window "\n\n不过要获得这件宝物就要你把先前得到的6件奖励交与我，你愿意吗？",yes,no
+window_no
+window_yes
+window "\n\n看来你身上并没有带齐前面任务获得的6件奖励，等你凑齐了再来吧！",ok
+window_ok
+Warp 0,1533,15,6

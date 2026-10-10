@@ -1,0 +1,13 @@
+block
+window "\n\n沙漏时间到了,再给你一个新的沙漏.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200527
+
+
+
+block item 200527 >= 1
+window "\n\n这个沙漏你要注意,只有一个小时的时限,在这个时限内通过花园,并走到一处有大沙漏的地方即可",next
+endwindow "\n\n然后把手中的沙漏镶嵌进大沙漏里即可进入圣光之龙所在的圣光之殿,超过一小时的话,会被传送到我这里."
+

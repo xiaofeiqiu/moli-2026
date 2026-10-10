@@ -1,0 +1,8 @@
+block item 87669 == 1
+endwindow "\n\n这个雕像可能跟那个人有莫大的关系。"
+
+block item 87668 == 1
+window "\n\n这雕像今天怎么有点不太对头啊，好像样子变了点。",ok
+window_ok
+killitem 87668
+giveitem 87669

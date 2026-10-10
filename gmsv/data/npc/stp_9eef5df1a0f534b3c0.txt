@@ -1,0 +1,10 @@
+block item 200206 >= 1
+endwindow "\n\n你已经摘取了榜文."
+
+
+block
+window "\n\n　　　　　　　　　榜　文　　　　　　　　　\n\n　国王亲启:最近我国唯一的石矿来源拉迪斯洛坑道,因未知原因,导致在坑道中工作的矿工均患上了具有暴力侵向的失心疯,望有能之士予以相助,解救那些矿工,王国必有重谢.\n　　　　　　　　　　　　　　　　　　XX年X月X日",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200206

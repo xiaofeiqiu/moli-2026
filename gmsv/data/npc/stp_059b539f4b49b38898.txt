@@ -1,0 +1,7 @@
+〓Get制作系列脚本〓
+block
+	Window "\n\n@c这是你要的东西，我会在大殿等着你们的到来，自不量力的人…",ok
+	Window_ok
+	LeaveGroup
+	GiveItem 13404,1
+	Warp 0,43730,16,10

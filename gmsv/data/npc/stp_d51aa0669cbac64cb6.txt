@@ -1,0 +1,65 @@
+block EndEvent 516 == 1 && item 141196 >= 1
+Window "\n\n去吧...冒险者,我已经派人去岛上辅助你们了,最后的真相即将被揭开...",next
+Window "\n\n『阿斯提亚祭司集中精神,对你释放了定点传送魔法』",ok
+Window_ok item 141196 >= 1
+LeaveGroup
+Warp 0,57474,65,98
+
+block job == 454 || job == 464 || job == 474
+Window "\n\n你好啊,勤劳的[@n]!你想不想去一个未开发的岛上拓荒呢?我可以送你过去喔?",yes,no
+Window_no
+EndWindow "\n\n年轻人要有开拓精神啊."
+Window_yes
+Window "\n\n很好,祝你能有新的发现.",next
+Window "\n\n『阿斯提亚祭司集中精神对你施放了定点传送魔法』",ok
+Window_ok
+LeaveGroup
+Warp 0,57474,65,98
+
+block NowEvent 523 == 1
+EndWindow "\n\n愿它的灵魂得到安息."
+
+block EndEvent 516 == 1
+Window "\n\n『把刚刚的经历告诉了阿斯提亚祭司...』",next
+Window "\n\n事情远比我想象的复杂啊,这样的话,阿鲁卡那斯不会坐视不管的,它会向自己曾经的主人报仇也说不定,真想看看它能做出什么事来.",next
+Window "\n\n这里有珍贵的礼物送给你,可以治愈你的灵魂.",ok
+window_ok ItemSpace < 1
+EndWindow "\n\n你的物品栏不够了,请准备出1个空位."
+Window_ok
+NowEvent 523 = 1
+giveitem 141194
+
+block EndEvent 515 == 1
+Window "\n\n『把事情的经过全部告诉给了阿斯提亚祭司...』",next
+Window "\n\n原来是这样,它背后果然有主谋!它有说允许你们登岛调查是吧,那请你再去查查看吧,交给我一些金币,我会施法将你传送到岛上,并送你工具供你调查.",yes,no
+Window_no
+EndWindow "\n\n请你准备好了再过来找我吧."
+Window_yes
+Window "\n\n很好,愿你旅途平安.",ok
+window_ok ItemSpace < 1
+EndWindow "\n\n你的物品栏不够了,请准备出1个空位."
+window_ok gold < 1000
+EndWindow "\n\n抱歉,你的钱没有带够."
+Window_ok
+addgold -1000
+giveitem 141193
+LeaveGroup
+Warp 0,57176,65,98
+
+block item 41192 >= 1
+EndWindow "\n\n闭上双眼,心中冥想,水晶就会发挥作用."
+
+block EndEvent 513 == 1
+Window "\n\n冒险者,我一直在等你.马力尔已把上次奇怪项链的事跟我讲过了,我回到阿斯提亚神殿翻阅了很多秘史纪录,发现数百年前也曾出现过此类相似的事,你愿意把事情的经过说给我听听吗?",yes,no
+Window_no
+EndWindow "\n\n是吗...没关系,你还真是个爱保密的人啊."
+Window_yes
+Window "\n\n『把事情的经过全部告诉给了阿斯提亚祭司...』",next
+Window "\n\n呵呵呵呵....终于发现...啊不,没什么.我想我们很快就能清楚那个岛屿背后所潜藏的秘密了.戴上这个锥形水晶,把它带给山顶的主人看看就明白了.",ok
+window_ok ItemSpace < 1
+EndWindow "\n\n你的物品栏不够了,请准备出1个空位."
+Window_ok
+giveitem 141192
+
+block
+EndWindow "\n\n你好,我在等人."

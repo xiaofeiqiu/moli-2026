@@ -1,0 +1,41 @@
+block item 730097 >= 1
+endwindow "\n\n请去莎莲娜岛的魔法大学吧,那里会有人指点你如何做的."
+
+
+block item 730091 >= 1
+window "\n\n恩.经过商议,缓解诅咒的方法也找到了.请带着这个去莎莲娜岛的魔法大学吧,那里会有人指点你如何做的.",next
+window "\n\n请一路小心.",ok
+window_ok item 730091 >= 1
+killitem 730091
+giveitem 730097
+
+
+block item 730090 >= 1 && item 730091 >= 1
+endwindow "\n\n请耐心等待我们的商议结果吧."
+
+
+block item 730089 >= 1
+window "\n\n唔,是这样啊.辛苦你了,药剂的配方我们已经知道了,会第一时间制作出来送去探险团那里的.但是解除诅咒的方法就比较伤脑筋了,等我们商量出结果后估计还要麻烦你了.",next
+window "\n\n在等待的这段时间内,请带着这个去找走廊尽头房间的接待员吧.他会安排你在这段时间里的休息事宜的.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok item 730089 >= 1
+killitem 730089
+giveitem 730090
+giveitem 730091
+
+
+block item 730088 >= 1
+endwindow "\n\n请带着这个通行证,去一楼的地下书库吧.在那里,也许你能帮我们找到所需要的答案."
+
+
+block item 730087 >= 1
+window "\n\n恩,你好.实际上样本已经先一步送过来了,经过分析,我们发现这次的事故并不是普通的急性传染病.实际上,这次的事故更接近于...一种诅咒或者是强大力量的影响.",next
+window "\n\n阻止事态恶化的药剂我们可以直接制作,但如果不解除诅咒,事态是还会继续恶化的.所以我们需要更多的资料来研究对策.",next
+window "\n\n请带着这个通行证,去一楼的地下书库吧.在那里,也许你能帮我们找到所需要的答案.",ok
+window_ok item 730087 >= 1
+killitem 730087
+giveitem 730088
+
+block
+endwindow "\n\n欢迎来到炼金之馆."

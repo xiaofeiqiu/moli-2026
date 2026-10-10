@@ -1,0 +1,15 @@
+#block Item 19578 >= 1
+	Window "\n\n  恭喜你哦.!\n  抽到奖品10万魔币哦，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 1000472,1
+	AddGold 100000
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+#block Item 19577 >= 1
+	Window "\n\n  恭喜你哦.!\n  抽到奖品30万魔币哦，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 1000471,1
+	AddGold 300000
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+
+block
+Window "\n\n  我只负责[魔币10万卷][魔币1万卷]",ok

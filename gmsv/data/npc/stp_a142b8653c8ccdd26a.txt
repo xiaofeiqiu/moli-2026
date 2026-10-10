@@ -1,0 +1,18 @@
+block Item 3800 == 1
+endwindow "\n\n快去吧!!!"
+
+
+block
+window "\n\n6.0资料中的歌姬,就是我 \n\n请问你能看到我的形象吗?",yes,no
+window_no
+endwindow "\n\n请下载6.0客户端或者进行客户端升级."
+window_yes
+changePal 30,6
+window "\n\n魔族在阿凯鲁法村蔓延开了\n\n勇士,你愿意解救我和国民吗?",yes,no
+window_yes
+window "\n\n请拿着这个受了诅咒的戒指去找阿凯鲁法村里受伤的士兵\n\n勇士们,出发!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3800,1
+changePal 0,10

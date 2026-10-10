@@ -1,0 +1,7 @@
+block	level	>=	165
+window"注意安全",ok
+window_ok
+leavegroup
+Warp 0,11015,28,21
+block	level	>=	1
+window"请锻炼的更强些！",ok

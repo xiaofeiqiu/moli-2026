@@ -1,0 +1,18 @@
+
+
+block Item 715140 >= 1
+endwindow "\n\n将艾草插在门口据说可以防止邪物入侵."
+
+
+block Item 715139 >= 1
+window "\n\n你．你．你．．．．．．\n身上带的是镰刀吗?\n感谢老天的眷顾.你是我的救世主.\n这样吧!端午节的第一株艾草就给你吧.",ok
+Window_OK
+KillItem 715139
+GiveLeak1Item 715140
+endblock
+ 
+
+block
+endwindow "\n\n好不容易来到山脚下,却忘了带采集艾草的工具."
+
+ 

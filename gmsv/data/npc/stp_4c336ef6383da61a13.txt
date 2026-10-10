@@ -1,0 +1,7 @@
+block
+window"@c\n\n是否召唤灵魂同时恢复受伤状态?",yes,no
+window_yes
+killitem 90872
+Luac stp:legacy:ef520c3ad2a37b33b487
+Luac stp:legacy:005fcd69eeac7f765340
+Endwindow"@c\n\n魂魄已经召回,受伤状态已经解除,请小退一下"

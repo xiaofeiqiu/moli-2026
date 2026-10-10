@@ -1,0 +1,6 @@
+block	item 591342>=1
+window"\n\n\n Ã«?",next
+killitemall 591342
+Giveitem 591338,1
+block
+Endwindow"\n\n\n Ã«£¿"

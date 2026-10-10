@@ -1,0 +1,7 @@
+
+block
+window "\n\n你想进入花妖们躲藏的花谷吗?",yes,no
+Window_yes
+leavegroup 
+Warp 0,32468,24,7
+

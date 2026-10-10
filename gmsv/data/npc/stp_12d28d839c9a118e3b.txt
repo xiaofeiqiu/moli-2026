@@ -1,0 +1,18 @@
+block nowevent 563 == 1 && item 795100 == 1
+gawindow "\n\n　你们是战胜不了我的，我要吃掉你们，吃掉你们。哈哈哈哈",next
+gawindow "\n\n　美塔多陇：塞特，你高兴的太早了！！",next
+gawindow "\n\n　塞特：美塔多陇，没想到，你也苏醒了！\n\n　@n：主神-美塔多陇？",next
+gawindow "\n\n　美塔多陇：塞特，等着吧。我的能力还没完全恢复但有开启者的协助，我会再次封印你的！\n\n　塞特：可恶，传送魔法，别跑。",ok
+window_ok
+nowevent 563 = 0
+Warp 0,60215,13,15
+
+block item 795100 == 1
+gawindow "\n\n　洛基：你们果然很厉害，不过这点实力和塞特大人比起来还是微不足道的。下面就看塞特大人的演出了。",next
+gawindow "\n\n　塞特：呜啊啊啊啊！！！！",next
+gawindow "\n\n　洛基：啊！！\n\n　塞特突然吃掉了洛基",next
+gawindow "\n\n　塞特：愚蠢的人类啊，全部成为我的食物吧。",ok
+window_ok
+nowevent 563 = 1
+Encount 3|0,60213,24,25|||||0|||350201|||||||||
+

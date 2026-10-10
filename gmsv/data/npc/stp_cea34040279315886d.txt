@@ -1,0 +1,13 @@
+block item 730098 >= 1 || item 730102 >= 1 || item 730108 >= 1
+window "\n\n你的来意我已经知道了.我会搭建起一条通往异界的隧道,只要你小心的穿过隧道,就可以达到幻境森林,独角兽就在森林的深处居住着.",next
+window "\n\n传说独角兽有判明人心的力量,相信想解决异变的你,一定会得到它们的帮助的.",next
+window "\n\n那么,准备好启程吧.",ok
+window_ok item 730098 >= 1 || item 730102 >= 1 || item 730108 >= 1
+leavegroup
+Warp 0,57046,17,17
+
+
+
+block
+endwindow "\n\n......"
+

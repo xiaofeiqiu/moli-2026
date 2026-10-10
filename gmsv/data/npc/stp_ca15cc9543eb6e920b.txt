@@ -1,0 +1,16 @@
+
+########## 给予 ##########
+block Item 700087 != 0
+	Window "\n\n\n@c汝为被选中之人，拿好这个纹章!",ok
+	Window_ok
+	leavegroup
+	Giveitem 700088
+	Warp 0,100,584,173
+	
+block Item 700088 != 0
+	Endwindow "\n\n\n@c去吧。。。。。。",ok
+
+
+##########无道具##########
+block 
+	EndWindow "\n\n\n@c……(沉默是最好的拒绝方式，还是离开吧)",OK

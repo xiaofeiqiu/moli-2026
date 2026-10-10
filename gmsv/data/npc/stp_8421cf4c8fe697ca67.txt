@@ -1,0 +1,12 @@
+block	item 591426>=1
+window"\n\n\n@c 想不到你们竟然如此强大，我们会再见到的，而下次一次，我将报仇！",ok
+window_ok
+killitem 591426,1
+Giveitem 591427,1
+	leavegroup
+	Warp 0,36514,152,545
+block
+window"\n\n\n@c 想不到你们竟然如此强大，我们会再见到的，而下次一次，我将报仇！",ok
+window_ok
+	leavegroup
+	Warp 0,36514,152,545

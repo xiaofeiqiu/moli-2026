@@ -1,0 +1,21 @@
+#起始
+#持有道具
+
+##############  ##############
+block Item 900015 == 0 && Item 18989 != 0
+	GiveItem 900015
+	EndWindow 900030,OK
+
+block Item 900017 == 1 && Item 18989 != 0 && Item 900015 == 0 && Item 900018 == 0 
+	GiveItem 900015
+	EndWindow 900029,OK
+
+block Item 900018 == 1 && Item 18989 != 0 && Item 900015 == 0 && Item 900017 == 0
+	GiveItem 900015
+	EndWindow 900029,OK
+
+block  Item 900015 != 0
+	EndWindow 900042,OK
+
+block
+        EndWindow 900031,OK

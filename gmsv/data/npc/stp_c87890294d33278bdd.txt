@@ -1,0 +1,48 @@
+block
+	LocalCount0 = random 9,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【走路花妖】吗？",ok
+			Window_ok
+Luac stp:legacy:bcf646ee5a1f803d3ed8
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【跑步花妖】吗？",ok
+			Window_ok
+Luac stp:legacy:bfe1dfebbd45ceeb1e75
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【舞蹈花妖】吗？",ok
+			Window_ok
+Luac stp:legacy:28b647ff9430664efee6
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【玛莉花】吗？",ok
+			Window_ok
+Luac stp:legacy:628fd5f334fe9acae88d
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【大地霸王】吗？",ok
+			Window_ok
+Luac stp:legacy:33867e519a8cac0df842
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【烈焰霸王】吗？",ok
+			Window_ok
+Luac stp:legacy:4425165bada53becec66
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【疾风霸王】吗？",ok
+			Window_ok
+Luac stp:legacy:7037ee809e2c283af45b
+				endif
+	if localcount0==8
+		window "\n\n@c要将随从的形象永久变为【寒冰霸王】吗？",ok
+			Window_ok
+Luac stp:legacy:1b08bce3e08827d685eb
+				endif
+	if localcount0==9
+		window "\n\n@c要将随从的形象永久变为【耀阳花】吗？",ok
+			Window_ok
+Luac stp:legacy:fce68208d87f1cf36b72
+				endif
+

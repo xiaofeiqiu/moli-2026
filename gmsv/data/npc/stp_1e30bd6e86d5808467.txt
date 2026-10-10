@@ -1,0 +1,11 @@
+block Item 360312 == 0
+	EndWindow "\n\n 现在正在研究教材,请勿打扰。
+
+block Item 360312 == 1 && Endevent 697 == 0
+	Window "\n\n 这...这是磊磊为我准备的? \n\n 我好高兴...\n\n 我为有这样的孩子感到自豪，能否请你把这个玩具礼物送给他?告诉他我很快就会回家。",OK
+        	Window_OK
+		KillItem 360312
+		GiveItem 360313,1
+
+block  Endevent 697 == 1
+	Window " \n\n 我们全家都很感谢你,圣诞快乐!",OK

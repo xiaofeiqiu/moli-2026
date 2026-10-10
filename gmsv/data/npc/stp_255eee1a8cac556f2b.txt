@@ -1,0 +1,13 @@
+block NowEvent 552 == 1
+endwindow "\n\n你已经向遇难船夫的墓供奉一只海螺了."
+
+
+block item 730113 >= 1
+window "\n\n要向遇难船夫的墓供奉一只海螺吗?",yes,no
+window_no
+window_yes
+NowEvent 552 = 1
+
+
+block
+EndWindow 15123,OK

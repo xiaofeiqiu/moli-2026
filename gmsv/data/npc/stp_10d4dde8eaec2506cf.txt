@@ -1,0 +1,7 @@
+block item 3806 == 1
+	Window "\n\n你就是开启者么?",Next
+	Window "\n\n想不到当年的开启者也会来与我们的亡灵军团作对",Next
+	Window "\n\n哈哈那就让我来结束你的痛苦吧!",OK
+		Window_OK
+			KillItem 3806,1			
+Encount 2|0,9996,6,8|||||||0|360118|||||||||

@@ -1,0 +1,7 @@
+block endevent 162 == 1 && item 22003 == 1 && item 22004 == 1 && item 22005 == 1 && item 22006 == 1 && item 22007 == 1
+	window "\n真不简单啊，居然可以来到这里。什么？你想让我帮你进入实验室内部？那好,让我先来领教领教！",yes,no
+	window_yes endevent 162 == 1 && item 22003 == 1 && item 22004 == 1 && item 22005 == 1 && item 22006 == 1 && item 22007 == 1
+Encount 3|0,7218,13,6|||||0|||410318|||||||||
+
+block
+	endwindow "\n我是不会让你进去的！"

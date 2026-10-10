@@ -1,0 +1,8 @@
+block item 681116 >= 1
+window"\n\n谢谢你们这么尽力的阻止他",next
+window"\n\n不然我真的怕他铸下大错,真的很感谢了",next
+window"\n\n你帮我把这个拿给我的儿子吧!让他好好照顾自己!",ok
+window_ok
+giveitem 697994,1
+LeaveGroup
+Warp 0,1000,233,78

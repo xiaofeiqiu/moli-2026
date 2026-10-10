@@ -1,0 +1,12 @@
+#清明节任务.
+#作者：Get out
+#时间：2008.04.05
+block Item 6001502 >= 1
+Window "\n\n\n@c···你说那个地方？",Next
+Window "\n\n\n@c难道你想去吗？···我上次遇到鬼魂是在狗洞附近的一个洞穴里面···",Next
+Window "\n\n\n@c不过你要是真的有勇气去的话···请你帮我拿回我的锄头···",OK
+Window_OK
+killitem 6001502,1
+Window "\n\n\n@c真是感激你噢..祝你平安回来...",OK
+block
+Endwindow "\n\n\n@c你好！你有什么事么..??"

@@ -1,0 +1,9 @@
+block
+window "\n\n看来即使是杂兵,也是有很强大的力量啊...",next
+window "\n\n复活的我,需要休养..现在,你给我滚出去吧!!",next
+window "\n\n在不远的将来,我将带领军队,再次将你击杀!!!为了吾爱!",ok
+window_ok
+leavegroup
+Warp 0,43630,13,13
+
+

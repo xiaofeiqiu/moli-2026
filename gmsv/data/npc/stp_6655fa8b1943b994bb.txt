@@ -1,0 +1,13 @@
+block item 1000464 == 1 && item 1000463 == 0
+	Window"\n\n这份报告书很重要，感谢你们送过来，现在是时候做些什么了！",ok
+window_ok
+killitem 1000464,1
+giveitem 1000463,1
+
+block item 1000461 == 1 && endevent 653 != 1
+	Window"\n\n感谢你勇士，你们守护让我们很安心。",next
+	Window"\n\n天使保佑着你。",ok
+	Window_ok item 1000461 == 1 && endevent 653 != 1
+			killitem 1000461,1
+			endevent 653 = 1
+			checktitle

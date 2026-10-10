@@ -1,0 +1,7 @@
+block	item 60397 ==1
+    window "\n\n 啊..这是魔族后裔的戒指,带上证明去讨伐犹大,解救公主吧",yes,no
+    Window_yes
+	killitem 60397,1
+	giveitem 60398,1
+	leavegroup
+	Warp 0,1000,242,88

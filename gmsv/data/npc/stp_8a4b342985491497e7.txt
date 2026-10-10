@@ -1,0 +1,7 @@
+block Job >= 205
+	Window "\n\n你要学习11D首饰生产技能吗?",yes,no
+	Window_yes
+	killitem 3728
+	GiveRecipe 1047
+	Window_no
+	EndWindow "\n\n那算了!"

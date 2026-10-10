@@ -1,0 +1,18 @@
+
+
+block Item 715292 > 0
+endwindow "\n\n芬芬前阵子去过再生花园\n你回去问鲁德吧!"
+
+block Item 715291 > 0
+Window 1110532,OK
+Window_OK Item 715291 > 0
+KillItem 715291,1
+GiveLeak1Item 715292,1
+endwindow "\n\n叔叔的助理芬芬前阵子去过再生花园\n你回去问鲁德吧!"
+ 
+Window_OK
+endwindow "\n\n咦～你的东西突然不见,是不是掉了." 
+
+block 
+endwindow "\n\n叔叔又不知跑到那里作研究了." 
+ 

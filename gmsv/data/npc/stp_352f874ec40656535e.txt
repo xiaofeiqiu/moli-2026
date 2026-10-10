@@ -1,0 +1,27 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 60416 >= 1 || item 60423 >= 1 || item 60426 >= 1
+	endwindow "\n\n　不知道下次会不会在这里见面，（坏笑……）。"
+block item 60411 >= 1 && item 60412 >= 1 && item 60413 >= 1 && item 60414 >= 1 && item 60415 >= 1
+	window"\n\n你们的运气不错冒险者，被如此强大的力量冲击只受了一些小伤，这是落在你们身边的，带上它给奎因看看吧",ok
+		window_ok
+			killitem 60421,1
+			killitem 60422,1
+			killitem 60410,1
+			giveitem 60426,1
+block item 60424 >= 1
+	window"\n\n又见面了冒险者，竟然从山巅的乌克兰村跌落到这里……",next
+	window"\n\n（……总感觉头有点晕，原来是这么回事，糟了魔女呢！）",next
+	window"\n\n请放心，村子那边的黑暗已经消失了，不过你们的任务似乎没完成，埃露戴娜和诚惠已经去做最后准备了，就让我送你们一程，那把匕首就寄方在我这里吧，我会还给诺瓦尔的。",next
+	window"\n\n拿好这片羽毛，如果失败了在法兰城里与我对话，我会再次送你过去的。",ok
+		window_ok
+			killitem 60411,1
+			killitem 60424,1
+			giveitem 60416,1
+			giveitem 60423,1
+			LeaveGroup
+			Warp 0,67,12,13
+block
+	window "\n\n您好冒险者，有什么需要帮忙的吗？",ok
+		window_ok
+			EndWindow "\n\n	有空常来看看，冒险者。"

@@ -1,0 +1,9 @@
+#本脚本 饕饕不绝 编写 
+block Item 90901 >= 1
+	window	"原来你们是古钱找来的啊。",Next	
+	window	"哎你们已经是第N个来找死的了...\n不好，敌人杀来了.",OK
+	window_ok
+Encount 3|0,1511,12,8|||||0|||90900|||||||||
+
+block 
+	endwindow "你们是谁？"

@@ -1,0 +1,10 @@
+block
+window "\n\n要打开金牛神使精华吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes
+killitem 39730
+givepet 12399
+
+

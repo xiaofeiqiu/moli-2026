@@ -1,0 +1,8 @@
+block item 86529 < 1
+window "\n\n非常感谢你，勇敢的冒险家，光明精灵永远铭记你……",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86529
+Warp 0,1000,233,78
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"

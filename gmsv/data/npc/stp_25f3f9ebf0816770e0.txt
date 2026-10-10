@@ -1,0 +1,22 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 60414 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60414,1
+block item 1000322 >= 1
+	endwindow "\n\n　快去吧，埃露戴娜在等你们。"
+block item 60414 >= 1
+	window"\n\n王总是出现在很多奇怪的地方……",next
+	window"\n\n……快说正事冒险者。",next
+	window"\n\n（将事件的情况向诚惠先生进行了说明……）",next
+	window"\n\n诚惠表情凝重……",next
+	window"\n\n这个灵核蕴藏着的魔力正在消散……原来如此，的确是非常可怕的东西，或许会给世界带来灾难……。",next
+	window"\n\n诚惠先生……奎因先生似乎也有些担忧……",next
+	window"\n\n是吗？我会去拜访奎因先生的，请把这封信交给埃露戴娜，路上小心。",ok
+		window_ok
+			giveitem 1000322,1
+block
+	window "\n\n您好冒险者，有什么需要帮忙的吗？",ok
+		window_ok
+			EndWindow "\n\n	有空常来看看，冒险者。"

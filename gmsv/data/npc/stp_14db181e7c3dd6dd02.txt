@@ -1,0 +1,18 @@
+block item 86514 >= 1 && item 86516 >= 1 && item 86517 >= 1 && item 86519 < 1
+leavegroup
+killitem 86514
+killitem 86516
+killitem 86517
+giveitem 86519 
+
+
+block item 86514 >= 1
+endwindow "\n\n............"
+
+block
+window "\n\n%￥……sdfsdf！",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86514
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"

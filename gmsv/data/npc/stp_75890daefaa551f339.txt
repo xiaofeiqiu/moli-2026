@@ -1,0 +1,10 @@
+block
+window "\n\n这…这个就是我梦寐以求寻找了一辈子的灵武水晶石.",next
+window "\n\n有了它,再配合我那东西就能感应出公主沉睡的地方,那么我此生也无牵挂了.",next
+window "\n\n麻烦你把这个灵武水晶拿去给我的孙子辛格,叫他拿着这个水晶和我枕头底下的水晶带去给赛利鲁村武器店的老板,武器店的老板会告诉辛格接下来怎么做的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200567
+leavegroup
+Warp 0,27641,29,33

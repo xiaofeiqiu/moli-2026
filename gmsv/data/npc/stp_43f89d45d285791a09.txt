@@ -1,0 +1,13 @@
+block item 800142 >= 1
+leavegroup
+Warp 0,64017,1,9
+
+
+block item 800127 >= 1
+killitem 800127
+leavegroup
+Warp 0,64017,1,9
+
+
+block
+endwindow "\n\n门好像锁住了..."

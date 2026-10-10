@@ -1,0 +1,6 @@
+block 
+	Window "\n\n 使用后进去一层极挑战场！",ok
+        Window_ok
+        killitem 795001
+        leavegroup
+        Warp 0,60111,16,23

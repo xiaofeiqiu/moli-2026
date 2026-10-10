@@ -1,0 +1,8 @@
+block   level >= 190
+        window"\n\n\n以你的实力..已经超越了神的领域..此刻..去挑战传说中的创世神吧",OK
+        window_OK
+        leavegroup
+	Warp 0,560,128,187
+block
+	Window "\n------------------暗黑魔界，祝您游戏愉快----------------",ok
+        Window_ok

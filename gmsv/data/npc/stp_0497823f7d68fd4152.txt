@@ -1,0 +1,7 @@
+block item 9204 >= 1 && item 86336 < 1
+window 85490,yes,no
+window_no
+window_yes
+leavegroup
+killitem 9204
+giveitem 86336

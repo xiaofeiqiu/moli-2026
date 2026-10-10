@@ -1,0 +1,13 @@
+
+block item 999042 >= 1 
+EndWindow  "\n\n 快送去阿凯鲁法村的卡洛尔！"
+
+block StrCmpChat == 9000024 && itemspace != 0 
+Giveitem 999042 
+EndWindow  "\n\n 快送去阿凯鲁法村的卡洛尔！"
+
+block StrCmpChat == 9000024 && itemspace != 1 
+EndWindow  "\n\n 你已经带的太多东西了，就不麻烦你了！"
+
+block 
+EndWindow  "\n\n 我受伤了，走不动了。\n这些粽子怎么办啊？"

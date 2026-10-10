@@ -1,0 +1,16 @@
+block item 50974 >= 1
+Endwindow"\n\n\n你先回村子报告吧,我等其他人到了一汇合就马上就赶回去."
+
+
+######获得物品【矿石包】
+block item 50963 >= 1 && item 50964 >= 1 && item 50965 >= 1
+Window "\n\n你已经找到他们了么,你先回村子报告吧,我等其他人到了一汇合就马上就赶回去.",ok
+window_ok item 50963 >= 1 && item 50964 >= 1 && item 50965 >= 1
+killitem 50963
+killitem 50964
+killitem 50965
+giveitem 50974
+
+
+block
+Endwindow"\n\n\n请去找护卫队长看看,有没有指派任务吧."

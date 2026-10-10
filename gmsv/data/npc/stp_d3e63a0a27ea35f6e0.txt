@@ -1,0 +1,15 @@
+
+
+block item 715218 >= 1
+endwindow "\n\n怎么感觉粽子那么少,你是不是在路上吃过呀?-_-!~~~~~"
+
+
+block item 715217 >= 1
+killitem 715217
+giveitem 715218
+endwindow "\n\n总算还来得及,太感谢你了.\n这个[迷你龙舟]你就拿着吧:)"
+
+
+
+block
+endwindow "\n\n怎么特使还没有到呀,不会半路上睡着了吧 -_-b!~~"

@@ -1,0 +1,8 @@
+block
+window"\n\n或许你们有资格挑战我,你们不是人类,也不是神,不过凭你们是打不倒我的",next
+window"\n\n告诉你们吧,只要把名字写在笔记里,并且看过这个人的容貌就能杀任何人哦",next
+window"\n\n谁都逃不出那本笔记,因为笔记就是命运,除了死神,谁都无法逃过命运",ok
+window_ok
+LeaveGroup
+nowevent 579 = 1
+Warp 0,1000,229,64

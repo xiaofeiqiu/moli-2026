@@ -1,0 +1,9 @@
+block item 1002013 == 1
+window "\n\n　要插入钥匙打开门吗？",yes,no
+window_no
+window_yes item 1002013 == 1
+killitem 1002013
+leavegroup
+Warp 0,60503,12,25
+block
+endwindow "\n\n　这道门被锁住了"

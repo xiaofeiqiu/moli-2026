@@ -1,0 +1,11 @@
+Block level < 160
+EndWindow "放过我吧，我就是个招牌……"
+Block
+Window "放过我吧，我就是个招牌……",yes,no
+Window_no
+EndWindow "下次再来。"
+Window_yes gold < 0
+EndWindow "放过我吧，我就是个招牌……"
+Window_yes
+AddGold -0
+Warp 0,73,9,19

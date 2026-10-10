@@ -1,0 +1,116 @@
+block	Window "\n\n\n\n@c ÒªÑ§Ï°Ë®Áú×°±¸µÄÖÆ×÷·½·¨Âð£¿",yes,no
+	#ÎäÆ÷
+	Window_YES Luac stp:legacy:0a26deab8f4d53fc4cbe >= 1
+	GiveRecipe 21
+	GiveRecipe 81
+	GiveRecipe 141
+	GiveRecipe 201
+	GiveRecipe 261
+	GiveRecipe 321
+	GiveRecipe 381
+	#·À¾ß
+	Window_YES Luac stp:legacy:4bbd03a6872c88ae1861 >= 1
+	GiveRecipe 44
+	GiveRecipe 501
+	GiveRecipe 561
+	GiveRecipe 621
+	GiveRecipe 681
+	GiveRecipe 741
+	GiveRecipe 801
+	GiveRecipe 861
+	#Öý½£
+	Window_YES Luac stp:legacy:b983ef3cdf449f7eef3a >= 1
+	GiveRecipe 21
+	GiveRecipe 81
+	GiveRecipe 141
+	GiveRecipe 261
+	#Öý¸«
+	Window_YES Luac stp:legacy:5e0cb21ae80ba975aef4 >= 1
+	GiveRecipe 21
+	GiveRecipe 81
+	GiveRecipe 141
+	GiveRecipe 261
+	#ÖýÇ¹
+	Window_YES Luac stp:legacy:d24bf635f1c1db2603cb >= 1
+	GiveRecipe 21
+	GiveRecipe 81
+	GiveRecipe 141
+	GiveRecipe 261
+	#Öý¹­
+	Window_YES Luac stp:legacy:dbe9ebfd0adbb598497f >= 1
+	GiveRecipe 201
+	GiveRecipe 321
+	GiveRecipe 381
+	#ÖýÕÈ
+	Window_YES Luac stp:legacy:ea605a9c9b4353bb159d >= 1
+	GiveRecipe 21
+	GiveRecipe 81
+	GiveRecipe 141
+	GiveRecipe 261
+	#Öý»ØÁ¦
+	Window_YES Luac stp:legacy:c0564761f6105e004465 >= 1
+	GiveRecipe 201
+	GiveRecipe 321
+	GiveRecipe 381
+	#ÖýÐ¡µ¶
+	Window_YES Luac stp:legacy:990402290f7fcecff38b >= 1
+	GiveRecipe 201
+	GiveRecipe 321
+	GiveRecipe 381
+	#ÖýÍ·¿ø
+	Window_YES Luac stp:legacy:6a827d7b9f81884cb5ab >= 1
+	GiveRecipe 441
+	GiveRecipe 561
+	GiveRecipe 741
+	GiveRecipe 861
+	#ÖýÃ±×Ó
+	Window_YES Luac stp:legacy:562d6abe62973a36b9a9 >= 1
+	GiveRecipe 501
+	GiveRecipe 621
+	GiveRecipe 681
+	GiveRecipe 801
+	#Öýîø
+	Window_YES Luac stp:legacy:c722f79bb7af310683a0 >= 1
+	GiveRecipe 441
+	GiveRecipe 561
+	GiveRecipe 741
+	GiveRecipe 861
+	#ÖýÒÂ
+	Window_YES Luac stp:legacy:9b29ac1546f48dc1f997 >= 1
+	GiveRecipe 501
+	GiveRecipe 621
+	GiveRecipe 681
+	GiveRecipe 801
+	#ÖýÅÛ
+	Window_YES Luac stp:legacy:a6918b5f6ad0a5438cca >= 1
+	GiveRecipe 501
+	GiveRecipe 621
+	GiveRecipe 681
+	GiveRecipe 801
+	#ÖýÑ¥
+	Window_YES Luac stp:legacy:be507d4de679fc2a4678 >= 1
+	GiveRecipe 441
+	GiveRecipe 561
+	GiveRecipe 741
+	GiveRecipe 861
+	#ÖýÐ¬
+	Window_YES Luac stp:legacy:2b054a89ac61c72f1bf5 >= 1
+	GiveRecipe 501
+	GiveRecipe 621
+	GiveRecipe 681
+	GiveRecipe 801
+	#Öý¶Ü
+	Window_YES Luac stp:legacy:bb2b0db33e78c6965cad >= 1
+	GiveRecipe 441
+	GiveRecipe 561
+	GiveRecipe 741
+	GiveRecipe 861
+	#³øÊ¦
+	Window_YES Luac stp:legacy:f1e911a8a7402e7c3fba >= 1
+	GiveRecipe 972
+	GiveRecipe 921
+	#Ò©¼ÁÊ¦
+	Window_YES Luac stp:legacy:7170dcf7e3854475d9ee >= 1
+	GiveRecipe 972
+	GiveRecipe 921
+	Window_NO

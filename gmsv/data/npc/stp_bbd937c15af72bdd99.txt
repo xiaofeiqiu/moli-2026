@@ -1,0 +1,8 @@
+block Item 54017 >= 1 
+        Window "\n\n\@n\n\n@c　真的要打开多拉姆糖的蛋吗?",Yes,No
+        Window_Yes Item 54017 >= 1 && Petspace >= 1
+        KillItem 54017
+        GivePet 54017
+        
+	Window_Yes Item 54017 >= 1 && Petspace == 0
+	Endwindow "你的宠物栏满了!"

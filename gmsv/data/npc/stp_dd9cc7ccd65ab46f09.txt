@@ -1,0 +1,63 @@
+#第二次完成任务镖旗159
+block EndEvent 557 == 1
+Window "\n\n我们又见面了,恭喜你们通过了最终的试炼.",next
+Window "\n\n勇者啊!你们未来的路还很长,为此我特意准备了一个非常不错的礼物给你们.",next
+Window "\n\n但是需要你们将之前获得的名声都交还给我,而且还要付出10万金币,你确定吗?",yes,no
+
+#选择是魔币不够获得证明可以去魔法大学换取
+Window_yes gold < 100000
+Window "\n\n抱歉,你的金币没有带够,你可以拿着这个证明,等你有足够的金币了,随时来魔法大学找我.",ok
+Window_ok
+giveitem 730057
+LeaveGroup
+Warp 0,1530,15,6
+
+#选择是判断第二次以上完成任务给予洗礼项链
+Window_yes EndEvent 557 == 1
+EndEvent 557 = 1
+giveitem 730058
+LeaveGroup
+Warp 0,1530,15,6
+
+#选择否获得证明,之后去魔法大学换取
+Window_no
+Window "\n\n那好吧,如果你想通了,在拿着这个证明来魔法大学找我吧.",ok
+Window_ok
+EndEvent 557 = 1
+giveitem 730057
+LeaveGroup
+Warp 0,1530,15,6
+
+block
+Window "\n\n我们又见面了,恭喜你们通过了最终的试炼.",next
+Window "\n\n勇者啊!你们未来的路还很长,为此我特意准备了一个非常不错的礼物给你们.",next
+Window "\n\n但是需要你们将之前获得的名声都交还给我,而且还要付出10万金币,你确定吗?",yes,no
+
+#选择是且魔币不够10万获得证明之后可以去魔大换取技能栏
+Window_yes gold < 100000
+Window "\n\n抱歉,你的金币没有带够,你可以拿着这个证明,等你有足够的金币了,随时来魔法大学找我.",ok
+Window_ok
+giveitem 730057
+LeaveGroup
+Warp 0,1530,15,6
+
+#选择是且第一次任务获得技能栏,旗标159
+Window_yes gold >=100000 && EndEvent 554 == 1 && EndEvent 555 == 1 && EndEvent 556 == 1
+addgold -100000
+EndEvent 554 = 0
+EndEvent 555 = 0
+EndEvent 556 = 0
+EndEvent 557 = 1
+CheckTitle
+giveitem 730059
+LeaveGroup
+Warp 0,1530,15,6
+
+#选择否获得证明后可以去魔法大学换之前的奖励
+Window_no
+Window "\n\n那好吧,如果你想通了,在拿着这个证明来魔法大学找我吧.",ok
+Window_ok
+EndEvent 557 = 1
+giveitem 730057
+LeaveGroup
+Warp 0,1530,15,6

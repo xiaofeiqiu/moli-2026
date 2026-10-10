@@ -1,0 +1,8 @@
+block item 58856 >= 1 && item 58857 >= 1 && item 58858 >= 1 && item 58859 >= 1
+killitem 58856,1
+killitem 58857,1
+killitem 58858,1
+LeaveGroup
+Warp 0,405,23,24
+block
+	Window "\n\n@c感觉一股很浓烈的黑暗气息....",ok

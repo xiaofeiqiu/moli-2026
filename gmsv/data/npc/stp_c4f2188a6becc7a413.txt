@@ -1,0 +1,14 @@
+block Item 6529 >= 1
+	EndWindow "\n\n请你一定要帮我找到她的下落!"
+
+block Item 6521 >= 1
+	Window "\n\n什么?你已经知道萌子的事了?实在万分抱歉,这件事本来我自己处理的,可我现在感觉相当的无力,你能帮助我找回她吗?",YES,NO
+	Window_NO
+	EndWindow "\n\n（宾拉已经泣不成声,难道宾拉喜欢着萌子吗?）"
+	Window_YES
+	Window "\n\n谢谢你,唯一的线索就是萌子前几天去了皇宫里的图书馆,随后就再也没人见过她,请你一定要帮我找到她的下落,我这个侦探真是图有虚名...",OK
+	Window_OK
+	GiveItem 6529,1
+block
+	Window "\n\n我就是大名鼎鼎的侦探宾拉.",OK
+	Window_OK

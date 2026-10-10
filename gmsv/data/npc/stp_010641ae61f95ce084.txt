@@ -1,0 +1,30 @@
+block item 200220 >= 1
+endwindow "\n\n快去～别让我们的客户等急了（使了个颜色）."
+
+
+
+block item 200218 >= 1 && item 200219 >= 1
+window "\n\n就是这条鱼,终于上钩了（小声对你说话）.",next
+window "\n\n你就按照这位顾客的要求送趟货吧.",ok
+window_ok
+killitem 200218
+killitem 200219
+giveitem 200220
+
+
+
+block item 200218 >= 1
+endwindow "\n\n按照队长的计划,你先委屈下,当下搬运工."
+
+
+block item 200217 >= 1
+window "\n\n没想到队长能派你来,那么我就会轻松很多,现在我们的首要任务就是等诱饵上钩了.",next
+window "\n\n对了,我给你顶帽子,戴上这顶帽子就像这里的搬运工了.",ok
+window_ok
+killitem 200217
+giveitem 200218
+
+
+
+block
+endwindow "\n\n顾客,你是来提货的吗?"

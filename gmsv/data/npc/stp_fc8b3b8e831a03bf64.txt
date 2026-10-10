@@ -1,0 +1,10 @@
+block item 60512 >= 1
+window "\n\n很好,看来你已经通过了考验,我可以把秘宝托付给你,去吧.",ok
+window_ok item 60512 >= 1
+leavegroup
+Warp 0,64085,11,8
+
+
+
+
+

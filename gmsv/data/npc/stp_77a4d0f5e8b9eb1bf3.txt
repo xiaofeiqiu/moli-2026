@@ -1,0 +1,4 @@
+block item 87535 < 1
+window "\n\n你要使用时间机器吗？",ok
+window_ok
+Warp 0,29713,8,18

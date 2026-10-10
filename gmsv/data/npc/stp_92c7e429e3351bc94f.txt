@@ -1,0 +1,30 @@
+
+block globalFlag 264 == 1
+Endwindow "\n\n顾问大人看人的眼光比他的智慧还可怕,像这样的小人物居然能派上这么的用处,真是令人刮目相看啊."
+
+block globalFlag 263 == 1
+Endwindow "\n\n这可有点难办啊,就算给你件卫兵服,他们也不会轻易相信啊,顾问先生有没有好主意?"
+
+block globalFlag 262 == 1
+Endwindow "\n\n旅馆、仓库这类地方,一定要好好查看,这些人最容易藏在这些地方."
+
+block item 39677 == 1
+Window "\n\n搞了半天,这家伙还真是个货真价实的杂鱼.好吧,既然这样,那我们就严密防备劫狱.",next
+Window "\n\n我们出现在城里太显眼,也容易引起居民的不安,所以在城里搜索可疑人物的任务就交给你了.",next
+Window "\n\n尤其是旅馆、仓库这类地方,一定要好好查看,这些人最容易藏在这些地方.",ok
+Window_ok item 39677 == 1
+killitem 39677
+globalFlag 262 = 1
+
+block item 39676 == 1
+Endwindow "\n\n我把那个家伙也带回来了,现在关在地下牢房里,你可以去再审审他,看看有没有新线索."
+
+block globalFlag 261 == 1
+Window "\n\n哎,那个可恶的家伙,我们按照他的口供去查看了,那里连个人影都没有,附近的山水海边全都搜过了,一无所获,简直气死我了.",next
+Window "\n\n我把那个家伙也带回来了,现在关在地下牢房里,你可以去再审审他,看看有没有新线索.",next
+Window "\n\n拿上这个去吓唬吓唬他,你不是军方的人,可能更容易让他害怕.去吧,不用对他手软.",ok
+Window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+Window_ok
+giveitem 39676
+globalFlag 261 = 0

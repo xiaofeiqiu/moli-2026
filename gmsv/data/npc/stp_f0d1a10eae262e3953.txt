@@ -1,0 +1,10 @@
+block Item 670040 == 1 && Item 18541 == 1 && Item 18542 ==1 && Item 18375 ==1
+	Window 670048,yes,no
+	window_yes
+	KillItem 18541
+	KillItem 18542
+        KillItem 670040
+	KillItem 18375
+	killitem 670041
+        GiveItem 670039
+	Warp 0,1000,238,88

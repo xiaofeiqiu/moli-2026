@@ -1,0 +1,26 @@
+block item 200578 >= 1
+window "\n\n看来你替我们老板弄到花瓶了,快进去吧.",ok
+window_ok
+leavegroup
+Warp 0,27640,1,5
+
+
+
+
+block item 200576 >= 1
+window "\n\n你是来找我们老板的吗?他已经在里面恭候你多时了.",ok
+window_ok
+leavegroup
+Warp 0,27640,1,5
+
+
+block item 200563 >= 1
+window "\n\n站住,给我站住,你们没有我们发放的通行证是不能进去的,别把我的话当耳边风,原来想找茬啊.",ok
+window_ok
+leavegroup
+killitem 200563
+Encount 2|0,27640,1,5||0|||||0|50582|||||||||
+
+
+block
+endwindow "\n\n这里不是你该来的地方."

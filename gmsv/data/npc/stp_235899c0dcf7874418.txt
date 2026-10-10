@@ -1,0 +1,11 @@
+block	item 661023 ==0 || item 661024 ==0
+	endwindow 7020634
+block	item 661023 ==1 && item 661020 == 0
+	window 7020635,next
+	window 7020636,yes,no
+	window_yes
+	systemmessage 7020643
+	giveitem 661020,1
+	leavegroup
+	Warp 0,1000,240,85
+	endwindow 7020633

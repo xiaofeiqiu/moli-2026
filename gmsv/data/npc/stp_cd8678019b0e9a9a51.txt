@@ -1,0 +1,26 @@
+block item 795377 == 1 && Item 795378 == 1 && Item 795379 == 1 && Item 795380 ==1 && Item 795381 == 1 && Item 795382 == 1
+Window "\n\n你收集齐了祝福碎片,让我替你祈福吧.",ok
+Window_ok item 795377 == 1 && Item 795378 == 1 && Item 795379 == 1 && Item 795380 ==1 && Item 795381 == 1 && Item 795382 == 1
+KillItem 795377
+KillItem 795378
+KillItem 795379
+KillItem 795380
+KillItem 795381
+KillItem 795382
+GiveItem 795386
+EndWindow "\n\n新年快乐."
+
+block item 795377 == 1 && item 795378 == 1
+EndWindow "\n\n新年快乐."
+
+block item 795377 == 1
+Window "\n\n新年快乐.",next
+Window "\n\n新的一年,各地的元素使者准备为法兰城的勇士们准备了一份神秘的礼物.",next
+Window "\n\n将法兰祝福之力送给你,去寻找别的元素使者吧!",OK
+Window_OK itemspace == 0
+EndWindow "\n\n你的背包满啦."
+Window_OK
+giveitem 795378
+
+block
+EndWindow "\n\n新年快乐."

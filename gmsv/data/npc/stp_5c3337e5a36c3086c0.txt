@@ -1,0 +1,9 @@
+block
+window "\n\n先生、小姐要来杯我们村特产的红酒吗？包你喝了还想喝...",yes,no
+window_no
+endwindow "\n\n你还真不识货！"
+window_yes
+window "\n\n先生、小姐乃们真有眼光啊，5000G一杯不算贵噢~~",ok
+window_ok
+addgold -5000
+giveitem 87040

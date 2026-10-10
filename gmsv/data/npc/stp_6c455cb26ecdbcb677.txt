@@ -1,0 +1,13 @@
+block item 730146 >= 1
+window "\n\n啾,如你所见,啾们正在努力的挽救这个孩子即将消逝的灵魂.但,啾似乎已经到了极限了啾!希望你的到来能改变这残酷的命运啾啾!",yes,no
+window_no
+endwindow "\n\n不要屈服于命运的力量呀啾啾!"
+window_yes
+window "\n\n啾!这残酷的命运就要依靠你来改变了!",ok
+window_ok
+leavegroup
+Warp 0,50002,11,12
+
+
+block
+endwindow "\n\n啾!祈祷吧,低语吧.啾啾!用我们全部的关怀与爱挽留住这即将消失的微弱的光吧啾啾!"

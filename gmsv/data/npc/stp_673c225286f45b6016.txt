@@ -1,0 +1,33 @@
+
+block item 39820 >= 1
+window "\n\n我已经无法用任何语言来感激你了,相信我的病一定会很快好转的.再次感谢您,这份礼物请您收下,愿您日后的征程更加辉煌.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包不够位置了."
+window_ok
+killitem 39820
+giveitem 39821
+giveitem 39822
+
+
+
+block item 39818 >= 1
+endwindow "\n\n冒险者,一路小心!"
+
+
+block level >= 30
+window "\n\n你好,勇敢的冒险者.请原谅我躺在病床上和你见面,医生说我的身体先天不足所以体弱多病.",next
+window "\n\n索奇亚岛上有个传说,每年在这个时间,会有神秘的少女出现,如果能挑战并且击败她,就可以得到传说中能治百病的黄金粽子.",next
+window "\n\n勇敢的冒险者啊,你是否愿意接受我额定委托帮我得到黄金粽子呢?",yes,no
+window_no
+endwindow "\n\n看来我的病是好不了的了."
+window_yes
+window "\n\n谢谢你,据说神秘的少女会在晚上出现在索奇亚岛的奇利村,请多加小心.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 39818
+
+
+
+block
+endwindow "\n\n身体一直不舒服,真希望能快点恢复健康."

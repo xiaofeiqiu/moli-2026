@@ -1,0 +1,4 @@
+block	item 795102 >=1
+killitem 795102,1
+LeaveGroup
+Warp 0,174,48,37

@@ -1,0 +1,6 @@
+Block
+Window "夏末：请带来罪之石×1，我会交给你下一步的调查资料。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:bc746517105da459c26c

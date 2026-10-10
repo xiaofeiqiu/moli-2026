@@ -1,0 +1,23 @@
+block item 800090 == 1 && HaveTitle == 12922 && endevent 651 == 1 && item 800078 == 1
+	Window"\n\n@c屠魔勇士！",next
+	Window"\n把强化宝石给我，剩下就交给我吧！",ok
+	Window_ok item 800090 == 1 && item 800078 == 1	
+		killitem 800078
+		killitem 800090
+		giveitem 800093
+
+block item 800090 == 1 && HaveTitle == 12922 && endevent 651 == 1 && item 800077 == 1
+	Window"\n\n@c屠魔勇士！",next
+	Window"\n请把强化宝石给我，剩下就交给我吧！",ok
+	Window_ok item 800090 == 1 && item 800077 == 1	
+		killitem 800077
+		killitem 800090
+		giveitem 800092
+
+block item 800090 == 1 && HaveTitle == 12922 && endevent 651 == 1 && item 800076 == 1
+	Window"\n\n@c屠魔勇士！",next
+	Window"\n请把强化宝石给我，剩下就交给我吧！",ok
+	Window_ok item 800090 == 1 && item 800076 == 1
+		killitem 800076
+		killitem 800090
+		giveitem 800091

@@ -1,0 +1,5 @@
+block
+Window "\n\n发现一个隐蔽的洞口,要进去吗?",yes,no
+Window_no
+Window_yes
+Warp 0,64075,282,272

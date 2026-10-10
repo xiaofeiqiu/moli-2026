@@ -1,0 +1,6 @@
+block
+window 501111,next
+window 501112,next
+window 501113,ok
+window_ok
+Encount 2|0,45157,6,33||0|||||0|88112|||||||||

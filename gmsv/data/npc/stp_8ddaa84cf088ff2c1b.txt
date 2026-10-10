@@ -1,0 +1,5 @@
+block item 27759 == 1
+
+
+block
+giveitem 27759,1

@@ -1,0 +1,21 @@
+block item 661090 >= 1
+window "\n\n你是否要去物资仓库捐献物资呢?",yes,no
+window_no
+window_yes item 661090 >= 1
+leavegroup
+Warp 0,57012,27,29
+
+
+block
+window "\n\n你好,我负责传送大家到物资仓库哦.如果你同意的话,我会给你一张[捐献证明书].只要持有这张证明书,就可以每23个小时来捐献一次物资.",next
+window "\n\n你是否要去物资仓库捐献物资呢?",yes,no
+window_no
+endwindow "\n\n想好了再来找我吧,随时欢迎你来."
+window_yes itemspace < 1
+endwindow "\n\n您拿不下东西了呀."
+window_yes
+window "\n\n要小心拿好哦,二十三小时以后才可以捐赠哦,趁现在先看看能捐些什么,提前做准备吧.",ok
+window_ok
+giveitem 661090
+leavegroup
+Warp 0,57012,27,29

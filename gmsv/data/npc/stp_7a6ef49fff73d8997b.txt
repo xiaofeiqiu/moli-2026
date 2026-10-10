@@ -1,0 +1,10 @@
+block
+window "\n\n你要使用传送石前往克雷斯塔村吗?费用是5000G.",yes,no
+window_yes gold < 5000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -5000
+leavegroup
+Warp 0,27558,6,7
+window_no
+endwindow "\n\n欢迎你再度使用."

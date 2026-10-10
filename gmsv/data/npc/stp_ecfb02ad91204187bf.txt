@@ -1,0 +1,88 @@
+block item 1000548 >= 1
+window 7019557,ok
+window_ok
+LeaveGroup
+killitem 1000548
+window 7019558,yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,23373,11,36
+################################################
+block item 1000538 >= 1 && gold >= 1000 && StrCmpChat == 1900532
+LeaveGroup
+killitem 1000538
+addgold -1000
+endwindow 7019559
+
+block item 1000538 >= 1 && gold >= 1000 && StrCmpChat == 1900533
+LeaveGroup
+killitem 1000538
+addgold -1000
+endwindow 7019560
+
+block item 1000538 >= 1 && gold >= 1000 && StrCmpChat == 1900534
+LeaveGroup
+killitem 1000538
+window 7019561,ok
+window_ok
+LeaveGroup
+giveitem 1000539
+#############################################################
+block item 1000537 >= 1 && gold >= 1000 && StrCmpChat == 1900532
+LeaveGroup
+killitem 1000537
+addgold -1000
+endwindow 7019562
+
+block item 1000537 >= 1 && gold >= 1000 && StrCmpChat == 1900533
+LeaveGroup
+killitem 1000537
+window 7019563,ok
+window_ok
+LeaveGroup
+giveitem 1000539
+
+block item 1000537 >= 1 && gold >= 1000 && StrCmpChat == 1900534
+LeaveGroup
+killitem 1000537
+addgold -1000
+endwindow 7019564
+########################################
+block StrCmpChat == 1900532 && item 1000536 >= 1 && gold >= 1000
+LeaveGroup
+killitem 1000536
+window 7019565,ok
+window_ok
+LeaveGroup
+giveitem 1000539
+
+block StrCmpChat == 1900533 && item 1000536 >= 1 && gold >= 1000
+LeaveGroup
+killitem 1000536
+addgold -1000
+endwindow 7019566
+
+block StrCmpChat == 1900534 && item 1000536 >= 1 && gold >= 1000
+LeaveGroup
+killitem 1000536
+addgold -1000
+endwindow 7019567
+#########################################################
+block item 1000538 >= 1 && gold >= 1000
+window 7019568,next
+window 7019569,ok
+window_ok 
+
+block item 1000537 >= 1 && gold >= 1000
+window 7019570,next
+window 7019571,ok
+window_ok 
+
+block item 1000536 >= 1 && gold >= 1000
+window 7019572,next
+window 7019573,ok
+window_ok 
+
+block
+endwindow 7019574

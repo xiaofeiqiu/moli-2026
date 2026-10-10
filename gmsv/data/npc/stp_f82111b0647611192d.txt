@@ -1,0 +1,6 @@
+block endevent 162 == 1 && item 22008 == 1
+	window "\n星石发出奇异的光芒",yes
+	window_yes endevent 162 == 1 && item 22008 == 1
+	Warp 0,7220,46,7
+block
+	endwindow "\n似乎用点力气就可以打开."

@@ -1,0 +1,11 @@
+block item 39690 == 1
+Window "\n\n要使用迷彩麻布藏起来吗?",yes,no
+Window_no
+Window_yes
+Window "\n\n『你把自己靠在树背后,用布遮了起来.』",next
+Window "\n\n『接头人向四周看了看,然后走向海边,念起了一段咒语.』",next
+Window "\n\n『海边出现了一道闪光,一条隐藏的道路显露出来.』",ok
+Window_ok item 39690 == 1
+killitem 39690
+LeaveGroup
+Warp 0,45092,13,44

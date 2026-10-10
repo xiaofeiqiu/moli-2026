@@ -1,0 +1,14 @@
+block Item 360289 == 0
+	EndWindow 33345,OK
+
+block Item 360289 <= 2 && Item 360289 >= 1
+	EndWindow 33346,OK
+
+block Item 360289 >=3 && ItemSpace >= 1
+	Window "\n\n 哦亲爱的你找回了女王陛下收藏的纪念币了！\n\n 要领取报酬吗?",YES,NO
+        	Window_NO
+        	EndWindow "\n\n\n@c　再考虑一下吧 ... 
+		Window_yes
+		KillItem 360289,5
+		GiveItem (360290%10,360291%10,360292%10,360293%10,360294%10,360295%10,360297%10,360298%10)
+		GiveItem 360296,1	

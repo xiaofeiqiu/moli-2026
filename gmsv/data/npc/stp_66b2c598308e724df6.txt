@@ -1,0 +1,15 @@
+block item 1000488 >= 1 || item 1000490 >= 1 || item 1000491 >= 1
+	killitem 1000488
+	killitem 1000489
+	killitem 1000490
+	killitem 1000491
+	Window "\n\n　破坏誓言的人，花散落消失吧！",ok
+block item 1000489 >= 1
+	Window "\n\n　遵守誓言的人，去参加更加严格的试炼吧！",ok
+	window_ok
+	killitem 1000489
+	leavegroup
+	Warp 0,45261,41,41
+block
+	window"......",ok
+	

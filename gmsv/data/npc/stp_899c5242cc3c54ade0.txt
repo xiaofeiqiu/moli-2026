@@ -1,0 +1,10 @@
+block item 666082 >=1
+endwindow "\n\n我投降了!"
+
+
+block
+window "\n\n退兵?我们准备这么久的大计可不是开玩笑的!你们要投降么?不想投降就看招!",yes,no
+window_yes
+Encount 2|||0|||||0|8524|||||||||
+window_no
+endwindow "\n\n看你也没本事打赢我!"

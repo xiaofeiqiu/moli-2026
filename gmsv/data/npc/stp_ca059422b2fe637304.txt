@@ -1,0 +1,6 @@
+block Item 1000463 == 1
+	Window"\n\n魔王会让你们绝望！！",next
+	Window"\n\n炽天使下地狱去吧！！！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18116,17,9|1000463|||||||800051|||||||||

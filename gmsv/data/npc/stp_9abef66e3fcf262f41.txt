@@ -1,0 +1,7 @@
+block item 730006 >= 1 && itemspace >= 5
+window "\n\n你要打开包裹么?",yes,no
+window_no
+Endwindow "\n\n下次再说吧."
+window_yes item 730006 >= 1 && itemspace >= 5
+killitem 730006
+giveitem (13609%8$5,13619%8$5,13629%8$5,13639%8$5,13649%8$5,13659%8$5,13669%8$5,13679%8$5)

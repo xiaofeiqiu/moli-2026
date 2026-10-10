@@ -1,0 +1,13 @@
+block item 200200 >= 1 && item 200201 >= 1
+window "\n\n船票?我是这船上的搬运工,是无需出示船票的.",next
+window "\n\n我为什么不穿制服,正好我昨晚把制服洗掉了.",next
+window "\n\n跟你去见船长,不…不行…其实…我是混上船的,求你不要赶我下船.",next
+window "\n\n我是想去圣迦尔德王国当皇家禁卫军,守护我梦寐的莉莉丝公主,由于我家境贫寒,买不起前往圣迦尔德王国的船票,所以…只能走偷渡这一途径了.",next
+window "\n\n求你了…成全我的梦想吧,你可以让我帮你做任何事.",yes,no
+window_yes
+leavegroup
+Warp 0,27004,74,27
+
+
+block
+endwindow "\n\n..."

@@ -1,0 +1,10 @@
+block Item 800014 == 1
+	endWindow"\n\n海湾之村可能在东南方。。。"
+
+block item 800012 == 1 || item 800010 == 1 || item 800011 == 1 || item 800033 >= 1
+	Window"\n\n这里是掠食者平原，你也是来挑战的吗？这里的怪物太强了。。。必须小心！",next
+	Window"你必须先前往海湾之村找到我们的攻略组，我不幸走散了，只能等待救援。。。",ok
+	Window_ok ItemSpace > 0
+	GiveLeak1Item 800014,1
+	Window_ok ItemSpace < 1
+	endWindow"你的背包满了！"

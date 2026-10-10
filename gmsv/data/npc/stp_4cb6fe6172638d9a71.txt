@@ -1,0 +1,14 @@
+block item 61041 >= 1
+EndWindow 900325
+
+block level >=25
+window 900326,next
+window 900327,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 61041
+window_yes ItemSpace < 1
+endwindow 900317
+
+block
+endwindow 900328

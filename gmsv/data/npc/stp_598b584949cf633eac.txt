@@ -1,0 +1,9 @@
+block	HaveTitle ==1048 && item 666022 ==5
+    window "\n\n 塞莉努还是没醒,可能需要几个1500血瓶会好得快点,你有吗?她昏迷前交给我一张药方,一起给你吧",yes,no
+    Window_yes
+	killitem 666022,5
+	giveitem 60394,1
+	leavegroup
+	Warp 0,1000,221,83
+	window_no
+	window "\n\n行行好吧,要赶紧救治塞莉努",ok

@@ -1,0 +1,29 @@
+block item 200549 >= 1 && item 200550 >= 1 && item 200551 >= 1 && item 200552 >= 1 && item 200553 >= 1
+endwindow "\n\n四种晶灵石凑齐了吗?现在你只要把四种晶灵石放在大圣堂外的一块石碑上即可前往晶灵术士的所在地."
+
+
+block item 200549 >= 1
+endwindow "\n\n或许这是晶灵术士对你们的考验."
+
+
+
+block item 200548 >= 1
+window "\n\n刚刚收到一封晶灵术士的飞鸽传书,说如果你们想要见到他们就要去取到4样东西.",next
+window "\n\n分别取得位于大圣堂外面雷格鲁斯山的地、水、火、风四大晶灵空洞内的四种晶灵石.",next
+window "\n\n你们愿意去尝试吗?",yes,no
+window_yes
+killitem 200548
+giveitem 200549
+
+
+block
+window "\n\n这个十字架你拿着,可以方便你自由出入大圣堂,只要找到安德列后出示此物即可.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200548
+leavegroup
+Warp 0,27500,67,168
+
+
+

@@ -1,0 +1,5 @@
+block 
+window "\n\n箱子后面有个暗格楼梯,你要走下去吗?",yes,no
+window_yes
+leavegroup
+Warp 0,27132,3,25

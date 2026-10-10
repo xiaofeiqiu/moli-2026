@@ -1,0 +1,14 @@
+block item 730144 >= 1
+endwindow "\n\n悲伤的人偶沉默着."
+
+
+block
+window "\n\n无表情的人偶沉默着......是否要帮助她呢?",yes,no
+window_no
+endwindow "\n\n悲伤的人偶沉默着."
+window_yes
+window "\n\n你从沉默的人偶手中得到了一个闪闪发光的碎片.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 730144

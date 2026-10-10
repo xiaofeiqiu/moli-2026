@@ -1,0 +1,11 @@
+block endevent 162 == 1 && item 22003 == 1 && item 22004 == 1 && item 22005 == 1 && item 22006 == 1 && item 22007 == 1
+	window "\n好吧，我可以帮你把这些星珠合成星石。",yes,no
+	window_yes endevent 162 == 1 && item 22003 == 1 && item 22004 == 1 && item 22005 == 1 && item 22006 == 1 && item 22007 == 1
+	killitem 22003
+	killitem 22004
+	killitem 22005
+	killitem 22006
+	killitem 22007
+	giveitem 22008
+block
+	endwindow "\n什么?"

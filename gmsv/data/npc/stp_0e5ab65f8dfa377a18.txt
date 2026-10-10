@@ -1,0 +1,2 @@
+block
+Endwindow"\n\n@c 四等任务还未开放!"

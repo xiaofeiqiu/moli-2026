@@ -1,0 +1,8 @@
+block item 3500 >= 1
+window "\n窗沿好像有什么细小的物品,需要捡起来吗?",yes,no
+window_YES item 3503 < 1 && itemSpace >= 1
+giveitem 3503,1
+window_YES item 3503 >= 1
+endWindow "\n已经没更有价值的东西留在这了...",ok
+window_YES itemSpace < 1
+endWindow "\n你的物品满了啦!",ok

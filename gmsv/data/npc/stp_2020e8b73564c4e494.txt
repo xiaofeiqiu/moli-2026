@@ -1,0 +1,82 @@
+#####邪影净化#####
+block item 600040 >= 1 && item 600059 >= 1 && item 600060 >= 1 && item 600061 >= 1 && item 600062 >= 1 && item 600063 >= 1
+window "\n\n回来了?让我看看你的成果.\n\n恩......干的很不错嘛,足够强壮,也不太笨.嘻,想不想加入曙光骑士团呢?",yes,no
+window_yes
+window "\n\n你做到了足够的努力,现在就准许你成为教团骑士.",ok
+window_ok  item 600040 >= 1 && item 600059 >= 1 && item 600060 >= 1 && item 600061 >= 1 && item 600062 >= 1 && item 600063 >= 1
+killitem 600040
+killitem 600059
+killitem 600060
+killitem 600061
+killitem 600062
+killitem 600063
+giveitem 18149
+window_no
+endwindow "\n\n考虑好再来找我吧!曙光骑士团随时等你加入."
+
+
+block item 600040 >= 1 && item 600059 >= 1 && item 600042 >= 1 && item 600043 >= 1 && item 600044 >= 1 && item 600045 >= 1
+window "\n\n回来了?让我看看你的成果.\n\n恩......只是做到这程度可不行哦,不过还是要表彰你的努力啦~~",ok
+window_ok item 600040 >= 1 && item 600059 >= 1 && item 600042 >= 1 && item 600043 >= 1 && item 600044 >= 1 && item 600045 >= 1
+killitem 600040
+killitem 600042
+killitem 600043
+killitem 600044
+killitem 600045
+giveitem (600054%1,600055%1,600056%1,600057%1,600058%1)
+
+
+block item 600040 >= 1 && item 600042 >= 1 && item 600043 >= 1 && item 600044 >= 1 && item 600045 >= 1
+window "\n\n回来了?让我看看你的成果.\n\n恩......只是做到这程度可不行哦,不过还是要表彰你的努力啦~~",ok
+window_ok item 600040 >= 1 && item 600042 >= 1 && item 600043 >= 1 && item 600044 >= 1 && item 600045 >= 1
+killitem 600040
+killitem 600042
+killitem 600043
+killitem 600044
+killitem 600045
+giveitem (600054%1,600055%1,600056%1,600057%1,600058%1)
+
+
+block item 600040 >= 1 || item 600042 >= 1 || item 600043 >= 1 || item 600044 >= 1 || item 600045 >= 1
+endwindow "\n\n你的试炼进展的如何了?"
+
+
+block item 18327 == 1
+window "\n\n你击倒了旅馆的亡灵吗?是的,我想这已经足够证明你和“那些家伙”的不同之处.那么,@n,你确实希望接受曙光骑士团给予的试练吗?",yes,no
+window_no
+endwindow "\n\n嘻,你真的很让人失望喔~~"
+window_yes
+window "\n\n好的,这是给你的徽记,以此证明你在进行我们的试炼,具体的细节你可以问问卡多.",ok
+window_ok item 18327 == 1
+killitem 18327
+giveitem 600040
+
+
+
+#####遗迹-承认之戒#####
+block item 652583 == 1
+window "\n\n这...这应该是神域生物的碎片啊,怎么会在这里出现!!!\n难道装置...\n请尽快将这封信交付给大祭司布鲁梅尔!",ok
+window_ok item 652583 == 1
+killitem 652583
+giveitem 652584
+
+
+block item 652582 >= 1
+endwindow "\n\n你还在这里晃悠什么,还不赶快去!"
+
+
+block item 652581 == 1
+window "\n\n恩,法兰的情况我已经了解了.非常感谢您在这危险的时期仍旧来帮助我们.但是我仍旧要提醒您,里面很危险.您还是要去么?",yes,no
+window_yes item 652582 == 0 && item 652581 == 1
+killitem 652581
+giveitem 652582
+endwindow "\n\n太好了,您只要拿着它去找教团骑士克罗米,他会告诉您应该怎么做的.",ok
+window_no
+killitem 652581
+endwindow "\n\n躲避危险是你的天性!愿曙光与您同在!",ok
+
+
+
+block
+window "\n\n曙光骑士团并不是一个最强者的集合,只要你能够拥有与剑士,见习骑士,或者士兵相当的实力,就已经具备了加入我们的最基本条件~~\n\n然而我们真正看重的,是你是否拥有驱逐邪恶的信心,以及随时可为公正而献身的决心.请你先为你的勇气拿出证明来吧~~",next
+endwindow "\n\n法兰城有一座旅馆里似乎有一些不死系生物,打倒它们,把证明拿回来吧."

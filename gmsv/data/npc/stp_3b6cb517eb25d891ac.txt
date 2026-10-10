@@ -1,0 +1,7 @@
+block
+	Window 800126,yes,no
+Window_NO
+Window_YES
+	KillItem 940138
+	GiveItem 940139
+	

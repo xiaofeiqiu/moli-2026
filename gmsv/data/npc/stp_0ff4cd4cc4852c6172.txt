@@ -1,0 +1,7 @@
+block item 87187 == 1
+window "\n\n你要用手上的钥匙打开古墓入口吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87187
+Warp 0,25192,46,47

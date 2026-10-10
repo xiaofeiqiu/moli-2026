@@ -1,0 +1,7 @@
+#∞Ÿ»ÀΩ±∆∑100≤„
+block
+	Window 790002,OK
+	Window_OK
+	giveitem 790004,1
+	LeaveGroup
+	Warp 0,1000,141,148

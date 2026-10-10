@@ -1,0 +1,6 @@
+block item 50971 >= 1
+Window "\n\n要用钥匙打开门吗?",yes,no
+Window_no
+Window_yes item 50971 >= 1
+LeaveGroup
+Warp 0,57132,15,47

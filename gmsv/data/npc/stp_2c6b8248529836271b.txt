@@ -1,0 +1,29 @@
+
+block item 86905 == 1 && item 86906 < 1
+window "\n\n米雪儿的宠物穴龙我也不知道跑到了哪里，你可以去问问哥拉尔的驯兽师，她可能知道！如果有下落，一定要回来告诉我啊！",ok
+window_ok
+leavegroup
+killitem 86905
+giveitem 86906
+
+block item 86904 == 1
+endwindow "\n\n她就在西门外很好找的！"
+
+block item 86901 == 1
+endwindow "\n\n刚才有人告诉我，米雪儿的宠物宝宝跑到了阿凯鲁法村，你去那里找找看吧！"
+
+block item 86900 == 1
+endwindow "\n\n她就在西门外很好找的！"
+
+block
+window "\n\n米雪儿到西门外寻找跑掉的宠物穴龙还没回来，我很担心，你能帮我找到她嘛？",yes,no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86900
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+window_no ItemSpace >= 1
+leavegroup
+giveitem 86904
+window_no ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"

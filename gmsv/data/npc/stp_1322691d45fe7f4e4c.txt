@@ -1,0 +1,15 @@
+block item 88310 == 1
+endwindow "\n\n我们这离来往阿凯鲁法城的商道很近，所以山贼也很多！"
+
+block item 88309 == 1
+window "\n\n你们是贝尔特公司的职员吗？不是啊~~我以为他职员感觉到他运货时间太长来找他了呢。",next
+window "\n\n我还想让他们去帮他们老板一起去对付山贼把货物抢回来呢。贝尔特只带了几个货运工前去我看这事很悬。",next
+window "\n\n你能否能帮忙去协助贝尔特去把货物抢回来吗？",yes,no
+window_no
+window_yes
+killitem 88309
+giveitem 88310
+endwindow "\n\n这个耳环就算是订金，事成之后定有重赏。据贝尔特叙述他们的货物是在来这里的山谷中被抢劫的。"
+
+block
+endwindow "\n\n你们有什么事吗？"

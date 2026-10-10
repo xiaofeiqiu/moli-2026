@@ -1,0 +1,10 @@
+#####面包&奶茶#####原创任务######
+block item 60383 >= 1
+window "\n就拜托你们了……",ok
+block item 60384 == 1
+killItem 60384,1 
+window "\n这个……是猫猫的？！\n猫猫她怎么样了……？",ok
+Window_OK
+window "\n猫猫……哥哥这就回家去了。\n谢谢你们，请你们帮我把这个转交给猫猫，告诉她我很快就回去了……",Ok
+Window_OK
+giveitem 60383

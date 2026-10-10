@@ -1,0 +1,9 @@
+block item 88312 == 1
+window "\n\n你是来交路费的吗？那请跟我来...",ok
+window_ok
+LeaveGroup
+killitem 88312
+Warp 0,14161,13,40
+
+block
+endwindow "\n\n穷鬼看什么看！"

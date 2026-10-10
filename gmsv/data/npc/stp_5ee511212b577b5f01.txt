@@ -1,0 +1,14 @@
+block item 114 >= 1
+endwindow "\n\n快去吧...把东西交给我的主人..."
+
+
+block item 18403 >= 1 && item 113 >= 1 && item 119 == 1
+window "\n\n我的伙伴在找我吗?谢谢你!\n\n其实欧兹尼克对我很好,他在这里很孤独,但是我过一段时间就会回到主人身边,所以我想多陪陪他...\n\n这是主人的东西,希望你能带回去给她!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 18403 >= 1 && item 113 >= 1 && item 119 == 1
+giveitem 114,1
+
+
+block
+endwindow "\n\n你好啊,呵呵..."

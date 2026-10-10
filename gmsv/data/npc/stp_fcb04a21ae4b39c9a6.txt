@@ -1,0 +1,10 @@
+block item 116 >= 1
+endwindow "\n\n南茜姐姐很会弹钢琴哦!你也想学钢琴么?"
+
+	
+block item 119 == 1
+window "\n\n我把主人的东西丢了...不过南茜姐姐很好哦!她给了我这个!\n\n你把这里带回去给主人吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 116,1

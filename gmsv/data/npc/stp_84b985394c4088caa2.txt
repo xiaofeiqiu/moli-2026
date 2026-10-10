@@ -1,0 +1,21 @@
+
+
+
+
+
+block item 715318 >= 1 && item 9614 >= 20 && item 10003 >= 20
+window "\n\n呵～～\n你真的找到材料呀～～",next
+window "\n\n新闹钟做好了,别弄坏了～～",ok
+window_ok
+killitem 715318
+killitem 9614,20
+killitem 10003,20
+giveitem 715319
+
+
+
+
+block
+window "\n\n喔～～\n做时钟呀～～\n如果有纯银条与铁杉各一组就可以了.",next
+endwindow "\n\n但是闹钟最重要的是机芯\n我最爱用的翠玉转轮,掉在地下室\n你可以找回来就可以做新闹钟了."
+

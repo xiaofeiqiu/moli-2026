@@ -1,0 +1,25 @@
+###dodo_gm_1051486.txt
+###国王给予玩家奖赏,结束任务.
+
+block Group > 1 
+window "\n\n请解散队伍.",ok
+Window_OK 
+LeaveGroup  
+
+###身上有日月组织团员金卡
+block Item 715248 >= 1
+window "\n\n异界来的勇者!\n你又再次的拯救了这个法兰城\n也再次的保住了我的身家性命与王位.\n让我好好的奖励你!",next
+window "\n\n请你把身上的那张金卡送给我做纪念吧!\n也请你收下这个小礼物.",ok
+Window_OK ItemSpace < 1
+endwindow "\n\n你的身上物品携带的太多了."
+
+Window_OK Item 715248 >= 1 && ItemSpace >= 1
+KillItem 715248
+GiveLeak1Item 715255
+Warp 0,1000,233,78 
+ 
+
+block
+window "\n\n你怎么会在这里?\n外面有反叛军入侵了.\n我的子民啊,快去避难吧!",ok
+Window_OK 
+Warp 0,1000,233,78 

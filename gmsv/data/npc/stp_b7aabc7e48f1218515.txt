@@ -1,0 +1,10 @@
+block item 1000643 >= 20 && globalFlag 310 == 1
+window 7020467,next
+window 7020468,ok
+window_ok
+killitem 1000640
+killitem 1000643,20
+Encount 3|0,23237,65,36||0|7019892||0|||6000242|||||||||
+
+block
+endwindow 7020469

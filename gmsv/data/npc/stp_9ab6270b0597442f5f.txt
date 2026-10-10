@@ -1,0 +1,7 @@
+block Item 700174 == 1
+	Window "\n\n你手上的头盔？？？",NEXT
+	Window "\n\n我是狂战将军",NEXT
+	Window "\n\n 真的有人将我的头带回来了？",next
+	Window "\n\n 哈哈... \n 我黑暗的气息.. \n 啊~《狂战根据剧情，果然发疯了》!",OK
+	Window_OK
+Encount 3|0,17,7,4||0|||||0|6000172|||||||||

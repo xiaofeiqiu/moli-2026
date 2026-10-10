@@ -1,0 +1,39 @@
+
+
+########## 起点 ##########
+block Item 18596 != 0
+	Window "\n\n\n@c你打败了李贝留斯军神了吗?",next
+	Window "\n\n\n@c你也认为他是个失败的神了吧?",next
+	Window "\n\n    果然有着高远的思维啊，我的孩子，我很欣赏你!接受这个黑之纹章吧，当你取得四元素的纹章以及光之纹章后，我将赐予你无上的力量!",yes,no
+	Window_yes 
+	leavegroup
+	killitem 18596
+	Giveitem 700087
+	Warp 0,1000,106,39
+	
+	Window_NO
+		Endwindow "\n\n\n@c暗黑的力量不配授予你!",OK
+
+########## 得到后 ##########
+block item 700087 != 0 && item 700088 == 0 
+	Endwindow "\n\n\n@c别让我等得太久哦，我可是很急着见到你的成长呢!",OK
+block item 700087 != 0 && item 700089 == 0 
+	Endwindow "\n\n\n@c别让我等得太久哦，我可是很急着见到你的成长呢!",OK
+	
+	
+########## 完成收集 ##########	
+block item 700087 != 0 && item 700088 != 0 && item 700089 != 0
+	Window "\n\n\n@c很好，让我来打开那扇黑暗之门吧?",ok
+	Window_ok
+	leavegroup
+	killitem 700087
+	killitem 700088
+	killitem 700089
+	Warp 0,933,11,11
+	
+#职业#
+block Luac stp:legacy:6f832ac2a0269f706c2d >= 1
+	Window "\n\n\n@c你觉得你的阶级足够提升了么?",ok
+	Window_ok
+	leavegroup
+	Warp 0,933,11,11

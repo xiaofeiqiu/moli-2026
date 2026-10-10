@@ -1,0 +1,39 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【雏鸟】吗？",ok
+			Window_ok
+Luac stp:legacy:52ca6cd02ca650f0d934
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【鸭嘴兽】吗？",ok
+			Window_ok
+Luac stp:legacy:93f4287f2477d8a916b3
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【小鸭子】吗？",ok
+			Window_ok
+Luac stp:legacy:cc6cc4f980ef4838c377
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【小兔子】吗？",ok
+			Window_ok
+Luac stp:legacy:5653e7390cc469ea086a
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【大公鸡】吗？",ok
+			Window_ok
+Luac stp:legacy:5714729bdc6402a8e065
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【达斯公鸡】吗？",ok
+			Window_ok
+Luac stp:legacy:ba740b8d0e8dec4f6da4
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【黑暗达斯公鸡】吗？",ok
+			Window_ok
+Luac stp:legacy:dc855e3d059a1b4d8d9f
+				endif
+
+

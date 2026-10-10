@@ -1,0 +1,11 @@
+block level >= 160 && item 1000508 >= 30
+window"\n\n\n 交出50积分与10W钱 我就让你通过这里",ok
+window_ok
+killitem 1000508,30
+addgold -100000
+window"\n\n 嗯!!好了 请过去吧!",ok
+window_ok
+Warp 0,32513,30,31
+
+block
+endwindow"\n\n 啊~...整天守在这里..好无聊呀..!根据规定 您不能通过这里"

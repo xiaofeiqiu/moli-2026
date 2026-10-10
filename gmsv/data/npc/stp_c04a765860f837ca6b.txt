@@ -1,0 +1,34 @@
+block item 87510 == 1
+endwindow "\n\n希望你不要有辱该格斗奖称号！"
+
+block item 87509 == 1 && item 87501 == 1 &&  Luac stp:legacy:6914f2140fd767e748e9 >= 1
+window "\n\n没想到这件事的幕后牵扯出这么庞大的组织，居然主谋是他（我的助手）",next
+window "\n\n看来我们竞技场被人专了空子，变成生财工具了。看来我们也得改变下适应环境需要重新振兴这个竞技场，为了对你帮助我调查的表彰，我把年轻时获得的格斗奖赠予你。",ok
+window_ok
+LeaveGroup
+killitem 87501
+killitem 87509
+giveitem 87510
+
+block item 87509 == 1 && item 87501 == 1
+window "\n\n没想到这件事的幕后牵扯出这么庞大的组织，居然主谋是他（我的助手）",next
+window "\n\n看来我们竞技场被人专了空子，变成生财工具了。看来我们也得改变下适应环境需要重新振兴这个竞技场，为了对你帮助我调查的表彰，我把年轻时获得的格斗奖赠予你。",ok
+window_ok
+LeaveGroup
+killitem 87501
+killitem 87509
+
+
+block item 87501 == 1
+endwindow "\n\n我建议从培养格斗士的地方进行调查。"
+
+block Luac stp:legacy:eb5e4c2bdffa714ced06 >= 1
+window "\n\n哇~~好久没见到格斗士到我们这里来了。",next
+window "\n\n为什么？我也不清楚，我们这个竞技场以前很辉煌，各种武艺高强的人都会来这进行切磋。最近几年不但来这切磋武艺的人少了，连观摩的人也少了。",next
+window "\n\n再这么下去这里非荒废不可，我这官职说不定会被国王给罢免呢。你能帮我调查下这是什么原因呢！",yes,no
+window_no
+window_yes
+giveitem 87501
+
+block
+endwindow "\n\n..................."

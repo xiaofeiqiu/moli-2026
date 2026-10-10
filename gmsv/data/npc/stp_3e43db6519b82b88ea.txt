@@ -1,0 +1,7 @@
+block item 200355 >= 1
+killitem 200355
+Encount 2|0,43800,158,88||0|||||0|50457|||||||||
+
+
+block
+endwindow "\n\n..."

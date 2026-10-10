@@ -1,0 +1,7 @@
+Block
+Window "要前往亚诺曼吗？",YES,NO
+Window_NO
+EndWindow "旅途平安。"
+Window_YES
+LeaveGroup
+Warp 0,30199,10,32

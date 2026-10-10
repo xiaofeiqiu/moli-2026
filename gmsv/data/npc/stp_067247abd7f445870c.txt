@@ -1,0 +1,6 @@
+block item 39708 >= 1
+window "\n\n你手上的钥匙可以打开门,要进去吗?",yes,no
+window_no
+window_yes item 39708 >= 1
+leavegroup
+Warp 0,64091,8,28

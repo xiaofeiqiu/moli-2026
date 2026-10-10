@@ -1,0 +1,11 @@
+block	item 52268 >= 1
+
+killitem 52268,1
+
+	LeaveGroup
+
+	Warp 0,8801,5,5
+
+block
+
+window"\n\n\n@c你感觉到一股力量阻拦了你",ok

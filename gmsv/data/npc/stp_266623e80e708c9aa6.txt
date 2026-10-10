@@ -1,0 +1,44 @@
+block item 86620 >= 1 && item 86621 >= 1 && item 86622 >= 1 && item 86623 >= 1 && petlevel 804 == 1
+window "\n\n　烈风哥布林改造后会变成改造烈风哥布林\n\n　你要改造吗？",yes,no
+window_no
+window_yes item 86620 >= 1 && item 86621 >= 1 && item 86622 >= 1 && item 86623 >= 1 && petlevel 804 == 1
+killitem 86620
+killitem 86621
+killitem 86622
+killitem 86623
+KillPetl 804,1
+givepet 86662
+
+
+block item 86616 >= 1 && item 86617 >= 1 && item 86618 >= 1 && item 86619 >= 1 && petlevel 401 == 1
+window "\n\n　树精改造后会变成改造树精\n\n　你要改造吗？",yes,no
+window_no
+window_yes item 86616 >= 1 && item 86617 >= 1 && item 86618 >= 1 && item 86619 >= 1 && petlevel 401 == 1
+killitem 86616
+killitem 86617
+killitem 86618
+killitem 86619
+KillPetl 401,1
+givepet 86661
+
+block item 86612 >= 1 && item 86613 >= 1 && item 86614 >= 1 && item 86615 >= 1 && petlevel 303 == 1
+window "\n\n　黄蝎改造后会变成改造黄蝎\n\n　你要改造吗？",yes,no
+window_no
+window_yes item 86612 >= 1 && item 86613 >= 1 && item 86614 >= 1 && item 86615 >= 1 && petlevel 303 == 1
+killitem 86612
+killitem 86613
+killitem 86614
+killitem 86615
+KillPetl 303,1
+givepet 86660
+
+block item 86608 >= 1 && item 86609 >= 1 && item 86610 >= 1 && item 86611 >= 1 && petlevel 242 == 1
+window "\n\n　扫把蝙蝠改造后会变成改造扫把蝙蝠\n\n　你要改造吗？",yes,no
+window_no
+window_yes item 86608 >= 1 && item 86609 >= 1 && item 86610 >= 1 && item 86611 >= 1 && petlevel 242 == 1
+killitem 86608
+killitem 86609
+killitem 86610
+killitem 86611
+KillPetl 242,1
+givepet 86659

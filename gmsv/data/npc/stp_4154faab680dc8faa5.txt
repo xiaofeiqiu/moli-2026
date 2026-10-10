@@ -1,0 +1,26 @@
+block item 661100 >= 30
+window "\n\n不错,居然敢私自下凡与凡人相恋就是要这种下场.\n\n你不会怪我试试你的身手吧?",NEXT
+window "\n\n我送你点东西吧,你想要月宫的玉兔吗?\n\n不想要的话我还可以送你首饰哦!",YES,NO
+Window_YES PetSpace == 0
+EndWindow "\n\n你的宠物栏已经没有地方放玉兔了啊."
+Window_YES item 661100 >= 30
+window "\n\n请拿好,再见!",OK
+Window_OK item 661100 >= 30
+killitem 661100,30
+Givepet 200139
+LeaveGroup
+Warp 0,1530,15,6
+Window_NO
+window "\n\n那我送你个首饰吧!\n\n请拿好,再见!",OK
+Window_OK item 661100 >= 30
+killitem 661100,30
+giveitem 661102
+LeaveGroup
+Warp 0,1530,15,6
+
+
+block
+window "\n\n没想到你的实力居然这么强.",ok
+window_ok
+LeaveGroup
+Warp 0,1530,15,6

@@ -1,0 +1,9 @@
+block endevent 162 == 1 && item 22008 == 0
+	window "\n没想到这些年来人类在不断的壮大，能有你们这些人是你们人类的荣幸，但是想要和我们的神主抗衡你们还差的很远！看来你们已经得到想要的东西，拿去吧。",yes,no
+	window_yes endevent 162 == 1 && item 22008 == 0
+	leavegroup
+	giveitem 22015,1
+	Warp 0,43000,372,481
+	window_no
+block
+	endwindow "\n　..."

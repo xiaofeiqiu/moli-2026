@@ -1,0 +1,12 @@
+block item 3809 == 1
+	Window "\n\n啊,这是我老朋友的东西",next
+	Window "\n\n恩?是他叫您到这来的么?",next
+	Window "\n\n那你肯定是开启者了,快进去吧,阿尔萨斯殿下在里面等您呢",OK
+		Window_OK
+			LeaveGroup
+			Warp 0,9999,10,15
+
+block
+	Window "\n\n这不是你该来的地方",next
+	Window "\n\n快走吧!",OK
+		Window_OK

@@ -1,0 +1,14 @@
+block item 86907 == 1
+window "\n\n我离开米雪儿是她不再爱我了。我想回到我的故乡和同伴们一起生活，结果刚到哥拉尔就被走私分子卖给下面的研究员了。",ok
+window_ok
+leavegroup
+killitem 86907
+Warp 0,28365,15,23
+
+block item 86901 == 1
+window "\n\n米雪儿一跟小伙伴玩耍就忽略我，我才不想回去过那种寂寞的日子呢！",ok
+window_ok
+Encount 2|0,28363,9,7||0|||||0|86315|||||||||
+
+block
+endwindow "\n\n..................."

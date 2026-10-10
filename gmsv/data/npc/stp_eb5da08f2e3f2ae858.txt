@@ -1,0 +1,119 @@
+block petlevel 2000092 < 60
+EndWindow"\n\n@c请努力将进化的猫妖训练到等级60级再回来找我吧."
+
+
+#【进化的猫妖】兑换奖品或者【最终奖品】
+block petlevel 2000092 >= 60
+Window"\n\n嗯,这个气势,这个充满里力量的躯体,正是我们试验所需要的最终进化体!",next
+Window"\n\n你做的太好了!现在请收好你的奖励品吧!当然我们的试验所需要的不只这些,如果你想继续参加的,欢迎再与我联络.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok petlevel 2000092 >= 60
+KillPetl 2000092
+giveitem (50792%50,50791%20)
+
+
+#三阶段给与【进化的猫妖】
+block item 50790 >=1
+Window"\n\n嗯,你已经很努力的把强壮的猫妖训练到了40级呢,还要继续参与进化研究吗?",yes,no
+Window_no
+EndWindow"\n\n随时欢迎参加博士的研究工作."
+Window_yes gold<15000
+EndWindow"\n\n很抱歉你的金币没有带够."
+Window_yes
+Window"\n\n三阶段具体的研究工作如下,首先是请交15000金币的研究费,然后将我们给与你的进化的猫妖训练到60级,然后就可以回来找我交还猫妖,到时候你可以选择是否要继续参加下一步工作或者是领取训练奖励.",next
+Window_no
+EndWindow"\n\n随时欢迎参加博士的研究工作."
+Window_yes gold<15000
+EndWindow"\n\n很抱歉你的金币没有带够."
+Window_yes
+Window"\n\n好的,请努力将进化的猫妖训练到等级60以后再回来找我吧.",ok
+window_ok petspace == 0
+EndWindow"\n\n@c你的宠物栏不够了."
+Window_ok item 50790 >=1
+addgold -15000
+killitem 50790
+GivePet 3000063
+
+
+block  petlevel 2000091 < 40
+EndWindow"\n\n@c请努力将强壮的猫妖训练到等级40级再回来找我吧."
+
+
+#【强壮的猫妖】兑换奖品或者【2阶工作证】
+block petlevel 2000091 >= 40
+Window"\n\n你做的太好了!这正是我们最需要的研究数据!",next
+Window"\n\n那么你想要继续做下一阶段的研究工作的吗?",yes,no
+Window_no
+Window"\n\n你做的太好了!现在请收好你的奖励品吧!当然我们的试验所需要的不只这些,如果你想继续参加的,欢迎再与我联络.",ok
+window_ok ItemSpace < 1
+EndWindow"\n\n@c你的物品栏不够了,请准备出1个空位.",ok
+Window_ok petlevel 2000091 >= 40
+KillPetl 2000091,40
+giveitem (661111%30,661112%30,661113%30,661114%30,50794%30)
+Window_yes
+KillPetl 2000091,40
+giveitem 50790
+
+
+#二阶段给与【强壮的猫妖】
+block item 50789 >=1
+Window"\n\n嗯,你已经很努力的把虚弱的猫妖训练到了20级呢,还要继续参与进化研究吗?",yes,no
+Window_no
+EndWindow"\n\n随时欢迎参加博士的研究工作."
+Window_yes gold<10000
+EndWindow"\n\n很抱歉你的金币没有带够."
+Window_yes
+Window"\n\n二阶段具体的研究工作如下,首先是请交10000金币的研究费,然后将我们给与你的强壮的猫妖训练到40级,然后就可以回来找我交还猫妖,到时候你可以选择是否要继续参加下一步工作或者是领取训练奖励.",next
+Window"\n\n怎么样,是否要交出10000金币的研究费来领取强壮的猫妖进行训练工作呢?",yes,no
+Window_no
+EndWindow"\n\n随时欢迎参加博士的研究工作."
+Window_yes gold<10000
+EndWindow"\n\n很抱歉你的金币没有带够."
+Window_yes
+Window"\n\n好的,请努力将强壮的猫妖训练到等级40以后再回来找我吧.",ok
+window_ok petspace == 0
+EndWindow"\n\n@c你的宠物栏不够了."
+Window_ok item 50789 >=1
+addgold -10000
+killitem 50789
+GivePet 3000062
+
+
+
+block  petlevel 2000090 < 20
+EndWindow"\n\n@c请努力将虚弱的猫妖训练到20级再回来找我吧."
+	
+	
+#【虚弱的猫妖】兑换奖品或者【1阶工作证】
+block petlevel 2000090 >= 20
+Window"\n\n你做的太好了!这正是我们最需要的研究数据!",next
+Window"\n\n那么你想要继续做下一阶段的研究工作的吗?",yes,no
+Window_no
+Window"\n\n你做的太好了!现在请收好你的奖励品吧!当然我们的试验所需要的不只这些,如果你想继续参加的,欢迎再与我联络.",ok
+window_ok ItemSpace < 1
+Window"\n\n@c你的物品栏不够了,请准备出1个空位.",ok
+Window_ok petlevel 2000090 >= 20
+KillPetl 2000090,20		
+giveitem (18450%30$5,18451%30$5,16002%30$5,16001%30$5,50793%30$5)
+Window_yes
+KillPetl 2000090,20
+giveitem 50789
+
+
+#任务开始给与宠物【虚弱的猫妖】
+block
+Window"\n\n你好,欢迎参加博士的完美猫妖进化研究.",next
+Window"\n\n具体的研究工作如下,第一步请交出5000金币的研究费,然后将我们给与你的虚弱猫妖训练到20级,然后就可以回来找我交还猫妖,到时候你可以选择是否要继续参加下一步工作或者是领取训练奖励.",next
+Window"\n\n怎么样,是否要交出5000金币的研究费来领取虚弱的猫妖进行训练工作呢?",yes,no
+Window_no
+EndWindow"\n\n随时欢迎参加博士的研究工作."
+Window_yes gold<5000
+EndWindow"\n\n很抱歉你的金币没有带够."
+Window_yes
+Window"\n\n好的,请努力将虚弱的猫妖训练到等级20以后再回来找我吧.",ok
+window_ok petspace == 0
+EndWindow"\n\n@c你的宠物栏不够了."
+Window_ok
+addgold -5000
+GivePet 3000061

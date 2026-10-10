@@ -1,0 +1,440 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block EndEvent 627 == 1 && item 60945 < 1 && item 60946 < 1 && item 60947 < 1 && item 60948 < 1 && item 60949 < 1 && item 60950 < 1 && item 60951 < 1 && item 60952 < 1 && item 60953 < 1 && item 60954 < 1 && item 60955 < 1 && item 60956 < 1 && item 60957 < 1 && item 60958 < 1 && item 60959 < 1 && item 60960 < 1 && item 60961 < 1 && item 60962 < 1 && item 60963 < 1 && item 60964 < 1 && item 60965 < 1 && item 60966 < 1 && item 60967 < 1 && item 60968 < 1 && item 60969 < 1 && item 60970 < 1 && item 60971 < 1 && item 60972 < 1 && item 60973 < 1 && item 60974 < 1 && gold < 5000
+	window "\n\n\n\n@c您的金钱不足5000G，无法缴纳违约金。",ok
+		Window_ok
+block EndEvent 627 == 1 && item 60945 < 1 && item 60946 < 1 && item 60947 < 1 && item 60948 < 1 && item 60949 < 1 && item 60950 < 1 && item 60951 < 1 && item 60952 < 1 && item 60953 < 1 && item 60954 < 1 && item 60955 < 1 && item 60956 < 1 && item 60957 < 1 && item 60958 < 1 && item 60959 < 1 && item 60960 < 1 && item 60961 < 1 && item 60962 < 1 && item 60963 < 1 && item 60964 < 1 && item 60965 < 1 && item 60966 < 1 && item 60967 < 1 && item 60968 < 1 && item 60969 < 1 && item 60970 < 1 && item 60971 < 1 && item 60972 < 1 && item 60973 < 1 && item 60974 < 1
+	window "\n\n\n\n您的订单似乎遗失了？这已经是违约行为，如果您想和维利尔商行继续合作的话，请缴纳违约金5000G。",ok
+		Window_ok
+			addgold -5000
+			EndEvent 627 = 0
+block item 9611 >= 200 && item 60945 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9611,200
+			killitem 60945,1
+			GiveItem 60290,15
+			addgold 30000
+			EndEvent 627 = 0
+block item 9614 >= 200 && item 60946 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9614,200
+			killitem 60946,1
+			GiveItem 60290,15
+			addgold 54000
+			EndEvent 627 = 0
+block item 9616 >= 200 && item 60947 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9616,200
+			killitem 60947,1
+			GiveItem 60290,15
+			addgold 68000
+			EndEvent 627 = 0
+block item 9617 >= 200 && item 60948 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9617,200
+			killitem 60948,1
+			GiveItem 60290,15
+			addgold 104000
+			EndEvent 627 = 0
+block item 9618 >= 200 && item 60949 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9618,200
+			killitem 60949,1
+			GiveItem 60290,15
+			addgold 200000
+			EndEvent 627 = 0
+block item 9619 >= 200 && item 60950 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9619,200
+			killitem 60950,1
+			GiveItem 60290,15
+			addgold 360000
+			EndEvent 627 = 0
+block item 9620 >= 200 && item 60951 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 9620,200
+			killitem 60951,1
+			GiveItem 60290,15
+			addgold 750000
+			EndEvent 627 = 0
+block item 10002 >= 200 && item 60952 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 10002,200
+			killitem 60952,1
+			GiveItem 60290,1
+			addgold 2800
+			EndEvent 627 = 0
+block item 10005 >= 200 && item 60953 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 10005,200
+			killitem 60953,1
+			GiveItem 60290,1
+			addgold 4000
+			EndEvent 627 = 0
+block item 10006 >= 200 && item 60954 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 10006,200
+			killitem 60954,1
+			GiveItem 60290,1
+			addgold 6000
+			EndEvent 627 = 0
+block item 10007 >= 200 && item 60955 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 10007,200
+			killitem 60955,1
+			GiveItem 60290,1
+			addgold 10000
+			EndEvent 627 = 0
+block item 10009 >= 200 && item 60956 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 10009,200
+			killitem 60956,1
+			GiveItem 60290,1
+			addgold 40000
+			EndEvent 627 = 0
+block item 12802 >= 200 && item 60957 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12802,200
+			killitem 60957,1
+			GiveItem 60290,1
+			addgold 2800
+			EndEvent 627 = 0
+block item 12803 >= 200 && item 60958 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12803,200
+			killitem 60958,1
+			GiveItem 60290,1
+			addgold 3200
+			EndEvent 627 = 0
+block item 12806 >= 200 && item 60959 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12806,200
+			killitem 60959,1
+			GiveItem 60290,1
+			addgold 6000
+			EndEvent 627 = 0
+block item 12808 >= 200 && item 60960 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12808,200
+			killitem 60960,1
+			GiveItem 60290,1
+			addgold 20000
+			EndEvent 627 = 0
+block item 12809 >= 200 && item 60961 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12809,200
+			killitem 60961,1
+			GiveItem 60290,1
+			addgold 40000
+			EndEvent 627 = 0
+block item 11200 >= 200 && item 60962 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 11200,200
+			killitem 60962,1
+			GiveItem 60290,1
+			addgold 2800
+			EndEvent 627 = 0
+block item 11202 >= 200 && item 60963 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 11202,200
+			killitem 60963,1
+			GiveItem 60290,1
+			addgold 7200
+			EndEvent 627 = 0
+block item 11600 >= 200 && item 60964 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 11600,200
+			killitem 60964,1
+			GiveItem 60290,1
+			addgold 3200
+			EndEvent 627 = 0
+block item 12402 >= 200 && item 60965 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12402,200
+			killitem 60965,1
+			GiveItem 60290,1
+			addgold 2600
+			EndEvent 627 = 0
+block item 12003 >= 200 && item 60966 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12403,200
+			killitem 60966,1
+			GiveItem 60290,1
+			addgold 2600
+			EndEvent 627 = 0
+block item 12004 >= 200 && item 60967 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12004,200
+			killitem 60967,1
+			GiveItem 60290,1
+			addgold 2400
+			EndEvent 627 = 0
+block item 12405 >= 20 && item 60968 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12405,20
+			killitem 60968,1
+			GiveItem 60290,4
+			addgold 2400
+			EndEvent 627 = 0
+block item 12410 >= 200 && item 60969 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12410,200
+			killitem 60969,1
+			GiveItem 60290,2
+			addgold 3200
+			EndEvent 627 = 0
+block item 12412 >= 200 && item 60970 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12412,200
+			killitem 60970,1
+			GiveItem 60290,2
+			addgold 8000
+			EndEvent 627 = 0
+block item 12416 >= 200 && item 60971 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12416,200
+			killitem 60971,1
+			GiveItem 60290,2
+			addgold 8800
+			EndEvent 627 = 0
+block item 12417 >= 200 && item 60972 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12417,200
+			killitem 60972,1
+			GiveItem 60290,2
+			addgold 8800
+			EndEvent 627 = 0
+block item 12418 >= 200 && item 60973 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12418,200
+			killitem 60973,1
+			GiveItem 60290,2
+			addgold 18000
+			EndEvent 627 = 0
+block item 12419 >= 200 && item 60974 >= 1 && EndEvent 627 == 1
+	window "\n\n要交付订单和货物吗？",ok
+		Window_ok
+			killitem 12419,200
+			killitem 60974,1
+			GiveItem 60290,2
+			addgold 20000
+			EndEvent 627 = 0
+block EndEvent 627 == 1
+	window "\n\n您的上一个订单还未完成，暂时不能接其他的订单任务",ok
+		Window_ok
+block itemspace < 1
+	window "\n\n\n\n@c您的背包空间不足，请清理一下。",ok
+		Window_ok
+block EndEvent 627 == 0
+	window "\n\n法兰变的比以前更加繁荣了，当前的材料供应还不能满足市场的需求，我们这里有许多材料订单，如果您有合作的意向，可以接受订单的委托。注意一旦接受必须完成，单方面废除订单将视作违约行为，需要交纳违约金，要接受订单任务吗？",next
+		LocalCount30 = random 30,0
+		if localcount30==1
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60945,1
+			endif
+		if localcount30==2
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60946,1
+			endif
+		if localcount30==3
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60947,1
+			endif
+		if localcount30==4
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60948,1
+			endif
+		if localcount30==5
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60949,1
+			endif
+		if localcount30==6
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60950,1
+			endif
+		if localcount30==7
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60951,1
+			endif
+		if localcount30==8
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60952,1
+			endif
+		if localcount30==9
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60953,1
+			endif
+		if localcount30==10
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60954,1
+			endif
+		if localcount30==11
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60955,1
+			endif
+		if localcount30==12
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60956,1
+			endif
+		if localcount30==13
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60957,1
+			endif
+		if localcount30==14
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60958,1
+			endif
+		if localcount30==15
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60959,1
+			endif
+		if localcount30==16
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60960,1
+			endif
+		if localcount30==17
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60961,1
+			endif
+		if localcount30==18
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60962,1
+			endif
+		if localcount30==19
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60963,1
+			endif
+		if localcount30==20
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60964,1
+			endif
+		if localcount30==21
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60965,1
+			endif
+		if localcount30==22
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60966,1
+			endif
+		if localcount30==23
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60967,1
+			endif
+		if localcount30==24
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60968,1
+			endif
+		if localcount30==25
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60969,1
+			endif
+		if localcount30==26
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60970,1
+			endif
+		if localcount30==27
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60971,1
+			endif
+		if localcount30==28
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60972,1
+			endif
+		if localcount30==29
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60973,1
+			endif
+		if localcount30==30
+		window "\n\n请拿好您的订单。",ok
+			Window_ok
+			EndEvent 627 = 1
+			GiveItem 60974,1
+			endif

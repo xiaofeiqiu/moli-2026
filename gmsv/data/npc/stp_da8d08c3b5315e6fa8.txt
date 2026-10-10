@@ -1,0 +1,27 @@
+###dodo_item_715249.txt
+###团员躲藏位置图上面记载着团圆所躲藏的位置.
+
+
+
+block Item 715249 >= 1 && ItemDur 715249 == 1
+window "\n\n此张纸条具有自动保密的机能效果\n阅读之后将会自动销毁\n你是否要现在阅读此纸条?",yes,no
+Window_NO 
+Window_YES Item 715249 >= 1 && ItemDur 715249 == 1
+window "\n\n五",next
+window "\n\n四",next
+window "\n\n三",next
+window "\n\n二",next
+window "\n\n一",next
+window "\n\n～噗啾～",next
+KillItem 715249,(1053506)
+endwindow "\n\n露比埋伏在饲养师之家、\n熊弟躲藏在银行、\n心美躲在工会旁边的仓库内部、\n阿蒙是藏匿在豪宅、\n阿梅则是埋藏在真中家."
+
+###耐久度 > 1 
+block Item 715249 >= 1 && ItemDur 715249 > 1
+window "\n\n此张纸条具有自动保密的机能效果\n阅读5次之后将会自动销毁\n你是否要现在阅读此纸条?",yes,no
+Window_NO
+Window_YES Item 715249 >= 1 && ItemDur 715249 > 1
+SetDur 715249,-1
+endwindow "\n\n露比埋伏在饲养师之家、\n熊弟躲藏在银行、\n心美躲在工会旁边的仓库内部、\n阿蒙是藏匿在豪宅、\n阿梅则是埋藏在真中家."
+
+

@@ -1,0 +1,8 @@
+〓Get制作系列脚本〓
+block Item 13404 >= 1
+	Window "\n\n@c滴嗒 滴嗒………",ok
+	Window_ok Item 13404 >= 1
+	LeaveGroup
+	Warp 0,7229,12,13
+block
+	Endwindow "\n\n@c………"

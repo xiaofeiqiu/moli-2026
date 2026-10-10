@@ -1,0 +1,10 @@
+block item 123200 >= 1 && item 123203 >= 10
+window "\n\n你要进入恶魔城嘛?",yes,no
+window_no
+window_yes
+killitem 123203,10
+leavegroup
+Warp 0,63228,12,48
+
+block
+window "\n\n......................"

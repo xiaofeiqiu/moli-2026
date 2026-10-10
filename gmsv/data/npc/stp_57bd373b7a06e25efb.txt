@@ -1,0 +1,8 @@
+block
+window "\n\n恭喜你,勇士,你赢得了模拟训练,这是你的奖励.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 19675,1
+leavegroup
+Warp 0,57119,17,11

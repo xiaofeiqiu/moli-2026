@@ -1,0 +1,11 @@
+block StrCmpChat == 200189 && item 200225 >= 1
+window "\n\n没想到切露西婆婆会把这么重要的东西交给你,那你是获得她绝对信任的人.",next
+window "\n\n按规矩,我不能直接送你到神殿,只能带你到神殿所在的岛上.",ok
+window_ok
+leavegroup
+Warp 0,27138,451,497
+
+
+
+block
+endwindow "\n\n嘘～别发出声音,不然要把我的鱼都吓跑了."

@@ -1,0 +1,9 @@
+block globalFlag 356 == 1 && item 70001 >= 1
+window 910219,ok
+window_ok
+LeaveGroup
+killitem 70001
+Warp 0,25001,273,252
+
+block
+endwindow 910220

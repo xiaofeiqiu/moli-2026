@@ -1,0 +1,8 @@
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1
+window "\n\n没想到我能在梦中见到我长大成人的弟弟,你一定是来取心灵治愈石的吧,你拿去吧,复兴赛利鲁国的重任就全交给你了",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200571
+leavegroup
+Warp 0,27651,8,13

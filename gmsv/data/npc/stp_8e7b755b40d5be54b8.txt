@@ -1,0 +1,6 @@
+block item 87592 == 1
+window "\n\n这，这些怪物太多了，船体也受到了严重损害了，已经无法再航行了，只能暂时先返航了。",ok
+window_ok
+killitem 87592
+giveitem 87593
+Warp 0,400,649,314

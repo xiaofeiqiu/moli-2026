@@ -1,0 +1,22 @@
+block item 70043 >= 1
+endwindow 910084
+
+block globalFlag 358 == 1
+window 910085,next
+window 910086,next
+window 910087,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 70043
+window_ok ItemSpace < 1
+endwindow 910088
+
+block globalFlag 358 == 0
+window 910089,next
+window 910090,ok
+window_ok
+LeaveGroup
+Warp 0,25014,59,48
+
+block
+endwindow 910091

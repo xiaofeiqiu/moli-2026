@@ -1,0 +1,10 @@
+block
+window "\n\n就到这里吧!后面的路禁止入内.",yes,no
+window_yes
+endwindow "\n\n..."
+window_no
+Encount 2|0,44910,175,99||0|||||0|613039|||||||||
+
+
+
+

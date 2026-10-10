@@ -1,0 +1,19 @@
+
+
+block item 4823 >= 1 && item 87639 < 1
+window "\n\n阿!就是那件衣服 可以给我吗?我快冷死了",yes,no
+window_no
+endwindow "\n\n哼!真没同情心"
+window_yes item 87638 == 1
+window "\n\n那太好了 谢谢你啦 对了 这东西给你 我捡到的 或许你用的到",ok
+window_ok
+giveitem 87639
+window_yes
+endwindow "\n\n那太好了 谢谢你啦 "
+
+block
+window "\n\n好冷喔…对了 最近钱都花光 没钱买新衣了 你可以帮我找一件厚一点的衣服吗?",yes,no
+window_no
+endwindow "\n\n哼!真没同情心"
+window_yes
+endwindow "\n\n那太好了 我需要一件硬皮服,就帮我找那件来吧。"

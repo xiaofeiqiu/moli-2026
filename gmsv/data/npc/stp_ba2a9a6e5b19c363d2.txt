@@ -1,0 +1,36 @@
+block item 200598 >= 1 && item 200599 >= 1 && item 200600 >= 1 && item 200601 >= 1
+window "\n\n我要使用4张深海龙王设计图跟我换取宠物吗?",yes,no
+window_yes
+killitem 200598
+killitem 200599
+killitem 200600
+killitem 200601
+giveitem 200603
+
+
+
+block item 200594 >= 1 && item 200595 >= 1 && item 200596 >= 1 && item 200597 >= 1
+window "\n\n我要使用4张炎之精灵设计图跟我换取宠物吗?",yes,no
+window_yes
+killitem 200594
+killitem 200595
+killitem 200596
+killitem 200597
+giveitem 200602
+
+
+
+block item 200532 >= 1 && item 200561 >= 1 && item 200593 >= 1
+window "\n\n你居然集齐了这三件宝物.",next
+window "\n\n我要用本国最珍稀的设计图跟你交换,你愿意吗?",yes,no
+window_yes
+killitem 200532
+killitem 200561
+killitem 200593
+GiveItem (200594%1,200595%1,200596%1,200597%1,200598%1,200599%1,200600%1,200601%1)
+
+
+
+block
+endwindow "\n\n外来的人员注意不要闹事,否则驱逐你们出去."
+

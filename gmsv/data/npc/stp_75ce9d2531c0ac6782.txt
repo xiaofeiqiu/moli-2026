@@ -1,0 +1,31 @@
+block item 87186 == 1
+endwindow "\n\n希望你做完我没做完的任务！"
+
+block item 87184 == 1 && item 87185 >= 20 && item 18449 >= 10 && item 18450 >= 5 && item 18451 >= 1 && item 18452 >=3
+window "\n\n嗯不错材料你都带齐了，我立马开工打造我们的灭龙神器!",next
+window "\n\n哈哈~~这东西果然非比寻常，给人一种见神杀神的感觉，拿着这把精心打造的灭龙剑去屠龙吧。",ok
+window_ok
+killitem 87184
+killitem 87185,20
+killitem 18449,10
+killitem 18450,5
+killitem 18451,1
+killitem 18452,3
+giveitem 87186
+
+block item 87184 == 1
+endwindow "\n\n纸上说的千年冰晶在这座山上的冰怪身上能弄到，其余的你应该知道在哪能弄到！"
+
+block item 87183 == 1
+window "\n\n这封信是村长让你带来的？我先看看信的内容是什么！",ok
+window_ok
+killitem 87183
+window "\n\n你要去屠龙拿宝藏，哈哈~~你真是白日做梦，里面有条龙你知道不。他可不是你想能对付就对付的了得。我一身除掉过不知道多少奇珍鸟兽，在这条龙面前我变得毫无缚鸡之力。",next
+window "\n\n村长说我或许有对付那条龙的办法？其实那次败于那条龙是因为我没有一件像样的兵器，不然就凭一条龙在我眼里也只是一条泥鳅！",next
+window "\n\n在这几年里我查阅了各种屠龙兵器终于被我找到如何打造这把兵器的方法，现在就缺如何去寻找这些材料了！",next
+window "\n\n你想要消灭那条龙的话就得去寻找这张纸上的兵器材料拿回来让我锻造，只要有那把兵器你将所向披靡！",ok
+window_ok
+giveitem 87184
+
+block
+endwindow "\n\n你到我家来干嘛？！"

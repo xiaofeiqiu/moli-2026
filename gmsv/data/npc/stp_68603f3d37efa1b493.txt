@@ -1,0 +1,3 @@
+block	item 52209 >=1
+killitem 52209,1
+Warp 0,661,84,82

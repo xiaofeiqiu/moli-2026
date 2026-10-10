@@ -1,0 +1,16 @@
+block item 61180 >= 1
+endwindow 1900512
+
+block item 61177 >= 5 && item 61178 >= 5 && item 61179 >= 5
+window 1900511,ok
+window_ok
+LeaveGroup
+killitem 61177,5
+killitem 61178,5
+killitem 61179,5
+giveitem 61180
+
+block
+window 1900509,next
+window 1900510,ok
+window_ok

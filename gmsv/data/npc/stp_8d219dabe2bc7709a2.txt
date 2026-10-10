@@ -1,0 +1,11 @@
+block Item 60456 >= 1 && Item 60467 >= 1
+Window "\n\n在女神圣洁光辉下恢复了知觉",next\
+Window "\n\n心中满是黑暗......了无生机......\n对生的欲望驱使着我获得鲜血的渴望\n这一定是魔族的力量",next
+Window "\n\n告之众人准备进入魔族领地",next
+Window "\n\n\勇者啊......请一定要坚守信念\n\n纯洁的心灵不能被欲望蒙蔽\n\n善良的品格不能被邪恶吞噬",next
+Window "\n\n\带上这个吧,我想你会用的上的.",ok
+Window_ok ItemSpace <= 1
+endWindow "\n\n请整理下包裹再来"
+Window_ok ItemSpace >= 1
+KillItem 60456,1
+GiveItem 60468,1

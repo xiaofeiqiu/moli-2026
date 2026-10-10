@@ -1,0 +1,7 @@
+block item 795165 == 1
+window "这都让你找到了,我带你去卖魔石吧,哈哈",yes,no
+window_no
+window_yes item 795165 == 1
+killitem 795165
+leaveGroup
+Warp 0,32502,4,11

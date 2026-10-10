@@ -1,0 +1,39 @@
+block item 87643 == 1
+endwindow "\n\n希望它能带给我们好运"
+
+block item 87641 == 1
+window "\n\n这是要给我的吗? 我知道了 谢谢你们 那我也把这个拿给你们吧 希望你..帮我拿给雅尔丝这东西来头不小呢..因为它的传说很灵 希望它能带给我们好运 .",ok
+window_ok
+killitem 87641
+giveitem 87643
+
+block item 87640 == 1
+window "\n\n阿!这是雅尔丝给我的回信吗?真是谢谢你们了我会回去好好看的..对了….如果你们有空的话…请各位再去米诺基亚村时，帮我看看雅尔丝过的好不好….可以吗?... ",yes,no
+window_no
+window_yes
+killitem 87640
+giveitem 87642
+
+block item 87638 == 1
+endwindow "\n\n祝你一路顺风！"
+
+block level >= 70
+window "\n\n唉…..\n要问他怎么了吗?",yes,no
+window_no
+window_yes
+window "\n\n阿…没什么… 那个..你是..那个冒险者是吗?可以请你听听我的请求吗?",yes,no
+window_no
+endwindow "\n\n这样阿..我知道,你也是很忙的,没关系"
+window_yes
+window "\n\n真的吗?这是个麻烦的事呢 先谢谢你了,你知道吗?在米诺基亚村住着一些精灵。",next
+window "\n\n他们在战乱后，都躲在那个村子里,过着安静且与世无争的生活。",next
+window "\n\n我因为..一些原因,要把这封信给里面住的一个精灵,也因为一些原因我无法前去,可以拜托你吗?",next
+window "\n\n先谢谢你了， 她就在米诺基亚村并开设了一家非常有名的酒吧,请拿给一个叫雅尔丝的精灵。",ok
+window_ok
+giveitem 87638
+
+block
+window "\n\n唉…..\n要问他怎么了吗?",yes,no
+window_no
+window_yes
+endwindow "\n\n不…没什么事， 谢谢你的关心"

@@ -1,0 +1,14 @@
+block item 200230 >= 1
+endwindow "\n\n事态紧急,快去找切露西婆婆."
+
+
+
+block
+window "\n\n事情很紧急,古雷巴姆已经获得了神之眼,但是只获得了一半.",next
+window "\n\n如果没有我的血液,神之眼的作用只有短暂的一刻,估计他们还没有发现这个秘密.",next
+window "\n\n英雄从你能救我来看,你绝对不是凡夫俗子,趁他们还没察觉,只有你才能阻止他们.",next
+window "\n\n关键现在不知道黑巫师到底躲在迷幻森林何处,或许切露西婆婆会有一点蛛丝马迹.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200230

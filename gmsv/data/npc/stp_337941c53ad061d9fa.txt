@@ -1,0 +1,12 @@
+block item 86243 >= 1
+window "\n\n你好,我叫做小沐,是炼金术师李林的助手.这里奇特的气息真得好迷人啊!",next
+window "\n\n那里有一条暗道可以进入隐秘的祭坛,但是我不敢进,总觉里面有非常恐怖的东西在蠕动,可是小沐又对法兰国的一草一木特别好奇,所以还想要进入!",next
+window "\n\n现在你来啦～我安心啦!你可以帮我打头阵喽!里面会有什么东西呢?好好奇喔!会不会有可以利用的植物呢!好期待喔!",next
+window "\n\n要进去吗?",yes,no
+window_no
+window_yes item 86243 >= 1
+leavegroup
+Warp 0,45072,37,37
+
+block
+endwindow "\n\n不要打扰人家嘛!"

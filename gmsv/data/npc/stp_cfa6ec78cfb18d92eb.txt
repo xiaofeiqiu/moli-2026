@@ -1,0 +1,8 @@
+block Endevent 582 == 1
+Window "\n\n四灵:不好,人类好象被欲望迷惑了",ok
+Window_ok
+Encount 3|0,64075,325,272|||||0|||900040|||||||||
+
+
+block
+endWindow "\n\n真正的魔王还隐藏在这里的某处,须尽快找到他"

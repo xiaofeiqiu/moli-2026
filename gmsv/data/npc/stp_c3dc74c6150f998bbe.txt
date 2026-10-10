@@ -1,0 +1,5 @@
+#block
+window"\n\n @c 你好，赌博传送将把你带到赌博房间。OK开始！",ok
+window_ok
+LeaveGroup
+Warp 0,89,2,9

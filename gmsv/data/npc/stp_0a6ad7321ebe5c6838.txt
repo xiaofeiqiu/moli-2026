@@ -1,0 +1,19 @@
+block Item 1000194 >= 1
+gawindow "\n\n我?还活着吗……",next
+gawindow "\n\n太可怕了,果然达努耶利被国王禁止崇拜是正确的,我和我的教众不会信仰一直如此可怕的怪物了.",next
+gawindow "\n\n请相信我们!",next
+gawindow "\n\n恩?你在看着我手上那个箱子吗?",next
+gawindow "\n\n说来也巧呢,从地下收藏室后找到这个箱子开始我就一直对达努耶利如此的着迷……不过现在已经过去了.",next
+gawindow "\n\n对我所做的事我真是万分愧疚,这个箱子你要的话就带走吧,稍等一下.",next
+gawindow "\n\n(祭祀克洛斯翻找东西中...)",next
+gawindow "\n\n这个假发是我在地下收藏室找到的,好象是以前剧团的遗留物,我也没什么其他东西送给你了,这个假发你拿去吧!为了赎罪,我和我的教众将义务去各地安慰孤儿和老人们.",next
+gawindow "\n\n再见了,谢谢你救赎了我们的心灵!",ok
+window_ok Item 1000194 >= 1
+killItem 1000194,1
+giveLeak1Item 1000195
+LeaveGroup
+Warp 0,1615,12,25
+
+
+block
+endwindow "\n\n你是怎么混进来的?快给我滚开!"

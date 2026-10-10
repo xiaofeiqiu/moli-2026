@@ -1,0 +1,11 @@
+block nowevent 555 == 1
+window "\n\n不不,不是我干的,和我没关系",next
+window "\n\n既然你们想追查真相,就死在这里吧",yes,no
+window_no
+window_yes
+nowevent 555 = 0
+Encount 2|0,64034,38,20||0|||||0|28075|||||||||
+
+
+block nowevent 555 == 0
+endwindow "\n\n你是谁?我好像不认识你啊!"

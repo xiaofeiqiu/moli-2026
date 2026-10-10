@@ -1,0 +1,2 @@
+block
+	Window "\n\n@c.你好,要喝点什么吗？",ok

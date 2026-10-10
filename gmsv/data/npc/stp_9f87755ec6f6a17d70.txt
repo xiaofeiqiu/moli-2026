@@ -1,0 +1,8 @@
+block
+window"\n\n\n@c 我们是被你曾经斩杀过的动物",next
+window"\n\n\n 虽然已经变成幽魂，可还是不甘心被你就这样干掉",next
+window"\n\n\n 如今冥王把我们召唤并且聚集到这里",next
+window"\n\n\n 就是为了让我们报仇,这里就是你们的墓地了",next
+window"\n\n\n@c 受死吧！人类！",ok
+window_OK
+Encount 3|0,1020,153,72|||||0|||500001|||||||||

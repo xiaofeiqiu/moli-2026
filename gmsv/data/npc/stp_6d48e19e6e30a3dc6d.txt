@@ -1,0 +1,6 @@
+block item 86392 < 1
+window 85602,ok
+window_ok
+leavegroup
+giveitem 86392
+Warp 0,1000,233,78

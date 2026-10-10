@@ -1,0 +1,13 @@
+block petlevel 200126 >= 1
+endwindow "\n\n希望能帮得到你.."
+
+
+block StrCmpChat == 2304373 && petspace >= 1 && petlevel 2000117 >= 1 && item 22758 >= 1
+window "\n\n正在接收雪灵的力量......",ok
+window_ok
+KillPetl 2000117
+GivePet 200217
+
+
+block item 22750 >= 1 && Item 22739 >= 1 && Item 22737 >= 1
+endwindow "\n\n@n勇者,总算找到你了,状态也恢复好了,总不能让你一个人孤军作战.有需要帮忙的尽管说出来."

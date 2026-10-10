@@ -1,0 +1,12 @@
+block item 1000683 >= 1
+window 7020138,yes,no
+window_no
+window_yes ItemSpace >= 2
+LeaveGroup
+giveitem (18449%10$5,18450%10$5,18451%10$5,18452%10$5,18453%10$5,18454%10$5,18455%10$5,18456%10$5)
+Warp 0,23312,694,178
+window_yes ItemSpace < 2
+endwindow 7020116
+
+block
+endwindow 7020139

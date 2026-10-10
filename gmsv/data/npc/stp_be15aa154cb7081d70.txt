@@ -1,0 +1,124 @@
+block strCmpChat == 66626
+window "\n\n确定要强化你的青龙刀吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 94 >= 1
+killitem 60534
+killitem 94
+giveitem 60535
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的青龙刀呢?"
+window_yes item 94 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block strCmpChat == 66627
+window "\n\n确定要强化你的金属重斧吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 890 >= 1
+killitem 60534
+killitem 890
+giveitem 60536
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的金属重斧呢?"
+window_yes item 890 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block strCmpChat == 66628
+window "\n\n确定要强化你的圣者之杖吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 2493 >= 1
+killitem 60534
+killitem 2493
+giveitem 60537
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的圣者之杖呢?"
+window_yes item 2493 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block strCmpChat == 66629
+window "\n\n确定要强化你的三叉战戟吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 1698 >= 1
+killitem 60534
+killitem 1698
+giveitem 60538
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的三叉战戟呢?"
+window_yes item 1698 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block strCmpChat == 66630
+window "\n\n确定要强化你的摘星之弓吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 2095 >= 1
+killitem 60534
+killitem 2095
+giveitem 60539
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的摘星之弓呢?"
+window_yes item 2095 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block strCmpChat == 66631
+window "\n\n确定要强化你的治愈回力镖吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 2898 >= 1
+killitem 60534
+killitem 2898
+giveitem 60540
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的治愈回力镖呢?"
+window_yes item 2898 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block strCmpChat == 66632
+window "\n\n确定要强化你的勾爪掷刀吗?\n\n强化需要一个武器强化证哦!",yes,no
+window_no
+endwindow "\n\n考虑好再来找我吧!"
+window_yes item 60534 >= 1 && item 3294 >= 1
+killitem 60534
+killitem 3294
+giveitem 60541
+endwindow "\n\n咋样,我的技术还不错吧!"
+window_yes item 60534 >= 1
+endwindow "\n\n你的勾爪掷刀呢?"
+window_yes item 3294 >= 1
+endwindow "\n\n你的武器强化证呢?"
+window_yes
+endwindow "\n\n什么都没有,你拿个毛线来强化哟!"
+
+
+block
+window "\n\n你好,我是个流浪锻造师,正在进行追寻更强锻造技术的旅途中.",next
+window "\n\n如果你带着【十级武器强化证】和对应的10级武器的话,我就可以帮你进行武器的强化.",next
+window "\n\n能够强化的武器包括青龙刀,金属重斧,圣者之杖,三叉战戟,摘星之弓,治愈回力镖,勾爪掷刀.",next
+endwindow "\n\n对着我说“剑,斧,杖,枪,弓,回力镖,小刀”我就会帮你制作强化了!"

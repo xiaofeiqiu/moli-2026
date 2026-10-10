@@ -1,0 +1,15 @@
+block item 200500 >= 1
+window "\n\n这里没发现希瑞的踪迹,看来又人在故意误导我们进入这个洞窟.",next
+window "\n\n不过我在这地上发现了这个,丝巾～这个可是只有我们法达利亚孤儿院长才有的.",next
+window "\n\n看来老天还是很眷顾我们的,详细的我们还是回去商讨吧.",ok
+window_ok
+killitem 200500
+giveitem 200506
+leavegroup
+Warp 0,27500,67,168
+
+
+
+
+
+

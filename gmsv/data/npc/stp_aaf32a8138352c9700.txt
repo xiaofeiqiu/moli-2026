@@ -1,0 +1,8 @@
+block item 200753 >= 1
+window "\n\n这家伙真够疯狂的,拿这么可爱的小动物做实验.",next
+window "\n\n他将由我亲自押送回法兰进行审判,这是研究员手册,是重要物证,请尽快带回去交给我们的团长大人.",ok
+window_ok
+killitem 200753
+giveitem 200754
+leavegroup
+Warp 0,1530,15,6

@@ -1,0 +1,16 @@
+block item 66701 >= 1 && globalFlag 355 == 1
+endwindow 910494
+
+block item 70009 >= 1 && globalFlag 355 == 1
+window 910495,next
+window 910496,next
+window 910497,next
+window 910498,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 70010 
+window_ok ItemSpace < 1
+endwindow 910499
+
+block
+endwindow 910500

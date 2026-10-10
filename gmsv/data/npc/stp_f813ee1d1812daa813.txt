@@ -1,0 +1,8 @@
+block
+	window"\n\n嘟！嘟！嘟！嘟！嘟！嘟！\n \n传感器正在发送传送目标！.\n \n位置请按照是或否选择！GO！",yes,no
+	window_yes
+	leavegroup
+	Warp 0,6003,80,29
+        window_no
+        leavegroup
+        Warp 0,6005,48,67

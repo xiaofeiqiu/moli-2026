@@ -1,0 +1,16 @@
+block Luac stp:legacy:bb51fcfd85d642a927f8 >= 1
+window "\n\n年轻的咒术师啊,从勇者里雍建立[法尔尼亚]后,我就在这里负责看护李贝留斯所带来的禁忌之术",next
+window "\n\n但是天空之城[辛梅尔]的出现,雪拉威森塔封印的开启,天空中徘徊游荡的半神[约尔克]的灵魂这一切的一切都使我预感,禁忌之术将被解封!",next
+window "\n\n回答我!年轻的咒术师!你是否带来了国王要求解封禁忌之术的命令!",yes,no
+window_no
+endwindow "\n\n真想再去见一次卡莲啊!!"
+window_yes
+window "\n\n是吗!原来国王真的决定解封禁忌之术了!",next
+window "\n\n那么就让我看一下,你是否有能力使用者禁忌之术吧",ok
+window_ok
+Encount 2|0,44648,10,10||0|||||0|28089|||||||||
+
+
+
+block
+endwindow "\n\n一股危险的气息从门后传了过来."

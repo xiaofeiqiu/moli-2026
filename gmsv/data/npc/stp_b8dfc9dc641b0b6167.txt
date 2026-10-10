@@ -1,0 +1,9 @@
+block
+window "\n\n地上的神之眼,你捡起来吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200246
+leavegroup
+Warp 0,27102,23,28
+

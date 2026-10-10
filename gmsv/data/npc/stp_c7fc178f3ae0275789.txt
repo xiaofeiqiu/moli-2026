@@ -1,0 +1,14 @@
+block item 50891 >= 1 || item 50892 >= 1 || item 50893 >= 1
+endwindow "\n\n我可没骗你,你的东西就这货色."
+
+block item 50890 >= 1
+window "\n\n你手上的东西,看起来很不错,可以给我看看吗?",next
+killitem 50890
+window "\n\n...(鉴定中)",next
+window "\n\n......(认真鉴定中)",next
+window "\n\n.........(非常认真鉴定中)",next
+window "\n\n这应该是上古时期的物品,还给你吧",next
+giveitem (50891%20,50892%30,50893%50)
+
+block
+endwindow "\n\n我是国家第一的鉴定师达菲鲁迪.\n\n你身上的这堆破烂我根本没兴趣鉴定.想找我鉴定的话,起码弄些像纯白吓人箱的卡片这样的货色."

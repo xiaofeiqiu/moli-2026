@@ -1,0 +1,13 @@
+block item 795153 >= 1
+endwindow "\n\n你最好把这件事通知国王...""
+
+block nowevent 562 == 1 && item 795153 == 0
+giveitem 795153
+endwindow "\n\n已经查到了,他们就是在神锤战争时领导自由军团与女皇艾尔卡迪雅战斗的大陆最强剑士的阿尔法拉,和剑圣阿卡非尔,但是他们早在4000多年前勇者时代就死了,但是这样的人为什么会在这出现呢...如果真是这样,这将是一个灾难...\n\n你最好把这件事通知国王..."
+
+block item 795152 >= 1
+window "\n\n恩,这个画像真的很像阿尔法拉和阿卡非尔啊,能把他交个我吗?让我来查查资料.",yes,no
+window_no
+window_yes item 795152 == 1 && nowevent 562 == 0
+killitem 795152
+nowevent 562 = 1

@@ -1,0 +1,11 @@
+block Pitem 86404
+Endwindow 85643
+
+block item 86404 >= 1
+window 85644,next
+window 85645,ok
+window_ok
+Encount 2|0,1000,233,78|86404|-1|||||0|86169|5|0|||||5|0|
+
+block
+Warp 0,1000,233,78

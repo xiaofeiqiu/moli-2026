@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【魟怪】吗？",ok
+			Window_ok
+Luac stp:legacy:33c1bf372e99d4d0c36e
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【罗亨魟怪】吗？",ok
+			Window_ok
+Luac stp:legacy:4244573792347f4182bd
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【拉札魟怪】吗？",ok
+			Window_ok
+Luac stp:legacy:6c0513ebd5d0e45dc066
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【拉贾魟怪】吗？",ok
+			Window_ok
+Luac stp:legacy:3261d2e8df57314b5ac6
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【莱亚魟怪】吗？",ok
+			Window_ok
+Luac stp:legacy:28a10ad3baea2028c66a
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【拉亚魟怪】吗？",ok
+			Window_ok
+Luac stp:legacy:4d7695fc428658a55bf4
+				endif
+

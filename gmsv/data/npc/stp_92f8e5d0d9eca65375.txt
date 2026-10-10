@@ -1,0 +1,12 @@
+block item 652604 >= 1
+window "\n\n永劫螺旋才是你们能够继续存在的唯一方法!被黑暗所诱惑的你们究竟何时才能停止这无意义的挣扎呢.",next
+window "\n\n收下这个吧,或许有一天,你会明白你奋力追逐的究竟是什么.",ok
+window_ok item 652604 >= 1
+killitem 652604
+giveitem 652605
+leavegroup
+Warp 0,44690,106,86
+
+
+
+

@@ -1,0 +1,6 @@
+block item 39633 >= 1
+window "\n\n可恶的家伙!你竟然贪婪到偷窃别人西最珍贵的宝物,我一定要把你抓住严办!",ok
+window_ok
+Encount 3|0,44872,20,32||0|||||0|6000048|||||||||
+block
+Endwindow "\n\n..."

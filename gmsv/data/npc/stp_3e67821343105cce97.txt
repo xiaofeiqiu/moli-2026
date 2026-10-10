@@ -1,0 +1,11 @@
+
+block item 87795 == 1
+killitem 87795
+endwindow "\n\n你点错了灯，火把上的火熄灭了！"
+
+block item 87796== 1
+window "\n\n你是否要点燃这盏灯吗？",ok
+window_ok
+LeaveGroup
+killitem 87796
+Warp 0,28663,15,82

@@ -1,0 +1,14 @@
+block item 1000655 >= 1
+EndWindow 7020124
+
+block level >=25
+window 7020125,next
+window 7020126,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 1000655
+window_yes ItemSpace < 1
+endwindow 7020116
+
+block
+endwindow 7020127

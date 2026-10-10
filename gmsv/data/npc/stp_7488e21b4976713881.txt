@@ -1,0 +1,5 @@
+Block
+	Window"\n\n\n您的强大让可可特的人民铭记！请收下这个荣耀的称谓！",ok
+	Window_ok
+		EndEvent 602 = 1
+		CheckTitle

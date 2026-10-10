@@ -1,0 +1,13 @@
+block item 500151 == 1
+endwindow "\n\n让你无故卷入我们姐妹之间的互掐不好意思。"
+
+block item 500150 == 1 && item 500145 == 1
+window "\n\n陌生人你别不经意围着我转，你的用意我通过巫术都知道了。",next
+window "\n\n没想到我妹妹气量这么小，为了上次逗她玩的事怀恨在心。算了~~这次我就故意被她整下。",next
+window "\n\n这封道歉信麻烦交给我的妹妹吧！",ok
+window_ok
+killitem 500150
+giveitem 500151
+
+block
+endwindow "\n\n没想到冯奴家出了这么大的事！"

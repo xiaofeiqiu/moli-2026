@@ -1,0 +1,14 @@
+block item 200512 >= 1
+endwindow "\n\n干我们这行必须要有爱心."
+
+
+
+block item 200508 >= 1 && item 200509 >= 1 && item 200511 >= 1
+window "\n\n我是专门负责孤儿们生活起居的,如果我有做的不完美的地方还请担待.",ok
+window_ok
+killitem 200511
+giveitem 200512
+
+
+block
+endwindow "\n\n过会就睡孩子们的午睡时间了,可不要打扰他们休息哦."

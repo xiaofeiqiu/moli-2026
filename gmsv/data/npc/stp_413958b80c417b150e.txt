@@ -1,0 +1,21 @@
+block item 1000619 >= 1
+window 7020339,next
+window 7020340,next
+window 7020341,OK
+window_ok
+killitem 1000619
+Encount 2|0,23230,7,8||0|||||0|6000228|||||||||
+
+block item 1000617 >= 1
+window 7020342,next
+window 7020343,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000617
+giveitem 1000618,5
+globalFlag 296 = 1
+window_ok ItemSpace < 1
+endwindow 7020344
+
+block
+endwindow 7020345

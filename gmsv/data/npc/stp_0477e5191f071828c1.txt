@@ -1,0 +1,23 @@
+
+
+
+block item 652642 >= 1
+endwindow "\n\n只是个残影..."
+
+
+
+block
+window "\n\n这么快就察觉追上来了啊...",next
+window "\n\n眨眼间,已经消失于你的视线...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 652642
+
+
+
+
+
+
+
+

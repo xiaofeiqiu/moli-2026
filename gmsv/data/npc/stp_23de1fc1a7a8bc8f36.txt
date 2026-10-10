@@ -1,0 +1,6 @@
+Block
+Window "你带来了追击暗龙的龙骨。小凯会把证言交给你，请到村里继续调查。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:e1090476bdd61a415f1b

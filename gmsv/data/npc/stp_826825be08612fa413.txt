@@ -1,0 +1,13 @@
+block item 87615 == 1
+Warp 0,29729,181,54
+
+block item 87614 == 1
+window "\n\n谢谢你拯救了我们海神一族的危机，我早知道你们来此的真实目的，其实当你们一踏上加拉巴哥斯群岛我就命手下在一旁观察你们的举动",next
+window "\n\n拿着吧，这就是你们需要的夜明珠。",ok
+window_ok
+killitem 87614
+giveitem 87615
+Warp 0,29729,181,54
+
+block
+Warp 0,29729,181,54

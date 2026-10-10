@@ -1,0 +1,4 @@
+block endevent 162 == 1 && item 22008 == 0
+	window "\n如果你真的很强大,那么就请爬到我的背上去撩望天空吧.",ok
+	window_ok endevent 162 == 1 && item 22008 == 0
+Encount 3|0,7222,28,12|||||0|||410320|||||||||

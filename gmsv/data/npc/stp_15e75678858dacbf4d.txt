@@ -1,0 +1,11 @@
+block item 86221 >= 1
+endwindow "\n\n你还在这干嘛?我不想看到你."
+
+
+
+block
+window "\n\n呜!～这是抢来的东西,给你,给你!请快离开这里吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+GiveItem 86221

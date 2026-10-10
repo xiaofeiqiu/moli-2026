@@ -1,0 +1,6 @@
+block item 3878 >= 1 && item 3879 >= 1 && item 3880 >= 1 && item 3881 >= 1
+killitem 3878
+killitem 3879
+killitem 3880
+killitem 3881
+giveitem 3882

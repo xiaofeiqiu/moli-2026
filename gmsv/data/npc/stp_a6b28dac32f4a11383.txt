@@ -1,0 +1,7 @@
+block Item 1000365 >= 1 && petspace >= 1
+	Window "\n\n　要使用召唤书获得宠物吗？",OK
+	Window_OK
+	KillItem 1000365,1
+	GivePet 600037
+block Item 1000365 >= 1 && petspace == 0
+	EndWindow "\n\n　对不起，您的宠物栏已满。",OK

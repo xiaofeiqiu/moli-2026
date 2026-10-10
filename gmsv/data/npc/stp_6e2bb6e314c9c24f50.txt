@@ -1,0 +1,47 @@
+block Item 99881 == 1 && Item 18395 >= 1	
+	killitem 99881	
+	Window "\n\n你是由泰介绍来的?",yes,no		
+	Window_yes Item 18395 >= 1			
+	killitem 18395			
+	Window "\n\n谢谢你给我带来这么漂亮的首饰~我还有一个要求,我的演出服材料在法兰这里好象买不到",next			
+	Window "\n\n你能不能去趟阿凯鲁法村剧院,帮我把布料拿过来？",ok			
+	Window_ok			
+	giveitem 99882			
+	Window_ok			
+	Window "呵呵!想用挂啊!",ok			
+	Window_ok			
+	Window "\n\n拿着这个去找小晕吧!",ok
+	Window_ok
+	Window_no			
+	Window "\n\n呃,这样啊...",ok			
+	Window_ok
+
+block Item 99882 == 1	
+	Window "快去快回啊!",ok	Window_ok
+
+block Item 99883 == 1	
+	Window "这么快啊~那就快去交给流行商店的阿巧开始制作衣服吧!",ok	
+	Window_ok
+
+block Item 99884 == 1	
+	Window "这么快啊~那就快去交给流行商店的阿巧开始制作衣服吧!",ok	
+	Window_ok
+
+block Item 99885 == 1	Endwindow "又来看我啦~嘻嘻~!",ok
+
+block Item 99886 == 1	
+	Window "可以给我了吗?真是太辛苦你了啊!",yes,no
+	Window_yes Item 99886 == 1
+	Window "谢谢啊!这个你收下吧!",ok
+	Window_ok	Item 99886 == 1	
+	killitem 99886	
+	giveitem 99885
+	Window_ok
+	LeaveGroup
+  	Warp 0,59718,185,254	
+	Window "呵呵!想用挂啊!",ok	
+	Window_ok
+
+block	
+	Window "\n\n你是谁?我很忙,没时间和你说话.",ok	
+	Window_ok

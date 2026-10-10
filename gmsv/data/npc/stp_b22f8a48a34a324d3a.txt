@@ -1,0 +1,6 @@
+block Item 1000469 == 1
+	Window"\n\n冰晶之花是本尊的！",next
+	Window"\n\n想跟本尊抢？找死！冰冻你们！！！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18108,51,32|1000469|||||||800050|||||||||

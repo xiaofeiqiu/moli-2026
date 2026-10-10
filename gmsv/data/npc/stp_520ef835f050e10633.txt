@@ -1,0 +1,4 @@
+block
+killitem 50884
+EndEvent 564 = 1
+checktitle

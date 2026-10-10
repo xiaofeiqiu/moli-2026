@@ -1,0 +1,12 @@
+block item 54002 >= 1
+	window "\n\n\n@c 很好~恭喜你到达顶楼~~\n\n 那么，请收好奖励~",ok
+	window_ok
+	killitem 54002
+	giveitem 54006
+	leavegroup
+	Warp 0,5401,21,1
+block
+	window "\n\n\n@c 你把参加证明弄丢了吗？\n\n很抱歉我不能给你奖励~",ok
+	window_ok
+	leavegroup
+	Warp 0,5401,21,1

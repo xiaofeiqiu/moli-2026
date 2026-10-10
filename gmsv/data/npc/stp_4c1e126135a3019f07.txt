@@ -1,0 +1,11 @@
+block item 795105 >= 1
+window "\n\n　魔狼的爪子,没错,就是这个.能给我收藏吗?当然,我会拿东西和你交换的.",yes,no
+window_no
+endwindow "\n\n　可惜啊可惜！"
+window_yes petspace != 0&&item 795105 >= 1
+killitem 795105
+givepet (31%30,32%30,33%30,34%30,400309%10)
+endwindow "\n\n　呵呵,年轻人,谢谢你了.这一直是我想要收藏的."
+
+block
+endwindow "\n\n　最近听说有人打倒魔狼得到了魔狼之爪!不知道是不是真的,真想自己也收藏一个啊."

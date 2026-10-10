@@ -1,0 +1,2 @@
+block
+endwindow "\n\n你怎么跑这来了,快出去."

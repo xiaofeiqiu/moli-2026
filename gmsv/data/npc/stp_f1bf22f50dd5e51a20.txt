@@ -1,0 +1,11 @@
+block Item 6519 >= 1
+	EndWindow "\n\n我怎么会败给你这种毛头小子?"
+
+
+block Item 6518 >= 1
+	Window "\n\n你也要得到我辛苦挖到的宝石吗?那就拿出你的实力来让我看看你是否拥有获得它的资格吧!",OK
+	Window_OK
+Encount 3||||||0|||83009|||||||||
+
+block
+	EndWindow "\n\n看什么看,没看过帅哥挖矿啊?"

@@ -1,0 +1,24 @@
+block item 86526 == 1
+endwindow "\n\n"姐姐不知道怎么样了，好担心，阿凯鲁法应该还是安全的吧？"
+
+block item 86525 == 1
+window "\n\n真是太感谢你了！这是谢礼，请一定收下。",ok
+window_ok
+leavegroup
+killitem 86525
+giveitem 86526
+
+block item 18395 == 1 && item 86524 < 1
+window "\n\n你带着我们族人制作的饰品，一定是位善良的人，我有一件事请你帮忙，你愿意答应吗？",yes,no
+window_no
+window_yes
+window "\n\n我的哥哥受了重伤，我必须在他身边照顾他，不能离开太远，你愿意帮我到西医院去拿一些急救药来吗？",yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86524
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block
+endwindow "\n\n你，你是谁？"

@@ -1,0 +1,50 @@
+block Item 22674 >= 1 && Item 22675 >= 1 && Item 22676 >= 1 && Item 22677 >= 1 && Item 22678 >= 1 && Item 22679 >= 1 && Item 22680 >= 1 && Item 22681 >= 1 && Item 22682 >= 1 && Item 22683 >= 1 && Item 22684 >= 1 && Item 22685 >= 1 
+window "\n\n我想要十二星座BOSS的签名,如果你有,可以带来和我换12星座勋章.",next 
+window "\n\n点击<是>使用十二星座BOSS签名换取1件首饰<12星座勋章>.选择<是>后可选择轻装或者重装.",yes,no 
+window_no  
+endwindow "\n\n兑换失败."
+window_yes  
+window "\n\n点击<是>选择轻装版本的<12星座勋章>,点击<否>选择重装版本的<12星座勋章>.",yes,no 
+window_yes itemspace < 1 
+endwindow "\n\n你的包包好像满了...先整理一下吧!" 
+window_no itemspace < 1 
+endwindow "\n\n你的包包好像满了...先整理一下吧!" 
+window_yes itemspace >= 1 &&  Item 22674 >= 1 && Item 22675 >= 1 && Item 22676 >= 1 && Item 22677 >= 1 && Item 22678 >= 1 && Item 22679 >= 1 && Item 22680 >= 1 && Item 22681 >= 1 && Item 22682 >= 1 && Item 22683 >= 1 && Item 22684 >= 1 && Item 22685 >= 1 
+killitem 22674,1  
+killitem 22675,1  
+killitem 22676,1  
+killitem 22677,1  
+killitem 22678,1  
+killitem 22679,1  
+killitem 22680,1  
+killitem 22681,1  
+killitem 22682,1  
+killitem 22683,1  
+killitem 22684,1 
+killitem 22685,1 
+giveitem 22686,1 
+endwindow "\n\n兑换成功."
+window_no  itemspace >= 1 &&  Item 22674 >= 1 && Item 22675 >= 1 && Item 22676 >= 1 && Item 22677 >= 1 && Item 22678 >= 1 && Item 22679 >= 1 && Item 22680 >= 1 && Item 22681 >= 1 && Item 22682 >= 1 && Item 22683 >= 1 && Item 22684 >= 1 && Item 22685 >= 1 
+killitem 22674,1  
+killitem 22675,1  
+killitem 22676,1  
+killitem 22677,1  
+killitem 22678,1  
+killitem 22679,1  
+killitem 22680,1  
+killitem 22681,1  
+killitem 22682,1  
+killitem 22683,1  
+killitem 22684,1 
+killitem 22685,1 
+giveitem 22687,1 
+endwindow "\n\n兑换成功."
+window_yes 
+endwindow "\n\n兑换失败."
+window_no 
+endwindow "\n\n兑换失败."
+ 
+
+block  
+window "\n\n我想要十二星座BOSS的签名,如果你有,可以带来和我换12星座勋章.",next
+endwindow "\n\n不过我知道你现在没有,马上去挑战十二星座BOSS,期待你的战绩."

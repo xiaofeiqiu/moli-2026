@@ -1,0 +1,6 @@
+#»ðÈÈPK NPC
+
+block
+	Window 66132238,OK
+		Window_OK
+Encount 3|0,60115,16,23||0|||||0|306110|||||||||

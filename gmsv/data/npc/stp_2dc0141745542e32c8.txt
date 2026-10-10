@@ -1,0 +1,73 @@
+block item 86244 >= 1
+window "\n\n你想要拿这把刀敲打海贼头目的脑袋?开什么玩笑!你闹着玩的吧?算了,算了,我知道啦!你不要这样看着我好吗?",next
+window "\n\n你真的要拿……“这把刀”?敲打海贼头目的脑袋?",yes,no
+window_no
+window_yes
+window "\n\n好吧,我跟着你一起疯!",ok
+window_ok item 86244 >= 1
+leavegroup
+Warp 0,28085,14,20
+
+
+
+block EndEvent 551 == 1
+window "\n\n通过调查,发现了一条通往海贼巢穴的密道!现在这个时间海贼们消失得无影无踪,是探索的最佳时机,你要继续调查吗?",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,28082,14,20
+
+
+
+
+block item 86238 >= 1
+endwindow "\n\n我会继续对蒂娜村的异象进行观察,如果有新的进展我一定会告诉你的!"
+
+
+block item 86237 >= 1
+window "\n\n太感谢你了!在你离开的这些时间里,我已经把汉克需要的报告写好了.",next
+window "\n\n本来想给你些钱作为报酬,但是最近我手头也不富裕,所以只能先口头答谢你了.",ok
+window_ok item 86237 >= 1
+killitem 86237
+GiveItem 86238
+
+
+
+block item 86236 >= 1
+endwindow "\n\n那个幽灵经常出没在夜晚蒂娜村的墓地中.他经常在夜晚出现后直奔我家,敲打我家门窗,实在恐怖!请一定要消灭掉他啊!"
+
+
+
+block item 86235 >= 1
+endwindow "\n\n听说那个除魔师好像暂居在杰诺瓦村的医院内,与神官进行除魔的交流,你到那里应该能找到她."
+
+
+block item 86234 >= 1 && item 15206 >= 1 && item 15207 >= 1 && item 15209 >= 1  && item 15211 >= 1
+window "\n\n太好吃了!谢谢你的款待!下面一件事就是帮我消灭掉幽灵,并且夺回我的项链,但是我不知道如何消灭掉他.",next
+window "\n\n我记得杰诺瓦村来了一名除魔师,我想她应该能够帮助我的!我已经把详细的过程写在了这封请求信上,希望她能够帮忙!",ok
+window_ok item 86234 >= 1 && item 15206 >= 1 && item 15207 >= 1 && item 15209 >= 1  && item 15211 >= 1
+killitem 86234
+killitem 15206,1
+killitem 15207,1
+killitem 15209,1
+killitem 15211,1
+GiveItem 86235
+
+
+
+block item 86234 >= 1
+endwindow "\n\n我好期待啊."
+
+block item 86233 >= 1
+window "\n\n好家伙!救星终于来了.既然你是汉克的朋友,那么无论什么事情我都会帮忙.但是在这之前你必须帮我搞定两件事情!",next
+window "\n\n第一件:解决我的肚子问题,让我大吃一顿.第二件:帮我消灭掉夜晚出现在蒂娜村坟墓里德幽灵,夺回我的项链!",yes,no
+window_yes
+window "\n\n你太好了!请照着这份菜单上面的要求帮我准备好伙食喔!一个青椒肉丝、一个烧鸡、一个汉堡和一个寿喜锅,哇哈哈哈!我好期待啊!",ok
+window_ok item 86233 >= 1
+killitem 86233
+GiveItem 86234
+window_no
+endwindow "\n\n没有东西吃我就没有力气,什么事情也干不了的!我真是心有余力不足!"
+
+block
+endwindow "\n\n无论多强大的敌人、魔族我都不怕,但唯独充满怨恨的幽灵是我最惧怕的东西!我的主啊!谁来帮我把他赶跑啊!家里的粮食都快没了,好饿!"

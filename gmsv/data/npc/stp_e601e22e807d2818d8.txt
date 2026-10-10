@@ -1,0 +1,18 @@
+block item 27759 == 1
+killitem 27759,1
+window"\n\n 找到了吗?太感谢了,我想你应该拥有这个",OK
+window_OK
+endevent 662 = 1
+CheckTitle
+endwindow"\n\n 很适合你啊,不错嘛"
+
+block
+window"\n\n 你是什么人?为什么会在这里?这不是你该来的地方",ok
+window_OK
+window"\n\n 我在寻找一样东西.实际上.是想请你帮忙",next
+window"\n\n 看到那鸟人了么,死也不肯帮我,你能帮我吗?",yes,no
+window_yes
+window"\n\n\n@C 带有魔力的戒指…………掉了",next
+window"\n\n 应该是掉在这个附近才对,难道是掉在其他地方了?",OK
+window_no
+endwindow"\n\n 不肯帮忙么?原来你跟那只死鸟一样"

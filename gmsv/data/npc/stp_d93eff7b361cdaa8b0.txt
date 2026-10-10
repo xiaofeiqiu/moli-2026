@@ -1,0 +1,8 @@
+block itemspace >= 1
+window "\n\n此处是时空裂隙.打破了时间束缚的开启者啊,被你拯救的世界如今又将陷入动荡,黑与白的阻隔正在逐渐消失,支持冲破牢笼的你想必会协助我黑龙一族吧…在未来,我们再会吧...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3870,1
+leaveGroup
+Warp 0,300,562,348

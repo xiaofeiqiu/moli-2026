@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【血腥之刃】吗？",ok
+			Window_ok
+Luac stp:legacy:7b4ee379d70b85349ff3
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【杀龙之刃】吗？",ok
+			Window_ok
+Luac stp:legacy:d7cbc9701c92b78387cf
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【火焰之刃】吗？",ok
+			Window_ok
+Luac stp:legacy:fc38c671549af3f8bfb2
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【烈风之刃】吗？",ok
+			Window_ok
+Luac stp:legacy:cbd7fb02f427f4f7e953
+				endif

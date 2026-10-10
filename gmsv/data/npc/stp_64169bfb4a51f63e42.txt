@@ -1,0 +1,36 @@
+block item 1000084 >= 1
+endwindow "\n\n带上这个去找矿山小镇联络员."
+
+
+block endevent 562 == 1
+window "\n\n探险队长那里送来了消息,北方矿山小镇有联络员来了,这个是探险队长送来的委托信,辛苦你去找矿山小镇的联络员看他需要什么帮助了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 1000084
+
+
+block item 1000080 >= 1
+window "\n\n恩,辛苦了,我来看看结果.",next
+window "\n\n恩,由南方灯塔指向的方向来的怪物袭击了船队,同时南方海面一直被浓雾笼罩,看来要组织一只调查队去灯塔看看了.",next
+window "\n\n很遗憾我手里也没太多的人力可派遣了.那么,万事小心了.",ok
+window_ok item 1000080 >= 1
+killitem 1000080
+GiveLeak1Item (700037$1,700038$1)
+endevent 562 = 1
+
+
+block item 1000077 >= 1
+endwindow "\n\n你带着这个证明去灯塔吧."
+
+block item 1000076 >= 1
+window "\n\n恩,辛苦了,我来看看结果.",next
+window "\n\n恩,由南方灯塔指向的方向来的怪物袭击了船队,同时南方海面一直被浓雾笼罩,看来要组织一只调查队去灯塔看看了.",next
+window "\n\n很遗憾我手里也没太多的人力可派遣了.那么,万事小心了.",ok
+window_ok item 1000076 >= 1
+killitem 1000076
+giveitem 1000077
+
+
+block
+endwindow "\n\n找我有什么事吗?"

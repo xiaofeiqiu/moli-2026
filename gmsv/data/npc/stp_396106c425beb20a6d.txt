@@ -1,0 +1,148 @@
+block itemspace<1
+endwindow "\n\n清理一下包包再找我!"
+
+
+block
+if item 22662 >=10
+window "\n\n使用10张白羊BOSS过关证明兑换1张白羊BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22662 >= 10
+killItem 22662,10
+giveItem 22674,1
+endwindow "\n\n兑换成功!"
+window_no 
+endif
+
+
+if item 22663 >=10
+window "\n\n使用10张金牛BOSS过关证明兑换1张金牛BOSS签名?",yes,no
+Window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22663 >= 10
+killItem 22663,10
+giveItem 22675,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22664 >=10
+window "\n\n使用10张双子BOSS过关证明兑换1张双子BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22664 >= 10
+killItem 22664,10
+giveItem 22676,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22665 >=10
+window "\n\n使用10张天秤BOSS过关证明兑换1张天秤BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22665 >= 10
+killItem 22665,10
+giveItem 22677,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22666 >=10
+window "\n\n使用10张水瓶BOSS过关证明兑换1张水瓶BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22666 >= 10
+killItem 22666,10
+giveItem 22678,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22667 >=10
+window "\n\n使用10张射手BOSS过关证明兑换1张射手BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22667 >= 10
+killItem 22667,10
+giveItem 22679,1
+EndWindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22668 >=10
+window "\n\n使用10张摩羯BOSS过关证明兑换1张摩羯BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22668 >= 10
+killItem 22668,10
+giveItem 22680,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22669 >=10
+window "\n\n使用10张处女BOSS过关证明兑换1张处女BOSS签名?",yes,no	
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22669 >= 10
+killItem 22669,10
+giveItem 22681,1 
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22670 >=10
+window "\n\n使用10张天蝎BOSS过关证明兑换1张天蝎BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22670 >= 10
+killItem 22670,10
+giveItem 22682,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22671 >=10
+window "\n\n使用10张巨蟹BOSS过关证明兑换1张巨蟹BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22671 >= 10
+killItem 22671,10
+giveItem 22683,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22672 >=10
+window "\n\n使用10张双鱼BOSS过关证明兑换1张双鱼BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22672 >= 10
+killItem 22672,10
+giveItem 22684,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+
+
+if item 22673 >=10
+window "\n\n使用10张狮子BOSS过关证明兑换1张狮子BOSS签名?",yes,no
+window_yes itemspace<1
+endwindow "\n\n你的包包好像满了...先整理一下吧!"
+window_yes item 22673 >= 10
+killItem 22673,10
+giveItem 22685,1
+endwindow "\n\n兑换成功!"
+window_no
+endif
+endwindow "\n\n可以用任意10张12星座BOSS过关证明换取1张对应星座的BOSS签名."

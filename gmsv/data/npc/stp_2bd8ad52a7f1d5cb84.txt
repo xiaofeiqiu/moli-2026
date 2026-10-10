@@ -1,0 +1,7 @@
+block item 681118 == 1
+window"\n\n我知错了,老婆.!",next
+window"\n\n抱歉,我醒悟了,要不是老婆让我醒悟,我真不知道我会做出什么事",next
+window"\n\n这个就送你了,谢谢你们拦住了我!去跟我老婆说几句话吧",ok
+window_ok
+killitem 681118,1
+giveitem 681116,1

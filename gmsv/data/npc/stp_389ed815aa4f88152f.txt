@@ -1,0 +1,22 @@
+block Item 60457 >= 1
+Window "\n\n告知女神大主教的情况",next
+Window "\n\n善恶本在一念之间,恶魔的眼泪就是女神的恩赐,只是被欲望给污染了.\n\n去吧,勇者,千年的宿命即将重演......",ok
+Window_ok ItemSpace < 2
+endWindow "\n\n先整理下包裹吧"
+Window_ok
+KillItem 60457,1
+GiveItem 60456,1
+GiveItem 60467,1
+LeaveGroup
+Warp 0,64062,12,37
+
+
+block
+Window "\n\n......你来了......传说中的勇者......",next
+Window "\n\n宿命的对决即将再次开始,积蓄了3000年力量的魔王比之前任何一次都要强大",next
+Window "\n\n......无畏的勇者啊......\n进入魔族的领地,去铲除罪恶的根源\n\n你准备好了吗?",yes,no
+Window_no
+Window_yes
+Window "\n灵魂的解救者开始挑战魔王的权威\n\n黑暗笼罩的大地出现了黎明的曙光\n\n无畏的勇者啊......\n\n是否是继承的勇士\n\n用你手里的武器来证明光明永远属于人类!",ok
+Window_ok
+Warp 0,64069,48,47

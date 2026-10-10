@@ -1,0 +1,58 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block item 60834 >= 1 && item 16447 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60834,1
+			killitem 16447,1
+			GiveItem 60290,200
+			addgold 400000
+			EndEvent 628 = 0
+block item 60835 >= 1 && item 16448 >= 1  && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60835,1
+			killitem 16448,1
+			GiveItem 60290,200
+			addgold 400000
+			EndEvent 628 = 0
+block item 60836 >= 1 && EndEvent 608 == 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60836,1
+			GiveItem 60290,100
+			addgold 200000
+			EndEvent 608 = 0
+			EndEvent 628 = 0
+			CheckTitle
+block EndEvent 628 == 1
+	window "\n\n\n\n@c　　　请完成任务后再来接受新的委托。",ok
+		Window_ok
+block itemspace < 1
+	window "\n\n\n\n@c您的背包空间不足，请清理一下。",ok
+		Window_ok
+block EndEvent 628 == 0
+	window "\n\n\n　　要领取A级佣兵任务吗？\n\n　　完成接受的任务后，才可领取下个佣兵任务。",next
+		LocalCount3 = random 3,0		
+		if localcount3==3
+			window "\n\n　　【任务】世界崩坏的序曲Ⅰ\n\n　　【概要】完成艾国一等勋章并获得绿色的母爱之卵\n\n　　【任务物品】母爱之卵\n\n　　【奖励】金币400000G　　任务完成证明*200",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60834,1
+				endif
+			Window_no
+		if localcount3==2
+			window "\n\n　　【任务】世界崩坏的序曲Ⅱ\n\n　　【概要】完成兰国一等勋章并获得粉红色的母爱之卵\n\n　　【任务物品】母爱之卵\n\n　　【奖励】金币400000G　　任务完成证明*200",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60835,1
+				endif
+			Window_no
+		if localcount3==1
+			window "\n\n　　【任务】森罗万象\n\n　　【概要】前往树海击败四斗神与人类？\n\n　　【任务物品】树海专家称号\n\n　　【奖励】金币200000G　　任务完成证明*100",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60836,1
+				endif
+			Window_no

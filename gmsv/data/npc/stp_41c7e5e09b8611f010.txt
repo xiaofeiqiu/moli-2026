@@ -1,0 +1,7 @@
+block item 88369 >= 1 && item 88373 >= 1
+window "\n\n你要将未点燃的火把扔进火炉中吗？",yes,no
+window_no
+window_yes
+killitemall 88369
+killitemall 88373
+Warp 0,14201,15,53

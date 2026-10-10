@@ -1,0 +1,13 @@
+block item 77006 == 1 && item 77011 == 1 && item 77013 == 1
+LeaveGroup
+killitem 77006
+killitem 77011
+killitem 77013
+giveitem 77014
+
+block
+window 7019378,yes,no
+window_yes
+LeaveGroup
+Warp 0,42005,11,8
+window_no

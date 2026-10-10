@@ -1,0 +1,11 @@
+block item 87585 == 1
+endwindow "\n\n鳗鱼饭团我是不会提供给你了，在这里弄这代价非常高昂。"
+
+block item 87584 == 1
+window "\n\n要想进入圣鸟之巢不是简单的事，我用鳗鱼饭团买通了看守的幼鸟，不过要配合我的暗号。如果你能把你手上拿着的鸟类大全给我的话...",ok
+window_ok
+killitem 87584
+giveitem 87585
+
+block
+endwindow "\n\n瑞娜的不幸使我们鸟类研究部门失去了一名骨干。"

@@ -1,0 +1,12 @@
+block item 87204 == 1
+window "\n\n你们找我有什么事吗？",next
+window "\n\n你们在找我们矮人的矿洞？那你是找对人了，你们进去就是找人修缮这把剑？",next
+window "\n\n如果你们能帮我们族长消灭底层的巨蛇的话，我可以带你们进去哦！",ok
+window_ok
+LeaveGroup
+killitem 87204
+Warp 0,25221,12,18
+
+
+block
+endwindow "\n\n我挖我挖我挖挖..."

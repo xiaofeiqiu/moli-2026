@@ -1,0 +1,17 @@
+block item 200502 >= 1
+endwindow "\n\n小家伙现在懂事了,会帮哥哥买鱼了,放心了她丢不了."
+
+
+block StrCmpChat == 210003 && item 200501 >= 1
+window "\n\n希瑞?她不是刚才还在我这买了条鱼呢,我想可能还在附近,你找找看.",ok
+window_ok
+killitem 200501
+giveitem 200502
+
+
+block
+endwindow "\n\n鱼儿～鱼儿～你快上钩."
+
+
+
+

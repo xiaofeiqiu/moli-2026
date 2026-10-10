@@ -1,0 +1,100 @@
+block Luac stp:legacy:784e61c3a4cce26002e3 >= 90
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:e1ba15d857a449c8e7b7
+Luac stp:legacy:59e1ee16902a4bf7b7dc
+Luac stp:legacy:9ae28124cfceac7837c4
+Luac stp:legacy:cf8c5b9bba5c4be1b1c1
+Luac stp:legacy:611203926d58b2162b61
+Luac stp:legacy:af872e7147b65aa69505
+			killitem 60101,1
+block Luac stp:legacy:06be3a5796cba0f230f9 >= 80
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:316d0e20d2ff5eb719be
+Luac stp:legacy:d9c5c92588db82ddbb3e
+Luac stp:legacy:ccc156ce9dcfc761b454
+Luac stp:legacy:3ecae56463bc9f318712
+Luac stp:legacy:19885a2fc6a9b682f21d
+Luac stp:legacy:3f7c1af81653295cacba
+			killitem 60101,1
+block Luac stp:legacy:320c7885d34798f404f7 >= 70
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:22dcb75bef9317137c61
+Luac stp:legacy:3b26c8d2f51846713638
+Luac stp:legacy:9b01327dd1820f0939e2
+Luac stp:legacy:6c91372e61d3181431ee
+Luac stp:legacy:07cb709c077728c06dd5
+Luac stp:legacy:bb13bb8eba60efd9de0e
+			killitem 60101,1
+block Luac stp:legacy:3479acb60e14d8ff1540 >= 60
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:003bed2e9e5387e7f20e
+Luac stp:legacy:a58a9d8ee9165a5a8e83
+Luac stp:legacy:643d18fd1efe5685a503
+Luac stp:legacy:8fae6a868b98eeb4b300
+Luac stp:legacy:d063528f837eef0293eb
+Luac stp:legacy:7655cd12b325a4e2c3c6
+			killitem 60101,1
+block Luac stp:legacy:09e9ae567981f202e84b >= 50
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:93f672962225d4911ae6
+Luac stp:legacy:a2c848e107a24b650ccc
+Luac stp:legacy:4e786969170d1f3da92e
+Luac stp:legacy:5ba28a81a779466c1712
+Luac stp:legacy:3fad16250bf697c67d3a
+Luac stp:legacy:b3cb3566d74ebfae6723
+			killitem 60101,1
+block Luac stp:legacy:9dabf0cf586f4ed9b823 >= 40
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:e659fb07fa87c5d11529
+Luac stp:legacy:c345cea39629242e5370
+Luac stp:legacy:34bff7402fa6cc428772
+Luac stp:legacy:5cd12ea9fc46109ecdcf
+Luac stp:legacy:2c9a126d652cad791414
+Luac stp:legacy:03be8d8ab31f4ba93b3c
+			killitem 60101,1
+block Luac stp:legacy:4e17f7c3c59bdb2a170b >= 30
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:c54a3151ce2def1d5e85
+Luac stp:legacy:d9d4acfb3ff025456c08
+Luac stp:legacy:1545c29cfabacc0e8189
+Luac stp:legacy:e17ef1fb4a70683545a7
+Luac stp:legacy:c25b6eedf9b583e9f107
+Luac stp:legacy:06cb9b0385ebeebe9a66
+			killitem 60101,1
+block Luac stp:legacy:77f53e19e4344489aa52 >= 20
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:90fe4cd5449e0d39f562
+Luac stp:legacy:82bebe5db0c56ea537d7
+Luac stp:legacy:b27a035e085a34b69a73
+Luac stp:legacy:7912064f639237ee4f59
+Luac stp:legacy:b18f1634ae3300623351
+Luac stp:legacy:9a3cff64df100c6d9a76
+			killitem 60101,1
+block Luac stp:legacy:c505ea9b9fe58867c9eb >= 10
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:9a9fe1491e96a43a3143
+Luac stp:legacy:81ad4d503403ec639083
+Luac stp:legacy:b0492a268ce740f553f6
+Luac stp:legacy:088bef5c45364fa1b72e
+Luac stp:legacy:b4d912fe8745121ad5fa
+Luac stp:legacy:1136513f27ebd2e70610
+			killitem 60101,1
+block
+	Window "\n\n\n是否要使用秘石强化宠物的修正值",yes,no
+		Window_yes
+Luac stp:legacy:e3745b0e0daa8af771c4
+Luac stp:legacy:e37de05030d019f7acf2
+Luac stp:legacy:601c700292b459936822
+Luac stp:legacy:5ee38b598dc3db9e9e21
+Luac stp:legacy:d9380bc1a9a338a8c252
+Luac stp:legacy:55088b7fcdf9b4e239d4
+			killitem 60101,1

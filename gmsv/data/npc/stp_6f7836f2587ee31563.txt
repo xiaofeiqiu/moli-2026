@@ -1,0 +1,6 @@
+Block
+Window "要使用宠物手里剑卷吗？消耗后效果不可撤销。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:ef57628adcf7a2364836

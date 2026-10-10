@@ -1,0 +1,14 @@
+block item 200773 >= 1
+endwindow "\n\n公主殿下还那么小,一定要尽快找到她."
+
+
+block item 200772 >= 1
+window "\n\n既然你又重力头盔,那我就放你进去,我来给你们带上.",ok
+window_ok
+killitem 200772
+leavegroup
+Warp 0,32745,23,39
+
+
+block
+endwindow "\n\n你这样下去会瞬间没命的.\n必须得佩戴重力头盔才行."

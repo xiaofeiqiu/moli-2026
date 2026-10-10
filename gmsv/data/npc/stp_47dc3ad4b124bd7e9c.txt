@@ -1,0 +1,38 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【虎人】吗？",ok
+			Window_ok
+Luac stp:legacy:00e8379f1c502f4cd4d3
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【猫妖】吗？",ok
+			Window_ok
+Luac stp:legacy:094c4532a9d9019f08f8
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【罗刹】吗？",ok
+			Window_ok
+Luac stp:legacy:b8ed3ffafaa025c9da03
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【猫人】吗？",ok
+			Window_ok
+Luac stp:legacy:15be23830671166c58c3
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【恶魔猫】吗？",ok
+			Window_ok
+Luac stp:legacy:f5cf0f4c31a0011225cb
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【妖狐】吗？",ok
+			Window_ok
+Luac stp:legacy:45ce22e95796df942909
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【魔法黑猫】吗？",ok
+			Window_ok
+Luac stp:legacy:c08c59dff3dc3824b753
+				endif
+

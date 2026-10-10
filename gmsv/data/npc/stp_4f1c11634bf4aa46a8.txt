@@ -1,0 +1,10 @@
+block item 87461 == 1
+endwindow "\n\n..................."
+
+block item 87456 == 1
+window "\n\n我看过你带来的纸条了，我吧那地图藏在水之洞窟里面的谜一般的房间书架上。",ok
+window_ok
+giveitem 87461
+
+block
+endwindow "\n\n..................."

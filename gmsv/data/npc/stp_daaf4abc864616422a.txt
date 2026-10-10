@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【地底龟】吗？",ok
+			Window_ok
+Luac stp:legacy:c039c3c5af5345eae5ef
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【海底龟】吗？",ok
+			Window_ok
+Luac stp:legacy:032630d62daaee4f0175
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【火焰龟】吗？",ok
+			Window_ok
+Luac stp:legacy:a688cccb334fc4accea6
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【硬壳龟】吗？",ok
+			Window_ok
+Luac stp:legacy:1d181324301982583dc0
+				endif
+

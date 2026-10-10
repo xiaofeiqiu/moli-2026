@@ -1,0 +1,35 @@
+block item 1000071 >= 1
+window "\n\n恩,谢谢你的调查,真是完美的记录.海神一族送你的礼物要好好珍惜.",next
+window "\n\n记得把给渔夫的谢礼给人家送去哦,还有,有兴趣的话去无极漩涡看看,也许还能有其他的收货呢.",next
+window "\n\n辛苦啦,接下来我要好好把你记录的故事写好.那么,等我好到新的研究课题的话,希望还能有跟你合作的机会.",ok
+window_ok item 1000071 >= 1
+killitem 1000071
+giveitem 1000073
+
+
+block endevent 560 == 1
+endwindow "\n\n去西尔维村找豪爽的渔夫吧."
+
+
+block item 1000069 >= 1
+window "\n\n恩,人鱼是海族,你还因为调查卷入了海神一族的纠纷,听起来真是精彩!",next
+window "\n\n有关这海族宝珠的事情,我好象在西尔维村听到过相关的消息,你去那里找找看吧.",ok
+window_ok
+endevent 560 = 1
+
+
+block item 1000066 >= 1
+endwindow "\n\n当年那个见过人鱼的渔夫会在夜晚在码头出现,找他问问情况吧."
+
+block endevent 559 == 1
+window "\n\n你好呀,我是民俗学者八云松,为了研究不同的民俗学而参加远征军来到这里.",next
+window "\n\n这片大陆有很多和我们不同的民间故事流传着,比如最近我正在研究的人鱼传说.据说曾经有渔夫在附近的无人岛岸边见到过歌唱的人鱼,她的歌声非常美丽,充满诱惑.",next
+Window "\n\n如你所见,我的体力很难支撑我进行实地勘测,你是个有实力的冒险家,怎样,要不要和我配合来研究一下这个传说呢??",yes,no
+Window_yes
+window "\n\n太好了,请带好这个记录笔记,据说当年那个见过人鱼的渔夫会在夜晚在码头出现,找他问问情况吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 1000066
+Window_no
+endwindow "\n\n随时欢迎你来帮我进行实地调查."

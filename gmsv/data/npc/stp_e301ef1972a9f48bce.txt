@@ -1,0 +1,9 @@
+block itemspace < 1
+Endwindow"@c\n\n汝包满也,清之?"
+
+block
+window"@c\n\n吾乃镇宅阳狮\n\n曾有妖道不知何种方式将吾心智扰乱\n\n感谢尔等破解打脸那个LOW逼\n\n吾赠汝一物,GoodBye~",ok
+window_ok
+giveitem 90860
+leavegroup
+Warp 0,400,677,319

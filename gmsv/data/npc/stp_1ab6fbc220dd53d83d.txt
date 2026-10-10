@@ -1,0 +1,1099 @@
+
+block gold >= 995000
+endwindow "\n\n身上魔币不能超过995000G,否则无法转化."
+
+
+block item 18088 >= 3
+killitem 18088,3
+addgold 3822
+
+block item 18088 >= 2
+killitem 18088,2
+addgold 2548
+
+block item 18088 >= 1
+killitem 18088,1
+addgold 1274
+
+
+block item 18087 >= 3
+killitem 18087,3
+addgold 3480
+
+block item 18087 >= 2
+killitem 18087,2
+addgold 2320
+
+block item 18087 >= 1
+killitem 18087,1
+addgold 1160
+
+
+block item 18086 >= 3
+killitem 18086,3
+addgold 3192
+
+block item 18086 >= 2
+killitem 18086,2
+addgold 2128
+
+block item 18086 >= 1
+killitem 18086,1
+addgold 1064
+
+
+block item 18085 >= 3
+killitem 18085,3
+addgold 3024
+
+block item 18085 >= 2
+killitem 18085,2
+addgold 2016
+
+block item 18085 >= 1
+killitem 18085,1
+addgold 1008
+
+
+block item 18084 >= 3
+killitem 18084,3
+addgold 2856
+
+block item 18084 >= 2
+killitem 18084,2
+addgold 1904
+
+block item 18084 >= 1
+killitem 18084,1
+addgold 952
+
+
+block item 18083 >= 3
+killitem 18083,3
+addgold 2700
+
+block item 18083 >= 2
+killitem 18083,2
+addgold 1800
+
+block item 18083 >= 1
+killitem 18083,1
+addgold 900
+
+
+block item 18082 >= 3
+killitem 18082,3
+addgold 2532
+
+block item 18082 >= 2
+killitem 18082,2
+addgold 1688
+
+block item 18082 >= 1
+killitem 18082,1
+addgold 844
+
+
+block item 18081 >= 3
+killitem 18081,3
+addgold 2370
+
+block item 18081 >= 2
+killitem 18081,2
+addgold 1580
+
+block item 18081 >= 1
+killitem 18081,1
+addgold 790
+
+
+block item 18080 >= 3
+killitem 18080,3
+addgold 2208
+
+block item 18080 >= 2
+killitem 18080,2
+addgold 1472
+
+block item 18080 >= 1
+killitem 18080,1
+addgold 736
+
+
+block item 18079 >= 3
+killitem 18079,3
+addgold 2046
+
+block item 18079 >= 2
+killitem 18079,2
+addgold 1364
+
+block item 18079 >= 1
+killitem 18079,1
+addgold 682
+
+
+block item 18078 >= 3
+killitem 18078,3
+addgold 1878
+
+block item 18078 >= 2
+killitem 18078,2
+addgold 1252
+
+block item 18078 >= 1
+killitem 18078,1
+addgold 626
+
+
+block item 18077 >= 3
+killitem 18077,3
+addgold 1722
+
+block item 18077 >= 2
+killitem 18077,2
+addgold 1148
+
+block item 18077 >= 1
+killitem 18077,1
+addgold 574
+
+
+block item 18076 >= 3
+killitem 18076,3
+addgold 1554
+
+block item 18076 >= 2
+killitem 18076,2
+addgold 1036
+
+block item 18076 >= 1
+killitem 18076,1
+addgold 518
+
+
+block item 18075 >= 3
+killitem 18075,3
+addgold 1392
+
+block item 18075 >= 2
+killitem 18075,2
+addgold 928
+
+block item 18075 >= 1
+killitem 18075,1
+addgold 464
+
+
+block item 18074 >= 3
+killitem 18074,3
+addgold 1230
+
+block item 18074 >= 2
+killitem 18074,2
+addgold 820
+
+block item 18074 >= 1
+killitem 18074,1
+addgold 410
+
+
+block item 18073 >= 3
+killitem 18073,3
+addgold 1068
+
+block item 18073 >= 2
+killitem 18073,2
+addgold 712
+
+block item 18073 >= 1
+killitem 18073,1
+addgold 356
+
+
+block item 18072 >= 3
+killitem 18072,3
+addgold 900
+
+block item 18072 >= 2
+killitem 18072,2
+addgold 600
+
+block item 18072 >= 1
+killitem 18072,1
+addgold 300
+
+
+block item 18071 >= 3
+killitem 18071,3
+addgold 744
+
+block item 18071 >= 2
+killitem 18071,2
+addgold 496
+
+block item 18071 >= 1
+killitem 18071,1
+addgold 248
+
+
+block item 18070 >= 3
+killitem 18070,3
+addgold 480
+
+block item 18070 >= 2
+killitem 18070,2
+addgold 288
+
+block item 18070 >= 1
+killitem 18070,1
+addgold 192
+
+
+block item 18069 >= 3
+killitem 18069,3
+addgold 288
+
+block item 18069 >= 2
+killitem 18069,2
+addgold 192
+
+block item 18069 >= 1
+killitem 18069,1
+addgold 96
+
+
+block item 18068 >= 3
+killitem 18068,3
+addgold 72
+
+block item 18068 >= 2
+killitem 18068,2
+addgold 48
+
+block item 18068 >= 1
+killitem 18068,1
+addgold 24
+
+
+block item 18067 >= 3
+killitem 18067,3
+addgold 3822
+
+block item 18067 >= 2
+killitem 18067,2
+addgold 2548
+
+block item 18067 >= 1
+killitem 18067,1
+addgold 1274
+
+
+block item 18066 >= 3
+killitem 18066,3
+addgold 3480
+
+block item 18066 >= 2
+killitem 18066,2
+addgold 2320
+
+block item 18066 >= 1
+killitem 18066,1
+addgold 1160
+
+
+block item 18065 >= 3
+killitem 18065,3
+addgold 3192
+
+block item 18065 >= 2
+killitem 18065,2
+addgold 2128
+
+block item 18065 >= 1
+killitem 18065,1
+addgold 1064
+
+
+block item 18064 >= 3
+killitem 18064,3
+addgold 3024
+
+block item 18064 >= 2
+killitem 18064,2
+addgold 2016
+
+block item 18064 >= 1
+killitem 18064,1
+addgold 1008
+
+
+block item 18063 >= 3
+killitem 18063,3
+addgold 2856
+
+block item 18063 >= 2
+killitem 18063,2
+addgold 1904
+
+block item 18063 >= 1
+killitem 18063,1
+addgold 952
+
+
+block item 18062 >= 3
+killitem 18062,3
+addgold 2700
+
+block item 18062 >= 2
+killitem 18062,2
+addgold 1800
+
+block item 18062 >= 1
+killitem 18062,1
+addgold 900
+
+
+block item 18061 >= 3
+killitem 18061,3
+addgold 2532
+
+block item 18061 >= 2
+killitem 18061,2
+addgold 1688
+
+block item 18061 >= 1
+killitem 18061,1
+addgold 844
+
+
+block item 18060 >= 3
+killitem 18060,3
+addgold 2370
+
+block item 18060 >= 2
+killitem 18060,2
+addgold 1580
+
+block item 18060 >= 1
+killitem 18060,1
+addgold 790
+
+
+block item 18059 >= 3
+killitem 18059,3
+addgold 2208
+
+block item 18059 >= 2
+killitem 18059,2
+addgold 1472
+
+block item 18059 >= 1
+killitem 18059,1
+addgold 736
+
+
+block item 18058 >= 3
+killitem 18058,3
+addgold 2046
+
+block item 18058 >= 2
+killitem 18058,2
+addgold 1364
+
+block item 18058 >= 1
+killitem 18058,1
+addgold 682
+
+
+block item 18057 >= 3
+killitem 18057,3
+addgold 1878
+
+block item 18057 >= 2
+killitem 18057,2
+addgold 1252
+
+block item 18057 >= 1
+killitem 18057,1
+addgold 626
+
+
+block item 18056 >= 3
+killitem 18056,3
+addgold 1722
+
+block item 18056 >= 2
+killitem 18056,2
+addgold 1148
+
+block item 18056 >= 1
+killitem 18056,1
+addgold 574
+
+
+block item 18055 >= 3
+killitem 18055,3
+addgold 1554
+
+block item 18055 >= 2
+killitem 18055,2
+addgold 1036
+
+block item 18055 >= 1
+killitem 18055,1
+addgold 518
+
+
+block item 18054 >= 3
+killitem 18054,3
+addgold 1392
+
+block item 18054 >= 2
+killitem 18054,2
+addgold 928
+
+block item 18054 >= 1
+killitem 18054,1
+addgold 464
+
+
+block item 18053 >= 3
+killitem 18053,3
+addgold 1230
+
+block item 18053 >= 2
+killitem 18053,2
+addgold 820
+
+block item 18053 >= 1
+killitem 18053,1
+addgold 410
+
+
+block item 18052 >= 3
+killitem 18052,3
+addgold 1068
+
+block item 18052 >= 2
+killitem 18052,2
+addgold 712
+
+block item 18052 >= 1
+killitem 18052,1
+addgold 356
+
+
+block item 18051 >= 3
+killitem 18051,3
+addgold 900
+
+block item 18051 >= 2
+killitem 18051,2
+addgold 600
+
+block item 18051 >= 1
+killitem 18051,1
+addgold 300
+
+
+block item 18050 >= 3
+killitem 18050,3
+addgold 744
+
+block item 18050 >= 2
+killitem 18050,2
+addgold 496
+
+block item 18050 >= 1
+killitem 18050,1
+addgold 248
+
+
+block item 18049 >= 3
+killitem 18049,3
+addgold 480
+
+block item 18049 >= 2
+killitem 18049,2
+addgold 288
+
+block item 18049 >= 1
+killitem 18049,1
+addgold 192
+
+
+block item 18048 >= 3
+killitem 18048,3
+addgold 288
+
+block item 18048 >= 2
+killitem 18048,2
+addgold 192
+
+block item 18048 >= 1
+killitem 18048,1
+addgold 96
+
+
+block item 18047 >= 3
+killitem 18047,3
+addgold 72
+
+block item 18047 >= 2
+killitem 18047,2
+addgold 48
+
+block item 18047 >= 1
+killitem 18047,1
+addgold 24
+
+
+block item 18046 >= 3
+killitem 18046,3
+addgold 3822
+
+block item 18046 >= 2
+killitem 18046,2
+addgold 2548
+
+block item 18046 >= 1
+killitem 18046,1
+addgold 1274
+
+
+block item 18045 >= 3
+killitem 18045,3
+addgold 3480
+
+block item 18045 >= 2
+killitem 18045,2
+addgold 2320
+
+block item 18045 >= 1
+killitem 18045,1
+addgold 1160
+
+
+block item 18044 >= 3
+killitem 18044,3
+addgold 3192
+
+block item 18044 >= 2
+killitem 18044,2
+addgold 2128
+
+block item 18044 >= 1
+killitem 18044,1
+addgold 1064
+
+
+block item 18043 >= 3
+killitem 18043,3
+addgold 3024
+
+block item 18043 >= 2
+killitem 18043,2
+addgold 2016
+
+block item 18043 >= 1
+killitem 18043,1
+addgold 1008
+
+
+block item 18042 >= 3
+killitem 18042,3
+addgold 2856
+
+block item 18042 >= 2
+killitem 18042,2
+addgold 1904
+
+block item 18042 >= 1
+killitem 18042,1
+addgold 952
+
+
+block item 18041 >= 3
+killitem 18041,3
+addgold 2700
+
+block item 18041 >= 2
+killitem 18041,2
+addgold 1800
+
+block item 18041 >= 1
+killitem 18041,1
+addgold 900
+
+
+block item 18040 >= 3
+killitem 18040,3
+addgold 2532
+
+block item 18040 >= 2
+killitem 18040,2
+addgold 1688
+
+block item 18040 >= 1
+killitem 18040,1
+addgold 844
+
+
+block item 18039 >= 3
+killitem 18039,3
+addgold 2370
+
+block item 18039 >= 2
+killitem 18039,2
+addgold 1580
+
+block item 18039 >= 1
+killitem 18039,1
+addgold 790
+
+
+block item 18038 >= 3
+killitem 18038,3
+addgold 2208
+
+block item 18038 >= 2
+killitem 18038,2
+addgold 1472
+
+block item 18038 >= 1
+killitem 18038,1
+addgold 736
+
+
+block item 18037 >= 3
+killitem 18037,3
+addgold 2046
+
+block item 18037 >= 2
+killitem 18037,2
+addgold 1364
+
+block item 18037 >= 1
+killitem 18037,1
+addgold 682
+
+
+block item 18036 >= 3
+killitem 18036,3
+addgold 1878
+
+block item 18036 >= 2
+killitem 18036,2
+addgold 1252
+
+block item 18036 >= 1
+killitem 18036,1
+addgold 626
+
+
+block item 18035 >= 3
+killitem 18035,3
+addgold 1722
+
+block item 18035 >= 2
+killitem 18035,2
+addgold 1148
+
+block item 18035 >= 1
+killitem 18035,1
+addgold 574
+
+
+block item 18034 >= 3
+killitem 18034,3
+addgold 1554
+
+block item 18034 >= 2
+killitem 18034,2
+addgold 1036
+
+block item 18034 >= 1
+killitem 18034,1
+addgold 518
+
+
+block item 18033 >= 3
+killitem 18033,3
+addgold 1392
+
+block item 18033 >= 2
+killitem 18033,2
+addgold 928
+
+block item 18033 >= 1
+killitem 18033,1
+addgold 464
+
+
+block item 18032 >= 3
+killitem 18032,3
+addgold 1230
+
+block item 18032 >= 2
+killitem 18032,2
+addgold 820
+
+block item 18032 >= 1
+killitem 18032,1
+addgold 410
+
+
+block item 18031 >= 3
+killitem 18031,3
+addgold 1068
+
+block item 18031 >= 2
+killitem 18031,2
+addgold 712
+
+block item 18031 >= 1
+killitem 18031,1
+addgold 356
+
+
+block item 18030 >= 3
+killitem 18030,3
+addgold 900
+
+block item 18030 >= 2
+killitem 18030,2
+addgold 600
+
+block item 18030 >= 1
+killitem 18030,1
+addgold 300
+
+
+block item 18029 >= 3
+killitem 18029,3
+addgold 744
+
+block item 18029 >= 2
+killitem 18029,2
+addgold 496
+
+block item 18029 >= 1
+killitem 18029,1
+addgold 248
+
+
+block item 18028 >= 3
+killitem 18028,3
+addgold 480
+
+block item 18028 >= 2
+killitem 18028,2
+addgold 288
+
+block item 18028 >= 1
+killitem 18028,1
+addgold 192
+
+
+block item 18027 >= 3
+killitem 18027,3
+addgold 288
+
+block item 18027 >= 2
+killitem 18027,2
+addgold 192
+
+block item 18027 >= 1
+killitem 18027,1
+addgold 96
+
+
+block item 18026 >= 3
+killitem 18026,3
+addgold 72
+
+block item 18026 >= 2
+killitem 18026,2
+addgold 48
+
+block item 18026 >= 1
+killitem 18026,1
+addgold 24
+
+
+block item 18025 >= 3
+killitem 18025,3
+addgold 3822
+
+block item 18025 >= 2
+killitem 18025,2
+addgold 2548
+
+block item 18025 >= 1
+killitem 18025,1
+addgold 1274
+
+
+block item 18024 >= 3
+killitem 18024,3
+addgold 3480
+
+block item 18024 >= 2
+killitem 18024,2
+addgold 2320
+
+block item 18024 >= 1
+killitem 18024,1
+addgold 1160
+
+
+block item 18023 >= 3
+killitem 18023,3
+addgold 3192
+
+block item 18023 >= 2
+killitem 18023,2
+addgold 2128
+
+block item 18023 >= 1
+killitem 18023,1
+addgold 1064
+
+
+block item 18022 >= 3
+killitem 18022,3
+addgold 3024
+
+block item 18022 >= 2
+killitem 18022,2
+addgold 2016
+
+block item 18022 >= 1
+killitem 18022,1
+addgold 1008
+
+
+block item 18021 >= 3
+killitem 18021,3
+addgold 2856
+
+block item 18021 >= 2
+killitem 18021,2
+addgold 1904
+
+block item 18021 >= 1
+killitem 18021,1
+addgold 952
+
+
+block item 18020 >= 3
+killitem 18020,3
+addgold 2700
+
+block item 18020 >= 2
+killitem 18020,2
+addgold 1800
+
+block item 18020 >= 1
+killitem 18020,1
+addgold 900
+
+
+block item 18019 >= 3
+killitem 18019,3
+addgold 2532
+
+block item 18019 >= 2
+killitem 18019,2
+addgold 1688
+
+block item 18019 >= 1
+killitem 18019,1
+addgold 844
+
+
+block item 18018 >= 3
+killitem 18018,3
+addgold 2370
+
+block item 18018 >= 2
+killitem 18018,2
+addgold 1580
+
+block item 18018 >= 1
+killitem 18018,1
+addgold 790
+
+
+block item 18017 >= 3
+killitem 18017,3
+addgold 2208
+
+block item 18017 >= 2
+killitem 18017,2
+addgold 1472
+
+block item 18017 >= 1
+killitem 18017,1
+addgold 736
+
+
+block item 18016 >= 3
+killitem 18016,3
+addgold 2046
+
+block item 18016 >= 2
+killitem 18016,2
+addgold 1364
+
+block item 18016 >= 1
+killitem 18016,1
+addgold 682
+
+
+block item 18015 >= 3
+killitem 18015,3
+addgold 1878
+
+block item 18015 >= 2
+killitem 18015,2
+addgold 1252
+
+block item 18015 >= 1
+killitem 18015,1
+addgold 626
+
+
+block item 18014 >= 3
+killitem 18014,3
+addgold 1722
+
+block item 18014 >= 2
+killitem 18014,2
+addgold 1148
+
+block item 18014 >= 1
+killitem 18014,1
+addgold 574
+
+
+block item 18013 >= 3
+killitem 18013,3
+addgold 1554
+
+block item 18013 >= 2
+killitem 18013,2
+addgold 1036
+
+block item 18013 >= 1
+killitem 18013,1
+addgold 518
+
+
+block item 18012 >= 3
+killitem 18012,3
+addgold 1392
+
+block item 18012 >= 2
+killitem 18012,2
+addgold 928
+
+block item 18012 >= 1
+killitem 18012,1
+addgold 464
+
+
+block item 18011 >= 3
+killitem 18011,3
+addgold 1230
+
+block item 18011 >= 2
+killitem 18011,2
+addgold 820
+
+block item 18011 >= 1
+killitem 18011,1
+addgold 410
+
+
+block item 18010 >= 3
+killitem 18010,3
+addgold 1068
+
+block item 18010 >= 2
+killitem 18010,2
+addgold 712
+
+block item 18010 >= 1
+killitem 18010,1
+addgold 356
+
+
+block item 18009 >= 3
+killitem 18009,3
+addgold 900
+
+block item 18009 >= 2
+killitem 18009,2
+addgold 600
+
+block item 18009 >= 1
+killitem 18009,1
+addgold 300
+
+
+block item 18008 >= 3
+killitem 18008,3
+addgold 744
+
+block item 18008 >= 2
+killitem 18008,2
+addgold 496
+
+block item 18008 >= 1
+killitem 18008,1
+addgold 248
+
+
+block item 18007 >= 3
+killitem 18007,3
+addgold 480
+
+block item 18007 >= 2
+killitem 18007,2
+addgold 288
+
+block item 18007 >= 1
+killitem 18007,1
+addgold 192
+
+
+block item 18006 >= 3
+killitem 18006,3
+addgold 288
+
+block item 18006 >= 2
+killitem 18006,2
+addgold 192
+
+block item 18006 >= 1
+killitem 18006,1
+addgold 96
+
+
+block item 18005 >= 3
+killitem 18005,3
+addgold 72
+
+block item 18005 >= 2
+killitem 18005,2
+addgold 48
+
+block item 18005 >= 1
+killitem 18005,1
+addgold 24
+
+
+block
+endwindow "\n\n您身上并没有可以转化的魔石呢!"

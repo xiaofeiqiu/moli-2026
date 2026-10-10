@@ -1,0 +1,9 @@
+block
+window 85677,yes,no
+window_no
+window_yes gold < 998000
+leavegroup
+killitem 86462
+addgold 2000
+window_yes gold >= 99800
+endwindow 85678

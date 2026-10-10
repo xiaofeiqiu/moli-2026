@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物抗遗能力1点！",ok
+	window_ok
+Luac stp:legacy:5871b8bed8dc6f608578
+		killitem 60276,1

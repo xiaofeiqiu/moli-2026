@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【狮鹫兽】吗？",ok
+			Window_ok
+Luac stp:legacy:d8e7f3005acb3ed11285
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【变种狮鹫兽】吗？",ok
+			Window_ok
+Luac stp:legacy:411a162c5182483e4596
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【布雷欧】吗？",ok
+			Window_ok
+Luac stp:legacy:ca633f09edde966ebee4
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【依格罗斯】吗？",ok
+			Window_ok
+Luac stp:legacy:6176d8a2eb0cc3d558bd
+				endif
+

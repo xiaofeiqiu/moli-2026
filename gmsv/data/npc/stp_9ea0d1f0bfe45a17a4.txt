@@ -1,0 +1,12 @@
+block item 86240>= 1
+endwindow "\n\n地上的符号你已经用笔记下了!"
+
+
+
+block
+window "\n\n这块石头上好像画着一些符号,需要用笔记下来吗?",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+GiveItem 86240

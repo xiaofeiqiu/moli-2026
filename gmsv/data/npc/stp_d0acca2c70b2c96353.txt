@@ -1,0 +1,17 @@
+block item 39677 == 1
+Endwindow "\n\n我真的就知道这么多了."
+
+block item 39676 == 1
+Window "\n\n哟呵,我认得你,你就是那天抓到我的人.",next
+Window "\n\n要不是你,老子也不会落到这步田地,等我从这出去,你的好日子也就到头了.",next
+Window "\n\n我怎么出去?那你甭管,反正你就洗干净脖子等着吧.",next
+Window "\n\n什么?我可没什么好招的了,知道不知道的都说了,你爱怎样就怎样,我没的说了.",next
+Window "\n\n『你掏出了队长给你的瓶子,直接扔了出去...』",next
+Window "\n\n你要干嘛!!啊!!!你这个混蛋!!",next
+Window "\n\n『你假装掏包,作势要继续扔...』",next
+Window "\n\n别,别扔了,求你了,我说,我说行了吧,见鬼,军方的人都没你狠!",next
+Window "\n\n他们早就撤离了,而且很快就有人来救我的,具体撤到哪里了我只有出去了才会知道.",next
+Window "\n\n我真的就知道这么多了.",ok
+Window_ok item 39676 == 1
+killitem 39676
+giveitem 39677

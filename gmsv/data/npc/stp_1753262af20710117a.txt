@@ -1,0 +1,14 @@
+block item 131 >= 1
+endwindow "\n\n(学老头的声音)你好像并不需要我的协助...\n\n哇哈哈..."
+
+
+block item 119 == 1
+window "\n\n你说我来当一回神官怎么样?像吗?",yes,no
+window_no
+endwindow "\n\n那你来当好了..."
+window_yes
+window "\n\n呵呵,我觉得你也很有当神官的潜质哦!这个给你.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 131,1

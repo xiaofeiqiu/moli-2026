@@ -1,0 +1,18 @@
+###dodo_gm_1051480.txt
+###阿梅玩家胜利后,给予阿梅的团员金卡.
+###身上有日月组织团员金卡
+
+block Item 715248 >= 1 
+window "\n\n我输了!\n看来我的梦想目前还是无法达成.\n总有一天我一定会让大家接受我的称号的.\n这卡片我留着也没有用途了.\n送给你吧!",ok
+Window_OK ItemSpace < 1 
+endwindow "\n\n你的身上物品携带的太多了."
+
+Window_OK Item 715248 >= 1 && ItemSpace >= 1
+GiveLeak1Item 715253 
+Warp 0,32385,95,148  
+
+
+block 
+window "\n\n虽然你打败了我!\n但是你无法阻止我们的计划!\n我们依然会成功.",ok
+Window_OK 
+Warp 0,1000,233,78 

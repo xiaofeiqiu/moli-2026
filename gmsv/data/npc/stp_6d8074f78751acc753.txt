@@ -1,0 +1,2 @@
+block
+	EndWindow 7020599,ok

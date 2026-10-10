@@ -1,0 +1,12 @@
+block item 879501 == 1
+LeaveGroup
+Warp 0,45141,67,168
+
+block
+window 501700,next
+window 501701,next
+window 501702,next
+window 501703,ok
+window_ok
+LeaveGroup
+Warp 0,11015,56,50

@@ -1,0 +1,14 @@
+block item 87657 == 1
+Warp 0,2300,38,43
+
+block item 87656 == 1
+window "\n\n谢谢...你是谁？",next
+window "\n\n那是？难道是诺伦科？我的爱人...真的是他吗？",next
+window "\n\n再次感谢你！这里的阴森令人毛骨悚然...我们回去吧！",ok
+window_ok
+killitem 87656
+giveitem 87657
+Warp 0,2300,38,43
+
+block
+Warp 0,2300,38,43

@@ -1,0 +1,6 @@
+block
+window "\n\n狩猎狩到我这里,你也够six了,既然来了,就拿你下酒吧",yes,no
+window_no
+window_yes
+Encount 2|0,57315,26,30||0|||||0|6000016|||||||||
+

@@ -1,0 +1,11 @@
+
+
+
+block PetSpace != 0 && Item 715312 > 0
+KillItem 715312,1
+killitem 715312,1
+GivePet (2000%99,27180%1)
+
+
+block PetSpace == 0
+endwindow "\n\nÄãµÄ³èÎïÀ¸ÂúÀ²!"

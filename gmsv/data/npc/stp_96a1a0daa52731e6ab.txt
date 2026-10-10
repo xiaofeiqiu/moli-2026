@@ -1,0 +1,44 @@
+block item 50891 >= 1 && item 50892 >= 1 && item 50893 >= 1 && item 50894 >= 1 && item 50895 >= 1 && item 50896 >= 1
+window "\n\n想不到你真的能找到这些部件,好吧,我兑现诺言,帮你打造一把上古神器",yes,no
+window_yes gold < 120000
+endwindow "\n\n光有部件,不给钱,我可不帮你铸造"
+window_yes
+killitem 50891
+killitem 50892
+killitem 50893
+killitem 50894
+killitem 50895
+killitem 50896
+window "\n\n...(准备开始)",next
+window "\n\n......(正在铸造)",next
+window "\n\n.........(满头大汗)",next
+window "\n\n............(即将出炉)",next
+window "\n\n可把我累死,不过还算可以,总算完结了我的心愿,给你吧",next
+giveitem 50897,1
+endwindow "\n\n希望你能拿这把神器,斩妖除魔"
+window_no
+endwindow "\n\n真可惜,不识货的家伙"
+
+
+
+
+block item 50890 >= 1
+endwindow "\n\n去拿给达菲鲁迪看看吧!我的技术就这样"
+
+block item 50885 >= 1 && item 50886 >= 1 && item 50887 >= 1 && item 50888 >= 1 && item 50889 >= 1
+window "\n\n材料都找齐了吗?\n\n咳咳~~~该我大展身手的时候了!",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够啦"
+window_yes
+addgold -100000
+killitem 50885
+killitem 50886
+killitem 50887
+killitem 50888
+killitem 50889
+giveitem 50890
+endwindow "\n\n去拿给达菲鲁迪看看吧!我的技术就这样"
+
+block
+window "\n\n你好,我是......咳......\n别管我是谁了.我出现在这里是为了锻炼自己的技艺.\n据我所知,有一把传说中的刀被分成了四个部分,由几个魔物掌握着.我自己当然是没能力收集他们的,如果你能收集齐这些破损的部位,我可以试着将它重新锻造出来.另外为了武器能够完美重铸,我还需要一块上等的磨刀石,请一起找来吧.",next
+endwindow "\n\n其他需要的那些超级珍贵稀少一般人没见过的材料我来搞定,只要100000G就一起给你了!"

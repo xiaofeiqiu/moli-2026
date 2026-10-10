@@ -1,0 +1,5 @@
+block
+window "\n\n你要打开门出去吗?",yes,no
+window_yes
+leavegroup
+Warp 0,27667,6,12

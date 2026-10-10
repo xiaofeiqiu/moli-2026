@@ -1,0 +1,8 @@
+block
+window "\n\n【石门后面传来了声音...】",next
+window "\n\n『放开我！救命啊！谁来救救我！诺伦科...』",next
+window "\n\n『那个懦弱的男人不会来救你了！该死，看来还要想其他的办法了┉┉你就老老实实的闭眼等死吧！』",next
+window "\n\n【要推开门吗？】",yes,no
+window_no
+window_yes
+Warp 0,29850,1,14

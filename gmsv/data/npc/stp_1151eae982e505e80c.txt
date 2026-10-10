@@ -1,0 +1,5 @@
+block
+	window"\n\n 您选择的是A组的比赛，请随我来！",ok
+	window_ok
+	leavegroup
+	Warp 0,642,23,30

@@ -1,0 +1,13 @@
+block item 39633 >= 1
+window "\n\n朋友,太感谢你了！你可帮了我一个大忙！如果不尽快解决这个家伙,归队的时候肯定被队长批评了.为了能够尽快解决时间,咱们兵分两路.",next
+window "\n\n如果你想帮我把米雪儿母亲的遗物交给她,你就选择[是];如果你想帮我把盗贼带回骑士团,你就选择[否].",yes,no
+window_no
+killitem 39633
+giveitem 39635
+LeaveGroup
+Warp 0,100,413,294
+window_yes
+killitem 39633
+giveitem 39634
+LeaveGroup
+Warp 0,100,413,294

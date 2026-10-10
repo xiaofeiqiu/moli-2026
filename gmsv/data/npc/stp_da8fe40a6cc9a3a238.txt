@@ -1,0 +1,10 @@
+block item 39674 == 1
+Window "\n\n你好,我是法兰禁卫队的队长.",next
+Window "\n\n这次你做的很出色,干的漂亮,这个家伙交给我们吧,我们负责关住他,另外,前面那个据点也交给我们吧,有些事情还是要专业人士来做.",next
+Window "\n\n你带着这份口供先回法兰城去见安全顾问大人,转告他这里的情况,我们扫清这帮蠢贼的据点后就回去复命.",ok
+Window_ok item 39674 == 1
+killitem 39674
+giveitem 39675
+
+block
+Endwindow "\n\n快回去复命吧."

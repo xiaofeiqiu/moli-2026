@@ -1,0 +1,8 @@
+###Get捕捉传送
+block
+	Window"\n\n你要去泰坦巨人的栖息处么？",yes,no
+	Window_yes
+	killitem 500002,1
+	leavegroup
+	Warp 0,377,20,76
+	window_no

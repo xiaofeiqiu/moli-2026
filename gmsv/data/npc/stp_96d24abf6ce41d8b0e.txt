@@ -1,0 +1,7 @@
+block item 88095 == 1
+window 501233,next
+window 501234,next
+window 501235,yes,no
+window_no
+window_yes
+Encount 2|0,45235,15,33||0|||||0|88158|||||||||

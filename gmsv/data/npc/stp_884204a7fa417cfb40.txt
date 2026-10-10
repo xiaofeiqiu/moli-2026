@@ -1,0 +1,26 @@
+block item 87927 == 1
+endwindow 933577
+
+block item 87920 == 1
+endwindow 933578
+
+block item 87919 == 1
+window 933579,next
+window 933580,next
+window 933581,ok
+window_ok
+killitem 87919
+giveitem 87920
+
+block item 87918 == 1
+endwindow 933582
+
+block item 87917 == 1 && ItemCreateTime 87917 >= 60
+window 933583,next
+window 933584,next
+window 933585,ok
+window_ok
+giveitem 87918
+
+block
+endwindow 933586

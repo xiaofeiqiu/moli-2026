@@ -1,0 +1,16 @@
+block item 795002 ==1
+Window "\n\n  请问您是要进下层挑战？还是领取奖励？进去下层请选是，领取奖励请选否",yes,no
+	Window_yes
+        killitem 795002,1
+        giveitem 795003,1
+        leavegroup
+        Warp 0,1000,242,85
+        Window_no
+        killitem 795002,1
+        giveitem 1000508,400
+        leavegroup
+        Warp 0,1000,242,85
+block item 795002 <1
+	Window "\n\n  对不起！您没有极限连战2卷！",OK
+        leavegroup
+        Warp 0,1000,242,85

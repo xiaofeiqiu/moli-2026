@@ -1,0 +1,202 @@
+
+
+block item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetSpace == 0 
+endwindow "\n\n你的宠物栏满啦!"
+
+
+
+block item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37178 > 1 && PetSpace != 0
+window "\n\n哇～\n你搜集到五张巨花设计图呀～",next
+window "\n\n唉唉～我听说了\n要是艾尔玛公主知道席琳殿下生下孩子\n这可是会引发两国争小孩的战火呀～～",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37178 > 1 && PetSpace != 0
+KillPetl 37178
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27182
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+Window_no item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37180 > 1 && PetSpace != 0
+window "\n\n你现在身上有疾风霸王与整套设计图\n要将疾风霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37180 > 1 && PetSpace != 0
+KillPetl 37180
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27183
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+Window_no item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37179 > 1 && PetSpace != 0
+window "\n\n你现在身上有寒冰霸王与整套设计图\n要将寒冰霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37179 > 1 && PetSpace != 0
+KillPetl 37179
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27184
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+Window_no  item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0
+window "\n\n你现在身上有大地霸王与整套设计图\n要将大地霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0
+KillPetl 37177
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27181
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+window_no
+endwindow "\n\n想改造再来找我喔!"
+Window_no
+endwindow "\n\n想改造再来找我喔!"
+Window_no
+endwindow "\n\n想改造再来找我喔!"
+window_no
+endwindow "\n\n想改造再来找我喔!"
+
+
+
+
+
+
+block  item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37180 > 1 && PetSpace != 0 
+window "\n\n哇～\n你搜集到五张巨花设计图呀～",next
+window "\n\n你现在身上有疾风霸王与整套设计图\n要将疾风霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37180 > 1 && PetSpace != 0 
+KillPetl 37180
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27183
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+Window_no item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37179 > 1 && PetSpace != 0
+window "\n\n你现在身上有寒冰霸王与整套设计图\n要将寒冰霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37179 > 1 && PetSpace != 0 
+KillPetl 37179
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27184
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+Window_no  item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0 
+window "\n\n你现在身上有大地霸王与整套设计图\n要将大地霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0 
+KillPetl 37177
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27181
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+window_no
+endwindow "\n\n想改造再来找我喔!"
+Window_no
+endwindow "\n\n想改造再来找我喔!"
+Window_no
+endwindow "\n\n想改造再来找我喔!"
+
+
+
+
+
+
+block item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37179 > 1 && PetSpace != 0 
+window "\n\n哇～\n你搜集到五张巨花设计图呀～",next
+window "\n\n你现在身上有寒冰霸王与整套设计图\n要将寒冰霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37179 > 1 && PetSpace != 0 
+KillPetl 37179
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27184
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+Window_no  item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0 
+window "\n\n你现在身上有大地霸王与整套设计图\n要将大地霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0 
+KillPetl 37177
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27181
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+window_no
+endwindow "\n\n想改造再来找我喔!"
+Window_no
+endwindow "\n\n想改造再来找我喔!"
+
+
+
+
+
+
+block  item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0 
+window "\n\n哇～\n你搜集到五张巨花设计图呀～",next
+window "\n\n你现在身上有大地霸王与整套设计图\n要将大地霸王改为一级吗?",yes,no
+Window_yes item 715313 > 0 && item 715314 > 0 && item 715315 > 0 && item 715316 > 0 && item 715317 > 0 && PetLevel 37177 > 1 && PetSpace != 0 
+KillPetl 37177
+KillItem 715313,1
+KillItem 715314,1
+KillItem 715315,1
+KillItem 715316,1
+KillItem 715317,1
+GivePet 27181
+endblock
+Window_yes
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+window_no
+endwindow "\n\n想改造再来找我喔!"
+
+
+
+
+
+block leak0item 715313 > 0
+endwindow "\n\n不过是否能脱离见习生的身份\n还是要看你的职业而定."
+
+block leak0item 715314 > 0
+endwindow "\n\n你可以购买战斗系正职指导书\n教你如何转为正职喔."
+
+block leak0item 715315 > 0
+endwindow "\n\n你是生产/采集系的职业\n请将本职技能练到LV4\n不用辛苦的打树精长老\n跟朋友一起送咖哩吧."
+
+block leak0item 715316 > 0
+endwindow "\n\n你可以购买服务系正职指导书\n教你如何转为正职喔."
+
+block leak0item 715317 > 0
+endwindow "\n\n你是医生OR护士\n虽然是采生产系称号\n不过还是要打树精长老才能正职."
+
+block
+window "\n\n你可以跟朋友阻队去打牛鬼啰!\n或是继续打在哈巴鲁东边洞窟\n(芙蕾雅670,223)打土蜘蛛.",next
+endwindow "\n\n恭喜你,可以前往维诺亚村\n打树精长老,进行晋阶任务啰."

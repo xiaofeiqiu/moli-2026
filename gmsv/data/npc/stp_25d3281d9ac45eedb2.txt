@@ -1,0 +1,21 @@
+block endevent 559 == 1
+endwindow "\n\n你好,我是负责杂务的联络官."
+
+
+block item 1000064 >= 1
+endwindow "\n\n路上多加小心."
+
+block endevent 558 == 1
+window "\n\n辛苦了!先遣队已经到达新的区域了,受队长委托,告知各位最新进展.",next
+window "\n\n首先,村子家的法兰传送是已经设置完成,你可以利用传送石来回法兰了.",next
+window "\n\n其次,西北方的渡口暂停还不能使用,请利用北方的地底隧道去往新区域,地下通道内有怪物出没,请注意尽量结伴行动.",next
+window "\n\n根据联络员的报告,通过商谈,先遣队已经在新城市租用了一块基地,请收好这个,穿过北方的地底隧道,尽快到新基地与大家会合吧.",next
+window "\n\n路上请多加小心.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 1000064
+
+
+block
+endwindow "\n\n你好,我是负责杂务的联络官."

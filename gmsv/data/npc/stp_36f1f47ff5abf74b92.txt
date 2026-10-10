@@ -1,0 +1,10 @@
+block	gold >= 20000 && itemspace >= 1
+	window"\n\n 嘿嘿,告诉你哦. \n \n 我在村子的不远处挖到个奇怪的石头",next
+window"\n\n 很漂亮的石头吧? \n \n 怎么样?卖给你,20000块就行",next
+window"\n\n 要买吗?真的不错哦",yes,no
+	window_yes
+	addgold -20000
+	giveitem 18464,1
+
+block	gold <= 20000 || itemspace <= 0
+	window"\n\n 哎呀,看来你没钱呀！要不就是包满了!\n \n看来,你与那东西无缘",ok

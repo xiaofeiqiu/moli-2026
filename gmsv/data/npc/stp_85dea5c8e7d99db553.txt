@@ -1,0 +1,25 @@
+block item 200546 >= 1
+endwindow "\n\n大主教我还是建议你们去问安德列传教士."
+
+
+
+block item 200545 >= 1
+window "\n\n制造维护传送水晶的设计文稿怎么了,少了半页,稍等我查一下记录看看被谁借走过.",next
+window "\n\n嗯～找到了,被我们天空之城的大主教在昨天借阅过.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200546
+
+block item 200544 >= 1
+endwindow "\n\n你有国王的许可令,那你自便吧,你要的文稿在右手第二排书架上."
+
+
+block item 200543 >= 1
+endwindow "\n\n制造维护传送水晶的设计文稿,你是谁,没国王许可禁止调本馆书籍."
+
+
+block
+endwindow "\n\n没事请离开这里."
+
+

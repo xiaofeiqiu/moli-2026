@@ -1,0 +1,5 @@
+block item 400067 == 1
+	Window"\n\n@c竟然还有人来送死！啊哈哈哈哈哈！！",ok
+		Window_ok item 400067 == 1
+		Setaction 5
+Encount 3|0,18057,10,10|400067|||||||800034|||||||||

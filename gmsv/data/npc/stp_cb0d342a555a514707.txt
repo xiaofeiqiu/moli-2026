@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至岬之神殿 ？",yes,no
+		Window_yes
+			KillItem 60232,1
+			Warp 0,43800,84,83
+		Window_no

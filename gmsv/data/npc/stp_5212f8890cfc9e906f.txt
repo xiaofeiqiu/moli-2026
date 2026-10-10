@@ -1,0 +1,23 @@
+block endevent 600 == 1 && item 22736 >= 1
+window "\n\n马上回家去啦!",ok
+window_ok item 22736 >= 1
+killitem 22736
+window_ok 
+endwindow "\n\n再见!"
+
+
+block endevent 600 == 0 && item 22736 >= 1 && itemspace != 0 && petspace != 0
+window "\n\n姐姐人很好的,帮我擦药还和我玩.我马上就回家去,不让妈妈担心.你看,这只小雪灵多可爱.",ok
+window_ok endevent 600 == 0 && item 22736 >= 1
+endevent 600 = 1
+killitem 22736
+givepet 3000071
+endwindow "\n\n再见!"
+
+
+block endevent 600 == 0 && itemspace != 0 && petspace != 0
+endwindow "\n\n任务物品丢失!"
+
+
+block endevent 600 == 0 
+endwindow "\n\n你身上的物品栏不够或宠物栏不够!"

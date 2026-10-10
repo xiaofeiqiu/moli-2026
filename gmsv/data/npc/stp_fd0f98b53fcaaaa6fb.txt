@@ -1,0 +1,7 @@
+block gold >= 955001
+	endwindow "\n\n@c你的钱太多了.放不下..."
+block item 591142 >= 1 && gold <= 955000
+	window "\n\n\n@c偷菜愉快!",ok
+	window_ok item 591142 >= 1
+	addgold 45000
+	killitem 591142,1

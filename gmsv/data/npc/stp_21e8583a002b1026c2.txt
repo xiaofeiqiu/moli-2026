@@ -1,0 +1,8 @@
+block EndEvent 516 == 1 && item 141196 >= 1 && item 141200 >= 1
+Window "\n\n『在骸骨堆中发现了一颗冥界联结石...』",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏满了.",
+Window_ok item 141196 >= 1 && item 141200 >= 1
+giveitem 141204
+LeaveGroup
+Warp 0,57473,24,26

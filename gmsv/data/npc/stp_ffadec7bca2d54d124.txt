@@ -1,0 +1,3 @@
+block Item 800088 == 1
+		killitem 800088,1
+		giveitem 800089,1

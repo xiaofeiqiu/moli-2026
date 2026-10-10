@@ -1,0 +1,19 @@
+block EndEvent 612 == 1
+	window "\n\n您已经是佣兵工会的一员了，请努力吧！",ok
+		Window_ok
+block EndEvent 612 == 0 && gold >= 100
+
+
+0
+	window "\n\n冒险者要加入佣兵工会吗，如果想清楚的话请在这里登一下记，费用为1000金币。",yes,no
+		Window_yes
+			addgold -1000
+			EndEvent 612 = 1
+			CheckTitle
+		Window_no
+block EndEvent 612 == 0 && gold < 100
+
+
+0
+	window "\n\n冒险者要加入佣兵工会吗，您的金币不足1000金，无法进行登记。",ok
+		Window_ok

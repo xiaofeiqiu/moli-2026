@@ -1,0 +1,8 @@
+block item 87181 == 1
+endwindow "\n\n石碑上的古文你已经翻译完毕！"
+
+block item 87180 == 1
+window "\n\n你要按照破译文本吧石碑上的内容翻译过来吗？",ok
+window_ok
+killitem 87180
+giveitem 87181

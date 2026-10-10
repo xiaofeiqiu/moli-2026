@@ -1,0 +1,11 @@
+block item 3806 ==	1
+	Window "\n\n啊?这个是统帅之符",next
+	Window "\n\n.....将军有什么吩咐..",next
+	Window "\n\n快请进快请进",OK
+		Window_OK
+			LeaveGroup
+			Warp 0,9998,5,8
+block
+	Window "\n\n你是谁?",next
+	EndWindow "\n\n你怎么会来到这!",OK
+		Window_OK

@@ -1,0 +1,27 @@
+block item 200514 >= 1
+endwindow "\n\n祝检测大人一路顺风."
+
+
+block item 200508 >= 1 && item 200509 >= 1 && item 200513 >= 1
+window "\n\n监察组的大人您已经视察完了吗?那你回去可要给皇后多美言几句哦.",ok
+window_ok
+killitem 200509
+giveitem 200514
+
+
+block item 200509 >= 1
+endwindow "\n\n这张卡要保管好哦,丢失了会弄出很多麻烦,切记了."
+
+
+block item 200506 >= 1 && item 200508 >= 1
+window "\n\n啊…这…不就是我们院长丢失的丝巾吗?没想到让监察组的大人您捡到了.",next
+window "\n\n院长秘书还在纳闷,怎么帮院长找回来呢,既然你是来监察孤儿院情况的,那你就顺便交给院长秘书吧.",next
+window "\n\n按照孤儿院新规定的保安措施,我还得给你派发孤儿院访客卡.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200509
+
+
+block
+endwindow "\n\n欢迎光临来到孤儿院,如果你看中本院哪位小朋友即可在我这里办理领养手续."

@@ -1,0 +1,13 @@
+block Item 715185 >= 1 && Item 715187 >= 1 && Item 715188 >= 1 
+Window "\n\n要制作豆沙粽子吗?",ok
+Window_ok
+killitem 715214,1
+killitem 715185,1
+killitem 715187,1
+killitem 715188,1
+giveitem 715211
+
+
+
+block
+endwindow "\n\n制作豆沙粽子需要1份豆沙,1份粽子叶,1份江米."

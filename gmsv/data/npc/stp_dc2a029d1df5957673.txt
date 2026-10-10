@@ -1,0 +1,10 @@
+block
+window "\n\n人类朋友！我不知道用什么语言来表达我此时的感情。你的壮举获得了我们龙族的肯定。并且还救出了你们的国王。",next
+window "\n\n我将代表龙族最高荣誉的勋章赠送给你，如果你有任何困难持有此勋章即可获得我们龙族的帮助！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_ok
+LeaveGroup
+giveitem 500155
+givepet 501
+Warp 0,1530,15,6

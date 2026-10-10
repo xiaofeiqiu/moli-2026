@@ -1,0 +1,11 @@
+block item 70022 == 1 && strcmpchat == 910064
+window 910107,OK
+window_ok
+leavegroup
+Warp 0,25055,8,14
+#########
+block item 70022 != 1
+endwindow 910108,OK
+#########
+block item 70022 == 1
+endwindow 910109,OK

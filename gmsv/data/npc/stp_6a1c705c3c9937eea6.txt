@@ -1,0 +1,24 @@
+block item 990903 >= 1
+	window "\n\n哇!真是太好了.\n\n你真的好厉害哦,谢谢你帮我解除了诅咒!",ok
+	window_ok
+		killitem 990903,1
+		giveitem (686629%1,686630%1),1
+		giveitem (14406%1$5,14416%1$5,14426%1$5,14436%1$5,14446%1$5,14456%1$5,14466%1$5,14476%1$5,14486%1$5)
+
+block item 990902 >= 1
+	window "\n\n啊?你...\n\n你竟然是个胆小鬼,算我看错你了!",ok
+	window_ok
+		killitem 990902,1
+		EndEvent 521 =1
+		CheckTitle
+
+block item 990901 >=1
+	endwindow "\n\n那个无头将军好像在加纳沙漠里.\n\n我派了一名侦探去调查了呢,但是,还是没有消息,真的好头疼啊!",ok
+
+block item 990900 >= 1
+	window "\n\n最近我总是在梦中,梦见一个无头将军向我索命.\n\n每当醒来,我总会大病一场,一定是它的诅咒!",next
+	window "\n\n能帮我解除这个诅咒吗?我会给你丰厚报酬.\n\n听说最近加纳沙漠有亡灵出现,可以去那里打听一下.",ok
+	window_ok
+	killitem 990900,1
+	giveitem 990901,1
+	endwindow "\n\n(这件事一定不会这么简单，我要去调查一下.)",ok

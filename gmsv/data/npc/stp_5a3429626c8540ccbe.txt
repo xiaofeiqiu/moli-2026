@@ -1,0 +1,48 @@
+block item 88221 == 1
+endwindow 501520
+
+block item 88220 == 1
+window 501521,next
+window 501522,ok
+window_ok ItemSpace < 1
+endwindow 501523
+window_ok
+giveitem 88221
+
+block item 88218 == 1
+endwindow 501524
+
+block item 88217 == 1
+window 501525,ok
+window_ok ItemSpace < 1
+endwindow 501526
+window_ok
+giveitem 88218
+
+block item 88214 == 1
+endwindow 501527
+
+block item 88213 == 1
+window 501528,next
+window 501529,ok
+window_ok
+killitem 88213
+giveitem 88214
+
+block item 88208 == 1
+window 501530,yes,no
+window_no
+window_yes
+window 501531,next
+window 501532,next
+window 501533,next
+window 501534,next
+window 501535,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88208
+Warp 0,27719,96,77
+
+block
+endwindow 501536

@@ -1,0 +1,12 @@
+block item 88388 == 1
+Warp 0,43000,553,744
+
+block
+window "\n\n地上的冰蚕丝要捡起来吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_yes
+LeaveGroup
+giveitem 88388
+Warp 0,43000,553,744

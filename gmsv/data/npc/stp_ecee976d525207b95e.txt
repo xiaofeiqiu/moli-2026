@@ -1,0 +1,45 @@
+block item 500154 == 1
+endwindow "\n\n据我所知巨型冰柱在莎莲娜废物附近有一个，不知道是不是你要找的那个，你可以去看看。"
+
+block item 500153 == 1 && item 9630 >= 1 && item 18509 >= 1 && item 12415 >= 1 && item 500145 == 1
+window "\n\n素材都收集全了那我开始解咒了，解咒中你注意看镜子中的景象。",ok
+window_ok
+killitem 500153
+killitem 500145
+killitem 9630,1
+killitem 18509,1
+killitem 12415,1
+window "\n\n怎么样看见了吗？呵呵~~这对我来说是雕虫小技。你在镜子中看见了一个巨型冰柱吗？",next
+window "\n\n据我所知巨型冰柱在莎莲娜废物附近有一个，不知道是不是你要找的那个，你可以去看看。这面解咒过的魔镜能送我吗？",yes,no
+window_no
+window_yes
+giveitem 500154
+
+block item 500152 == 1
+endwindow "\n\n除了圣水之外其余素材都能在魔法大学内获得。至于圣水的水源嘛就在乌克兰的井底之道内。当然这个水桶是让你取水用的。"
+
+block item 500151 == 1
+window "\n\n没想到姐姐会给我写道歉信，看来的我的整蛊娃娃还是蛮有用的。",next
+window "\n\n我会信守承诺帮你把魔镜解咒的，不过我这暂时缺少了解咒用的素材。\n\n素材分别是：永久冰石、蓝龙的鳞片、湿地毒蛇和一桶圣水各一份。",ok
+window_ok
+killitem 500151
+giveitem 500152
+endwindow "\n\n除了圣水之外其余素材都能在魔法大学内获得。至于圣水的水源嘛就在乌克兰的井底之道内。当然这个水桶是让你取水用的。"
+
+block item 500150 == 1
+endwindow "\n\n现在萌希就在大巫师冯奴的家做客！"
+
+block item 500145 == 1
+window "\n\n魔镜...魔镜...这不是魔镜吗？这可是我们咒术师梦寐以求的宝贝！",next
+window "\n\n不过这块魔镜被它原来的主人下过咒了，你想看到镜子中的东西必须要解咒，不过今天你遇到我算你的福分！",next
+window "\n\n当今法兰只有我才有解开这面镜子咒语的能力。怎么样？如果你想解咒的话必须帮我做件事，你原意吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_yes
+LeaveGroup
+giveitem 500150
+endwindow "\n\n我姐姐萌希是个巫师老是用巫术欺负我，你帮我把这娃娃偷偷贴在她身后我就能戏弄他了。"
+
+block
+endwindow "\n\n解咒讲究的是天赋！"

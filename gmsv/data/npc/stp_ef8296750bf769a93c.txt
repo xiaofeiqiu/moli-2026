@@ -1,0 +1,10 @@
+block item 86445 >= 1
+window 85652,yes,no
+window_no
+window_yes
+leavegroup
+killitem 86445
+Warp 0,28232,7,11
+
+block
+endwindow 85653

@@ -1,0 +1,7 @@
+block item 200590 >= 1
+window "\n\n你要采地上的寒冰草吗?",yes,no
+window_yes
+killitem 200590
+giveitem 200591
+leavegroup
+Warp 0,27688,19,27

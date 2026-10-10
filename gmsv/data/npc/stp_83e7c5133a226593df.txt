@@ -1,0 +1,38 @@
+block EndEvent 613 == 1 && EndEvent 614 == 1 && EndEvent 615 == 1 && EndEvent 616 == 1
+	window "\n\n您已经是最高阶的【S级佣兵】了！",ok
+		Window_ok
+block item 60290 >= 1000 && EndEvent 613 == 1 && EndEvent 614 == 1 && EndEvent 615 == 1 && EndEvent 616 == 0
+	window "\n\n您好，是否要上缴1000个【任务完结证明】，您将升级为【S级佣兵】，现在要接受吗？",yes,no
+		Window_yes
+			killitem 60290,1000
+			EndEvent 616 = 1
+			CheckTitle
+		Window_no
+block item 60290 >= 500 && EndEvent 613 == 1 && EndEvent 614 == 1 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n您好，是否要上缴500个【任务完结证明】，您将升级为【A级佣兵】，现在要接受吗？",yes,no
+		Window_yes
+			killitem 60290,500
+			EndEvent 615 = 1
+			CheckTitle
+		Window_no
+block item 60290 >= 300 && EndEvent 613 == 1 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n您好，是否要上缴300个【任务完结证明】，您将升级为【B级佣兵】，现在要接受吗？",yes,no
+		Window_yes
+			killitem 60290,300
+			EndEvent 614 = 1
+			CheckTitle
+		Window_no
+block item 60290 >= 100 && EndEvent 612 == 1 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n您好，是否要上缴100个【任务完结证明】，您将升级为【C级佣兵】，现在要接受吗？",yes,no
+		Window_yes
+			killitem 60290,100
+			EndEvent 613 = 1
+			CheckTitle
+		Window_no
+block EndEvent 612 == 1
+	window "\n\n通过完成任务收集一定的【任务完结证明】，我们可以提高你的佣兵等级，收集100个可以提升为【C级佣兵】，再收集300个可以提升为【B级佣兵】，继续收集500个可以提升为【A级佣兵】，最后收集1000个可提升为【S级佣兵】，不同阶级的成员享有不同的权利，可以明显增加幻想次元竞技场的战斗收益，进入曙光营地新练级地点的费用将获得优惠，好处多多喔~请努力吧冒险者。",ok
+		Window_ok
+			CheckTitle
+block
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok

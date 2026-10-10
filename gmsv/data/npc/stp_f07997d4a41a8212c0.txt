@@ -1,0 +1,29 @@
+block item 88083 == 1
+window 501341,yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,45198,40,11
+
+block item 88080 == 1 && item 88081 == 1
+window 501342,next
+window 501343,next
+window 501344,ok
+window_ok
+LeaveGroup
+killitem 88081
+Warp 0,45189,40,11
+
+block item 88078 == 1
+endwindow 501345
+
+block item 88077 == 1
+window 501346,next
+window 501347,next
+window 501348,ok
+window_ok
+killitem 88077
+giveitem 88078
+
+block
+endwindow 501349

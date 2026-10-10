@@ -1,0 +1,10 @@
+block
+window "\n\n勇者啊,我见识到了你的能力如此之强,按照鹤与你的约定,这个请收下,离开这个未知的世界吧!",yes,no
+window_no
+window_yes itemspace == 0
+endwindow "\n\n背包满了,想送你东西也拿不了啊"
+window_yes
+giveitem 50876,1
+leaveGroup
+Warp 0,57318,66,104
+

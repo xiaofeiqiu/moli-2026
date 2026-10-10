@@ -1,0 +1,9 @@
+block item 87595 == 1
+window "\n\n哦，你就是管理官介绍来的强力冒险家么，商船就要出发了，请带着这个上船吧。",ok
+window_ok
+LeaveGroup
+giveitem 87596
+Warp 0,29727,48,24
+
+block
+endwindow "\n\n有什么事吗？"

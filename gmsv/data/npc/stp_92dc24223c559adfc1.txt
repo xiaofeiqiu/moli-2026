@@ -1,0 +1,58 @@
+block item 61196 >= 1 && item 61197 >= 2 && item 61198 >= 4 && item 61199 >= 2 && item 61200 >= 4
+window 1900577,next
+window 1900578,ok
+window_ok
+LeaveGroup
+killitem 61196
+killitem 61197,2
+killitem 61198,4
+killitem 61199,2
+killitem 61200,4
+giveitem 61201
+
+block item 61194 >= 1 && item 61195 >= 1 && item 61196 < 1
+window 1900579,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 61195
+window 1900580,next
+window 1900581,ok
+window_ok
+LeaveGroup
+killitem 61194
+giveitem 61196
+
+block item 61193 >= 1
+window 1900582,next
+window 1900583,ok
+window_ok
+LeaveGroup
+killitem 61193
+giveitem 61194
+
+block item 61188 >= 1
+window 1900584,next
+window 1900585,next
+window 1900586,ok
+window_ok
+LeaveGroup
+killitem 61188
+giveitem 61189
+
+block item 61187 >= 1
+endwindow 1900587
+
+block item 61189 < 1 && item 61190 < 1 && item 61191 < 1 && item 61192 < 1 && item 61193 < 1 && item 61194 < 1 && item 61196 < 1 && item 61201 < 1
+window 1900588,next
+window 1900589,yes,no
+window_no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 61187
+endwindow 1900590
+window_yes ItemSpace < 1
+endwindow 1900591
+
+block
+endwindow 1900592

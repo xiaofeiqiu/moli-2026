@@ -1,0 +1,78 @@
+block StrCmpChat == 70055
+window "\n\n要强化你的长索锥衣吗?",yes,no
+window_no
+window_yes item 4855 == 0 || item 1000228 < 50 || gold < 100
+endwindow "\n\n抱歉无非帮你强化,可能是因为:\n\n1.你没有长索锥衣\n\n2.你的强化水晶不够\n\n3.你的魔币不够."
+window_yes
+killitem 4855
+killitem 1000228,1
+addgold -100
+giveitem 1000231
+
+
+block StrCmpChat == 70056
+window "\n\n要强化你的重铁板甲吗?",yes,no
+window_no
+window_yes item 4459 == 0 || item 1000228 < 50 || gold < 100
+endwindow "\n\n抱歉无非帮你强化,可能是因为:\n\n1.你没有重铁板甲\n\n2.你的强化水晶不够\n\n3.你的魔币不够."
+window_yes
+killitem 4459
+killitem 1000228,1
+addgold -100
+giveitem 1000232
+
+
+block StrCmpChat == 70057
+window "\n\n要强化你的圣者之袍吗?",yes,no
+window_no
+window_yes item 5250 == 0 || item 1000228 < 50 || gold < 100
+endwindow "\n\n抱歉无非帮你强化,可能是因为:\n\n1.你没有圣者之袍\n\n2.你的强化水晶不够\n\n3.你的魔币不够."
+window_yes
+killitem 5250
+killitem 1000228,1
+addgold -100
+giveitem (1000233%1,1000237%1,1000238%1)
+
+
+block StrCmpChat == 70058
+window "\n\n要强化你的不死鸟之服吗?",yes,no
+window_no
+window_yes item 4892 == 0 || item 1000228 < 50 || gold < 100
+endwindow "\n\n抱歉无非帮你强化,可能是因为:\n\n1.你没有不死鸟之服\n\n2.你的强化水晶不够\n\n3.你的魔币不够."
+window_yes
+killitem 4892
+killitem 1000228,1
+addgold -100
+giveitem 1000234
+
+
+block StrCmpChat == 70059
+window "\n\n要强化你的漆黑之铠吗?",yes,no
+window_no
+window_yes item 4490 == 0 || item 1000228 < 50 || gold < 100
+endwindow "\n\n抱歉无非帮你强化,可能是因为:\n\n1.你没有漆黑之铠\n\n2.你的强化水晶不够\n\n3.你的魔币不够."
+window_yes
+killitem 4490
+killitem 1000228,1
+addgold -100
+giveitem 1000235
+
+
+block StrCmpChat == 70060
+window "\n\n要强化你的灵魂之袍吗?",yes,no
+window_no
+window_yes item 5290 == 0 || item 1000228 < 50 || gold < 100
+endwindow "\n\n抱歉无非帮你强化,可能是因为:\n\n1.你没有灵魂之袍\n\n2.你的强化水晶不够\n\n3.你的魔币不够."
+window_yes
+killitem 5290
+killitem 1000228,1
+addgold -100
+giveitem (1000236%1,1000239%1,1000240%1)
+
+
+block
+window "\n\n你好,冒险者.",next
+window "\n\n如果你能带来材料,再付出小小的一点费用,我就可以帮你加工更好的6级和10级的身体防具.",next
+window "\n\n6级的强化防具需要的材料如下:一个强化水晶,100G魔币,以及重铁板甲,长索锥衣,圣者之袍中的一件.",next
+window "\n\n10级的强化防具需要的材料如下:一个强化水晶,100G魔币,以及漆黑之铠,不死鸟之服,灵魂之袍中的一件.",next
+endwindow "\n\n收集够材料后,只要来对我说出要强化的防具名字就可以了,比如对我说:重铁板甲."

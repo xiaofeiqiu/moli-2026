@@ -1,0 +1,26 @@
+block floor==120
+	SetObject 0,120,341,65,0
+	SetObject 0,120,341,66,0
+	SetObject 0,120,341,67,0
+	SetObject 0,120,341,68,0
+	SetObject 0,120,341,69,0
+	SetObject 0,120,341,70,0
+	SetObject 0,120,341,71,0
+	SetObject 0,120,341,72,0
+	SetObject 0,120,341,73,0
+	SetObject 0,120,341,74,0
+	SetObject 0,120,341,75,0
+	SetObject 0,120,341,76,0
+	SetObject 0,120,341,77,0
+	SetObject 0,120,341,78,0
+	SetObject 0,120,341,79,0
+	SetObject 0,120,341,80,0
+	SetObject 0,120,341,81,0
+	SetObject 0,120,341,82,0
+	SetObject 0,120,341,83,0
+	SetObject 0,120,341,84,0
+	SetObject 0,120,341,85,0
+	SetObject 0,120,341,86,0
+Endwindow"\n\n@c 比赛围栏已经消失,请仔细观看比赛!"
+block
+endwindow "\n这个物品只能在比赛地图! 赛道使用..\n双击后,比赛的围栏将消失,说明比赛开始!"

@@ -1,0 +1,476 @@
+block Luac stp:legacy:9cf9822acae0707a83d4 ==0
+endwindow "\n\n第一格没有放置任何道具，无法加强！"
+block Luac stp:legacy:69cb3ec0e1212844a009 >=6
+endwindow "\n\n你的「@i8」强化次数已满，无法继续加强。"
+block item 191702>=1 && item 191727>=1 && Luac stp:legacy:87bb66252943e8553c14 ==0&&Luac stp:legacy:3107071691d06c98d89d == 191702
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191702>=1 && item 191727>=1 && Luac stp:legacy:fb5b07cb7fd06e219c58 ==0
+	killitem 191727,1
+Luac stp:legacy:1ef8c236e8cf0d5fa08a
+Luac stp:legacy:b04b657a5aadff65c4b3
+	SystemMessage 941212
+block item 191702>=1 && item 191727>=1 && Luac stp:legacy:eff811397f856debd397 ==1	&&	Luac stp:legacy:04f969178520025e842d == 191702
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191702>=1 && item 191727>=1 && Luac stp:legacy:14665eb5146831096a46 ==1
+	killitem 191727,1
+Luac stp:legacy:113cc7ba03eb3ba5b3b3
+Luac stp:legacy:005ea98fc0228904e53d
+	SystemMessage 941213
+block item 191702>=1 && item 191727>=1 && Luac stp:legacy:82d64bd7e62f2873a699 ==2	&&	Luac stp:legacy:ca0922a2e4a46938d541 == 191702
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191702>=1 && item 191727>=1 && Luac stp:legacy:ad97a03acefd6943a91d ==2
+	killitem 191727,1
+Luac stp:legacy:89223554a30a93ab2993
+Luac stp:legacy:615d22d75958acf3a4ec
+	SystemMessage 941214
+block item 191702>=1 && item 191727>=1 && Luac stp:legacy:020a9e82abe31eb3f604 ==3	&&	Luac stp:legacy:591626b4b0d47beab484 == 191702
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191702>=1 && item 191727>=1 && Luac stp:legacy:82c04998fbbb51062f12 ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:fc8d1636d03b216a4e30
+Luac stp:legacy:58bb8e9ad1a4ebd81c24
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191702>=1 && item 191727>=1 && Luac stp:legacy:d1b62a04b7f6a34388a1 ==4	&&	Luac stp:legacy:c52db68c26c3fc556338 == 191702
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191702>=1 && item 191727>=1 && Luac stp:legacy:ba624f9433277bb5d27b ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:f71263e5566b169cb0e8
+Luac stp:legacy:0dc8d540a9b6d1f1824c
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191702>=1 && item 191727>=1 && Luac stp:legacy:1dac9dcc1b5b35d37721 ==5	&&	Luac stp:legacy:c8edb2996e4d2463d619 == 191702
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191702>=1 && item 191727>=1 && Luac stp:legacy:ed5d3754bfd6a9952dad ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:99242f6257b9c13a3a56
+Luac stp:legacy:89c2e094c26a7ab974bd
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+#########################
+#########################
+block item 191703>=1 && item 191727>=1 && Luac stp:legacy:661c2548feb725312e6c ==0	&&	Luac stp:legacy:d3e65b8f028f329e68c0 == 191703
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191703>=1 && item 191727>=1 && Luac stp:legacy:e61b38f13759866f3c08 ==0
+	killitem 191727,1
+Luac stp:legacy:e26e3fb5d3f927fe0ad1
+Luac stp:legacy:f3a12e468127a31b5601
+	SystemMessage 941212
+block item 191703>=1 && item 191727>=1 && Luac stp:legacy:95123ed582d9b6be3f13 ==1	&&	Luac stp:legacy:bfbbedfc6dabd4685ab3 == 191703
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191703>=1 && item 191727>=1 && Luac stp:legacy:203ced77d352e7f38e79 ==1
+	killitem 191727,1
+Luac stp:legacy:6accd044e9277922ea41
+Luac stp:legacy:7abe5e29cf912f133f67
+	SystemMessage 941213
+block item 191703>=1 && item 191727>=1 && Luac stp:legacy:b8ed80df4d2474c1f044 ==2	&&	Luac stp:legacy:c0e5e8d514cfd69b6f17 == 191703
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191703>=1 && item 191727>=1 && Luac stp:legacy:041ef37969b6e15688f7 ==2
+	killitem 191727,1
+Luac stp:legacy:39acf7abb113ce49fb90
+Luac stp:legacy:54dce53046a9cada6bf1
+	SystemMessage 941214
+block item 191703>=1 && item 191727>=1 && Luac stp:legacy:bb997b2ecfec964e3b2e ==3	&&	Luac stp:legacy:0ff4c26d1370f8b679ab == 191703
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191703>=1 && item 191727>=1 && Luac stp:legacy:8d95389bf65049e3adeb ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:af2952ec3e663f565828
+Luac stp:legacy:da03b029ce61045e2578
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191703>=1 && item 191727>=1 && Luac stp:legacy:720f9fa689b4553eee83 ==4	&&	Luac stp:legacy:3bfc3d6200c527720d60 == 191703
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191703>=1 && item 191727>=1 && Luac stp:legacy:ecbbd5025e0d81ef463f ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:f04ebe99bedbbb3d598a
+Luac stp:legacy:854ecb5b24b653850ace
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191703>=1 && item 191727>=1 && Luac stp:legacy:30a97198ecfadd6377d6 ==5	&&	Luac stp:legacy:b4943292a7c46b295e64 == 191703
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191703>=1 && item 191727>=1 && Luac stp:legacy:62d9fff82d4fcdb84c78 ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:7419d550712abf57ccb3
+Luac stp:legacy:4b4915dce1ba4350b0be
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+#############
+block item 191704>=1 && item 191727>=1 && Luac stp:legacy:663d2b00f88fba76b774 ==0	&&	Luac stp:legacy:574de14b8988da8e9835 == 191704
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191704>=1 && item 191727>=1 && Luac stp:legacy:d85cf7757766e904174f ==0
+	killitem 191727,1
+Luac stp:legacy:37ff4ddf213edf7364c9
+Luac stp:legacy:3f56748a1032126d74f5
+	SystemMessage 941212
+block item 191704>=1 && item 191727>=1 && Luac stp:legacy:14e9c7a525083a73cbc3 ==1	&&	Luac stp:legacy:129a4dda181ba27a34b6 == 191704
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191704>=1 && item 191727>=1 && Luac stp:legacy:dddd79fdb4a9264f6b14 ==1
+	killitem 191727,1
+Luac stp:legacy:b5a67c660dc12f6b1879
+Luac stp:legacy:958ddae6559075bbaa1e
+	SystemMessage 941213
+block item 191704>=1 && item 191727>=1 && Luac stp:legacy:989f21f1ca2e5f8a4bcd ==2	&&	Luac stp:legacy:8995f20cebeb52899987 == 191704
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191704>=1 && item 191727>=1 && Luac stp:legacy:bbdff82f66004135011f ==2
+	killitem 191727,1
+Luac stp:legacy:47a22ce268622f64318a
+Luac stp:legacy:63160710630ef84f68b3
+	SystemMessage 941214
+block item 191704>=1 && item 191727>=1 && Luac stp:legacy:f06ec113a8d110c8006e ==3	&&	Luac stp:legacy:df7b943834c747a57408 == 191704
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191704>=1 && item 191727>=1 && Luac stp:legacy:ea28633cc8cbe46c221f ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:99baaf3a8f4a8ffbb952
+Luac stp:legacy:41e872cbb93aa8158976
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191704>=1 && item 191727>=1 && Luac stp:legacy:75c1901abad46a54bd7f ==4	&&	Luac stp:legacy:2ea7765e80df5f1c6308 == 191704
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191704>=1 && item 191727>=1 && Luac stp:legacy:00f70b83e477f58ef010 ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:306220550e5dcfd958cc
+Luac stp:legacy:ae8638a713e141ebb385
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191704>=1 && item 191727>=1 && Luac stp:legacy:d07ef047799e596f3022 ==5	&&	Luac stp:legacy:56fb28444aed4e7c8e72 == 191704
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191704>=1 && item 191727>=1 && Luac stp:legacy:c0414e66c93f4207bad4 ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:494dd514634a620f49a0
+Luac stp:legacy:8bae8259bcff11576e4e
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+
+#############
+block item 191705>=1 && item 191727>=1 && Luac stp:legacy:42ddc90102e02e26cf6f ==0	&&	Luac stp:legacy:c5c2ab46a55b9348bd19 == 191705
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191705>=1 && item 191727>=1 && Luac stp:legacy:71075de96e1bee322c08 ==0
+	killitem 191727,1
+Luac stp:legacy:606785383ad671d13038
+Luac stp:legacy:f786d1ab799d34d08f78
+	SystemMessage 941212
+block item 191705>=1 && item 191727>=1 && Luac stp:legacy:b883538eae524d511db9 ==1	&&	Luac stp:legacy:3067c46291809b561d9e == 191705
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191705>=1 && item 191727>=1 && Luac stp:legacy:17ac0771fb4700865765 ==1
+	killitem 191727,1
+Luac stp:legacy:eb0e46fba4018beacbfd
+Luac stp:legacy:b798bb4598a547267f09
+	SystemMessage 941213
+block item 191705>=1 && item 191727>=1 && Luac stp:legacy:9d1565e869b15f8d84ce ==2	&&	Luac stp:legacy:c4f6b83b1b273ab1107a == 191705
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191705>=1 && item 191727>=1 && Luac stp:legacy:0c6bab2c855e42457376 ==2
+	killitem 191727,1
+Luac stp:legacy:7eb133426431fa73a09e
+Luac stp:legacy:5ea877987fcea2081760
+	SystemMessage 941214
+block item 191705>=1 && item 191727>=1 && Luac stp:legacy:ee2ae100e5fa838519bb ==3	&&	Luac stp:legacy:a775639818508f5cc9e2 == 191705
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191705>=1 && item 191727>=1 && Luac stp:legacy:2e9330fb3b8c6b8627ba ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:3a25b0bbbf8ea2a5b33a
+Luac stp:legacy:9accf0fe5a13ebe6b14e
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191705>=1 && item 191727>=1 && Luac stp:legacy:bee60342d009d630e132 ==4	&&	Luac stp:legacy:ae83a5ac87fddfc40c77 == 191705
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191705>=1 && item 191727>=1 && Luac stp:legacy:03c5b5ecb5d8ce74f70b ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:1550e0a05c570d9ccb5f
+Luac stp:legacy:49f32d2b838d39e7cdf4
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191705>=1 && item 191727>=1 && Luac stp:legacy:57a08ef37b339d70be0a ==5	&&	Luac stp:legacy:2dc59f7e2d2efe08ba57 == 191705
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191705>=1 && item 191727>=1 && Luac stp:legacy:25b8cffc7f6632286526 ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:90afeab857d82a15cf45
+Luac stp:legacy:1e0c709bb088073690d9
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+
+########
+block item 191706>=1 && item 191727>=1 && Luac stp:legacy:bc399a877d167a34ffdb ==0	&&	Luac stp:legacy:e0a14b0fd57c884c2e3e == 191706
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191706>=1 && item 191727>=1 && Luac stp:legacy:1ade54209f84f35425e5 ==0
+	killitem 191727,1
+Luac stp:legacy:e34a4e63fa10d4288077
+Luac stp:legacy:7e33918879b28dac12ce
+	SystemMessage 941212
+block item 191706>=1 && item 191727>=1 && Luac stp:legacy:9facc3e139f30b45be9b ==1	&&	Luac stp:legacy:b33d1d85aaa1056bb9f0 == 191706
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191706>=1 && item 191727>=1 && Luac stp:legacy:8d3e21003beeea892333 ==1
+	killitem 191727,1
+Luac stp:legacy:5832b9ae8bfd1322dfd9
+Luac stp:legacy:6c4255ed0af77ee704c8
+	SystemMessage 941213
+block item 191706>=1 && item 191727>=1 && Luac stp:legacy:e4de6657acb7e50d1ce5 ==2	&&	Luac stp:legacy:2b0f0263836c374321c2 == 191706
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191706>=1 && item 191727>=1 && Luac stp:legacy:b622e18b680006305595 ==2
+	killitem 191727,1
+Luac stp:legacy:696e798c006584c0721d
+Luac stp:legacy:e1b87e6257db38d2308f
+	SystemMessage 941214
+block item 191706>=1 && item 191727>=1 && Luac stp:legacy:297a29a1a59779128c0e ==3	&&	Luac stp:legacy:2e9a12071d10b1606b5e == 191706
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191706>=1 && item 191727>=1 && Luac stp:legacy:cb04d79eaa031a6efe2e ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:140d3cdcfd14f2632abf
+Luac stp:legacy:da042701da8170ea4510
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191706>=1 && item 191727>=1 && Luac stp:legacy:a5034eff06903e8a8da6 ==4	&&	Luac stp:legacy:17d2796bc57f090c8a49 == 191706
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191706>=1 && item 191727>=1 && Luac stp:legacy:1beee93467bc42993337 ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:9bc0722c9f84c71a6181
+Luac stp:legacy:d1f833e2db12a8b2021f
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191706>=1 && item 191727>=1 && Luac stp:legacy:52e3b9953316e40982b7 ==5	&&	Luac stp:legacy:7368c6ce8da53ba6ab84 == 191706
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191706>=1 && item 191727>=1 && Luac stp:legacy:797392ff9902e7dfa106 ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:7c23740c59ecd0ab145c
+Luac stp:legacy:390e2380dbce0b862a93
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+
+########
+block item 191707>=1 && item 191727>=1 && Luac stp:legacy:f43e26fed56f7bb5a0c4 ==0	&&	Luac stp:legacy:eebeef10ae9a175f78ae == 191707
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191707>=1 && item 191727>=1 && Luac stp:legacy:d34c2947da71eb8bf0d4 ==0
+	killitem 191727,1
+Luac stp:legacy:559e201d32f9e45a4bd6
+Luac stp:legacy:e567ec19aa1651aebaf4
+	SystemMessage 941212
+block item 191707>=1 && item 191727>=1 && Luac stp:legacy:8365c9d4e4630c6e12dd ==1	&&	Luac stp:legacy:4dd7d09c0206b0327651 == 191707
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191707>=1 && item 191727>=1 && Luac stp:legacy:3ca104755d6a9b115005 ==1
+	killitem 191727,1
+Luac stp:legacy:c4a705bc820592e6adef
+Luac stp:legacy:a1b4cd6db1965284fea3
+	SystemMessage 941213
+block item 191707>=1 && item 191727>=1 && Luac stp:legacy:d4bbe88866b489935192 ==2	&&	Luac stp:legacy:2404e20c7076d9db2173 == 191707
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191707>=1 && item 191727>=1 && Luac stp:legacy:879a7b7f43a7aaf5fcc1 ==2
+	killitem 191727,1
+Luac stp:legacy:f88c7cdbd413eaaa2b68
+Luac stp:legacy:3b4224a35acb1a9985ae
+	SystemMessage 941214
+block item 191707>=1 && item 191727>=1 && Luac stp:legacy:0943a30fd78a8deb9a8e ==3	&&	Luac stp:legacy:ec2dc90bd538dbd5365d == 191707
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191707>=1 && item 191727>=1 && Luac stp:legacy:afe19760219c732eb2f5 ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:8d395d4f68304cb96e5b
+Luac stp:legacy:eef111c92e097992de20
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191707>=1 && item 191727>=1 && Luac stp:legacy:586cd9d4fcd1bbbd63db ==4	&&	Luac stp:legacy:719c341d968458fa0ecc == 191707
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191707>=1 && item 191727>=1 && Luac stp:legacy:3a9935654538054e027b ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:274369b16fa3cc481828
+Luac stp:legacy:ac526d15d44585cfc7bd
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191707>=1 && item 191727>=1 && Luac stp:legacy:4c8b6e78a86f91881c6a ==5	&&	Luac stp:legacy:a5cb1cc683675f34a710 == 191707
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191707>=1 && item 191727>=1 && Luac stp:legacy:d1771508a97807d1e926 ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:5b4f6a8722106658fb4b
+Luac stp:legacy:8b59df579a46d24909de
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+
+######
+block item 191708>=1 && item 191727>=1 && Luac stp:legacy:3890fd6786a0b310b0b8 ==0	&&	Luac stp:legacy:34423a51cd199340a121 == 191708
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191708>=1 && item 191727>=1 && Luac stp:legacy:3db1dca40244ecd3b95b ==0
+	killitem 191727,1
+Luac stp:legacy:6b8d520b3cae41114fdc
+Luac stp:legacy:c30f0a80d6989cd7e9c7
+	SystemMessage 941212
+block item 191708>=1 && item 191727>=1 && Luac stp:legacy:bde97e2e6d027ddfc097 ==1	&&	Luac stp:legacy:3a71830a06ae861a17c6 == 191708
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191708>=1 && item 191727>=1 && Luac stp:legacy:9b8fd1675436f062155b ==1
+	killitem 191727,1
+Luac stp:legacy:01274327407c9d2abaf0
+Luac stp:legacy:34c9362b5bcff1dd16e7
+	SystemMessage 941213
+block item 191708>=1 && item 191727>=1 && Luac stp:legacy:096f21fb90df8cb1cf7d ==2	&&	Luac stp:legacy:2c2fd2f197028946f6b7 == 191708
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191708>=1 && item 191727>=1 && Luac stp:legacy:7b5f11f3bf5534defd11 ==2
+	killitem 191727,1
+Luac stp:legacy:622425cd6393e0ef6fe6
+Luac stp:legacy:288331a2b6a713c3f51e
+	SystemMessage 941214
+block item 191708>=1 && item 191727>=1 && Luac stp:legacy:7fa86ca2f0f2cdd0d74c ==3	&&	Luac stp:legacy:343601c09fbad81b2c8f == 191708
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191708>=1 && item 191727>=1 && Luac stp:legacy:378e03e79bc9c01e235a ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:e359a26244861abe108b
+Luac stp:legacy:57be0ce05bb2d9aab884
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191708>=1 && item 191727>=1 && Luac stp:legacy:541b466f3f637a9481d1 ==4	&&	Luac stp:legacy:cfad931cca0a841a99ce == 191708
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191708>=1 && item 191727>=1 && Luac stp:legacy:69501abbb0ba5b56ff1a ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:a138d52cbb3542fde908
+Luac stp:legacy:d9499c2dacaffd509c62
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191708>=1 && item 191727>=1 && Luac stp:legacy:2f85b9d954c5cacaa790 ==5	&&	Luac stp:legacy:41affdcd6d135e753a05 == 191708
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191708>=1 && item 191727>=1 && Luac stp:legacy:2bca14d30b32f8051eff ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:39d16bb19130d6ad1705
+Luac stp:legacy:edde273aa204bb9a65ca
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+
+#####
+block item 191709>=1 && item 191727>=1 && Luac stp:legacy:e9ee4177951632e9c2e6 ==0	&&	Luac stp:legacy:3b2e5e0545ec52443495 == 191709
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第1次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191709>=1 && item 191727>=1 && Luac stp:legacy:7d23b10dff64beeed90e ==0
+	killitem 191727,1
+Luac stp:legacy:6ce9c0584c460bc44ce3
+Luac stp:legacy:5e0c605f6d4114a9ac3f
+	SystemMessage 941212
+block item 191709>=1 && item 191727>=1 && Luac stp:legacy:1313cc411fb075f79eb8 ==1	&&	Luac stp:legacy:3bc5809dc95250097f0e == 191709
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第2次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191709>=1 && item 191727>=1 && Luac stp:legacy:ea0f9de5852036fbd1e9 ==1
+	killitem 191727,1
+Luac stp:legacy:ba4f39b2263f5f1d7d5c
+Luac stp:legacy:b5c231d40d1fc40aef98
+	SystemMessage 941213
+block item 191709>=1 && item 191727>=1 && Luac stp:legacy:04811575b18b6f6eedb5 ==2	&&	Luac stp:legacy:78e63c8892602d8da080 == 191709
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第3次加强,除石头外无其他消耗!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191709>=1 && item 191727>=1 && Luac stp:legacy:258b006b78882ed7a7bd ==2
+	killitem 191727,1
+Luac stp:legacy:efc37cde2204a2e3d851
+Luac stp:legacy:6b50f09b4cc371a16469
+	SystemMessage 941214
+block item 191709>=1 && item 191727>=1 && Luac stp:legacy:a13dc72512024473d4de ==3	&&	Luac stp:legacy:e6f2f2cad6932fb71e5b == 191709
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第4次加强,除石头外还需要花费1金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191709>=1 && item 191727>=1 && Luac stp:legacy:e6bb2b9269f3ac776d00 ==3 && item 7899876>=1
+	killitem 191727,1
+	killitem 7899876,1
+Luac stp:legacy:f37e2d98e3db37771fce
+Luac stp:legacy:7ae0e1f95fe471ba4ffe
+	SystemMessage 941215
+	window_yes	item 7899876<1
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收1金卡."
+block item 191709>=1 && item 191727>=1 && Luac stp:legacy:bffd2e4a05f9d8d43f07 ==4	&&	Luac stp:legacy:75805194e2e0f54b037e == 191709
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第5次加强,除石头外还需要花费3金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191709>=1 && item 191727>=1 && Luac stp:legacy:ea58265bda22261f876a ==4 && item 7899876>=3
+	killitem 191727,1
+	killitem 7899876,3
+Luac stp:legacy:c4f59eca312cc0e529f2
+Luac stp:legacy:b8664869e53798898b6d
+	SystemMessage 941216
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收3金卡."
+block item 191709>=1 && item 191727>=1 && Luac stp:legacy:adfe97b479efd31fddf1 ==5	&&	Luac stp:legacy:7c7ce3d7ee600dabe1e5 == 191709
+	window "\n\n你要加强你的「@i8」吗？\n只能加强道具栏第一个道具喔！\n\n注意：这是进行第6次加强,除石头外还需要花费5金卡!\n本石头只能增强Ｈp!",yes,no
+	window_no
+	window_yes item 191709>=1 && item 191727>=1 && Luac stp:legacy:013f0c35c9b8649868d7 ==5 && item 7899876>=5
+	killitem 191727,1
+	killitem 7899876,5
+Luac stp:legacy:2b0c37a879952b18a207
+Luac stp:legacy:185d5d636d0da9026e2b
+	SystemMessage 941217
+	window_yes	item 7899876<3
+	Endwindow"\n\n\n身上的金卡不足,本次加强需要另收5金卡."
+#############
+block
+Endwindow"\n\n\n您的「@i8」无法强化!请将您的(强·希望的水晶)放在物品栏的第1个位置!\n\n这个石头只能强化(强·希望的水晶)!"

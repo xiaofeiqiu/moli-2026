@@ -1,0 +1,26 @@
+block itemspace == 0
+endwindow "\n\n　树上好象有什么东西，不过你已经拿不下了。"
+block visitor == 1 
+endwindow "\n\n　这棵树上好象什么都没有"
+block visitor==0 && StrCmpChat == 8105126
+setvisitor +1
+LocalCount10 = random 3,0
+if localcount10==1 && itemspace != 0
+PlaySE 215,240,240
+SetLp -10
+systemmessage 8105119
+giveitem (1002020%40,1002021%30,1002022%20,1002024%10)
+endif
+if localcount10==2 && itemspace != 0
+PlaySE 215,240,240
+SetLp -10
+systemmessage 8105119
+giveitem (1002020%45,1002021%45,1002023%10)
+endif
+if localcount10==3
+systemmessage 8105125
+Encount 3|0||0|||||0|800114|||||||||
+endif
+
+block
+endwindow "\n\n　只是一棵树，不过树上面好象有什么东西。\n\n\n\n\n\n\n　※　对树输入“调查”可以调查树"

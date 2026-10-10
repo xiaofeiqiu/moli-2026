@@ -1,0 +1,55 @@
+
+
+
+block Xpos == 23 && Ypos == 21 && Group == 1
+Warp 0,1193,24,23
+
+block Xpos == 23 && Ypos == 21 && Group > 1
+LeaveGroup 
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1  && Xpos == 20 && Ypos == 22 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 20 && Ypos == 20 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 20 && Ypos == 19
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 21 && Ypos == 22 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 21 && Ypos == 20 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 21 && Ypos == 19
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 22 && Ypos == 22 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 22 && Ypos == 20 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 22 && Ypos == 19
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 23 && Ypos == 22 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 23 && Ypos == 20 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 23 && Ypos == 19
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 24 && Ypos == 22 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 24 && Ypos == 20 
+Message 777570 
+
+block Item 715326 >= 1  && Xpos == 24 && Ypos == 19
+Message 777570 

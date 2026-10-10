@@ -1,0 +1,31 @@
+block itemcreatetime 90871 >= 10080
+window"@c\n\n有效期超过一周无法使用,请重新购买!",ok
+window_ok
+killitem 90871
+
+block itemcreatetime 90871 >= 1440 && itemcreatetime 90871 <= 2880
+window"@c\n\n确定使用1~2天阶段的离线经验收益券吗?可以获得588W经验值",yes,no
+window_yes itemcreatetime 90871 >= 1440 && itemcreatetime 90871 <= 2880
+killitem 90871
+Luac stp:legacy:d8153bc7936cefa56cc4
+
+block itemcreatetime 90871 >= 4320 && itemcreatetime 90871 <= 5760
+window"@c\n\n确定使用1~2天阶段的离线经验收益券吗?可以获得588W经验值",yes,no
+window_yes itemcreatetime 90871 >= 4320 && itemcreatetime 90871 <= 5760
+killitem 90871
+Luac stp:legacy:e0a1a374179044868886
+
+block itemcreatetime 90871 >= 7200 && itemcreatetime 90871 <= 8640
+window"@c\n\n确定使用1~2天阶段的离线经验收益券吗?可以获得588W经验值",yes,no
+window_yes itemcreatetime 90871 >= 7200 && itemcreatetime 90871 <= 8640
+killitem 90871
+Luac stp:legacy:eae1ec8c857418a7d874
+
+block itemcreatetime 90871 >= 10800 && itemcreatetime 90871 <= 12000
+window"@c\n\n确定使用1~2天阶段的离线经验收益券吗?可以获得588W经验值",yes,no
+window_yes itemcreatetime 90871 >= 10800 && itemcreatetime 90871 <= 12000
+killitem 90871
+Luac stp:legacy:70689774f4ddad72654f
+
+block
+Endwindow"@c\n\n时间不够获取收益"

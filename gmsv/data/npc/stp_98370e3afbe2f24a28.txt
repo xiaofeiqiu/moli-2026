@@ -1,0 +1,22 @@
+
+
+block item 652638 >= 1 && item 652639 >= 1
+endwindow "\n\n去吧,你要寻找的绿龙-杜伊在阿凯鲁法处."
+
+
+block item 652638 >= 1
+window "\n\n事情原来是这样,连我也并不知道这么多,如有什么你需要,我们龙族也会尽全力协助你.",ok
+window_ok
+window "\n\n红龙-诺尔将他的信物交付予你...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 652639
+
+
+block
+endwindow "\n\n......"
+
+
+
+

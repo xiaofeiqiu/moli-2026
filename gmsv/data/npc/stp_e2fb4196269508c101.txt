@@ -1,0 +1,8 @@
+block item 86607 == 1
+window "\n\n这就是小慧的墓啊！咦~~这墓后面怎么有个地洞啊！",next
+window "\n\n要进去瞧瞧吗？",yes,no
+window_no
+window_yes
+leavegroup
+killitem 86607
+Warp 0,28339,15,85

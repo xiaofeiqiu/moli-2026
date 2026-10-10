@@ -1,0 +1,65 @@
+block item 534 >= 1 && itemspace >= 1
+window "\n\n谢谢你,击败了伪神,精灵界又可以迎来千年的稳定,千年之后一定会有新的勇者出现并再次打败他.",next
+window "\n\n这么久的旅程终于要说再见了呢,那么,请将元素之力交给我吧,我会给予相应的奖励兑换.",ok
+window_ok item 534 >= 1
+killitem 534,1
+giveitem 521,1
+leaveGroup
+Warp 0,1000,233,78
+
+
+block item 529 >=1 && item 532 >= 1 && itemspace >= 1
+window "\n\n你干的不错,虽然水之域和风之域最终还是沦陷了,但是你成功阻止了邪恶的渗透!",next
+window "\n\n你说什么?那个伪神要你去找他?",next
+window "\n\n看来你准备赴约了,那么我不会阻拦你,你拿着这个护符吧,但愿可以祝你阻断黑暗的侵袭,同时对你奉上精灵们的祝福!",ok
+window_ok item 529 >=1 && item 532 >= 1
+killitem 529,1
+killitem 532,1
+giveitem 533,1
+EndEvent 574 = 1
+checktitle
+leaveGroup
+Warp 0,1000,233,78
+
+
+block item 529 >= 1
+window "\n\n在你拯救了火之域和地之域后,那股不知名的力量直接掳走了风之域和水之域,请进入混乱之根解救他们吧!",yes,no
+window_no
+window_yes item 529 >= 1
+leaveGroup
+Warp 0,1974,35,15
+
+
+block item 528 >= 1 && itemspace >= 1
+window "\n\n你终于回来了,勇者!",yes,no
+window_yes item 528 >= 1 && item 530 >= 1 && item 531 >= 1
+window "\n\n全部解决了么,谢谢你,那么我们谈一谈吧!",next
+window "\n\n精灵界不知道被什么势力渗透了进来,在这里的神灵们变得暴躁不安!",next
+window "\n\n还好,我们有你,传说中的勇者,现在你已经镇抚了火之域和地之域,我们的压力减轻了不少!",next
+window "\n\n不过,剩下的还有水之域和风之域,那里的神灵们...更为暴躁!",next
+window "\n\n希望你能小心一些,这里有一个比镇抚符文更强效的道具,可以助你镇抚神灵们!",ok
+window_ok
+killitem 528,1
+killitem 530,1
+killitem 531,1
+giveitem 529,1
+leaveGroup
+Warp 0,1000,233,78
+window_yes item 528 >= 1 && item 530 >= 1
+endwindow "\n\n已经解决了一个么,那么请继续努力,我们在等待着你胜利的消息!"
+window_yes item 528 >= 1 && item 531 >= 1
+endwindow "\n\n已经解决了一个么,那么请继续努力,我们在等待着你胜利的消息!"
+window_yes item 528 >= 1
+endwindow "\n\n还没有解决么?请小心啊!"
+window_no
+endwindow "\n\n渣渣没胆量!"
+
+
+block
+window "\n\n我给你一个镇抚符文,你可以去调查两个迷宫吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 528,1
+window_no
+endwindow "\n\n渣渣没胆量!"

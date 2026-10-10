@@ -1,0 +1,22 @@
+block endevent 586 == 1 && item 795100 == 1
+window "\n\n　很好，勇士们，你们又拯救了这个世界，冥神再次被封印了。而我也将继续沉睡，谢谢你！。。",ok
+window_ok endevent 586 == 1 && item 795100 == 1
+killitem 795100
+giveitem 795106
+givepet 400308
+Leavegroup
+Warp 0,1000,242,88
+
+block endevent 586 == 0 && item 795100 == 1 && itemspace != 0 && petspace != 0
+window "\n\n　干的漂亮，勇士们，你们拯救了这个世界，冥神再次被封印了。谢谢你，世界又恢复了和平了。。",ok
+window_ok endevent 586 == 0 && item 795100 == 1
+endevent 586 = 1
+CheckTitle
+killitem 795100
+giveitem 795106
+givepet 400308
+Leavegroup
+Warp 0,1000,242,88
+
+block itemspace == 0 || petspace == 0
+endwindow "\n\n　把你的东西清理下再来领取我的赏赐吧。"

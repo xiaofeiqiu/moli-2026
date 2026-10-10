@@ -1,0 +1,15 @@
+block item 1000041 >= 1 && item 1000042 >= 1 && item 1000043 >= 1
+window "\n锻铸师卡基亚:\n我来看看...呵呵,如果你把手头上的盗贼的护身符,盗贼的戒指和盗贼的项链给我,我会帮你打造出来一个更好的饰品.怎么样?",yes,no
+window_no
+endwindow "\n\n那你想清楚来找我吧"
+window_yes item 1000041 >= 1 && item 1000042 >= 1 && item 1000043 >= 1
+killitem 1000041
+killitem 1000042
+killitem 1000043
+giveitem 1000044
+endwindow "\n锻铸师卡基亚:\n好了,还附上了伊尔村人对你的感激"
+
+
+block
+endwindow "\n\n听说伊尔村那边的盗贼猖獗"
+

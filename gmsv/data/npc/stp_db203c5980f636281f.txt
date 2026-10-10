@@ -1,0 +1,15 @@
+block Level >= 70 && Item 940112 == 1 && Item 940122 == 1
+killItem 940112,1
+killItem 940122,1
+giveItem 940113,1
+leaveGroup
+Warp 0,1000,233,78
+endwindow "\n\n\n哈哈,不错,后生可畏!打的赢我的化身!有成为冥神的资格了!去吧!后辈~~~"
+
+
+block Item 940112 == 1
+endwindow "\n\n\n你好,有什么可以服务的么?"
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

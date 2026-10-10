@@ -1,0 +1,265 @@
+#####乐章换新#####
+block item 795218 == 1 && item 795207 >= 100
+window "\n\n耐久这么快用完了?我帮你换一个新的吧\n\n费用是100个蓝晶石",yes,no
+window_yes item 795218 == 1 && item 795207 >= 100
+killitem 795218
+killitem 795207,100
+giveitem 795218
+window_no
+endwindow "\n\n100个蓝晶石都不舍得?哥屋恩~"
+
+block item 795219 == 1 && item 795207 >= 100
+window "\n\n耐久这么快用完了?我帮你换一个新的吧\n\n费用是100个蓝晶石",yes,no
+window_yes item 795219 == 1 && item 795207 >= 100
+killitem 795219
+killitem 795207,100
+giveitem 795219
+window_no
+endwindow "\n\n100个蓝晶石都不舍得?哥屋恩~"
+
+block item 795220 == 1 && item 795207 >= 100
+window "\n\n耐久这么快用完了?我帮你换一个新的吧\n\n费用是100个蓝晶石",yes,no
+window_yes item 795220 == 1 && item 795207 >= 100
+killitem 795220
+killitem 795207,100
+giveitem 795220
+window_no
+endwindow "\n\n100个蓝晶石都不舍得?哥屋恩~"
+
+block item 795221 == 1 && item 795207 >= 100
+window "\n\n耐久这么快用完了?我帮你换一个新的吧\n\n费用是100个蓝晶石",yes,no
+window_yes item 795221 == 1 && item 795207 >= 100
+killitem 795221
+killitem 795207,100
+giveitem 795221
+window_no
+endwindow "\n\n100个蓝晶石都不舍得?哥屋恩~"
+
+#####海之乐章III#####
+block item 795214 == 1 && item 795207 >= 240
+window "\n哈哈,你来的可真是时候\n还少一些宝石我就完成这次的任务了\n不过这次帮你解答完我就要离开了\n我的能力也只能到此\n以后再找更有能力的人吧~呵呵",yes,no
+window_yes item 795214 == 1 && item 795207 >= 240 && EndEvent 595 == 1
+killitem 795214
+killitem 795207,240
+giveitem 795218
+
+block item 795215 == 1 && item 795207 >= 240
+window "\n哈哈,你来的可真是时候\n还少一些宝石我就完成这次的任务了\n不过这次帮你解答完我就要离开了\n我的能力也只能到此\n以后再找更有能力的人吧~呵呵",yes,no
+window_yes item 795215 == 1 && item 795207 >= 240 && EndEvent 595 == 1
+killitem 795215
+killitem 795207,240
+giveitem 795219
+
+block item 795216 == 1 && item 795207 >= 240
+window "\n哈哈,你来的可真是时候\n还少一些宝石我就完成这次的任务了\n不过这次帮你解答完我就要离开了\n我的能力也只能到此\n以后再找更有能力的人吧~呵呵",yes,no
+window_yes item 795216 == 1 && item 795207 >= 240 && EndEvent 595 == 1
+killitem 795216
+killitem 795207,240
+giveitem 795220
+
+block item 795217 == 1 && item 795207 >= 240
+window "\n哈哈,你来的可真是时候\n还少一些宝石我就完成这次的任务了\n不过这次帮你解答完我就要离开了\n我的能力也只能到此\n以后再找更有能力的人吧~呵呵",yes,no
+window_yes item 795217 == 1 && item 795207 >= 240 && EndEvent 595 == 1
+killitem 795217
+killitem 795207,240
+giveitem 795221
+
+#####海之乐章II#####
+block item 795210 == 1 && item 795207 >= 120
+window "\n\n你又来了啊,这次还是找我来研究那本书吗?",yes,no
+window_yes EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795210
+killitem 795207,120
+giveitem 795214
+endwindow "\n\n没想到这个东西这么厉害,我有点后悔送给你了\n\n至少应该收点费用,哈哈,玩笑,玩笑~~~"
+
+block item 795211 == 1 && item 795207 >= 120
+window "\n\n你又来了啊,这次还是找我来研究那本书吗?",yes,no
+window_yes EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795211
+killitem 795207,120
+giveitem 795215
+endwindow "\n\n没想到这个东西这么厉害,我有点后悔送给你了\n\n至少应该收点费用,哈哈,玩笑,玩笑~~~"
+
+block item 795212 == 1 && item 795207 >= 120
+window "\n\n你又来了啊,这次还是找我来研究那本书吗?",yes,no
+window_yes EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795212
+killitem 795207,120
+giveitem 795216
+endwindow "\n\n没想到这个东西这么厉害,我有点后悔送给你了\n\n至少应该收点费用,哈哈,玩笑,玩笑~~~"
+
+block item 795213 == 1 && item 795207 >= 120
+window "\n\n你又来了啊,这次还是找我来研究那本书吗?",yes,no
+window_yes EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795213
+killitem 795207,120
+giveitem 795217
+endwindow "\n\n没想到这个东西这么厉害,我有点后悔送给你了\n\n至少应该收点费用,哈哈,玩笑,玩笑~~~"
+
+#####海之乐章I+注入属性#####
+block item 795209 == 1 && item 795207 >= 60
+window "\n\n你真行啊,又帮我找到了这么多蓝晶\n\n当然作为回报,我继续帮你研究那本书.",yes,no
+window_yes item 795209 == 1 && item 795207 >= 60 && item 18310 >= 100
+window "\n\n地的水晶碎片已经带来了啊\n\n那决定加入『地』的属性了吗?",ok,cancel
+window_ok EndEvent 594 == 1 || EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795209
+killitem 795207,60
+killitem 18310,100
+giveitem 795210
+window_yes item 795209 == 1 && item 795207 >= 60 && item 18311 >= 100
+window "\n\n地的水晶碎片已经带来了啊\n\n那决定加入『水』的属性了吗?",ok,cancel
+window_ok EndEvent 594 == 1 || EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795209
+killitem 795207,60
+killitem 18311,100
+giveitem 795211
+window_yes item 795209 == 1 && item 795207 >= 60 && item 18312 >= 100
+window "\n\n地的水晶碎片已经带来了啊\n\n那决定加入『火』的属性了吗?",ok,cancel
+window_ok EndEvent 594 == 1 || EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795209
+killitem 795207,60
+killitem 18312,100
+giveitem 795212
+window_yes item 795209 == 1 && item 795207 >= 60 && item 18313 >= 100
+window "\n\n地的水晶碎片已经带来了啊\n\n那决定加入『风』的属性了吗?",ok,cancel
+window_ok EndEvent 594 == 1 || EndEvent 594 == 1 || EndEvent 595 == 1
+killitem 795209
+killitem 795207,60
+killitem 18313,100
+giveitem 795213
+window_yes item 795209 == 1 && item 795207 >= 60
+endwindow "\n\n嗯,好象有点复杂了\n地...水...火...风...\n哈哈,我明白了,真是越来越有趣了\n这次可是能提升你的5点属性哦\n带100个水晶碎片来吧.不过可要决定好属性哦."
+
+#####海之乐章序#####
+block item 795208 == 1 && item 795207 >= 20
+window "\n\n哈哈,蓝晶,我要的就这个,真是谢谢你了\n\n那本破书拿来吧,我看看能不能帮你解答下.",yes,no
+window_yes item 795208 == 1 && item 795207 >= 20
+killitem 795208
+killitem 795207,20
+giveitem 795209
+endwindow "\n原本我以为这是一本没用的破书\n没想到还有这么大的能力\n而且还有提升的空间,不过没时间帮你研究了\n需要的蓝晶还不够,还要继续去找\n当然嘛,如果你愿意继续帮忙的话\n那我也帮你了\n大家互相帮助嘛,哈哈"
+
+#####破损的乐章#####
+block item 795208 == 0 && item 795209 == 0 && item 795210 == 0 && item 795211 == 0 && item 795212 == 0 && item 795213 == 0 && item 795214 == 0 && item 795215 == 0 && item 795216 == 0 && item 795217 == 0 && item 795218 == 0 && item 795219 == 0 && item 795220 == 0 && item 795221 == 0
+window "\n\n这是我在一次航海途中偶然得到的东西\n\n不过看起来已经没什么用了\n\n送给你吧,也许你有办法修复好",yes,no
+window_yes
+giveitem 795208
+endwindow "\n其实上面一些文字我还是认识的\n不过我可没这么多时间来研究\n因为我正在寻找一种叫做“蓝晶石”的宝石\n如果你能帮我找到的话\n我可以在空闲的时间帮你看看"
+
+#####对话#####
+block item 795207 == 0 && item 795208 == 1
+endwindow "\n\n最近我怎么觉得宝石是越收越少了\n\n奇怪.难道有小偷?"
+
+block item 795207 != 0 && item 795208 == 1
+endwindow "\n\n那个不是蓝晶石吗？我就是来找这个的\n\n不过你能帮我收集多点的话\n\n我可以抽点空帮你解答那本书噢."
+
+block
+endwindow "\n\n这本书可是很好的东西哦"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+block item 61182 >= 1
+window 1900522,next
+window 1900523,ok
+window_ok
+LeaveGroup
+Warp 0,23358,43,27
+
+block
+endwindow 1900521

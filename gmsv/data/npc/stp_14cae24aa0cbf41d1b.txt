@@ -1,0 +1,7 @@
+block	Item 940071 == 1  
+	window "\n\n@n 哈哈，你终于拿到东西来挑战我了，那就来吧？",yes,no
+	window_yes
+	KillItem 940071,1
+Encount 3|0,1000,245,75||0|||||0|6000528|||||||||
+	window_no
+	Endwindow"\n\n	你还没有那实力

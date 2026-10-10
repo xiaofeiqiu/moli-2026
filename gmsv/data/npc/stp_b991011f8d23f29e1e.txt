@@ -1,0 +1,35 @@
+######## 灰熊厉害擂台赛########
+##B级勋章收集熊
+####有10个B级勋章
+
+block Item 715271 >= 10
+window "\n\n您要用10个B级勋章兑换一套九级宝石吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 8 && Item 715271 >= 10
+KillItem 715271,10
+GiveLeak1Item 13608
+GiveLeak1Item 13618
+GiveLeak1Item 13628
+GiveLeak1Item 13638
+GiveLeak1Item 13648
+GiveLeak1Item 13658
+GiveLeak1Item 13668
+GiveLeak1Item 13678
+Window_YES ItemSpace < 8
+endwindow "\n\n你的物品拦位不够喔!"
+
+####有1个B级勋章
+block Item 715271 >= 1
+window "\n\n您要用1个B级勋章随机兑换一颗九级宝石吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715271 >= 1
+KillItem 715271,1
+GiveLeak1Item (13608%1,13618%1,13628%1,13638%1,13648%1,13658%1,13668%1,13678%1)
+Window_YES ItemSpace < 1
+endwindow "\n\n你的物品拦位不够喔!"
+
+
+block
+endwindow "\n\n只要收集B级勋章就可以跟我换奖品喔!\n\n＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n@c九级宝石全套=10枚B级勋章\n\n@c九级宝石一颗=1枚B级勋章"

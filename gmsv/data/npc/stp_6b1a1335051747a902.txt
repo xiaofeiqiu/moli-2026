@@ -1,0 +1,12 @@
+
+block item 39838 >= 1 && itemcreatetime 39838 >= 1440
+window "\n\n\ 你要打开宠物蛋吗?",ok
+window_ok petspace == 0
+endwindow "\n\n你的宠物栏满了!"
+window_ok
+killitem 39838
+givepet 80198
+
+
+block item 39838 >= 1 && itemcreatetime 39838 < 1440
+endwindow "\n\n\n\n\n　　　　　　　请在1天后才可以打开!"

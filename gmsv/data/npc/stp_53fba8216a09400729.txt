@@ -1,0 +1,12 @@
+block item 86306 >= 1
+window 85392,yes,no
+window_yes
+leavegroup
+killitem 86306
+systemmessage 85341
+Warp 0,28169,26,24
+window_no
+endwindow 85393
+
+block
+endwindow 85394

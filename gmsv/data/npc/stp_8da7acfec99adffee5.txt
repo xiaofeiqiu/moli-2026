@@ -1,0 +1,12 @@
+block Item 3796 >= 1
+window "\n\n把国王的病历给我看下!",yes,no
+window_no
+window_yes
+window "\n\n原来是过于嫉妒法兰国王导致神经失常...他已经不是以前的国王了,能力也随之改变,不顺从他的勇者都被他杀死了.这是当年我为国王看病,赏赐我的金牌,有了他你就可以见国王了,你要为他们报仇啊,这是我唯一能做的了...",Ok
+window_ok Item 3796 >= 1
+KillItem 3796
+giveitem 3797,1
+
+	
+block
+endwindow "\n\n你要为他们报仇啊!"

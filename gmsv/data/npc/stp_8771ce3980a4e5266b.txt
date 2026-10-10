@@ -1,0 +1,4 @@
+block
+window "\n\n你怎么会找到这里的?\n\n受死吧!",ok
+window_ok
+Encount 3|0,1608,8,4||||||||360124|||||||||

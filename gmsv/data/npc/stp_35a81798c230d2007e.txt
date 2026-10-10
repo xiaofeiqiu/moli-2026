@@ -1,0 +1,18 @@
+
+
+
+block Item 715294 > 0
+endwindow "\n\n鲁德教授住在靠港口的屋子."
+
+block Item 715293 > 0
+window "\n\n你要问巨花?\n那不如找我老板鲁德教授!",next
+window "\n\n教授住在靠港口的屋子\n不知道有没有上锁.",ok
+Window_OK Item 715293 > 0
+KillItem 715293,1
+GiveLeak1Item 715294,1
+endwindow "\n\n迷糊的老板有时会忘了带钥匙\n有备份在我这,你先拿去用吧!"
+Window_OK
+endwindow "\n\n咦～你的东西突然不见,是不是掉了."
+ 
+block
+endwindow "\n\n鲁德大叔这老板不知发啥神经\n不准我去他的研究小屋!\n就不要忘了带钥匙,叫我帮他开门!"

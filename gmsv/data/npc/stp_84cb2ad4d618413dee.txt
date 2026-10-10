@@ -1,0 +1,19 @@
+block item 86246 >= 1 && item 86252 >= 1
+window "\n\n我坦白!我们与阿鲁巴斯的计划是:复活死去许多年的人,即再生人与返魂术.试验主要由阿鲁巴斯执行,我们提供技术与材料.",next
+window "\n\n这些被复活的海盗门是用来研究的试验品,他们没有获得真正的再生,也就意味着试验一直没有成功过.很遗憾,我们没有办法将这些海盗恢复成原来的样子.",next
+window "\n\n阿鲁巴斯不打算结束这个计划,我也没有办法阻止他.作为赠礼,我将改造使魔的技术传授给你,希望你能谅解我们的过错.",next
+window "\n\n李林大人不想让这件事情暴露,他也会向你道歉的.",ok
+window_ok item 86246 >= 1 && item 86252 >= 1
+killitem 86246
+killitem 86252
+EndEvent 553 = 1
+CheckTitle
+globalFlag 256 =1
+
+
+block
+window "\n\n要我送你回去吗?",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,400,677,319

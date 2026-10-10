@@ -1,0 +1,17 @@
+block globalFlag 356 == 1
+endwindow 910189
+
+block item 70002 >= 1 && globalFlag 356 == 0
+window 910190,ok
+window_ok
+killitemall 70002
+window 910191,next
+window 910192,next
+window 910193,yes,no
+window_yes
+LeaveGroup
+globalFlag 356 = 1
+window_no
+
+block
+endwindow 910194

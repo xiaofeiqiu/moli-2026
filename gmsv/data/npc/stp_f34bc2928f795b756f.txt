@@ -1,0 +1,21 @@
+block item 533 >= 1
+window "\n\n好吧,是你赢了,我只好继续沉睡了,但是别忘了,我还会再次复苏...到那时...我会...再次...抽取元素...之力的...",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes item 533 >= 1
+killitem 533,1
+giveitem 534,1
+leaveGroup
+Warp 0,64004,73,23
+
+
+block item 529 >= 1
+window "\n\n不错,看来你才是我最需要抽取的存在,那么来到我的领域面对我吧!",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes item 529 >= 1
+giveitem 532,1
+leaveGroup
+Warp 0,2042,23,23

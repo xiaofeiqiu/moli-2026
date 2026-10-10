@@ -1,0 +1,14 @@
+block level >= 130
+window "\n\n　嗯，最近实在是忙的脱不了身啊。\n\n　你很闲吗？能不能帮我个忙？",yes,no
+window_no
+endwindow "\n\n　看来你也是个大忙人"
+window_yes
+window "\n\n　那真是谢谢你了，我本来打算去哥拉尔办点事，但是最近工会突然加入了很多新人，我已经忙的快疯掉了，实在是走不开了。",next
+window "\n\n　既然你这么热心帮忙，那就麻烦你去帮我跑一躺了。正好我们工会租了一条船从伊尔村运输一批物资去哥拉尔，你就搭乘那条船过去吧。到了码头会有人联络你，到时候你照办就是了",next
+window "\n\n　那麻烦你了。\n　船现在在伊尔港，我给你写个纸条交个船长，他看了会让你上船的",ok
+window_ok itemspace > 0 && item 900051 == 0
+giveitem 900051
+window_ok
+endwindow "\n\n　你带的东西太多了"
+block item 900051 == 0
+endwindow "\n\n　船现在在伊尔港，你现在去还来的及"

@@ -1,0 +1,13 @@
+block item 200547 >= 1
+endwindow "\n\n暗室只能是历任主教才能进入,在通往暗室的暗道里可是布满机关的哦."
+
+
+
+
+block
+window "\n\n这不是安德列吗?今天怎么有空回来了.",next
+window "\n\n你们找大主教啊,他刚刚还在这的,或许他进入暗室里做礼拜了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200547

@@ -1,0 +1,14 @@
+block	endevent 660 == 1 && endevent 659 == 1 && endevent 658 == 1
+	window"\n\n 我的孩子，如果你想以新的高度做为目标的话，那你必须超越我！如果超越我的话，就可以离开这里，对你的试炼也算结束了。在与等待着你的人见面之前你会想些什么呢？",next
+	window"\n\n 接下来，先超越我吧！",yes,no
+	window_yes
+Encount 3|0,50007,13,14|||||0|||6000141|
+	window_no
+	window"\n\n 滚开吧胆小鬼",ok
+	window_ok
+	leavegroup
+	Warp 0,1000,238,88
+block
+	endevent 660 = 1
+	endevent 659 = 1
+	endevent 658 = 1

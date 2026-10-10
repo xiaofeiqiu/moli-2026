@@ -1,0 +1,19 @@
+block item 88364 == 1
+endwindow "\n\n最近蜡烛真好卖，据说隔壁米诺基亚村也脱销了！"
+
+block item 88363 == 1
+window "\n\n哈哈~~米莉还真是的，我都加快脚程马不停蹄的赶来了。没想到她店里快揭不开锅了，哼哼~~",next
+window "\n\n你要蜡烛一箱对吗？5W魔币...或者以物易物。那就来5份豪华寿司组如何？\n选【是】采用魔币支付\n选【否】采用以物易物",yes,no
+window_yes gold <= 50000
+endwindow "\n\n对不起！你身上的魔币不足！"
+window_yes gold >= 50000
+killitem 88363
+addgold -50000
+giveitem 88364
+window_no item 15217 >= 5
+killitem 88363
+killitem 15217,5
+giveitem 88364
+
+block
+endwindow "\n\n哎呦~~哎呦~~"

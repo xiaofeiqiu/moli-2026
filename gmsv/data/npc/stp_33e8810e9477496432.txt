@@ -1,0 +1,12 @@
+block item 86634 == 1 && item 86636 == 1 && item 86637 < 1
+window "\n\n触摸到剑鞘, 手中的圣剑也发出了圣洁的光芒.",next
+window "\n\n拿起了契约之圣剑的剑鞘阿瓦隆, 耳边响起了了精灵的歌声.",ok
+window_ok
+leavegroup
+killitem 86634
+killitem 86636
+giveitem 86637
+Warp 0,1530,15,6
+
+block
+endwindow "\n\n这就是骑士王的剑鞘..."

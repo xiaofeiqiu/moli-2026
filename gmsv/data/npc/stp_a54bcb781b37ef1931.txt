@@ -1,0 +1,9 @@
+block
+window "\n\n请放我们一马吧!我可以给你提供一个超级阴谋情报,怎么样.",next
+window "\n\n我们接到一个自称是,是秩序神教的雇佣,准备等到法兰国王祭祀黄陵途中伏击他的车队,这个情报够劲爆吧,你的身份就是他们安插在法兰军团内的人提供的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 60004
+leavegroup
+Warp 0,1000,153,149

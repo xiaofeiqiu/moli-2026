@@ -1,0 +1,10 @@
+block
+window "\n\n你已经通过了考验.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200731
+leavegroup
+Warp 0,60051,80,103
+
+

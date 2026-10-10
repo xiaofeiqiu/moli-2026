@@ -1,0 +1,8 @@
+block ItemSpace == 0
+EndWindow "\n\n你的背包满啦!"
+block item 50824 >=1
+window"\n\n\n@c要打开LV10宝石箱吗?",yes,no
+window_no
+window_yes item 50824 >=1
+killitem 50824,1
+GiveLeak1item (13609%1,13619%1,13629%1,13639%1,13649%1,13659%1,13669%1,13679%1)

@@ -1,0 +1,12 @@
+block Item 1000194 >= 1
+gawindow "\n\n小鬼,你也是来参加活动的吗?",next
+gawindow "\n\n那么就进去吧!",next
+gawindow "\n\n嘿嘿嘿嘿,看来合格得很呢...",next
+gawindow "\n\n啊...那个...没什么,快去经过通道去找祭祀长大人吧!",ok
+window_ok Item 1000194 >= 1
+LeaveGroup
+Warp 0,1616,1,15
+
+
+block
+endWindow "\n\n闲杂人等不要干涉别人的活动,快滚开!"

@@ -1,0 +1,16 @@
+block
+window 900678,next
+window 900679,yes,no
+window_yes
+Encount 3|0,23228,25,99||0|900166|||||61022|6|0|||||||
+window_no gold < 20000
+endwindow 900680
+window_no gold >= 20000
+window 900681,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+addgold -20000
+giveitem 61056
+Warp 0,23228,25,99
+window_ok ItemSpace < 1
+endwindow 900682

@@ -1,0 +1,26 @@
+#任务结束部分
+block item 123023 >= 1
+window "\n\n你找到她了么?",next
+window "\n\n真的,太谢谢你了!",next
+window "\n\n给你这个,这个是她失踪以前留下的,送给你了!",ok
+window_ok item 123023 >= 1
+nowevent 556 = 0
+killitem 123023
+giveitem 123024
+Endwindow "\n\n谢谢你了!"
+
+
+block item 123022 >= 1
+Endwindow "\n\n请帮我一起寻找."
+
+
+block nowevent 556 == 1
+window "\n\n我的女儿不见了,她叫心美.有人曾告诉我,我的女儿最后出现的地方是在这里,请求你们能帮我一起寻找.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 123022
+
+
+block
+endwindow "\n\n我的女儿不见了,她叫心美.有人曾告诉我,我的女儿最后出现的地方是在这里."

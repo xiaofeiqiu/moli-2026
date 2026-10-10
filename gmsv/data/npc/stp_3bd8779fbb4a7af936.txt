@@ -1,0 +1,14 @@
+block item 200243 >= 1
+endwindow "\n\n诺亚矿石基本都远销海外,这可是抢手货啊."
+
+
+block item 200242 >= 1
+window "\n\n诺要矿石啊,这可是只有圣迦尔德大陆才有的矿石,即使是在我们本国也是稀矿,出矿量很少.",next
+window "\n\n不过你现在要这矿的话,本店可没现货哦,不如你去拉迪斯洛坑道找我丈夫,看他有没有挖到些,顺便帮我送点便当给他.",ok
+window_ok
+killitem 200242
+giveitem 200243
+
+
+block
+endwindow "\n\n本店出售矿木材料,顾客你需要什么."

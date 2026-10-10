@@ -1,0 +1,5 @@
+block nowevent 559 == 1 
+	Setaction 5
+	window"\n\n你们老打乱我们干嘛!!!我们不会放过你的!",ok
+	window_ok
+	Setaction 6

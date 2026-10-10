@@ -1,0 +1,31 @@
+block item 200236 >= 1
+endwindow "\n\n来陪我喝一杯."
+
+
+
+block item 200235 >= 1
+window "\n\n看在你这么诚心的份上,我就告诉你吧,我相信你不会跟大家一样,以为我在胡说八道.",next
+window "\n\n我能从迷幻森林里活着走出来是多亏了卡修斯隐士,他教会我与大自然所有精灵相互沟通的技巧.",next
+window "\n\n你要是想在森林里来去自如的话,就必须去请教卡修斯,找他很简单,每天他都会到谢奈斯村采办日用品.",ok
+window_ok
+killitem 200235
+giveitem 200236
+
+
+
+
+block item 200232 >= 1
+endwindow "\n\n还是不认识路,那你肯定是喝醉了."
+
+
+
+block item 200231 >= 1
+window "\n\n你想问我是怎么从迷幻森林里出来的,嗝～呵呵,不如你请我喝凯尔宾私酿的酒.",next
+window "\n\n凯尔宾在哪?你可以去城里工坊后面的屋子里瞧瞧.",ok
+window_ok
+killitem 200231
+giveitem 200232
+
+
+block
+endwindow "\n\n酒～我要酒…我没醉."

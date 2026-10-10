@@ -1,0 +1,4 @@
+block	item 591015>=1
+SetDur 591015,-1
+SetLp	+100000
+SystemMessage 941024

@@ -1,0 +1,6 @@
+Block
+Window "要使用单机传送卷吗？消耗后效果不可撤销。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:34fbdedef0a3a26b8008

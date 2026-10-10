@@ -1,0 +1,9 @@
+block item 200150 >= 1
+window "\n\n这是…打开那个宝箱的钥匙吗?",next
+window "\n\n你认识托尔丘.",yes,no
+window_yes
+leavegroup
+Warp 0,121,28,25
+
+block
+endwindow "\n\n有什么事吗."

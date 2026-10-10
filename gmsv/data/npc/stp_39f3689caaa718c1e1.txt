@@ -1,0 +1,11 @@
+block item 70003 >= 1
+endwindow 910481
+
+block globalFlag 356 == 1
+window 910482,next
+window 910483,next
+window 910484,ok
+window_ok ItemSpace >= 1
+giveitem 70003
+window_ok ItemSpace < 1
+endwindow 910485

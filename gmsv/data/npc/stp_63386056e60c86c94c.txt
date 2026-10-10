@@ -1,0 +1,14 @@
+block Item 18443 >= 1 && level >= 120
+window "\n\n神眼好象跟地藏产生了共鸣\n\n要把神眼镶嵌的地藏上去吗?",yes,no
+window_yes
+window "\n\n神眼和地藏融合到了一起发出了奇怪的光芒!",ok
+window_ok Item 18443 >= 1
+killItem 18443,1
+Encount 3|0,1605,3,4||||||||360123|||||||||
+window_no
+window "\n\n奇怪的光芒消失了!",ok
+window_ok
+
+
+block
+endwindow "\n\n地藏好象没有任何反映\n\n眼窝中好象缺少什么..."

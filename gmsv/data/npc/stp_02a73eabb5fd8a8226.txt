@@ -1,0 +1,3 @@
+block
+Luac stp:legacy:d06e42284081d66e3d5b
+	killitem 60092,1

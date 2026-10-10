@@ -1,0 +1,7 @@
+block
+window "\n\n大巫师冯奴的两个孙子失踪了,很可能与诱拐事件有关,我现在正打算进行调查,你愿意加入调查行列吗?",yes,no
+window_yes
+endwindow "\n\n据说奇利村内有一位叫做蕾欧妮的人了解整个事情的来龙去脉,你可以找他谈谈."
+window_no
+endwindow "\n\n那算了"
+

@@ -1,0 +1,15 @@
+block item 88220 == 1
+LeaveGroup
+Warp 0,45245,104,63
+
+block item 88219 >= 10
+window 501546,yes,no
+window_no
+window_yes  item 88219 >= 10
+LeaveGroup
+killitemall 88219
+giveitem 88220
+Warp 0,45245,104,63
+
+block
+endwindow 501547

@@ -1,0 +1,92 @@
+
+block	petlevel 57111	==	1	&&	petlevel 57121	==	1	&&	petlevel 57131	==	1	&&	petlevel 57141	==	1
+window"\n\n想将双属性幼龙强化么？\n将得到强化四属性的3阶幼龙.\n选否合成另一种四属性3阶小龙",yes,no
+window_yes
+killpeth 57121,1
+killpeth 57111,1
+killpeth 57131,1
+killpeth 57141,1
+givepet 57133
+window_no
+killpeth 57121,1
+killpeth 57131,1
+killpeth 57111,1
+killpeth 57141,1
+givepet 57134
+
+block	petlevel 57128	==	1	&&	petlevel 57129	==	1	&&	petlevel 57132	==	1	&&	petlevel 57133	==	1	&&	petlevel 57134	==	1
+window"打算将小龙强化成巨龙嘛？",yes,no
+window_yes
+killpeth 57128,1
+killpeth 57129,1
+killpeth 57132,1
+killpeth 57133,1
+killpeth 57134,1
+givepet 57149
+window_no
+
+block	petlevel 57111	==	1	&&	petlevel 57121	==	1
+window"\n\n想将口袋幼龙与迷你幼龙合成么？\n将合成地水属性的2阶幼龙",yes,no
+window_yes
+killpeth 57111,1
+killpeth 57121,1
+givepet 57122
+
+block	petlevel 57121	==	1	&&	petlevel 57131	==	1
+window"\n\n想将迷你幼龙与雏龙幼龙合成么？\n将合成水火属性的2阶幼龙",yes,no
+window_yes
+killpeth 57121,1
+killpeth 57131,1
+givepet 57123
+
+block	petlevel 57141	==	1	&&	petlevel 57131	==	1
+window"\n\n想将雏龙幼龙与穴龙幼龙合成么？\n将合成火风属性的2阶幼龙",yes,no
+window_yes
+killpeth 57141,1
+killpeth 57131,1
+givepet 57124
+
+block	petlevel 57141	==	1	&&	petlevel 57111	==	1
+window"\n\n想将穴龙幼龙与口袋幼龙合成么？\n将合成风地属性的2阶幼龙",yes,no
+window_yes
+killpeth 57111,1
+killpeth 57141,1
+givepet 57125
+
+block	petlevel 57141	==	1	&&	petlevel 57121	==	1
+window"\n\n想将穴龙幼龙与迷你幼龙合成么？\n将合成水风属性的2阶幼龙",yes,no
+window_yes
+killpeth 57121,1
+killpeth 57141,1
+givepet 57126
+
+block	petlevel 57111	==	1	&&	petlevel 57131	==	1
+window"\n\n想将口袋幼龙与雏龙幼龙合成么？\n将合成地火属性的2阶幼龙",yes,no
+window_yes
+killpeth 57111,1
+killpeth 57131,1
+givepet 57127
+
+block	petlevel 57127	==	1	&&	petlevel 57126	==	1
+window"\n\n想将双属性幼龙强化么？\n将得到强化四属性的3阶幼龙",yes,no
+window_yes
+killpeth 57126,1
+killpeth 57127,1
+givepet 57128
+
+block	petlevel 57122	==	1	&&	petlevel 57124	==	1
+window"\n\n想将双属性幼龙强化么？\n将得到强化四属性的3阶幼龙",yes,no
+window_yes
+killpeth 57122,1
+killpeth 57124,1
+givepet 57132
+
+block	petlevel 57123	==	1	&&	petlevel 57125	==	1
+window"\n\n想将双属性幼龙强化么？\n将得到强化四属性的3阶幼龙",yes,no
+window_yes
+killpeth 57123,1
+killpeth 57125,1
+givepet 57129
+
+block
+window"嗯？有什么事？",ok

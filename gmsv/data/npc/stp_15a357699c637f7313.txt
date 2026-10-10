@@ -1,0 +1,13 @@
+block	itemspace<1
+Endwindow"\n\n@c 你的物品满了。"
+block item 588151 >= 1
+window"\n\n无数的光点将你围绕，突然时光飞转！\n \n你的身体化做点点星斑.\n \n渐渐的你失去了意识",ok
+window_ok item 588151 >= 1
+leavegroup
+Warp 0,36503,108,110
+block
+window"\n\n无数的光点将你围绕，突然时光飞转！\n \n你的身体化做点点星斑.\n \n渐渐的你失去了意识",ok
+window_ok
+Giveitem 588151,1
+leavegroup
+Warp 0,36503,108,110

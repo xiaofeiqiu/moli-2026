@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【幻影】吗？",ok
+			Window_ok
+Luac stp:legacy:6043e42e7d3433acbe48
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【旋律影子】吗？",ok
+			Window_ok
+Luac stp:legacy:8d9d61c06195c758a2ec
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【暗影】吗？",ok
+			Window_ok
+Luac stp:legacy:a7f15c56892f05ae9104
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【阴影】吗？",ok
+			Window_ok
+Luac stp:legacy:cf1e836ef95e71554239
+				endif

@@ -1,0 +1,41 @@
+block item 88018 == 1
+endwindow 501020
+
+block item 88017 == 1 && item 88007 == 1
+window 501021,next
+window 501022,next
+window 501023,next
+window 501024,next
+window 501025,ok
+window_ok
+killitem 88007
+killitem 88017
+giveitem 88018
+
+block item 88014 == 1
+endwindow 501026
+
+block item 88013 == 1
+window 501027,next
+window 501028,ok
+window_ok
+killitem 88013
+giveitem 88014
+
+block item 88007 == 1
+endwindow 501029
+
+block item 88006 == 1 && item 88005 == 1
+window 501030,next
+window 501031,next
+window 501032,next
+window 501033,next
+window 501034,yes,no
+window_no
+window_yes
+killitem 88006
+giveitem 88007
+endwindow 501035
+
+block
+endwindow 501036

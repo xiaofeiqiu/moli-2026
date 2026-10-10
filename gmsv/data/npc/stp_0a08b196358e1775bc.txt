@@ -1,0 +1,6 @@
+block item 800096 == 1 && item 800097 == 0 
+	Window"\n\n你们是？找我有什么事吗？",next
+	Window"\n\n咦？是白金幻龙石！我明白了，我来帮你。",ok
+window_ok
+killitem 800096,1
+giveitem 800097,1

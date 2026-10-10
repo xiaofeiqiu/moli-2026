@@ -1,0 +1,8 @@
+block item 88217 == 1 && item 88218 == 1 && floor == 27700 && xpos == 104 && Ypos == 63
+window 501545,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88217
+killitem 88218
+Warp 0,27741,34,39

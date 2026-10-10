@@ -1,0 +1,14 @@
+block StrCmpChat == 2304381 && item 22737 >= 1 && Item 22758 >= 1 && item 22773 >= 1 && item 22774 >= 1 && item 22775 >= 1 && item 22776 >= 1 && item 22777 >= 1
+window "\n\n传诵之门打开了......",ok
+window_ok item 22737 >= 1 && Item 22758 >= 1 && item 22773 >= 1 && item 22774 >= 1 && item 22775 >= 1 && item 22776 >= 1 && item 22777 >= 1
+killitem 22773
+killitem 22774
+killitem 22775
+killitem 22776
+killitem 22777
+leavegroup
+Warp 0,23105,29,21
+
+
+block
+endwindow "\n\n无法开启这扇门!"

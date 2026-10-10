@@ -1,0 +1,15 @@
+block item 200201 >= 1
+endwindow "\n\n别发呆了,赶快做事,不然我叫你吃不了兜着走."
+
+
+block item 200200 >= 1
+window "\n\n你就是新来的,正好狄穆罗斯号要起航了,你赶快上船检查每个人的船票,看看有没有偷渡的旅客.",next
+window "\n\n一经发现,请扭送下船,这是你的检票证,别磨磨唧唧,赶快行动.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200201
+
+
+block
+endwindow "\n\n找我有什么事情吗?"

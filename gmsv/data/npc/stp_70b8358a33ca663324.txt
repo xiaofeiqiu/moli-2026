@@ -1,0 +1,57 @@
+block EndEvent 517 == 1
+Window "\n\n哼,交给我800金币,就带你飞过去.",yes,no
+Window_yes gold < 800
+EndWindow "\n\n你的钱好像没有带够."
+Window_yes
+addgold -800
+LeaveGroup
+Warp 0,57176,65,98
+Window_no
+EndWindow "\n\n哼."
+
+block EndEvent 516 == 1
+Window "\n\n哼,交给我800金币,就带你飞过去.",yes,no
+Window_yes gold < 800
+EndWindow "\n\n你的钱好像没有带够."
+Window_yes
+addgold -800
+LeaveGroup
+Warp 0,57176,65,98
+Window_no
+EndWindow "\n\n哼."
+
+block EndEvent 515 == 1
+Window "\n\n哼,交给我800金币,就带你飞过去.",yes,no
+Window_yes gold < 800
+EndWindow "\n\n你的钱好像没有带够."
+Window_yes
+addgold -800
+LeaveGroup
+Warp 0,57176,65,98
+Window_no
+EndWindow "\n\n哼."
+
+block EndEvent 514 == 1
+Window "\n\n哼,交给我800金币,就带你飞过去.",yes,no
+Window_yes gold < 800
+EndWindow "\n\n你的钱好像没有带够."
+Window_yes
+addgold -800
+LeaveGroup
+Warp 0,57176,65,98
+Window_no
+EndWindow "\n\n哼."
+
+block  EndEvent 513 == 1
+Window "\n\n哼,交给我800金币,就带你飞过去.",yes,no
+Window_yes gold < 800
+EndWindow "\n\n你的钱好像没有带够."
+Window_yes
+addgold -800
+LeaveGroup
+Warp 0,57176,65,98
+Window_no
+EndWindow "\n\n哼."
+
+block
+EndWindow "\n\n陌生人类请离我远一些."

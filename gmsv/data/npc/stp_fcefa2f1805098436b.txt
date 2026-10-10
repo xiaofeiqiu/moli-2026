@@ -1,0 +1,29 @@
+###dodo_item_715257.txt
+###飞奔之剑无论在各地,可以飞回到法兰.
+###有开启者称号
+
+
+block Item 715257 >= 1 && EndEvent 5 == 1
+window "\n\n你确定要使用飞奔之剑吗?",yes,no
+Window_NO 
+Window_YES
+window "\n\n飞奔之剑释放出耀眼的光芒\n剑身上开始出现神秘的古文字\n周围的景象开始改变!",ok
+Window_OK Item 715257 >= 1 && ItemDur 715257 == 1 && EndEvent 5 == 1
+KillItem 715257,(777455)
+Message 777454 
+Warp 0,1530,15,6 
+
+Window_OK Item 715257 >= 1 && ItemDur 715257 > 1 && EndEvent 5 == 1
+SetDur 715257,-1
+Message 777454 
+LeaveGroup 
+Warp 0,1530,15,6 
+
+
+block Item 715257 >= 1
+window "\n\n身上浮现了文字:\n\n唯有真正的开启者才有权力驱使此剑.\n你想要强行使用吗?",yes,no
+Window_NO 
+Window_YES Item 715257 >= 1
+KillItem 715257,(777455)
+LeaveGroup 
+Warp 0,1530,15,6 

@@ -1,0 +1,45 @@
+block item 795111 == 1 && item 795113 == 0
+window "\n\n求救信?嗯···事情发展到这个地步,已经不能再拖延时间了.现在我命令你,讨伐狂战将军.希望你不要让我失望.",yes,no
+window_no
+endwindow "\n\n国难当前,你的回答令我太失望了!"
+window_yes item 795111 == 1
+killitem 795111
+giveitem 795113 
+endwindow "\n\n这是我的亲笔信,快去送到雷克塔尔镇.然后听从镇长艾列斯的指示."
+
+
+block item 795117 == 1 && PetSpace != 0
+window "\n\n击败了逆袭者狂战吗?很好,你没令我失望,这是奖赏,本祭祀亲自授予你.",ok
+window_ok item 795117 == 1
+killitem 795117
+giveitem 795118
+givepet	(304%95,105%5)
+endwindow "\n\n希望你有更优秀的表现,退下吧."
+
+block item 795117 == 1 && PetSpace == 0
+endwindow "\n\n你成功了!我要给你奖赏,检查下宠物栏是否满了!"
+
+
+#####遗迹-承认之戒#####
+block item 652585 >= 1
+endwindow "\n\n看来灾难要再次来临了!"
+
+block item 652584 >= 1
+window "\n\n神域已经开启了\n法兰已经站在毁灭的边缘...\n第二次[人神战争]...命运...转动...",ok
+window_ok item 652584 >= 1
+killitem 652584,1
+giveitem 652585,1
+
+block item 652581 >= 1
+endwindow "\n\n快去曙光骑士营地吧"
+
+block
+window "\n\n开启者,你来的正好,我这里有一件事需要你的帮助.刚刚接到曙光骑士团发来的求援信,近期在曙光营地下的遗迹内突然出现大量魔物,由于数量太多,曙光骑士团只能暂时封锁住遗迹入口,而王国内的卫兵也由于魔物的骚扰严重不足.",next
+window "\n\n开启者,你能否代替法兰王国去协助曙光骑士团消灭地下遗迹内的魔物呢?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 652581,1
+endwindow "\n\n太好了,这是给曙光营地的回信,上面说明了情况,请你交给圣骑士法尔缇娅,她会安排你怎么做的."
+window_no
+endwindow "\n\n是我唐突了.\n怎么办呢!!"

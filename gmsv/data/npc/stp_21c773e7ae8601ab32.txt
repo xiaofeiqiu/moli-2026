@@ -1,0 +1,31 @@
+block globalFlag 297 == 1 && globalFlag 298 == 0
+window 900690,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61006
+globalFlag 298 = 1
+window_ok ItemSpace < 1
+endwindow 900691
+
+block globalFlag 296 == 1 && globalFlag 298 == 0
+window 900692,ok
+window_ok
+LeaveGroup
+giveitem 61005
+
+block item 61003 >= 1
+endwindow 900693
+
+block globalFlag 295 == 1 && globalFlag 296 == 0
+window 900694,next
+window 900695,next
+window 900696,yes,no
+window_no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 61003
+window_yes ItemSpace < 1
+endwindow 900697
+
+block
+endwindow 900698

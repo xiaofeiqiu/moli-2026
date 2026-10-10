@@ -1,0 +1,30 @@
+block item 70037 == 1
+endwindow 910455
+
+block item 70036 == 1
+window 910456,next
+window 910457,next
+window 910458,next
+window 910459,next
+window 910460,next
+window 910461,next
+window 910462,next
+window 910463,next
+window 910464,next
+window 910465,next
+window 910466,next
+window 910467,next
+window 910468,next
+window 910469,next
+window 910470,next
+window 910471,next
+window 910472,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 70036
+GiveItem 70037
+window_ok ItemSpace < 1
+endwindow 910473
+
+block
+endwindow 910474

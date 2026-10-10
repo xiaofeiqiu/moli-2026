@@ -1,0 +1,7 @@
+block
+Window 7019467,YES,NO
+Window_YES Item 86267 >= 1
+KillItem 86267,1
+LeaveGroup
+Warp 0,28122,10,4
+Window_NO

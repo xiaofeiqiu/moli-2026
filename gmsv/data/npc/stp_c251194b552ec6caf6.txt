@@ -1,0 +1,7 @@
+block
+window "\n\n不错不错,你真是个好玩偶,不过我还有事,下次再见咯",yes,no
+window_yes
+Warp 0,21513,2,4
+
+
+

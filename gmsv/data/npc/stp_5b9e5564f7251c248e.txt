@@ -1,0 +1,13 @@
+block item 50859 == 1
+Window "\n\n是『贝尼恰斯』教团的许可证,他们决定派你去调查诺斯非拉特大陆吗?船资是1000金币.",next
+Window "\n\n\n要进入栈桥吗?",yes,no
+Window_no
+Window_yes gold < 1000
+EndWindow "\n\n很抱歉,你的钱不够了."
+Window_yes item 50859 == 1
+addgold -1000
+LeaveGroup
+Warp 0,40004,18,55
+
+block
+EndWindow "\n\n很抱歉,没有『贝尼恰斯』教团的许可证,我们是不会开船的."

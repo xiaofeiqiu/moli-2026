@@ -1,0 +1,7 @@
+block item 18443 >= 1
+window "\n\n探索真实的人阿,勇往直前的骑士阿,你愿意接收命运的邀请嘛?",yes,no
+window_no
+window_yes
+leavegroup
+killitem 18443
+Warp 0,28354,24,29

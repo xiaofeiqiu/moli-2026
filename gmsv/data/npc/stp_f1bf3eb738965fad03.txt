@@ -1,0 +1,15 @@
+block item 86317 >= 1 && StrCmpChat == 85428
+window 85429,next
+window 85430,next
+window 85431,next
+window 85432,yes,no
+window_no
+window_yes
+leavegroup
+killitem 86317
+Warp 0,28176,76,76
+
+block item 86317 >= 1
+window 85433,next
+window 85434,ok
+window_ok

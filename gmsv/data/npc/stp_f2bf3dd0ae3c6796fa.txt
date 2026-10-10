@@ -1,0 +1,15 @@
+block item 77019 >= 1
+Endwindow 2000054
+
+block item 77018 >= 1
+Endwindow 2000055
+
+block item 77017 < 1
+window 2000056,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+globalFlag 267 = 0
+giveitem 77017
+Warp 0,1000,233,78
+window_ok ItemSpace < 1
+Endwindow 2000057

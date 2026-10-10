@@ -1,0 +1,70 @@
+block	endevent 701	==	1
+	window "\n\n  ÐÁ¿àÁË,¿ªÆôÕß£¬",next
+	EndWindow "\n\n  À´£¬¿ìÈ¥ºÍ°¢¶ûÈøË¹È¥×·Ñ°Âó¶û¸ÊÄáË¹°É£¡",OK
+	window_OK
+		killitem 99994
+		killitem 99999
+		killitem 99993
+		killitem 99996
+block	item 99999	==	1	&&	item 99994	==	1
+	Window "\n\n  ¸ÉµÄºÃ¿ªÆôÕß£¬",next
+	EndWindow "\n\n  ÏÖÔÚÎÒÊÚÓèÄãÎÒ¹ú×î¸ßÈÙÓþÑ«ÕÂ",OK
+	Window_OK
+		killitem 99994
+		killitem 99999
+		killitem 99993
+		killitem 99996
+		endevent 701	=	1
+		CheckTitle
+#
+#¹Ì³×°¥ ¼¶ ½º¿ì ±¹ ¾ÆÄÌÆÄ ¼º¿¡ ÀÖ´Â
+#·é´Ù ±¹¿Õ
+#
+
+################################################################################
+#
+################################################################################
+
+###¡¡ÃßÃµÀåÀ» °¡Áö°í ÀÖ´Â °æ¿ì¡¡###
+block Item 16223 >= 1
+	Window 21661,next
+	Window 21662,next
+	Window 21663,OK
+		Window_OK
+		KillItemall 16223
+		NowEvent 594 = 1
+
+### ÈÆ£µµî Äù½ºÆ®¿ë Ã³¸® ###
+
+#¿¤ ÈÆ£µµî Äù½ºÆ® Å¬¸®¾î
+block EndEvent 700 == 1
+	Window 22598,next
+	Window 22599,OK
+		Window_OK
+			KillItemAll 16395
+			GiveItem 16402,1
+			EndEvent 699 = 1
+			NowEvent 595 = 0
+			EndEvent 700 = 0
+			CheckTitle
+#¾à¼ÓÀÇ ±êÅÐÀ» °¡Áö°í ÀÖ´Ù¸é
+block Item 16396 >= 1
+	EndWindow 22600,OK
+#¿ÕÁ·ÀÇ ÁõÇ¥¸¦ °¡Áö°í ÀÖ´Ù¸é
+block Item 16395 >= 1
+	EndWindow 22601,OK
+#¿¤¿¡¼­ ÈÆ£µµî Äù½ºÆ®¸¦ ÁøÇà ÁßÀÌ¶ó¸é
+block NowEvent 595 == 1
+	Window 22602,next
+	Window 22603,next
+	Window 22604,next
+	Window 22605,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			GiveItem 16395,1
+
+###¡¡###
+block
+#\n\n¡¡¿À¿À, ¿©ÇàÀÚ ºÐÀÎ°¡. Àß ¿À¼Ì¼Ò. ¾Æ¹«°Íµµ ¾ø´Â ³ª¶óÁö¸¸ ÃµÃµÈ÷ ½¬´Ù °¡½Ã¿À.
+	EndWindow 15493,OK

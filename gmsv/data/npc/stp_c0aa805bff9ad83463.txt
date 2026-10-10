@@ -1,0 +1,12 @@
+block item 200701 >= 1 && ItemCreateTime 200701 >= 5
+window "\n\n到了下船吧.",ok
+window_ok
+killitem 200701
+leavegroup
+Warp 0,60009,237,116
+
+
+
+block item 200701 >= 1
+endwindow "\n\n刚上船就开始催,哪有那么快就能到,请稍等会."
+

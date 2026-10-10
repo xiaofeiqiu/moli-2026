@@ -1,0 +1,12 @@
+
+
+
+block
+window "\n\n勇敢的年轻人,因为你的帮助\n让这对无缘的父女相见,我们先离开吧～～～",next
+window "\n\n对了\n这是小女孩说要送你的,你就收下吧.",ok
+Window_OK  ItemSpace < 1 
+endwindow "\n\n你的背包满啦!"
+Window_OK
+GiveLeak1Item 715165,1
+Warp 0,30010,221,154
+Endblock

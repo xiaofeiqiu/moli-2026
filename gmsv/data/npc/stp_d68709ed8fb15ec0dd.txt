@@ -1,0 +1,5 @@
+block  gold>999000
+Endwindow"\n\n\n 你身上带的钱太多了，请存起来些。"
+block Item 599131 >= 1
+		KillItem 599131,1
+		addgold 100

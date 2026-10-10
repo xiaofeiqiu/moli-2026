@@ -1,0 +1,98 @@
+block itemspace <= 1 || petspace == 0
+endwindow "\n\n把背包和宠物清理下再来找我吧."
+
+
+block item 160403 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160403 >= 2
+killitem 160403,1
+
+
+block item 160409 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160409 >= 2
+killitem 160409,1
+
+
+block item 160410 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160410 >= 2
+killitem 160410,1
+
+
+block item 160413 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160413 >= 2
+killitem 160413,1
+
+
+block item 160415 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160415 >= 2
+killitem 160415,1
+
+
+block item 160423 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160423 >= 2
+killitem 160423,1
+
+
+block item 160425 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160425 >= 2
+killitem 160425,1
+
+
+block item 160426 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160426 >= 2
+killitem 160426,1
+
+
+block item 160409 >= 1
+window "\n\n您好冒险者,有什么需要帮忙的吗?",ok
+window_ok
+EndWindow "\n\n欢迎来拜访我."
+
+
+block item 160423 >= 1 && item 160425 >= 1
+window "\n\n辛苦了冒险者,真是一场难忘的试炼,向你表示感谢,这是我们的谢意请收下吧.",ok
+window_ok item 160423 >= 1 && item 160425 >= 1
+killitem 160423,1
+killitem 160425,1
+givepet (600000%20,600001%20,600002%20,600003%20,600004%20)
+
+
+block item 160426 >= 1
+window "\n\n冒险者们,你们的状况看起来有些凄惨,不过已经没有时间了,卵已经开始孵化了,快去各个村子阻止已经变成魔女的少女们吧,拿上这个东西,它会给你带来好运的...",ok
+window_ok item 160426 >= 1
+killitem 160426,1
+giveitem 160409,1
+
+
+block item 160413 >= 1
+window "\n\n这个宝石...就像孕育某种生命的卵...你是从什么地方得到这个东西的?",next
+window "\n\n(向奎因说明了缘由...)",next
+window "\n\n...这样吗...收好这个东西冒险者,另外...带上这个,你会用的到它,一路小心.",ok
+window_ok item 160413 >= 1
+giveitem 160410,1
+
+
+block item 160403 >= 1 && item 160415 >= 1
+window "\n\n回来了吗冒险者,事情我都听说了,诚惠来找过我,事情变的有些麻烦.",next
+window "\n\n(向奎因说明了艾泽尔的猜测...)",next
+window "\n\n我该向你们道歉,这件事情我会接手的,不要在继续深入了.",next
+window "\n\n为什么?奎因先生?不能放过携带这个宝石的人!他们会给世界带来灾难!",next
+window "\n\n我明白你们的决心,但追查下去可能会有危险,放心吧埃露戴娜和诚惠已经行动了...",next
+window "\n\n无论您怎么说,我们都会追查到底的!",next
+window "\n\n好吧,答应我,如果出现什么意外立刻收手,拿着这个去城南找泽尔里奇,你们会得到一些新的线索.",ok
+window_ok item 160403 >= 1 && item 160415 >= 1
+killitem 160403,1
+giveitem 160404,1
+
+
+block
+window "\n\n您好冒险者,有什么需要帮忙的吗?",ok
+window_ok
+endWindow "\n\n欢迎来拜访我."

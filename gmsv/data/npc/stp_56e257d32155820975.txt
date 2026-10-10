@@ -1,0 +1,7 @@
+block
+	window "\n\n\n@c你要面对的是比地狱更恐怖的魔界",yes,no
+	window_yes
+	leavegroup
+	killitem 1000512,1
+	Warp 0,45265,25,23
+	window_no

@@ -1,0 +1,8 @@
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1
+window "\n\n你确定要打开王座的暗格吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200575
+leavegroup
+Warp 0,27631,123,103

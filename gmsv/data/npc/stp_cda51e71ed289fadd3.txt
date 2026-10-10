@@ -1,0 +1,5 @@
+block
+window"\n\n\n@c使用后将会自动传送到喊话装置，此券仅可用一次，使用后消失。要使用吗？",OK
+window_OK
+killitem 40585,1
+Warp 0,1000,0,11

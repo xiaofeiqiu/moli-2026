@@ -1,0 +1,4 @@
+block
+window "\n\n是谁清扰吾的长冥..杀..杀.杀！",ok
+window_ok
+Encount 3|||0|||||3|86287|6|0|||||||

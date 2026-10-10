@@ -1,0 +1,9 @@
+###净化失败 不死系
+block
+Window"\n\n\n@c你是否要打开被净化的卵?",yes,no
+Window_YES PetSpace == 0 
+##1100004	\n\n\n\n\n@c宠物栏已经满了.	1
+EndWindow 1100004	 
+Window_yes
+killitem 50977,(70856)
+GivePet 30139

@@ -1,0 +1,4 @@
+block item 730004 >= 1
+window "\n\n星石发出奇异的光芒",ok
+window_ok
+Warp 0,40,1,5

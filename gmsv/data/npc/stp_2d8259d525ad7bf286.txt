@@ -1,0 +1,86 @@
+block level <=70 && item 795115 == 1 && gold >=20000
+window "\n\n欢迎使用魔法传送装置,请选择购买发亮的宝石并传送选是,只传送选否",yes,no
+window_yes item 795115 == 1
+killitem 795115
+addgold -20000
+giveitem 795119
+Leavegroup
+Warp 0,60298,25,39
+window_no item 795115 == 1
+killitem 795115
+Leavegroup
+Warp 0,60298,25,39
+
+
+block level > 70 && level <=80 && item 795115 == 1 && gold >=30000
+window "\n\n欢迎使用魔法传送装置,请选择购买发亮的宝石并传送选是,只传送选否",yes,no
+window_yes item 795115 == 1
+killitem 795115
+addgold -30000
+giveitem 795119
+Leavegroup
+Warp 0,60298,25,39
+window_no item 795115 == 1
+killitem 795115
+Leavegroup
+Warp 0,60298,25,39
+
+
+block level > 80 && level <=90 && item 795115 == 1 && gold >=40000
+window "\n\n欢迎使用魔法传送装置,请选择购买发亮的宝石并传送选是,只传送选否",yes,no
+window_yes item 795115 == 1
+killitem 795115
+addgold -40000
+giveitem 795119
+Leavegroup
+Warp 0,60298,25,39
+window_no item 795115 == 1
+killitem 795115
+Leavegroup
+Warp 0,60298,25,39
+
+
+block level > 90 && level <=100 && item 795115 == 1 && gold >=60000
+window "\n\n欢迎使用魔法传送装置,请选择购买发亮的宝石并传送选是,只传送选否",yes,no
+window_yes item 795115 == 1
+killitem 795115
+addgold -60000
+giveitem 795119
+Leavegroup
+Warp 0,60298,25,39
+window_no item 795115 == 1
+killitem 795115
+Leavegroup
+Warp 0,60298,25,39
+
+
+block level > 100 && level <=110 && item 795115 == 1 && gold >=80000
+window "\n\n欢迎使用魔法传送装置,请选择购买发亮的宝石并传送选是,只传送选否",yes,no
+window_yes item 795115 == 1
+killitem 795115
+addgold -80000
+giveitem 795119
+Leavegroup
+Warp 0,60298,25,39
+window_no item 795115 == 1
+killitem 795115
+Leavegroup
+Warp 0,60298,25,39
+
+
+block level > 110 && level <=120 && item 795115 == 1 && gold >=100000
+window "\n\n欢迎使用魔法传送装置,请选择购买发亮的宝石并传送选是,只传送选否",yes,no
+window_yes item 795115 == 1
+killitem 795115
+addgold -100000
+giveitem 795119
+Leavegroup
+Warp 0,60298,25,39
+window_no item 795115 == 1
+killitem 795115
+Leavegroup
+Warp 0,60298,25,39
+
+
+block 
+endwindow "\n\n看看你的背包钱够不够哦!\n\n魔法传送装置周围闪闪发亮,好像会把你吸进去一样,凑近一看原来上面全是宝石!"

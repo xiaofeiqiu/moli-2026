@@ -1,0 +1,38 @@
+block Visitor == 0
+	#SetVisitor 0
+	SetVisitor +2
+	endWindow"\n\n我要坚持住！"
+
+block Visitor == 2
+	#SetVisitor 0
+	SetVisitor +1
+	endWindow"\n\n必须消灭他们！"
+
+block Visitor == 3
+	#SetVisitor 0
+	SetVisitor +1
+	endWindow"\n\n顶住！"
+
+block Visitor == 4
+	#SetVisitor 0
+	SetVisitor +1
+	endWindow"\n\n啊！"
+
+block Visitor == 5
+	#SetVisitor 0
+	SetVisitor +1
+	endWindow"\n\n它们源源不断的袭来！"
+
+block Visitor == 6
+	#SetVisitor 0
+	SetVisitor +1
+	endWindow"\n\n平民退后！"
+
+block Visitor == 7
+	#SetVisitor 0
+	SetVisitor +1
+	endWindow"\n\n战况不容乐观！"
+
+block Visitor == 8
+	SetVisitor 0
+	endWindow"\n\n护士快上绷带！"

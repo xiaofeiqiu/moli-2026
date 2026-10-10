@@ -1,0 +1,8 @@
+block item 87514 == 1
+Warp 0,1530,15,6
+
+block
+window "\n\n没想到我竟然让人类打败，啊……啊……（*过滤词汇*）既然这样 我将在这世界上消失。",ok
+window_ok
+giveitem 87514
+Warp 0,1530,15,6

@@ -1,0 +1,14 @@
+block item 200732 >= 1
+endwindow "\n\n你做的很好."
+
+
+
+block item 200730 >= 1
+endwindow "\n\n你已经证明了你的力量,去吧."
+
+
+
+block
+window "\n\n复仇的信念,见证你的力量.",ok
+window_ok
+Encount 2|0,60055,0,0||0|||||0|50694|||||||||

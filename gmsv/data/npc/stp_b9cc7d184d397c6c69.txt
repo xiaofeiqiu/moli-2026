@@ -1,0 +1,11 @@
+block item 795100 == 1 && endevent 585 == 1
+gawindow "\n\n　事情已经到了无法挽回的时候了，塞特已经苏醒了。虽然他刚从沉睡中苏醒过来。可是力量还是相当惊人的。勇者们，愿意助我一臂之力吗。",yes,no
+window_no
+window_yes
+gawindow "\n\n　勇者们，我将用我最后的力量封印住塞特的力量根源，他的力量再也不是无限了。现在是你们进攻的时候了，为了你们的家园。",ok
+window_ok
+nowevent 563 = 0
+endevent 585 = 0
+CheckTitle
+Leavegroup
+Warp 0,60214,14,25

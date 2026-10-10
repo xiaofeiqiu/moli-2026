@@ -1,0 +1,8 @@
+block
+window 501636,yes,no
+window_no
+window_yes fp < 600
+endwindow 501637
+window_yes fp >= 600
+LeaveGroup
+Warp 0,27777,18,20

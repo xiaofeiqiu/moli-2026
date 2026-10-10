@@ -1,0 +1,7 @@
+block SkillLevel 205 == 10
+window"\n\n\n@c 即将学习 10C回力 乱舞 制作！",ok
+window_ok
+	KillItem 591366,1
+	GiveRecipe 1128
+block
+Endwindow"\n\n\n@c 你的造回力技能还未10级，无法学习！"

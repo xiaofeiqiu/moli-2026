@@ -1,0 +1,10 @@
+block item 88017 == 1
+Warp 0,45165,233,236
+
+block
+window 501075,next
+window 501076,next
+window 501077,ok
+window_ok
+giveitem 88017
+Warp 0,45165,233,236

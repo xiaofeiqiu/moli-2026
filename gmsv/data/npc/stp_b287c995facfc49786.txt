@@ -1,0 +1,24 @@
+block item 1000504 == 1
+	window"快去吧，不然稻田里的庄稼就全被糟蹋干净了。",ok
+block item 1000506 == 1
+	window"快去吧，不然稻田里的庄稼就全被糟蹋干净了。",ok
+block item 1000505 == 1
+	window"这么快就有收获了？这个是野兽残留下的肉吗？",next
+	window"恩。。。没错的，根据肉上连带的毛发几乎可以肯定是野猪留下的。",next
+	window"狂怒的野猪今天晚上肯定会来报复的，不如我们在野猪到来前去围剿他的巢穴！",next
+	window"拿着这把刀子，也许会有用的！一切就拜托你了！",ok
+	window_ok
+	killitem 1000505
+	giveitem 1000506
+block level >= 130
+	window"冒险者吗？",next
+	window"能帮我个忙吗？",next
+	window"是这样的，最近村外稻田里的庄稼少了很多，我们这村的人全要靠这个吃饭的啊。",next
+	window"这样下去，村民都会饿死的，本来这个事情应该是我们自己解决的。",next
+	window"可是村里的年轻人都离开村子了。。。",next
+	window"请拿着这个捕兽夹去稻田里抓住那些讨厌的野兽吧。",ok
+	window_ok
+	giveitem 1000504
+
+block level <= 129
+	window"你还不够强大！",ok

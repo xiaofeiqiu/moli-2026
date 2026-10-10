@@ -1,0 +1,13 @@
+block level > 59 && item 352 == 0 && itemspace >=1
+	Window"\n\n听说他们老师发现了一个墓穴,里面时不时传出可怕的声音\n\n不过对于冒险家们却是个不错的地方啊,说不定有很多宝藏呢!",next
+	Window"\n\n你也想去看看啊?那你到魔法大学门口找冒险家阿鲁,他刚刚从那里出来,他应该能帮助你!",ok
+		Window_ok
+			giveitem 352,1
+
+block item 352 == 1
+	Endwindow"\n\n嗯,去吧."
+
+block
+	Endwindow"\n\n你好,勇士你的背包看起来好重!"
+
+#18448 传送票

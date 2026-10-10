@@ -1,0 +1,13 @@
+block endevent 558 == 1
+window "\n\n传送到西尔维村需要850G,你确定要传送吗?",yes,no
+window_yes gold < 850
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -850
+leavegroup
+Warp 0,63408,14,43
+window_no
+endwindow "\n\n欢迎你再度使用."
+
+block
+endwindow "\n\n对不起,你没有利用此传送点的资格." 

@@ -1,0 +1,10 @@
+############希望的追寻者#
+#block Item 5510117 <= 1 && itemcreatetime 5510117 >= 1440
+window"\n\n\n@c 要打开看看圣诞老人给你准备了什么礼物吗?",OK
+window_OK
+killitem 5510117
+endevent 670 = 1
+CheckTitle
+
+block
+endwindow"\n\n\n@c 不要急哦!  \n这还是一个空袜子呢!"

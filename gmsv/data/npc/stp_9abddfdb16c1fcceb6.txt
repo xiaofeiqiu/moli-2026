@@ -1,0 +1,19 @@
+block item 500144 == 1
+endwindow "\n\n去圣拉鲁卡村的酒吧找我的眼线里瑞斯吧！"
+
+block item 500143 == 1 && ItemCreateTime 500143 >= 480
+window "\n\n你来啦！那位神秘的夫人我们找到其的行踪了。详细情况你去圣拉鲁卡村的酒吧找我的眼线里瑞斯吧！",ok
+window_ok
+killitem 500143
+giveitem 500144
+
+block item 500142 == 1
+window "\n\n威廉的事我已经知道了，说吧~~我能帮到你什么？",next
+window "\n\n根据你的描述这位夫人，我敢保证绝对不是莎莲娜这块地界的人。这样吧~~我把你的描述的那个夫人画成图像让我在全法兰布下的眼线给你查找。",next
+window "\n\n你8小时后再来找我，我肯定给你找到那个夫人。",ok
+window_ok
+killitem 500142
+giveitem 500143
+
+block
+endwindow "\n\n在莎莲娜地域没有我不知道的事！"

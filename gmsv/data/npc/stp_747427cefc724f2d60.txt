@@ -1,0 +1,10 @@
+block
+Window "\n\n这里可以坐船回到雷克塔尔镇,船资是1000金币.",next
+Window "\n\n\n要进入栈桥吗?",yes,no
+Window_no
+Window_yes gold < 1000
+EndWindow "\n\n很抱歉,你的钱不够了."
+Window_yes
+addgold -1000
+LeaveGroup
+Warp 0,40005,18,55

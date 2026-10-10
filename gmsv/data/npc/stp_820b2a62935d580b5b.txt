@@ -1,0 +1,14 @@
+block
+setaction 10
+Window "\n\n唔......我快不行了...我已经用突风把祂送走了...也许祂已经回到冥界里层了吧...最后......希望...你能......替我...复仇......",ok
+Window_ok
+changepal 22,120
+Window "\n\n『阿鲁卡那斯用尽最后的力量,摘下了身上的一根羽毛,吹向了你』",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏满了.",
+Window_ok
+LeaveGroup
+EndEvent 517 = 1
+CheckTitle
+giveitem 141206
+Warp 0,1000,141,148

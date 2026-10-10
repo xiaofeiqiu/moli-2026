@@ -1,0 +1,9 @@
+block
+	Window"\n\n清明节时，点燃自己制作的纸灯，将逝者的名字写在上面，让它随波逐流进入大海，逝者的灵魂将得到祈福，升华至天堂",next
+	Window"\n\n但这几天，入海口的堤岸闹起了鬼，许多纸灯都被摧毁了，你能去调查一下吗？",yes,no
+		Window_no
+	Endwindow"\n\n这样啊，那我只能指望其他人了。"
+		Window_yes
+	Window"\n\n请多加小心!",ok
+		Window_ok
+			Warp 0,44885,7,8

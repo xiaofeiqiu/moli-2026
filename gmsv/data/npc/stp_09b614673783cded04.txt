@@ -1,0 +1,11 @@
+block item 60007>= 1
+endwindow "\n\n这种文字已经很少人能看懂了."
+
+
+block item 60006>= 1
+window "\n\n纸条上的文字是法兰古代文字,我已经给你翻译好了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 60006
+giveitem 60007

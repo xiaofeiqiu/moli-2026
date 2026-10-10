@@ -1,0 +1,8 @@
+block item 3500 >= 1
+window "\n这是一张古老的画卷,要拿起来看看吗?",yes,no
+window_YES item 3502 < 1 && itemSpace >= 1
+giveitem 3502,1
+window_YES item 3502 >= 1
+endWindow "\n已经没别的线索留给你了...",ok 
+window_YES itemspace < 1
+endWindow "\n你的物品满啦!",ok

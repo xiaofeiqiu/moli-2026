@@ -1,0 +1,20 @@
+#引荐
+#持有道具
+
+##############  ##############
+block Item 900015 == 1 && Item 18989 != 0 && Item 900016 == 0
+	KillItem 900015
+	GiveItem 900016
+	EndWindow 900032,OK
+
+block Item 18989 != 0
+        EndWindow 900042,OK
+
+block Item 18989 == 0
+        EndWindow 900031,OK
+
+block Item 900016 != 1
+	EndWindow 900042,OK
+
+block
+        EndWindow 900042,OK

@@ -1,0 +1,9 @@
+block level >= 170
+	Window "\n\n　原来冥界的魔物就是从这里不断传出的，你一切小心，里面的魔物十分强大",ok
+	window_ok
+        leavegroup
+        Warp 0,334,10,10
+block level < 170
+        Window "\n\n　你的实力不够，不足已对抗这些魔物",ok
+	window_ok
+        

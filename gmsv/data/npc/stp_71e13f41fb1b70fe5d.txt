@@ -1,0 +1,53 @@
+block HouseId == 0
+	window "\n\n\n@c这里是“私人仓库”的契约中心。租金是1年3000个金币，请先付清。要租吗？",yes,no
+	Window_YES Gold < 3000
+		endWindow "\n\n\n@c很抱歉你的钱不够。",OK
+	Window_YES
+		AddGold -3000
+		SetHouse 4,365
+		endWindow "\n\n\n@c契约已经生效。",OK
+	Window_NO
+		endWindow "\n\n\n@c欢迎你下次再来。",OK
+block HouseId == 4 && HouseLimit <= 0
+	window "\n\n\n@c这里是“私人仓库”的契约中心。租金是1年3000个金币，请先付清。要租吗？",yes,no
+	Window_YES Gold < 3000
+		endWindow "\n\n\n@c很抱歉你的钱不够。",OK
+	Window_YES
+		AddGold -3000
+		SetHouse 4,365
+		endWindow "\n\n\n@c契约已经生效。",OK
+	Window_NO
+		endWindow "\n\n\n@c欢迎你下次再来。",OK
+block HouseId != 4 && HouseLimit <= 0
+	window "\n\n\n@c这里是“私人仓库”的契约中心。租金是1年3000个金币，请先付清。要租吗？",yes,no
+	Window_YES Gold < 3000
+		endWindow "\n\n\n@c很抱歉你的钱不够。",OK
+	Window_YES
+		AddGold -3000
+		SetHouse 4,365
+		endWindow "\n\n\n@c契约已经生效。",OK
+	Window_NO
+		endWindow "\n\n\n@c欢迎你下次再来。",OK
+block HouseId == 4 && HouseLimit > 0 && HouseLimit <= 6048000
+	window "\n\n\n@c现在和“私人仓库”订的契约时间剩下@h。花3000个金币便能延长时间。要延长吗？",yes,no
+	Window_YES Gold < 3000
+		endWindow "\n\n\n@c很抱歉你的钱不够。",OK
+	Window_YES
+		AddGold -3000
+		SetHouseLimit +365
+		endWindow "\n\n\n@c契约已经生效。",OK
+	Window_NO
+		endWindow "\n\n\n@c欢迎你下次再来。",OK
+block HouseId == 4 && HouseLimit > 6048000
+	window "\n\n\n@c现在和“私人仓库”订下的契约时间是@h。这是法兰国所订下的最大期限。请把延长的时间订在70天以下再来吧！",OK
+	endWindow "\n\n\n@c欢迎你下次再来。",OK
+block HouseId != 4 && HouseLimit > 0
+	window "\n\n\n@c你已经和别的房屋订下契约了，那里剩下的契约时间是@h。在这里你能解除契约，并和新的“私人仓库”打契约。租金是1年3000个金币，请先付清。一旦打下契约，之前订的契约就会被解除。要租吗？",yes,no
+	Window_YES Gold < 3000
+		endWindow "\n\n\n@c很抱歉你的钱不够。",OK
+	Window_YES
+		AddGold -3000
+		SetHouse 4,365
+		endWindow "\n\n\n@c契约已经生效。",OK
+	Window_NO
+		endWindow "\n\n\n@c欢迎你下次再来。",OK

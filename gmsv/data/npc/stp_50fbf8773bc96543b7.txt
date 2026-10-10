@@ -1,0 +1,6 @@
+block
+window "\n\n又见到可爱的小猫咪们,嘻嘻.",next
+window "\n\n我们还真是有缘分啊.",next
+window "\n\n不过不会让你们活着回去啦.",ok
+window_ok
+Encount 2|0,25220,425,343||0|||||0|50001|||||||||

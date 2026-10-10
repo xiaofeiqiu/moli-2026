@@ -1,0 +1,5 @@
+block
+window 933731,next
+window 933732,ok
+window_ok
+Encount 2|0,27225,12,7||0|||||0|88024|||||||||

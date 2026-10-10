@@ -1,0 +1,4 @@
+block item 72023== 0
+	Window"\n\n看到一本古老的书，拿了起来。",ok
+		Window_ok
+			giveitem 72023,1

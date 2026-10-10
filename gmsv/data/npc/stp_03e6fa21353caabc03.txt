@@ -1,0 +1,14 @@
+block item 500146 == 1
+endwindow "\n\n艾弗博士目前在索奇亚沙漠研究刚出土的龙之骸骨！"
+
+block item 500134 == 1
+window "\n\n这...这...不是那冰雪皇后才拥有的雪珠吗？怎么...怎么会在您的手中？",next
+window "\n\n原本这颗雪珠并不是雪后的，这颗珠子真正的主人属于一条叫寒冰巨龙王的。",next
+window "\n\n至于冰雪皇后是怎么获得就不清楚了。不过我认识个专门研究龙族的专家叫艾弗博士或许他知道详情。他目前在索奇亚沙漠研究刚出土的龙之骸骨！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_ok
+giveitem 500146
+
+block
+endwindow "\n\n我能鉴定出任何稀世珍宝！"

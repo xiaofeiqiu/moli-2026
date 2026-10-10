@@ -1,0 +1,26 @@
+block endevent 558 == 1
+window "\n\n那么,请一路小心.",ok
+leavegroup
+Warp 0,63408,14,43
+
+
+
+block item 1000057 >= 1 && item 1000052 >= 1
+window "\n\n虽然山路还没有打通,但我们的先遣队已经到达了西尔维村,并建立了临时传送门,你快点赶过去吧.",ok
+window_ok item 1000057 >= 1 && item 1000052 >= 1
+leavegroup
+Warp 0,63408,14,43
+
+
+
+block item 1000054 >= 1
+endwindow "\n\n山路难行,路上小心."
+
+block
+window "\n\n你们也平安到达了么,实际上这里我们从来没到过,一切都很不熟悉呀.",next
+window "\n\n根据探索队员的报告,东北方的雪山附近应当是有山路可以翻过雪山,所以队长已经带领先遣队伍出发了,不过据说他们在山麓上出了些问题,所以你现在出发还可以追上他们.",next
+window "\n\n顺路把这些补给带给已经出发的队伍吧,山路难行,路上小心.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 1000054

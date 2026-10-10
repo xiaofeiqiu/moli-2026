@@ -1,0 +1,11 @@
+block globalFlag 343 == 0 && globalFlag 346 == 0
+window 7020246,next
+window 7020247,next
+window 7020248,yes,no
+window_yes
+LeaveGroup
+globalFlag 343 = 1
+endwindow 7020249
+
+block
+endwindow 7020250

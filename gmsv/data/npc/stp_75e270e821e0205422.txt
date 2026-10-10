@@ -1,0 +1,61 @@
+block item 87953 == 1
+endwindow 933403
+
+block item 87952 == 1
+endwindow 933403
+
+block item 87951 == 1
+endwindow 933403
+
+block item 87954 == 1
+endwindow 933403
+
+block item 87949 == 1 && item 87917 == 1
+window 933404,next
+window 933405,next
+window 933406,next
+window 933407,ok
+window_ok
+killitem 87917
+killitem 87949
+giveitem (87954%25,87951%50,87952%25,87953%25)
+givepet 101115
+
+block item 87927 == 1
+endwindow 933408
+
+block item 87926 == 1
+window 933409,next
+window 933410,next
+window 933411,next
+window 933412,next
+window 933413,ok
+window_ok
+killitem 87926
+giveitem 87927
+endwindow 933414
+
+block item 87917 == 1
+endwindow 933415
+
+block item 87916 == 1
+window 933416,next
+window 933417,next
+window 933418,ok
+window_ok
+killitem 87916
+giveitem 87917
+endwindow 933419
+
+block item 87910 == 1
+endwindow 933420
+
+block item 87909 == 1
+window 933421,next
+window 933422,ok
+window_ok
+killitem 87909
+giveitem 87910
+
+block
+endwindow 933423

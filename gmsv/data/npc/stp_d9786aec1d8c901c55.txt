@@ -1,0 +1,24 @@
+block endevent 527 == 1
+endwindow "\n\n今天来这里是想看看大家的钓鱼成果吗?"
+
+
+block item 39741 >= 1 && item 39742 >= 1 && item 39743 >= 1
+window "\n\n想不到你有钓鱼高手的三件套,可以把它们送给我吗?",yes,no
+window_no
+endwindow "\n\n真小气,考虑一下吧,送给我,我会报答你的"
+window_yes item 39741 >= 1 && item 39742 >= 1 && item 39743 >= 1
+killitem 39741
+killitem 39742
+killitem 39743
+endevent 527 = 1
+checktitle
+endwindow "\n\n今天起,你将是钓鱼界的高手!"
+
+
+block
+endwindow "\n\n我最羡慕那些钓鱼高手了,在我看来,能拥有三件不同的钓鱼高手首饰的人就该是高手了.你有那些首饰吗?"
+
+
+
+
+

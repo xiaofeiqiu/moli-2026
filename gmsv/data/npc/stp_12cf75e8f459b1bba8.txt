@@ -1,0 +1,7 @@
+block item 87089 == 1 && item 87101 == 1
+window "\n\n你要打开这里的机关吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87101
+Warp 0,25160,13,53

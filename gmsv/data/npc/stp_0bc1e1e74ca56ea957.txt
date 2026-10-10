@@ -1,0 +1,26 @@
+block item 87470 == 1
+endwindow "\n\n快去吧不然要来不及了！"
+
+block item 87471 == 1
+endwindow "\n\n快去吧不然要来不及了！"
+
+block item 87468 == 1 && item 87469 == 1
+window "\n\n这是我启动另外2个机关获得的水晶球，快去启动卡尔蒂姆人的终极毁灭武器。",ok
+window_ok
+giveitem 87470
+giveitem 87471
+window "\n\n根据卡尔蒂姆人刻的壁画看来，当年他们尽了全力只把那怪物引进了这个遗迹里，还没启动毁灭武器消灭它时，因为这怪物身上的粘液的感染最后仅存的人也死了。",next
+endwindow "\n\n幸好这遗迹迷宫重重才把这怪物困在这里几千年，因时间关系这里的机关开始老化，那只怪物有了逃出这里的能力。现在只能靠我们启动那武器将他消灭了，不过前提得缠住他在武器的中央。"
+
+block item 87467 == 1
+endwindow "\n\n快去吧不然要来不及了！"
+
+block item 87466 == 1
+endwindow "\n\n快去吧不然要来不及了！"
+
+block
+window "\n\n怎么会有陌生人能到这里来啊！正好里面的怪物快跑出来，你快用这2个水晶球去启动卡尔蒂姆人的机关。",ok
+window_ok
+giveitem 87466
+giveitem 87467
+endwindow "\n\n机关就在这遗迹的左右2边深处。"

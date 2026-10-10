@@ -1,0 +1,12 @@
+block item 60477 >= 1
+window "\n\n哈哈哈!总算把那个失败品解决了!",next
+window "\n\n咳...我是...啊,头号疼...",next
+window "\n\n我是说,谢谢你为我的兄弟们报仇.现在我也可以行走了,它掉落下来的东西就让我带去给女王殿下吧.",ok
+window_ok item 60477 >= 1
+killitemall 60477
+giveitem 60478
+leavegroup
+Warp 0,43100,120,107
+
+block
+endwindow "\n\n你不应该出现在这里!"

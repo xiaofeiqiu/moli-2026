@@ -1,0 +1,8 @@
+block Item 6518 >= 1 && Item 6519 >= 1
+	Window "\n\n没错,你拿的那个护身符上有她的味道,和她有关系的人我是一个都不会放过的!\n\n她又打算羞辱于我吗?",OK
+	Window_OK Item 6518 >= 1 && Item 6519 >= 1
+        KillItem 6519,1
+Encount 3|0,6748,12,6|||||0|||83010|||||||||
+
+block
+	EndWindow "\n\n......"

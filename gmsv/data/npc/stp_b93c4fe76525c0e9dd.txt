@@ -1,0 +1,9 @@
+block item 15690 == 1 && item 15687 == 1
+Window "\n\n\n@c以雷克的名义,将此物永久封印!",yes,no
+window_no
+endwindow "\n\n\n@c请尽快强此物封印."
+window_yes
+KillItem 15690
+KillItem 15687
+giveitem (15691%1,15692%1)
+endwindow "\n\n\n@c一股强大的力量正在将寄生体封印..."

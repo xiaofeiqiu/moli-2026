@@ -1,0 +1,17 @@
+block StrCmpChat == 85646 && item 86415 >= 1 && item 86416 < 1
+window "\n\n关于赫顿的消息，最后一次见到他是在村子东北方向的花园处。因为那里突然出现了一个奇怪的装置，村子里的人都过去围观。",next
+window "\n\n我曾想要走进那个装置进行观察，就被赶来的法兰近卫士兵拦了下来，现在那里驻有大批士兵把守，普通国民都是禁止靠近的。当我回到村子之后，赫顿就再也没遇见。真不知道他现在如何了，他的家人一定很担心吧！",ok
+window_ok
+leavegroup
+killitem 86415
+giveitem 86416
+
+block item 86413 >= 1 && item 86414 < 1
+window "\n\n这是我哥所需要的特产，请拿好。",ok
+window_ok
+leavegroup
+killitem 86413
+giveitem 86414
+
+block
+endwindow "\n\n................."

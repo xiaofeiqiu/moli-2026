@@ -1,0 +1,6 @@
+block petSpace == 4
+      killitem 52221,1
+leavegroup
+      Warp 0,912,25,25
+block petSpace < 4
+      Endwindow "\n\n学习时身上只可带一只宠物进入~" 

@@ -1,0 +1,15 @@
+block item 87691 == 1
+window "\n\n果然不愧是异世界的勇者，不过却让魔族长老手下跑了，看来三界大规模的杀戮是阻止不了。",next
+window "\n\n不过好坏魔族没了一位得力大将，这是我的心意，这光环定能给你日后带来大用处。",ok
+window_ok
+killitem 87691
+giveitem 87692
+Warp 0,29939,4,14
+
+block item 87690 == 1
+window "\n\n果然不愧是异世界的勇者，不过却让魔族长老手下跑了，看来三界大规模的杀戮是阻止不了。",next
+window "\n\n不过好坏魔族没了一位得力大将，这是我的心意，这光环定能给你日后带来大用处。",ok
+window_ok
+killitem 87690
+giveitem 87693
+Warp 0,29939,4,14

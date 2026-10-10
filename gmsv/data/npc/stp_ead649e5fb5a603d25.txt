@@ -1,0 +1,12 @@
+block	itemspace<1
+Endwindow"\n\n\n@c 你的物品满了！"
+block	item 591423>=1
+Endwindow"\n\n\n@c 去吧。"
+block	item 591422>=1
+window"\n\n\n 你是来找杰恩的吗？我是他的弟弟。",next
+window"\n\n\n 不过他出门去了，不会很快回来，如果想找他，可以去东边的幽暗洞窟里找他，他应该在那洞中深处的某个地方吧！",next
+window"\n\n\n 对了，那个洞十分昏暗，请带着这个吧！",ok
+window_ok
+Giveitem 591423,1
+Block
+Endwindow"\n\n\n@c 我哥哥最近总是出门去，他说要去调查一个洞穴!"

@@ -1,0 +1,8 @@
+block item 60510 >= 1
+window "\n\n真实之镜突然闪耀了起来,是否要使用真实之镜?",ok
+window_ok item 60510 >= 1
+leavegroup
+Warp 0,57097,20,21
+
+
+

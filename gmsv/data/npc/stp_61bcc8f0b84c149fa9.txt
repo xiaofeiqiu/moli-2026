@@ -1,0 +1,9 @@
+block EndEvent 515 == 1 && item 141193 == 1
+Window "\n\n『一块薄冰,下面似乎有通路?要使用锄头敲碎吗?』",yes,no
+Window_no
+Window_yes
+Window "\n\n『咣..咣..咣..』",ok
+Window_ok
+killitem 141193
+LeaveGroup
+Warp 0,57402,16,12

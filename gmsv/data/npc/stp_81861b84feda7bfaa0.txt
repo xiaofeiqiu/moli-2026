@@ -1,0 +1,8 @@
+block itemspace == 0 || petspace == 0
+	window"物品栏或宠物栏已满！",ok
+
+block item 795011 == 1
+	window"要打完美水晶兑换卡么？",yes,no
+	window_yes
+	killitem 795011
+	giveitem (1000477%25,1000478%25,1000479%25,1000480%25)

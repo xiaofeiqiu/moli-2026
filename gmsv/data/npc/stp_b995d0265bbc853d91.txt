@@ -1,0 +1,23 @@
+block item 88364 == 1
+window "\n\n你回来的真及时，天快黑了，这些蜡烛正好派上用场。现在我就带你去住宿的地方，请跟我来~~",ok
+window_ok
+LeaveGroup
+killitem 88364
+Warp 0,14299,7,3
+
+block item 88362 == 1
+endwindow "\n\n没想到预言师奥姆来神殿了。搞得我们几个快忙死了。"
+
+block item 88361 == 1
+window "\n\n对不起~今天神殿比较多，接待员都很忙碌，没来得及接待你食宿。",next
+window "\n\n现在您有空吗，能否帮个小忙？",yes,no
+window_no
+window_yes
+window "\n\n神殿最近蜡烛用的很快你能跑趟鲁米那斯村的杂货店买箱蜡烛会回来吗？",yes,no
+window_no
+window_yes
+killitem 88361
+giveitem 88362
+
+block
+endwindow "\n\n我是专门接待来神殿觐见圣女的人员。"

@@ -1,0 +1,33 @@
+block item 88329 == 1
+endwindow "\n\n药剂完成了，希望王子尽快还我自由！"
+
+block item 88324 == 1 && item 88325 == 1 && item 88326 == 1 && item 88327 == 1 && item 88328 == 1
+window "\n\n没想到当年我花了半辈子时间收集的这些材料你只需数日就弄齐了。孩子你今后前程无可限量。",next
+window "\n\n我马上给王子制作植物成长加速剂，我已经迫不及待过以前自由自在的生活了。",ok
+window_ok
+killitemall 88324
+killitemall 88325
+killitemall 88326
+killitemall 88327
+killitemall 88328
+giveitem 88329
+
+block item 88320 == 1
+window "\n\n哇塞~这...这...不是传说中的千年树叶，能否把它送我。我不会让你白送的，我会给你一个惊喜的礼物哦！",ok
+window_ok
+killitem 88320
+giveitem 88331
+
+block item 88323 == 1
+endwindow "\n\n我的研究室就在城外291.433处的树下。"
+
+block item 88322 == 1
+window "\n\n真的吗？只要我研制出植物成长加速剂王子就会释放我吗？",next
+window "\n\n其实这玩意我很久前就研制出来了，不过它的配方记录我留在了研究室内。你只要在按记录上写的素材带给我进行调配即可。",ok
+window_ok
+killitem 88322
+giveitem 88323
+endwindow "\n\n我的研究室就在城外291.433处的树下。"
+
+block
+endwindow "\n\n我只是搞研究的，为什么说我违反自然规律。"

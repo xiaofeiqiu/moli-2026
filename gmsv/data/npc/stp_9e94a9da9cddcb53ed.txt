@@ -1,0 +1,4 @@
+block item 1000506 == 1
+	killitem 1000506
+	leavegroup
+	Warp 0,608,131,19

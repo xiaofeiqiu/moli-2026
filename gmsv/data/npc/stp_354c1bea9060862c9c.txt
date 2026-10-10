@@ -1,0 +1,7 @@
+block	item 60398 ==1
+    window "\n\n 谢谢你,这个礼物送给你吧",yes,no
+    Window_yes
+	killitem 60398,1
+	giveitem 60399,1
+	leavegroup
+	Warp 0,1000,242,88

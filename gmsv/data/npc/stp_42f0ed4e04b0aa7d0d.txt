@@ -1,0 +1,21 @@
+block endevent 663 == 1
+endwindow"\n\n我没有什么可给你的，下吧你！"
+
+block item 40584 == 1
+window"\n\n你居然拥有这么强大的力量！连4圣的联手都无法击败你！",next
+window"\n\n在与你的战斗中。我感到了忧伤，不过不是我的 是你的！",next
+window"\n\n这么强大的你，就算我复活与4兽联手也无法击败的你，居然也会有忧伤？",next
+window"\n\n作为你击败神的证明，给予你这个，收下吧",OK
+window_OK
+killitem 40584,1
+endevent 663 = 1
+CheckTitle
+givepet 880100
+leavegroup
+Warp 0,1000,246,91
+
+block
+window"\n\n\n@c 无知的人类  滚!!!",ok
+window_OK
+leavegroup
+Warp 0,1000,246,91

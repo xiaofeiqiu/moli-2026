@@ -1,0 +1,17 @@
+block item 88382 == 1
+endwindow "\n\n过度饮酒，有害身心！"
+
+block item 88381 == 1
+window "\n\n想打听从恶魔岛上回来的人？呵呵~~如果你在我这买瓶威士忌的话我就告诉你。",next
+window "\n\n售价5000魔币，要买吗？",yes,no
+window_no
+window_yes gold < 5000
+endwindow "\n\n你的魔币不足！"
+window_yes gold >= 5000
+addgold - 5000
+killitem 88381
+giveitem 88382
+endwindow "\n\n你看见村里有片墓地没，在墓地里喝酒的就是你要找的人。"
+
+block
+endwindow "\n\n你想要点什么酒？"

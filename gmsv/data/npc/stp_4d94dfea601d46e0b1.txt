@@ -1,0 +1,111 @@
+block item 86241 >= 1
+window "\n\n野狼船长原名贝拉米,是三百年前一名海贼头目,他的海贼团只求财,不会伤及无辜,还会将一些从贵族手中掠夺来的物资赠予贫穷百姓.",next
+endwindow "\n\n最终他还是离开了人世,而他的海贼团也发生了分歧,海贼之间的争斗也由此展开."
+
+
+
+block item 86239 >= 1
+window " \n\n贝拉米?没错!这个字迹的确就是野狼船长贝拉米的!这本日记是野狼船长贝拉米所写的日记之一,毕竟一本书不可能记录太多内容,不过日记里面并没有特殊的内容.",ok
+window_ok item 86239 >= 1
+killitem 86239
+GiveItem 86241
+
+
+
+block Leak0Item 18352 >= 1
+Window 14028,YES,NO
+Window_YES
+KillLeak0item 18352,1
+Window 14030,NEXT
+EndWindow14031
+Window_YES
+Window_NO
+
+
+block Leak0Item 18354 >= 1
+Window 14028,YES,NO
+Window_YES
+KillLeak0item 18354,1
+Window 14030,NEXT
+EndWindow14031
+Window_YES
+Window_NO
+
+
+block Leak0Item 18356 >= 1
+Window 14028,YES,NO
+Window_YES
+killleak0item 18356,1
+Window 14030,NEXT
+EndWindow14031
+Window_YES
+Window_NO
+
+
+
+block Leak0Item 18355 >= 1
+Window 14028,YES,NO
+Window_YES Leak0item 18355 >= 1
+KillLeak0item 18355,1
+GiveLeak1item 18355,1
+Window 14029,NEXT
+EndWindow14031
+Window_YES
+Window_NO
+
+block Leak0Item 18353 >= 1
+Window 14028,YES,NO
+Window_YES Leak0item 18353 >= 1
+KillLeak0item 18353,1
+GiveLeak1item 18353,1
+Window 14029,NEXT
+EndWindow14031
+Window_YES
+Window_NO
+
+block Leak0Item 18351 >= 1
+Window 14028,YES,NO
+Window_YES Leak0item 18351 >= 1
+KillLeak0item 18351,1
+GiveLeak1item 18351,1
+Window 14029,NEXT
+EndWindow14031
+Window_YES
+Window_NO
+
+block Leak1Item 18356 >= 1
+Window 14050,YES,NO
+Window_YES 18356 >= 1
+KillLeak1item 18356,1
+Window_YES
+Window_NO
+
+
+block Leak1Item 18354 >= 1
+Window 14052,YES,NO
+Window_YES 18354 >= 1
+KillLeak1item 18354,1
+Window_YES
+Window_NO
+
+
+
+block Leak1Item 18352 >= 1
+Window 14051,YES,NO
+Window_YES 18352 >= 1
+KillLeak1item 18352,1
+Window_YES
+Window_NO
+
+
+
+block Leak1item 18351 >= 1 || Leak1item 18353 >= 1 || Leak1item 18355 >= 1
+EndWindow 14044
+
+block Item 18361 >= 1 || Item 18362 >= 1 || Item 18363 >= 1
+EndWindow 14048
+
+
+block
+Window 14044,NEXT
+EndWindow 14027

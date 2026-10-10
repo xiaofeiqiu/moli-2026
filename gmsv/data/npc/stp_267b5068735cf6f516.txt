@@ -1,0 +1,10 @@
+block item 123200 >= 1
+window "\n\n算了吧,到此为止.这个东西算是我给你们的\n\n你们以后也别再来了,我们河水不犯井水.",ok
+window_ok item 123200 >= 1
+killitemall 123200
+giveitem 123202
+leavegroup
+Warp 0,1000,141,148
+
+block
+Endwindow "\n\n...................."

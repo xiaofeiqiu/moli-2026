@@ -1,0 +1,22 @@
+block item 1000129 >= 1 && item 1000128 >= 1
+endwindow "\n\n您还有其他任务吗?不如留下来吃个饭."
+
+
+block item 1000128 >= 1 && item 1000126 >= 1
+endwindow "\n\n似乎您还有其他任务,那么我就不多留您了."
+
+
+block item 1000127 >= 1
+window "\n\n欢迎光临,如果您要买东西请到柜台.",next
+window "\n\n啊,原来是送货员,很好很好,非常感谢您.我知道这些货不太好送,您送到这么远的地方真实辛苦您了,作为感谢,请您务必收下这个.",next
+window "\n\n这些金币请您再替我交给罗赛特先生.再次感谢您的帮助.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok item 1000127 >= 1
+killitem 1000127
+giveitem 1000128
+giveitem 1000132,2
+
+
+block
+endwindow "\n\n眼看着只缺少一种材料而无法开工真是一种微妙的感觉啊......"

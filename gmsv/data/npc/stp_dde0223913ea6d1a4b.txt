@@ -1,0 +1,11 @@
+block
+window "你身上的那个铁匣子满有兴趣的~!给我好吗?",yes,no
+window_no "哼..小气的家伙~!"
+window_yes 
+if item 900296==1 && itemspace >=1
+killitem 900296,1
+giveitem 900295,1
+else
+Endwindow "@n~!你也太不老实了,没有东西你也乱点确定~!"
+endif
+endwindow "\n\n 这个给你,我地上捡得.不知有什么用~!"

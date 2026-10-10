@@ -1,0 +1,9 @@
+block
+window "\n\n现在这里空无一人,你可以在做一些必要的调查,我想汉克一定很好奇海贼老窝的样子!如果你有时间,可以把全局都画下来!啊哈哈哈哈!辛苦了!",next
+window "\n\n想要离开吗?",yes,no
+window_no
+window_yes
+window "\n\n如果你还要进来,就再来找我,我会再带你进来的!",ok
+window_ok
+leavegroup
+Warp 0,400,581,258

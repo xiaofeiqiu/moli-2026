@@ -1,0 +1,8 @@
+block item 87671 == 1
+Warp 0,29868,15,26
+
+block
+window "\n\n吾以败阵，守护之物将归于乃！",ok
+window_ok
+giveitem 87671
+Warp 0,29868,15,26

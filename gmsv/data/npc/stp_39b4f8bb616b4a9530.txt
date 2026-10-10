@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至地之石碑 ？",yes,no
+		Window_yes
+			KillItem 60220,1
+			Warp 0,300,627,300
+		Window_no

@@ -1,0 +1,14 @@
+block endevent 570 == 1
+endwindow 9842,ok
+
+
+block item 3820 >= 1
+endwindow 9841,ok
+
+
+block item 3819 >= 1
+endwindow 9840,ok
+
+
+block
+endwindow 9839,ok

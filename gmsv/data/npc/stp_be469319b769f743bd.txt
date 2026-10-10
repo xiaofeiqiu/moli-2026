@@ -1,0 +1,15 @@
+block	endevent 701	==	1
+	Window "\n\n　开启者啊，你顺利的解决了洛丹伦的瘟疫，实在是给法兰国争面子啊",OK
+		Window_OK
+block	item 99999	==	1
+	Window "\n\n　开启者，你不是去洛丹伦了么？",next
+	EndWindow "\n\n　那里的居民正在受苦，快去解救他们吧！",OK
+		Window_OK
+block
+	Window "\n\n　开启者啊,从远方的洛丹伦国的使者来向我们法蓝王国求救了!",next
+	Window "\n\n　听说那里被邪恶的瘟疫入侵了,我和国王商量后决定让你代表我们国家去",next
+	Window "\n\n　一切就靠你了,开启者",OK
+		Window_OK
+			giveitem 99999
+			LeaveGroup
+			Warp 0,33108,22,23

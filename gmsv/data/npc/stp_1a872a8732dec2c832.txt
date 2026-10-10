@@ -1,0 +1,19 @@
+
+block item 652638 >= 1 && item 652639 >= 1 && item 652640 >= 1
+window "\n\n这不是女王给予她孩子们的信物吗?",next
+window "\n\n原来是这样,对于这些事,我们作为下属的也并不清楚,能协助勇者们也是我们龙族的荣幸,下面就由我给你引导至通往我们龙族的时空波动隧道.",ok
+window_ok
+killitem 652638
+killitem 652639
+killitem 652640
+leavegroup
+Warp 0,56030,2,10
+
+
+
+
+
+block
+endwindow "\n\n......"
+
+

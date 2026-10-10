@@ -1,0 +1,16 @@
+block item 87603 == 1
+endwindow "\n\n我的丈夫真的安然无恙吗？"
+
+block item 87602 == 1
+endwindow "\n\n太感谢了。"
+
+block item 87601 == 1
+window "\n\n镇子的出产并不是非常丰富，因为我丈夫和其他人在不农忙的时候会一起结伴去西方的海边捕鱼来增加收入。",next
+window "\n\n这次他们结伴都去了好几天了，一直没有消息传回来。你看起来是个很有能力的冒险家，能拜托你去西方海边寻找一下他们的消息么？",yes,no
+window_no
+window_yes
+giveitem 87602
+endwindow "\n\n太感谢了。请带上这个吧，万一有什么意外也好有个应对。"
+
+block
+endwindow "\n\n太好了，终于等到法兰找到我们的时候了。"

@@ -1,0 +1,12 @@
+Block item 361038 == 1
+Window "\n\n额,你也是来调查这次杀人事件的吗?真的很棘手",next
+Window "\n\n调查部的人最近都忧心忡忡,不管怎么说,你来了就好,我送你去调查部.",next
+Killitemall 361038
+Leavegroup
+Warp 0,62100,8,13
+
+
+
+#
+Block
+EndWindow "\n\n没事就请走开吧!"

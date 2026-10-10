@@ -1,0 +1,13 @@
+block
+window "\n\n梅伯尔怎么会变成怪物...这究竟是怎么回事啊!",next
+window "\n\n喂,你快过去看看,船头有个暗道,不知道其他人怎么样了.",next
+window "\n\n我没你那么强大,先回去报告了.接下来就拜托你了",ok
+window_ok
+leavegroup
+Warp 0,57062,45,26
+
+
+
+
+
+

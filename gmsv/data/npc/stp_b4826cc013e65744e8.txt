@@ -1,0 +1,6 @@
+block
+window "\n\n谢谢你好心人，让你跑来跑去的，替我们奔波。",next
+window "\n\n咦~~外面怎么这么热闹，不好我们被士兵包围了！",ok
+window_ok
+LeaveGroup
+Warp 0,28644,1,9

@@ -1,0 +1,8 @@
+block itemspace >= 1
+window "\n\n这里是时空的裂痕.穿越而来的开启者啊,你所拯救的未来世界又将因为我们与黑龙族间阻隔消失而陷入纷争,支持严苛管束从而守护这个世界的你一定会帮助我们白龙一族吧...那么,未来再见吧",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3869,1
+leaveGroup
+Warp 0,300,562,348

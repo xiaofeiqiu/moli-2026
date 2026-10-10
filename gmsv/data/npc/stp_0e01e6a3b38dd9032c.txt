@@ -1,0 +1,6 @@
+block item 1000073 >= 1
+window "\n\n你要去无极漩涡吗?",yes,no
+Window_no
+Window_yes
+LeaveGroup
+Warp 0,63424,46,22

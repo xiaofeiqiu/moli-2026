@@ -1,0 +1,17 @@
+block item 50964 >= 1
+Endwindow"\n\n\n其他人也许也受到了袭击,麻烦你尽快去帮助他们吧."
+
+
+######获得物品【矿石包A】
+block item 50963 >= 1
+Window "\n\n受到邪气的影响,怪物突然狂暴了,我们只好逃到这里躲起来,你是村子里派来的救援者吧!其他人也许也受到了袭击,麻烦你尽快去帮助他们吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 50963 >= 1
+giveitem 50964
+LeaveGroup
+Warp 0,57127,27,11
+
+
+block
+Endwindow"\n\n\n请去找护卫队长看看,有没有指派任务吧."

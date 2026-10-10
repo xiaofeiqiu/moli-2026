@@ -1,0 +1,7 @@
+block
+window "\n\n勇士，谢谢你救了我，不过我不会回到米雪儿的身边，因为她根本不爱我，更不会关心我。",next
+window "\n\n这是我写给米雪儿的信，麻烦你转交给她吧！",ok
+window_ok
+leavegroup
+giveitem 86908
+Warp 0,1000,233,78

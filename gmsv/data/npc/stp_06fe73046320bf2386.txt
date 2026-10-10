@@ -1,0 +1,14 @@
+block item 88319 == 1
+endwindow "\n\n绷带为紧俏物资每人一次限买一卷！"
+
+block item 88318 == 1
+window "\n\n绷带5000魔币一卷，你确定需要购买吗？",yes,no
+window_no
+window_yes gold < 5000
+endwindow "\n\n对不起你身上的魔币不足以购买绷带！"
+window_yes gold >= 5000
+addgold -5000
+giveitem 88319
+
+block
+endwindow "\n\n请问您找我有什么事吗？"

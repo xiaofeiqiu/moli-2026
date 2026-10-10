@@ -1,0 +1,8 @@
+block
+window"\n\n\n@c¡­¡­¡­¡­",OK
+window_OK
+window"\n\n\n@c¡­¡­¡­¡­",OK
+window_OK
+window"\n\n\n@c¡­¡­¡­¡­",OK
+window_OK
+Encount 3|0,1020,176,23|||||0|||6000098|||||||||

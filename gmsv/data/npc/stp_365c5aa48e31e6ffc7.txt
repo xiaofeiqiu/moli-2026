@@ -1,0 +1,23 @@
+block item 86417 >= 1 && item 10405 >= 10 && item 17200 >= 1 && item 18443 >= 1 && item 86418 < 1 && item 86409 >= 1
+window "\n\n你的手脚还真敏捷，这么快就把材料凑齐了，真是帮了我一个大忙，谢谢你！这是你的认可书，拿给亚蒙吧。",ok
+window_ok
+leavegroup
+killitem 10405,10
+killitem 17200
+killitem 18443
+killitem 86417
+giveitem 86418
+
+block StrCmpChat == 85648 && item 86416 >= 1 && item 86409 >= 1  && item 86417 < 1 
+window "\n\n据说你是大侦探汉克先生的助手，是特别参与本次勘探的人员，虽然我可以直接就批准给你许可，但是我目前遭遇到了困难，不知你能否提供帮助我？",yes,no
+window_no
+window_yes
+window "\n\n谢谢。由于这次勘探任务非常突然，匆忙间丢失了一个非常重要的箱子，里面装有融合晶石启动器的必要道具。由于勘探进度迫在眉梢，需要10张绢布、1个锥形水晶、1个神眼。",next
+window "\n\n绢布可以找维诺亚村的布店小娟；锥形水晶可以找达美姊妹；而神眼...神眼...我也忘了，总之，拜托了。",ok
+window_ok
+leavegroup
+killitem 86416
+giveitem 86417
+
+block
+endwindow "\n\n精神凝固剂、水……啊嘞嘞！绢布、锥形水晶、神眼，嗯？装东西的那个箱子呢？"

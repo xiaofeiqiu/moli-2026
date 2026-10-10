@@ -1,0 +1,17 @@
+block item 1000037 >= 1 && item 1000038 >= 1
+endwindow "\n\n湿湿的绳子,不知道是谁扔在这里的."
+
+
+block group == 1 && item 1000037 >= 1
+window "\n\n这应该就是那条绳子,又脏又湿.应该是巡夜的玛摩鲁说的那条井绳.难道也与盗窃时间有关.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦"
+window_ok item 1000037 >= 1
+giveitem 1000038
+window "\n女仆梅露:\n呀~!!!!!",ok
+window_ok
+endwindow "\n\n屋中传来了女仆梅露的叫声."
+
+
+block
+endwindow "\n\n湿湿的绳子,不知道是谁扔在这里的."

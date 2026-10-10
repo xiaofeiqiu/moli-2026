@@ -1,0 +1,8 @@
+block
+	window "\n\n@c要进入魔法矩阵吗?\n\n传送成功后符咒将进入120分钟冷却期。",yes,no
+	window_no
+	window_yes item 81018 >= 1
+	killitem 81018,1
+	giveitem 81019,1
+	LeaveGroup
+	Warp 0,217,387,67

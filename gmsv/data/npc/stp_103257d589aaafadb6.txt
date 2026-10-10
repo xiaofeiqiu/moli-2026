@@ -1,0 +1,8 @@
+block
+	window"\n\n是否变成奥玛（蓝）形象，更改后头像将变为影角（男）？",ok
+	window_ok
+Luac stp:legacy:2f272df0f658731fea0b
+Luac stp:legacy:f82d91716a6ed4a8f1b9
+Luac stp:legacy:5030b5eb665d71f86dbc
+Luac stp:legacy:dd93678707e18b9f7496
+		killitem 60245,1

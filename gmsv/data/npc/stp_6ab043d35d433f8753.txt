@@ -1,0 +1,10 @@
+block StrCmpChat == 278699 && item 15210 >= 1 && item 87585 == 1
+window "\n\n送鳗鱼饭的？那你进去吧。",ok
+window_ok
+LeaveGroup
+killitem 15210
+killitem 87585
+Warp 0,29718,68,62
+
+block StrCmpChat == 278699
+endwindow "\n\n鳗鱼饭呢？"

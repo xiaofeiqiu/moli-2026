@@ -1,0 +1,10 @@
+block item 88383 == 1
+window "\n\n没想到你年纪轻轻就有如此实力，看来前面你经历艰难的历练，以我多年阅历无数的人来看你的实力可以说是数一数二的了。",next
+window "\n\n这下我可以安心送你上岛了，汉斯果然没看错人！",ok
+window_ok
+LeaveGroup
+killitem 88383
+Warp 0,14311,73,115
+
+block
+endwindow "\n\n你就别跟着我们去恶魔岛了！你去了也是送死！"

@@ -1,0 +1,8 @@
+block
+window "\n\n要下山离去吗?",yes,no
+window_yes
+LeaveGroup
+Warp 0,45086,37,44
+endblock
+window_no
+endblock

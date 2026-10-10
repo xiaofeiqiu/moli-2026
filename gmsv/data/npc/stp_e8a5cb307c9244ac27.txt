@@ -1,0 +1,439 @@
+
+block
+LocalCount5 = random 84,0
+
+if LocalCount5 == 1
+killitem 950077
+metamo 100252
+endif
+
+if LocalCount5 == 2
+killitem 950077
+metamo 100258
+endif
+
+if LocalCount5 == 3
+killitem 950077
+metamo 100264
+endif
+
+if LocalCount5 == 4
+killitem 950077
+metamo 100270
+endif
+
+if LocalCount5 == 5
+killitem 950077
+metamo 100277
+endif
+
+if LocalCount5 == 6
+killitem 950077
+metamo 100283
+endif
+
+if LocalCount5 == 7
+killitem 950077
+metamo 100289
+endif
+
+if LocalCount5 == 8
+killitem 950077
+metamo 100295
+endif
+
+if LocalCount5 == 9
+killitem 950077
+metamo 100302
+endif
+
+if LocalCount5 == 10
+killitem 950077
+metamo 100308
+endif
+
+if LocalCount5 == 11
+killitem 950077
+metamo 100314
+endif
+
+if LocalCount5 == 12
+killitem 950077
+metamo 100320
+endif
+
+if LocalCount5 == 13
+killitem 950077
+metamo 100327
+endif
+
+if LocalCount5 == 14
+killitem 950077
+metamo 100333
+endif
+
+if LocalCount5 == 15
+killitem 950077
+metamo 100339
+endif
+
+if LocalCount5 == 16
+killitem 950077
+metamo 100345
+endif
+
+if LocalCount5 == 17
+killitem 950077
+metamo 100352
+endif
+
+if LocalCount5 == 18
+killitem 950077
+metamo 100358
+endif
+
+if LocalCount5 == 19
+killitem 950077
+metamo 100364
+endif
+
+if LocalCount5 == 20
+killitem 950077
+metamo 100370
+endif
+
+if LocalCount5 == 21
+killitem 950077
+metamo 100377
+endif
+
+if LocalCount5 == 22
+killitem 950077
+metamo 100383
+endif
+
+if LocalCount5 == 23
+killitem 950077
+metamo 100389
+endif
+
+if LocalCount5 == 24
+killitem 950077
+metamo 100395
+endif
+
+if LocalCount5 == 25
+killitem 950077
+metamo 100402
+endif
+
+if LocalCount5 == 26
+killitem 950077
+metamo 100408
+endif
+
+if LocalCount5 == 27
+killitem 950077
+metamo 100414
+endif
+
+if LocalCount5 == 28
+killitem 950077
+metamo 100420
+endif
+
+if LocalCount5 == 29
+killitem 950077
+metamo 105252
+endif
+
+if LocalCount5 == 30
+killitem 950077
+metamo 105258
+endif
+
+if LocalCount5 == 31
+killitem 950077
+metamo 105264
+endif
+
+if LocalCount5 == 32
+killitem 950077
+metamo 105270
+endif
+
+if LocalCount5 == 33
+killitem 950077
+metamo 105277
+endif
+
+if LocalCount5 == 34
+killitem 950077
+metamo 105283
+endif
+
+if LocalCount5 == 35
+killitem 950077
+metamo 105289
+endif
+
+if LocalCount5 == 36
+killitem 950077
+metamo 105395
+endif
+
+if LocalCount5 == 37
+killitem 950077
+metamo 105302
+endif
+
+if LocalCount5 == 38
+killitem 950077
+metamo 105308
+endif
+
+if LocalCount5 == 39
+killitem 950077
+metamo 105314
+endif
+
+if LocalCount5 == 40
+killitem 950077
+metamo 105320
+endif
+
+if LocalCount5 == 41
+killitem 950077
+metamo 105327
+endif
+
+if LocalCount5 == 42
+killitem 950077
+metamo 105333
+endif
+
+if LocalCount5 == 43
+killitem 950077
+metamo 105339
+endif
+
+if LocalCount5 == 44
+killitem 950077
+metamo 105345
+endif
+
+if LocalCount5 == 45
+killitem 950077
+metamo 105352
+endif
+
+if LocalCount5 == 46
+killitem 950077
+metamo 105358
+endif
+
+if LocalCount5 == 47
+killitem 950077
+metamo 105364
+endif
+
+if LocalCount5 == 48
+killitem 950077
+metamo 105370
+endif
+
+if LocalCount5 == 49
+killitem 950077
+metamo 105377
+endif
+
+if LocalCount5 == 50
+killitem 950077
+metamo 105383
+endif
+
+if LocalCount5 == 51
+killitem 950077
+metamo 105389
+endif
+
+if LocalCount5 == 52
+killitem 950077
+metamo 105395
+endif
+
+if LocalCount5 == 53
+killitem 950077
+metamo 105402
+endif
+
+if LocalCount5 == 54
+killitem 950077
+metamo 105408
+endif
+
+if LocalCount5 == 55
+killitem 950077
+metamo 105414
+endif
+
+if LocalCount5 == 56
+killitem 950077
+metamo 105420
+endif
+
+if LocalCount5 == 57
+killitem 950077
+metamo 106252
+endif
+
+if LocalCount5 == 58
+killitem 950077
+metamo 106258
+endif
+
+if LocalCount5 == 59
+killitem 950077
+metamo 106264
+endif
+
+if LocalCount5 == 60
+killitem 950077
+metamo 106270
+endif
+
+if LocalCount5 == 61
+killitem 950077
+metamo 106277
+endif
+
+if LocalCount5 == 62
+killitem 950077
+metamo 106283
+endif
+
+if LocalCount5 == 63
+killitem 950077
+metamo 106289
+endif
+
+if LocalCount5 == 64
+killitem 950077
+metamo 106295
+endif
+
+if LocalCount5 == 65
+killitem 950077
+metamo 106302
+endif
+
+if LocalCount5 == 66
+killitem 950077
+metamo 106308
+endif
+
+if LocalCount5 == 67
+killitem 950077
+metamo 106314
+endif
+
+if LocalCount5 == 68
+killitem 950077
+metamo 106320
+endif
+
+if LocalCount5 == 69
+killitem 950077
+metamo 106327
+endif
+
+if LocalCount5 == 70
+killitem 950077
+metamo 106333
+endif
+
+if LocalCount5 == 71
+killitem 950077
+metamo 106339
+endif
+
+if LocalCount5 == 72
+killitem 950077
+metamo 106345
+endif
+
+if LocalCount5 == 73
+killitem 950077
+metamo 106352
+endif
+
+if LocalCount5 == 74
+killitem 950077
+metamo 106358
+endif
+
+if LocalCount5 == 75
+killitem 950077
+metamo 106364
+endif
+
+if LocalCount5 == 76
+killitem 950077
+metamo 106370
+endif
+
+if LocalCount5 == 77
+killitem 950077
+metamo 106377
+endif
+
+if LocalCount5 == 78
+killitem 950077
+metamo 106383
+endif
+
+if LocalCount5 == 79
+killitem 950077
+metamo 106389
+endif
+
+if LocalCount5 == 80
+killitem 950077
+metamo 106395
+endif
+
+if LocalCount5 == 81
+killitem 950077
+metamo 106402
+endif
+
+if LocalCount5 == 82
+killitem 950077
+metamo 106408
+endif
+
+if LocalCount5 == 83
+killitem 950077
+metamo 106414
+endif
+
+if LocalCount5 == 84
+killitem 950077
+metamo 106420
+endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

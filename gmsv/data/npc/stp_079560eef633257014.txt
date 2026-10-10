@@ -1,0 +1,11 @@
+block Item 22220011 == 0
+	EndWindow "\n\n\n@c毛都没长齐的孩子，来这干嘛？",ok
+
+block Item 22220011 == 1
+	Window "\n\n 原来是被引导到这里的勇者!很好,拿着这个东西,我会把你直接传送到魔龙的洞穴!",next
+	Window "\n\n 祝你好运,孩子!",ok
+                Window_ok
+                killitem 22220011
+               GiveItem 22220002
+                leavegroup
+               Warp 0,13218,7,13

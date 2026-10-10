@@ -1,0 +1,24 @@
+#####圣诞任务领取#####
+
+
+block Item 670006 != 0 || Item 670001 != 0 || Item 670002 != 0 || Item 670005 != 0 || Item 670003 != 0 || Item 670004 != 0
+	EndWindow 670000,OK
+
+block Item 670006 == 0 && ItemSpace == 0
+	EndWindow 670001,OK
+
+block level <=19
+	EndWindow 670004,OK
+
+block ItemSpace != 0 && Item 670001 == 0 && Item 670002 == 0 && Item 670005 == 0 && Item 670003 == 0 && Item 670004 == 0 && Item 670006 == 0 && Level >= 20 
+	Window 670003,YES,NO
+
+	Window_YES ItemSpace != 0
+	GiveItem 670006
+	EndWindow 670002,OK
+
+	Window_NO
+	EndWindow 670007,OK
+block Item 670006
+	EndWindow 670002,OK
+

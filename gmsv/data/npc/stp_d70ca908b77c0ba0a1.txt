@@ -1,0 +1,49 @@
+block Item 795399 >= 1 && Item 795400 >= 1 && Item 795401 >= 1 && Item 795402 >= 1 && Item 795403 >= 1 && Item 795404 >= 1 && Item 795405 >= 1 && Item 795406 >= 1 && Item 795407 >= 1 && Item 795408 >= 1 && Item 795409 >= 1 && Item 795410 >= 1 
+window "\n\n我想要十二星座BOSS的签名\n\n如果你有,可以带来和我换12星座勋章.",next 
+window "\n\n点击<是>可换取1件首饰<12星座勋章>\n\n\n选择<是>后可选择轻装或者重装",yes,no 
+window_no  
+endwindow "\n\n兑换失败."
+window_yes  
+window "\n\n点击<是>选择轻装版本的<12星座勋章>\n\n\n点击<否>选择重装版本的<12星座勋章>",yes,no 
+window_yes itemspace < 1 
+endwindow "\n\n你的背包好像满了...先整理一下吧!" 
+window_no itemspace < 1 
+endwindow "\n\n你的背包好像满了...先整理一下吧!" 
+window_yes itemspace >= 1 && Item 795399 >= 1 && Item 795400 >= 1 && Item 795401 >= 1 && Item 795402 >= 1 && Item 795403 >= 1 && Item 795404 >= 1 && Item 795405 >= 1 && Item 795406 >= 1 && Item 795407 >= 1 && Item 795408 >= 1 && Item 795409 >= 1 && Item 795410 >= 1 
+killItem 795399,1  
+killItem 795400,1  
+killItem 795401,1  
+killItem 795402,1  
+killItem 795403,1  
+killItem 795404,1  
+killItem 795405,1  
+killItem 795406,1  
+killItem 795407,1  
+killItem 795408,1  
+killItem 795409,1 
+killItem 795410,1 
+giveItem 795411,1 
+endwindow "\n\n兑换成功."
+window_no  itemspace >= 1 &&  Item 795399 >= 1 && Item 795400 >= 1 && Item 795401 >= 1 && Item 795402 >= 1 && Item 795403 >= 1 && Item 795404 >= 1 && Item 795405 >= 1 && Item 795406 >= 1 && Item 795407 >= 1 && Item 795408 >= 1 && Item 795409 >= 1 && Item 795410 >= 1 
+killItem 795399,1  
+killItem 795400,1  
+killItem 795401,1  
+killItem 795402,1  
+killItem 795403,1  
+killItem 795404,1  
+killItem 795405,1  
+killItem 795406,1  
+killItem 795407,1  
+killItem 795408,1  
+killItem 795409,1 
+killItem 795410,1 
+giveItem 795412,1 
+endwindow "\n\n兑换成功."
+window_yes 
+endwindow "\n\n兑换失败."
+window_no 
+endwindow "\n\n兑换失败."
+ 
+block  
+window "\n\n我想要十二星座BOSS的签名\n\n如果你有,可以带来和我换12星座勋章.",next 
+endwindow "\n\n不过我知道你现在没有\n\n马上去挑战十二星座BOSS\n\n期待你的战绩."

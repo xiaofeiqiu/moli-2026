@@ -1,0 +1,5 @@
+block putanyitem
+systemmessage 8100964
+
+block PlayerAction == 3
+systemmessage 8100965

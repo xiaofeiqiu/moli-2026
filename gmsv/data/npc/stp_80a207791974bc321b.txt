@@ -1,0 +1,16 @@
+block item 200010 >= 1
+endwindow "\n\n到北方的王国边境去看看吧..."
+
+block item 200009 >= 1
+window "\n\n听说在北方的监狱,以前是王国的宝藏埋藏的地方,你要去看看吗?",yes,no
+window_yes
+window "\n\n但是那边有陆行鱼出现,非常危险,你们确定要去吗?",yes,no
+window_yes
+window "\n\n那好吧,这个给你们,他能帮助你们.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200010
+
+block
+endwindow "\n\n据说在国王监狱那边出现了宝藏呢..."

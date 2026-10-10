@@ -1,0 +1,9 @@
+
+
+block item 652644 >= 1
+window "\n\n准备好进入了吗?\n\n\n\n练功厅阶段越高怪物等级越高....",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,56024,5,3
+

@@ -1,0 +1,38 @@
+block item 697991 == 1
+window"\n\n你是侦探?那你的口才一定很好吧?能帮我劝下我的父亲吗?我不想看见他错下去",yes,no
+window_no
+window"\n\n是我太唐突了,不好意思",ok
+window_yes
+window"\n\n是这样的,我父亲原来是一个小国的骑士\n保护着身为公主的母亲,而有一天王国\n遭到魔族的侵略,在战争中我的母亲死亡\n父亲在悔恨与深感自己的无能",next
+window"\n\n下定决心要试母亲复活,而开始了漫长的人体与动物实验,在法蓝的暗医那里得到了配方",next
+window"\n\n你能帮我打消父亲的这个念头吗??",yes,no
+window_no
+window"\n\n唉,我不该随便找人说服我父亲的",ok
+window_yes
+window"\n\n那太好了,顺便把我的想法告诉我父亲吧,我不敢跟他说~",ok
+window_ok
+nowevent 558 =1
+killitem 697991,1
+giveitem 697992,1
+LeaveGroup
+Warp 0,1196,3,14
+block item 18327 == 1 && nowevent 558 == 1
+window"\n\n这是我父亲要的吗?那我再带你们去吧",ok
+window_ok
+LeaveGroup
+Warp 0,1196,3,14
+block item 697994 == 1 && nowevent 559 == 1
+window"\n\n我母亲叫你拿给我的?她活了?我爸爸做了什么?",next
+window"\n\n原来是这样,母亲的灵魂阻止了父亲,真是太好了",next
+window"\n\n谢谢你们帮了我,我就用这个报答你吧!",ok
+window_ok
+endevent 579 =1
+checktitle
+killitem 697994,1
+giveitem 681117,1
+givepet (600062%5,600063%5,600064%1)
+block item 681116 >= 1 || item 681117 >= 1
+window"\n\n这里的人真是太好了!",ok
+block
+window"\n\n我们本来是别国的贵族,因为某些缘故,才来到法兰城.",ok
+window_ok

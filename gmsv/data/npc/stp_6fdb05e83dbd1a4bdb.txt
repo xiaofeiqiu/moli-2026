@@ -1,0 +1,22 @@
+block item 87788 == 1
+endwindow "\n\n看来你们都继承了四勇者的遗志了，那快去索奇亚山与莫里森汇合吧！"
+
+block item 87787 == 1
+endwindow "\n\n看来你们都继承了四勇者的遗志了，那快去索奇亚山与莫里森汇合吧！"
+
+block item 87786 == 1
+endwindow "\n\n看来你们都继承了四勇者的遗志了，那快去索奇亚山与莫里森汇合吧！"
+
+block item 87785 == 1
+endwindow "\n\n看来你们都继承了四勇者的遗志了，那快去索奇亚山与莫里森汇合吧！"
+
+block item 87784 == 1
+window "\n\n一看你们就是莫里森让你们来的，要进入地下石墓的话请跟我来。",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87784
+Warp 0,28655,0,13
+
+block
+endwindow "\n\n各位有没有听说过4勇者的传说呢！"

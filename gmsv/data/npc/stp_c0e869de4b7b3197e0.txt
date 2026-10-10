@@ -1,0 +1,13 @@
+block EndEvent 512 == 1
+Window "\n\n好厉害.",next
+Window "\n\n请答应我,人类.这个岛上的事情,请替我保密,否则我们将再无栖息之地.我会保证村民不受外界怪物的侵扰,临走前送你一根我的羽毛,愿我们的约定地久天长.",ok
+Window_ok itemspace < 1
+endWindow "\n\n你的背包满啦!."
+Window_ok
+giveitem 141188
+EndEvent 512 = 0
+NowEvent 522 = 0
+EndEvent 513 = 1
+CheckTitle
+LeaveGroup
+Warp 0,57176,65,46

@@ -1,0 +1,18 @@
+block item 86271 >= 1
+endwindow 7019274
+
+block item 86284 < 1 &&  item 86285 < 1
+window 7019275,yes,no
+window_yes
+window 7019276,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86271
+endwindow 7019277
+window_ok ItemSpace < 1
+endwindow 7019278
+window_no
+endwindow 7019279
+
+block
+endwindow 7019280

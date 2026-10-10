@@ -1,0 +1,25 @@
+block endevent 598 == 1 && Item 666042 >= 1 && Item 666043 >= 1 && Item 666044 >= 1 && Item 666045 >= 1 && Item 666046 >= 1 && PetSpace != 0
+	window 8000065,yes,no
+	window_no
+	window_yes
+	killitem 666042,1
+	killitem 666043,1
+	killitem 666044,1
+	killitem 666045,1
+	killitem 666046,1
+	Givepet 666027
+	endevent 598 = 0
+	checktitle
+
+block endevent 599 == 1 && Item 666042 >= 1 && Item 666043 >= 1 && Item 666044 >= 1 && Item 666045 >= 1 && Item 666046 >= 1 && PetSpace != 0
+	window 8000065,yes,no
+	window_no
+	window_yes
+	killitem 666042,1
+	killitem 666043,1
+	killitem 666044,1
+	killitem 666045,1
+	killitem 666046,1
+	Givepet 666027
+	endevent 599 = 0
+	checktitle

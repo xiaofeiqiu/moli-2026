@@ -1,0 +1,8 @@
+block item 87701 == 1
+window "\n\n你要打开神界大门吗？",yes,no
+window_no
+window_yes
+leavegroup
+killitem 87701
+Warp 0,29964,8,23
+

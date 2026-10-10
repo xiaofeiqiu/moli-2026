@@ -1,0 +1,14 @@
+block item 730032 >= 1
+Window "\n\n我叫鲁耶利莲娜,同诺伦科一样,是传承秘宝守护家族的后人之一.",next
+Window "\n\n我们并不是什么没落的贵族,很抱歉之前欺骗了你.你们的能力和品德,我亲眼见到了,值得把秘密托付.",next
+Window "\n\n之前的事情都是我叫基里安特做的,当然都是为了测试你们哦.",next
+Window "\n\n拿着这个戒指和回信,回去找基里安特吧,他就会明白的.",next
+Window "\n\n前面的路还很困难,加油,勇敢的冒险者!",ok
+window_ok ItemSpace < 2
+EndWindow "\n\n你的物品栏不够了."
+Window_ok item 730032 >= 1
+killitem 730032
+giveitem 730033
+giveitem 730034
+LeaveGroup
+Warp 0,3300,55,40

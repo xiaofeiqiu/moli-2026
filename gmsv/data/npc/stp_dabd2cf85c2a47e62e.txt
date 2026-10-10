@@ -1,0 +1,24 @@
+block item 1000556 >=1
+window 7019520,next
+window 7019521,ok
+window_ok
+LeaveGroup
+killitem 1000556
+giveitem 1000557
+
+block item 1000553 >=1
+window 7019522,ok
+window_ok
+LeaveGroup
+killitem 1000553
+window 7019523,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000553
+giveitem 1000554
+endwindow 7019524
+window_ok ItemSpace < 1
+endwindow 7019525
+
+block
+EndWindow 7019526

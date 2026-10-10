@@ -1,0 +1,18 @@
+block
+window "\n\n看来这里就是异常能量的核心了.远处的大试管里似乎还有什么,不过切换能量的话,所有的实验应该都会强制终止吧.",next
+window "\n\n要破环这个核心吗?",yes,no
+window_no
+window_yes itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个空位."
+window_yes
+killitem 60478
+giveitem 60480
+giveitem 60481
+leavegroup
+Warp 0,43100,120,107
+
+
+
+
+
+

@@ -1,0 +1,266 @@
+block
+window "\n\n这个就是诱发疾病的巫师的精华?嗯...我想想,我来帮你熔炼这个精华,你将它的魔力吸收,这样,应该可以让你顺利获得他的力量",next
+window "\n\n但是你要小心,这个力量还是很危险的,不要被它迷惑了,如果你也变成了它,我会毫不犹豫拿出全力杀掉你",next
+window "\n\n走吧,冒险者,继续你的历练吧!",yes,no
+#####魔币不足#####
+window_yes gold < 1000000 && item 800143 >= 1 && itemspace >= 1
+window "\n\n钱不够,不过我可以返还个机票给你,有钱了再来!",ok
+window_ok
+giveitem 800145,1
+leaveGroup
+Warp 0,1530,15,6
+#####格子不足#####
+window_yes itemspace == 0
+endwindow "\n\n你的物品栏满啦!"
+#####剑士#####
+window_yes job == 15 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:ffa50744ac1a6434b543
+Luac stp:legacy:4696032e1527960d8ff0
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####战斧斗士#####
+window_yes job == 25 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:22119ab04648be08ab9d
+Luac stp:legacy:93c251bec30be464ed5a
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####骑士#####
+window_yes job == 35 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:c7cc51d5d32d45c40164
+Luac stp:legacy:12b931ea3579bd1a0a99
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####弓箭手#####
+window_yes job == 45 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:b43b2343603834fe44c8
+Luac stp:legacy:706f6e8627d6b3a6e5a9
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####士兵#####
+window_yes job == 55 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:ef8846371e683cb441dc
+Luac stp:legacy:c444a967f2c1a015e5da
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####传教士#####
+window_yes job == 65 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:8d3006ec3094a04f4d71
+Luac stp:legacy:d4bdef02e8ea4a6fff63
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####魔法师#####
+window_yes job == 75 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:16bf136e0ae301ce1b47
+Luac stp:legacy:6f09bb43afd434b10970
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####咒术师#####
+window_yes job == 85 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:b4d74346ad27c1daded9
+Luac stp:legacy:8c5d3863ec11b331d13d
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####封印师#####
+window_yes job == 95 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:f4c7507294320bbcc2fd
+Luac stp:legacy:22dc3f67a99f8e100d0f
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####饲养师#####
+window_yes job == 105 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:16ad129a3844dbb7e877
+Luac stp:legacy:2513633398edda40c2b1
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####驯兽师#####
+window_yes job == 115 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:b82e754e5fd7de20c643
+Luac stp:legacy:ba967bf9ad5abf01e7ed
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####盗贼#####
+window_yes job == 125 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:e5878188746c1ae9f42e
+Luac stp:legacy:e8e8b9c0a99be05a46e5
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####巫师#####
+window_yes job == 135 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:b593c773166b40cfc966
+Luac stp:legacy:cf31b4446a95c96bec40
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####格斗士#####
+window_yes job == 145 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:967a8030aab6e659ada5
+Luac stp:legacy:5ea208a7d99e935ebcd0
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####忍者#####
+window_yes job == 155 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:645fd1c32f83e56b6990
+Luac stp:legacy:aabfd2fdeec946a2cea2
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####舞者#####
+window_yes job == 165 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:a3f8e43169c813eee89e
+Luac stp:legacy:9cd7188ddc61aa48c750
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####侦探#####
+window_yes job == 415 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:1af31eb59a05112dd367
+Luac stp:legacy:564d8171a0a17e2e7307
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####仙人#####
+window_yes job == 425 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:165caeecebf195964290
+Luac stp:legacy:908d6956081ad13ed022
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####护士#####
+window_yes job == 435 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:ca491fe38e9f98e6d6e9
+Luac stp:legacy:564db1e7f8ccf444f697
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####医生#####
+window_yes job == 445 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:525aef6c2f93bcb09cb6
+Luac stp:legacy:4092fabd1ebad89f5aa8
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####圣骑士#####
+window_yes job == 175 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:198959fd08456574cbdc
+Luac stp:legacy:eb0707dbd6745ff74ecc
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####魔剑士#####
+window_yes job == 185 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:94c3ece9f479cd1de27f
+Luac stp:legacy:8a54d13a4f1ee44fa674
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####游侠#####
+window_yes job == 495 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:c7d24bfbb04c43391560
+Luac stp:legacy:05ff424d87038eadac3f
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####领主#####
+window_yes job == 6005 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:29c3f9f5a855f74cec4f
+Luac stp:legacy:29de9406054799d86fbe
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+#####武僧#####
+window_yes job == 515 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+killitem 800143
+giveitem 800144
+addgold -1000000
+Luac stp:legacy:fe1926637722ad02406d
+Luac stp:legacy:975d81beb9c02e4dd876
+checktitle
+leaveGroup
+Warp 0,1530,15,6
+##############
+window_no

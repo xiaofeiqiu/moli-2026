@@ -1,0 +1,17 @@
+#新手书
+block
+#对话框
+	window 777750,YES,NO
+#条件判断
+	window_YES
+	window 777751,NEXT
+	window 777752,NEXT
+	window 777753,NEXT
+	window 777754,OK
+	window_ok
+	systemmessage 777755
+	window_NO
+	systemmessage 777756
+
+#减道具killitem 661014,1
+#系统提示systemmessage 777759

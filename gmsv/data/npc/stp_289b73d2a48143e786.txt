@@ -1,0 +1,16 @@
+block Item 940121 == 1
+endwindow "\n\n\n你好,有什么可以服务的么?"
+
+
+block Level >= 70 && Item 940112 == 1
+window "\n\n\n很好.冥主会得意的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok Item 940112 == 1
+giveItem 940121,1
+leaveGroup
+Warp 0,718,15,18
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

@@ -1,0 +1,23 @@
+#¼ì²âµÀ¾ß
+
+##############  ##############
+block Item 900022 == 1 && Item 18989 != 0
+	Window 900045,OK
+	Window_OK
+	KillItem 900022
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,936,7,8
+
+##############  ##############
+block  Item 900026 == 1 && Item 18989 != 0
+	Window 900045,OK
+	Window_OK
+	KillItem 900026
+	NowEvent 570 = 0
+	LeaveGroup
+	Warp 0,936,7,8
+
+##############  ##############
+block
+	EndWindow 900042,OK

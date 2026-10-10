@@ -1,0 +1,4 @@
+block item 86309 < 1
+window 85377,ok
+window_ok
+Warp 0,28172,24,47

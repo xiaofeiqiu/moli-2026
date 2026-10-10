@@ -1,0 +1,24 @@
+block item 60491 == 1 && StrCmpChat == 9128
+endwindow "\n\n凯特可是个好孩子!"
+
+block item 60494 == 1
+endwindow "\n\n快去吧!"
+
+block item 60491 == 1 && StrCmpChat == 9127
+window "\n\n我并没有见过那两个孩子.不过最近有个不像本地人的小女孩和王宫的士兵梅伯尔一起出现过.您去问问梅伯尔吧,我刚才还在港口那见过他.",ok
+window_ok itespace < 1
+endwindow "\n\n你的背包满啦"
+window_ok item 60491 == 1
+giveitem 60494
+
+block item 60491 == 1 && StrCmpChat == 9126
+endwindow "\n\n医生?我可不知道什么穿白大褂的医生!"
+
+block item 60486 == 1
+endwindow "\n\n莱诺还给你感谢信来看肯定他手上还有很重要的线索!"
+
+block item 60480 == 1
+endwindow "\n\n虚无的生命之光跟莱诺的家族有着很深的渊源."
+
+block
+endwindow "\n\n远道而来的客人吗?进来喝杯茶吧!"

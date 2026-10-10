@@ -1,0 +1,15 @@
+block item 200537 >= 1
+endwindow "\n\n虽然进山的密道怪物不强,但也要注意安全."
+
+
+block item 200536 >= 1
+window "\n\n这不是利德和法拉吗?村长不是说过嘛～小孩子尽量不要出村子,你们是不是偷跑出来玩了.",next
+window "\n\n什么?你们要进法洛斯山,哪里太危险了,不但山路错综复杂,而且会遇到各种恐怖的野兽.",next
+window "\n\n看来你妹执意要去,这样吧～我这有张进山的密道地图,你们拿去用吧.",ok
+window_ok
+killitem 200536
+giveitem 200537
+
+
+block
+endwindow "\n\n最近越来越懒了,好久没有进山打猎了."

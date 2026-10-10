@@ -1,0 +1,8 @@
+block
+window "\n\n勇敢的参赛者已经就位,他们即将面对的拥有强大力量的红龙,比赛结果将会如何!?让我们拭目以待吧!",next
+window "\n\n那么!TheShowTime!ReadyGo!",ok
+window_ok
+Encount 2|0,24075,36,9||0|||||0|613076|||||||||
+
+
+

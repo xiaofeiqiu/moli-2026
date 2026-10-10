@@ -1,0 +1,39 @@
+
+block item 795355 == 1
+
+window "\n啊呀,真的打败他们了?太.太厉害了.日记?让我看看.\n奇怪,怎么上面记录是打劫180次只成功一次呢?\n\n不管了,这是你的奖励.拿着吧!",ok
+
+window_ok itemspace <= 1
+
+endwindow "\n\n小子,你东西太多了,先整理下吧."
+
+window_ok item 795355 == 1
+
+killitem 795355
+
+giveitem 795356
+
+endwindow "\n\n勇士谢谢你赶跑了强盗"
+
+
+block level >= 40
+
+window "\n往伊尔去的桥那一到晚上就会出现强盗\n\n还把桥给堵起来收过路费.真是可恶...",next
+
+window "\n听说他们非常强,等级非常高,见到的人都吓着回来了\n没有人和他们真正交过手\n\n而且,他们有4个人\n\n听说,他们拦路抢劫180次,只失败过一次.",next
+
+window "\n\n我需要找一名屌大的玩家讨伐他们!",yes,no
+
+window_no
+
+endwindow "\n\n没人敢挑战他们吗?"
+
+window_yes
+
+endwindow "\n\n那让我见识下你的能力吧\n\n强盗在去伊尔的桥那边"
+
+
+
+block
+
+endwindow "\n\n你有什么事?"

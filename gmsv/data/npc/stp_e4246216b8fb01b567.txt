@@ -1,0 +1,17 @@
+block globalFlag 307 == 0 && level >= 1 && level <= 10 && item 61021 >= 1
+window 900388,ok
+window_ok gold <= 999200
+LeaveGroup
+globalFlag 307 = 1
+killitem 61021
+addgold 800
+window_ok gold > 999200
+endwindow 900389
+
+block globalFlag 307 == 0 && level >= 1 && level <= 10
+window 900390,yes,no
+window_yes
+window_no
+
+block
+endwindow 900391

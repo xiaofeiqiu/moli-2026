@@ -1,0 +1,17 @@
+block item 77007 >= 1
+Warp 0,1000,233,78
+
+block
+window 7019399,yes,no
+window_no
+window_yes
+window 2000049,next
+window 2000050,next
+window 2000051,yes,no
+window_no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 77007
+Warp 0,1000,233,78
+window_yes ItemSpace < 1
+Endwindow 2000052

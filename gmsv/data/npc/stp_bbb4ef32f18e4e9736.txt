@@ -1,0 +1,12 @@
+block item 500126 == 1
+endwindow "\n\n可怜的小豆丁，不过他哥哥能捡回一条命是不幸中的大幸"
+
+block item 500125 == 1
+window "\n\n威廉啊~~他的情况比较特殊，我们这种小医院束手无策，已经找人送他去魔法大学的医院进行治疗了！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_ok
+giveitem 500126
+
+block
+endwindow "\n\n你是来看病的吗？"

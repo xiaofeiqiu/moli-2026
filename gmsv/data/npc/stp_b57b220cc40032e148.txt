@@ -1,0 +1,71 @@
+block Luac stp:legacy:e03b0eef3097a60e6f11 >= 1 && endevent 90 == 1 && gold >= 20000
+	window "\n\n\n想要学习神奇的11级装备的配方么？",yes,no
+	window_yes Luac stp:legacy:1d71b8a35dfd386c7191 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 25
+	GiveRecipe 26
+	window_yes Luac stp:legacy:9bb8fe2ccd86073c17be >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 85
+	GiveRecipe 86
+	window_yes Luac stp:legacy:ed835b7210d8c56a5ae2 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 145
+	GiveRecipe 146
+	window_yes Luac stp:legacy:05b4c605a2fee9207cc3 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 205
+	GiveRecipe 206
+	window_yes Luac stp:legacy:7a11b27c6a2901d018b9 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 265
+	GiveRecipe 266
+	window_yes Luac stp:legacy:78cbc61dc27c5ce49b9b >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 325
+	GiveRecipe 326
+	window_yes Luac stp:legacy:8a339c3887cc556f3fa3 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 385
+	GiveRecipe 386
+	window_yes Luac stp:legacy:a063f50d01196399279c >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 445
+	GiveRecipe 446
+	window_yes Luac stp:legacy:e0bf83db56f017fd7fa4 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 505
+	GiveRecipe 506
+	window_yes Luac stp:legacy:24c09073c0688a425f79 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 565
+	GiveRecipe 566
+	window_yes Luac stp:legacy:f62e875ff520b45e5055 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 625
+	GiveRecipe 626
+	window_yes Luac stp:legacy:76705143b16201008f4a >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 685
+	GiveRecipe 686
+	window_yes Luac stp:legacy:3f09d5dc291efbf1b537 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 745
+	GiveRecipe 746
+	window_yes Luac stp:legacy:4a2fffccc1be1a57815d >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 805
+	GiveRecipe 806
+	window_yes Luac stp:legacy:296ee257c9992815af6a >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 865
+	GiveRecipe 866
+	window_yes Luac stp:legacy:1b274afbb9d2fff2d379 >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 980
+	window_yes Luac stp:legacy:1b49c255567acf97dd1d >= 1 && gold >= 20000
+	addgold -20000
+	GiveRecipe 1712
+
+block
+	window "\n\n\n貌似你好象缺点什么吧？",ok

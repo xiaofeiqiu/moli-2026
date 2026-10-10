@@ -1,0 +1,16 @@
+block item 39744 >= 1
+endwindow "\n\n斗技场表演赛开始前和我旁边的同事聊聊吧,他就会送你到斗技场了."
+
+
+
+block
+window "\n\n这位冒险者,一看你就是个强者,怎么样,要不要来斗技场里参加表演赛呀,包你有的赚哦.",yes,no
+window_no
+endwindow "\n\n哎,想好了就再来找我吧."
+window_yes
+window "\n\n多谢关照,请拿好这个,明天斗技场表演赛开始前和我旁边的同事聊聊吧,他就会送你到斗技场了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 39744
+

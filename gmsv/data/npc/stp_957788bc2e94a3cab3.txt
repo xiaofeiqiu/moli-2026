@@ -1,0 +1,9 @@
+block item 795001 >= 1 || item 795002 >= 1 || item 795003 >= 1
+EndWindow "\n\n  对不起，您身上已经拥有极限挑战卷，不可以再领！"
+	
+block 
+	Window "\n\n 欢迎进去极限挑战积分道场！请拿好您的道场卷！",ok
+        Window_ok
+        giveitem 795001,1
+        leavegroup
+        Warp 0,1000,242,85

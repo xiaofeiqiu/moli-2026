@@ -1,0 +1,7 @@
+block item 51016 >=1
+	Window"\n\n要打开冒险随心包吗？",yes,no
+		window_yes ItemSpace < 0
+			EndWindow"\n\n@c你的物品栏不够了。"
+		Window_yes  item 51016 >=1
+			killitem 51016
+			giveitem (15630%1,18525%1,607685%1)

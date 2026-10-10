@@ -1,0 +1,12 @@
+block
+	Window "\n\n\　要进入就职屋吗？\n\n\　想进入技能屋请选『否』",yes,no
+	Window_yes item 652102 >= 1
+	Warp 0,59162,8,8
+	Window_no
+	Window "\n\n\　要进入技能屋吗？\n\n\　想进入宠物屋请选『否』",yes,no
+	Window_yes item 652102 >= 1
+	Warp 0,45267,0,16
+	Window_no
+	Window "\n\n\n　　　　　　　要进入宠物屋吗？",yes,no
+	Window_yes item 652102 >= 1
+	EndWindow "\n\n\n@c暂不开放"

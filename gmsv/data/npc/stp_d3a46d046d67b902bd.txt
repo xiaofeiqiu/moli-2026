@@ -1,0 +1,9 @@
+block item 88087 == 1
+Warp 0,45188,252,346
+
+block item 88092 == 1
+window 501387,yes,no
+window_no
+window_yes
+giveitem 88087
+Warp 0,45188,252,346

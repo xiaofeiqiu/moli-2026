@@ -1,0 +1,11 @@
+block StrCmpChat == 220000
+window "\n\n请吃!请吃!这是之前一位戴着南瓜头套的巫师交给我的,吃得开心点..",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200800
+
+
+block
+window "\n\n我正在用接近完美的红宝石做实验.\n要不要试试看呢?\n只收你燃料费900G唷!",next
+endwindow "\n\n没钱的话就不能进行实验喔!"

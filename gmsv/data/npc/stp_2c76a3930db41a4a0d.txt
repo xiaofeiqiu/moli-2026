@@ -1,0 +1,29 @@
+block item 60010 >= 1 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在7天后才可以打开!"
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 8640 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在6天后才可以打开!"
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 7200 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在5天后才可以打开!"
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 5760 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在4天后才可以打开!"
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 4320 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在3天后才可以打开!"
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 2880 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在2天后才可以打开!"
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 1440 && itemcreatetime 60010 < 10080
+endwindow "\n\n\n\n\n　　　　　　　请在1天后才可以打开!"
+
+
+block item 60010 >= 1 && itemcreatetime 60010 >= 10080
+window "\n\n\ 你要打开宠物蛋吗?",ok
+window_ok petspace == 0
+endwindow "\n\n你的宠物栏满了!"
+window_ok
+killitem 60010
+givepet (60005%1,60004%1)

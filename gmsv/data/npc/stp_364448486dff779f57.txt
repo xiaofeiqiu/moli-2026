@@ -1,0 +1,23 @@
+block itemspace <= 1
+endwindow "\n\n把背包清理下再来找我吧."
+
+
+block item 160402 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160402 >= 2
+killitem 160402,1
+
+
+block item 160402 == 1
+window "\n\n诚惠让你们来交给我的吗?",next
+window "\n\n(埃露戴娜看了信的内容...余光扫了下丘比...)",next
+window "\n\n真是个腹黑的眼睛男,我明白了,这个小家伙的伤还很重,用这个给它再处理下伤口吧.对了,听说艾泽尔回来了,如果有新的线索可以去法兰城东南的角落寻找他.",ok
+window_ok item 160402 == 1
+killitem 160402,1
+giveitem 160405,1
+
+
+block
+window "\n\n真是奇怪的生物,应该是猫吧?伤的挺重...不知道是谁下的手,你们想要帮它?好吧,热心的人们,如果有什么线索可以去请教下奎因先生,他应该在城西的角落.",ok
+window_ok
+endWindow "\n\n祝你好运冒险者."

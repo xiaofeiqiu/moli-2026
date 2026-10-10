@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【小石像怪】吗？",ok
+			Window_ok
+Luac stp:legacy:8e49e047ad618dc53587
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【使魔】吗？",ok
+			Window_ok
+Luac stp:legacy:329758e2b25db3321c26
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【水蓝鸟魔】吗？",ok
+			Window_ok
+Luac stp:legacy:556f56de185504337983
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【小恶魔】吗？",ok
+			Window_ok
+Luac stp:legacy:f2b1505e64facb1d7b5f
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【迷你石像怪】吗？",ok
+			Window_ok
+Luac stp:legacy:11451bb23d85218ff504
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【丘比特】吗？",ok
+			Window_ok
+Luac stp:legacy:e160386e4701771b5a37
+				endif
+

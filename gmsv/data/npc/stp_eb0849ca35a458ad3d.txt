@@ -1,0 +1,16 @@
+
+
+block
+window "\n\n　　奉星夜之命,举办御前科举招才纳贤.天下所有有志之士都可以来我这报名.报名费为50000G\n\n　　如果要报考试请选择<是>.如果要听取规则请选择<否>.否则请取消.",yes,no,cancel
+window_yes
+window "\n\n你确定要报名参加考试吗?",yes,cancel
+window_yes gold < 50000
+Endwindow "\n\n你的报名费呢?费用可是50000G噢~"
+window_yes globalFlag 359 == 1
+Endwindow "\n\n你已经报名参加了考试,快去找考官吧!"
+window_yes
+addgold -50000
+globalFlag 359 = 1
+Endwindow "\n\n快去找1号考官吧!~"
+window_no
+Endwindow "\n\n科举任务的几个规则:\n\n1、一题答错,全盘皆输.\n\n2、如果中途不再决定继续做任务,可以去报名处找科举任务取消进行结束任务.\n\n3、科举任务奖励可以到报名处进行领取.\n\n@c大概就是这些，祝你好运",ok

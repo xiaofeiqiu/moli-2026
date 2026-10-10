@@ -1,0 +1,11 @@
+#清明节任务.
+#作者：Get out
+#时间：2008.04.05
+block
+\n\n\n\n\n@cˇˇ你手上的是........ˇˇNEXT
+\n\n\n\n\n@cˇˇ她原来一直还在想着我.......ˇˇNEXT
+\n\n\n\n\n@cˇˇ谢谢你为我传达消息..........ˇˇOK
+Window_OK
+Setaction 10
+Warp 0,1000,153,41
+GiveItem 6001504,1

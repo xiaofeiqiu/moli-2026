@@ -1,0 +1,12 @@
+block item 88322 == 1
+Warp 0,33107,12,13
+
+block item 88321 == 1
+window "\n\n啊呀~~终于把你盼来了。我的果苗呢？",next
+window "\n\n我已经迫不及待看着它成长开花结果了。",next
+window "\n\n这样吧，你现在去皇宫的地下监狱找关押在里面的奇异博士，叫他为本王子研制植物成长加速剂，如果成功的话本王子答应他立马释放给予自由。",ok
+window_ok
+LeaveGroup
+killitem 88321
+giveitem 88322
+Warp 0,33107,12,13

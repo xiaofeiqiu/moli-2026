@@ -1,0 +1,11 @@
+block item 87505 == 1
+endwindow "\n\n祝顺利完成所有测试，你可以去找报名人了！"
+
+block item 87504 == 1
+window "\n\n恭喜你完成诅咒迷宫的任务，请把入会测试卡交给进行记录。",ok
+window_ok
+killitem 87504
+giveitem 87505
+
+block
+endwindow "\n\n我很忙别来烦我！" 

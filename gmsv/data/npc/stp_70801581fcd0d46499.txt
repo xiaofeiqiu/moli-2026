@@ -1,0 +1,28 @@
+block item 800141 >= 1
+window "\n\n你获得了神邸的认可么?好耀眼的精华啊,那么我们回到西比尔村吧!",yes,no
+window_no
+window_yes item 800141 >= 1
+leaveGroup
+Warp 0,64033,25,44
+
+
+block item 800129 >= 20 || item 800130 >= 20 || item 800131 >= 20 || item 800132 >= 20
+window "\n\n哦哦,你终于收集齐了啊,那么我来帮你合成水晶吧",yes,no
+window_yes item 800129 >= 20
+killitem 800129,20
+giveitem 800133,1
+window_yes item 800130 >= 20
+killitem 800130,20
+giveitem 800134,1
+window_yes item 800131 >= 20
+killitem 800131,20
+giveitem 800135,1
+window_yes item 800132 >= 20
+killitem 800132,20
+giveitem 800136,1
+window_no
+
+
+
+block
+endwindow "\n\n你是谁,我好像不认识你啊!"

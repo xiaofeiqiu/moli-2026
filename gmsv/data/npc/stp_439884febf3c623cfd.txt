@@ -1,0 +1,15 @@
+block nowevent 571 == 1 && nowevent 572 == 1 && nowevent 573 == 1
+window"\n\n我受到了诅咒，曾经一个勇士把我封印在这个麦克风中，并且放在了陵墓里。",next
+window"\n\n不知从哪听来的消息，只要拥有你的鲜血，我就能摆脱束缚，为了复活我别无他法。",next
+window"\n\n虽然我也不知道为什么那位勇士要把我放在这里，或许是因为这是我家吧！好了，我需要你的鲜血",OK
+window_OK
+Encount 3|0,32813,5,23||0|||||0|35304|||||||||
+
+block endevent 663 == 1
+endwindow"\n\n@c 无耻的人类!!  滚"
+
+block
+window"\n\n\n@c 无耻的人类  滚!!!",ok
+window_OK
+leavegroup
+Warp 0,1000,246,91

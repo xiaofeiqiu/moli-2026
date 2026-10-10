@@ -1,0 +1,53 @@
+######### 圣诞节节庆任务########
+##小宾
+
+block Item 39874 >= 1 && Luac stp:legacy:c9060bbca40d30f9b01c == 1
+window "\n\n哇~我最喜欢的黄蜂,你真的会给我吗?",yes,no
+window_no
+endwindow "\n\n哼,大坏蛋.不想看到你了."
+window_yes
+window "\n\n好开心呢,这是我送你的礼物,请拿好吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 39874
+killpetl 304
+giveitem (39875%10,39876%10,39877%10,39878%5,39879%5)
+
+
+block Item 39874 >= 1 && Luac stp:legacy:5fb910bfedd27ad0bb84 == 1
+window "\n\n哇~我最喜欢的螳螂,你真的会给我吗?",yes,no
+window_no
+endwindow "\n\n哼,大坏蛋.不想看到你了."
+window_yes
+window "\n\n好开心呢,这是我送你的礼物,请拿好吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 39874
+killpetl 80165
+giveitem (39875%10,39876%10,39877%10,39878%5,39879%5)
+
+block Item 39874 >= 1 && Luac stp:legacy:0eeb5011a85d72e01f94 == 1
+window "\n\n哇~我最喜欢的水龙蜥,你真的会给我吗?",yes,no
+window_no
+endwindow "\n\n哼,大坏蛋.不想看到你了."
+window_yes
+window "\n\n好开心呢,这是我送你的礼物,请拿好吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 39874
+killpetl 80165
+giveitem (39875%10,39876%10,39877%10,39878%5,39879%5)
+
+
+##有装了礼物的袜子
+block Item 39874 >= 1
+endwindow "\n\n哇!这是圣诞老人送的礼物耶!我就知道妈妈说的是真的,但是我的愿望是能养一只1级的黄蜂/螳螂/水龙蜥,你能帮我完成愿望吗?"
+
+
+##一般
+block
+endwindow "\n\n我每年圣诞都会把袜子放在窗口,可是都没有收到圣诞老人送的礼物,朋友都说那是骗人的,可是我相信妈妈不会骗人,一定是圣诞老人骑的是麋鹿,所以才会迷路找不到我家."
+

@@ -1,0 +1,36 @@
+block item 51015 >=1
+	Window "\n\n欢迎你的挑战，勇敢的冒险者，祝你胜利归来！",next
+	Window "\n\n你是否做好了继续挑战的准备了呢？",yes,no
+		Window_no
+		Window_yes
+	Window "\n\n愿诸神词福予勇敢者，祝你胜利归来！",ok
+		Window_ok
+			LeaveGroup
+			killitem 51015
+			Warp 0,57143,96,7
+
+block item 51014 >=1
+	Window "\n\n欢迎你的挑战，勇敢的冒险者，祝你胜利归来！",next
+	Window "\n\n你是否做好了继续挑战的准备了呢？",yes,no
+		Window_no
+		Window_yes
+	Window "\n\n愿诸神词福予勇敢者，祝你胜利归来！",ok
+		Window_ok
+			LeaveGroup
+			killitem 51014
+			Warp 0,57143,57,7
+
+
+######■任务开始【裂空挑战者】
+block
+	Window "\n\n啊，我们这动荡的世界，总是充满着各种机遇。异世界的强者们踏破无尽的虚空，挑战我们这个世界的强者！",next
+	Window "\n\n勇敢的冒险者啊，你可有信心来面对他们的挑战？每次参加挑战要消耗200魔币哦",yes,no
+		Window_no
+		Window_yes gold < 200
+			EndWindow"\n\n@c抱歉，你的金币不够。"
+		Window_yes
+	Window "\n\n愿诸神词福予勇者！",ok
+		Window_ok
+			LeaveGroup
+			addgold -200
+			Warp 0,57143,23,18

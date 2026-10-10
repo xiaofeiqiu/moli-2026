@@ -1,0 +1,5 @@
+block
+window "\n\n经过多年的炎热天气,水井已经干枯,但是看起来很深的样子,而且不断有热气冒上来,你要去一探究竟吗?",yes,no
+window_yes
+leavegroup
+Warp 0,60021,13,27

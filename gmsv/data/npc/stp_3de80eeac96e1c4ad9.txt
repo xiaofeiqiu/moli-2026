@@ -1,0 +1,6 @@
+block
+window"\n\n你们来这里做什么？这里是魔法之神梅萨的圣地，请离开吧！",next
+window"\n\n什么？你说什么？",next
+window"\n\n太可恶了！",ok
+window_ok
+Encount 2|0,1006,23,28||0|||||0|530084|

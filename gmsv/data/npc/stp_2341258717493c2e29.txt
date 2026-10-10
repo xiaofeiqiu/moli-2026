@@ -1,0 +1,6 @@
+block
+	Window "\n\n@c.有一股力量圣洁的力量包围了你....",ok
+	Window_ok
+        LeaveGroup
+
+        Warp 0,790,20,35

@@ -1,0 +1,8 @@
+block Luac stp:legacy:dac5d53ca6e4263df5d2 >= 1
+window"\n\n\n@c 你打败了我! 吾将给予你吾之力量~",ok
+window_ok
+leavegroup
+Warp 0,10025,22,7
+
+block 
+endwindow"\n\n\n@c 你不是我所要寻找的人 抱歉!"

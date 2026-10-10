@@ -1,0 +1,20 @@
+block item 86295 >= 1 && item 86296 >= 1 && jobs >= 84
+Warp 0,28146,8,24
+
+block item 86293 >= 1 && item 86295 >= 1
+window 85318,ok
+window_ok
+leavegroup
+killitem 86293
+Warp 0,28145,5,17
+
+block item 86287 >= 1 && item 86290 >= 1
+window 85319,next
+window 85320,ok
+window_ok
+leavegroup
+killitem 86290
+Warp 0,28136,13,3
+
+block
+endwindow 85321

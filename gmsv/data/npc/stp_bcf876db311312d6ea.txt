@@ -1,0 +1,14 @@
+block item 88088 == 1
+endwindow 501401
+
+block
+window 501402,next
+window 501403,next
+window 501404,next
+window 501405,next
+window 501406,next
+window 501407,next
+window 501408,ok
+window_ok
+giveitem 88088
+endwindow 501409

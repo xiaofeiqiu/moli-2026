@@ -1,0 +1,31 @@
+block Item 39662 >= 1 || Item 39661 >= 1
+window "\n\n母亲生前,最喜爱的就是彩叶草,也许是对她自己感情的绝望吧!\n这场政治婚姻,让父母与老师,陷入永无止尽的痛苦!",next
+window "\n\n愿在天国的他们三个,能得到平安喜乐!",ok
+window_ok
+Endblock
+
+
+block Item 39664 >= 1
+endwindow "\n\n有了这个,就可到母亲的墓地!\n彩叶之原在德特威岛隐蔽的山坳中!你快去阻止老师吧!"
+
+
+block Item 39666 > 0 && Item 39667 > 0 && Item 39668 > 0
+window "\n\n这是...母亲的日记...\n汤玛斯舅舅告诉我,老师的本名是奥菲尔!那...",next
+window "\n\n死者苏醒之术!难道...\n我明白了!老师想复活母亲!",next
+window "\n\n这是彩叶之原通行证!彩叶之原在德特威岛隐蔽的山坳中!\n你快去阻止老师!",ok
+window_ok
+KillItem 39666,1
+KillItem 39667,1
+KillItem 39668,1
+GiveLeak1Item 39664,1
+Endblock
+window_ok
+Endblock
+
+
+block Item 39663 >= 1
+endwindow "\n\n你见到汤玛斯舅舅了?\n那么,就麻烦你阻止老师!\n一切拜托您了!"
+
+
+block
+endwindow "\n\n听说汤玛斯舅舅隐居在这商城某处!\n真是符合兵法!大隐于市!"

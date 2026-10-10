@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至风之洞窟 ？",yes,no
+		Window_yes
+			KillItem 60217,1
+			Warp 0,300,366,351
+		Window_no

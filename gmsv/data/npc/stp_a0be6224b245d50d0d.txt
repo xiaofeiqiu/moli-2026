@@ -1,0 +1,8 @@
+block Item 1000520 >=10
+	Window "\n\n@c你竟然有这么多的魔导碎片，交给我吧，我为你打开魔界之门！",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c哼！",OK
+	Window_YES
+	leavegroup
+	KillItem 1000520,10
+	Warp 0,903,10,10

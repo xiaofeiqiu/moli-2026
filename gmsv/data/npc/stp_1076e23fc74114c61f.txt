@@ -1,0 +1,8 @@
+block item 61098 >= 1
+window 900441,next
+window 900442,next
+window 900443,ok
+window_ok
+
+block
+endwindow 900444

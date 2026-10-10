@@ -1,0 +1,22 @@
+block item 1000488 >= 1 ||  item 1000489 >= 1 || item 1000490 >= 1 || item 1000491 >= 1
+	killitem 1000488
+	killitem 1000489
+	killitem 1000490
+	killitem 1000491
+	Warp 0,1000,238,88
+block Luac stp:legacy:57f4702d5a89dab74d35 >= 1
+	Window "\n\n　你已经准备好接受这个试炼了吧？",next
+	Window "\n\n　那么，带着这个誓约之花往里面出发吧。",next
+	Window "\n\n　在途中有水晶的封印，就用这个花当作钥匙来开启。",next
+	Window "\n\n　封印和誓约之花的颜色相同的话，",next
+	Window "\n\n　只有在这个花受到正确封印护佑的时候，",next
+	Window "\n\n  前进的道路才会开启。",next
+	Window "\n\n　好好的看看周围，仔细的考虑，相信你一定能够坚持到最后。",yes,no
+	window_yes
+	giveitem 1000490
+	leavegroup
+	Warp 0,50006,1,30
+	window_no
+	window"懦弱者......",OK
+block
+	Window "\n\n　你好象没有进入的资格哦。再努力些吧！",ok

@@ -1,0 +1,14 @@
+block item 86418 >= 1 && item 86419 < 1
+window "\n\n你已经得到法兰王国晶石魔法能量研究会会长克莱尔先生的认可，那么这张通行证便是属于你的。请务必保管好这张通行证，如若丢失，你需要重新获得克莱尔先生的认可才能够补办。",ok
+window_ok
+leavegroup
+killitem 86418
+giveitem 86419
+
+block StrCmpChat == 85648 && item 86416 >= 1 && item 86409 >= 1
+window "\n\n你是汉克的助手？那就可以告诉你了。",next
+window "\n\n如果你想获得通行证，必须获得法兰王国晶石魔法能量研究会的许可，那边的克莱尔女士是现任会长，与里奥先生关系熟识的你应该很容易就能从她那边获得认可吧。",ok
+window_ok
+
+block
+endwindow "\n\n这里已经被禁止进入，请立刻离开这里。"

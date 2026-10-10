@@ -1,0 +1,7 @@
+block item 87199 == 1
+window "\n\n你要用钥匙打开牢门吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87199
+Warp 0,25214,46,13

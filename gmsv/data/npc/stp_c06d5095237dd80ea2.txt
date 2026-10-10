@@ -1,0 +1,5 @@
+block item 39830 >= 1
+Window "\n\nÄãÒªÊ¹ÓÃÓã¸ÍÂğ?",yes,no
+window_yes
+killitem 39830
+giveitem 39831

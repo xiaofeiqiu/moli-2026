@@ -1,0 +1,13 @@
+block item 500134 == 1
+LeaveGroup
+Warp 0,1518,34,3
+
+block
+window "\n\n雪后逃跑后掉下来的东西您要把它捡起来吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_yes
+LeaveGroup
+giveitem 500134
+Warp 0,1518,34,3

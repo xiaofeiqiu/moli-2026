@@ -1,0 +1,11 @@
+block item 50868 >= 1
+EndWindow "\n\n集齐我们4名队员的胜利证明就可以回去拿给队长看了."
+
+block
+Window "\n\n你的事队长已经交代过我们了,你果然拥有很强的洞察力啊!让我来再确认一下你的实力吧!",ok
+Window_ok
+LeaveGroup
+Encount 2|||0|||||0|6000027|||||||||
+
+
+

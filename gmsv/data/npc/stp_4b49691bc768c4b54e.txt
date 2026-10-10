@@ -1,0 +1,6 @@
+block	item 591004	>=	1	&&	item 591003	>=	1
+killitem 591004,1
+killitem 591003,1
+Giveitem 591005,1
+block
+Endwindow"\n\n\n\n@c 缺少某样东西！"

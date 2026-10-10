@@ -1,0 +1,10 @@
+block item 87644 == 1
+window "\n\n你要进去吗?很危险的..",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87644
+Warp 0,29786,11,8
+
+block
+endwindow "\n\n................."

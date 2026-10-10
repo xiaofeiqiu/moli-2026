@@ -1,0 +1,10 @@
+block level >= 40
+window "\n\n楼上是遗迹探险队总部,请进.",ok
+window_ok
+leavegroup
+Warp 0,44716,8,66
+
+
+
+block
+endwindow "\n\n楼上是遗迹探险队总部.你看起来还不够强,不许进入!"

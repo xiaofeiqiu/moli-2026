@@ -1,0 +1,30 @@
+#mayko_gm_1102644.txt  青龙大人
+
+#1110742	\n\n\n\n@c唔～好多了～
+#1110743	\n\n\n　　　　我只是想到公主殿下～\n　　　　就会生病头痛～
+#1110744	\n\n\n　　　　这边有一些记下来的事～\n　　　　你先拿去看看吧～
+#1110745	\n\n\n\n@c另外这小东西也送你～
+#1110746	\n\n\n\n@c吃了药头好昏～我要睡觉了～
+
+#Window_YES ItemSpace == 0
+
+block item 1000289 >0
+	 window 7019139,ok
+	 window_ok
+	 Warp 0,4403,34,15
+	 endblock
+block 
+	window 7019135,next
+	window 7019136,next
+	window 7019137,ok
+	Window_ok ItemSpace < 2
+	endwindow 7019128
+	Window_ok
+	GiveLeak1Item 1000289,1
+	window 7019138,ok
+	Window_ok ItemSpace ==0
+	endwindow 7019128
+	window_ok
+	GiveLeak1Item 1000290,1
+	Warp 0,4403,34,15
+	endwindow 7019138	 

@@ -1,0 +1,33 @@
+block item 86278 >= 1&& item 86274 >= 1 && item 86275 >= 1 && item 86276 >= 1 && item 86277 >= 1
+window 7019285,next
+window 7019286,next
+window 7019287,next
+window 7019288,next
+window 7019289,next
+window 7019290,next
+window 7019291,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 86278
+GiveItem 86279
+endwindow 7019292
+window_ok ItemSpace < 1
+endwindow 7019293
+
+block item 86272 >= 1 && item 86273 < 1
+window 7019294,next
+window 7019295,next
+window 7019296,next
+window 85226,next
+window 85227,next
+window 85228,next
+window 85229,next
+window 85230,next
+window 85231,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86273
+endwindow 85232
+window_ok ItemSpace < 1
+endwindow 85233
+

@@ -1,0 +1,32 @@
+block item 500142 == 1
+endwindow "\n\n麻烦你去趟蒂娜村找我的远房表姐万事通的梅尔，或许她能知道那夫人的相关信息。"
+
+block item 500141 == 1
+window "\n\n哥哥他~~他！！呜呜~~你们一定要找到害死我哥哥的幕后黑手！你在取露水时遇到的夫人一定不是好人，肯定是她搞得鬼！",ok
+window_ok
+killitem 500141
+giveitem 500142
+endwindow "\n\n麻烦你去趟蒂娜村找我的远房表姐万事通的梅尔，或许她能知道那夫人的相关信息。"
+
+block item 500125 == 1
+endwindow "\n\n哥哥已经进入本村医院接受治疗了，希望他能很快康复！"
+
+block item 500124 == 1 &&  item 500121 == 1
+window "\n\n谢谢你们帮我把哥哥救回来，我会履行我的诺言。虽然我的零花钱不是很多，但能代表我的心意。请务必收下~~",ok
+window_ok
+killitem 500124
+killitem 500121
+giveitem 500125
+
+block item 500121 == 1
+endwindow "\n\n雪妖的传说都是村里老人用来吓唬小孩的！"
+
+block
+window "\n\n前几天，哥哥威廉进入雪上去打猎，可是到现在还没回来。村里的老人都说我哥哥的魂可能被山里的雪妖勾去了。",next
+window "\n\n可是打死我也不信，我哥哥从小就学过武艺没这么容易被雪妖勾去的。那些老人讲的话肯定是吓小孩的。",next
+window "\n\n你愿意帮我找回我哥哥吗？，如果你能把他找回来，我就把这个月的零花钱都给你！",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_yes
+giveitem 500121

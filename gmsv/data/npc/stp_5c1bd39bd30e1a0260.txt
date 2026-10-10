@@ -1,0 +1,18 @@
+###dodo_gm_1051479.txt
+###阿蒙玩家胜利后,给予阿蒙的团员金卡.
+###身上有日月组织团员金卡
+
+block Item 715248 >= 1 
+window "\n\n我输了!\n古有云:胜者为王,败者为寇.\n看来我依然必须无止境的想著称号.\n打败阿蒙的人,我就把这张金卡送你做纪念吧!",ok
+Window_OK ItemSpace < 1
+endwindow "\n\n你的身上物品携带的太多了."
+
+Window_OK Item 715248 >= 1 && ItemSpace >= 1
+GiveLeak1Item 715252 
+Warp 0,32385,191,171  
+
+
+block 
+window "\n\n虽然你打败了我!\n但是你无法阻止我们的计划!\n我们依然会成功.",ok
+Window_OK 
+Warp 0,1000,233,78 

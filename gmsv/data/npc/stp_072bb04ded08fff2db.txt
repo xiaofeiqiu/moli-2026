@@ -1,0 +1,5 @@
+block item 800097 == 1
+	Window"\n\n嗷嗷嗷嗷！恶龙看到你手中的消散剂躲了起来。",ok
+window_ok
+			Leavegroup
+			Warp 0,18091,35,25

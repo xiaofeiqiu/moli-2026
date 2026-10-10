@@ -1,0 +1,19 @@
+block Item 1000197 >= 1
+window "\n\n喂,这里可是那个愚蠢的女人世代转生体的陵墓哦,\n\n...",next
+window "\n\n愚蠢的兰国历代王室以为仅仅需要杀掉转世的公主再把这个地方封印就可以了吗?",next
+window "\n\n真是太可笑了,难道他们不知道这些悲惨的灵魂积怨会想火山一样,砰的一下爆发出来吗?...",next
+window "\n\n果然让那样无聊的国家灭亡是我做的最对的事咯.",next
+window "\n\n(女人的声音从暗处传来：“身为本国军师居然如此的胆大妄为!”)",next
+window "\n\n哎哟哟哟,蠢女人,你这样偷袭是犯规的哦...",next
+setaction 10
+window "\n\n(露比倒在了地上好象昏迷了过去.)...",ok
+window_ok Item 1000197 >= 1
+LeaveGroup
+Warp 0,1624,2,3
+
+	
+block
+window "\n\n异界的勇者啊,你知道了不该知道的事情,让我送你回去吧...",ok
+window_ok
+LeaveGroup
+Warp 0,1530,15,6

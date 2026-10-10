@@ -1,0 +1,5 @@
+block item 200126 >= 1
+window "\n\n嗯,既然有国王的批准,那你就进去吧.",ok
+window_ok
+leavegroup
+Warp 0,17201,17,17

@@ -1,0 +1,10 @@
+block
+window "\n\n不可能....一个跑龙套的竟然能击倒身为主角的我!!!!!",next
+window "\n\n哈哈!!!",next
+window "\n\n下去吧...下面有你们一生都会恐惧的东西!!!!我的最高杰作!",ok
+window_ok
+leavegroup
+Warp 0,31506,136,42
+
+
+

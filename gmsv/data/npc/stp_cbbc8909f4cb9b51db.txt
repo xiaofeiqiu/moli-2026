@@ -1,0 +1,52 @@
+
+block item 661095 >= 1 || item 661096 >= 1 || item 661099 >= 1 || item 661100 >= 1
+Endwindow "\n\n我不可以好吃懒做,我要好好放牛把牛养得肥肥的."
+
+
+
+
+
+block item 661101 == 1
+window "\n\n感谢你帮助我和织女的相聚,这是对你的感谢,拿去吧.",ok
+window_ok
+killitem 661101
+giveitem 661103
+
+
+block item 661098 == 1
+Endwindow "\n\n一切就拜托你了."
+
+
+block item 661097 == 1
+window "\n\n我早就知道了,她想家了,自从那天我看见她一直盯着天上看,我就知道她想家了.\n\n可是没想到她还是偷偷地拿了她的羽衣走了,我不知道如何才能找到她啊,你能帮我去询问下月老吗?",yes,no
+window_yes
+killitem 661097
+giveitem 661098
+Endwindow "\n那么一切就拜托你了."
+window_no
+Endwindow "\n\n那我只好自己去寻找她的下落了."
+
+
+
+
+block item 661094 == 1
+Endwindow "\n\n时间紧急,赶紧去吧."
+
+
+
+block level >= 80
+window "\n\n河对岸的肯定是个仙女,我不能把羽衣交给她,不然她会返回天庭上去的,不知道你能不能帮留住她啊?",yes,no
+window_yes itemspace < 1
+Endwindow "\n\n你的背包装不下了."
+window_yes
+giveitem 661094
+Endwindow "\n\n那么一切就拜托你了."
+window_no
+Endwindow "\n\n你不愿意嘛,那就别想从我这里了解什么."
+
+
+
+block
+Endwindow "\n\n我不可以好吃懒做,我要好好放牛把牛养得肥肥的."
+
+

@@ -1,0 +1,7 @@
+block
+	window "\n\n我来帮你把法兰城恢复原貌吧!",ok
+	window_ok itemspace >= 1
+	giveitem 3795,1
+	leavegroup
+	Warp 0,1500,41,87
+

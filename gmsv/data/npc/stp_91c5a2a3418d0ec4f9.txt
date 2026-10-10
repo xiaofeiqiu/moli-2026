@@ -1,0 +1,6 @@
+block
+window "\n\n阿尔杰斯十二神啊,听到我们众位审判者的声音了吧?",next
+window "\n\n请君临世界肃清一切吧...",ok
+window_ok
+leavegroup
+Warp 0,1696,5,44

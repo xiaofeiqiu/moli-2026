@@ -1,0 +1,12 @@
+block item 795003 ==1
+Window "\n\n  恭喜您已经完成挑战极限3连战！请拿好您的奖励",OK
+        Window_OK
+        killitem 795003,1
+        giveitem 1000508,1200
+        leavegroup
+        Warp 0,1000,242,85
+block item 795003 <1
+	Window "\n\n  对不起！您没有极限连战3卷！",OK
+        Window_OK
+        leavegroup
+        Warp 0,1000,242,85

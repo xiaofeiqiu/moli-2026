@@ -1,0 +1,11 @@
+block item 61134 >= 1
+endwindow 900420
+
+block item 61134 == 0
+window 900421,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 61134
+window_yes ItemSpace < 1
+endwindow 900317
+window_no

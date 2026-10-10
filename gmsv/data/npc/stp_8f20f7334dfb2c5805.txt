@@ -1,0 +1,13 @@
+block item 88324 == 1
+window "\n\n想不想去充满童话色彩的岛屿吗？那里可是生活着只有童话书里描绘的独角兽哦！航海路线只有我知道，只要你给足我1W魔币即可前往。",next
+window "\n\n你确定要登船前往吗？",yes,no
+window_no
+window_yes gold < 10000
+endwindow "\n\n对不起你身上的钱不足以支付费用！"
+window_yes gold >= 10000
+LeaveGroup
+addgold -10000
+Warp 0,14179,91,20
+
+block
+endwindow "\n\n想出海观光吗？"

@@ -1,0 +1,14 @@
+block item 87904 == 1
+window 933715,next
+window 933716,next
+window 933717,next
+window 933718,next
+window 933719,yes,no
+window_no
+endwindow 933720
+window_yes
+LeaveGroup
+Warp 0,27222,74,27
+
+block
+endwindow 933721

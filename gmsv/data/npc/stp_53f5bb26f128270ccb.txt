@@ -1,0 +1,10 @@
+block petlevel 602 >= 1
+	Window "\n\n  我记得你……可恶的人类……带着杀龙之刃的人类！是你毁灭了我们魔龙一族！\n  你敢和我再进行一次决战么？",Yes,No
+	Window_No
+		EndWindow "\n\n\n@c  胆小鬼！"
+	Window_Yes
+		killpetl 602
+Encount 3|0,1530,15,6||0|||||0|671034|||||||||
+
+block
+	EndWindow "\n\n  请不要来打扰我们的安宁！"

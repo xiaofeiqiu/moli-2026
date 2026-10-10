@@ -1,0 +1,7 @@
+block item 50569 == 1
+window"\n\n这是一扇门!",next
+window"\n\n额?门开了=.=?",OK
+window_OK
+killitem 50569
+leavegroup
+Warp 0,12707,28,29

@@ -1,0 +1,6 @@
+block
+window"\n\n你不可能打倒我,我不会让你好过的!",ok
+window_ok
+giveitem 697993,1
+LeaveGroup
+Warp 0,1000,233,78

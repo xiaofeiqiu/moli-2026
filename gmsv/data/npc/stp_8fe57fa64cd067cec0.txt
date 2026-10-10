@@ -1,0 +1,9 @@
+block item 730093 >= 1
+window "\n\n哈哈,看来我的锻炼还是不足啊!",ok
+window_ok item 730093 >= 1
+killitem 730093,1
+giveitem 730096
+leavegroup
+Warp 0,57042,47,75
+
+

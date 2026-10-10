@@ -1,0 +1,7 @@
+block	item 591426>=1
+window"\n\n\n@c 想不到走到这里还会遇到你们，真是不可思议！",next
+window"\n\n 但是这一次，你们就没那么好运了，我已经不是之前那个虚弱的我了！受死吧！",ok
+window_ok
+Encount 3|0,705,17,13|||||0|||530066|||||||||
+block
+Endwindow"\n\n\n 你是谁？？？"

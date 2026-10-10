@@ -1,0 +1,10 @@
+block item 88030 == 1
+setaction == 10
+Warp 0,45141,67,168
+
+block item 88028 == 1
+window 501018,next
+window 501019,ok
+window_ok
+giveitem 88030
+Warp 0,45141,67,168

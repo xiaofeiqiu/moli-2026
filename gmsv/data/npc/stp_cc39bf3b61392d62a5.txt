@@ -1,0 +1,6 @@
+#本任务由兰纳的弟弟（IKKI制作）
+block
+	window "\n\n好厉害,看来我失败了,这封信给皇后吧",ok
+	window_ok
+		giveitem 990903,1
+		Warp 0,1511,9,17

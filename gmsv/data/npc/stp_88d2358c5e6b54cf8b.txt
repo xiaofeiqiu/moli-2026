@@ -1,0 +1,8 @@
+block
+window "\n\n原来是这样,我给你种子吧\n是不是你想要的花朵就不知道了!",ok
+Window_OK itemspace > 0
+GiveLeak1Item 715298,1 
+LeaveGroup
+Warp 0,3000,54,77
+Window_ok
+endblock

@@ -1,0 +1,10 @@
+block item 87925 == 1
+window 933605,ok
+window_ok
+Warp 0,27353,24,15
+
+block
+window 933606,ok
+window_ok
+giveitem 87925
+Warp 0,27353,24,15

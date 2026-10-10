@@ -1,0 +1,60 @@
+
+block item 661105 >= 1 && itemcreatetime 661105 >= 7200 && item 661106 >= 1
+window "\n\n\n\n@c『确定现在浇灌晨露吗?』",yes,no
+window_yes petspace < 1
+endwindow "\n\n你的宠物栏满啦!"
+window_yes
+killitem 661105
+killitem 661106
+givepet (39006%50,39007%30,39008%20)
+
+
+block item 661105 >= 1 && itemcreatetime 661105 >= 4320 && item 661106 >= 1
+window "\n\n\n\n@c『确定现在浇灌晨露吗?』",yes,no
+window_yes petspace < 1
+endwindow "\n\n你的宠物栏满啦!"
+window_yes
+killitem 661105
+killitem 661106
+givepet 39006
+
+
+block item 661105 >= 1 && itemcreatetime 661105 >= 2880 && item 661106 >= 1
+window "\n\n\n\n@c『确定现在浇灌晨露吗?』",yes,no
+window_yes petspace < 1
+endwindow "\n\n你的宠物栏满啦!"
+window_yes
+killitem 661105
+killitem 661106
+givepet 39005
+
+
+block item 661105 >= 1 && itemcreatetime 661105 >= 1440 && item 661106 >= 1
+window "\n\n\n\n@c『确定现在浇灌晨露吗?』",yes,no
+window_yes petspace < 1
+endwindow "\n\n你的宠物栏满啦!"
+window_yes
+killitem 661105
+killitem 661106
+givepet 39004
+
+
+block item 661105 >= 1 && 661106 >= 1
+endwindow "\n\n\n\n@c『培植树精至少24小时后才可以浇灌...』"
+
+
+block item 661105 >= 1
+endwindow "\n\n\n\n@c『一棵小树精成长中...』"
+
+
+block petlevel 401 == 1
+window "\n\n\n\n@c『是否要把树精埋在土坑中?』",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+killpetl 401
+giveitem 661105
+
+
+block
+endwindow "\n\n\n\n@c『一个可供培植树木的土坑』"

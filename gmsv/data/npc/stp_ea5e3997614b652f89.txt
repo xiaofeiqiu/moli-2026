@@ -1,0 +1,7 @@
+block item 39696 >= 1
+window "\n\n永久冻土实在太大了,如果进行详细调查的话,看来需要花费大量的时间!",next
+window "\n\n既然法尔卡特祭司需要这份报告,那么就交给你,希望你能尽快给他带回去.而我将会留在这里继续调查冻土情况.",next
+window "\n\n白色所掩盖的真相,比黑色更恐怖.",ok
+window_ok item 39696 >= 1
+killitem 39696
+giveitem 39697

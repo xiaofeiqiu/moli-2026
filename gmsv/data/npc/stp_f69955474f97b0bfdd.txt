@@ -1,0 +1,29 @@
+block item 1000670 >= 1
+window 7020299,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000670
+giveitem 1000671
+globalFlag 313 = 1
+window_ok ItemSpace < 1
+endwindow 7020300
+
+block item 1000668 >= 1
+window 7020301,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000668
+giveitem 1000669
+globalFlag 313 = 1
+window_ok ItemSpace < 1
+endwindow 7020302
+
+block globalFlag 313 == 0
+window 7020303,next
+window 7020304,yes,no
+window_yes
+Warp 0,23285,0,9
+window_no
+
+block
+endwindow 7020305

@@ -1,0 +1,13 @@
+block Item 1000462 == 1 
+	Window"\n\n你们已经消灭魔王了？！",next
+	Window"\n\n真是多亏了你们，请把这个交给炽天使吧！",ok
+		Window_ok Item 1000462 == 1 
+		killitem 1000462,1
+giveitem 1000461,1
+
+block Item 1000463 == 1 
+	Window"\n\n嗨！勇士，我们又见面了！",next
+	Window"\n\n对付这些让我们很疲累，看来这次还是需要你们的帮助了！",ok
+		Window_ok
+LeaveGroup
+Warp 0,18098,301,12

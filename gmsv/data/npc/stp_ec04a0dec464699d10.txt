@@ -1,0 +1,21 @@
+#############情人节活动,去死去死团由此去
+
+
+
+block Group > 1
+window "\n\n请解散队伍.",ok
+Window_ok
+LeaveGroup
+
+
+
+
+
+block Item 715219 >= 1
+window "\n\n仇人相见眼很红,情侣都在此出没,去死去死王团长,祝你打情侣成功.",ok
+Window_OK
+Warp 0,32654,5,29
+
+
+block
+endwindow "\n\n情侣不是由此去,约会不该在这里.团员请带团员证,王团长正在等你."

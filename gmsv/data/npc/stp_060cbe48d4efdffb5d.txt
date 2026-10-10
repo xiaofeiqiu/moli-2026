@@ -1,0 +1,15 @@
+block item 81003 >= 1
+	Endwindow "\n\n精致的面已经卖完了，明天再来吧。"
+
+block item 81000 >= 1 && item 81003 == 0
+	window "\n\n@c亚留特的小麦粉是最精致的，只要1000块一盒，要买一盒吗？",yes,no
+	window_no
+	window_yes gold < 1000
+	Endwindow "\n\n1000块一盒哟，你给我5毛是哪个意思?"
+
+	window_yes gold >= 1000 && item 81000 >= 1 && item 81003 == 0
+	addgold -1000
+	giveitem 81003,1
+
+block
+	Endwindow "\n\n@c我种的小麦没得说的，放眼过去整个法兰王国就属我家的小麦长得最好啦！"

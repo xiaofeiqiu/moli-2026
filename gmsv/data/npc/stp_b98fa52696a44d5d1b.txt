@@ -1,0 +1,22 @@
+#加仑
+#持有道具
+
+##############  ##############
+block Item 18989 != 0 && Item 900028 == 1 && Item 900029 == 1	&& itemspace != 0 && petspace != 0
+        window "\n\n　哇哦，你身上的石头是加特洛石跟美鲁娜石！！站住！不要走好不好？加特洛跟美鲁娜还没给我见识过这两种石头呢！请你们把它们交给我吧！",next
+	window "\n\n　放心，我可不是普通的老鼠哦，要是你肯跟我交换，我会随机给你一只我在人间的形态来养成，不过，嘿嘿，我给你的是随机的哦，希望你能喜欢，就这样啦。啾啾~",ok
+	window_ok
+	killitem 900028
+       killitem 900029
+	givepet (21%25,22%20,23%25,24%25,60005%5)
+	Leavegroup
+	Warp 0,1000,242,85
+
+block Item 18989 != 0
+        EndWindow 900042,OK
+
+block itemspace == 0 || petspace == 0
+	endwindow "\n\n　你身上的东西跟宠物是想送给我吗？啾啾~"
+
+block
+        EndWindow 900031,OK

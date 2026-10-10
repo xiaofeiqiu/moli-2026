@@ -1,0 +1,11 @@
+block itemspace <= 1
+	endwindow "\n\n把背包清理下再来找我吧。"
+block item 60424 >= 1
+	endwindow "\n\n上吧，我会为你们制造机会的。"
+block item 60409 >= 1 && item 60417 >= 1 && item 60418 >= 1 && item 60419 >= 1 && item 60420 >= 1
+	window"\n\n入侵者只有一种下场，嗯？那是什么？奎因的坠饰吗？把它交给我冒险者，我来抑制这个魔女的力量，拿着我的匕首上去战斗吧！",ok
+		window_ok
+			killitem 60409,1
+			giveitem 60424,1
+block
+	endwindow "\n\n不知死活的魔物竟敢在忍者的村落活动。"

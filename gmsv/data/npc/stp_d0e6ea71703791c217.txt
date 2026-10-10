@@ -1,0 +1,15 @@
+block
+window 910486,next
+window 910487,next
+window 910488,next
+window 910489,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 70007
+givepet 101117
+globalFlag 356 = 0
+globalFlag 357 = 0
+globalFlag 358 = 0
+Warp 0,24998,39,89
+window_ok ItemSpace < 1
+endwindow 910490

@@ -1,0 +1,32 @@
+block item 87449 == 1
+endwindow "\n\n他为什么要这么害我们村的人。"
+
+block item 87448 == 1
+window "\n\n鉴定报告出来啦，果然如我所料是酒壶的问题。那你要找到卖酒壶的人不可。对了我记得法兰强哥杂货店的阿米奇来我们村兜售什么商品来着，好像麦克的酒壶就是从他那买的。",ok
+window_ok
+killitem 87448
+giveitem 87449
+
+
+block item 87446 == 1
+endwindow "\n\n卡特博士目前在法兰里谢里雅堡任首席鉴定师。“
+
+block item 87440 == 1
+window "\n\n这是麦克的遗物吗？我想起来了，就是他买了这个酒壶后，才出的这件惨事，而且他们几个都有工作时喝酒的习惯。",next
+window "\n\n我敢肯定跟这酒壶脱不了干系。这样吧你拿着这酒壶去法兰城进行鉴定，看看是不是问题出在酒壶上。",ok
+window_ok
+giveitem 87446
+endwindow "\n\n这封信你拿着，去找我朋友卡特博士，他是这方面的专家。"
+
+block item 87437 == 1
+endwindow "\n\n阿鲁巴斯都被赶跑了怎么还会出这种事。"
+
+block Luac stp:legacy:953f614ccf5bda018c08 >= 1
+window "\n\n本来蛮好的，村里几个壮年村民在这收麦子。突然都应声倒地，不省人事。现在唯一的神志清醒的麦克被法兰医护队给接走了.",next
+window "\n\n你能帮我去法兰西医院找医生司尔特问问情况怎么样了，为什么会出现这事，这些村民可是本村身体最好的。",yes,no
+window_no
+window_yes
+giveitem 87437
+
+block
+endwindow "\n\n这里到底出什么事了！"

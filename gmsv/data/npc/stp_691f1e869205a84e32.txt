@@ -1,0 +1,16 @@
+block
+
+if  Xpos == 19 && Ypos == 10
+Window "\n\n墙上的画透着诡异的气氛,你的身体好象漂了起来.",OK
+Window_OK
+LeaveGroup
+Warp 0,41031,19,10
+endif
+
+if  Xpos == 19 && Ypos == 11
+Window "\n\n墙上的画透着诡异的气氛,你的身体好象漂了起来.",OK
+Window_OK
+LeaveGroup
+Warp 0,41031,19,11
+else
+endif

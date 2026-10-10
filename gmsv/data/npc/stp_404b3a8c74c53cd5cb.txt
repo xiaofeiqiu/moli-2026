@@ -1,0 +1,11 @@
+
+block
+LocalCount5 = random 2,0
+if LocalCount5 == 1
+endwindow "\n\n白白说她是新手,要去冒险\n跑到立葛曲洞附近的雪之谷去了."
+endif
+
+
+if LocalCount5 == 2
+endwindow "\n\n白妈妈的汤圆很好吃喔!"
+endif

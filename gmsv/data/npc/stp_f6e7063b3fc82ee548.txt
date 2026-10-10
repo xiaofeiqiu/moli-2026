@@ -1,0 +1,20 @@
+block item 87212 == 1
+endwindow "\n\n不清楚这图纸你是哪里弄到的，这以前可是我们矮人族的宝物之一。"
+
+block item 87211 >= 1 &&  item 87209 == 1
+window "\n\n看来你把秘银弄到了，来把图纸交给我吧，我这就给你制作头盔。",ok
+window_ok
+LeaveGroup
+killitemall 87211
+killitem 87209
+giveitem 87212
+
+block item 87210 == 1
+endwindow "\n\n秘银一般都在一种金属虫的甲壳上，你要乘打败他才能用铁锹从它身上弄下秘银哦！铁锹用完后可回来再找我拿！"
+
+block item 87209 == 1
+window "\n\n你是来找我帮忙打造你这设计图上的头盔？你真不巧，我手上的秘银不多了。",next
+window "\n\n这样吧，你拿着铁锹帮我去楼上迷宫挖点回来！",ok
+window_ok
+LeaveGroup
+giveitem 87210

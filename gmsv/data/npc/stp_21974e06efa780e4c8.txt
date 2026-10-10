@@ -1,0 +1,22 @@
+block globalFlag 344 == 1 && item 61136 >= 1 && globalFlag 345 == 0
+window 900521,ok
+window_ok
+LeaveGroup
+killitem 61136
+window 900522,next
+window 900523,next
+window 900524,yes,no
+window_yes gold <= 990000
+LeaveGroup
+addgold 10000
+globalFlag 345 = 1
+endwindow 900525
+window_yes gold > 990000
+endwindow 900526
+window_no 
+LeaveGroup
+globalFlag 346 = 1
+endwindow 900527
+
+block
+endwindow 900528

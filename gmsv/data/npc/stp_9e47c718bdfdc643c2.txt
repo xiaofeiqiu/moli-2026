@@ -1,0 +1,10 @@
+block
+window "\n\n你是来救...来救我们的吗?",next
+window "\n\n我还不能走!那边有个通道,刚才有个怪物冲了出来把我们都打倒了.",next
+window "\n\n拜托你...把那个怪物消灭掉,为我的兄弟们报仇!",ok
+window_ok
+leavegroup
+Warp 0,57059,25,18
+
+
+

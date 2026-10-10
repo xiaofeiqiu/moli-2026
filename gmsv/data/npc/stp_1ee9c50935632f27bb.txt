@@ -1,0 +1,7 @@
+block item 3504 >= 1
+window "\n 似乎条裂缝,要进去看看吗?",yes,no
+window_YES item 3504 >= 1
+leaveGroup
+Warp 0,1601,14,25
+block
+window "\整个大陆都有种华丽的危险感知啊!",ok

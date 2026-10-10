@@ -1,0 +1,15 @@
+block item 200238 >= 1
+endwindow "\n\n精灵之王在我们心中就是神."
+
+
+
+block item 200237 >= 1
+window "\n\n你能听到我说的话啊,你在追踪黑巫师?我看见他们朝森林东南方走了,不过据我所知哪里有个结界.",next
+window "\n\n下那个破除那个结界,你要去问迷幻森林的精灵之王,精灵之王大人就在森林最大那颗树上,很好找的,就是你在达利尔雪城也能看到它的树冠.",ok
+window_ok
+killitem 200237
+giveitem 200238
+
+
+block
+endwindow "\n\n..."

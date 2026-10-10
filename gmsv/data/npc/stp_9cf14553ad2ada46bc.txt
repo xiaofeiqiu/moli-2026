@@ -1,0 +1,12 @@
+block level >= 100 && item 800034 >=1 || item 800036 >=1 || item 800037 >=1 || item 800038 >=1 
+	Window"\n\n您要传送到明日之都吗？",yes,no
+		Window_no
+		Window_yes level >= 100 && item 800034 >=1
+			Leavegroup
+			Warp 0,18032,21,14
+		Window_yes level >= 100 && item 800036 >=1 || item 800037 >=1 || item 800038 >=1 
+			Leavegroup
+			Warp 0,18032,21,14
+
+block 
+	endWindow"\n\n您没有达到传送的要求。"

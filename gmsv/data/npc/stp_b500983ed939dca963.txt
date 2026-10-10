@@ -1,0 +1,13 @@
+
+
+
+block
+window "\n\n那个自称新手的人～～\n一直跟我们烦～～",next
+window "\n\n真的很可恶喔～～\n要钱要宠～\n还挑档次～～",next
+window "\n\n带他去买平民装～～\n还嫌装备不好,说要水衣帕斧～～",next
+window "\n\n你要进去跟他聊天吗?",yes,no
+Window_YES
+Warp 0,32465,25,12
+Window_NO
+Endblock
+

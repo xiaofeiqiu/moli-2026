@@ -1,0 +1,7 @@
+block item 87526 == 1 && item 87528 == 1
+window "\n\n你要打开项链的暗格吗？",yes,no
+window_no
+window_yes
+killitem 87526
+killitem 87528
+giveitem 87529

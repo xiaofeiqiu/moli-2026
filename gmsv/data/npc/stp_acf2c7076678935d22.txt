@@ -1,0 +1,9 @@
+block item 11204 >= 200 && globalFlag 311 == 0
+window 900705,ok
+window_ok
+LeaveGroup
+killitem 11204,200
+globalFlag 311 = 1
+
+block
+endwindow 900705

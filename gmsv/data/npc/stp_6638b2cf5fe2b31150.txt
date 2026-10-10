@@ -1,0 +1,9 @@
+block
+window 85665,next
+window 85666,next
+window 85667,yes,no
+window_no
+window_yes
+leavegroup
+killitem 86442
+giveitem 86443

@@ -1,0 +1,10 @@
+block
+window "\n\nÎÒÃÀÂğ?",ok
+window_ok
+Encount 2|||0|||||0|21234|||||||||
+
+
+
+
+
+

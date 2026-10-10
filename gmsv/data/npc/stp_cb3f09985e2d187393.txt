@@ -1,0 +1,20 @@
+block item 87801 == 1
+killitem 87801
+endwindow "\n\n你点错了灯，火把上的火熄灭了！"
+
+block item 87800 == 1
+killitem 87800
+endwindow "\n\n你点错了灯，火把上的火熄灭了！"
+
+block item 87799 == 1
+killitem 87799
+endwindow "\n\n你点错了灯，火把上的火熄灭了！"
+
+block item 87798 == 1
+endwindow "\n\n你已经点燃过这盏灯了。"
+
+block item 87797== 1
+window "\n\n你是否要点燃这盏灯吗？",ok
+window_ok
+killitem 87797
+giveitem 87798

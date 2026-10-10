@@ -1,0 +1,12 @@
+block item 61123 >= 1
+endwindow 900337
+
+block item 61123 == 0
+window 900338,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 61123
+Warp 0,23310,333,309
+window_yes ItemSpace < 1
+endwindow 900317
+window_no

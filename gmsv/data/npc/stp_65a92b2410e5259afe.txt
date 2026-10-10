@@ -1,0 +1,12 @@
+block item 200732 >= 1
+endwindow "\n\n你做的很好."
+
+
+block item 200730 >= 1 && item 200731 >= 1
+window "\n\n很好,你通过了前面试炼,让我亲自见证下你的资质吧.",ok
+window_ok
+Encount 2|0,60056,0,0||0|||||0|50695|||||||||
+
+
+block
+endwindow "\n\n没有证明过自己的力量,有何脸面来见我."

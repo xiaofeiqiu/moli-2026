@@ -1,0 +1,25 @@
+block item 87600 == 1
+endwindow "\n\n能通过的时候，请把这个带给前方的队长。"
+
+block item 87599 == 1
+window "\n\n被激怒的巨人么，我嗅到了阴谋的味道！",next
+window "\n\n总之，道路的积雪清理还需要一段时间，请先等待下吧。能通过的时候，请把这个带给前方的队长。",ok
+window_ok
+killitem 87599
+giveitem 87600
+Warp 0,29728,9,17
+
+block item 87598 == 1
+endwindow "\n\n一路小心。"
+
+block item 87597 == 1
+window "\n\n后续队伍吗？谢谢你送来的补给。",next
+window "\n\n因为发生了不明的持续地震，前方的大陆已经被崩塌的积雪掩埋，已经不能通行了。副队长带着先通过的队员继续前进，剩余的我们正在努力清除道路的积雪。",next
+window "\n\n不过因为这持续不断的地震，雪崩一直没有停止。那边有一条小路应该可以下山，也许山脊那边能找到地震的原因，我们的人手不足，请你帮忙去调查一下吧。",next
+window "\n\n气候寒冷，请带着这个吧，一路小心。",ok
+window_ok
+killitem 87597
+giveitem 87598
+
+block
+endwindow "\n\n好冷啊这里！"

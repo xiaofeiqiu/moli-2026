@@ -1,0 +1,11 @@
+block item 88084 == 1 && item 88085 == 1 && item 88086 == 1 && item 88087 == 1 && item 88092 == 1
+window 501388,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88092
+killitem 88084
+killitem 88085
+killitem 88086
+killitem 88087
+Warp 0,45188,71,74

@@ -1,0 +1,10 @@
+#本任务由兰纳的弟弟（IKKI制作）
+block item 990901 >= 1
+	window "\n\n咦?你手里的这个不是王妃的手谕么?\n\n看来王妃病情又重了啊,哎.",next
+	window "\n\n如果我没猜错的话,这里应该就是无头将军的洞穴了.可惜,我能力有限,而且,迷路了,\n\n一直无法把消息传回去,你来的正好哦,帮我进去调查吧.",ok
+	window_ok
+	LeaveGroup
+		Warp 0,304,7,19
+
+block
+	endwindow "\n\n真的好头疼啊.",ok

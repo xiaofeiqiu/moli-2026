@@ -1,0 +1,20 @@
+block item 87441 == 1 && item 87473 == 1
+window "\n\n你要见盖尔博士请随我来",ok
+window_ok
+LeaveGroup
+Warp 0,29654,24,37
+
+block item 87441 == 1
+endwindow "\n\n现在盖尔博士在处理研究室的问题现在还不能见他。"
+
+block item 87437 == 1
+window "\n\n你是来找亚留特村神秘中毒的幸存者的？中毒？这只是我们初步诊断的结果。",next
+window "\n\n由于唯一幸存者的情况出现特殊变化，该患者现被法兰疾病控制中心接手，送到实验室进行全面检查了。",next
+window "\n\n走吧，我带你去见他们的负责人盖尔博士，看看能否让你探望下那个幸存者吧？你要前去探望吗？",yes,no
+window_no
+window_yes
+killitem 87437
+Warp 0,29633,24,37
+
+block
+endwindow "\n\n据闻最近亚留特村出现了很多怪事！"

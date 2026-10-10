@@ -1,0 +1,10 @@
+block item 142 >= 1
+endwindow "\n\n那个骨头还在动..."
+
+	
+block item 119 == 1
+window "\n\n那个骨头在动你看见了么...给你,快出去吧~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 142,1

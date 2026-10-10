@@ -1,0 +1,23 @@
+block	itemspace<1
+Endwindow"\n\n\n身上的物品满了喔."
+block	EndEvent 631==1
+window"\n\n\n好强大的外来人……看来我也多学学能耐，哼哼！",ok
+window_ok
+leavegroup
+Warp 0,23230,16,15
+block	item 191710>=1	&&	EndEvent 631==0
+window"\n\n\n好强大的外来人……看来我也多学学能耐了！",ok
+window_ok
+killitem 191710,1
+EndEvent 631=1
+leavegroup
+Warp 0,23230,16,15
+block	item 191711>=1	&&	EndEvent 631==0
+window"\n\n\n好强大的外来人……看来我也多学学能耐的啦！",ok
+window_ok
+killitem 191711,1
+Giveitem (191702%1,191703%1,191704%1,191705%1,191706%1,191707%1,191708%1,191709%1)
+Giveitem (191722%1,191723%1,191724%1,191725%1,191726%1,191727%1,191728%1)
+EndEvent 631=1
+leavegroup
+Warp 0,23230,16,15

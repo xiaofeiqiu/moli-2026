@@ -1,0 +1,130 @@
+#####老人孙女#####
+block item 795206 >= 1 && EndEvent 595 == 1
+window "\n\n哈哈,你是sss级佣兵,最高只能给你50个蓝晶石啦!",yes,no
+window_yes item 795206 >= 1 && EndEvent 595 == 1
+killitem 795206
+giveitem 795207,50
+endwindow "\n\n勇士继续努力!"
+
+block item 795206 >= 1 && EndEvent 594 == 1
+window "\n\n哈哈,你是ss级佣兵,我只能给你30个蓝晶石\n\n如果你还能够提高佣兵等级,我可以给你更多",yes,no
+window_yes item 795206 >= 1 && EndEvent 594 == 1
+killitem 795206
+giveitem 795207,30
+endwindow "\n\n勇士继续努力!"
+
+block item 795206 >= 1 && EndEvent 593 == 1
+window "\n\n哈哈,你是s级佣兵,我只能给你20个蓝晶石\n\n如果你还能够提高佣兵等级,我可以给你更多",yes,no
+window_yes item 795206 >= 1 && EndEvent 593 == 1
+killitem 795206
+giveitem 795207,20
+endwindow "\n\n勇士继续努力!"
+
+block item 795206 >= 1 && EndEvent 592 == 1
+window "\n\n哈哈,你是a级佣兵,我只能给你15个蓝晶石\n\n如果你还能够提高佣兵等级,我可以给你更多",yes,no
+window_yes item 795206 >= 1 && EndEvent 592 == 1
+killitem 795206
+giveitem 795207,15
+endwindow "\n\n勇士继续努力!"
+
+block item 795206 >= 1 && EndEvent 591 == 1
+window "\n\n哈哈,你是b级佣兵,我只能给你10个蓝晶石\n\n如果你还能够提高佣兵等级,我可以给你更多",yes,no
+window_yes item 795206 >= 1 && EndEvent 591 == 1
+killitem 795206
+giveitem 795207,10
+endwindow "\n\n勇士继续努力!"
+
+block item 795206 >= 1 && EndEvent 590 == 1
+window "\n\n哈哈,你是C级佣兵,我只能给你5个蓝晶石\n\n如果你还能够提高佣兵等级,我可以给你更多",yes,no
+window_yes item 795206 >= 1 && EndEvent 590 == 1
+killitem 795206
+giveitem 795207,5
+endwindow "\n\n勇士继续努力!"
+
+block item 795206 == 0 
+endwindow "\n如果你能够给我带来佣兵勋章\n我就私下送给你一点蓝晶石哦\n我听说有些叫佣兵的人很厉害的\n真想见见啊,要是你是佣兵的话\n我还会多送你几个的\n问我为什么有这么多蓝晶石啊?\n哈哈~其实是从爷爷那偷偷拿的吖\n嘻,别告诉爷爷哦"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

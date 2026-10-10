@@ -1,0 +1,13 @@
+block
+window "\n\n孩子你太让我感到欣慰了,我以你为荣.",next
+window "\n\n正所谓青出于蓝胜于蓝,你今后的成就绝对在我之上,我的天空之剑你拿去吧,你的力量已经足以驾驭此剑.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200521
+leavegroup
+Warp 0,27501,41,24
+
+
+
+

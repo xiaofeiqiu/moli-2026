@@ -1,0 +1,28 @@
+block item 60451 >= 1
+Endwindow "\n\n你已经有了相关道具,不能在领取了"
+
+block endevent 583 == 1 && ItemSpace >= 1 && StrCmpChat == 9080
+Window "\n\n哦......孩子,你怎么知道女神的恩赐?\n\n\n为什么想得到她?",next
+Window "\n\n讲了一下北国的情况",next
+Window "\n\n嗯..你有一颗善良的心!\n女神的恩赐是3000年前的大圣战女神留下来的.\n当年女神战胜并且封印了魔王后自身也受到了重创,自知无法再长时间守护这片土地,于是使用剩余的一点法力造就了四灵之地,分别是石灵、水灵、木灵和风灵,从此女神进入了长时间的沉睡,至今未醒.",next
+Window "\n\n四灵之地不仅加强了对魔王的封印,本身也是作为造福人民的存在:祛除疾病,驱邪除魔.至于女神的恩赐,则把能力提升到了及致.想要得到她,首先得有一颗正直、善良的心,其次必须要凑齐全部四灵才能获得.\n孩子,相信这些要求对你不是难事.",next
+Window "\n\n这是女神的指引,她会引导你到达四灵之地.",ok
+Window_ok ItemSpace <= 1
+endWindow "\n\n\n请整理下包裹再来"
+Window_ok ItemSpace >= 1
+GiveItem 60451,1
+
+block Item 60459 >= 1
+Window "\n\n把魔石?给了大主教",next
+killitem 60459
+Window "\n\n污染的魔石.....\n\n孩子,你在哪得到的这个?",next
+Window "\n\n@n:在袭击伊尔村的怪物身上得到的",next
+GiveItem 60458,1
+endWindow "\n\n........\n\n袭击伊尔村?\n\n你再去问问海茵其他村子的情况....\n\n希望是偶然..."
+
+
+block Item 60451 >= 1
+endWindow "\n\n愿女神保佑你!"
+
+block
+endWindow "\n\n有何贵干?"

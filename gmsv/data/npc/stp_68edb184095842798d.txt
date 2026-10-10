@@ -1,0 +1,8 @@
+block item 60398 >= 1 && itemspace >= 1
+window "\n\n我这里有改造纯白设计图C\n\n10万/张\n\n购买需要交出1个讨伐犹大的证明\n\n需要吗?",yes,no
+window_yes item 60398 >= 1
+addgold -100000
+killitem 60398,1
+giveitem 565
+leaveGroup
+Warp 0,1000,233,78

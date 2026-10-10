@@ -1,0 +1,7 @@
+block
+window "\n\n　这条急流看起来像是通向外面的，要顺着这条急流游出去吗？",yes,no
+window_no
+endwindow "\n\n　看起来水流好急...还是算了。"
+window_yes
+leavegroup
+Warp 0,60163,44,24

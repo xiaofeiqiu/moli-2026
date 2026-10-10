@@ -1,0 +1,9 @@
+block item 87783 == 1
+window "\n\n居然有这种事，光天化日下王国军队乱抓人，你放心先在我家休息下，等克雷斯兄妹过来，明早我就去托熟人看看有没有办法救出他们父母。",ok
+window_ok
+LeaveGroup
+killitem 87783
+Warp 0,28643,1,9
+
+block
+endwindow "\n\n别看我很奸诈，其实我是好人。"

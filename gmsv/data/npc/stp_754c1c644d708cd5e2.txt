@@ -1,0 +1,31 @@
+block item 1000727 >= 1 && ItemCreateTime 61110 < 240
+endwindow 7020482
+
+block item 1000727 >= 1 && ItemCreateTime 61110 >= 240
+window 7020483,ok
+window_ok
+LeaveGroup
+killitem 1000727
+giveitem 1000728
+
+block globalFlag 330 == 1 && item 1000726 >= 10
+window 7020484,next
+window 7020485,ok
+window_ok
+LeaveGroup
+killitem 1000726,10
+giveitem 1000727
+globalFlag 330 = 0
+
+block globalFlag 330 == 0 && globalFlag 329 == 1
+window 7020486,yes,no
+window_yes
+window 7020487,ok
+window_ok
+LeaveGroup
+globalFlag 330 = 1
+globalFlag 329 = 0
+window_no
+
+block
+endwindow 7020488

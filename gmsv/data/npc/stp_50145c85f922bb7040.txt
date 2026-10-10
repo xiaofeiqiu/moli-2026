@@ -1,0 +1,6 @@
+block
+window 7020474,ok
+window_ok
+LeaveGroup
+giveitem 1000744
+Warp 0,23231,62,53

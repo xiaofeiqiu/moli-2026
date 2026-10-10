@@ -1,0 +1,9 @@
+block EndEvent 513 == 1
+Window "\n\n墓地那边安静了一阵,可是最近又开始发出怪声了!好害怕...",next
+Window "\n\n你来得正这好...今次拜托你解决此事.",ok
+Window_ok
+LeaveGroup
+Warp 0,57216,44,62
+
+block
+EndWindow "\n\n墓地那边安静了一阵,可是最近又开始发出怪声了!好害怕..."

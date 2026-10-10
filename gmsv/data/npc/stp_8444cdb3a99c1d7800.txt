@@ -1,0 +1,10 @@
+block item 1000830 == 1 && endevent 704 != 1
+	Window"\n\n¡­¡­",ok
+	Window_ok
+			killitem 1000830,1
+			giveitem 72029,1
+			endevent 704 = 1
+			checktitle
+			
+
+#³ÆºÅ

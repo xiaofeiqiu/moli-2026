@@ -1,0 +1,6 @@
+block
+window 85601,yes,no
+window_yes
+Encount 2|0,28206,23,45|||||||0|86151|5|0|||||5|0|
+window_no
+Warp 0,1000,233,78

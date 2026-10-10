@@ -1,0 +1,24 @@
+###dodo_gm_1051488.txt
+###小朱给予玩家奖赏.
+
+block Group > 1
+window "\n\n请解散队伍!",OK 
+Window_OK 
+LeaveGroup  
+
+###身上有日月组织团员金卡
+block Item 715248 >= 1
+window "\n\n哇哈哈哈!\n终于成功了,我现在是新的法兰之王!\n这是法兰城国王的配剑,听说有着特别的功用!\n不过,我不知道怎么使用.\n就赏给你的奖赏吧!",OK 
+Window_OK ItemSpace < 1
+endwindow "\n\n你的身上物品携带的太多了."
+
+Window_OK Item 715248 >= 1 && ItemSpace >= 1
+KillItem 715248
+GiveLeak1Item 715257
+Warp 0,1000,233,78 
+
+
+block
+window "\n\n你是来参拜法兰城的新国王吧!\n消息真灵通.\n那你也参拜过了,可以出去了.",OK 
+Window_OK 
+Warp 0,1000,233,78 

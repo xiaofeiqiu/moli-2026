@@ -1,0 +1,6 @@
+block EndEvent 516 == 1 && item 141196 >= 1 && item 141200 >= 1
+Window "\n\n『你亮出了结界之链...结界之链生效了!』",next
+Window "\n\n『你穿上了神圣庇护之衣...神圣庇护之衣正在保护你的躯体!』",ok
+Window_ok item 141196 >= 1 && item 141200 >= 1
+LeaveGroup
+Warp 0,57473,31,25

@@ -1,0 +1,21 @@
+block item 87785 == 1 && item 87786 == 1 && item 87787 == 1 && item 87788 == 1
+window "\n\n看来你们已经拿到四勇者所托付的东西了。",next
+window "\n\n这样即使达奥斯复活了，我们也能同心协力将他继续封印！",next
+window "\n\n王国兵已经摆脱了我设置的重重阻碍进入禁地，我们得赶快跟上去。",ok
+window_ok
+warp 0.28662,10,75
+
+block item 87788 == 1
+endwindow "\n\n看来你们并没有完全继承四勇者的遗志！"
+
+block item 87787 == 1
+endwindow "\n\n看来你们并没有完全继承四勇者的遗志！"
+
+block item 87786 == 1
+endwindow "\n\n看来你们并没有完全继承四勇者的遗志！"
+
+block item 87785 == 1
+endwindow "\n\n看来你们并没有完全继承四勇者的遗志！"
+
+block
+endwindow "\n\n不好意思你们不是我要等的人！"

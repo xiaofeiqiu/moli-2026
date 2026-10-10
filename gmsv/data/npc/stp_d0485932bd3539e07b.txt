@@ -1,0 +1,22 @@
+block item 1000072 >= 1
+window "\n\n是么,事情顺利解决啦,这样我就放心了!",next
+window "\n\n宝珠我会好好保存的,你的故事我也会作为传家的故事告诉后代的哦.你也辛苦啦,这个算是我的一点心意.",ok
+window_ok item 1000072 >= 1
+killitem 1000072
+giveitem 15202
+
+
+block item 1000070 >= 1
+endwindow "\n\n带上这个去救公主吧."
+
+block item 1000069 >= 1 && endevent 560 == 1
+window "\n\n恩?海族受到攻击,需要我家的珠宝来拯救公主?",next
+window "\n\n没问题,这珠子虽然是传家宝,但是是我家的祖先拯救海族所得到的,现在用来拯救海族再合适不过了,我可不能做个让祖先蒙羞的自私子孙啊!你收好宝珠,赶快去吧.",ok
+window_ok item 1000069 >= 1
+killitem 1000069
+giveitem 1000070
+endevent 560 = 0
+
+
+block
+endwindow "\n\n哈哈,我的祖先拯救过海族,为了感谢他,海族送了个好大好大的宝珠给他,这可是我家的传家宝呀!"

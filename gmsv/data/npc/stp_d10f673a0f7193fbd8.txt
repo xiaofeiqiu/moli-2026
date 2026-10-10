@@ -1,0 +1,8 @@
+block Level >= 10 && Item 940114 == 1
+window "\n\n\n恩,你愿意堕落么?加入黑暗的势力,是要经过严峻的考验的.\n\n来吧.先让我看看你的实力和决心!",ok
+window_ok Item 940114 == 1
+Encount 3|0,718,16,17|||||0|||360020|||||||||
+
+
+block Level <= 9
+endwindow "\n\n\n你好,有什么可以服务的么?"

@@ -1,0 +1,19 @@
+block
+#50万银票提取脚本
+#	Killitem 661013,1
+#	addgold 500000
+#	systemmessage 800026
+#对话框
+	window 7019344,ok,cancel
+#条件判断
+	window_ok gold>500000
+#系统提示消息
+		systemmessage 7019345
+#条件判断
+	window_ok item 661013!=0 && gold<=500000
+#减道具
+		killitem 661013,1
+#提取金币
+		addgold 500000
+#系统提示
+		systemmessage 800027

@@ -1,0 +1,8 @@
+block item 200549 >= 1
+window "\n\n你要取下坐台上的风晶灵石吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200553
+leavegroup
+Warp 0,27585,251,346

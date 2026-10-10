@@ -1,0 +1,7 @@
+block item 51017 >=1
+	Window"\n\n要打开特殊材料包吗？",yes,no
+		window_yes ItemSpace < 0
+			EndWindow"\n\n@c你的物品栏不够了。"
+		Window_yes  item 51017 >=1
+			killitem 51017
+			giveitem (18449%1,18450%1,18451%1,18452%1,18453%1,18454%1,18455%1,18456%1)

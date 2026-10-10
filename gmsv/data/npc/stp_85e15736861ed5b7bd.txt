@@ -1,0 +1,4 @@
+block
+endwindow "\n\n感受吧,再多赞颂我一些吧!"
+
+

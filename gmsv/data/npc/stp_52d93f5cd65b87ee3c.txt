@@ -1,0 +1,16 @@
+block item 652597 >= 1 && item 652598 >= 1
+window "\n\n勇敢的人,祝福你一平安呀.",ok
+window_ok item 652597 >= 1 && item 652598 >= 1
+leavegroup
+Warp 0,44711,45,67
+
+
+block item 652595 >= 1
+window "\n\n勇敢的人,祝福你一平安呀.",ok
+window_ok item 652595 >= 1
+leavegroup
+Warp 0,44711,45,67
+
+
+block
+endwindow "\n\n我是负责维护传送门的奥得,冒险者呀,如果你有什么想帮忙的就去总部找法瑞尔吧."

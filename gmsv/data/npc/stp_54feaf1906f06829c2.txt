@@ -1,0 +1,38 @@
+block
+window "\n\n　要打开箱子查看吗？？",yes,no
+window_no
+window_yes itemspace != 0
+LocalCount12 = random 6,0
+if localcount12==1
+	giveitem (13606,13616,13626,13636,13646,13656,13666,13676),1
+	leavegroup
+	Warp 0,1000,265,88
+	endif
+if localcount12==2
+	giveitem (13607,13617,13627,13637,13647,13657,13667,13677),1
+	leavegroup
+	Warp 0,1000,265,88
+	endif
+if localcount12==3
+	giveitem (13608,13618,13628,13638,13648,13658,13668,13678),1
+	leavegroup
+	Warp 0,1000,265,88
+	endif
+if localcount12==4
+	giveitem (18653%25,18654%25,18655%15,18656%15,18657%20),1
+	leavegroup
+	Warp 0,1000,265,88
+	endif
+if localcount12==5
+	giveitem (18616%30,18617%10,18618%20,18619%30,18620%10),1
+	Warp 0,1000,265,88
+	endif
+if localcount12==6
+	leavegroup
+	setlp 1
+	systemmessage 8105145
+	Warp 0,1000,265,88
+	endif
+
+window_yes
+endwindow "\n\n　你已经拿不下了"

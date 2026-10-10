@@ -1,0 +1,124 @@
+#############■情人节活动,首饰店老板芭坦
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715228 >= 1 && Item 715234 == 0 && Group <= 2 && Item 715219 == 0
+window "\n\n这是一条神奇的定情项链,只要买了它送给你的恋人,你们将生生世世永不分离,只需要20000元就能买你一生的幸福!",yes,no
+Window_YES BBImage >= 100000 && BBImage <= 100173 && Item 715228 >= 1 && Item 715234 == 0 && Gold >= 20000 && Item 715219 == 0 && Group <= 2
+AddGold -20000
+GiveLeak1Item 715234
+endwindow "\n\n请把“缘定金生”项链送给你的最爱,那么你们将永不分离."
+Window_YES BBImage >= 100000 && BBImage <= 100173 && Gold < 20000
+endwindow "\n\n快去存钱吧,攒不到钱买项链你女朋友会跑的啊～"
+
+Window_NO Group <= 2
+Encount 3|0,30110,11,6||0|||||0|613175|||||||||
+
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715228 >= 1 && Item 715234 == 0 && Group <= 2 && Item 715219 == 0
+window "\n\n这是一条神奇的定情项链,只要买了它送给你的恋人,你们将生生世世永不分离,只需要20000元就能买你一生的幸福!",yes,no
+Window_YES BBImage >= 105000 && BBImage <= 105173 && Item 715228 >= 1 && Item 715234 == 0 && Gold >= 20000 && Item 715219 == 0 && Group <= 2
+AddGold -20000
+GiveLeak1Item 715234
+endwindow "\n\n请把“缘定金生”项链送给你的最爱,那么你们将永不分离."
+Window_YES BBImage >= 105000 && BBImage <= 105173 && Gold < 20000
+endwindow "\n\n快去存钱吧,攒不到钱买项链你女朋友会跑的啊～"
+
+Window_NO Group <= 2
+Encount 3|0,30110,11,6||0|||||0|613175|||||||||
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715228 >= 1 && Item 715234 == 0 && Group <= 2 && Item 715219 == 0
+window "\n\n这是一条神奇的定情项链,只要买了它送给你的恋人,你们将生生世世永不分离,只需要20000元就能买你一生的幸福!",yes,no
+Window_YES BBImage >= 106000 && BBImage <= 106173 && Item 715228 >= 1 && Item 715234 == 0 && Gold >= 20000 && Item 715219 == 0 && Group <= 2
+AddGold -20000
+GiveLeak1Item 715234
+endwindow "\n\n请把“缘定金生”项链送给你的最爱,那么你们将永不分离."
+Window_YES BBImage >= 106000 && BBImage <= 106173 && Gold < 20000  && Group <= 2
+endwindow "\n\n快去存钱吧,攒不到钱买项链你女朋友会跑的啊～"
+
+Window_NO Group <= 2
+Encount 3|0,30110,11,6||0|||||0|613175|||||||||
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715229 >= 1 && Item 715235 == 0 && Group <= 2 && Item 715219 == 0
+window "\n\n浪漫的戒指有着浪漫的传说,只要买了它送给你的恋人,你们将生生世世永不分离.请用20000元买你一生的幸福!",yes,no
+Window_YES BBImage >= 100250 && BBImage <= 100423 && Item 715229 >= 1 && Item 715235 == 0 && Gold >= 20000 && Item 715219 == 0 && Group <= 2
+AddGold -20000
+GiveLeak1Item 715235
+endwindow "\n\n请把“情比金坚”戒指送给你男朋友,那么你们将永不分离."
+Window_YES BBImage >= 100250 && BBImage <= 100423 && Gold < 20000 && Group <= 2
+endwindow "\n\n快去兼差吧,存不到钱买戒指你男朋友会被狐狸精拐跑的."
+
+Window_NO Group <= 2
+Encount 3|0,30110,11,6||0|||||0|613175|||||||||
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715229 >= 1 && Item 715235 == 0 && Group <= 2 && Item 715219 == 0
+window "\n\n浪漫的戒指有着浪漫的传说,只要买了它送给你的恋人,你们将生生世世永不分离.请用20000元买你一生的幸福!",yes,no
+Window_YES BBImage >= 105250 && BBImage <= 105423 && Item 715229 >= 1 && Item 715235 == 0 && Gold >= 20000 && Item 715219 == 0
+AddGold -20000
+GiveLeak1Item 715235
+endwindow "\n\n请把“情比金坚”戒指送给你男朋友,那么你们将永不分离."
+Window_YES BBImage >= 105250 && BBImage <= 105423 && Gold < 20000 && Group <= 2
+endwindow "\n\n快去兼差吧,存不到钱买戒指你男朋友会被狐狸精拐跑的."
+
+Window_NO Group <= 2
+Encount 3|0,30110,11,6||0|||||0|613175|||||||||
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715229 >= 1 && Item 715235 == 0 && Group <= 2 && Item 715219 == 0
+window "\n\n浪漫的戒指有着浪漫的传说,只要买了它送给你的恋人,你们将生生世世永不分离.请用20000元买你一生的幸福!",yes,no
+Window_YES BBImage >= 106250 && BBImage <= 106423 && Item 715229 >= 1 && Item 715235 == 0 && Gold >= 20000 && Item 715219 == 0
+AddGold -20000
+GiveLeak1Item 715235
+endwindow "\n\n请把“情比金坚”戒指送给你男朋友,那么你们将永不分离."
+Window_YES BBImage >= 106250 && BBImage <= 106423 && Gold < 20000 && Group == 1
+endwindow "\n\n快去兼差吧,存不到钱买戒指你男朋友会被狐狸精拐跑的."
+Window_NO Group <= 2
+Encount 3|0,30110,11,6||0|||||0|613175|||||||||
+
+block Group == 2 && Item 715228 >= 1
+endwindow "\n\n传说中的“缘定金生”项链,“情比金坚”戒指在这儿出售,只卖不送.帮你的情人带上项链,套上戒指,你们将永远不分开哟～\n请男生购买“缘定金生”项链,请女生购买“情比金坚”戒指,记得自己一个人过来买喔～你亲自为他挑选的,他才能感受你的心意嘛～"
+
+block Group == 2 && Item 715229 >= 1
+endwindow "\n\n传说中的“缘定金生”项链,“情比金坚”戒指在这儿出售,只卖不送.帮你的情人带上项链,套上戒指,你们将永远不分开哟～\n请男生购买“缘定金生”项链,请女生购买“情比金坚”戒指,记得自己一个人过来买喔～你亲自为他挑选的,他才能感受你的心意嘛～"
+
+block Group <= 2 && Item 715235 >= 1 && BBImage >= 100000 && BBImage <= 100173
+endwindow "\n\n女朋友送你的戒指喔～真是幸福的男人.她一定很爱你."
+
+block Group <= 2 && Item 715235 >= 1 && BBImage >= 105000 && BBImage <= 105173
+endwindow "\n\n女朋友送你的戒指喔～真是幸福的男人.她一定很爱你."
+
+block Group <= 2 && Item 715235 >= 1 && BBImage >= 106000 && BBImage <= 106173
+endwindow "\n\n女朋友送你的戒指喔～真是幸福的男人.她一定很爱你."
+
+block Group <= 2 && Item 715234 >= 1 && BBImage >= 100250 && BBImage <= 100423
+endwindow "\n\n男朋友送你的项链吗?他会一生一世爱你的."
+
+block Group <= 2 && Item 715234 >= 1 && BBImage >= 105250 && BBImage <= 105423
+endwindow "\n\n男朋友送你的项链吗?他会一生一世爱你的."
+
+block Group <= 2 && Item 715234 >= 1 && BBImage >= 106250 && BBImage <= 106423
+endwindow "\n\n男朋友送你的项链吗?他会一生一世爱你的."
+
+
+block Group <= 2 && Item 715234 >= 1 && BBImage >= 100000 && BBImage <= 100173
+endwindow "\n\n请把“缘定金生”项链送给你的最爱,那么你们将永不分离."
+
+block Group <= 2 && Item 715234 >= 1 && BBImage >= 105000 && BBImage <= 105173
+endwindow "\n\n请把“缘定金生”项链送给你的最爱,那么你们将永不分离."
+
+block Group <= 2 && Item 715234 >= 1 && BBImage >= 106000 && BBImage <= 106173
+endwindow "\n\n请把“缘定金生”项链送给你的最爱,那么你们将永不分离."
+
+block Group <= 2 && Item 715235 >= 1 && BBImage >= 100250 && BBImage <= 100423
+endwindow "\n\n请把“情比金坚”戒指送给你男朋友,那么你们将永不分离."
+
+block Group <= 2 && Item 715235 >= 1 && BBImage >= 105250 && BBImage <= 105423
+endwindow "\n\n请把“情比金坚”戒指送给你男朋友,那么你们将永不分离."
+
+block Group <= 2 && Item 715235 >= 1 && BBImage >= 106250 && BBImage <= 106423
+endwindow "\n\n请把“情比金坚”戒指送给你男朋友,那么你们将永不分离."
+
+
+block Group > 2
+endwindow "\n\n总不能老是降多角习题吧,快点两个两个配对好才是正途啊～"
+
+
+block 
+endwindow "\n\n欢迎光临,请随意看看,喜欢可以试戴喔～也请把两张优待券给我看."

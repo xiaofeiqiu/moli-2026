@@ -1,0 +1,11 @@
+block job == 204 && job <= 207 && item 660194 >= 1
+		window "\n\n　　　　您要学习制造格斗之戒么？",yes,no
+	window_yes Luac stp:legacy:09755251faef537ad43b >= 1 && item 660194 >= 1
+		killitem 660194
+		giverecipe 1724
+	endwindow "\n\n　　　　恭喜您已经习得制造格斗之戒.",ok
+endblock
+
+block
+	endwindow "\n\n@c学习制造格斗之戒需要3转或以上造剑工",ok
+endblock

@@ -1,0 +1,13 @@
+block Item 60464 >= 1 && Item 60465 >= 1 && Item 60466 >= 1
+endWindow "\n\n没有什么了"
+
+
+block
+Window "\n\n这里泥土是松动的,要调查吗?",yes,no
+Window_no
+Window_yes ItemSpace < 3
+endWindow "\n\n先整理下包裹吧"
+Window_yes ItemSpace >= 3
+GiveItem 60466,1
+GiveItem 60465,1
+GiveItem 60464,1

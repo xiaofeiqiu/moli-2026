@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至南恰拉山第二通道 ？",yes,no
+		Window_yes
+			KillItem 60222,1
+			Warp 0,33000,302,349
+		Window_no

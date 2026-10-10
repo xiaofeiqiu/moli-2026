@@ -1,0 +1,12 @@
+
+
+
+
+block Item 715298 > 0
+window "\n\n想知道是那种植物吗?",yes,no
+Window_YES PetSpace != 0 && Item 715298 > 0
+KillItem 715298,1
+GivePet (431%990,432%990,433%990,434%990,435%39,27178%1)
+Window_YES PetSpace == 0
+endwindow "\n\n你的宠物栏满啦!"
+Window_YES

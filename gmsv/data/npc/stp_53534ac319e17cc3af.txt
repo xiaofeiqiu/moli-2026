@@ -1,0 +1,18 @@
+block item 54007 >= 1
+	window "\n\n\n@c 很好~！你取得了最终的胜利！\n\n那么，请收好你的奖励！",ok
+	window_ok
+	killitem 54007
+	giveitem 54005
+	leavegroup
+	Warp 0,5401,21,3
+
+block item 54001 >= 1
+	window "\n\n\n@c各位选手都准备好了吧！\n\n那么就决斗就开始啦~！！",yes,no
+	window_no
+	window_yes
+	killitem 54001
+Encount 3|||0,1000,249,88|||||0|54003|
+block
+	window "\n\n\n@c 你把参加证明弄丢了吗？\n\n很抱歉我不能给你奖励~",ok
+	window_ok
+	Warp 0,5401,21,3

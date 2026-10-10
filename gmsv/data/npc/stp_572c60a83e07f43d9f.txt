@@ -1,0 +1,27 @@
+block
+window "\n\n你可以在我这里取消报名!.本次的成绩也会被取消!你确定吗?",yes,no
+window_no
+Endwindow "\n\n祝你好运~"
+window_yes
+globalFlag 359 = 0
+globalFlag 360 = 0
+globalFlag 361 = 0
+globalFlag 362 = 0
+globalFlag 363 = 0
+globalFlag 364 = 0
+globalFlag 365 = 0
+globalFlag 366 = 0
+globalFlag 367 = 0
+globalFlag 368 = 0
+globalFlag 369 = 0
+globalFlag 370 = 0
+globalFlag 371 = 0
+globalFlag 372 = 0
+globalFlag 373 = 0
+globalFlag 374 = 0
+globalFlag 375 = 0
+globalFlag 376 = 0
+globalFlag 377 = 0
+globalFlag 378 = 0
+globalFlag 379 = 0
+Endwindow "\n\n好啦~你已经取消报名了~帮你疏通关系累死我了!"

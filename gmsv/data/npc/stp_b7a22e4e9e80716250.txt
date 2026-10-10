@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性增加宠物BP点数1点！",ok
+	window_ok
+Luac stp:legacy:e3c9ea74350fe52d7baa
+		killitem 60281,1

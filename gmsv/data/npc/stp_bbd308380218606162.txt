@@ -1,0 +1,22 @@
+block item 200528 >= 1
+window "\n\n队长说我的任务还没有结束,呵呵～我早料到了,还好现在真相我都清楚了,我现在干劲十足,快去塔顶吧.",ok
+window_ok
+leavegroup
+Warp 0,27538,23,45
+
+
+
+block item 200525 >= 1
+window "\n\n王国下旨解除关押席普科了,太好了～其实他是个好人,这样我也能回城复命了,并与家人团聚了.",next
+window "\n\n国王这是英明的旨意,你进去吧,估计席普科现在在塔顶呢.",ok
+window_ok
+killitem 200525
+leavegroup
+Warp 0,27533,24,49
+
+
+
+block
+endwindow "\n\n塔里关押着本国的重犯,请勿入内."
+
+

@@ -1,0 +1,8 @@
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1
+window "\n\n太好了,昨天晚上做了一场美梦,整个人都精神多了,谢谢你们的帮忙,这个花瓶你们拿去吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200578
+leavegroup
+Warp 0,27633,261,116

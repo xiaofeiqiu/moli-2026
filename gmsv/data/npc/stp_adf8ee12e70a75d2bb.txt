@@ -1,0 +1,10 @@
+block itemspace < 1
+
+window"\n\n @c ÎïÆ·À¸ÇëÁô¿ÕÎ»",ok
+
+
+block
+
+giveitem 52293,1
+	LeaveGroup
+	Warp 0,1000,240,100

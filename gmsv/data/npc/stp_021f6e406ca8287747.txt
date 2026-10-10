@@ -1,0 +1,26 @@
+block Item 39663 > 0 && Item 9630 > 19 && Group > 1
+endwindow "\n\n请解散队伍"
+
+
+block Item 39663 > 0 && Item 9630 > 19
+window "有一组永久冰石,那我应该有办法抵抗热气,送你到火炎之谷入口,要到火炎之谷吗??",yes,no
+window_no
+endwindow "\n\n这里很危险,快点离开吧!"
+window_yes Group > 1
+endwindow "\n\n请解散队伍"
+window_yes
+window "\n\n好吧我送你到入口～",ok
+window_ok
+killitem 9630,20
+LeaveGroup
+Warp 0,32202,11,12
+
+
+block Item 39663 > 0
+window "\n\n火炎之谷太热了,在这鬼地方,我也无法发挥能力!",ok
+window_ok
+endwindow "\n\n如果有永久冰石解解暑气该有多好!"
+
+
+block
+endwindow "\n\n这里很危险,快点离开吧!"

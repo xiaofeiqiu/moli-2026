@@ -1,0 +1,16 @@
+block Pitem 86319
+Endwindow 85438
+
+block item 86319 >= 1
+window 85439,yes,no
+window_yes
+window_no
+window 85440,yes,no
+window_no
+window_yes
+window 85441,ok
+window_ok
+Encount 2|0,28178,83,27|86319|-1|||||0|86128|5|0|||||5|0|
+
+block
+endwindow 85442

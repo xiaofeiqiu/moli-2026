@@ -1,0 +1,9 @@
+block item 500153 == 1
+endwindow "\n\n你已经获得圣水了。"
+
+block item 500152 == 1
+window "\n\n你要用水桶获取这里的圣水吗？",yes,no
+window_no
+window_yes
+killitem 500152
+giveitem 500153

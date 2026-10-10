@@ -1,0 +1,28 @@
+block	item 191710==1
+window"\n\n怎么样了？我聪明的朋友们？",next
+window"\n\n哦？怎么……根本不是这样的，他们都在骗你！",next
+window"\n\n\n@c····················",next
+window"\n\n\n@c····················",next
+window"\n\n\n那么，那么受死吧！哈哈哈！",ok
+window_ok
+Encount 2|0,1009,64,54||0|||||0|530086|
+block	item 191711==1
+window"\n\n怎么样了？我聪明的朋友们？",next
+window"\n\n哦？怎么……根本不是这样的，他们都在骗你！",next
+window"\n\n\n@c·································",next
+window"\n\n\n@c·····························",next
+window"\n\n\n那么，那么受死吧！哈哈哈！",ok
+window_ok
+Encount 2|0,1009,64,54||0|||||0|530086|
+block	item 191701>=1
+Endwindow"\n\n\n快去吧..."
+block	item 191700>=1
+window"\n\n等等……你是远路而来的朋友吗?",next
+window"\n\n欢迎你来到这里啊，不知道你们听说了没有，梅萨对这个家伙想要用他可怕的魔法征服其他所有的神，成为整片大陆的霸主！",next
+window"\n\n这个可恶的家伙，我们正在全力追杀他，听说她最近就躲在西边的家里，你要参与进来不？我听说，他藏了许多好东西，只要你杀了她，他的东西都归你！",next
+window"\n\n太好了，你手里拿的是？……通行证啊，这个完全没用的，我这个是破除他门口封印的伪造的水晶，你拿着吧。他就藏在西边的家里。",ok
+window_ok
+killitem 191700,1
+Giveitem 191701,1
+block
+Endwindow"\n\n等等……你是远路而来的朋友吗？"

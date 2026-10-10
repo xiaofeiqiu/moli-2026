@@ -1,0 +1,11 @@
+block item 660148 >= 1
+	Window "\n您手中的绳子好象足够长的样子，要下井底看看么？",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c看来井底很深啊！",OK
+	Window_YES
+       	killitem 660148,1
+        leavegroup
+        Warp 0,356,212,301
+block item 660148 < 1
+	Window "\n\n@c这个水井好象很深的样子",ok
+	Window_ok

@@ -1,0 +1,11 @@
+block Item 1000812 == 1
+	Window "\n\n　你很强大，",next
+	Window "\n\n　不过，山茶的妈妈在阿比盖尔的手上",ok
+	window_ok 
+	killitem 1000812
+Encount 2|0,59536,36,27||0|||||0|670126|
+
+block
+	Window "\n\n　滚开，",next
+	Window "\n\n　小心我杀了你",ok
+	window_ok 

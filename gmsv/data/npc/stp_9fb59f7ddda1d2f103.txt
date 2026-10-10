@@ -1,0 +1,8 @@
+block item 87199 == 1
+endwindow "\n\n钥匙都交给你们了，就别来烦我了！"
+
+block
+window "\n\n你们好强啊！你们要带走她就带走吧！",ok
+window_ok
+LeaveGroup
+giveitem 87199

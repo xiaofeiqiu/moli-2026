@@ -1,0 +1,12 @@
+block item 88308 == 1
+endwindow "\n\n贝尔特走南闯北见识渊博！"
+
+block item 88307 == 1
+window "\n\n奇异果啊~~对啊，以前是我一直把这水果供应给拉娜他们店里的。",next
+window "\n\n这水果是从坎那贝拉村港口进口入我国的，至于从哪进口来的你可以去坎那贝拉村港湾管理处找，进口贸易公司经理的贝尔特。",ok
+window_ok
+killitem 88307
+giveitem 88308
+
+block
+endwindow "\n\n找我什么事呢？"

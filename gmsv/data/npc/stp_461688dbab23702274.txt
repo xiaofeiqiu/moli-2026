@@ -1,0 +1,10 @@
+######持有【联络信】【神眼】传送【龙神之里】
+block item 50961 >= 1 && item 18443 >= 1
+Window "\n\n你是来帮助龙神之里的冒险者么?请放心,为了不让龙神之里的位置暴露,所以是由我来送大家去那里的,那么,抓好啦,我要起飞了.",ok
+Window_ok
+LeaveGroup
+Warp 0,57126,43,63
+
+
+block
+Endwindow"\n\n\n　Rvixs Mlxwd Hl Djie Oilo Xsym\n　Domlaf Slm`ld Plts vlm\n　L`svs Jsys Mq`x\n　Lrhn Ryfyf Omriq Uq Lpx Tablh..."

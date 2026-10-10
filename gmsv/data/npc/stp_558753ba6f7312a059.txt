@@ -1,0 +1,73 @@
+block item 87934 == 1
+endwindow 933435
+
+block item 87933 == 1
+window 933436,next
+window 933437,next
+window 933438,ok
+window_ok
+giveitem 87934
+
+block item 87930 == 1
+endwindow 933439
+
+block item 87929 == 1
+window 933440,next
+window 933441,next
+window 933442,ok
+window_ok
+killitem 87929
+giveitem 87930
+endwindow 933443
+
+block item 87928 == 1
+endwindow 933444
+
+block item 87927 == 1
+window 933445,next
+window 933446,ok
+window_ok
+killitem 87927
+giveitem 87928
+
+block item 87919 == 1
+endwindow 933447
+
+block item 87918 == 1
+window 933448,next
+window 933449,ok
+window_ok
+killitem 87918
+giveitem 87919
+
+block item 87915 == 1
+window 933450,ok
+window_ok
+killitem 87915
+giveitem 87916
+
+block item 87914 == 1
+endwindow 933451
+
+block item 87912 == 1 && item 87913 == 1
+window 933452,next
+window 933453,ok
+window_ok
+killitem 87912
+killitem 87913
+giveitem 87914
+
+block item 87912 == 1
+endwindow 933454
+
+block item 87911 == 1
+window 933455,next
+window 933456,next
+window 933457,ok
+window_ok
+killitem 87911
+giveitem 87912
+endwindow 933458
+
+block
+endwindow 933459

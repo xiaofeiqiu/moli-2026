@@ -1,0 +1,8 @@
+######获得任务物品【敌人的情报】
+block item 50969 >= 1
+Window "\n\n哈比口中的主人已经知道了龙神大人培育后代的地方,请马上把这个消息报告给村长,麻烦你了.",ok
+Window_ok item 50969 >= 1
+killitem 50969
+giveitem 50970
+LeaveGroup
+Warp 0,57130,19,19

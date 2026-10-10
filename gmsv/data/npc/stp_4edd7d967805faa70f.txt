@@ -1,0 +1,17 @@
+block Luac stp:legacy:2e8c6d578844dbdb4064 >= 1 && level >= 70
+Window "\n\n哇啊!你看起来好像是个剑士啊!",next
+Window "\n\n呐～想不想继承我的“奥义·连击”啊?",next
+Window "\n\n看你资质不错的样子,就收你十万金币当学费了!先在这里交一部分金币,然后通过我的考验就教你这一招!",next
+Window "\n\n你要不要学? ",yes,no
+window_yes gold < 100000
+endwindow "\n\n你身上的钱不够,需要10万金币当学费."
+window_yes
+AddGold -100000
+leavegroup
+Warp 0,57556,9,5
+window_no
+endwindow "\n\n等你想好了再来."
+
+
+block
+EndWindow "\n\n唉...我这一身本领继承给谁好呢?伤脑筋!你认不认识会用剑的朋友啊?叫过来让我看看资质!"

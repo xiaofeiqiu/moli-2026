@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物必杀能力1点！",ok
+	window_ok
+Luac stp:legacy:57d9e91da97fe1be2cb3
+		killitem 60277,1

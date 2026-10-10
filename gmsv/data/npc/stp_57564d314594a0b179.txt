@@ -1,0 +1,10 @@
+block
+window "\n\n勇者您好,精灵界发生了一些变异,请随我来!",yes,no
+window_no
+window_yes item 534 >= 1
+endwindow "\n\n抱歉你不能直接从我这里进入精灵界!"
+window_yes level >= 120 && moonplayer 45 == 2
+leaveGroup
+Warp 0,2042,23,23
+window_yes
+endwindow "\n\n抱歉你没达到勇者的标准哦!"

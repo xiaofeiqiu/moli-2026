@@ -1,0 +1,20 @@
+
+
+
+
+
+
+block item 715323 >= 2
+window "\n\n您真的拿了两条鞋带了呀!!\n这双靴子就依约送给您.",ok
+window_ok
+killitem 715323,2
+giveitem 715324
+
+
+
+
+block
+window "\n\n家中的靴子突然爆走了\n帮我抓一下他们吧.",next
+window "\n\n你可以把鞋带拿给我做证明.",next
+endwindow "\n\n有两条一样的鞋带,我会送您一双靴子"
+

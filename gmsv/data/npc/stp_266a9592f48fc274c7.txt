@@ -1,0 +1,6 @@
+block item 72025 == 1
+	Window"古文书对这个喷泉产生了共鸣 泛起和大魔导师施法时一样的红光…",ok
+		Window_ok
+			killitem 72025,1
+			Leavegroup
+			Warp 0,4473,14,17

@@ -1,0 +1,18 @@
+block	item 99993	==	1
+	Window "\n\n　快去找我的朋友吧，开启者",next
+	EndWindow "\n\n　洛丹伦的命运就靠在您的身上了",OK
+		Window_OK
+block	item 99995	==	1
+	Window "\n\n　您就是国王请来的开启者么?",next
+	Window "\n\n　快,瘟疫就要来临到洛丹伦了,我是从那个魔头凯尔苏扎德手里逃回的",next
+	Window "\n\n　他们在米内噶尔岛的中部,快救救我们吧,拿上这个去找我在那守住洞口的朋友吧",OK
+		Window_OK
+			giveitem 99993
+block
+	Window "\n\n　终于到洛丹伦皇宫了",next
+	EndWindow "\n\n　你是谁?快离开这里吧!",OK
+		Window_OK
+block	endevent 701	==	1
+	Window "\n\n　谢谢你了开启者，洛丹伦终于脱离险境了.",next
+	EndWindow "\n\n　相信您的事迹很快就能传遍洛丹伦皇宫",OK
+		Window_OK

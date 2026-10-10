@@ -1,0 +1,11 @@
+block item 70003 >= 1 && item 70005 >= 1 && globalFlag 356 == 1
+killitem 70003
+killitem 70005
+Encount 3|0,25030,12,17||0|||||0|70015|
+
+block item 70003 >= 1 && globalFlag 356 == 1
+killitem 70003
+Encount 3|0,25030,12,17||0|||||0|70013|
+
+block globalFlag 356 == 1
+Encount 3|0,25030,12,17||0|||||0|70013|

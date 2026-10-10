@@ -1,0 +1,7 @@
+block item 39837 >= 1
+window "\n\n这些所谓的水怪就是蛇颈龙,自从盗猎队出现以后,他们的数量急剧减少,处于濒临灭绝的状态,勇敢的少年啊,感谢你拯救了这个物种,这点小小礼物请收下!",ok
+window_ok
+killitem 39837
+giveitem 39838
+leavegroup
+Warp 0,1000,153,149

@@ -1,0 +1,47 @@
+block item 400074 == 1
+	Window"\n\n勇士恭喜你，你已经证明你的实力了，去找预言者·米鲁吧。",ok
+		Window_ok item 400074 == 1
+		killitem 400074
+		giveitem 400075
+
+block item 400072 == 1
+	Window"\n\n没想到你连岩石·巨兽都击败了，你只需要再进行一步就可以证明你的实力了。",ok
+		Window_ok item 400072 == 1
+		killitem 400072
+		giveitem 400073
+
+block item 400070 == 1
+	Window"\n\n很好，你击败了沙尘·幽灵，你很快就能证明实力了。",ok
+		Window_ok item 400070 == 1
+		killitem 400070
+		giveitem 400071
+
+block item 400068 == 1
+	Window"\n\n你击败了恶魔·魇魔！你需要继续证明你的实力。",ok
+		Window_ok item 400068 == 1
+		killitem 400068
+		giveitem 400069
+
+block nowevent 569 == 1 && item 400066 == 1
+	Window"\n\n冰墓·骨牙都让你干掉了，你需要继续证明你的实力。",ok
+		Window_ok nowevent 569 == 1 && item 400066 == 1
+		nowevent 568 = 0
+		killitem 400066
+		giveitem 400067
+
+block nowevent 569 == 1 && item 400065 == 0
+	Window"\n\n你是来接受试炼的吗？！\n\n你必须去干掉危害世界的部分怪物，以此来证明你的实力。",ok
+		Window_ok nowevent 569 == 1 && item 400065 == 0
+		giveitem 400065
+
+block item 400073 == 1
+	endWindow"\n\n也许你需要再去一次绝壁村。"
+
+block item 400071 == 1
+	endWindow"\n\n也许你要去一次岩石洞穴。"
+
+block item 400065 == 1
+	endWindow"\n\n也许你要去一次雪原。"
+
+block item 400067 == 1
+	endWindow"\n\n也许你要去一次海湾之村。"

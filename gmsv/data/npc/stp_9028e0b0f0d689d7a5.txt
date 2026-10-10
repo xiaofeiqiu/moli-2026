@@ -1,0 +1,8 @@
+##使者##
+block EndEvent 662 == 1 && item 39547 >= 1
+	Window "\n异界的旅人啊，我感觉到你的力量的强大,现在我们精灵族正面对着巨大的危机",NEXT
+	Window "\n\n原本的我们那个世界的四大精灵神们，被妖族下了永恒狠毒的咒语。四大部落发生的极限大变迁。请帮助我们吧！",OK
+	Window_OK
+        killitem 39547,1
+        leavegroup
+	Warp 0,135,28,53

@@ -1,0 +1,11 @@
+block
+window"\n\n\n@c 女神露露:好象有人来了",next
+window"\n\n\n@c 女神利利亚:是谁呀?是来陪我们玩捉迷藏的吗?",next
+window"\n\n\n@c 女神多多亚:我怎么感觉好象在哪见过他呢?",next
+window"\n\n\n@c 女神利利亚:露露,他不就是在我们的地盘上撒野的混球吗?",next
+window"\n\n\n@c 女神露露:好象是,他好象救过你一命吧?",next
+window"\n\n\n@c 女神利利亚:是吧",next
+window"\n\n\n@c 喂！那边的小子，看在你救过我的份上，就放你过去吧",next
+window"\n\n\n@c 你可别忘了本小姐的恩赐。",ok
+window_OK
+	Warp 0,1020,182,116

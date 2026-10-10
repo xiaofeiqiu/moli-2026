@@ -1,0 +1,14 @@
+block item 800172 >= 1
+window "\n\n一尊拥有凹槽的石柱,里面充满了水气,与手中的水元素之证产生了共鸣,你要放入吗?",yes,no
+window_yes item 800172 >= 1
+killitem 800172
+window "台座闪耀出蓝色的光芒.",ok
+window_ok
+leavegroup
+Warp 0,44967,33,40
+
+
+block
+endwindow "\n\n一尊拥有凹槽的石柱,好像能放入六角形物体的东西似的."
+
+

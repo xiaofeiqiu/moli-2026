@@ -1,0 +1,10 @@
+block item 141207 >= 1
+EndWindow "\n\n你已经有一根火把了,拿不动了."
+
+block EndEvent 517 == 1
+Window "\n\n\n\n『发现死神的点火台,要拿一根火把吗?』",yes,no
+Window_no
+Window_yes ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏满了.",
+Window_yes
+giveitem 141207

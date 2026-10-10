@@ -1,0 +1,25 @@
+block Item 1000193 >= 1 && itemspace >= 1
+window "\n\n你居然这么快就取得了龙族长老的鳞片?",next
+window "\n\n请收下我微薄的谢礼,我得赶快去做药来治疗我的女儿了,万分感谢你的大力帮助!",ok
+window_ok Item 1000193 >= 1
+killItem 1000193,1
+giveItem 15615,3
+
+	
+block Item 1000191 >= 1
+endwindow "\n\n请你尽快行动吧,我的女儿的病十分的危急."
+
+	
+block Item 1000190 >= 1 && itemspace >= 1
+window "\n\n怎么办呢?我的女儿得了急病,而身为医生的我居然束手无策...",next
+window "\n\n旅行者啊,你能帮助我去龙族禁地的长老那里求一片龙鳞吗?",next
+window "\n\n什么?你也在寻找龙族长老的居住地吗?龙族的长老住在我们村外的东南方向!",next
+window "\n\n求求你了,我妻子过世的早,现在我只有我的女儿这么一个亲人了,我再也不能失去她了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok Item 1000190 >= 1
+giveItem 1000191,1
+
+	
+block
+endwindow "\n\n我的女儿正在生病,请不要打扰我配置药品."

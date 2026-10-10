@@ -1,0 +1,9 @@
+block
+window "\n\n可恶,这封信就交给你吧!",next
+window "\n\n别以为仅仅凭借这封信就能对我们的营地造成什么影响!",ok	
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 22463
+leavegroup
+Warp 0,45089,354,402

@@ -1,0 +1,7 @@
+block level >= 100
+	Window"\n\n要离开村子吗？",yes,no
+		Window_ok level >= 100
+		Window_no
+		Window_yes
+			Leavegroup
+			Warp 0,45138,349,134

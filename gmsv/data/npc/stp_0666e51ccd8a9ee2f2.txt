@@ -1,0 +1,7 @@
+block itemspace >= 1
+window "\n\n我这里有改造纯白设计图D\n\n10万/张,需要购买吗?",yes,no
+window_yes
+addgold -100000
+giveitem 566
+leaveGroup
+Warp 0,1000,233,78

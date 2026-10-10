@@ -1,0 +1,4 @@
+block
+KillItem 666053,1
+Setfeverflg 1
+metamo 120086

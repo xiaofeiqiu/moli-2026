@@ -1,0 +1,4 @@
+block drugdish != 0
+killdrugdish
+leavegroup
+Warp 0,29936,22,67

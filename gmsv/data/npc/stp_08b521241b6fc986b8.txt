@@ -1,0 +1,9 @@
+block item 800186 >= 1
+window "\n\n嘿,勇士,我等你等得花儿都谢了!前面有一个结界阻挡人类前进,我哥哥被里面的那个女人挟持了.",next
+window "\n\n你快用黄色棱石解除结界,进去打败她,让她交出我哥哥来!",ok
+window_ok item 800186 >= 1
+killitem 800186
+leaveGroup
+Warp 0,44891,17,16
+
+

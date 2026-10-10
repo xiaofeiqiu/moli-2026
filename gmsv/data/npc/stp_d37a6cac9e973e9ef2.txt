@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【贝鲁伊卡】吗？",ok
+			Window_ok
+Luac stp:legacy:d62ab4cbdea6074bfad3
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【格鲁西斯】吗？",ok
+			Window_ok
+Luac stp:legacy:d66ff55dfd8b43ac2cae
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【金格萨贝鲁】吗？",ok
+			Window_ok
+Luac stp:legacy:7f631f038549834de718
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【佩露夏】吗？",ok
+			Window_ok
+Luac stp:legacy:9580ea10a6ecd0812342
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【贝鲁卡】吗？",ok
+			Window_ok
+Luac stp:legacy:6ec02864274512d2651f
+				endif
+

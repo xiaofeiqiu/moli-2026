@@ -1,0 +1,25 @@
+block item 87202 == 1
+window "\n\n你把事情完完整整的告诉了齐格蒙德...",next
+endwindow "\n\n唉~~看来我们只能来世再做夫妻了，这把断了的神剑也已经对我失去意义了，你就帮我收好它吧...."
+
+block item 87201 == 1
+window "\n\n希望这把剑真的能帮到你的忙！"
+
+block item 87200 == 1
+window "\n\n啊？！我与齐格琳德是孪生兄妹~~",next
+window "\n\n先不管这个，朋友你一定要帮我把她救出来，如果你要这把神剑就拿去吧！",ok
+window_ok
+LeaveGroup
+giveitem 87201
+
+block item 87198 == 1
+endwindow "\n\n冬日寒风已消逝，只有你才是可爱的春天!"
+
+block item 87196 == 1
+window "\n\n我为了寻找传说中的诺顿剑来到了霍格村。在我借宿的一处人家，在女主人齐格琳德的帮助下，我终于找到了诺顿剑，并且我们彼此相爱！",next
+window "\n\n不幸的是她当山贼的姐夫，也看中了她。在我们私定终生的晚上，连夜把她抢上了山。他的老窝就在村外的斯堪的纳维亚山之顶上，你能帮我把齐格琳德就回来吗？",ok
+window_ok
+giveitem 87198
+
+block
+endwindow "\n\n我深深的爱上了收留我的女主人齐格琳德！"

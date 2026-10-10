@@ -1,0 +1,43 @@
+block ItemCreateTime 61028 >= 60 && item 61028 >= 1
+window 900594,ok
+window_ok
+LeaveGroup
+killitem 61028
+giveitem 61035
+globalFlag 308 = 0
+globalFlag 309 = 1
+
+block item 61028 >= 1 && ItemCreateTime 61028 <= 59
+endwindow 900595
+
+
+block item 61027 >= 1 && ItemCreateTime 61027 >= 30
+window 900596,yes,no
+window_yes ItemSpace >= 1 && gold >= 5000
+LeaveGroup
+killitem 61027,1
+addgold -5000
+giveitem 61028,1
+window_yes ItemSpace < 1
+endwindow 900597
+window_yes gold < 5000
+endwindow 900598
+window_no
+
+block item 61027 >= 1 && ItemCreateTime 61027 <= 29
+endwindow 900599
+
+block globalFlag 308 == 1
+window 900600,yes,no
+window_no
+window_yes ItemSpace >= 1 && gold >= 1000
+LeaveGroup
+addgold -1000
+giveitem 61027,1
+window_yes ItemSpace < 1  
+endwindow 900601
+window_yes gold < 1000
+endwindow 900602
+
+block
+endwindow 900603

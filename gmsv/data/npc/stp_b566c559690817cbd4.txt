@@ -1,0 +1,5 @@
+block item 86246 >= 1
+window "\n\n好像有一个石柱被这颗树包住了.将树皮拨开,石柱上面有凹槽,恰好可以把这枚黄色三棱石放入.",ok
+window_ok item 86246 >= 1
+leavegroup
+Warp 0,28087,5,7

@@ -1,0 +1,70 @@
+block itemspace <= 1 || petspace == 0
+	endwindow "\n\n　把背包和宠物清理下再来找我吧。"
+block item 1000323 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 1000323,1
+block item 60409 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60409,1
+block item 60410 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60410,1
+block item 60413 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60413,1
+block item 60415 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60415,1
+block item 60423 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60423,1
+block item 60425 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60425,1
+block item 60426 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60426,1
+block item 60409 >= 1
+	window "\n\n您好冒险者，有什么需要帮忙的吗？",ok
+		window_ok
+			EndWindow "\n\n	有空常来看看，冒险者。"
+block item 60423 >= 1 && item 60425 >= 1
+	window"\n\n辛苦了冒险者，真是一场难忘的试炼，万色阳光对你们的实力非常感兴趣，请收下我们的一点心意。",ok
+		window_ok
+			killitem 60423,1
+			killitem 60425,1
+			givepet (3000111%20,3000112%20,3000113%20,3000114%20,3000115%20)
+block item 60426 >= 1
+	window"\n\n冒险者们，你们看起来遇到些麻烦，不过现在不是闲聊的时候，卵已经开始孵化了，先去法兰周边的村子阻止已经变成魔女的少女们，把这个也带上，必要时候会用的上。",ok
+		window_ok
+			killitem 60426,1
+			giveitem 60409,1
+block item 60413 >= 1
+	window"\n\n这个宝石……就像孕育某种生命的卵……你们为什么会得到这样的东西？",next
+	window"\n\n（向奎因说明了缘由……）",next
+	window"\n\n（奎因沉思了一会）收好它冒险者，另外带上这个，你会需要它，一路小心。",ok
+		window_ok
+			giveitem 60410,1
+block item 1000323 >= 1 && item 60415 >= 1
+	window"\n\n回来了吗冒险者，过程我听说了，诚惠先生来找过我，事情似乎有些麻烦。",next
+	window"\n\n（向奎因说明了艾泽尔的猜测……）",next
+	window"\n\n冒险者们，希望你们不要在深入调查了，万色阳光会接手这件事情。",next
+	window"\n\n为什么？奎因先生？不能放过携带这个宝石的人！他们会带来灾难！",next
+	window"\n\n坚强的决心不一定会带来美好的结果，埃露戴娜和诚惠先生已经开始行动了，这个事件的结果你们未必能接受，如果你们坚持参与，希望能有个心理准备……",next
+	window"\n\n无论您怎么说，我们都会追查到底的！",next
+	window"\n\n请答应我冒险者，如果出现什么意外立刻收手，拿着这个去城南找泽尔里奇，你们会得到一些新的指示。",ok
+		window_ok
+			killitem 1000323,1
+			giveitem 1000324,1
+block
+	window "\n\n您好冒险者，有什么需要帮忙的吗？",ok
+		window_ok
+			EndWindow "\n\n	有空常来看看，冒险者。"

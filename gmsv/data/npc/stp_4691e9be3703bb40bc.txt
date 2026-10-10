@@ -1,0 +1,12 @@
+block item 87946 == 1
+endwindow 933485
+
+block item 87945 == 1
+window 933486,next
+window 933487,ok
+window_ok
+killitem 87945
+giveitem 87946
+
+block
+endwindow 933488

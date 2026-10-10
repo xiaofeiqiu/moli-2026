@@ -1,0 +1,8 @@
+block
+	window"\n\n是否变成卡卡西（白）形象，更改后头像将变为影角（男）？",ok
+	window_ok
+Luac stp:legacy:ac3bd7eaac65e653841c
+Luac stp:legacy:8f3a6871aeea167b8745
+Luac stp:legacy:4e22045da6b1b259e084
+Luac stp:legacy:7ee434842ecbfe0a14f9
+		killitem 60260,1

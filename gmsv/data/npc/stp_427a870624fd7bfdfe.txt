@@ -1,0 +1,8 @@
+Block Itemdur 661201 == 1
+Window"\n\n\n我就是魔族的将领,奉魔王雷斯之命准备屠杀整个法兰城,我就是在这等着消灭你们的.....想知道阿尔杰斯在哪?就打倒我吧!",ok
+Window_ok Itemdur 661201 == 1
+KillItem 661201,1
+Encount 2|0,59779,11,8||||||||350005|||||||||
+Block
+
+EndWindow"\n\n\n@c……………"

@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【玫瑰粉怪】吗？",ok
+			Window_ok
+Luac stp:legacy:68aefa05b8998db47d43
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【牛奶粉怪】吗？",ok
+			Window_ok
+Luac stp:legacy:eb2ee1bc7c452ea615d6
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【葡萄酒粉怪】吗？",ok
+			Window_ok
+Luac stp:legacy:ecefbf5b7157562a5ba8
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【马卡来粉怪】吗？",ok
+			Window_ok
+Luac stp:legacy:b1f9ae80c5a8a7d18afa
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【银色粉怪】吗？",ok
+			Window_ok
+Luac stp:legacy:5da778708b110bca5564
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【蜂蜜粉怪】吗？",ok
+			Window_ok
+Luac stp:legacy:1bbf97313b4254c66c1c
+				endif
+

@@ -1,0 +1,14 @@
+block	item 22220002 < 1 || item 88880007 < 5
+	window"\n\n 滚出去，这里岂能让你随便来！",next
+	window"\n\n 但如果你有某些可以让我觉醒的东西的话，可以随时找我！",ok
+
+block	item 22220002 >= 1 && item 88880007 >= 5
+	window"\n\n 我的孩子，如果你想以新的高度做为目标的话，那你必须超越我！如果超越我的话，就可以离开这里，对你的试炼也算结束了。在与等待着你的人见面之前你会想些什么呢？",next
+	window"\n\n 接下来，先超越我吧！",yes,no
+	window_yes
+Encount 3|0,47485,10,8|||||0|||80800011|
+	window_no
+	window"\n\n 滚开吧胆小鬼",ok
+	window_ok
+	leavegroup
+	Warp 0,1000,238,88

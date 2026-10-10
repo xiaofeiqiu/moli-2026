@@ -1,0 +1,4 @@
+block
+window "\n\n马上从我面前消失！！",ok
+window_ok
+Warp 0,29831,49,41

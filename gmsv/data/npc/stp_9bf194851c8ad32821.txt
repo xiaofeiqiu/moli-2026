@@ -1,0 +1,7 @@
+block item 1000463 >= 1
+	Window"\n\n感谢你们和炽天使的帮助！纳萨里克林地会永远记得你们！请带着魔王的圣印交给团长让他们放心。",ok
+		Window_ok
+	killitem 1000463,1
+	giveitem 1000462,1
+			Leavegroup
+			Warp 0,18113,11,6

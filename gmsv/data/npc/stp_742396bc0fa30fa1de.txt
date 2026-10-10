@@ -1,0 +1,20 @@
+
+
+block item 715300> 0 && item 715301 >= 10
+window "\n\n十个水晶珠\n看来你真的想知道真相\n那您去见守护之花吧!",ok
+Window_ok item 715300> 0 && item 715301 >= 10
+killitem 715301,10
+killitem 715300,1
+leavegroup 
+Warp 0,45065,6,5
+Window_ok
+endblock
+
+
+block item 715300 > 0
+window "\n\n您不是这村子的人吧!",next
+endwindow "\n\n你想知道真相\n那先到往山的矿路\n取得十个水晶珠吧!"
+
+
+block 
+endwindow "\n\n您不是这村子的人吧!"

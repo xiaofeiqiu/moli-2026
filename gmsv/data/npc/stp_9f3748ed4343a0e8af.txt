@@ -1,0 +1,7 @@
+block globalFlag 353 == 1 && globalFlag 352 == 1 && item 70018 >= 1
+window 910359,ok
+window_ok
+LeaveGroup
+killitem 70018
+giveitem 70019
+Warp 0,25013,24,73

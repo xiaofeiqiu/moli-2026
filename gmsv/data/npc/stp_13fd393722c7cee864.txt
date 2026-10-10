@@ -1,0 +1,10 @@
+block item 200203 >= 1
+window "\n\n你要用钥匙打开这扇门吗?",yes,no
+window_yes
+killitem 200203
+leavegroup
+Warp 0,27005,76,26
+
+
+block
+endwindow "\n\n门被锁住了,需要钥匙才可以打开."

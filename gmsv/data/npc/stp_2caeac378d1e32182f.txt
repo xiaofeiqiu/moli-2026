@@ -1,0 +1,9 @@
+block item 54011 >=1 ||54012 >=1||54008>=1||54013>=1||54009>=1
+block item 54011 >=1 ||54012 >=1
+block item 54009 >= 1
+	window "\n\n\n@c 上面有小空，要把钥匙放进去吗？",yes,no
+	window_no
+	window_yes
+	killitem 54009
+	leavegroup
+	Warp 0,5404,11,7

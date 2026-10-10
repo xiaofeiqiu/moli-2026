@@ -1,0 +1,11 @@
+########## 给予 ##########
+block 
+	Window "\n识时务者为俊杰,怎么样？加入冥界？（GM叫我告诉你，你是打不过我的，你还是走吧，我给你好处OK？）",yes,no
+	Window_yes
+	leavegroup
+        giveitem 600315,1
+	Warp 0,1000,240,100
+	window_no
+	window "\n\n    你说的话我已经忘记了，因为你已经死了。。",ok
+	window_ok
+Encount 3|0,1530,15,6|||||0|||500900|||||||||

@@ -1,0 +1,6 @@
+block globalFlag 336 == 1 && item 61125 >=1 && item 61124 >= 1
+window 900676,next
+window 900677,yes,no
+window_yes
+killitem 61124
+Encount 3|0,23314,5,19||0|||||0|61040|

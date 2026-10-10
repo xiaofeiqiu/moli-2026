@@ -1,0 +1,7 @@
+block Floor != 931
+	EndWindow "\n\n\n@c想带出去使用啊？没门！",OK
+
+block
+		Killitem 1000486
+PlaySE 207,320,240
+		Warp 0,932,46,15

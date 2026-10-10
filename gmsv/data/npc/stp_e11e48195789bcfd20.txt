@@ -1,0 +1,9 @@
+block
+Encount 3|0,1511,8,9|||||0|||980000|||||||||
+block Item 990005 == 1
+	Window 7020600,next
+	Window 7020601,next
+	EndWindow 7020602,ok
+	KillItem 990005,1
+block Item 990005 != 1
+	EndWindow 990020,ok

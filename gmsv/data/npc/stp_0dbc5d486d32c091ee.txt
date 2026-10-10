@@ -1,0 +1,99 @@
+block item 200018 >= 1
+endwindow "\n\n一定要注意安全,那边地势险恶."
+
+
+block StrCmpChat == 200005 && EndEvent 544 == 1
+window "\n\n你们也发现了吗?",next
+window "\n\n哪里镇守着通往火焰 红莲的结界.",next
+window "\n\n也就是兴生俱来的对头（火焰鼠）栖息地.",next
+window "\n\n因为那边环境恶劣,我们经常受到侵犯.",next
+window "\n\n唔…我想没有什么可能阻止可恶的洛希尔,一个自称火神洛基后羿的骗子.",next
+window "\n\n既然你强烈要求前往,我祝你成功.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200018
+
+
+block item 200017 >= 1
+window "\n\n你要将勋章兑换成永久称号吗?",yes,no
+window_yes
+window "\n\n再次确定\n你要将勋章兑换成永久称号吗?",yes,no
+window_yes
+killitem 200017
+EndEvent 544 = 1
+checktitle
+
+block item 200015 >= 1 && item 200016 >= 1
+window "\n\n勇者们,你们居然办到了,感谢您们,世界也会恢复到原来的安宁了.",next
+window "\n\n我代表大地鼠国王所有的公民,赐予你们最高的奖励,请收下.",ok
+window_ok
+killitem 200015
+killitem 200016
+giveitem 200017
+
+
+block item 200015 >= 1
+endwindow "\n\n一切可能都太迟了..."
+
+
+block item 200012 >= 1 && item 200014 >= 1
+window "\n\n这个是...",next
+window "\n\n还是不行吗?最后还是失控了吗?",next
+window "\n\n整个世界要灭亡了,如果无法控制大地的力量,那么大地鼠王国就会崩塌.",next
+window "\n\n那么整个芙蕾雅岛屿都会沉没.",next
+window "\n\n你们看东边的天空中,是不是已经发出了異光.",next
+window "\n\n如果魔导师艾菲尔还在的话,或许能拯救这次灾难.",next
+window "\n\n但是一切可能都太迟了.",next
+window "\n\n虽然没能挽回,但是还是要感谢你们,这个东西送个你们了.",ok
+window_ok
+killitem 200012
+killitem 200014
+giveitem 200015
+
+
+block item 200012 >= 1
+endwindow "\n\n真心的感谢你能帮助我们..."
+
+block item 200009 >= 1 && item 200011 >= 1
+window "\n\n这个宝箱是...",next
+window "\n\n这个宝箱是我们大地鼠王国王族世世代代相传的宝藏，藏宝图，传说中的神器「大地之仗」就在藏宝图所示的地方,据说拥有了之后,可以操作神奇的大地之力.",next
+window "\n\n因为过于强大,以至于可能导致王国灭亡,并且危害生灵涂炭,魔导师艾菲尔将之封印在王国中,并且将宝藏位置标记在宝藏图中.",next
+window "\n\n我们遇到的那些神秘人类,应该就是知道大地之仗的存在,想借助其力量吧,真是太可怕了.",next
+window "\n\n如果不赶快阻止的话,一旦发动了大地之力,那后果不堪设想.",next
+window "\n\n你愿意帮助我们吗?",yes,no
+window_yes
+killitem 200009
+killitem 200011
+giveitem 200012
+
+
+block item 200009 >= 1
+endwindow "\n\n退下吧..."
+
+
+block item 200004 >= 1 && item 200008 >= 1
+window "\n\n请接受我的赏赐.",ok
+window_ok
+killitem 200004
+killitem 200008
+giveitem 200009
+
+
+block item 200004 >= 1
+endwindow "\n\n像你这样的人类不多了..."
+
+
+block item 200001 >= 1
+window "\n\n原来是这样…真是感谢你!热心的人呀,请接受我的赏赐.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 200001
+giveitem 200003
+giveitem 200004
+
+
+block
+endwindow "\n\n退下吧,人类真不应该来到这儿."
+

@@ -1,0 +1,7 @@
+block item 70037 >= 1
+leavegroup
+killitem 70037
+Warp 0,25083,6,15
+
+block
+endwindow 910291

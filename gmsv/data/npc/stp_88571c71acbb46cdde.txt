@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【凶暴仙人掌】吗？",ok
+			Window_ok
+Luac stp:legacy:b85e07793a9430103875
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【武术仙人掌】吗？",ok
+			Window_ok
+Luac stp:legacy:52ab9648fd2f9a3520fe
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【兔耳仙人掌】吗？",ok
+			Window_ok
+Luac stp:legacy:bea41ecba9a2ea4c9da7
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【印地安仙人掌】吗？",ok
+			Window_ok
+Luac stp:legacy:5753061ecd7cc6f5db1f
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【火焰舞者】吗？",ok
+			Window_ok
+Luac stp:legacy:e85ddc77d1e647c365c6
+				endif
+

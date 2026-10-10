@@ -1,0 +1,9 @@
+block item 88373 == 1
+endwindow "\n\n你手上的火把已经熄灭了！"
+
+block item 88372 == 1
+window "\n\n你要用火把点燃这个石灯吗？",yes,no
+window_no
+window_yes
+killitem 88372
+giveitem 88373

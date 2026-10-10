@@ -1,0 +1,2 @@
+block
+endwindow "\n\n我是专门负责村长安全的守卫！"

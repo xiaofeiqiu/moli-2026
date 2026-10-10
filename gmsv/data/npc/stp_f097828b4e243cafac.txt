@@ -1,0 +1,5 @@
+block
+window "\n\n\n需要我送你出去么?",ok
+window_ok
+leaveGroup
+Warp 0,1000,233,78

@@ -1,0 +1,7 @@
+block
+window"\n\n\n\n　　　　　　　要传送到尽头的风穴吗?",yes,no
+Window_yes
+LeaveGroup
+Warp 0,59670,175,137
+Window_no
+Endblock

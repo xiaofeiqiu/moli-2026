@@ -1,0 +1,7 @@
+block item 800136 >= 1 && item 800128 >= 1
+window "\n\n我带你去另一边吧",yes,no
+window_no
+window_yes item 800136 >= 1 && item 800128 >= 1
+killitem 800128,1
+leaveGroup
+Warp 0,64023,47,8

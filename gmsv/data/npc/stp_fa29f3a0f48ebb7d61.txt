@@ -1,0 +1,10 @@
+block item 730087 >= 1 || item 730092 >= 1 || item 730108 >= 1
+window "\n\nÇëÉÏ´¬°É.",ok
+window_ok item 730087 >= 1 || item 730092 >= 1 || item 730108 >= 1
+leavegroup
+Warp 0,57041,18,32
+
+
+block
+endwindow "\n\nÍíÉÏºÃ."
+

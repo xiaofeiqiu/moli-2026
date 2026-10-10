@@ -1,0 +1,7 @@
+block
+window"\n\n\n@c 你要使用称号吗，这可是唯一的哟？",yes,no
+window_no
+window_yes
+killitem 591465,1
+EndEvent 633=1
+Checktitle

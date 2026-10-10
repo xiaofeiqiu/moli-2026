@@ -1,0 +1,34 @@
+block HaveTitle == 2063
+window "\n\n哇啊!果然是年兽啊!大概还是曾经的那一头吧!",next
+window "\n\n反正你拿着也没用,把它交给我换取你的报酬吧!",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦!"
+window_ok item 666049 >= 1
+killitem 666049
+giveitem (666050%10,666051%20,666052%30,666053%40)
+endwindow "\n\n祝您今年好运连连."
+
+
+block item 666049 >= 1
+window "\n\n哇啊!果然是年兽啊!大概还是曾经的那一头吧!",next
+window "\n\n反正你拿着也没用,把它交给我换取你的报酬吧!",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦!"
+window_ok item 666049 >= 1
+killitem 666049
+giveitem (666050%5,666051%20,666052%30,666053%40,666054%5)
+endwindow "\n\n祝您今年好运连连."
+
+
+block
+window "\n\n等一下,冒险者!最近传闻在库鲁克斯岛北方传来阵阵魔物的咆哮声,雇主雇佣我去调查此事,说什么药再次测试我的实力...如果不依靠别人我怎么可能完成~?!",next
+window "\n\n你可以提我去调查吗?",yes,no
+window_yes itemspace == 0
+endwindow "\n\n你的背包满啦!"
+window_yes item 666048 >= 1
+endwindow "\n\n你已经有香槟啦."
+window_yes
+window "\n\n谢谢!把这瓶香槟带给北门外附近的莫拉乌吧,他会带你乘船去那个吼叫的来源地的.",ok
+window_ok
+giveitem 666048
+endwindow "\n\n祝您好运连连."

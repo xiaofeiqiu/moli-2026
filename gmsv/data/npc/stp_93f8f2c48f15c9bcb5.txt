@@ -1,0 +1,26 @@
+block item 730092 >= 1
+window "\n\n还想继续体验么?500魔币就可以再购买3张『参观票』哦~",yes,no
+window_no
+endwindow "\n\n那就好好休息吧."
+window_yes gold < 500
+endwindow "\n\n你的钱不够!"
+window_yes itemspace < 1
+endwindow "\n\n物品栏不够位置了."
+window_yes
+window "\n\n请好好体验吧.",ok
+window_ok
+addgold -500
+giveitem 730093,3
+
+block item 730090 >= 1
+window "\n\n欢迎来到炼金之馆.楼下的房间内有休息处.为了让你更好体验炼金术的神奇之处,我会给您3张[参观票],同时这个会员徽章会让你在馆内通行无阻的.",next
+window "\n\n啊,对了,如果你把票都用完后还想继续体验的话,可以找我再来购买【参观票】的哦.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok item 730090 >= 1
+killitem 730090
+giveitem 730092
+giveitem 730093,3
+
+block
+endwindow "\n\n欢迎来到炼金之馆."

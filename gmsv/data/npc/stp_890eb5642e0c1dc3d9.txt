@@ -1,0 +1,14 @@
+block Item 360314 == 1 && Itemspace > 1
+	EndWindow 33394,OK
+	GiveItem 360315
+
+block Item 18210 < 1 && Item 18211 < 40  && Item 18311 < 6  && Item 10410 < 5  && Item 13700 < 2  && Item 360317 < 1 &&  Endevent 697 == 0
+	Window "\n\n 请你尽快找齐这些材料...",OK
+        			
+block Item 18210 >= 1 && Item 18211 >= 40  && Item 18311 >= 6  && Item 10410 >= 5  && Item 13700 >= 2  && Item 360317 >= 1 && Endevent 697 == 0
+	Window "\n\n 辛苦你了,我马上就为你做好靴子。",OK
+	Window_OK
+	GiveItem 360312,1
+
+block EndEvent 219 == 1
+	EndWindow "\n\n 圣诞快乐...",OK

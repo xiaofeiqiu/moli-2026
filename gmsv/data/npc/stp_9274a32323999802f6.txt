@@ -1,0 +1,6 @@
+block
+window "\n\n要打开这个结晶宝石袋吗?",yes,no
+window_no
+window_yes
+killitem 19676
+giveitem (19677%1$1,19677%1$2,19677%1$3)

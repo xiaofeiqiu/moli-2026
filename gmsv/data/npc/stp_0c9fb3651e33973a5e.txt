@@ -1,0 +1,6 @@
+block
+window "\n\n要回去了么?",yes,no
+Window_no
+Window_yes
+LeaveGroup
+Warp 0,63418,23,42

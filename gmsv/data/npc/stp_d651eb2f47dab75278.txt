@@ -1,0 +1,36 @@
+
+block Item 1000033 > 0 && Item 1000034 > 0 && Item 1000035 > 0 && Item 1000036 > 0
+window "\n\n这真的是.........\n晨曦女神的首饰呀!!",next
+window "\n\n你可以让给我吗??\n我拿好东西跟你换.",yes,no
+Window_YES Item 1000033 > 0 && Item 1000034 > 0 && Item 1000035 > 0 && Item 1000036 > 0
+KillItem 1000033,1
+KillItem 1000034,1
+KillItem 1000035,1
+KillItem 1000036,1
+GiveLeak1Item 1000032%1$1
+endwindow "\n\n谢谢你!!"
+Window_YES
+endwindow "\n\n可惜少了几件,如果能凑齐多好!!"
+Window_NO
+endwindow "\n\n喔!真可惜.等你改变心意后再来吧!"
+
+
+block Item 1000033 > 0
+window "\n\n这真的是.........\n晨曦女神的首饰呀!!",next
+endwindow "\n\n可惜少了几件,如果能凑齐多好!!"
+
+block Item 1000034 > 0
+window "\n\n这真的是.........\n晨曦女神的首饰呀!!",next
+endwindow "\n\n可惜少了几件,如果能凑齐多好!!"
+
+block Item 1000035 > 0
+window "\n\n这真的是.........\n晨曦女神的首饰呀!!",next
+endwindow "\n\n可惜少了几件,如果能凑齐多好!!"
+
+block Item 1000036 > 0
+window "\n\n这真的是.........\n晨曦女神的首饰呀!!",next
+endwindow "\n\n可惜少了几件,如果能凑齐多好!!"
+
+block 
+window "\n\n唉～～人老了就不中用了!!",next
+endwindow "\n\n我希望得到晨曦女神的祝福\n可是我老到爬不动流星山丘、乌克兰村、\n雷姆尔山与布朗山呀!!"

@@ -1,0 +1,18 @@
+block item 900295==1 && item 900301>=1 && item 900302>=1 && item 900303>=1 && item 900304>=1
+      killitem 900295,1
+      killitem 900301,1
+      killitem 900302,1
+      killitem 900303,1
+      killitem 900304,1
+      givepet (400400%5,400401%5,400402%5,400403%5)
+      endwindow "\n\n　感谢你帮我收集了这么多的宝石.哗..这个石头太棒了.这小宠物送给你.",ok
+
+block item 795202==1 && item 900296==1 && item 900294==0 && itemspace >=1 || item 795203==1 && item 900296==1 && item 900294==0 && itemspace >=1 || item 795204==1 && item 900296==1 && item 900294==0 && itemspace >=1 || item 795205==1 && item 900296==1 && item 900294==0 && itemspace >=1
+      window "我好想去那个墓地探索宝藏，可是里面充满了恐怖的东西，我差点丢了命！",next
+      window "你好像有点能耐嘛，帮我去探索一下吧，然后把宝藏拿回来给我，好处是少不了你的！" ,yes,no
+      window_yes 
+      giveitem 900294,1
+      window_no "算了.算了.我找找别人帮忙好了."
+
+block     
+      endwindow "收集到好东西.拿给我.我有好东西和你换"

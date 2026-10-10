@@ -1,0 +1,11 @@
+block itemspace !=0
+window 910309,next
+window 910310,next
+window 910311,next
+window 910312,ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 70024
+Warp 0,25003,46,62
+window_ok ItemSpace < 1
+endwindow 910313

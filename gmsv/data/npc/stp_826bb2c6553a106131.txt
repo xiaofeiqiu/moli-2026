@@ -1,0 +1,14 @@
+########疯狂阿蒙的玩具任务#############################
+block	Item 940070 == 1
+  Endwindow"\你已经拥有此道具
+block  
+	window "\n\n@n 您好，为了一个玩具奴隶和工人全体罢工，并劫持了我的妹妹，你否能去见我下我妹妹？",yes,no
+	window_yes
+	GiveItem 940070,1
+	window_no
+	Endwindow"\n\n	看来你是不能帮我了，就这样再见
+	
+	
+	
+
+	

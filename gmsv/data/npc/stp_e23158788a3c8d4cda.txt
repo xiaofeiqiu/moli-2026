@@ -1,0 +1,45 @@
+block item 200245 >= 1
+endwindow "\n\n这已经不能算是魔杖了,简直就是一件艺术品."
+
+
+block item 200239 >= 1 && item 200244 >= 1
+window "\n\n这下好了,材料都齐了,可以让你欣赏一下我的手艺.",next
+window "\n\n嗯…终于制作完成,请收好了.",ok
+window_ok
+killitem 200239
+killitem 200244
+giveitem 200245
+
+
+
+
+block item 200242 >= 1
+endwindow "\n\n露蒂就在隔壁."
+
+
+block item 200241 >= 1
+window "\n\n你拿到了啊,让我瞧瞧,嗯…根据你手上的制作材料,是要制作克雷门提神杖.",next
+window "\n\n可是…按书上记载,你还缺少诺亚矿石.",next
+window "\n\n诺亚矿石貌似我听谁说起过,我想想…我听露蒂说过他老公在拉迪斯洛坑道挖到过这种稀有的矿石,你可以去试试问她了解一下情况.",ok
+window_ok
+killitem 200241
+giveitem 200242
+
+
+
+block item 200240 >= 1
+endwindow "\n\n武器制作大全是现今最全的设计制造武器的参考书,甚至上面还记载神兵利器的设计制造流程."
+
+
+
+block item 200214 >= 1 && item 200239 >= 1
+window "\n\n你要用这2件材料制作成魔杖?可是这2样材料都看似不是普通之物,我很难下手啊.",next
+window "\n\n不如你去找赛林,他那有本武器制作大全,我可以参考上面的设计图给你制作.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200240
+
+
+block
+endwindow "\n\n我在招收学徒,你又没有兴趣."

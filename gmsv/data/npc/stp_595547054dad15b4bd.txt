@@ -1,0 +1,6 @@
+block
+	window "\n\n\n@c你想出去了吗？",yes,no
+	window_no
+	window_yes
+	leavegroup
+	Warp 0,32913,106,137

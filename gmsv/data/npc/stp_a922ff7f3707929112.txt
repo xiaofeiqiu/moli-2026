@@ -1,0 +1,8 @@
+
+
+block
+window "\n\n大圣堂现已对外开放了王宫专用的庆典会场!你想要进入参观吗?",yes,no
+window_yes
+leavegroup
+Warp 0,44976,12,50
+

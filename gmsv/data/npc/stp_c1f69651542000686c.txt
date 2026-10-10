@@ -1,0 +1,15 @@
+block item 200023 >= 1
+setaction 10
+endwindow "\n\n好像没有呼吸了..."
+
+
+block
+setaction 10
+window "\n\n再差一点点就可以开启神秘的火龙力量.",next
+window "\n\n虽然代价会使整个王国毁灭.\n\n但是我们才不在乎呢,嘻嘻.",next
+window "\n\n我的使命已经完成了,只要组织还在.\n\n你们无法阻止...",next
+window "\n\n（说完好像没有呼吸了）",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200023

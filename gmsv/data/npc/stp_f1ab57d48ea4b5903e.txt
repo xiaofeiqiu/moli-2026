@@ -1,0 +1,20 @@
+block item 59912 >= 1
+	Window "\n\n@c人类....美好的食物..",ok
+	Window_ok
+      killitem 59912,1
+
+Encount 3|0,8832,15,26|||||0|||59971|||||||||
+
+block item 59913 >= 1
+	Window "\n\n@c人类....美好的食物..",ok
+	Window_ok
+      killitem 59913,1
+
+Encount 3|0,8832,15,26|||||0|||59972|||||||||
+
+
+block
+	Window "\n\n@c人类....美好的食物..",ok
+	Window_ok
+
+Encount 3|0,8832,15,26|||||0|||59968|||||||||

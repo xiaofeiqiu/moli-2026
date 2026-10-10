@@ -1,0 +1,9 @@
+block
+	Window "\n\n@c.不错.我认可你的实力，这是哈达尔留给你的东西..",next
+	Window "\n\n@c.这把剑会引导着你去另个世界..伙伴们加油吧.",ok
+	Window_ok
+        leavegroup
+        killitem 588109,1
+	giveitem 588151,1
+        
+        Warp 0,1000,239,100

@@ -1,0 +1,26 @@
+block item 661085 >= 1 && item 661086 >= 1 && item 661087 >= 1 && item 661088 >= 1
+window "\n\n集齐了4种证明之书啊.\n真是可靠啊.\n我认为你完全可胜任我们组织的干...咳,\n不,应该是\n可以委托给你这个国家的未来.",next
+window "\n\n那就去最后的证人那里吧.\n我先把你送到2人中的某一个人那里,\n你给他展现自己的力量.",ok
+window_ok item 661085 >= 1 && item 661086 >= 1 && item 661087 >= 1 && item 661088 >= 1
+killitem 661085
+killitem 661086
+killitem 661087
+killitem 661088
+Warp 0,59918,61,99,0,59918,133,100
+
+
+block item 661085 >= 1 || item 661086 >= 1 || item 661087 >= 1 || item 661088 >= 1
+window "\n\n那证明之书一共有4种.\n给4天路线最里面的4位证人展现力量,得到他们的认可.\n集齐全部后,\n由1人集合起来给我.",next
+window "\n\n还没有集齐所有证明之书的话,\n要不要领你到地下4层?",yes,no
+window_no
+endwindow "\n\n哎呀,不用客气啊......\n证明之书齐了,\n就交给我吧."
+window_yes item 661085 >= 1 || item 661086 >= 1 || item 661087 >= 1 || item 661088 >= 1
+Warp 0,59918,99,43
+
+
+block
+window "\n\n你还没有证明之书啊.\n先在宫殿里顺道前进,\n在其尽头给证人展现自己的力量吧.",ok
+window_ok
+leavegroup
+Warp 0,59918,99,43
+

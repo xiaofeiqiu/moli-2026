@@ -1,0 +1,22 @@
+block item 1000507 == 1 && itemcreatetime 500000 < 30
+Window "\n\n\n\n\n@c时间太短了。。你要放弃吗？",yes,no
+		Window_Yes
+			killitem 1000507,1
+		Window_No
+			EndWindow "\n\n\n\n\n@c继续努力吧！"
+block item 1000507 == 1 && itemcreatetime 500000 >= 30 && itemcreatetime 500000 < 60
+			killitem 1000507,1
+			giveitem 1000508,15
+block item 1000507 == 1 && itemcreatetime 500000 >= 60 && itemcreatetime 500000 < 180
+			killitem 1000507,1
+			giveitem 1000508,30
+block item 1000507 == 1 && itemcreatetime 500000 >= 180
+			killitem 1000507,1
+			giveitem 1000508,90
+block item 1000507 < 1
+	Window "\n\n@c你要通过持续在线以获得奖励么？请尽量在人少的地方进行泡点,保护好游戏环境！谢谢合作！",next
+	Window "\n\n@c你可以在我旁边的积分精灵那里,查看积分卡时间,你要开始挂机么?",yes,no
+	Window_Yes itemspace >= 1
+		giveitem 1000507,1
+	Window_No
+		EndWindow "太可惜了！"

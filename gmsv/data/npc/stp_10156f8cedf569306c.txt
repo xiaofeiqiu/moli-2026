@@ -1,0 +1,12 @@
+block Item 940120 == 1
+endwindow "\n\n\n你好,有什么可以服务的么?"
+
+
+block Level >= 70 && Item 940112 == 1 && Item 940121 == 1
+killItem 940121,1
+giveItem 940120,1
+endwindow "\n\n\n有你们的加入冥神军又强大了.\n不过我不能给予你们什么,你们还是去找冥主的坐骑吧."
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

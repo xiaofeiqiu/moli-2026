@@ -1,0 +1,13 @@
+block item 86445 >= 1
+endwindow 85661
+
+block item 86440 < 1 && item 86441 < 1 && item 86442 < 1 && item 86443 < 1 && item 86444 < 1 && item 86445 < 1 && havetitle == 61
+window 85662,ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86440
+window_ok ItemSpace < 1
+endwindow 85663
+
+block
+endwindow 85664

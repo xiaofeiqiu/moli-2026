@@ -1,0 +1,4 @@
+block	item 591003	>=	1
+Encount 3|0,0,0,0||0|||||0|530013|||||||||
+block
+Endwindow"\n\n\n@c 看什么看？ 走开！"

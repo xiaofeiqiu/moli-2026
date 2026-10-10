@@ -1,0 +1,18 @@
+block floor == 23264 && XPos >= 69 && YPos >= 62 && ItemDur 61041 == 1
+window 900396,yes,no
+window_yes
+LeaveGroup
+killitem 61041
+Warp 0,23240,48,44
+window_no
+
+block floor == 23264 && XPos >= 69 && YPos >= 62 && ItemDur 61041 >= 1
+window 900396,yes,no
+window_yes
+LeaveGroup
+Setdur 61041,-1
+Warp 0,23240,48,44
+window_no
+
+block 
+endwindow 900397

@@ -1,0 +1,8 @@
+block
+	window "\n\n@c可恶，还是败给你了吗。。。\n\n即使我可以控制创世神也胜不了吗...\n\n算了，这个计划又失败了！",next
+	window "\n\n@c本来打算借助创世神的力量吸引魔物\n\n然后制造更加强大的改造魔物的\n\n不过看来已经不可能了吧？",next
+	window "\n\n@c算了\n\n这东西我已经不需要了，你拿去用吧",ok
+	window_ok
+	giveitem 54010
+	leavegroup
+	Warp 0,5400,30,30

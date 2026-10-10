@@ -1,0 +1,13 @@
+block
+window "\n本来我们正准备着举行婚礼\n\n结果不知道为什么失去了意识...",next
+window "\n看来都是我去矿山工作挖掘到的那箱子搞得鬼.",next
+window "\n我只是一个穷矿工\n新娘跟我结婚会一直过着苦日子\n我想让她风光一次的\n于是把工作时挖掘到的那个漂亮的箱子做为礼物送给她\n没想到竟然出了这种事情...",next
+window "\n这个箱子你带走吧\n看来婚礼是暂时无法进行下去了...",next
+window "\n顺便送你个礼物\n这个也是我挖掘时得到的\n虽然微薄,但我也只有拿这个东西表达我对你的谢意了.\n\n再见!",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok
+giveItem 1000187,1
+giveleak1Item (1000188%1,1000189%1)
+LeaveGroup
+Warp 0,1530,15,6

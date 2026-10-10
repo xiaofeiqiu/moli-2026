@@ -1,0 +1,20 @@
+block item 1000175 == 1 && item 1000178 == 1
+endwindow "\n\n石碑上刻满了你曾经见过的文字."
+
+
+block item 1000175 == 1
+window "\n\n石碑上刻满了你完全不认识的文字.",next
+window "\n\n你要拓印下这些文字吗?",yes,no
+window_yes itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_yes
+window "\n\n你正准备进行拓印的工作,背后突然传来阵阵寒风......",ok
+window_ok item 1000175 == 1
+giveitem 1000178
+Encount 2|||0|||||0|6000030|||||||||
+window_no
+endwindow "\n\n..............."
+
+
+block
+endwindow "\n\n石碑上刻满了你完全不认识的文字."

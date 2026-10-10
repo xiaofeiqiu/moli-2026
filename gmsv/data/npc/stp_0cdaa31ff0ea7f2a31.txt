@@ -1,0 +1,13 @@
+block level >= 50 && HaveTitle == 48
+window "\n\n我的回忆一直很凌乱,你可以帮我整理一下吗?",yes,no
+window_yes
+leaveGroup
+Warp 0,6006,19,17
+window_no
+
+block level >= 50 && HaveTitle == 49
+window "\n\n我的回忆一直很凌乱,你可以帮我整理一下吗?",yes,no
+window_yes
+leaveGroup
+Warp 0,6006,19,17
+window_no

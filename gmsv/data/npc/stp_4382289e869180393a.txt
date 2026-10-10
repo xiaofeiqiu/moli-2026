@@ -1,0 +1,10 @@
+block item 88330 == 1
+window "\n\n您是否要食用这水果？",yes,no
+Window_YES PetSpace != 0 && Item 88330 == 1
+KillItem 88330,1,(21473)
+GivePet (401%25,501%25,1%25,11%25,21%25)
+endwindow "\n\n哎呀，水果里怎么蹦出个精灵来了啊！"
+Window_YES PetSpace == 0
+EndWindow "\n\n对不起您的宠物栏已满！"
+Window_YES
+Window_NO

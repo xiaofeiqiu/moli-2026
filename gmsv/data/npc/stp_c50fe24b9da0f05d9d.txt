@@ -1,0 +1,16 @@
+block item 60404==1
+
+Endwindow "你给我记住!!!我一定会回来报仇的......",ok
+
+block item 60401==0
+
+Endwindow "快走开!再走近我就杀了你!!!",ok
+
+block item 60401==1
+
+window "你竟然敢打扰大爷,那我就杀了你!!!",yes
+        window_yes
+        KillItem 60401
+Encount 3|||0|||||0|9992|
+
+

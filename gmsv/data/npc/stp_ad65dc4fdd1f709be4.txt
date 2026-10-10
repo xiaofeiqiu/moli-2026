@@ -1,0 +1,10 @@
+block item 1000067 >= 1
+window "\n\n汰,来者何人,为何颤闯我大军驻地!",next
+window "\n\n什么,汝乃龟贤者信使?汝有何事,速速报来!",next
+window "\n\n哇呀呀,气杀老夫!趁老夫出来练兵的时候大胆邪魔竟敢袭击海宫.但请放心,我马上就召集海族,发兵拯救海宫!",next
+window "\n\n辛苦你了,老夫马上安排军士送你回到龟贤者那里,将消息报与他知.",ok
+window_ok item 1000067 >= 1
+killitem 1000067
+giveitem 1000068
+leavegroup
+Warp 0,63424,30,38

@@ -1,0 +1,21 @@
+block item 87039 == 1
+window "\n\n这是宙斯与众神一起打造的盒子很难销毁，看来你们得亲自去找潘多拉询问如何才能处理这盒子。如果想让她说出来我看不简单！",next
+endwindow "\n\n我用神之力得知潘多拉就在这北面的冰之狱里。一切看你们的造化了！"
+
+block item 87038 >= 1
+endwindow "\n\n时间不多了！"
+
+block level >= 120
+window "\n\n别看我是不起眼的老人，其实我是普罗米修斯！",next
+window "\n\n人界将会遇到一场大灾难，有可否帮我解除此次灾难吗？",yes,no
+window_no
+window_yes
+window "\n\n你赶快去米尼基亚村告诉厄毗米修斯在人界的凡体，叫他千万别收下一个叫潘多拉美女送的盒子。",next
+window "\n\n宙斯为了严惩人类的傲慢决定制作个美丽女子潘多拉，让她给人类带来狡诈、欺骗、耍赖、偷窃的习性。",next
+window "\n\n你把这封信带给他，信上我把事情的详细情况写上了。",ok
+window_ok
+LeaveGroup
+giveitem 87038
+
+block
+endwindow "\n\n你还不具备完成我委托的条件！"

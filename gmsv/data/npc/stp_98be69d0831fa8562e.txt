@@ -1,0 +1,9 @@
+block endevent 660 == 1 && endevent 658 == 1 && endevent 659 == 1
+	Window "\n\n　来吧，这里是雷卡斯大人特地用空间给你制造的神殿！。",ok
+	window_ok
+        leavegroup
+        Warp 0,2,0,20
+block endevent 660 == 0 && endevent 658 == 0 && endevent 659 == 0
+        Window "\n\n　您并未3转，不可进行四转和进去新世界哦！",ok
+	window_ok
+        

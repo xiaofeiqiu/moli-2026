@@ -1,0 +1,7 @@
+#战斗兑换地点~
+block
+Window "\n\n 你想要进去兑换是吗?",yes,no
+Window_yes
+Warp 0,5858,9,20
+Window_no
+EndWindow "\n\n 感谢您的使用!"

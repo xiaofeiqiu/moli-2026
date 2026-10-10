@@ -1,0 +1,6 @@
+block
+window"\n\n\n@c 此卷只限于单人传送到树海,确定开始传送!",ok
+window_ok
+killitem 589110,1
+	LeaveGroup
+	Warp 0,11032,7,9

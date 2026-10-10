@@ -1,0 +1,51 @@
+block item 60514 >= 100
+window "\n\n想不到你真的找来了那么多魂之碎片,好吧,我用炼金术帮你提炼~!",ok
+window_ok item 60514 >= 100
+killitem 60514,100
+giveitem 60515
+
+
+block item 60504 >= 1 && itemcreatetime 60504 >= 120
+window "\n\n炼金成功,给你宝藏密匙!",ok
+window_ok item 60504 >= 1
+killitem 60504
+giveitem 60505
+
+
+block item 60503 == 1
+window "\n\n这把钥匙...交给我吧!我来帮你炼金!两个小时后再来找我,这是给你的凭证!拿好了!",ok
+window_ok item 60503 == 1
+killitem 60503
+giveitem 60504
+
+
+block item 60492 == 1 && StrCmpChat == 9126
+window "\n\n(发抖)那个怪人,的确看着像个医生一样.那天他带着一群怪异的生物来到我们那,威胁我们做那个恐怖的实验......那个怪人和他带来的生物一一他们根本就是个怪物!",ok
+window_ok item 60492 == 1
+killitem 60492
+giveitem 60493
+
+
+block item 60488 >= 1 && itemcreatetime 60488 >= 720
+window "\n\n炼金成功!看来是个刻有奇怪纹路护身符呢,这纹路按书中记载应该有破邪的能力,拿去吧.",ok
+window_ok item 60488 >= 1
+killitem 60488
+giveitem 60489
+
+
+block item 60487 >= 1
+window "\n\n看来你拿着个奇怪的东西.不过似乎年代比较久远了.我可以用炼金术试试能否让它恢复原样.",next
+window "\n\n怎么样,要试试看吗?",yes,no
+window_no
+window_yes item 60487 >= 1
+killitem 60487
+giveitem 60488
+
+block
+endwindow "\n\n魂之碎片!这可是炼金师梦寐以求的绝佳炼金材料,不过有魂之碎片参与的炼金术,都需要很多这种东西,大概100块吧,你找到那么多的话我可以帮你试试."
+
+
+
+
+
+

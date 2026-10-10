@@ -1,0 +1,6 @@
+block 
+
+	Window"\n\n勇士们！前面太危险，我们可以先撤到路障外面！",ok
+		Window_ok
+LeaveGroup
+Warp 0,18098,305,12

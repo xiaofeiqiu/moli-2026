@@ -1,0 +1,6 @@
+Block
+Window "这里是幻想次元竞技场。挑战按等级分组，逃跑或战败不会获得通关奖励；兑奖员会核对你的胜利记录。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:3a79c8375fd5bb99ab25

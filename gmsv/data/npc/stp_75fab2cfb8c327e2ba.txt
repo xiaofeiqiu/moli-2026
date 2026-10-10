@@ -1,0 +1,12 @@
+block item 87281 == 1
+endwindow "\n\n......................."
+
+block item 87283 == 1
+window "\n\n最近有一群军人模样的人把我常去打鱼的一个荒岛海域给封锁了，我都好几天没出去打鱼了。",next
+window "\n\n你想去那座岛啊，行我会乘着晚上的夜色偷偷把你送上岛去。",ok
+window_ok
+LeaveGroup
+Warp 0,28593,20,33
+
+block
+endwindow "\n\n我知道有个荒岛的地方周边海域能打到很多很多的鱼！"

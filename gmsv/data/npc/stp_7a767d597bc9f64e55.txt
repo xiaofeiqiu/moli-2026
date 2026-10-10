@@ -1,0 +1,6 @@
+block petspace >= 1
+window "\n\n要打开改造纯白的蛋(特殊)的蛋吗?",yes,no
+window_yes item 568 >= 1
+killitem 568,1
+givepet 666031
+endwindow "\n\n恭喜你获得了改造纯白箱子"

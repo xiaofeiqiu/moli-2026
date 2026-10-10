@@ -1,0 +1,6 @@
+block item 60468 == 1
+Window "\n\nÊ¥½àµÄ¹â»ÔÁıÕÖ×ÅÄã",ok
+Window_ok item 60467 == 1
+killitem 60467
+LeaveGroup
+Warp 0,64067,33,42

@@ -1,0 +1,20 @@
+block item 800008 == 1
+	Window"\n\n我该吃药了，后会有期。",ok
+
+block item 800003 == 1 
+	Window"\n\n一直以来都觉得自己很强大，没想到竟然会生病，你能不能帮我找点药来顺便带点吃的，我赖得动。",yes,no
+	Window_no	
+	Window_yes
+	Window"\n\n给你药单，顺便帮我买个法国面包来，我饿了。",ok
+	Window_ok
+	killitem 800003
+	giveitem 800005
+
+block item 800007 == 1 && item 18233 >= 1 && item 15203 >= 1 && item 12806 >= 1
+	Window"\n\n多谢你拉，那这个东西就送给你吧，其实我也懒得去。",ok
+	Window_ok
+	killitem 800007,1
+	killitem 18233,1
+	killitem 15203,1
+	killitem 12806,1
+	giveitem 800008

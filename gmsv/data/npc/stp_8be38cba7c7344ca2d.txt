@@ -1,0 +1,18 @@
+block
+LocalCount10 = random 5,0
+if localcount10==1
+ChangePal 13
+endif
+if localcount10==2
+ChangePal 0
+playse 290,1,1
+endif
+if localcount10==3
+ChangePal 13
+endif
+if localcount10==4
+ChangePal 13
+endif
+if localcount10==5
+ChangePal 13
+endif

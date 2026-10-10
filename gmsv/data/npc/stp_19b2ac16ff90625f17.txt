@@ -1,0 +1,29 @@
+#老头
+block item 13607 != 0 && item 13627 != 0 && item 13647 != 0 && item 13657 != 0 && item 13667 != 0
+	Window "\n\n    看到你身上这几种宝石混杂在一起,我想把他做个五颜六色的头冠送人。不知道你觉得怎么样？",Next
+	Window "\n\n\n@c怎么样年轻人，交给我吧?",Yes,No
+		Window_Yes itemspace != 0
+			killitem 13607,1
+			killitem 13627,1
+			killitem 13647,1
+			killitem 13657,1
+			killitem 13667,1
+			giveitem 554103
+			Warp 0,1000,242,85
+	Window_No
+	window "\n\n    等等..我又眼花了...这明明就是几颗次品宝石嘛.不完美不完美.不过我可以介绍个地方有更好的宝石.愿意给我吗",Yes,No
+			window_Yes itemspace != 0
+				killitem 13607,1
+				killitem 13627,1
+				killitem 13647,1
+				killitem 13657,1
+				killitem 13667,1
+				giveitem 700086
+				endwindow "\n\n其实原本我们这世界的宝石并不是很完美，你也知道Q零件那种迷之物体吧?想知道怎么来的吧?那是一场灾难啊,几百年前里雍时代的战场打的天昏地暗的时候，不知几时天空出现一个大火球坠落到地面,爆炸范围很大,死了很多人.我很肯定那是一个飞行物体,然在爆炸的几年后.无知的人们在那里挖掘.所以也就挖出来这种Q零件.说来也觉得奇怪,这东西刚而不脆.耐用的很.我知道那块地方,你现在任务就是到加纳门口那探索一下那场爆炸的起源!"
+			window_No
+				endwindow "\n\n\n@c唉,不懂事的孩子!"
+block group >= 2
+	leavegroup
+
+block
+	endwindow "\n\n\n@c我又眼花了...?!"

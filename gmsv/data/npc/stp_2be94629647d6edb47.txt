@@ -1,0 +1,15 @@
+block item 81004 >= 1
+	Endwindow "\n\n今天的酒已经卖完了，明天再来吧。"
+
+block item 81000 >= 1 && item 81004 == 0
+	window "\n\n@c阿巴尼斯的酒是最好喝的，只要1000块一瓶，要买一瓶吗？",yes,no
+	window_no
+	window_yes gold < 1000
+	Endwindow "\n\n1000块一瓶哟，你给我5毛是哪个意思?"
+
+	window_yes gold >= 1000 && item 81000 >= 1 && item 81004 == 0
+	addgold -1000
+	giveitem 81004,1
+
+block
+	Endwindow "\n\n@c阿巴尼斯的酒没得说的，只要你喝过就会感到回味无穷！"

@@ -1,0 +1,10 @@
+block item 88223 == 1
+endwindow 501553
+
+block
+window 501554,yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow 501555
+window_yes
+giveitem 88223

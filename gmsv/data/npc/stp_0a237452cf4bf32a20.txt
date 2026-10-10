@@ -1,0 +1,34 @@
+block item 87431 == 1
+endwindow "\n\n米兰达告诉你了吗？你不用谢我，这是你帮我办妥缉拿约克的谢礼！"
+
+block item 87430 == 1
+endwindow "\n\n没想到这件事还牵扯到灵童！"
+
+block item 87429 == 1
+window "\n\n大预言师约克畏罪自杀了？这是他的遗书？什么...他最后遗言说了灵童？",next
+window "\n\n灵童我略有耳闻，详细的你要去魔女之家找大法师米兰达了。",ok
+window_ok
+killitem 87429
+giveitem 87430
+endwindow "\n\n这封介绍信你拿着，米兰达看过后会帮你的。"
+
+block item 87428 == 1
+endwindow "\n\n那就一切拜托了。"
+
+block level >= 50
+window "\n\n国王和大教主有令，谁能缉拿到大预言师约克，重重有赏！",ok
+window_ok
+window "\n\n咦~~你对缉拿大预言师约克有兴趣？",yes,no
+window_no
+window_yes
+window "\n\n事情是这样的，几年前咱法兰来了位自称是预言师的约克，他预言本年年末23日将要世界末日。起初国王和大教主并不相信。但是，他成功预言了阿鲁巴斯之乱和时空之门等事件。",next
+window "\n\n通过这些事件后国王和大主教对其深信不疑，并赐予他法兰大预言师一职，与大主教并列为左右国师。",next
+window "\n\n自23日过后这位大预言师就不知所踪，他所预言的世界末日搞的国王和大主教及法兰臣民人心惶惶，终日不得安宁。没想到他的一个末日预言骗得全国未知混乱，国王和大主教为此下令缉拿约克以查究竟。",next
+window "\n\n你真的愿意去缉拿大预言师约克吗？",yes,no
+window_no
+window_yes
+giveitem 87428
+endwindow "\n\n据维诺亚村民汇报有长的像大预言师约克的人往乌克兰村方向去了。"
+
+block
+endwindow "\n\n不是说年末23日世界某日到了吗，都过去好几天了什么异样都没有。"

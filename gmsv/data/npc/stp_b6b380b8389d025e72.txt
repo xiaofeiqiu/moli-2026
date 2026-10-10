@@ -1,0 +1,14 @@
+block skill 228 >= 1
+window "\n\n@n你是要回去了吗?",yes,no
+window_no
+window_yes
+window "\n\n记得经常来找大家坐坐.",ok
+window_ok
+Warp 0,1165,34,30
+
+
+block
+window "\n\n要回去了吗?",yes,no
+window_no
+window_yes
+Warp 0,1165,34,30

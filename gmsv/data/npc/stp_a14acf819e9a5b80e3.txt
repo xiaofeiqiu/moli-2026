@@ -1,0 +1,12 @@
+block StrCmpChat == 85721 && item 86920 == 1 && item 86921 == 1
+window "\n\n喔，想要去探险啊！可以，20000就载你去，这价格很公道吧…",yes,no
+window_no
+endwindow "\n\n都那么便宜了还不肯，你找别人吧！"
+window_yes gold >= 20000
+leavegroup
+addgold -20000
+killitem 86921
+Warp 0,28367,25,28
+
+block
+endwindow "\n\n嗯？想要出海？是要我帮你走私什么东西吗？"

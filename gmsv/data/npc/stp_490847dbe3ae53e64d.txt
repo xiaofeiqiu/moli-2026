@@ -1,0 +1,18 @@
+
+
+block Item 715290 > 0
+endwindow "\n\n你可以再回去问鲁恩\n有谁对这有研究."
+
+
+block Item 715289 > 0
+window "\n\n你想知道有关巨花的事呀～",next
+window "\n\n那是雨季才会绽放的花\n会看雨量决定花的大小呢!",ok
+Window_OK Item 715289 > 0
+KillItem 715289,1
+GiveLeak1Item 715290,1
+endwindow "\n\n你可以再回去问鲁恩\n有谁对这有研究."
+Window_OK
+endwindow "\n\n咦～你的东西突然不见,是不是掉了."
+
+block 
+endwindow "\n\n这海岸有不少奇特的植物呢～"

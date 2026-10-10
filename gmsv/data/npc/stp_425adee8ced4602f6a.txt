@@ -1,0 +1,11 @@
+block item 800137 >= 1 && item 800138 >= 1 && item 800139 >= 1 && item 800140 >= 1
+window "\n\n你很强,但是我也没有使用全力,你应该还有提高的余地,去净化那个疾病吧,然后回到我这里,我们看看有没有什么办法可以让你突破目前的瓶颈!",yes,no
+window_no
+window_yes item 800137 >= 1 && item 800138 >= 1 && item 800139 >= 1 && item 800140 >= 1
+killitem 800137
+killitem 800138
+killitem 800139
+killitem 800140
+giveitem 800141,1
+leaveGroup
+Warp 0,27001,56,24

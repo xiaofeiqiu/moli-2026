@@ -1,0 +1,30 @@
+block endevent 575 == 1 && StrCmpChat == 8100276
+endevent 576 = 0
+endevent 577 = 0
+endevent 575 = 0
+window "\n\n那是为了能一口吃掉你!",ok
+window_ok
+Encount 3|0,60283,15,4|||||0|||800030|||||||||
+
+
+block endevent 577 == 1 && StrCmpChat == 8100275
+endevent 576 = 0
+endevent 577 = 0
+endevent 575 = 1
+endwindow "\n\n那是为了能更好的看清你呀."
+
+
+block endevent 576 == 1 && StrCmpChat == 8100274
+endevent 576 = 0
+endevent 577 = 1
+endwindow "\n\n那是为了能更好的听到你说话呀."
+
+
+block item 351 == 1
+window "\n\n啊,你是替小红帽来送点心的吗?谢谢你啊.",ok
+window_ok item 351 == 1
+endevent 576 = 0
+endevent 577 = 0
+endevent 575 = 0
+killitem 351,(8100277)
+endevent 576 = 1

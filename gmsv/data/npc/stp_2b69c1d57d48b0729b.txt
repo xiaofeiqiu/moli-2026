@@ -1,0 +1,54 @@
+block item 87595 == 1
+endwindow "\n\n希望在你的协助下尽早找到加拉巴哥斯群岛。"
+
+block item 87594 == 1 && ItemCreateTime 87594 >= 30
+window "\n\n嗯，维修结果出来了，船的损伤并不是很严重，已经快维修完毕了。你随时可以前往伊利港口出发寻找加拉巴哥斯群岛，这次国王特别嘱咐派遣了警备队随你一同前往。",next
+window "\n\n像你这样有能力的冒险家正式他们所需要的帮手。请带着这个去伊尔村的码头找他们吧。",ok
+window_ok
+killitem 87594
+giveitem 87595
+
+block item 87594 == 1 && ItemCreateTime 87594 < 30
+endwindow "\n\n船的维修结果还没出来。"
+
+block item 87593 == 1
+window "\n\n你们半路上就受到了大量的怪物袭击么？这样的话，看来商船要进入港湾维修了。总之请先耐心等待维修结果吧。",ok
+window_ok
+killitem 87593
+giveitem 87594
+
+block item 87591 == 1
+endwindow "\n\n请带着证明去蒂娜村外的商船找他们吧。"
+
+block item 87590 == 1 && ItemCreateTime 87590 >= 30
+window "\n\n感谢你的协助，我们已经得知事情真相了。",next
+window "\n\n受到袭击的征用船只是属于北方航路的商船。他们会在每年的固定时间航向遥远的北方大陆，与哪里的居民进行交易，根据日记记载，他们半路上突然受到了大量怪物袭击，船只受伤后漂流到了岸边。",next
+window "\n\n我们已经通知了商船所属的商会，他们提出了被征用要求，条件是必须对船只派兵护航。上次的调查行动很成功，所以我向他们推荐了你，请带着这个证明去蒂娜村外的商船找他们吧。",next
+window "\n\n祝你一路平安。",ok
+window_ok
+killitem 87590
+giveitem 87591
+
+block item 87590 == 1 && ItemCreateTime 87590 < 30
+endwindow "\n\n调查结果还没有讨论出来，请稍等片刻。"
+
+block item 87589 == 1
+window "\n\n船长的航行日记么，感谢你的协助调查，我们需要调查一下日记，请过一会儿再来吧。",ok
+window_ok
+killitem 87589
+giveitem 87590
+
+block item 87587 == 1
+endwindow "\n\n请你多加小心！"
+
+block item 87586 == 1
+window "\n\n你好，冒险者，我是特殊调查管理官。",next
+window "\n\n因为你找到亡者之岛的事迹传遍了法兰，为了更好更快的找到加拉巴哥斯群岛，国王下令成立了我们这个特殊调查部队。当然了，我们的任务是来协助你找到加拉巴哥斯群岛。",next
+window "\n\n目前传闻我们征用出海的船在莎莲娜杰诺瓦镇东北方海岸边搁浅了，而且附近还有怪物出没，你有没有时间帮我们调查下这件事情呢？",yes,no
+window_no
+window_yes
+giveitem 87587
+endwindow "\n\n请你多加小心！"
+
+block
+endwindow "\n\n国王看来这次下定决心要找到加拉巴哥斯群岛。"

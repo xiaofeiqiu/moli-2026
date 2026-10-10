@@ -1,0 +1,8 @@
+block item 88226 == 1
+window 501621,next
+window 501622,next
+window 501623,ok
+window_ok
+
+block
+endwindow 501624

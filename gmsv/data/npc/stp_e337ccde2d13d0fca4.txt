@@ -1,0 +1,11 @@
+block Item 6520 >= 1
+	Window "\n\n这里和我以从前公主身份而居住时的地方一样呢,好怀念的感觉,但是正因为怀念这种感觉让我的恨意越来越强烈!",NEXT
+	changepal 15,60
+	Window "\n\n既然你来到这里打算帮助我,那就随我来吧.",OK
+	Window_OK
+	LeaveGroup
+	Warp 0,6745,95,148
+
+block
+	Window "\n\n滚开,别来打扰我!\n...",OK
+	Window_OK

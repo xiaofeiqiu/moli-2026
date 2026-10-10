@@ -1,0 +1,16 @@
+block item 730029 >= 1
+EndWindow "\n\n快去吧,他就在那边,有什么小道消息记得告诉我"
+
+block EndEvent 554 == 1
+Window "\n\n那边的先生最近总是听他唉声叹气的,你不想去看看他需要什么帮助吗?",yes,no
+Window_no
+EndWindow "\n\n你没兴趣?那就喝杯酒吧..."
+Window_yes
+Window "\n\n快去吧,有什么小道消息记得告诉我哦~",ok
+Window_ok itemspace == 0
+EndWindow "你的背包满啦!"
+Window_ok
+giveitem 730029
+
+block
+EndWindow "\n\n欢迎光临加纳村酒吧,请问需要点什么?"

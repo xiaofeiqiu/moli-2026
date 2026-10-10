@@ -1,0 +1,8 @@
+block gold >= 500000
+window "\n\n同学,要进入赌场碰碰运气吗?",yes,no
+window_yes
+Warp 0,953,1,9
+
+
+block
+endwindow "\n\n同学,请准备50万现金才能进入赌场"

@@ -1,0 +1,21 @@
+block item 200790 >= 1
+window "\n\n很好,随我来吧.",ok
+window_ok item 200790 >= 1
+leavegroup
+Warp 0,57155,5,23
+
+
+block
+window "\n\n中元已到,乃祭拜先祖之时.",next
+window "\n\n四时不正,万物混乱,四方四精受混沌之气侵扰,乃作乱世间,受到干扰,连一年一度的先祖供养祭拜都无法正常进行了.",next
+window "\n\n冒险者,你可愿帮我进行仪式来抚慰四方四精?",yes,no
+window_yes
+window "\n\n洞穴剧烈的震颤着,邪气消散了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200790
+leavegroup
+Warp 0,57155,5,23
+window_no
+window "\n\n四时不正啊.",next

@@ -1,0 +1,41 @@
+######## 灰熊厉害擂台赛########
+##D级勋章收集熊
+####有150个D级勋章
+block Item 715273 >= 150
+window "\n\n您要用150个D级勋章兑换一个Q零件吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715273 >= 150
+KillItem 715273,150
+GiveLeak1Item 18658
+Window_YES ItemSpace < 1 
+endwindow "\n\n你的物品拦位不够喔!"
+
+####有50个D级勋章
+block Item 715273 >= 50
+window "\n\n您要用50个D级勋章兑换一个O零件吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715273 >= 50
+KillItem 715273,50
+GiveLeak1Item 18699
+Window_YES ItemSpace < 1
+endwindow "\n\n你的物品拦位不够喔!"
+
+####有5个D级勋章
+block Item 715273 >= 5
+window "\n\n您要用5个D级勋章兑换一个种子福袋吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715273 >= 5 
+KillItem 715273,5
+GiveLeak1Item 715288
+Window_YES ItemSpace < 1 
+endwindow "\n\n你的物品拦位不够喔!"
+
+
+block
+endwindow "\n\n只要收集D级勋章就可以跟我换奖品喔!\n\n＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n@cQ零件=150枚D级勋章\n\n@cO零件=50枚D级勋章\n\n@c种子福袋=5枚D级勋章"
+
+
+ 

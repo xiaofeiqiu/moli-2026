@@ -1,0 +1,24 @@
+block item 800098 == 1
+	Window"\n\n\n屠龙勇士你回来了！",next
+	Window"\n\n\n太感谢你们了，有了恢复宝珠我就能知道女神在哪了！",next
+	Window"\n\n\n女仆念着咒语启动了恢复宝珠",next
+	Window"\n\n\n我的主人在龙魂神殿！还得麻烦你帮我去找她，我给你进入的钥匙。",ok
+		Window_ok item 800099 == 0
+		killitem 800098,1
+		giveitem 800099,1
+
+block item 800094 == 1
+	Window"\n\n\n拜托你了！",ok
+
+block item 800099 == 0
+	Window"\n\n\n啊！是屠龙勇士吗！？",yes,no
+		Window_no
+		Window_yes HaveTitle == 12921 && item 800094 == 0
+	Window"\n\n\n能帮帮我吗！？",next
+	Window"\n\n\n我的主人失踪了能帮我找到她吗？拜托你了！",ok
+		Window_ok
+		giveitem 800094,1
+		Window_yes HaveTitle != 12921
+	Window"\n\n\n能帮我找到屠龙勇士吗？",next
+	Window"\n\n\n拜托你了！",ok
+

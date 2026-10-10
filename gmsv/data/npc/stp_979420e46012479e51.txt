@@ -1,0 +1,23 @@
+block	level >= 160 && item 795023 >= 1
+window"\n\n\n哥哥姐姐又见面了啊！！！",OK
+window_OK
+window"\n\n@c偶的老婆介绍地事米忘记吧？！？！",yes,no
+window_yes
+killitem 795023,1
+giveitem 795024,1
+endwindow"\n\n@c嘿嘿。。拿着这个吧。。以后要经常来看偶饿。。"
+window_NO
+endwindow"\n\n@c那算了吧，你当我没说过"
+
+block	item 795024 >=1
+window"\n\n\n@c谢谢哥哥姐姐",next
+window"\n\n\n@c你不想介绍给偶了？？5555555",yes,no
+window_yes
+KillItem 795024,1
+window"\n\n\n@c欺负人！！！",OK
+window_no
+window"\n\n\n@c哥哥那快去吧！",OK
+
+block	item 795024 >=1
+window"\n\n\n@c哥哥好饿！",OK
+window_ok

@@ -1,0 +1,5 @@
+block
+	Window "\n\n\n@c要去可可特村看看吗？那是个以狩猎怪物闻名的村落。",yes,no
+	window_yes
+		Warp 0,38110,32,53
+	window_no

@@ -1,0 +1,8 @@
+block item 86249 >= 1
+window "\n\n你竟然没死!呃,说错了,你没受伤吧!附有火精灵力量的石头我已经找到了,我现在还有一些事情要做,石头要麻烦你帮我带回去啦.",next
+window "\n\n另外请帮我转告主人:“这里的苍蝇好多喔!”哈!",ok
+window_ok item 86249 >= 1
+killitem 86249
+GiveItem 86250
+leavegroup
+Warp 0,400,117,324 

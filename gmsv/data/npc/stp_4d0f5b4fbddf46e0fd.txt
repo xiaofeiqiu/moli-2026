@@ -1,0 +1,15 @@
+block item 160407 >= 1
+window "\n\n混蛋是你们做的吗!把沙耶加还给我!",next
+window "\n\n拜托了,神啊,如此残酷的人生,至少让我做一次幸福的美梦吧.",ok
+window_ok item 160407 >= 1
+Encount 2|0,63,2,4||||||||400011|||||||||
+
+
+block item 160409 >= 1 && item 160414 >= 1
+window"\n\n.........",ok
+window_ok item 160409 >= 1 && item 160414 >= 1
+Encount 2|0,63,2,4||||||||400017|||||||||
+
+
+block
+endwindow "\n\n丘比的罪行……要付出代价."

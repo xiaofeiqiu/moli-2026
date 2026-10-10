@@ -1,0 +1,13 @@
+block item 200125 >= 1
+window "\n\n（声音沙沙的说）\n勇者你要记得.",next
+window "\n\n（声音沙沙的说）\n你是命运中的人.",next
+window "\n\n（声音沙沙的说）\n你将得到命运的庇护.",next
+window "\n\n（声音沙沙的说）\n去吧,勇者...",ok
+window_ok
+killitem 200125
+giveitem 200128
+EndEvent 540 = 1
+checktitle
+leavegroup
+Warp 0,1530,15,6
+

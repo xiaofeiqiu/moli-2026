@@ -1,0 +1,14 @@
+block item 58850 >= 1 && item 58851 >= 1 && item 57728 >= 1
+        window"\n你竟然...唉..这种凶恶的东西希望你保存好！",ok
+
+        Window_ok item 58850 >= 1 && item 58851 >= 1 && item 57728 >= 1
+
+        killitem 58850,1
+        killitem 58851,1
+        killitem 57728,1
+        giveitem 57727,1
+
+
+block
+
+	window"爸爸说,流着战斗民族血液的人,是永远不会认输的,希望你和我是同种人哦",OK

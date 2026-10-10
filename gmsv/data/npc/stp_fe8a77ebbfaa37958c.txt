@@ -1,0 +1,11 @@
+block EndEvent 552 == 1
+window "\n\n这几天很多冒险者来这里寻找那艘沉船,但大多都无功而返.你也要跟他们一样去寻找那艘沉船吗?",yes,no
+window_no
+window_yes
+window "\n\n蒂娜海域分为多个区域,每个区域有多个通道与之相连,只有正确的路线才能到达海底深处,并且寻觅到沉船,请务必小心谨慎!",ok
+window_ok
+leavegroup
+Warp 0,28090,24,10
+
+block
+endwindow "\n\n近几年蒂娜海域的鱼越来越少了,这日子也越来越不好过了!唉!以后会不会没有鱼吃了呢?"

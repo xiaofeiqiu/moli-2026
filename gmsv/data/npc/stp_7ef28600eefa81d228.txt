@@ -1,0 +1,4 @@
+block
+	window"\n\n嘟！嘟！嘟！嘟！嘟！嘟！\n \n传感器正在发送传送目标！.\n \n位置竞技场！GO！",ok
+	window_ok
+	Warp 0,1401,1,15

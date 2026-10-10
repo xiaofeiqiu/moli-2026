@@ -1,0 +1,10 @@
+# 白虎 放弃的小羊 mayko_gm_1102648txt	
+#1110756	\n\n\n\n@c你要放弃吗？	1
+
+block 
+	 Window 7019149,yes,no
+	 window_yes
+	 Warp 0,13001,79,9
+	 endblock
+	 Window_no
+	 endwindow 7019145	#\n\n\n\n@c麻烦你用臭臭草熏醒白虎大人啰！！	1

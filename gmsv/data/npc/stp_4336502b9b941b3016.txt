@@ -1,0 +1,21 @@
+
+
+
+
+###看门的团员玩家身上有日月组织团员银卡且装扮成烈风哥不林时,传送玩家回到剧院.
+
+
+
+block BBImage == 101803 && Item 715244 >= 1
+window "\n\n会议结束了.你想要出去了?",yes,no
+Window_YES
+Warp 0,1301,27,52  
+
+block BBImage == 101803 && Item 715242 >= 1
+endwindow "\n\n会议进行中!\n请勿任意离开\n否则以间谍名义处决!"
+
+
+block 
+window "\n\n你是谁?怎么进来的!\n来人啊!快来抓间谍!\n不要让他跑了!",ok
+Window_OK
+Warp 0,1000,233,78

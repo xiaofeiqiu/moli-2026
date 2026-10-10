@@ -1,0 +1,8 @@
+block item 200010 >= 1 && floor == 25204 && Xpos == 409 && Ypos == 360
+killitem 200010
+leavegroup
+Warp 0,25220,411,332
+
+
+block
+endwindow "\n\n到北方王国边境,在（409.360）出使用..."

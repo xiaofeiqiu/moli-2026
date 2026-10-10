@@ -1,0 +1,12 @@
+block item 123023 >= 1
+endwindow "\n\n你已经拿过谢礼了!"
+
+
+block
+window "\n\n谢谢你~这个是给你的谢礼,请收下.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 123023
+LeaveGroup
+Warp 0,1000,235,83

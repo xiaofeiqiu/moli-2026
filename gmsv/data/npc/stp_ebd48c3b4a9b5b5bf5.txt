@@ -1,0 +1,15 @@
+#################Ãÿ π#############
+block Item 670008 == 1 && Item 670009 == 1 && Item 670010 == 1 && StrCmpChat == 670038
+	GiveItem 670031
+	EndWindow 670033,OK
+
+block Item 670009 == 1 && Item 670031 == 1 && Item 670036 ==1 && Item 670008 == 1 && Item 670010 == 1 && Item 670011 == 0 && Item 670012 == 0
+	Window 670035,OK
+	Window_OK
+	KillItem 670031
+	KillItem 670036
+	GiveItem 670011
+	EndWindow 670036,OK
+
+block
+	EndWindow 670034,OK

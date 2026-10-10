@@ -1,0 +1,8 @@
+block item 87280 == 1
+Warp 0,300,585,422
+
+block
+window "\n\n你要打开此宝箱吗？",ok
+window_ok
+giveitem 87280
+Warp 0,300,585,422

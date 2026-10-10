@@ -1,0 +1,21 @@
+block item 200556 >= 1
+endwindow "\n\n放心吧,爱德华叔叔,我们不会把实情告诉村长的,只要他们不再做祸害的事情就行."
+
+
+
+block item 200559 >= 1
+endwindow "\n\n他家其实离村子不远."
+
+
+block item 200558 >= 1
+window "\n\n里德?他又干什么坏事惹怒你们2个小家伙啦.",next
+window "\n\n他…他这不是趁火打劫吗?狗日的…连小孩子的东西都不放过,我看他挖光所有的墓穴后穷疯了.",next
+window "\n\n你们放心,这次爱德华叔叔替你们出头,我带你们去他的住处,如果他不归还你们的东西,我帮你们将他押送给村长处置.",next
+window "\n\n这瓶酒咋们带着,要想顺利擒住他要找个喝酒的理由.",ok
+window_ok
+killitem 200558
+giveitem 200559
+
+
+block
+endwindow "\n\n年轻人看中什么装备没有啊."

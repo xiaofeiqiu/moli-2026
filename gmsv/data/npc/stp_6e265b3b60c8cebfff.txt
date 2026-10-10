@@ -1,0 +1,14 @@
+block item 87188 >= 1 && item 87189 >= 1 && item 87190 >=1 && item 87191 >= 1
+window "\n\n哇！！你手上的远古机器制造图纸是哪里弄到的？如果你把图纸送我，我把按图纸制造出来的机器送你如何？",ok
+window_ok petspace >= 1
+killitem 87188
+killitem 87189
+killitem 87190
+killitem 87191
+givepet 88125
+Warp 0,25178,87,154
+
+block
+window "\n\n我在这里做探险，你迷路了吗？要我带你出去吗？",ok
+window_ok
+Warp 0,25178,87,154

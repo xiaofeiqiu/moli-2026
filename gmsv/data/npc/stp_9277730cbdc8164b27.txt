@@ -1,0 +1,17 @@
+block item 86392 >= 1
+window 85596,ok
+window_ok
+leavegroup
+killitem 86392
+giveitem 86393
+
+block item 86390 < 1
+window 85597,ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86390
+window_ok ItemSpace < 1
+endwindow 85598
+
+block
+endwindow 85599

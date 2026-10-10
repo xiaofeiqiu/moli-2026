@@ -1,0 +1,9 @@
+block item 1000507 < 1
+window"\n\n\n\n请听我说.您购买积分兑换道具卡的时候.切记买完一个使用一个,千万不要买2个或者2个以上一起使用！你记清楚了那就进去吧",yes,no
+Window_yes
+Warp 0,201,8,8
+Window_no
+
+block item 1000507 == 1
+window"\n请先把您身上的泡点卡和我旁边的家伙换成积分再来换东西",OK
+Window_ok

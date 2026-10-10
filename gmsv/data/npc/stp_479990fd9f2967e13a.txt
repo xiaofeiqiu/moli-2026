@@ -1,0 +1,24 @@
+block level <= 119
+Endwindow "\n\n等级太低,请练至120级再来进行任务"
+
+block item 123201 >= 1
+Endwindow "\n\n.............."
+
+block item 123200 >= 1
+window "\n\n有了魅惑之心你就会成为半魔人而被误判吸纳入恶魔城.",next
+window "\n\n但是可能还不够\n\n你再带上这个有能力帮你避开恶魔城的守护魔族\n\n从而更轻易的进去.",ok
+window_ok
+giveitem 123201,1
+
+block item 123198 >= 1
+window "\n\n忘记跟你说了,你可能要跑一趟了",next
+Endwindow "\n\n到魔法大学附近寻找一位巫师他叫普京斯\n\n找到他后跟他要一个迷惑之心."
+
+block
+window "\n\n我正在征募冒险者,去传说的恶魔城冒险\n\n你有兴趣吗?",yes,no
+window_no
+window_yes group < 5
+Endwindow "\n\n只身前往冒险可是很危险的事哦"
+window_yes group == 5
+giveitem 123197,1
+Endwindow "\n\n若想进入恶魔城,你得先去找我的好友－魔法师杰拉\n\n他应该知道整个恶魔城的历史,带上我这封介绍信去吧\n\n不然他可不会接见你的.他这个时候大概在南门边上吧"

@@ -1,0 +1,4002 @@
+#制作 by.Crea(nagatoyuki hansv)
+##############  ##############
+block Item 800550 >= 1 && petlevel 1 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 1,1
+	GivePet 1
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 2 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 2,1
+	GivePet 2
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 3 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 3,1
+	GivePet 3
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 4 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 4,1
+	GivePet 4
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5,1
+	GivePet 5
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 6 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 6,1
+	GivePet 6
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 11 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 1,11
+	GivePet 11
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 12 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 12,1
+	GivePet 12
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 13 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 13,1
+	GivePet 13
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 14 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 14,1
+	GivePet 14
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 15 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 15,1
+	GivePet 15
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 21 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 21,1
+	GivePet 21
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 22 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 22,1
+	GivePet 22
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 23 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 23,1
+	GivePet 23
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 24 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 24,1
+	GivePet 24
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 25 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 25,1
+	GivePet 25
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 26 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 26,1
+	GivePet 26
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 31 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 31,1
+	GivePet 31
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 32 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 32,1
+	GivePet 32
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 33 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 33,1
+	GivePet 33
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 34 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 34,1
+	GivePet 34
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 101 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 101,1
+	GivePet 101
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 102 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 102,1
+	GivePet 102
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 103 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 103,1
+	GivePet 103
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 104 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 104,1
+	GivePet 104
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 105 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 105,1
+	GivePet 105
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 111 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 111,1
+	GivePet 111
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 112 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 112,1
+	GivePet 112
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 113 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 113,1
+	GivePet 113
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 114 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 114,1
+	GivePet 114
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 115 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 115,1
+	GivePet 115
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 121 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 121,1
+	GivePet 121
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 122 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 122,1
+	GivePet 122
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 123 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 123,1
+	GivePet 123
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 124 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 124,1
+	GivePet 124
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 201 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 201,1
+	GivePet 201
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 202 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 202,1
+	GivePet 202
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 203 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 203,1
+	GivePet 203
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 204 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 204,1
+	GivePet 204
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 205 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 205,1
+	GivePet 205
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 206 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 206,1
+	GivePet 206
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 211 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 211,1
+	GivePet 211
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 212 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 212,1
+	GivePet 212
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 213 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 213,1
+	GivePet 213
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 214 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 214,1
+	GivePet 214
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 241 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 241,1
+	GivePet 241
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 242 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 242,1
+	GivePet 242
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 243 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 243,1
+	GivePet 243
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 244 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 244,1
+	GivePet 244
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 245 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 245,1
+	GivePet 245
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 246 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 246,1
+	GivePet 246
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 251 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 251,1
+	GivePet 251
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 252 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 252,1
+	GivePet 252
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 253 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 253,1
+	GivePet 253
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 254 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 254,1
+	GivePet 254
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 255 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 255,1
+	GivePet 255
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301,1
+	GivePet 301
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302,1
+	GivePet 302
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303,1
+	GivePet 303
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 304 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 304,1
+	GivePet 304
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311,1
+	GivePet 311
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312,1
+	GivePet 312
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313,1
+	GivePet 313
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 314 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 314,1
+	GivePet 314
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 315 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 315,1
+	GivePet 315
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 321 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 321,1
+	GivePet 321
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 322 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 322,1
+	GivePet 322
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 323 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 323,1
+	GivePet 323
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 324 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 324,1
+	GivePet 324
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 325 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 325,1
+	GivePet 325
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 331 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 331,1
+	GivePet 331
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 332 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 332,1
+	GivePet 332
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 333 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 333,1
+	GivePet 333
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 334 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 334,1
+	GivePet 334
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 401 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 401,1
+	GivePet 401
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 402 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 402,1
+	GivePet 402
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 403 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 403,1
+	GivePet 403
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 404 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 404,1
+	GivePet 404
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 405 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 405,1
+	GivePet 405
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 406 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 406,1
+	GivePet 406
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 411 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 411,1
+	GivePet 411
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 412 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 412,1
+	GivePet 412
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 413 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 413,1
+	GivePet 413
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 414 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 414,1
+	GivePet 414
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 421 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 421,1
+	GivePet 421
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 422 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 422,1
+	GivePet 422
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 423 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 423,1
+	GivePet 423
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 424 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 424,1
+	GivePet 424
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 431 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 431,1
+	GivePet 431
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 432 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 432,1
+	GivePet 432
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 433 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 433,1
+	GivePet 433
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 434 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 434,1
+	GivePet 434
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 435 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 435,1
+	GivePet 435
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 501 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 501,1
+	GivePet 501
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 502 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 502,1
+	GivePet 502
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 503 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 503,1
+	GivePet 503
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 504 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 504,1
+	GivePet 504
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 511 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 511,1
+	GivePet 511
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 512 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 512,1
+	GivePet 512
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 513 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 513,1
+	GivePet 513
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 514 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 514,1
+	GivePet 514
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 521 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 521,1
+	GivePet 521
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 522 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 522,1
+	GivePet 522
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 523 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 523,1
+	GivePet 523
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 524 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 524,1
+	GivePet 524
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 525 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 525,1
+	GivePet 525
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 531 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 531,1
+	GivePet 531
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 532 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 532,1
+	GivePet 532
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 533 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 533,1
+	GivePet 533
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 534 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 534,1
+	GivePet 534
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 601 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 601,1
+	GivePet 601
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 602 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 602,1
+	GivePet 602
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 603 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 603,1
+	GivePet 603
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 604 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 604,1
+	GivePet 604
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 611 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 611,1
+	GivePet 611
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 612 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 612,1
+	GivePet 612
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 613 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 613,1
+	GivePet 613
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 614 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 614,1
+	GivePet 614
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 615 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 615,1
+	GivePet 615
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 616 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 616,1
+	GivePet 616
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 621 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 621,1
+	GivePet 621
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 622 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 622,1
+	GivePet 622
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 623 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 623,1
+	GivePet 623
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 624 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 624,1
+	GivePet 624
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 631 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 631,1
+	GivePet 631
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 632 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 632,1
+	GivePet 632
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 633 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 633,1
+	GivePet 633
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 634 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 634,1
+	GivePet 634
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 701 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 701,1
+	GivePet 701
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 702 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 702,1
+	GivePet 702
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 703 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 703,1
+	GivePet 703
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 704 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 704,1
+	GivePet 704
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 711 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 711,1
+	GivePet 711
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 712 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 712,1
+	GivePet 712
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 713 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 713,1
+	GivePet 713
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 714 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 714,1
+	GivePet 714
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 715 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 715,1
+	GivePet 715
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 721 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 721,1
+	GivePet 721
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 722 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 722,1
+	GivePet 722
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 723 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 723,1
+	GivePet 723
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 724 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 724,1
+	GivePet 724
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 801 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 801,1
+	GivePet 801
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 802 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 802,1
+	GivePet 802
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 803 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 803,1
+	GivePet 803
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 804 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 804,1
+	GivePet 804
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 811 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 811,1
+	GivePet 811
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 812 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 812,1
+	GivePet 812
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 813 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 813,1
+	GivePet 813
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 814 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 814,1
+	GivePet 814
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 821 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 821,1
+	GivePet 821
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 822 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 822,1
+	GivePet 822
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 823 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 823,1
+	GivePet 823
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 824 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 824,1
+	GivePet 824
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 831 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 831,1
+	GivePet 831
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 832 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 832,1
+	GivePet 832
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 833 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 833,1
+	GivePet 833
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 834 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 834,1
+	GivePet 834
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 835 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 835,1
+	GivePet 835
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5001 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5001,1
+	GivePet 21001
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5002 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5002,1
+	GivePet 21002
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5003 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5003,1
+	GivePet 21003
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5004 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5004,1
+	GivePet 21004
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5011 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5011,1
+	GivePet 21011
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5012 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5012,1
+	GivePet 21012
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5013 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5013,1
+	GivePet 21013
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5014 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5014,1
+	GivePet 21014
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5101 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5101,1
+	GivePet 21101
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5102 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5102,1
+	GivePet 21102
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5103 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5103,1
+	GivePet 21103
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5104 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5104,1
+	GivePet 21104
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5111 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5111,1
+	GivePet 21111
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5112 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5112,1
+	GivePet 21112
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5113 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5113,1
+	GivePet 21113
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5114 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5114,1
+	GivePet 21114
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5201 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5201,1
+	GivePet 21201
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5202 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5202,1
+	GivePet 21202
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5203 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5203,1
+	GivePet 21203
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5204 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5204,1
+	GivePet 21204
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5211 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5211,1
+	GivePet 21211
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5212 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5212,1
+	GivePet 21212
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5213 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5213,1
+	GivePet 21213
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5214 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5214,1
+	GivePet 21214
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5301 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5301,1
+	GivePet 21301
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5302 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5302,1
+	GivePet 21302
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5303 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5303,1
+	GivePet 21303
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5304 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5304,1
+	GivePet 21304
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5401 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5401,1
+	GivePet 21401
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5402 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5402,1
+	GivePet 21402
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5403 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5403,1
+	GivePet 21403
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5404 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5404,1
+	GivePet 21404
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5501 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5501,1
+	GivePet 21501
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5502 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5502,1
+	GivePet 21502
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5503 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5503,1
+	GivePet 21503
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5504 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5504,1
+	GivePet 21504
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5601 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5601,1
+	GivePet 21601
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5602 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5602,1
+	GivePet 21602
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5603 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5603,1
+	GivePet 21603
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5604 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5604,1
+	GivePet 21604
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5611 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5611,1
+	GivePet 21611
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5612 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5612,1
+	GivePet 21612
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5613 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5613,1
+	GivePet 21613
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5614 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5614,1
+	GivePet 21614
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5701 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5701,1
+	GivePet 21701
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5702 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5702,1
+	GivePet 21702
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5703 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5703,1
+	GivePet 21703
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5704 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5704,1
+	GivePet 21704
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5711 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5711,1
+	GivePet 21711
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5712 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5712,1
+	GivePet 21712
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5713 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5713,1
+	GivePet 21713
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5714 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5714,1
+	GivePet 21714
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5801 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5801,1
+	GivePet 21801
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5802 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5802,1
+	GivePet 21802
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5803 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5803,1
+	GivePet 21803
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 5804 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 5804,1
+	GivePet 21804
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300002 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300002,1
+	GivePet 300098
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300000,1
+	GivePet 300099
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300101 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300000,1
+	GivePet 300199
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300200,1
+	GivePet 300299
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300300,1
+	GivePet 300399
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300402 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300402,1
+	GivePet 300499
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300501 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300501,1
+	GivePet 300599
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300602 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300602,1
+	GivePet 300699
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300701 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300701,1
+	GivePet 300799
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300801 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300801,1
+	GivePet 300899
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 300901 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 300901,1
+	GivePet 300999
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301000,1
+	GivePet 301099
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl $,1
+	GivePet 301199
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301200,1
+	GivePet 301299
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301300,1
+	GivePet 301399
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301400,1
+	GivePet 301499
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301500,1
+	GivePet 301599
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301600,1
+	GivePet 301699
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301700,1
+	GivePet 301799
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301801 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301801,1
+	GivePet 301899
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 301900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 301900,1
+	GivePet 301999
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302001 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302001,1
+	GivePet 302098
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302000,1
+	GivePet 302099
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302102 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302102,1
+	GivePet 302199
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302202 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302202,1
+	GivePet 302299
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302300,1
+	GivePet 302399
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302400,1
+	GivePet 302400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302401 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302401,1
+	GivePet 302401
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302400,1
+	GivePet 302499
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302500,1
+	GivePet 302599
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302800,1
+	GivePet 302899
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 302900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 302900,1
+	GivePet 302999
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303201 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303201,1
+	GivePet 303299
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303300,1
+	GivePet 303399
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303400,1
+	GivePet 303499
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303500,1
+	GivePet 303500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303600,1
+	GivePet 303699
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303700,1
+	GivePet 111
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303801 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303801,1
+	GivePet 303899
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 303900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 303900,1
+	GivePet 303900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 304000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 304000,1
+	GivePet 304099
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 304101 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 304101,1
+	GivePet 304199
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 304201 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 304201,1
+	GivePet 304200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 306400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 306400,1
+	GivePet 307400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 306500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 306500,1
+	GivePet 307500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 306600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 306600,1
+	GivePet 307600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 306700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 306700,1
+	GivePet 307700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 306800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 306800,1
+	GivePet 307800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 306900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 306900,1
+	GivePet 307900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307000,1
+	GivePet 308000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307100,1
+	GivePet 308100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307200,1
+	GivePet 308200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307300,1
+	GivePet 308300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307400,1
+	GivePet 308400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307500,1
+	GivePet 308500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307600,1
+	GivePet 308600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307700,1
+	GivePet 308700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307800,1
+	GivePet 308800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 307900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 307900,1
+	GivePet 308900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308000,1
+	GivePet 309000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308100,1
+	GivePet 309100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308200,1
+	GivePet 309200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308300,1
+	GivePet 309300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308400,1
+	GivePet 309400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308500,1
+	GivePet 309500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308600,1
+	GivePet 309600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308700,1
+	GivePet 309700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308800,1
+	GivePet 309800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 308900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 308900,1
+	GivePet 309900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309000,1
+	GivePet 310000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309100,1
+	GivePet 310100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309200,1
+	GivePet 310200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309300,1
+	GivePet 310300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309400,1
+	GivePet 310400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309500,1
+	GivePet 310500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309600,1
+	GivePet 310600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309700,1
+	GivePet 310700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309800,1
+	GivePet 310800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 309900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 309900,1
+	GivePet 310900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310000,1
+	GivePet 311000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310100,1
+	GivePet 311100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310200,1
+	GivePet 311200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310300,1
+	GivePet 311300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310400,1
+	GivePet 311400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310500,1
+	GivePet 311500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310600,1
+	GivePet 311600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310700,1
+	GivePet 311700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310800,1
+	GivePet 311800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 310900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 310900,1
+	GivePet 311900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311000,1
+	GivePet 312000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311100,1
+	GivePet 312100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311200,1
+	GivePet 312200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311300,1
+	GivePet 312300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311400,1
+	GivePet 312400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311500,1
+	GivePet 312500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311600,1
+	GivePet 312600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311700,1
+	GivePet 312700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311800,1
+	GivePet 312800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 311900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 311900,1
+	GivePet 312900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312000,1
+	GivePet 313000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312100,1
+	GivePet 313100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312200,1
+	GivePet 313200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312300,1
+	GivePet 313300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312400,1
+	GivePet 313400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312500,1
+	GivePet 313500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312600,1
+	GivePet 313600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312700,1
+	GivePet 313700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312800,1
+	GivePet 313800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 312900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 312900,1
+	GivePet 313900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313000 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313000,1
+	GivePet 314000
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313100 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313100,1
+	GivePet 314100
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313200 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313200,1
+	GivePet 314200
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313300 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313300,1
+	GivePet 314300
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313400 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313400,1
+	GivePet 314400
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313500 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313500,1
+	GivePet 314500
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313600 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313600,1
+	GivePet 314600
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313700 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313700,1
+	GivePet 314700
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313800 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313800,1
+	GivePet 314800
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block Item 800550 >= 1 && petlevel 313900 == 1
+
+	Window "要刷宠物吗？",YES,NO
+	Window_NO
+	EndWindow "哦~",OK
+	Window_YES
+	KillItem 800550,1
+	KillPetl 313900,1
+	GivePet 314900
+	EndWindow "好了拿走吧",OK
+
+##############  ##############
+block
+
+	EndWindow "要刷宠的带LV1刷宠券和要刷的1等级宠",OK
+

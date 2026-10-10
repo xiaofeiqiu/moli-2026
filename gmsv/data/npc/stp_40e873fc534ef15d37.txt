@@ -1,0 +1,13 @@
+block 
+	Window"\n\n你们好，是想知道女神在什么地方吗？",yes,no
+		Window_no
+		Window_yes
+	Window"\n\n主人出走好多日子了，可能去拜访古树了，上面有怪物，我只能躲在这里。\n拿着这个去找主人吧，我送你出去。",ok
+		Window_ok level >= 100 && item 800094 == 0
+			Leavegroup
+			Warp 0,45136,729,317
+		Window_ok level >= 100 && item 800094 >=1
+			killitem 800094,1
+			giveitem 800095,1
+			Leavegroup
+			Warp 0,45136,729,317

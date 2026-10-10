@@ -1,0 +1,5 @@
+block
+Window "\n\n要进入水灵之地吗?",yes,no
+Window_no
+Window_yes
+Warp 0,64052,50,97

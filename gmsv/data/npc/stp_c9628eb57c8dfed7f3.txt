@@ -1,0 +1,6 @@
+block
+window "\n\n遇见熟人了,看来魔法地图是被他们捡到了.",next
+window "\n\n你能别犯傻了吗,恶心死了.",next
+window "\n\n这次绝不能放过你们了.",ok
+window_ok
+Encount 2|0,25209,29,20||0|||||0|50001|||||||||

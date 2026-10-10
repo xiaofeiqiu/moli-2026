@@ -1,0 +1,12 @@
+block item 87668 == 1
+endwindow "\n\n那人穿的一身黑在天还没亮的时候乱窜不可疑都可疑了。"
+
+
+block item 87667 == 1
+window "\n\n可疑的人么？说到可疑的人我大清早天还没亮的时候的确看到个从大圣堂方向跑过来个人，但是一眨眼消失在进入灵堂附近。",ok
+window_ok
+killitem 87667
+giveitem 87668
+
+block
+endwindow "\n\n我喜欢天还没亮就出门跑步锻炼，累了话就坐在这里休息一下。"

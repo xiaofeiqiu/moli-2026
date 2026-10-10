@@ -1,0 +1,9 @@
+block
+window "\n\n哼～我们走着瞧,你们只是毁灭了我的人类肉身而已,我的真身在魔界,迟早我还会回来的.",next
+window "\n\n只要你们人类还有贪婪的信念,我们魔族的力量就会源源不断壮大.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200531
+leavegroup
+Warp 0,27500,67,168

@@ -1,0 +1,8 @@
+block item 50791 >=1
+Window"\n\n\n@c你是否要打开魔法黑猫的精华",yes,no
+Window_YES PetSpace == 0 
+##1100004	\n\n\n\n\n@c宠物栏已经满了.	1
+EndWindow 1100004	 
+Window_yes item 50791 >=1
+killitem 50791
+GivePet 3000060

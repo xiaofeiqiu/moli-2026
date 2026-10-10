@@ -1,0 +1,16 @@
+block item 200505 >= 1
+window "\n\n这双靴…是…我家希瑞的,难道她进入前方的钟乳洞了.",next
+window "\n\n传闻这个洞里经常闹鬼,进去的人没有一个出来过,路过这里的商人和旅人都是绕道走的.",next
+window "\n\n陌上人,我不知道你是何方神圣,请求你跟我一起进去,救救我女儿吧.",yes,no
+window_yes
+killitem 200505
+leavegroup
+Warp 0,27512,55,66
+
+
+block
+endwindow "\n\n你不是本地人的话,最好远离这洞口."
+
+
+
+

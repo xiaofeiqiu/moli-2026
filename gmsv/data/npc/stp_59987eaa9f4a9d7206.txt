@@ -1,0 +1,29 @@
+block
+LocalCount21 = Random 3,0
+
+if localcount 21 == 1
+window"@c\n\n\n是否使用瓦忍家族的传统?",yes,no
+window_yes
+killitem 90861
+message 378681
+Luac stp:legacy:08a514d723e264b3a1d4
+endif
+
+if localcount 21 == 2
+window"@c\n\n\n是否使用瓦忍家族的传统?",yes,no
+window_yes
+killitem 90861
+message 378681
+Luac stp:legacy:a92dd3b170756ab56853
+endif
+
+if localcount 21 == 3
+window"@c\n\n\n是否使用瓦忍家族的传统?",yes,no
+window_yes
+killitem 90861
+message 378682
+Luac stp:legacy:8574727acfe8126a1d26
+endif
+
+
+

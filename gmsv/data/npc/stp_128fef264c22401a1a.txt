@@ -1,0 +1,12 @@
+block
+window "\n\n你好,本周的钓鱼锦标赛已经开始啦,你要参加么?",yes,no
+window_no
+endwindow "\n\n随时欢迎参加比赛."
+window_yes
+leavegroup
+Warp 0,57100,68,45
+
+
+
+
+

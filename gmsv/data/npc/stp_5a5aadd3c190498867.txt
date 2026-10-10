@@ -1,0 +1,11 @@
+
+block item 15682 == 1
+window "\n\n\n@c这是妈妈做的糕点,你是...算了,我的弟弟被魔鬼抓走了,而我却被打伤了.请你救救我的弟弟,求求你.",yes,no
+window_no
+KillItem 15682
+endwindow "\n\n\n@c也许你的能力还不足以对抗那魔鬼,你去了也只不过是白白送死而已.我在想办法吧,"
+window_yes
+KillItem 15682
+giveitem 15683
+endwindow "\n\n\n@c那就拜托你了,万事小心,这个魔鬼很难对付,如果不行,就马上回来."
+

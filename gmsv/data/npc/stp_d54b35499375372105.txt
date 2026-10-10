@@ -1,0 +1,10 @@
+#起始
+#持有道具
+
+##############  ##############
+block  Item 18989 != 0
+	Window 900060,NEXT
+        EndWindow 900061,OK
+        
+block
+        EndWindow 900031,OK

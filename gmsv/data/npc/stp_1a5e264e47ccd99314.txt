@@ -1,0 +1,22 @@
+block item 800030 == 1
+	endWindow"\n\n绕开死亡领主是必须的。"
+
+block item 800026 == 1 && item 800027 == 1 && item 800028 == 1 && item 800029 == 1
+	Window"\n\n是时候了解它们了，它们的巢穴就在森林边缘，干掉它们的首领。",ok
+		Window_ok item 800026 == 1 && item 800027 == 1 && item 800028 == 1 && item 800029 == 1
+		killitem 800027
+		killitem 800026
+		killitem 800028
+		killitem 800029
+		giveitem 800030
+
+block item 800025 == 1
+	Window"\n\n之前派出的侦查兵到现在还没回来，能不能请你去再去侦查一下，顺便找找我们的侦擦兵。",next
+	Window"\n\n贤者之石，暂时由我帮你保管，小心那只怪物。",ok
+		Window_ok item 800025 == 1
+		killitem 800025
+		giveitem 800026
+
+block
+	Window"\n\n这些该死的食尸鬼，然而更可怕的是森林深处的那个怪物，遇到它就赶紧跑吧！",ok
+		Window_ok

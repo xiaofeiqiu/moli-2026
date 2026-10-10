@@ -1,0 +1,7 @@
+block item 51019 >=1
+	Window"\n\n要打开强力饰品包吗？",yes,no
+		window_yes ItemSpace < 0
+			EndWindow"\n\n@c你的物品栏不够了。"
+		Window_yes  item 51019 >=1
+			killitem 51019
+			giveitem (661118%1,661117%1,661116%1,661136%1,661112%1,661111%1)

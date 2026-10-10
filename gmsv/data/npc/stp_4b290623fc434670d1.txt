@@ -1,0 +1,10 @@
+block item 86220 >= 1
+endwindow "\n\n只有夜里的蒂娜村才能进去的."
+
+block
+window "\n\n如果是几天前的我们,你的小命现在早就没了!那些可恶的海盗!那些背信弃义的海盗!从那个外国人手里抢来的货物,已经被蒂娜村那帮丧心病狂的海盗抢走了.",next
+window "\n\n如果你要找他们要,这枚水晶给你,在蒂娜村夜晚可以混入海盗的巢穴.恨啊!",ok
+window_ok itemspace < 1
+endwindow "\n\n你身上的东西可真多啊!"
+window_ok
+GiveItem 86220

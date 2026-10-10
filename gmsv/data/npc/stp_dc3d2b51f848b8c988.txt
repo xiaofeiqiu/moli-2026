@@ -1,0 +1,10 @@
+block item 143 >= 1
+endwindow "\n\n蟋蟀出来,蟋蟀出来...看着我做什么..."
+
+	
+block item 119 == 1
+window "\n\n找到我很不容易么?呵呵,这里风景好像还不错的样子,看那个蟋蟀...没说你啦...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 143,1

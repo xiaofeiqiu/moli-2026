@@ -1,0 +1,40 @@
+
+###看门的团员玩家身上有日月组织银卡且装扮成蓝魔宝箱怪时,当玩家说出暗号,传送玩家到秘密集会地点.
+
+block Item 715248 >= 1
+endwindow "\n\n．．．．．．"
+
+
+block Group > 1
+endwindow "\n\n请解散队伍!"
+
+
+###□蓝魔宝箱套装 && 身上有日月组织团员银卡 && 字串 == 日月团主千秋万世一统法兰
+block BBImage == 101613 && Item 715244 >= 1 && StrCmpChat == 777451
+window "\n\n看你的穿着就知道你是自己人.\n快点呦!\n集会要开始啰!",ok
+Window_OK
+Warp 0,32399,2,10 
+
+
+block BBImage == 101613 && Item 715244 >= 1
+endwindow "\n\n你是不是应该跟我说什么呢?"
+
+
+block Item 715244 >= 1
+window "\n\n你是日月组织的团员?\n对不起啊!你的穿着不符合规定\n所以我不能让你进去.\n先去换装吧!",ok
+Window_OK Item 715244 >= 1
+Warp 0,1000,233,78
+
+
+block BBImage == 101613
+window "\n\n你没有我们的证件吗?\n那是从哪里弄到这套衣服的.\n快点回去把证件找出来!",ok
+Window_OK BBImage == 101613
+Warp 0,1000,233,78
+
+
+block StrCmpChat == 777451
+endwindow "\n\n什么?你刚刚有说话吗?\n我是不是听到你说了什么啊?"
+
+
+block
+endwindow "\n\n请你不要在我面前晃来晃去!\n我还要值勤,你这样走来走去我都眼花了."

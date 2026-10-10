@@ -1,0 +1,12 @@
+block
+window "\n\n开启者啊,你做的很好...",next
+window "\n\n不过达纳托斯并不是那么容易被消灭的...",next
+window "\n\n他已经把他残余的力量跟他的魂魄依附在这把剑上了...",next
+window "\n\n开启者啊,拜托你了...将这把剑里达纳托斯的力量净化掉吧...不然某一天它还会重新出现在人界的...",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包好像不够位置了"
+window_ok
+giveitem 880015
+giveitem 880016
+leavegroup
+Warp 0,1000,233,78

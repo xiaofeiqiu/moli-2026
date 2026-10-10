@@ -1,0 +1,10 @@
+block item 87146 == 1
+endwindow "\n\n这头盔好像是白天那个守卫的，我去村子里看看还有什么线索！"
+
+block item 87145 == 1
+window "\n\n地上有个头盔你要捡起来吗？",yes,no
+window_no
+window_yes itemSpace >= 1
+giveitem 87146
+window_yes itemSpace < 1
+endwindow "\n\n你物品栏已满！"

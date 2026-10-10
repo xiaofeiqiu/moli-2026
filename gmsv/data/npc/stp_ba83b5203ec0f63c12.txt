@@ -1,0 +1,9 @@
+block item 500149 == 1
+window "\n\n您有龙之徽章呀~~定是我们寒冰巨龙王的朋友，请进~~请进~~",ok
+window_ok
+LeaveGroup
+killitem 500149
+Warp 0,14230,52,84
+
+block
+endwindow "\n\n您是坏人吗？"

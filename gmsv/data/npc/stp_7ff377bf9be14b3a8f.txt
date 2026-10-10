@@ -1,0 +1,4 @@
+block
+window "\n\n©Ñ©Ò©n©Ñ©Ò",ok
+window_ok
+Encount 2|0,28333,5,5||0|||||0|50720|||||||||

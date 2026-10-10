@@ -1,0 +1,17 @@
+block petspace == 5
+	window"\n\n您的宠物栏是空的。",ok
+	window_ok
+block
+	window"\n\n要将随从成长将变为【血30档】【攻40档】【防16档】【敏20档】【魔14档】吗，变更后等级还原为1级，且各种培养奖励点数重新计算。",yes,no
+	window_yes
+Luac stp:legacy:1bd221d8f4fbf722969d
+Luac stp:legacy:a491e5e1bfe86fd2690f
+Luac stp:legacy:c522121764058deaf4a1
+Luac stp:legacy:15a862c0a4a5894acf71
+Luac stp:legacy:5b0fec8bdfb8ea82f760
+Luac stp:legacy:876905778373efb87940
+Luac stp:legacy:6f304c6ba24e2a8561f5
+Luac stp:legacy:004a81b70fb161feb4d4
+Luac stp:legacy:2ae868e19fe43c8a6037
+		KillItem 60293,1
+	window_no

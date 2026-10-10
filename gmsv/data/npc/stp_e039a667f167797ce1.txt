@@ -1,0 +1,18 @@
+block Group > 1
+endwindow "\n\n请解散队伍"
+
+
+block Item 39664 >= 1
+window "\n\n喔!你有通行证呀!要过去吗?",yes,no
+window_yes Group > 1
+endwindow "\n\n请解散队伍"
+window_yes Item 39664 >= 1
+LeaveGroup
+Warp 0,45087,39,50
+endblock
+window_no
+endblock
+
+
+block
+endwindow "\n\n再过去是可丽儿皇后之墓,闲杂人等不得进入～"

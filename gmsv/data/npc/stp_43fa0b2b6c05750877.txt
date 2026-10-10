@@ -1,0 +1,11 @@
+block item 87506 == 1
+endwindow "\n\n加入我们俱乐部是你明智的选择，不但可以提高你的格斗技艺还能拿到不菲的酬劳。"
+
+block item 87505 == 1
+window "\n\n嗯？你通过了我们的入会测试？恭喜你~~这是这是我们俱乐部的会员卡，你在俱乐部的具体安排事宜请到法兰安其摩酒吧找我们的联络员。",ok
+window_ok
+killitem 87505
+giveitem 87506
+
+block
+endwindow "\n\n我很忙别来烦我！" 

@@ -1,0 +1,5 @@
+block
+window"\n\n@c 如果你到200级了 ~我就能带你去200级练级地点哦",ok
+window_ok level >= 200
+leavegroup
+Warp 0,12807,40,8

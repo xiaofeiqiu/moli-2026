@@ -1,0 +1,27 @@
+block item 1000730 >= 1
+window 7020275,next
+window 7020276,ok
+window_ok
+killitem 1000730
+Warp 0,23313,126,656
+
+block item 1000728 >= 1 && globalFlag 330 == 0
+window 7020277,next
+window 7020278,next
+window 7020279,ok
+window_ok
+LeaveGroup
+killitem 1000728
+globalFlag 330 = 1
+
+block level >= 70 &&  globalFlag 328 == 0 && globalFlag 329 == 0
+window 7020280,yes,no
+window_no
+window_yes
+window 7020281,ok
+window_ok
+LeaveGroup
+globalFlag 328 = 1
+
+block
+endwindow 7020282

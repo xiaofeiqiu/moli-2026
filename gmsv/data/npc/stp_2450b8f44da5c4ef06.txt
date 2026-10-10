@@ -1,0 +1,40 @@
+
+block item 39833 >= 1 && item 39834 >= 1 && ItemCreateTime 39833 >= 1 && ItemCreateTime 39834 >= 1 && nowevent 528 == 1 && nowevent 530 == 1 && nowevent 532 == 1
+Window "\n\n陷阱内好像有什么东西在动!",ok
+window_ok
+leavegroup
+killitem 39833
+killitem 39834
+nowevent 528 = 0
+nowevent 530 = 0
+nowevent 532 = 0
+Encount 2|0,15001,28,26||0|||||0|21283|||||||||
+
+
+
+block item 39833 >= 1 && item 39834 >= 1 && ItemCreateTime 39833 >= 1 && ItemCreateTime 39834 >= 1
+Window "\n\n好像什么都没有!",ok
+window_ok
+
+
+
+block item 39834 >= 1
+Endwindow "\n\n放置陷阱的时间还太短什么都没有!"
+
+
+block item 39832 >= 1 && nowevent 527 == 1
+Window "\n\n你要在此处放置陷阱吗?",yes,no
+window_yes
+killitem 39832,1
+giveitem 39834
+nowevent 531 = 1
+
+
+
+block item 39832 >= 1 && nowevent 528 == 1
+Window "\n\n你要在此处放置陷阱吗?",yes,no
+window_yes
+killitem 39832,1
+giveitem 39834
+nowevent 532 = 1
+

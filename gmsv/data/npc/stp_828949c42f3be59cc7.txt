@@ -1,0 +1,12 @@
+block item 3504 >= 1
+window "\n永不放弃的人才是最值得敬畏的!选【是】我将没收了你的委托卷并且随机送你个东西.\n\n选【否】我将把你传送到起点重新来过,但是你不会得到什么!",yes,no
+window_yes item 3504 >= 1 && item 3505 >= 1
+killitem 3504,1
+killitem 3505,1
+giveitem (3509%20)
+window_no
+leaveGroup
+Warp 0,1601,14,14
+
+block
+EndWindow "\n永不放弃的人才是最值得敬畏的!",ok

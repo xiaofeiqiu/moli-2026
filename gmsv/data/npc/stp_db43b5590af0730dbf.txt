@@ -1,0 +1,8 @@
+block item 90854 == 0
+window"@c\n\n这个奇怪的狮子眼珠子怎么咕溜溜的转...不好!",ok
+window_ok
+leavegroup
+Encount 3|0,0,0,0||||||||243084|||||||||
+
+block item 90854 >= 1
+Endwindow"@c\n\n奇怪的狮子没动静了.."

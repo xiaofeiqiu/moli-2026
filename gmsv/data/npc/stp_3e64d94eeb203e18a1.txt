@@ -1,0 +1,14 @@
+block item 730093 >= 1 && item 9614 >= 1
+window "\n\n要试一下炼金术吗?我可以展示给你看!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 730093 >= 1
+killitem 730093,1
+killitem 9614,1
+giveitem 9617,1
+
+
+
+block
+endwindow "\n\n欢迎来到炼金之馆."
+

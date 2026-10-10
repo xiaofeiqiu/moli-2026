@@ -1,0 +1,17 @@
+block item 77009 >= 1
+endwindow 7019379
+
+
+block item 77008 >= 1
+window 7019380,next
+window 7019381,next
+window 7019382,next
+window 7019383,next
+window 7019384,ok
+window_ok
+LeaveGroup
+killitem 77008
+giveitem 77009
+
+block
+endwindow 7019385

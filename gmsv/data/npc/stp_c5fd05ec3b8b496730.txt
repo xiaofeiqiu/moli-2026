@@ -1,0 +1,11 @@
+block	item 591377>=1
+window"\n\n\n@c 回到现实去吧 ……",ok
+window_ok
+killitemall 591377
+LeaveGroup
+Warp 0,1000,242,100
+block
+window"\n\n\n@c 回到现实去吧 ……",ok
+window_ok
+LeaveGroup
+Warp 0,1000,242,100

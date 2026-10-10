@@ -1,0 +1,7 @@
+block item 87149 == 1
+window "\n\n貌似这堵冰墙能用火把将其融化，你确定要融化这堵冰墙吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87149
+Warp 0,25190,93,63

@@ -1,0 +1,16 @@
+block
+Window"\n\n哦呀?果然还是太简单了吗?看来下次拿你去做实验才比较好!",next
+Window"\n\n对了,你是喜欢魔法系的护身符吗?",yes,no
+Window_no
+Window_yes
+Window"\n\n很好,那就这样吧,唔嘿嘿嘿,我去忙啦,我们未来再见.",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok			
+giveitem 50820,8
+giveitem 50823,1
+GiveItem (50821%1,50822%1)
+EndEvent 524 = 1
+CheckTitle
+leavegroup
+Warp 0,1000,141,148

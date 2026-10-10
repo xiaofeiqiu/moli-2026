@@ -1,0 +1,16 @@
+
+
+
+
+block item 652642 >= 1
+window "\n\n来不及了!愚蠢的人类!",ok
+window_ok
+Encount 2|0,64093,41,48||0|||||0|613091|||||||||
+
+
+block
+endwindow "\n\n......"
+
+
+
+

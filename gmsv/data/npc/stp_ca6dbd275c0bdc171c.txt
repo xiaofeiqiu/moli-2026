@@ -1,0 +1,29 @@
+block item 87664 == 1
+endwindow "\n\n你要来点什么饮料啊！"
+
+block item 87663 == 1
+endwindow "\n\n你要来点什么饮料啊！"
+
+block item 87662 == 1
+endwindow "\n\n你要来点什么饮料啊！"
+
+block item 87661 == 1
+endwindow "\n\n你要来点什么饮料啊！"
+
+block item 87660 == 1
+endwindow "\n\n你要来点什么饮料啊！"
+
+block item 87659 == 1
+endwindow "\n\n你去看看他需要什么帮助吗？"
+
+block item 87658 == 1
+window "\n\n那边的先生最近总是听他唉声叹气的，你不想去看看他需要什么帮助吗？",yes,no
+window_no
+endwindow "\n\n你没兴趣？那就喝杯酒吧..."
+window_yes
+window "\n\n快去吧，有什么小道消息记得告诉我哦～",ok
+window_ok
+giveitem 87659
+
+block
+endwindow "\n\n你要来点什么饮料啊！"

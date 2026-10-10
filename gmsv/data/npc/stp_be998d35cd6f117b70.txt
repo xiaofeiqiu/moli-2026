@@ -1,0 +1,32 @@
+block item 61038 >=1 && item 61039 >= 1
+window 900567,ok
+window_ok
+LeaveGroup
+killitem 61038
+killitem 61039
+giveitem 61040
+Warp 0,23311,238,172
+window_ok gold > 998000
+endwindow 900568
+
+block item 61036 >= 20 && item 61035 >= 1
+window 900569,next
+window 900570,ok
+window_ok gold <= 998000
+LeaveGroup
+killitem 61036,20
+giveitem 61037
+addgold 2000
+Warp 0,23240,83,46
+
+block item 61035 >= 1
+window 900571,next
+window 900572,yes,no
+window_no
+window_yes
+window 900573,next
+window 900574,ok
+window_ok
+
+block
+endwindow 900575

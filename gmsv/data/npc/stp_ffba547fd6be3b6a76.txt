@@ -1,0 +1,8 @@
+block item 87903 == 1 &&  item 87904 == 1
+window 933734,ok
+window_ok
+LeaveGroup
+killitem 87904
+killitem 87903
+giveitem 87907
+Warp 0,27210,26,2

@@ -1,0 +1,24 @@
+
+block ShipCharDown 30 == 1 && ShipCharTake 30,1801 == 1
+	Window "\n\n现在正停靠在卡恩村港口，要下船吗？",YES,NO
+	Window_YES ShipCharDown 30 == 1 && ShipCharTake 30,1801 == 1
+	LeaveGroup
+	ShipCharDown 30
+	Window_YES
+	EndWindow "\n\n\n\n@c已经出港了。",OK
+	Window_NO
+
+block ShipCharDown 30 == 1 && ShipCharTake 30,1802 == 1
+	Window "\n\n现在船正停在海沙村地下隐秘港口。要下船吗？",YES,NO
+	Window_YES ShipCharDown 30 == 1 && ShipCharTake 30,1802 == 1
+	LeaveGroup
+	ShipCharDown 30
+	Window_YES
+	EndWindow "\n\n\n\n@c已经出港了。",OK
+	Window_NO
+
+block ShipGetStopTime2 < 60
+	EndWindow "\n\n\n\n@c将要进港了。",OK
+
+block
+	EndWindow "\n\n\n\n@c离入港还有@d2。",OK 

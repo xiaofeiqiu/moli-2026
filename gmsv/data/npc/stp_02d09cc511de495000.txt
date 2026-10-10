@@ -1,0 +1,26 @@
+block Item 39663 > 0 && Item 18570 > 0 && Group > 1
+endwindow "\n\n请解散队伍"
+
+
+block Item 39663 > 0 && Item 18570 > 0
+window "\n\n你的宇治金时是要请我吃的吗??",yes,no
+window_no
+endwindow "\n\n热昏了!好想吃些冰品!"
+window_yes Group > 1
+endwindow "\n\n请解散队伍"
+window_yes
+window "\n\n谢谢!\n真是好吃,好凉好舒服～",next
+window "\n\n你刚说什么?要进砂之塔?",next
+window "\n\n好吧!进去吧!",ok
+window_ok
+killitem 18570,1
+LeaveGroup
+Warp 0,32200,6,7
+
+
+block Item 39663> 0
+endwindow "\n\n热昏了!好想吃些冰品!"
+
+
+block
+endwindow "\n\n真是热昏了～"

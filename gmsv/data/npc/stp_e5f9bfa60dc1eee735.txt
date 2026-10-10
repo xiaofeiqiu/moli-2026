@@ -1,0 +1,14 @@
+block Xpos >= 42 && Xpos <= 45 && Ypos >= 4 && Ypos <= 11 && globalflag 265 == 0 && globalflag 266 == 0 && item 22008 == 1
+	systemmessage 7313
+	globalflag 265 = 1
+
+block xpos >= 38 && xpos <= 41 && ypos >= 4 && ypos <= 11 && globalflag 265 == 1 && globalflag 266 == 0 && item 22008 == 1
+	systemmessage 7314
+	globalflag 266 = 1
+
+block xpos >= 35 && xpos <= 37 && ypos >= 4 && ypos <= 11 && globalflag 265 == 1 && globalflag 266 == 1 && item 22008 == 1
+	systemmessage 7315
+	globalflag 265 = 0
+	globalflag 266 = 0
+	killitem 22008,1
+	Warp 0,7221,28,12

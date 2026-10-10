@@ -1,0 +1,5 @@
+block 
+	Window"\n\n被一股神秘的力量拉入镜子中。",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18034,11,4

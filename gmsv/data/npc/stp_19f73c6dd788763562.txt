@@ -1,0 +1,12 @@
+block Item 39663 >= 1
+window "\n\n你要找长老吗?可以从这边进去!",yes,no
+Window_no
+Window_yes group > 1
+endwindow "\n\n请解散队伍"
+window_yes
+leaveGroup
+Warp 0,32213,10,2
+
+
+block
+endwindow "\n\n你要找长老呀!从阁楼那上去吧!"

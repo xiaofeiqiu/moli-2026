@@ -1,0 +1,18 @@
+block endevent 558 ==  1
+endwindow "\n\n真是多谢你了."
+
+
+block item 1000059 >= 1
+endwindow "\n\n谢谢你,请一路小心"
+
+
+block item 1000058 >= 1
+window "\n\n村子的出产并不是非常丰富,因此我丈夫和其他人在不农忙的时候会一起结伴去西方的海边捕鱼来增加收入.",next
+window "\n\n这次他们结伴都去了好几天了,一直没有消息传回来,你看起来是个很有能力的冒险家,能拜托你穿过西方的森林去海边寻找一下他们的消息么?",yes,no
+Window_no
+Window_yes
+window "\n\n太感谢了,请带上这个吧,万一有什么意外也好有个应对.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 1000058 >= 1
+giveitem 1000059

@@ -1,0 +1,24 @@
+block item 800187 >= 1
+setaction 10
+endwindow "\n\n希尔芙倒在了地上..."
+
+
+block item 800174 == 1
+window "\n\n男人?这里不曾有过人类,几百年间,甚至几千年间,除了魔物,没有人能过进入.",next
+window "\n\n(没等希尔芙说完,拉斯特从你的身后出现,一剑刺穿中了希尔芙.)",next
+window "\n\n(希尔芙倒在了地上,一个手环掉在了你的面前,你把它捡起来,决定向拉斯特问个究竟.)",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800174 == 1
+setaction 10
+killitem 800174
+giveitem 800187,1
+
+
+block
+endwindow "\n\n风...告诉我...你被人...利用了!..."
+
+
+
+
+

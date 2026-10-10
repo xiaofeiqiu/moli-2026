@@ -1,0 +1,14 @@
+block
+
+window"\n你竟然有这种令人畏惧的力量...",next
+
+window"\n看来人类的勇气与决心绝不低于神族的那些天赋异能.",next
+
+window"\n可是人类啊.你要走的路还很长..希望你能把这种勇气与决心保持下去.",ok
+
+window_OK
+
+endevent 639 = 1
+
+LeaveGroup
+Warp 0,1000,240,100

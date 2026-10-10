@@ -1,0 +1,39 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【牧羊神使化身】吗？",ok
+			Window_ok
+Luac stp:legacy:844b72d33c84d3272d7b
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【金牛神使化身】吗？",ok
+			Window_ok
+Luac stp:legacy:72276933c10d5876fd15
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【加百列】吗？",ok
+			Window_ok
+Luac stp:legacy:736a216dfae3b8f35478
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【米迦勒】吗？",ok
+			Window_ok
+Luac stp:legacy:b151c11abfc59a4ea823
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【拉斐尔】吗？",ok
+			Window_ok
+Luac stp:legacy:802bc3ef419c32ccafe2
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【切茜娅】吗？",ok
+			Window_ok
+Luac stp:legacy:4b9ef8444db8760272b6
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【雪蕾洁】吗？",ok
+			Window_ok
+Luac stp:legacy:d6aec41833728c409d21
+				endif
+
+

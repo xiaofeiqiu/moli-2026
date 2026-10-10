@@ -1,0 +1,83 @@
+block Item 670019 >= 1 && Item 670020 >= 1 && Item 670021 >= 1 && Item 670022 >= 1 && Item 670023 >= 1 && Item 670024 >= 1 && Item 670025 >= 1 && Item 670026 >= 1
+	Window 670024,YES,NO
+	Window_YES
+	KillItem 670019
+	KillItem 670020
+	KillItem 670021
+	KillItem 670022
+	KillItem 670023
+	KillItem 670024
+	KillItem 670025
+	KillItem 670026
+	GiveItem (52202%20,798200%20,798201%20,54020%20,7000174%20)
+	EndWindow 670021,OK
+
+	Window_NO
+	KillItem 670019
+	KillItem 670020
+	KillItem 670021
+	KillItem 670022
+	KillItem 670023
+	KillItem 670024
+	KillItem 670025
+	KillItem 670026
+	GiveItem (54017%8,670100%20,670101%20,670102%20,670103%20)
+	EndWindow 670025,OK
+
+
+block Item 670009 >= 1 && Item 670010 >= 1 && Item 670011 >= 1 && Item 670012 >= 1 && Item 670008 >= 1 && Item 670013 >= 1
+	Window 670020,YES,NO
+	Window_YES
+	KillItem 670008
+	KillItem 670009
+	KillItem 670010
+	KillItem 670011
+	KillItem 670012
+	KillItem 670013
+	GiveItem (54020%3,7000174%3,670100%20,670101%20,670102%20,670103%20)
+	EndWindow 670021,OK
+	Window_NO
+	EndWindow 670022,OK
+
+block Item 670019 >= 1 && Item 670020 >= 1 && Item 670021 >= 1 && Item 670022 >= 1
+	Window 670042,YES,NO
+	Window_YES
+	KillItem 670019
+	KillItem 670020
+	KillItem 670021
+	KillItem 670022
+	GiveItem (798202%50,798203%50)
+	EndWindow 670044,OK
+
+	Window_NO
+	EndWindow 670045,OK
+
+block Item 670023 >= 1 && Item 670024 >= 1 && Item 670025 >= 1 && Item 670026 >= 1
+	Window 670043,YES,NO
+	Window_YES
+	KillItem 670023
+	KillItem 670024
+	KillItem 670025
+	KillItem 670026
+	GiveItem (798202%30,798203%30,670100%20,670101%20,670102%20,670103%20)
+	EndWindow 670044,OK
+
+	Window_NO
+	EndWindow 670045,OK
+
+block Item 670009 != 0 || Item 670010 != 0 || Item 670011 != 0 || Item 670012 != 0 || Item 670008 != 0 || Item 670013 != 0
+	EndWindow 670023,OK
+
+#--------start
+block item 670008 >= 1
+Endwindow"\n\n\n@c 您已经有秘旨啦，可以直接开始任务了。"
+
+block Level < 160
+Endwindow"\n\n\n@c 您的等级太低啦，等到160级再来吧。"
+block Level >= 160
+	Window 670017,YES,NO
+	Window_YES
+	GiveItem 670008
+	EndWindow 670018,OK
+	Window_NO
+	EndWindow 670007,OK

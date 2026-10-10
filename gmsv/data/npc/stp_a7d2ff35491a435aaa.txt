@@ -1,0 +1,17 @@
+block item 666072>=1 && item 666074>=1 && item 666075>=1 && item 666076>=1 && item 666077>=1
+window "那个墓地充满了宝藏,没想到你竟然能回来,当年我差点丢了命!",next
+window "愿意用宝箱与远古石和我交换点东西吗!" ,yes,no
+window_yes  item 666072>=1 && item 666074>=1 && item 666075>=1 && item 666076>=1 && item 666077>=1
+killitem 666072,1
+killitem 666074,1
+killitem 666075,1
+killitem 666076,1
+killitem 666077,1
+giveitem 666073,1
+endwindow "\n\n感谢你帮我收集了这么多的宝箱,哗..这个石头太棒了,这礼物送给你."
+window_no
+endwindow "\n\n算了……算了……我找找别人帮忙好了."
+
+
+block
+endwindow "如果你能收集到法老王的宝箱与远古石,我有好东西和你换."

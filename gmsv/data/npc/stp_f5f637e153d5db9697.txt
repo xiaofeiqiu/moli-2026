@@ -1,0 +1,8 @@
+block item 200209 >= 1
+window "\n\n快看…这个矿工腰间穿着一个奇怪的娃娃,看水晶球的反应来看,或许就是中黑巫术的来源,不管了～拿回去给切露西婆婆看下.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200210
+leavegroup
+Warp 0,27102,15,75

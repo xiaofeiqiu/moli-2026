@@ -1,0 +1,12 @@
+block item 70026 == 1
+Setaction 10
+window 910110,next
+window 910111,next
+window 910112,ok
+window_ok
+leavegroup
+killitem 70026
+Warp 0,25067,27,20
+
+block item 70026 != 1
+endwindow 910113

@@ -1,0 +1,14 @@
+block item 200700 >= 1
+window "\n\n没有本船长不敢去的地方,只要你出得起钱.\n\n根据你这张航海图的位置,这个航程我收你2000G船费.",yes,no
+window_yes gold < 2000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -2000
+killitem 200700
+giveitem 200701
+leavegroup
+Warp 0,60010,22,21
+
+
+block
+endwindow "\n\n海面上四处留下我的足迹."

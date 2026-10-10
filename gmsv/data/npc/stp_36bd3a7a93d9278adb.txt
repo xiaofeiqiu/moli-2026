@@ -1,0 +1,23 @@
+block itemspace <= 1
+	endwindow "\n\n把背包清理下再来找我吧。"
+block item 60413 >= 1
+	window"\n\n谢谢你们……我们会得到救赎……",ok
+	window_ok
+		LeaveGroup
+		Warp 0,2000,53,90
+block item 1000326 >= 1
+	window"\n\n如果给予希望，就注定要付出同等的绝望，这就是我们魔法少女的结果啊……我真是个笨蛋。",ok
+		window_ok
+			killitem 1000326,1
+			giveitem 60413,1
+			LeaveGroup
+			Warp 0,2000,53,90
+block item 60409 >= 1 && item 60413 >= 1
+	window"\n\n谢谢你……请帮助我这个笨蛋守护更多的人吧……",ok
+		window_ok
+			killitem 60413,1
+			giveitem 60418,1
+			LeaveGroup
+			Warp 0,2000,53,90
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

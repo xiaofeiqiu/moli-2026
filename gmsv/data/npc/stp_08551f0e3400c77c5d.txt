@@ -1,0 +1,32 @@
+block item 200125 >= 1
+endwindow "\n\n还真是枯燥无味的生活啊."
+
+
+block item 200117 >= 1 && item 200124 >= 1
+window "\n\n果真是那样的么,很好.",next
+window "\n\n看来你的勋章也该升级了",next
+window "\n\n这个你拿去吧,我要抓紧时间研究去了.",ok
+window_ok
+killitem 200117
+killitem 200124
+giveitem 200125
+
+
+
+block item 200123 >= 1
+endwindow "\n\n带上这个,或许能用的到."
+
+
+block item 200122 >= 1
+window "\n\n思伟叫你送来的,他还是在搞那些古怪的研究吗?",next
+window "\n\n这…（声音：有点颤抖）",next
+window "\n\n居然会有这种事,这么一说.",next
+window "\n\n早些年发生在那个岛上的事情看来是真的了.",next
+window "\n\n勇士,你是否要去探查一下.",yes,no
+window_yes
+killitem 200122
+giveitem 200123
+
+
+block
+endwindow "\n\n有什么事么."

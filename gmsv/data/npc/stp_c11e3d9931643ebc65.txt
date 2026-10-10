@@ -1,0 +1,11 @@
+block item 87699 == 1
+endwindow "\n\n走吧！传说中的救世主，别磨叽磨叽的。"
+
+block item 87697 == 1
+window "\n\n以前传说索奇亚沙漠中有座毁灭之都叫朱雀城。",next
+window "\n\n我姐姐已经在沙漠中央恭候你了，先派我来接应你的。请随我来。",ok
+window_ok
+giveitem 87699
+
+block
+endwindow "\n\n传说索奇亚沙漠中出现过一只朱雀。"

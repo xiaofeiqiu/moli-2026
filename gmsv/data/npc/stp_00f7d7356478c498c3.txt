@@ -1,0 +1,30 @@
+block item 87635 == 1
+window "\n\n哦哦原来是这样！这就是魔族之王邪神的眼睛！？",next
+window "\n\n果然有股猛烈的邪气 是否可给我呢？我好交给大圣堂的主教将其封印。",ok
+window_ok
+killitem 87635
+giveitem 87637
+endwindow "\n\n你是有史以来第一个取得邪神之眼的人，这把神剑给予你当之无愧！"
+
+block item 87634 == 1
+window "\n\n哦哦....感谢您 解除了...这个危险的神秘结界.....能告诉我是怎回事吗？",next
+window "\n\n哦哦原来是这样！感谢您的大勇，这是给你的奖赏。",ok
+window_ok
+killitem 87634
+giveitem 87636
+
+block item 87627 == 1
+endwindow "\n\n要想了解真相必须要晚上了！"
+
+block havetitle == 61 && EndEvent 92 == 1
+window "\n\n某晚陨星墬入击中沙漠造成地上此之神印.....",next
+window "\n\n但是似乎有股力量阻挡....\n接近的人不是昏迷就是被弹出....\n使得无法靠近研究.....\n但是夜晚之时....\n当人靠近...\n又会被吸入此结界中.....",next
+window "\n\n而此股力量...似乎跟魔族有相关联.....\n希望曾击败 犹大 的勇者啊....\n能去解开此谜团....可以吗？",yes,no
+window_no
+endwindow "\n\n是吗...?那也没办法了....."
+window_yes
+giveitem 87627
+endwindow "\n\n那一切就拜托了..."
+
+block
+endwindow "\n\n陨星坠落必有劫数！"

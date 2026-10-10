@@ -1,0 +1,9 @@
+block Item 1000187 >= 1
+window "\n\n你是来晋见公主大人的吗?那么请进吧.",ok
+window_ok
+LeaveGroup
+Warp 0,1611,8,14
+
+
+block
+EndWindow "\n\n抱歉,请不要打扰我家主人的休息,她的身体很虚弱."

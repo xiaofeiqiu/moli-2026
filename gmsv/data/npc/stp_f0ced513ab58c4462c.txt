@@ -1,0 +1,23 @@
+block itemspace <= 1
+	endwindow "\n\n把背包清理下再来找我吧。"
+block item 60415 >= 1
+	window"\n\n谢谢你们……我们会得到救赎……",ok
+	window_ok
+		LeaveGroup
+		Warp 0,2400,31,37
+block item 60408 >= 1
+	window"\n\n为什么……求求你帮帮我们，相信你是我们所有人的希望……",ok
+		window_ok
+			killitem 60408,1
+			giveitem 60415,1
+			LeaveGroup
+			Warp 0,2400,31,37
+block item 60409 >= 1 && item 60415 >= 1
+	window"\n\n谢谢你……你是我们所有人的希望……",ok
+		window_ok
+			killitem 60415,1
+			giveitem 60420,1
+			LeaveGroup
+			Warp 0,2400,31,37
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

@@ -1,0 +1,16 @@
+block
+    window "这是法老王的宝箱,拿取里的宝物会受到法老王的诅咒的~!",yes,no
+    window_no
+    window "不拿就对了,不然你会受到法老王的诅咒的~!",ok
+    window_ok
+    Leavegroup
+    Warp 0,1000,72,88
+    window_yes
+    if itemspace >=1
+       giveitem (900301%5,900302%10,900303%5,900304%10),1
+    Leavegroup
+    Warp 0,1000,72,88
+    else
+     window "你的东西清清吧.放不下了~!"
+    endif
+    endwindow "你会受到诅咒的~!"

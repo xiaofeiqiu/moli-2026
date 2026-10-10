@@ -1,0 +1,6 @@
+block item 377 >= 100
+window "\n\n要召唤出九尾妖狐吗?封印师,小偷准备好了吗?",Next
+window "\n\n接招吧,小朋友!",OK
+window_ok
+killitem 377,100
+Encount 3|||0|||||0|8574|

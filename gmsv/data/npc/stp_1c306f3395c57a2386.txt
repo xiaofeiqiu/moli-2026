@@ -1,0 +1,12 @@
+block Level >= 70 && Item 940112 == 1 && Item 940120 == 1
+window "\n\n\n恩.想成为强者么?那就真正的堕落吧.",ok
+window_ok Item 940112 == 1 && Item 940120 == 
+Encount 3|0,2307,6,9|||||0|||360069|||||||||
+
+
+block Item 940112 == 1 || Level >= 69
+EndWindow "\n\n\n你好,有什么可以服务的么?"
+
+	
+block
+EndWindow "\n\n\n你好,有什么可以服务的么?"

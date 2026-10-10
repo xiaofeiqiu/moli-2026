@@ -1,0 +1,37 @@
+#【一等奖 C H Z N B】
+block Item 778930 >= 1 && Item 778931 >= 1 && Item 778932 >= 1 && Item 778933 >= 1  && Item 778934 >= 1
+	Window "\n\n  您只有字母CHZNB。\n  奖品是:改造鬼灵.改造螳螂.改造蜜蜂..改造斩首.改造神盾.(随机一只)，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778930,1
+	KillItem 778931,1
+	KillItem 778932,1
+	KillItem 778933,1
+	KillItem 778934,1
+	GivePet (12404%80,12404%70,12404%60,12404%50,12404%20)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+#【二等奖 ZB】
+block  Item 778932 >= 1 && Item 778934 >= 1
+	Window "\n\n  您只有字母ZB\n  奖品是:熊猫,纯白,风精,火精,地精,水精.(随机一只)，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778932,1
+	KillItem 778934,1
+	GivePet (15%30,616%10,511%60,512%60,513%60,514%60)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+#【三等奖 CH】
+block Item 778930 >= 1 && Item 778931 >= 1
+	Window "\n\n  您只有字母CH。\n  奖品是:兔耳仙人掌.人魔草.(随机一个)，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778930,1
+	KillItem 778931,1
+	GivePet (433%60,414%50)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+
+#【四等奖 N】
+block Item 778933 >= 1
+	Window "\n\n  您只有字母N。\n  改造鸟人一只.，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778933,1
+	GivePet 2015
+
+block
+Window "\n\n  我只负责宠物大奖,CHZNB!",ok

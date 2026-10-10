@@ -1,0 +1,6 @@
+block item 800003 == 1
+	Window"\n\n岩石下面有个洞，要进去看看吗？",yes,no
+		Window_no
+		Window_yes
+			Leavegroup
+			Warp 0,18003,25,38

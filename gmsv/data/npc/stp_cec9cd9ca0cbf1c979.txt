@@ -1,0 +1,20 @@
+
+
+
+#########################################################################
+block petspace != 4
+	EndWindow "\n\n 请带好1只1级神兽罗伍\n\n 并且身上宠物只能为一只！"
+block Item 599136 >= 1 && petlevel 2000239 == 1
+	Window"\n\n 你想要使用强化卷强化神兽罗伍么？",YES,NO
+	Window_NO
+	Window_YES Item 599136 >= 1 && petlevel 2000239 == 1
+	Window"\n\n 再次提示:你要使用强化卷强化神兽罗伍么?",YES,NO
+	Window_NO
+	Window_YES Item 599136 >= 1 && petlevel 2000239 == 1
+	Killitem 599136,1
+	KillPetl 2000239,1
+	GivePet 454025
+	EndWindow"\n\n 强化成功,请确认!",OK
+
+block
+	EndWindow "\n\n 请带好1只1级神兽罗伍\n\n 并且身上宠物只能为一只！"

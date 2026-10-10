@@ -1,0 +1,9 @@
+block item 141190 >= 1
+Window "\n\n¹¾......!",ok
+Window_ok item 141190 >= 1
+killitem 141190
+LeaveGroup
+Warp 0,57213,33,28
+
+block
+EndWindow "\n\n¹¾~?"

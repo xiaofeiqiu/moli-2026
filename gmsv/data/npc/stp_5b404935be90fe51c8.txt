@@ -1,0 +1,5 @@
+block
+	Window "\n\n\n是否要使用声望卷轴?",yes,no
+		Window_yes
+Luac stp:legacy:b4aec6ee0a696bdba1c1
+			killitem 60094,1

@@ -1,0 +1,24 @@
+block item 141186 >= 1
+EndWindow "\n\n快去吧,博士就在附近...哎..."
+
+block item 141181 >= 1
+EndWindow "\n\n我的乖女儿...哎..."
+
+block item 141177 >= 1
+Window "\n\n陌生人?这个地方被外人发现了吗?",next
+Window "\n\n啊!你说你是因为这件事来的啊!你知道我女儿现在在哪里吗?",yes,no
+Window_yes item 141177 >= 1
+EndWindow "\n\n快告诉我她在哪儿?",ok
+Window_no
+Window "\n\n是这样啊...没有关系.忘了作自我介绍,我是瑞娜的父亲,我们在一年前的某夜熟睡时被人杀死了,但是当我们再有意识的时候却是现在这个样子...",next
+Window "\n\n村里的亡魂都在,却唯独找不到我女儿和修特.",next
+Window "\n\n你说我女儿给修特的项链有问题?不会吧?",next
+Window "\n\n村子里有个博士,你们去找他问问吧,我们害怕见到光,到屋子外面我们会感到很痛苦.把这个带给他,否则他不会理你的.真希望我的女儿能平安无事啊",ok
+Window_ok item 141177 >= 1
+killitem 141177
+giveitem 141181
+
+
+
+block
+EndWindow "\n\n陌生人?这个地方被外人发现了吗?"

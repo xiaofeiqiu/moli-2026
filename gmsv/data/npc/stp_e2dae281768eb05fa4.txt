@@ -1,0 +1,10 @@
+block item 90853 == 1
+window"@c\n\n就是这颗大树了\n\n插在哪好呢...",next
+window"@c\n\n脑袋突然嗡嗡的...",ok
+window_ok
+killitemall 90853
+leavegroup
+Warp 0,41,677,319
+
+block
+Endwindow"@c\n\n..."

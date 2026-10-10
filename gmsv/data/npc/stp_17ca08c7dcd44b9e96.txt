@@ -1,0 +1,6 @@
+block endevent 559 == 1
+window "\n\n你要去据说有人鱼出没的小岛么?",yes,no
+Window_no
+Window_yes
+LeaveGroup
+Warp 0,63424,21,69

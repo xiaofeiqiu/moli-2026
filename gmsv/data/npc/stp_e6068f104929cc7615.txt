@@ -1,0 +1,14 @@
+block Luac stp:legacy:e4729ebcd14fc0310e86 >= 1
+window "\n\n反手就是一剑,不要手下留情!",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800195 >= 1
+endwindow "\n\n你已经有一个了!"
+window_ok
+giveitem 800195
+endwindow "\n\n任何情况都不要手软!"
+
+block
+endwindow "\n\n为了剑士的荣耀!冲啊!"
+
+

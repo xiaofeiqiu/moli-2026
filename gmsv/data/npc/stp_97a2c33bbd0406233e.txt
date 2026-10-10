@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至麦尼村 ？",yes,no
+		Window_yes
+			KillItem 60230,1
+			Warp 0,43000,432,683
+		Window_no

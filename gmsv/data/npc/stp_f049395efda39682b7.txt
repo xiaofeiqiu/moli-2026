@@ -1,0 +1,27 @@
+block Item 893000 >= 1
+killitem 893000,99
+SystemMessage 897014
+Warp 0,1000,233,78
+block Item 893001 >= 1
+killitem 893001,99
+SystemMessage 897014
+Warp 0,1000,233,78
+block Item 893002 >= 1
+killitem 893002,99
+SystemMessage 897014
+Warp 0,1000,233,78
+block Item 893003 >= 1
+killitem 893003,99
+SystemMessage 897014
+Warp 0,1000,233,78
+block Item 893004 >= 1
+killitem 893004,99
+SystemMessage 897014
+Warp 0,1000,233,78
+block Item 893005 >= 1
+killitem 893005,99
+SystemMessage 897014
+Warp 0,1000,233,78
+block
+SystemMessage 897014
+Warp 0,1000,233,78

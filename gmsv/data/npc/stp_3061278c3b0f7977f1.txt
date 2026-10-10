@@ -1,0 +1,8 @@
+block petspace >= 1
+Window "\n\n闭上眼睛点确定您的宠物就要诞生了！",OK
+Window_OK
+playse 304,1,1
+KillItem 589209,1
+givepet 889969
+block petspace == 0
+EndWindow "\n\n喂！你的宠物栏已经装不下这只宝宝了"

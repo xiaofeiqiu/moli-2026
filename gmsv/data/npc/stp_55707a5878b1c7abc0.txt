@@ -1,0 +1,26 @@
+block ItemDUR 61104 == 15
+EndWindow 7019997,OK
+
+block ItemDUR 61104 >= 5 && ItemDUR 61104 <= 14
+SetDUR 18469,15
+EndWindow 7019998,OK
+
+block ItemDUR 61104 <= 4
+Window 7020000,OK
+Window_OK
+Window 7019999,YES,NO
+Window_NO
+KillItem 1000721
+GiveItem 1000721
+EndWindow 7020047,OK
+Window_YES
+KillItem 1000721
+Window 7020048,NEXT
+Window 7020049,OK
+Window_OK
+LeaveGroup
+Warp 0,23298,32,10
+
+
+
+

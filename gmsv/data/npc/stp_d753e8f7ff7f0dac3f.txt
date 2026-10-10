@@ -1,0 +1,6 @@
+block 
+	Window "\n\n 使用后就职传说职业血魔剑士",ok
+        Window_ok
+        killitem 795026
+        leavegroup
+        Warp 0,940,12,11

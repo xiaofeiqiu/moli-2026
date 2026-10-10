@@ -1,0 +1,14 @@
+block Item 1000195 >= 1
+gawindow "\n\n混蛋,居然赢不过你!",next
+gawindow "\n\n果然身为开启者的你很有实力,接下来我得去协助公主完成一件必须做的事了.",next
+gawindow "\n\n这个恶魔之箱Ⅶ我收下啦,后会有期吧!",next
+gawindow "\n\n(迪米特身上掉落了一样东西,但是他本人并没有察觉.)",ok
+window_ok Item 1000195 >= 1
+killItem 1000195,1
+giveLeak1Item 1000196
+LeaveGroup
+Warp 0,1530,15,6
+
+
+block
+endwindow "\n\n你是怎么混进来的？快给我滚开!"

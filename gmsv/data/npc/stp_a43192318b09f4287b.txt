@@ -1,0 +1,11 @@
+#block	gold >= 1000 && itemspace >= 1
+	window"\n\n 这里是鼠王惊奇蛋贩卖处. \n \n 您要购买么？",YES,NO
+	window_YES
+	addgold -1000
+	giveitem (661000%1,661001%1,661002%70)
+
+#block	gold <= 1000 || itemspace <= 0
+	window"\n\n 物品栏已满或钱么带够！",ok
+
+block
+	window"\n\n\n\n@c 抽奖活动还没开始呢，别急嘛...！",ok

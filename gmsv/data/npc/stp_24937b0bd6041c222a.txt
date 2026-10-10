@@ -1,0 +1,15 @@
+block itemspace <= 1
+	endwindow "\n\n把背包清理下再来找我吧。"
+block item 60416 >= 1 && item 60417 >= 1 && item 60418 >= 1 && item 60419 >= 1 && item 60420 >= 1 && item 60423 >= 1
+	window"\n\n人类真是不可琢磨的生物，或许我们应该再寻找其他的方法……再见了冒险者……我们的工作可是很忙的。",ok
+		window_ok
+			killitem 60416,1
+			killitem 60417,1
+			killitem 60418,1
+			killitem 60419,1
+			killitem 60420,1
+			giveitem 60425,1
+			LeaveGroup
+			Warp 0,1000,66,132
+block
+	endwindow "\n\n又要去找新的工作了，咪啪~"

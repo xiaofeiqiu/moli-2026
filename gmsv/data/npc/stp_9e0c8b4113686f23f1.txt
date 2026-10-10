@@ -1,0 +1,9 @@
+block item 1000720 >= 1 && globalFlag 327 == 0
+window 7020262,next
+window 7020263,ok
+window_ok
+LeaveGroup
+globalFlag 327 = 1
+
+block
+endwindow 7020264

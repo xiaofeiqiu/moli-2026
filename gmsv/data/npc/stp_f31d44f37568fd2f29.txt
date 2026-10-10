@@ -1,0 +1,10 @@
+block item 1000603 >= 1
+window 7019827,ok
+window_ok
+LeaveGroup
+killitem 1000603
+Warp 0,23355,11,44
+endwindow 7019828
+
+block
+endwindow 7019829

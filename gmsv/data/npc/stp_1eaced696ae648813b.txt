@@ -1,0 +1,30 @@
+block floor == 100 && xpos == 173 && ypos == 173
+LocalCount11 = random 4,0
+if localcount11==1 && item 1000801 != 0
+killitem 1000801
+systemmessage 8105138
+giveitem (18851,18852,18853,18854,18855,18856,18857,18858,18859,18860,18861,18862,18863,18864,18865),1
+endif
+
+if localcount11==2 && item 1000801 != 0
+killitem 1000801
+systemmessage 8105138
+giveitem (9201,9202,9203,9204,18450,18449,800001,1000150),1
+endif
+
+if localcount11==3 && item 1000801 != 0
+killitem 1000801
+leavegroup
+PlaySE 207,240,320
+systemmessage 8105139
+Warp 0,60185,10,15
+endif
+
+if localcount11==4 && item 1000801 != 0
+killitem 1000801
+systemmessage 8105138
+giveitem (18851,18852,18853,18854,18855,18856,18857,18858,18859,18860,18861,18862,18863,18864,18865,9201,9202,9203,9204,18450,18449,800001,1000150),1
+endif
+
+block
+endwindow "\n\n\n@c　地图上标记了藏宝地点在\n\n\n　「芙蕾亚173.173」"

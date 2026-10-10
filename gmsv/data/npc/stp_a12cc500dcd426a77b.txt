@@ -1,0 +1,14 @@
+block item 3870 >= 1
+window "\n\n继承了我们意志的开启者啊,白龙的爪牙应该很快就会伸到此处.战争即将开始,先回去好好休整一下吧.虽然不知道结果怎样,但我们始终相信你闪耀的光芒可以在一片混沌下将世界回归原初.",ok
+window_ok itemspace < 2
+endwindow "\n\n请空出2个以上物品栏位置"
+window_ok item 3870 >= 1
+killitem 3870
+giveitem 3873
+giveitem 3874
+leavegroup
+Warp 0,1000,233,78
+
+
+
+

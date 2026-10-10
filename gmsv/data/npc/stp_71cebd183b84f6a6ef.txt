@@ -1,0 +1,18 @@
+block item 730092 >= 1 || item 730108 >= 1
+window "\n\n你所需求的答案尽在其中.",yes,no
+window_no
+window_yes item 730092 >= 1 || item 730108 >= 1
+leavegroup
+Warp 0,57044,23,33
+
+
+block item 730088 >= 1
+window "\n\n这里是地下书库的入口,在地下书库中封印着各种知识,你找寻的答案一定就在其中,但是要想得到这些知识,你要先通过管理者的考验.",ok
+window_ok item 730088 >= 1
+leavegroup
+Warp 0,57042,114,70
+
+
+
+block
+endwindow "\n\n欢迎来到炼金之馆."

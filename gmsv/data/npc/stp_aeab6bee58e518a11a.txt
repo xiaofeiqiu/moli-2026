@@ -1,0 +1,53 @@
+block item 1000611 >= 1
+LeaveGroup
+killitem 1000611
+window 7019852,ok
+window_ok
+LeaveGroup
+globalFlag 292 = 0
+globalFlag 293 = 0
+giveitem 1000613
+givepet 301
+
+block globalFlag 292 == 1 && globalFlag 293 == 1 && item 1000602 >= 1
+endwindow 7019821
+
+block globalFlag 292 == 1 && globalFlag 293 == 1
+window 7019818,next
+window 7019819,next
+window 7019820,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000602
+window_ok ItemSpace < 1
+endwindow 7020116
+
+
+block globalFlag 292 == 1 && globalFlag 293 == 0 && item 1000601 >= 1
+window 7019817,ok
+window_ok gold <= 995000
+LeaveGroup
+killitem 1000601
+addgold 5000
+globalFlag 293 = 1
+window_ok gold > 995000
+endwindow 7019812
+
+block item 1000595 >= 1
+endwindow 7019793
+
+block globalFlag 292 == 0 && globalFlag 293 == 0
+window 7019788,next
+window 7019789,next
+window 7019790,yes,no
+window_yes
+window 7019791,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000595
+window_ok ItemSpace < 1
+endwindow 7020116
+window_no 
+
+block
+endwindow 7019787

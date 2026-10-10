@@ -1,0 +1,9 @@
+block 
+Window 24114,NEXT
+Window 24109,YES,NO
+Window_YES
+GiveLeak1Item (795357%1$1,795358%1$1,795359%1$1,795360%1$1,795361%1$1,795362%1$1,795363%1$1,795364%1$1)
+LeaveGroup
+Warp 0,43100,120,107
+Window_no
+endblock

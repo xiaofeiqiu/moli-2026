@@ -1,0 +1,4 @@
+block	item 52208 >=1
+        killitem 52208,1
+        leavegroup
+	Warp 0,685,18,21

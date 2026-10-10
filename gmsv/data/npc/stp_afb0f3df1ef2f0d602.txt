@@ -1,0 +1,13 @@
+
+block
+window "\n\n想吃汤圆吗?",yes,no
+Window_NO
+endwindow "\n\n那真是可惜了."
+Window_YES Gold < 50
+endwindow "\n\n你的钱不够!"
+Window_YES ItemSpace < 1
+endwindow "\n\n你的背包满啦!"
+Window_YES 
+AddGold -50
+GiveLeak1Item (715166%1$1,715167%1$1)
+endwindow "\n\n如果有看到我家白白～\n麻烦你多多照顾～"

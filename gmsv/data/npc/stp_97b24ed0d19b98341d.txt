@@ -1,0 +1,8 @@
+block item 87587 == 1
+window "\n\n『法兰特别调查队警示：\n前方有沉船，请勿靠近。』",next
+window "\n\n是否要跑过去调查残骸？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87587
+Warp 0,29720,15,27

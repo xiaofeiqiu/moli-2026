@@ -1,0 +1,39 @@
+block item 1001002 == 0 && NowEvent 580 == 1
+endwindow "\n\n　在翡翠岛的各处应该都能碰到这些东西吧，用点心就会找到的~  加油咯！"
+
+block item 1001002 >= 1 && item 1001002 < 20 && NowEvent 580 == 1
+endwindow "\n\n　就是这个东西咯，不过你的数量有些少...还是多采集些再来吧...加油加油~"
+
+block item 1001002 >= 20 && itemspace == 0 && NowEvent 580 == 1
+endwindow "\n\n　你身上的东西已经满了哦"
+
+block item 1001002 >= 100 && NowEvent 580 == 1
+window "\n\n　呀！居然采到了这么多！真是辛苦你啦，累坏了吧？这个宝贝就送你吧~",yes
+window_yes item 1001002 >= 100 && itemspace != 0
+killitem 1001002,100
+giveitem 1002012
+
+block item 1001002 >= 50 && NowEvent 580 == 1
+window "\n\n　嗯？采到了这么多啊！真是辛苦你咯，那这个就送你吧",yes
+window_yes item 1001002 >= 50 && itemspace != 0
+killitem 1001002,50
+giveitem 1001010
+
+block item 1001002 >= 20 && NowEvent 580 == 1
+window "\n\n　唔..虽然有些少...但也辛苦你了，这个就送你吧~",yes
+window_yes item 1001002 >= 20 && itemspace != 0
+killitem 1001002,20
+giveitem 1001109
+
+block NowEvent 580 == 0
+window "\n\n　叽~那边的人类！对~就是你哦！能过来帮我个忙吗？",yes,no
+window_no
+endwindow "\n\n　那我只好拜托别人了..."
+window_yes
+window "\n\n　最近我在和朋友收集一些好看的贝壳来装扮我们的秘密基地，但是...你也看到了，只凭我们的行动速度会需要很久才能收集到...",next
+window "\n\n　所以常常要拜托人类来帮我们采集这些东西，当然！不会让你白忙的哟~",ok
+window_ok
+window "\n\n　你问我在哪能弄的这些东西？",yes
+window_yes
+NowEvent 580 = 1
+endwindow "\n\n　在翡翠岛的各处应该都能碰到这些东西吧，用点心就会找到的~  加油咯！"

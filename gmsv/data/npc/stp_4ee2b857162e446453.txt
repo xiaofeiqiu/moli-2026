@@ -1,0 +1,20 @@
+
+
+
+#########################################################################
+block petspace != 4
+	EndWindow "\n\n 请带好1只1级冥卫\n\n 并且身上宠物只能为一只！"
+block Item 599132 >= 1 && petlevel 600314 == 1
+	Window"\n\n 你想要使用强化卷强化冥卫么？",YES,NO
+	Window_NO
+	Window_YES Item 599132 >= 1 && petlevel 600314 == 1
+	Window"\n\n 再次提示:你要使用强化卷强化冥卫么?",YES,NO
+	Window_NO
+	Window_YES Item 599132 >= 1 && petlevel 600314 == 1
+	Killitem 599132,1
+	KillPetl 600314,1
+	GivePet 454022
+	EndWindow"\n\n 强化成功,请确认!",OK
+
+block
+	EndWindow "\n\n 请带好1只1级冥卫\n\n 并且身上宠物只能为一只！"

@@ -1,0 +1,10 @@
+
+
+block item 87792 == 1
+endwindow "\n\n你已经点燃过这盏灯了。"
+
+block item 87791== 1
+window "\n\n你是否要点燃这盏灯吗？",ok
+window_ok
+killitem 87791
+giveitem 87792

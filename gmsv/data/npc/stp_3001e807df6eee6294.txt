@@ -1,0 +1,17 @@
+block item 87661 == 1
+endwindow "\n\n给基里安特看看吧，也许能有什么线索。"
+
+block item 87660 == 1
+window "\n\n因为生活的拮据，鲁耶利莲娜和基里安特主仆只能勉强租住在这里。",next
+window "\n\n本想引荐你和鲁耶利莲娜见面的，可就在刚才，鲁耶利莲娜突然不见了！",next
+window "\n\n你们能接济基里安特他们的生活已经是万分好心了，如果再提出过分的要求实在是有些过分。不过事态紧急，不允许考虑这么多了。",next
+window "\n\n能请你帮忙寻找鲁耶利莲娜吗？",yes,no
+window_no
+window_yes
+window "\n\n真不知道说什么好了！太感激你们了。这是刚刚我在屋内找到的鲁耶利莲娜留下的便条，拿给基里安特看看吧，也许能有什么线索。",ok
+window_ok
+killitem 87660
+giveitem 87661
+
+block
+endwindow "\n\n明白人一看就知道我和依莉是姐妹关系！"

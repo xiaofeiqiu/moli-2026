@@ -1,0 +1,27 @@
+block	StrCmpChat == 70025
+	Window"\n\n英雄,法兰城附近的结界不知为何越来越弱,能否帮我调查一下原因?",yes,no
+		Window_no
+
+		Window_yes item 72006 == 0
+			giveitem 72006,1
+		Window_yes item 72006 == 1
+		endWindow"\n\n英雄,拜托你了。"
+
+block item 72006 == 1 && item 72008 == 1
+	Window"\n\n什么？镶在雕像的宝石不见了？？\n这位英雄，如果你找到那宝石，请交给我，那颗宝石不是那么值钱的，可是对这个城市很重要...\n如果你能帮我们找到，我们会准备一些礼物回报的。",ok
+		Window_ok
+			killitem 72008,1
+			killitem 72006,1
+			giveitem 72009,1
+
+block item 72011 == 1
+	Window"\n\n真是太好了，能否麻烦你再跑一趟，将这个宝石镶回雕像的眼睛上，希望这样来及阻止强尸作乱",ok
+		Window_ok
+			killitem 72011,1
+			giveitem 72012,1
+
+block item 72013 == 1
+	Window"\n\n英雄真是太感谢了，这是一点谢意，请收下。",ok
+		Window_ok
+			killitem 72013,1
+			giveitem (72014%11,72015%11,72016%11,72017%11,72018%11,72019%11,72020%12,72021%11,72022%11)

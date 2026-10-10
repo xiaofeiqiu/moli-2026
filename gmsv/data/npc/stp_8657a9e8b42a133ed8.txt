@@ -1,0 +1,6 @@
+Block
+Window"\n\n喔...终于被你们发现了吗?",next
+Window"\n\n这本笔记的秘密...",next
+Window"\n\n哈哈...那么便不能留你了!",ok
+Window_ok
+Encount 2|0,62102,9,4||0|||||0|370051|||||||||

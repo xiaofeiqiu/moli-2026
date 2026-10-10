@@ -1,0 +1,21 @@
+block item 730052 == 1 && item 730053 == 1 && item 730054 == 1 && item 730055 == 1
+Window "\n\n看来你已经通过了之前的试炼,跟我来吧,下面就是最终的试炼了.",ok
+Window_ok item 730052 == 1 && item 730053 == 1 && item 730054 == 1 && item 730055 == 1
+killitem 730052
+killitem 730053
+killitem 730054
+killitem 730055
+LeaveGroup
+Warp 0,57257,24,29
+
+block item 730051 == 1
+EndWindow "\n\n试炼的洞穴分散在这个岛的四个方向,从这里往沙滩走就能看见一个,加油吧!"
+
+block item 730050 == 1
+Window "\n\n很好,你已经通过了埃尔斯潘导师的认证.试炼将分成4个阶段,每个阶段都会获得一个证明,那倒证明后再来找我吧.这是进入神殿的证明,请拿好.",next
+Window "\n\n对了,试炼的洞穴分散在这个岛的四个方向,从这里往沙滩走就能看见一个,加油吧,勇者们.",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏不够了."
+Window_ok item 730050 == 1
+killitem 730050
+giveitem 730051

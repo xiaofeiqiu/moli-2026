@@ -1,0 +1,19 @@
+block item 1000755 == 1
+                window "\n\n　呀！是给peter的信啊？",yes,no
+	window_no
+	window_yes
+		window "\n\n　原来是那个长不大的孩子！！",next
+		window "\n\n　真是的，写什么信啊，直接跟他本人说就好了嘛！又不是什么见不得人的事，喜欢谁是自由嘛。什么年代了啊，你说是不是啊？？？",yes,no
+	window_no
+	window_yes
+		window "\n\n　不好意思？？看他长那么呆头呆脑的、傻傻的、又笨蛋、实在找不出更能形容他的了！不过，对他而言，不好意思是应该的了。",next
+		window "\n\n　好吧，正好下班休息中。我就帮帮他告诉你peter在哪吧，满脑子热血，感情方面完全的白痴啊，真是没药可救！你去尼维尔看看他在不在吧，之前他说去实习--加强医疗技术去了。",ok
+	window_ok itemspace != 0
+                killitem 1000755
+		giveitem 1000756
+		endwindow "\n\n　哎呀，刚才在弄钢琴，手脏了。不要紧的吧（象阿布一样的眼神正在看着你...）。"
+	window_ok itemspace == 0
+		window "\n\n　你身上没个空的地方装信，想玩老娘啊。。？找死！"
+
+block item 1000756 == 1 && item 1000755 == 0 && item 1000757 == 0 && item 1000758 == 0 && item 1000759 == 0
+                window "\n\n　喂，我不就弄脏了他的信嘛，peter要是知道肯定不会说什么啦，我们都什么交情啦！他要是怪你你就说是老娘干的，这叫艺术！艺术知道么！快滚开，真是讨厌的家伙！",ok

@@ -1,0 +1,7 @@
+block item 86534 == 1 && item 86535 < 1
+window "\n\n这不是萨鲁顿的的笔记吗?咦~~里面有从雷兹那得到的雄黄酒配方,我们把他撕下来带回去!",ok
+window_ok item 86534 == 1 && item 86535 < 1
+leavegroup
+killitem 86534
+giveitem 86535
+Warp 0,100,542,38

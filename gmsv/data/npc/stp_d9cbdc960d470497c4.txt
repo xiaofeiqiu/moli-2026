@@ -1,0 +1,18 @@
+block	item 591427>=1
+window"\n\n\n@c 完美的调查啊！谢谢你！这是你的奖品！",ok
+window_ok
+killitem 591427,1
+Giveitem 591428,1
+Endevent 649=1
+Checktitle
+block	item 591426>=1
+Endwindow"\n\n\n@c 去看看吧!!!"
+block	item 591425>=1
+window"\n\n 终于等到你们了，这个报告对我来说很重要，正好可以研究一下了！",next
+window"\n\n 你们可以去那个废弃的石矿洞看看，它就在村子西方，自从有了怪物，就没人敢再去那里了，于是就被废弃了。",ok
+window_ok
+killitem 591425,1
+Giveitem 591426,1
+Endwindow"\n\n\n@c 去看看吧!"
+block
+Endwindow"\n\n@c 大陆被冲断了,你们是怎么过来的!?"

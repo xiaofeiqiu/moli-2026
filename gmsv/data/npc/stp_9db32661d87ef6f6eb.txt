@@ -1,0 +1,31 @@
+######## 灰熊厉害擂台赛########
+##A级勋章收集熊
+####有10个A级勋章
+
+block Item 715270 >= 10
+window "\n\n您要用10个A级勋章兑换一颗属性10:10的完美水晶?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715270 >= 10
+KillItem 715270,10
+GiveItem (715278%1,715279%1,715280%1,715281%1)
+Window_YES ItemSpace < 1
+endwindow "\n\n你的物品拦位不够喔!"
+
+####有5个A级勋章
+block Item 715270 >= 5
+window "\n\n您要用5个A级勋章随机兑换一颗水火或火风属性的希望水晶吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715270 >= 5 
+KillItem 715270,5
+GiveItem (715274%1,715275%1,715276%1,715277%1)
+Window_YES ItemSpace < 1 
+endwindow "\n\n你的物品拦位不够喔!"
+
+
+block
+endwindow "\n\n只要收集A级勋章就可以跟我换奖品喔!\n\n＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n@c属性10:10的完美水晶一颗=10枚A级勋章\n\n@c水火或火风属性希望水晶一颗=5枚A级勋章"
+
+
+ 

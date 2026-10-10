@@ -1,0 +1,29 @@
+
+###小元第一次秘密集会的主持人
+
+block Group > 1 
+endwindow "\n\n请解散队伍!"
+
+
+
+block Item 715244 >= 1
+endwindow "\n\n各位团员要继续努力\n为我们共同的将来一起努力.\n创造一个属于我们大家的帝国吧!"
+
+
+block BBImage == 101803 && Item 715242 >= 1
+window "\n\n人都到期了!\n那我们就开始进行今天的秘密会议.\n相信大家一直以来都受到许多的委屈.\n这一口气怎么可能咽的下.\n因此,我们一定要反击\n让那些小看我们的人好看.",next
+window "\n\n所谓兵贵在精不在多\n大家都是身经百战的高手\n因此,我们一定能够结合大家的力量\n替在场的每个人出一口气.",next
+window "\n\n为了避免有人渗透\n现在开始请各位拿着团员卡来交换成银卡\n到时候请各位拿着银卡到科特利亚酒吧\n找小章听取下次集合的地点\n这是下次聚会的要收集的物品.",ok
+Window_OK BBImage == 101803 && Item 715242 >= 1 && ItemSpace < 2
+endwindow "\n\n你物品栏位置不够.请留2格以上\n不然无法领取我们所要发放的物品."
+Window_OK BBImage == 101803 && Item 715242 >= 1 && ItemSpace >= 2
+KillItem 715242
+GiveLeak1Item 715244
+GiveLeak1Item 715245
+
+
+block 
+window "\n\n你是谁?怎么进来的!\n来人啊!快来抓间谍!\n不要让他跑了!",ok
+Window_OK 
+Warp 0,1000,233,78 
+

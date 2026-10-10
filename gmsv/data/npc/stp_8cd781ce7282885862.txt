@@ -1,0 +1,19 @@
+block Item 22476 >= 1
+endwindow "\n\n请继续协助我追查下去,加油!"
+
+
+block Item 22467 >= 1 && Item 22475 >= 1
+window "\n\n哦?是你啊.\n\n你在问我在找什么东西吗?",next
+window "\n\n我是在调查X博士的底细,你来看一下,我手上拿的就是他落难在海边时穿的衣服.奇怪的是衣服的口袋里有着热带的植物叶子.",next
+window "\n\n\n\n······",next
+window "\n\n对了,没错,这是在米内葛尔岛的特有植物!难道说,X博士本人出身在米内葛尔岛?",next
+window "\n\n看来还得拜托你去调查那边的详细情况了,务必要找到他的身份!",next
+window "\n\n恩,还有,这把钥匙也是从衣服口袋中发现的,虽然坏掉了,但是请拿着这个,一定会有用处的!",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你身上已经没有空位保存这把钥匙了."
+window_ok Item 22467 >= 1 && Item 22475 >= 1
+giveItem 22476,1
+
+
+block
+endwindow "\n\n我在办案子,请不要打扰我."

@@ -1,0 +1,6 @@
+block Item 990000 == 1
+	Window 900005,next
+	GiveItem 990001,1
+	EndWindow 900006,ok
+block Item 990001 >= 1
+	EndWindow 900007,ok

@@ -1,0 +1,99 @@
+block item 111>= 1 && item 112>= 1 && item 113>= 1 && item 114>= 1 && item 115>= 1 && item 116>= 1
+window "\n\n你找到了全部的口袋龙哦?好厉害的说...这个请你一定要收好!",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok item 111>= 1 && item 112>= 1 && item 113>= 1 && item 114>= 1 && item 115>= 1 && item 116>= 1
+killitem 111
+killitem 112
+killitem 113
+killitem 114
+killitem 115
+killitem 116
+giveitem 127,1
+giveitem 60316,1
+givepet 600052
+
+
+block item 121>= 1 && item 122>= 1 && item 123>= 1 && item 124>= 1 && item 125>= 1 && item 126>= 1
+window "\n\n你找到了全部的迷你龙哦?好厉害的说...这个请你一定要收好!",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok item 121>= 1 && item 122>= 1 && item 123>= 1 && item 124>= 1 && item 125>= 1 && item 126>= 1
+killitem 121
+killitem 122
+killitem 123
+killitem 124
+killitem 125
+killitem 126
+giveitem 128,1
+giveitem 60317,1
+givepet 600053
+
+
+block item 131>= 1 && item 132>= 1 && item 133>= 1 && item 134>= 1 && item 135>= 1 && item 136>= 1
+window "\n\n你找到了全部的雏龙哦?好厉害的说...这个请你一定要收好!",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok item 131>= 1 && item 132>= 1 && item 133>= 1 && item 134>= 1 && item 135>= 1 && item 136>= 1
+killitem 131
+killitem 132
+killitem 133
+killitem 134
+killitem 135
+killitem 136
+giveitem 129,1
+giveitem 60318,1
+givepet 600050
+
+
+block item 141>= 1 && item 142>= 1 && item 143>= 1 && item 144>= 1 && item 145>= 1 && item 146>= 1
+window "\n\n你找到了全部的穴龙哦?好厉害的说...这个请你一定要收好!",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok item 141>= 1 && item 142>= 1 && item 143>= 1 && item 144>= 1 && item 145>= 1 && item 146>= 1
+killitem 141
+killitem 142
+killitem 143
+killitem 144
+killitem 145
+killitem 146
+giveitem 130,1
+giveitem 60319,1
+givepet 600051
+
+
+block item 127>= 1 && item 128>= 1 && item 129>= 1 && item 130>= 1 && item 119 >= 1
+window "\n\n谢谢你,真的很谢谢你,我无以为报,请一定收下这点小小的礼物~!",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok item 127>= 1 && item 128>= 1 && item 129>= 1 && item 130>= 1 && item 119 >= 1
+killitem 127
+killitem 128
+killitem 129
+killitem 130
+killitem 119
+giveitem 117,10
+giveitem 118,10
+giveitem 120,1
+givepet 600054
+
+
+block item 119 >= 1
+endwindow "\n\n你没有见到那些龙吗?我也不知道它们到底跑去哪里了,努力去找找吧!"
+
+
+block level >= 120 && item 16381 == 1 && HaveTitle == 1042 && item 16380 == 1
+window "\n\n你愿意听听我的请求吗?",yes,no
+window_no
+endwindow "\n\n那你闪一边去吧!"
+window_yes
+window "\n\n我叫蘑菇,我是从米诺基亚村来的.听说法兰国有一个和我同名的勇者,好想认识她.\n\n我从家里带了一堆东西来到这里,包括24只可爱的小龙,可是昨天晚上,那几只小龙趁我睡着带着我的东西偷偷跑出去了!",next
+window "\n\n很想去把东西找回来,可是我人生地不熟的,我怕到处走都会迷路了.不知道好心的你可不可以帮帮我呢?",yes,no
+window_no
+endwindow "\n\n不帮忙又不早说...害我浪费这么多口水..."
+window_yes
+window "\n\n真的啊?这个给你,看到这个就知道我在找它们了.\n\n希望你能要把那24只小龙带走的东西帮我带回来.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 16381 == 1 && item 16380 == 1
+giveitem 119,1

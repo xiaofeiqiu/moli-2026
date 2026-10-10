@@ -1,0 +1,8 @@
+block	item 60395 ==1 && item 12805 ==800
+    window "\n\n 拿材料来我才可以帮你做出来呀,公主被犹大绑票了,你要去救她",yes,no
+    Window_yes
+	killitem 60395,1
+	killitem 12805,800
+	giveitem 60396,1
+	leavegroup
+	Warp 0,1000,242,88

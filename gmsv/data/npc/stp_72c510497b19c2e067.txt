@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【罗修】吗？",ok
+			Window_ok
+Luac stp:legacy:3a6abfd82c6b0d3398ab
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【罗查】吗？",ok
+			Window_ok
+Luac stp:legacy:c0b64f2d5fc8890048e6
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【修美亚雷】吗？",ok
+			Window_ok
+Luac stp:legacy:12095ea2f7c7671eccea
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【维尔斯】吗？",ok
+			Window_ok
+Luac stp:legacy:5e819e4c753f33b77ffe
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【西留耶尔】吗？",ok
+			Window_ok
+Luac stp:legacy:4cb778aa1a44a392b65c
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【西罗尔】吗？",ok
+			Window_ok
+Luac stp:legacy:0792fbf85061b5ebe78e
+				endif
+

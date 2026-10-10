@@ -1,0 +1,38 @@
+block endevent 570 == 1
+endwindow "\n\n多谢你,好心人!"
+
+
+block item 3820 >= 1
+window "\n\n真的被你找到了啊,嗯嗯,这下他就可以养狗狗了.多谢你,好心人!这个就送给你吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你身上太多东西了."
+window_ok item 3820 >= 1
+killitem 3820
+giveitem 3821
+endevent 570 =1
+checktitle
+
+
+block item 3819 >= 1
+endwindow "\n\n帮帮这个孩子吧,我相信你可以的."
+
+
+block petlevel 31 == 1
+window "\n\n咦?你带着Lv1的地狱看门犬吗?可以把它转让给那边的孤儿吗?他经常幻想着能养一条的,如果你可以让给他的话,也算你关爱儿童啦!",yes,no
+window_no
+endwindow "\n\n好吧,没爱心喔!"
+window_yes
+window "\n\n太谢谢你了!如果你身上带有很多Lv1地狱看门犬,那我可就随意牵走一条咯?",yes,no
+window_no
+endwindow "\n\n那好吧."
+window_yes
+window "\n\n对了,顺便请你帮忙找一些狗粮回来,城里有一户人家在去往亚留特村的途中丢失一大袋狗粮,他说如果谁能找到的话就送给他了,真是有钱人啊!那么我就把示意图交给你了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你身上太多东西了."
+window_ok
+killpeth 31
+giveitem 3819
+
+
+block
+endwindow "\n\n如果能有一条Lv1的地狱看门犬送给他就好了...唉!"

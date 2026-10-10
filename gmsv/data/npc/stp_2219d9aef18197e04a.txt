@@ -1,0 +1,45 @@
+block globalFlag 336 == 1 && item 1000742 >=1
+window 7020441,next
+window 7020442,next
+window 7020443,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000741
+window_ok ItemSpace < 1
+endwindow 7020444
+
+block item 1000740 >=1 && item 1000742 >=1 && globalFlag 333 == 1 && globalFlag 334 == 0
+window 7020445,next
+window 7020446,yes,no
+window_yes
+LeaveGroup
+killitem 1000740
+window 7020447,ok
+window_ok
+LeaveGroup
+globalFlag 334 = 1
+window_no
+
+block item 1000729 >= 10 && globalFlag 331 == 1
+window 7020448,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000729,10
+giveitem 1000730
+globalFlag 331 = 0
+window_ok ItemSpace < 1
+endwindow 7020449
+
+
+block globalFlag 330 == 1
+window 7020450,yes,no
+window_no
+window_yes
+window 7020451,ok
+window_ok
+LeaveGroup
+globalFlag 330 = 0
+globalFlag 331 = 1
+
+block
+endwindow 7020452

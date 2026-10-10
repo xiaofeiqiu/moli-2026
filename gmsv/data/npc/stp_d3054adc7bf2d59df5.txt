@@ -1,0 +1,21 @@
+block item 70036 == 1
+endwindow 910201
+
+block item 70030 == 1 && item 70039 == 1
+window 910202,next
+window 910203,next
+window 910204,next
+window 910205,next
+window 910206,next
+window 910207,next
+window 910208,next
+window 910209,next
+window 910210,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 70036
+window_ok ItemSpace < 1
+endwindow 910211
+
+block
+window 910212

@@ -1,0 +1,8 @@
+block 
+window "\n\n可恶～让他给跑了,呀～这里怎么有张画像呢,不知道是谁…拿回去再说.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200222
+leavegroup
+Warp 0,27124,23,16

@@ -1,0 +1,47 @@
+block
+	LocalCount0 = random 8,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【跳跳地雷】吗？",ok
+			Window_ok
+Luac stp:legacy:0de355b59dfb9aa69a4d
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【碎碎地雷】吗？",ok
+			Window_ok
+Luac stp:legacy:0a9b91e464fc778cbfe5
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【皮皮地雷】吗？",ok
+			Window_ok
+Luac stp:legacy:9a2590417b5a57906a05
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【萨普地雷】吗？",ok
+			Window_ok
+Luac stp:legacy:65b6f45b271437ce6002
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【钢人26号】吗？",ok
+			Window_ok
+Luac stp:legacy:d645a56327ac3b5abafb
+				endif
+
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【钢人77号】吗？",ok
+			Window_ok
+Luac stp:legacy:978514a07929656a7095
+				endif
+
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【钢人31号】吗？",ok
+			Window_ok
+Luac stp:legacy:b29a00db495adbd76b02
+				endif
+
+	if localcount0==8
+		window "\n\n@c要将随从的形象永久变为【钢人50号】吗？",ok
+			Window_ok
+Luac stp:legacy:067211cee20479a112d8
+				endif
+
+

@@ -1,0 +1,8 @@
+block item 3794 >= 1
+	Window "\n\n 我不能陪你去了,我已经没有力气了!
+	Window_OK
+
+block
+	window "\n\n你也是来消灭里雍的吗?他变的比以前更强大了,我居然被他打败了,我真没用,这个给你,希望你能拯救法兰城及其他勇者!",ok
+	window_ok
+	giveitem 3794,1

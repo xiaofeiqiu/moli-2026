@@ -1,0 +1,7 @@
+block
+window"\n\n\n@c 呼~~呼~~",next
+window"\n\n\n 啊??我又睡着了吗?",next
+window"\n\n\n 实在是不好意思啊,这个村庄比较贫穷,人口也比较少",next
+window"\n\n\n@c 我倒的确是在想,这么小一个村子怎么能存活那么久",next
+window"\n\n\n@c 近年来,好象来了很多人呢.外面真冷啊.虽然是个士兵,可还是能稍微偷下懒吧",next
+endwindow"\n\n\n@c 我好象...又觉得…………呼~~呼~~"

@@ -1,0 +1,7 @@
+block item 200228 >= 1
+window "\n\n你要取生命之水吗?",yes,no
+window_yes
+killitem 200228
+giveitem 200229
+leavegroup
+Warp 0,27148,68,54

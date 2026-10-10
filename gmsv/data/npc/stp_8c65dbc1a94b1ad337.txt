@@ -1,0 +1,7 @@
+〓Get制作系列脚本〓
+block
+	Window "\n\n@c你的出现大大缓冲了我要实施的计划，但是不要太得意，那只是早晚的事情，我一定还会在来！",ok
+	Window_ok
+	LeaveGroup
+	GiveItem (18450%50,18449%50)
+	Warp 0,1530,15,6

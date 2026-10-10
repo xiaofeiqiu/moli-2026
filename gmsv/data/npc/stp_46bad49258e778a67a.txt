@@ -1,0 +1,15 @@
+block
+window "\n\n带来希望的人呀!你来晚了!封印已被破坏!",next
+window "\n\n能阻止秘法问世的方法,就藏在这本日记里!",next
+window "\n\n日记你拿去吧!",ok
+window_ok Item 39667 > 0
+LeaveGroup
+Warp 0,32206,47,34
+endblock
+window_OK ItemSpace < 1
+endwindow "\n\n物品栏已满"
+window_OK
+giveLeak1Item 39667,1
+LeaveGroup
+Warp 0,32206,47,34
+endblock

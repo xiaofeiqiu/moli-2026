@@ -1,0 +1,45 @@
+#柯马特依村追加
+
+block item 50859 == 1
+EndWindow "\n\n这世界上已经没有能让帝国子孙安度余生的地方了.愿你能在那片悲伤与绝望的大地上,找到一丝希望."
+
+
+block item 50858 == 1 && item 50814 >= 1
+Window "\n\n『将圣女的亲笔信递给了魔术师乌莉儿』",next
+Window "\n\n这是...!圣女大人写的?",next
+Window "\n\n你手上的诺斯非拉特通行证也是从神殿带来的吗?既然如此,就把出航的许可证交给你吧.奇怪,圣女大人信里写的事情好模糊呀,从前从来没有发生过这种事,但是我相信圣女大人一定有自己的打算.",next
+Window "\n\n这世界上已经没有能让帝国子孙安度余生的地方了.愿你能在那片悲伤与绝望的大地上,找到一丝希望.",ok
+Window_ok item 50858 == 1 && item 50814 >= 1
+killitem 50814
+killitem 50858
+giveitem 50859
+globalFlag 257 = 1
+
+block item 50858 == 1
+Window "\n\n『将圣女的亲笔信递给了魔术师乌莉儿』",next
+Window "\n\n这是...!圣女大人写的?",next
+Window "\n\n可是你没有诺斯非拉特通行证的话只能交出250000金币可以吗?",yes,no
+Window_yes gold < 249999
+EndWindow "\n\n很抱歉你的钱没有带够."
+Window_yes 
+Window "\n\n既然如此,就把出航的许可证交给你吧.奇怪,圣女大人信里写的事情好模糊呀,从前从来没有发生过这种事,但是我相信圣女大人一定有自己的打算.",next
+Window "\n\n这世界上已经没有能让帝国子孙安度余生的地方了.愿你能在那片悲伤与绝望的大地上,找到一丝希望.",ok
+Window_ok gold > 249999
+addgold -250000
+killitem 50858
+giveitem 50859
+globalFlag 257 = 1
+
+#杺弍巘僂儕儖
+
+#EndFLG丂138偑ON偱丄捠峴嫋壜徹傪帩偭偰偄傞側傜
+block EndEvent 138 == 1 && Item 16407 >= 1
+EndWindow 22678,OK
+
+#EndFLG丂138偑ON
+block EndEvent 138 == 1
+EndWindow 22679,OK
+
+#
+block
+EndWindow 22680,OK

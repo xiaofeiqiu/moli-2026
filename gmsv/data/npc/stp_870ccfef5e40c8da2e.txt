@@ -1,0 +1,43 @@
+block Pitem 86279
+Endwindow 7019261
+
+block  item 86274 >= 1 && item 86275 >= 1 && item 86276 >= 1 && item 86277 >= 1 && item 86278 < 1 && item 86279 >= 1
+window 7019262,yes,no
+window_yes
+window 7019263,ok
+window_ok
+Encount 2|0,28126,27,23|86279|-1|||||0|86096|5|0|||||5|0|
+window_no
+endwindow 7019264
+
+block item 86274 >= 1 && item 86275 >= 1 && item 86276 >= 1 && item 86277 >= 1 && item 86272 >= 1 && item 86278 < 1 && item 86279 < 1
+window 7019265,next
+window 7019266,yes,no
+window_yes
+leavegroup
+killItem 86272
+Encount 3|||0|7019258||||0|86095|
+window_no
+leavegroup
+killItem 86272
+killItem 86274
+killItem 86275
+killItem 86276
+killItem 86277
+endwindow 7019267
+
+block item 86271 >= 1
+window 7019268,ok
+window_ok
+leavegroup
+killItem 86271
+window 7019269,next
+window 7019270,next
+window 7019271,yes,no
+window_no
+window_yes
+leavegroup
+giveitem 86272
+
+block
+endwindow 7019272

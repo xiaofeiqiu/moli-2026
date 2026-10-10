@@ -1,0 +1,8 @@
+block
+window "\n\n　这里是货运码头啦，没事走开些，被撞到就不好了",ok
+window_ok item 900051 == 1
+window "\n\n　哦？你是马修店长提到的那个来搭船的人？\n\n　那请上船吧",ok
+window_ok item 900051 == 1
+killitem 900051
+leavegroup
+Warp 0,60190,30,17

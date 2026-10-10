@@ -1,0 +1,13 @@
+
+
+
+
+block petspace == 0
+endwindow "\n\n你的宠物栏满啦."
+
+
+block
+window "\n\n靴子有奇怪的声响,要敲看吗?",yes,no
+window_yes
+killitem 715324
+givepet 200186

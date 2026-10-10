@@ -1,0 +1,5 @@
+block floor == 25201 && Xpos == 12 && Ypos == 8
+window "\n\n地上的土好像有松动的样子!",next
+window "\n\n似乎有个洞,要下去看看吗?",yes,no
+window_yes
+Warp 0,25202,68,449

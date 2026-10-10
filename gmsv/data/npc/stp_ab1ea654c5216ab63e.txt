@@ -1,0 +1,17 @@
+block item 800001 == 1
+	Window"干嘛？！新来的？！懂垃圾分类吗？",ok
+
+block Item 800000 == 1
+	Window"嗯？！我有捡到一张纸，上面有写着乱七八糟的字，当时就觉得应该是个有用的东西，所以没扔掉，你想要吗？",next
+	Window"哼！想要？我们来做笔交易吧，200000魔币不二价朋友！成交就点yes，什么？不想给钱？如果你想明抢，我非把你打的家都不认识！哈哈哈！",yes,no
+		Window_yes gold < 200000
+	Window"没见过你这样的穷鬼！",ok
+		Window_yes gold >= 200000
+		addgold -200000
+		Leavegroup
+		Warp 0,18000,2,6
+		Window_no
+	Window"你这是找死！你真以为我只是个捡垃圾的？！干掉你只是分分种的事！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18001,10,10|800000|||||||6000095|||||||||

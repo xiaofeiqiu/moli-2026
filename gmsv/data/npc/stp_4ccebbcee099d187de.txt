@@ -1,0 +1,15 @@
+block item 200750 >= 1
+endwindow "\n\n这件事就拜托你了,如果遇到困难可以去找我的同僚,维诺亚村的驯欧帮忙."
+
+
+
+block
+window "\n\n是我们团长叫你来找我的吗?",yes,no
+window_yes
+window "\n\n我在搜集附近穴龙出没资料的时候,发现一个大阴谋.",next
+window "\n\n阿凯鲁法村的魔物研究员正在使用某种物质激化穴龙,使其能力更强,有许多经受不住激化的穴龙直接死亡,魔物研究员将研究结果记录下来后将存活的穴龙又偷渡到法兰城.",next
+window "\n\n你愿意帮我阻止他们的行径吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200750

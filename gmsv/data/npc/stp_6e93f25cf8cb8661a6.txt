@@ -1,0 +1,12 @@
+block ItemDur 1002016 == 1
+	Window"\n\n\n 想要使用一次小豆变身卡吗?",YES,NO
+	Window_YES ItemDur 1002016 == 1
+	KillItem 1002016,1
+	metamo  100900
+
+block ItemDur 1002016 >= 2
+	Window"\n\n\n 想要使用一次小豆变身卡吗?",YES,NO
+	Window_YES
+	SetDur 1002016,-1
+
+	metamo  100900

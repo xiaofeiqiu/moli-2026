@@ -1,0 +1,8 @@
+block	itemspace<2
+Endwindow"\n\n@c 物品剩余空格不足！"
+block
+window"\n\n@c 你要打开礼包么?",yes,no
+window_no
+window_yes
+killitem 591141,1
+Giveitem (591142%74,591143%2,591144%2,591145%2,13667%10,13627%10)

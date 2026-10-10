@@ -1,0 +1,9 @@
+block Item 990006 >= 2
+	EndWindow 990021,ok
+block Item 990006 == 1
+	Window 990022,YES,NO
+	Window_YES PetSpace != 0 && Item 990006 == 1
+	KillItem 990006,1,
+	GivePet 980002
+	Window_no
+	EndWindow 990023,ok

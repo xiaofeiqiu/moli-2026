@@ -1,0 +1,9 @@
+block item 200151 >= 1 && floor == 122 && Xpos == 6 && Ypos == 15
+window "\n\n有种神秘的力量,眼前突然一闪.",ok
+window_ok
+leavegroup
+Warp 0,123,60,158
+
+
+block item 200150 >= 1 && floor == 122 && Xpos == 6 && Ypos == 15
+endwindow "\n\n外面是深不见底的断层,现在好像还不能过去."

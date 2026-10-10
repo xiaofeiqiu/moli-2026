@@ -1,0 +1,12 @@
+block
+window 7019281,yes,no
+window_yes
+window 7019282,ok
+window_ok
+Encount 3|0,28127,27,23||0|7019259||||0|86097|
+window_no
+killItem 86274
+killItem 86275
+killItem 86276
+killItem 86277
+Warp 0,1000,233,78

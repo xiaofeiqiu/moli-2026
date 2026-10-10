@@ -1,0 +1,20 @@
+block item 88353 == 1
+endwindow "\n\n哥拉尔博物馆就在城北银行附近！"
+
+block item 88352 == 1
+window "\n\n你就是新加入我们兵团的人吗？从此时此刻起你们不再是平民而是士兵。",next
+window "\n\n我们后备役第33兵团主要任务是协助侦探社和维护哥拉尔城的治安。现在正好有项艰巨的任务需要你去完成，你愿意吗？",yes,no
+window_no
+killitem 88352
+endwindow "\n\n看来您不适合当一名士兵！"
+window_yes
+window "\n\n很好作为一名士兵就得以服从命令为己任。\n今天哥拉尔博物馆受到了妙手空空罗德的恐吓，他早上留了一张纸条说今晚要盗取博物馆内最珍贵的藏品。",next
+window "\n\n目前虽然已经派出一队士兵来增加博物馆的安保，但大侦探汉斯觉得还是有一些漏洞要我加派人手。正巧你被安排到我们兵团，现在我就指派你前去协助博物馆的安保工作。",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+giveitem 88353
+endwindow "\n\n哥拉尔博物馆就在城北银行附近！"
+
+block
+endwindow "\n\n您不是我们兵团的人，请下楼去！"

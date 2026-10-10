@@ -1,0 +1,8 @@
+block
+window "\n\n　虽然汝成功的将轮回之路的缝隙修复，但汝等的任务并未结束……",next
+window "\n\n　到拉米亚那里去吧……她正在她的圣域等待汝等……在那里汝将了解更多的真相……",ok
+window_ok
+EndEvent 682 = 1
+checktitle
+leavegroup
+Warp 0,60183,106,224

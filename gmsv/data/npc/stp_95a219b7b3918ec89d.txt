@@ -1,0 +1,10 @@
+block item 200127 >= 1
+endwindow "\n\n这样的碑文还真没有见过."
+
+
+block item 200125 >= 1
+window "\n\n这处神殿发现有一段时间了.",next
+window "\n\n但是只是发现一处偏殿,你要去吗?",yes,no
+window_yes
+leavegroup
+Warp 0,17205,6,20

@@ -1,0 +1,7 @@
+block item 86924 == 1
+window "\n\n你的武器在沾有海魔之血后发出一种奇怪的光芒，你觉得应该去找佩恩看看…",ok
+window_ok
+leavegroup
+killitem 86924
+giveitem 86926
+Warp 0,1000,233,78

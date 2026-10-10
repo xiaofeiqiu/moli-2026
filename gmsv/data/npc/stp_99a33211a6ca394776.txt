@@ -1,0 +1,16 @@
+block  item 61213 < 1 && item 61215 >= 1
+window 1900655,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 61215
+window 1900656,next
+window 1900657,next
+window 1900658,ok
+window_ok
+LeaveGroup
+giveitem 61216
+endwindow 1900659
+
+block
+endwindow 1900660

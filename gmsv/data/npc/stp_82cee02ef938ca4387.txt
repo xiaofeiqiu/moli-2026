@@ -1,0 +1,29 @@
+德鬼任务脚本小叶编写 QQ 94452739
+block	item 950302 == 1
+	window"\n\n@c你真的从热砂的欧兹尼克身上帮我抢回神器？", yes,no
+	window_NO
+	window "\n\n@c 欺骗我的感情啊",ok
+	window_YES item 950302 == 1
+	killitem 950302,1
+	GivePet 3000568
+block item 950300 == 1
+	Endwindow "\n\n@n	你个小样的接完任务还不赶快去找热砂的欧兹尼克！"
+block
+	window "\n\n@c 我是安卡拉大神的信徒卡尔.来自遥远的摩扎根村.来美丽的法蓝城旅游的.",next
+	window "\n\n@c 但是到了这里不甚将族里神器丢失了,伟大的勇者,您愿意帮助我找回它吗?",yes,no
+	window_no
+	window "\n\n@c 很遗憾",ok
+	window_yes
+	window "\n\n@c 谢谢你伟大的勇者,事情是这样的......",yes,no
+	window_no
+	window "\n\n@c 原来你只不过是个懦夫...",ok
+	window_yes
+	window "\n\n@c 我是摩扎根族长的儿子,我是在家里偷跑出来的,村里的人都说我没有能力继承摩扎根.我就偷了族里的神器跑出来了",next
+	window "\n\n@c 可是神器被我不小心丢失了,在维村的时候我本来想去抓只水龙送给我我的妹妹的,可是不小心遇到了一个穿红色衣服的家伙,他说是什么海底的守护者打伤了我,夺走了我的神器.",next
+	window "\n\n@c 勇者先生,请你帮我夺回来它好吗?",yes,no
+	window_no
+	window "\n\n@c 很遗憾",ok
+	window_yes
+	giveitem 950300,1
+	
+	

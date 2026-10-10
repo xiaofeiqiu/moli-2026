@@ -1,0 +1,8 @@
+block item 90003 == 1 && item 90001 == 0 && item 90002 == 0 && item 90005 == 0
+
+	window "\n\n　地水火风~各个元素都有自己的特性，你觉得自己可以掌握好元素吗？？",ok
+	window_ok itemspace != 0
+		giveitem 90005
+		
+	window_ok itemspace == 0
+		window "\n\n　贪心会害你走向绝路的！"

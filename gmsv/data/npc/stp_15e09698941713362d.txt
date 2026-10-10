@@ -1,0 +1,23 @@
+block Luac stp:legacy:7f63a17f5e30d22a5895 >= 1 && item 60499 >= 1
+window "\n\n哇!!!你是士兵长啊.太棒了~~里面有座奇怪的古代雕像我们琢磨不透.或许你能从雕像上得到某些启示.",ok
+window_ok item 60499 >= 1
+Warp 0,57083,19,37
+
+
+
+block item 60499 >= 1
+window "\n\n噢～你突然出现吓我一跳,还以为士兵长来了呢.",next
+window "\n\n我...我才没有偷懒!我在这里还发现了一个密道呢,不过像你这样的人我看很难通过.",next
+window "\n\n你给我500金币,我就把你送到更深的地方去,怎么样?",yes,no
+window_yes gold < 500
+endwindow "\n\n你的钱不够"
+window_yes
+addgold -500
+leavegroup
+Warp 0,57083,15,30
+
+
+
+
+
+

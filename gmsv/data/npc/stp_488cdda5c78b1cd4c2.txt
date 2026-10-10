@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【绿烟】吗？",ok
+			Window_ok
+Luac stp:legacy:6521b5d84f8ad1989731
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【烟雾】吗？",ok
+			Window_ok
+Luac stp:legacy:308a14ad7517c70c0f63
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【烟罗】吗？",ok
+			Window_ok
+Luac stp:legacy:1fda4f651fee3794df24
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【棉球】吗？",ok
+			Window_ok
+Luac stp:legacy:984a7840ac5bcf107f4b
+				endif
+

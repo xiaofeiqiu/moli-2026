@@ -1,0 +1,5 @@
+block
+	Window "\n\n\n@c准备好去狩猎之地了吗？要小心那里遍地是强大的怪物。",yes,no
+	window_yes
+		Warp 0,38116,35,19
+	window_no

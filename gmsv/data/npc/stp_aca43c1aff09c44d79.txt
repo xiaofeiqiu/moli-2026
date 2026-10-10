@@ -1,0 +1,120 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block item 60827 >= 1 && item 18974 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60827,1
+			killitem 18974,1
+			GiveItem 60290,15
+			addgold 12000
+			EndEvent 628 = 0
+block item 60828 >= 1 && item 16383 >= 1  && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60828,1
+			killitem 16383,1
+			GiveItem 60290,20
+			addgold 15000
+			EndEvent 628 = 0
+block item 60829 >= 1 && item 16386 >= 1  && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60829,1
+			killitem 16386,1
+			GiveItem 60290,18
+			addgold 14000
+			EndEvent 628 = 0
+block item 60830 >= 1 && item 16420 >= 1  && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60830,1
+			killitem 16420,1
+			GiveItem 60290,18
+			addgold 15000
+			EndEvent 628 = 0
+block item 60831 >= 1 && EndEvent 609 == 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60831,1
+			GiveItem 60290,25
+			addgold 20000
+			EndEvent 609 = 0
+			EndEvent 628 = 0
+			CheckTitle
+block item 60832 >= 1 && EndEvent 610 == 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60832,1
+			GiveItem 60290,30
+			addgold 25000
+			EndEvent 610 = 0
+			EndEvent 628 = 0
+			CheckTitle
+block item 60833 >= 1 && EndEvent 611 == 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60833,1
+			GiveItem 60290,35
+			addgold 30000
+			EndEvent 611 = 0
+			EndEvent 628 = 0
+			CheckTitle
+block EndEvent 628 == 1
+	window "\n\n\n\n@c　　　请完成任务后再来接受新的委托。",ok
+		Window_ok
+block itemspace < 1
+	window "\n\n\n\n@c您的背包空间不足，请清理一下。",ok
+		Window_ok
+block EndEvent 628 == 0
+	window "\n\n\n　　要领取A级佣兵任务吗？\n\n　　完成接受的任务后，才可领取下个佣兵任务。",next
+		LocalCount7 = random 7,0		
+		if localcount7==7
+			window "\n\n　　【任务】水之洞窟\n\n　　【概要】前往水之洞窟击败水之斗神并获得水之乐谱\n\n　　【任务物品】水之乐谱\n\n　　【奖励】金币12000G　　任务完成证明*15",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60827,1
+				endif
+			Window_no		
+		if localcount7==6
+			window "\n\n　　【任务】帕鲁凯斯的亡灵\n\n　　【概要】前往伊姆尔森林消灭帕鲁凯斯的亡灵并获得失魂的耳饰\n\n　　【任务物品】失魂的耳饰\n\n　　【奖励】金币15000G　　任务完成证明*20",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60828,1
+				endif
+			Window_no		
+		if localcount7==5
+			window "\n\n　　【任务】暗杀犯追迹\n\n　　【概要】前往阿凯鲁法城完成六等勋章任务并获得真红的手镯\n\n　　【任务物品】真红的手镯\n\n　　【奖励】金币14000G　　任务完成证明*18",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60829,1
+				endif
+			Window_no
+		if localcount7==4
+			window "\n\n　　【任务】哥拉尔的晚宴\n\n　　【概要】前往阿哥拉尔城完成四等勋章任务并获得猫头鹰头盔\n\n　　【任务物品】猫头鹰头盔\n\n　　【奖励】金币15000G　　任务完成证明*18",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60830,1
+				endif
+			Window_no
+		if localcount7==3
+			window "\n\n　　【任务】沉默之龙\n\n　　【概要】前往米诺基亚村帮助药剂师卡雷姆拯救沉默之龙诺利\n\n　　【任务物品】龙之拯救者称号\n\n　　【奖励】金币20000G　　任务完成证明*25",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60831,1
+				endif
+			Window_no
+		if localcount7==2
+			window "\n\n　　【任务】盲目之龙\n\n　　【概要】前往库鲁克斯岛雷克塔尔镇拯救盲目之龙艾汀\n\n　　【任务物品】北国行者称号\n\n　　【奖励】金币25000G　　任务完成证明*30",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60832,1
+				endif
+			Window_no
+		if localcount7==1
+			window "\n\n　　【任务】失翼之龙\n\n　　【概要】前往库鲁克斯岛雷克塔尔镇将世界从龙之沙漏的循环中解放\n\n　　【任务物品】解放者称号\n\n　　【奖励】金币30000G　　任务完成证明*30",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60833,1
+				endif
+			Window_no

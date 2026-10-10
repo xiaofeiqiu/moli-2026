@@ -1,0 +1,11 @@
+block Item 1000190 >= 1
+window "\n\n进入吾等禁地者该当死罪!",ok
+window_ok Item 1000190 >= 1
+Encount 3|0,1610,26,12||||||||360126|||||||||
+
+		
+block
+window "\n\n这里不是你这样的生物该进入的场所!",ok
+window_ok
+leaveGroup
+Warp 0,30001,370,655

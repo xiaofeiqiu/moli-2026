@@ -1,0 +1,10 @@
+block item 200128 >= 1
+endwindow "\n\n持有两个以上是不能使用的."
+
+block
+window "\n\n\ 你要打开宠物蛋吗?",ok
+window_ok petspace == 0
+endwindow "\n\n你的宠物栏满了!"
+window_ok
+killitem 200128
+givepet  (901%1,902%1,903%1,904%1,905%1)

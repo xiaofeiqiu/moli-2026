@@ -1,0 +1,14 @@
+block item 1000469 == 1 && item 1000468 == 0 
+	Window"\n\n呼~~终于有人来帮忙了！快衣服给我，冰晶之花只会出现一会儿，我们抓紧给采了。",ok
+window_ok
+killitem 1000469,1
+giveitem 1000468,1
+
+
+block item 1000467 == 1 && item 1000466 == 0 
+	Window"\n\n太好了，很及时，让我把种子拿出来，好了，你拿着这个去找我的仆人她知道怎么做，我送你下山，我要在这里再观察一会儿。",ok
+window_ok
+killitem 1000467,1
+giveitem 1000466,1
+LeaveGroup
+Warp 0,18102,39,45

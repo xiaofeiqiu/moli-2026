@@ -1,0 +1,35 @@
+block globalFlag 303 == 1 && item 1000621 >= 1
+window 7020265,yes,no
+window_yes ItemSpace >= 1
+killitem 1000621
+giveitem 1000622
+endwindow 7020266
+window_yes ItemSpace < 1
+endwindow 7020267
+window_no
+
+block globalFlag 302 == 1 && globalFlag 304 == 0
+window 7020268,ok
+window_ok ItemSpace >= 1
+giveitem (13602%10,13612%10,13622%10,13632%10,13642%10,13652%10,13662%10,13672%10)
+globalFlag 304 = 1
+window_ok ItemSpace < 1
+endwindow 7020267
+
+block globalFlag 300 == 1 && globalFlag 301 == 0
+window 7020269,next
+window 7020270,OK
+window_ok
+globalFlag 301 = 1
+
+block level >= 20 && globalFlag 299 == 0
+window 7020271,yes,no
+window_yes
+window 7020272,ok
+window_ok
+globalFlag 299 = 1
+window_no
+endwindow 7020273
+
+block
+endwindow 7020274

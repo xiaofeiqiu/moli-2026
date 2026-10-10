@@ -1,0 +1,11 @@
+block item 200202 >= 1
+endwindow "\n\n你赶快去救船长,我去通知菲莉亚大姐.
+
+
+block item 200200 >= 1 && item 200201 >= 1
+window "\n\n保安队员出事了,船上混入海盗,而且还把船长劫持在船长他的房间里.",next
+window "\n\n你赶快去救船长啊～～不过船长房间的门被锁上了,你只能去船最上层甲板找我们的大副拿后备钥匙.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200202

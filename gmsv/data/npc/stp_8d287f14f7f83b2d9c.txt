@@ -1,0 +1,18 @@
+block item 3868 >= 1 && item 18443 >= 1
+ChangePal 20,120
+window "\n\n『神眼似乎与石碑产生了共鸣...』",ok
+window_ok item 3868 >= 1 && item 18443 >= 1
+killitem 3868,1
+killitem 18443,1
+leaveGroup
+Warp 0,57509,42,70
+
+block item 3868 >= 1
+endwindow "\n\n\n\n　　　　　···一个冰冷的石碑···"
+
+block item 18443 >= 1
+endwindow "\n\n\n\n　　　　　···一个冰冷的石碑···"
+
+
+
+

@@ -1,0 +1,20 @@
+block globalFlag 305 == 1 && globalFlag 306 == 1 && item 61010 >= 1
+window 900728,ok
+window_ok
+LeaveGroup
+killitemall 61010
+giveitem 61011
+
+block globalFlag 305 == 0 && globalFlag 306 == 0 && item 61009 >= 1
+window 900729,next
+window 900730,next
+window 900731,OK
+window_ok
+LeaveGroup
+killitem 61009
+globalFlag 305 = 1
+endwindow 900732
+
+
+block
+endwindow 900733

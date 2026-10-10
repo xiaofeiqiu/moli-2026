@@ -1,0 +1,13 @@
+block item 1000045 >= 1
+window "\n\n『法兰特别调查队警示:\n前方有沉船,请勿靠近』",next
+window "\n\n是否要游过去调查残骸?",yes,no
+window_no
+window_yes item 1000045 >= 1
+leavegroup
+Warp 0,63400,70,26
+
+
+block
+endwindow "\n\n『法兰特别调查队警示:\n前方有沉船,请勿靠近』",ok
+
+

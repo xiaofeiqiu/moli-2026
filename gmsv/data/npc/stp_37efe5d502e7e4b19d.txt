@@ -1,0 +1,12 @@
+block
+window 910303,next
+window 910304,next
+window 910305,next
+window 910306,next
+window 910307,next
+window 910308,ok
+window_ok itemspace != 0
+leavegroup
+killitem 70022
+giveitem 70023
+Warp 0,25003,53,71

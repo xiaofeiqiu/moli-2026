@@ -1,0 +1,14 @@
+block item 500132 == 1
+endwindow "\n\n孩子谢谢你！好人一定有好报的！"
+
+block item 500131 == 1
+window "\n\n好心人你能分我点你从墨迹科尔花花瓣上获得的露水吗？我女儿在进山采花的时候不小心被它袭击中了毒。",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 500131
+giveitem 500132
+Warp 0,400,88,347
+
+block
+endwindow "\n\n好心人你能分我点你从墨迹科尔花花瓣上获得的露水吗？我女儿在进山采花的时候不小心被它袭击中了毒。"

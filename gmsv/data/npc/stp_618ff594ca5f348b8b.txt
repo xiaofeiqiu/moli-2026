@@ -1,0 +1,14 @@
+block level >= 100 && endevent 90 == 1 && HaveTitle == 1048
+window "\n\n勇者你好,我是从遥远的国度而来,短短几天的时间,就听说了你的种种英勇事迹.",next
+window "\n\n但是你好像进入了瓶颈期,很久没有变强了吧.",yes,no
+window_no
+window_yes
+window "\n\n那么要不要随我去看看我的国度,也许会有增强你的办法.",yes,no
+window_no
+window_yes
+leaveGroup
+Warp 0,2057,22,67
+
+
+block
+endwindow "\n\n你是谁?我好像不认识你."

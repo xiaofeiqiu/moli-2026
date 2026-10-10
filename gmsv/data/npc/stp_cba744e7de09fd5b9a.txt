@@ -1,0 +1,262 @@
+block Luac stp:legacy:e54c41b91fdbec23d68d >= 1&& item 6491 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 6491,1
+	Warp 0,50007,12,15
+
+block Luac stp:legacy:1219948ffc1630362049 >= 1 && item 6091 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 6091,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:dfa3b2d909474af3af42 >= 1 && item 5691 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 5691,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:33ce881f611e272dfef7 >= 1 && item 5291 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 5291,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:2cabd0b678e86018f905 >= 1 && item 4893 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 4893,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:c8f2276da52b88eab1b5 >= 1 && item 4491 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 4491,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:1767899d74d0c931217d >= 1 && item 4092 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 4092,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:e55fe7a13c8653874f5c >= 1 && item 3692 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 3692,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:bc1435b5c1de6d515ffd >= 1 && item 3299 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 3299,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:b66f54f7b15a515e91e9 >= 1 && item 2899 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 2899,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:a788f97cf5dd9eea70fb >= 1 && item 2497 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 2497,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:a5a576c755fd61771452 >= 1 && item 2098 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 2098,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:fc16f5d3bb97939c67e0 >= 1 && item 1695 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 1695,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:359c5fb2d8a33737f7e1 >= 1 && item 895 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 895,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:0a71e0333dd7d1aac325 >= 1 && item 97 >= 1 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 97,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:683acc9ed59c2337c55f >= 1 && Skilllevel 219 >= 10 && gold >= 20000 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	addgold -20000
+	Warp 0,50007,12,15
+block Luac stp:legacy:307a8f7a6a979f643372 >= 1 && Skilllevel 218 >= 10 && gold >= 20000 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	addgold -20000
+	Warp 0,50007,12,15
+block Luac stp:legacy:93ea4857e274b8d2cae2 >= 1 && Skilllevel 217 >= 10 && gold >= 20000 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	addgold -20000
+	Warp 0,50007,12,15
+block Luac stp:legacy:855e01f62373f0cf3d14 >= 1 && Skilllevel 221 >= 10 && gold >= 20000 && endevent 90 != 1
+	window "\n\n辛苦了，这里是最后一道关了。",next
+	window "\n\n\请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	addgold -20000
+	Warp 0,50007,12,15
+
+block Luac stp:legacy:fb8c2711ce35eb30c994 >= 1 && Skilllevel 222 >= 10 && gold >= 20000 && endevent 90 != 1
+	window "\n\n　辛苦了，这里是最后一道关了。",next
+	window "\n\n\ 请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	addgold -20000
+	Warp 0,50007,12,15
+
+block Luac stp:legacy:dfbcff722fa0f6881866 >= 1 && item 15219 >= 1 && endevent 90 != 1
+	window "\n\n　辛苦了，这里是最后一道关了。",next
+	window "\n\n\ 请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 15219,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:2a25702abc964f2a0420 >= 1 && item 15615 >= 1 && endevent 90 != 1
+	window "\n\n　辛苦了，这里是最后一道关了。",next
+	window "\n\n\ 请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 15615,1
+	Warp 0,50007,12,15
+block Luac stp:legacy:c6cd1d8be2a23813f9f9 >= 1 && item 10009 >= 20 && endevent 90 != 1
+	window "\n\n　辛苦了，这里是最后一道关了。",next
+	window "\n\n\ 请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 10009,20
+	Warp 0,50007,12,15
+	
+block Luac stp:legacy:d0e0ca089b627391f012 >= 1 && item 12419 >= 20 && endevent 90 != 1
+	window "\n\n　辛苦了，这里是最后一道关了。",next
+	window "\n\n\ 请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 12419,20
+	Warp 0,50007,12,15
+block Luac stp:legacy:064286dc03724c5ee98f >= 1 && item 9609 >= 20 && endevent 90 != 1
+	window "\n\n　辛苦了，这里是最后一道关了。",next
+	window "\n\n请把你制造或采集到的最高级别的物品给我。",next
+	window "\n\n嗯，确实如此，你好像到了职业的极限了呀！",next
+	window "\n\n这样呢，对你的试炼也结束了。",next
+	window "\n\n然后呢，有个想见你的人。",next
+	window "\n\n请带着誓约之花到她那去吧。",ok
+	window_ok
+	killitem 9609,20
+	Warp 0,50007,12,15
+block endevent 90 == 1
+	window"\n\n 呦！又是你呀！快去吧，他正在等你呢！",ok
+	window_ok
+	Warp 0,50007,12,15
+
+block
+	window "\n\n哎呀，怎么办啊？",next
+	window "\n\n\没有带来你的作品呢，,还是钱没带够呢？这样那个人也不想见到你吧！",ok

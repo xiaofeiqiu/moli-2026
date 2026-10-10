@@ -1,0 +1,5 @@
+block item 86534 == 1
+window "\n\n我的杰作居然被你打败了!你来找人的?呵呵~~被我拐骗的人不在少数,跟我去看看里面有你要找的人否.",ok
+window_ok item 86534 == 1
+leavegroup
+Warp 0,28310,15,26

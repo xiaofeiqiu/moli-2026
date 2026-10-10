@@ -1,0 +1,5 @@
+block
+Window "\n\n马上从我面前消失!!!",ok
+Window_ok
+leavegroup
+Warp 0,57190,7,11

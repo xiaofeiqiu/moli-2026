@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物反击能力1点！",ok
+	window_ok
+Luac stp:legacy:5e91c27b0ed2af90058c
+		killitem 60278,1

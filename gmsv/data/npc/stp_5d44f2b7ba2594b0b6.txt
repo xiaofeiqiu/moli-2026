@@ -1,0 +1,13 @@
+block item 87520 == 1
+endwindow "\n\n现在哥拉尔治安差人员紧缺，再不把外派人员调回来估计要出乱子了！"
+
+block level >= 50
+window "\n\n真是急死我了，一个简单的连环凶杀案到现在还没处理好。",next
+window "\n\n克瑞恩自称能轻松破此案，领了任务后到现在还没回来，你愿意帮我去看看怎么回事吗？",yes,no
+window_no
+window_yes
+giveitem 87520
+endwindow "\n\n克瑞恩自告奋勇到雷克塔尔村去破什么无头杀人连环案。你去雷克塔尔村找他，无论案件破不破得了都叫他回来。"
+
+block
+endwindow "\n\n真是急死我了！克瑞恩那小子还不回来！"

@@ -1,0 +1,11 @@
+block item 200776 >= 1
+window "\n\n下面很危险,一定要注意安全.",ok
+window_ok
+killitem 200776
+leavegroup
+Warp 0,32750,20,235
+
+
+block
+endwindow "\n\n这里太危险了,快快离去.."
+

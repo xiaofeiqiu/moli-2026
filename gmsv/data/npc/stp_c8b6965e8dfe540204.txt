@@ -1,0 +1,8 @@
+block
+window "\n\n鳗鱼饭团？我这没有，只有星鳗饭团，10000金币卖你，要吗？",yes,no
+window_no
+endwindow "\n\n说我心黑...你在这破地方呆久了就知道了。"
+window_yes gold >= 10000
+addgold -10000
+giveitem 15210
+endwindow "\n\n你没拿到的话，说明身上没地方放了，我可不赔偿你！"

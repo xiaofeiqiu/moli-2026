@@ -1,0 +1,8 @@
+block item 940113 >= 1 && itemspace >= 1
+window "\n\n我这里有改造纯白设计图E\n\n10万/张\n\n购买需要交出1个冥之神器\n\n需要吗?",yes,no
+window_yes item 940113 >= 1
+addgold -100000
+killitem 940113,1
+giveitem 567
+leaveGroup
+Warp 0,1000,233,78

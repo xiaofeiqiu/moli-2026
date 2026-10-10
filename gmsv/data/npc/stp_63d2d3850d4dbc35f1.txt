@@ -1,0 +1,4 @@
+block Item 990004 == 1
+	EndWindow 7020597,ok
+block Item 990004 != 1
+	EndWindow 7020598,ok

@@ -1,0 +1,8 @@
+block item 86520 == 1 && item 86521 == 1 && item 86522 < 1
+window "\n\n你居然打败了法尔肯大人！不可饶恕~~",next
+window "\n\n原来是来拿冥界之匙的？法尔肯大人已经送我了，我看也不是什么好东西，就给你们吧！",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86522
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"

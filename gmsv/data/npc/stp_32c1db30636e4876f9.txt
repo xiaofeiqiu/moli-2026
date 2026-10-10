@@ -1,0 +1,37 @@
+block item 88091 == 1
+window 501304,next
+endwindow 501305
+
+block item 88095 == 1
+window 501306,next
+window 501307,next
+window 501308,next
+window 501309,next
+window 501310,ok
+window_ok
+giveitem 88091
+
+block item 88096 == 1
+endwindow 501311
+
+block item 88093 == 1
+window 501312,next
+window 501313,next
+window 501314,next
+window 501315,next
+window 501316,next
+window 501317,ok
+window_ok
+killitem 88093
+giveitem 88096
+
+block item 88073 == 1
+window 501318,next
+window 501319,next
+window 501320,ok
+window_ok
+Encount 2|0,45187,13,7||0|||||0|88151|||||||||
+
+
+block
+endwindow 501321

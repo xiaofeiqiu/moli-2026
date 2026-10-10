@@ -1,0 +1,17 @@
+block Item 60456 == 1
+EndWindow "\n\n不能再获取了..."
+
+
+block
+Window "\n\n要获取风元素吗?",yes,no
+Window_no
+Window_yes ItemSpace >= 1
+GiveItem 60455,1
+Window"\n\n风势变弱了",ok
+Window_ok
+KillItem 60452,1
+KillItem 60453,1
+KillItem 60454,1
+KillItem 60455,1
+GiveItem 60456,1
+Warp 0,1000,233,78

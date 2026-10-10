@@ -1,0 +1,100 @@
+######################################################
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000578 >= 1 && StrCmpChat == 1900322 && gold < 5000
+endwindow 7019698
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000578 >= 1 && StrCmpChat == 1900322 && gold >= 5000
+window 7019699,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000578
+giveitem 1000579
+globalFlag 285 = 1
+window_ok ItemSpace < 1
+endwindow 7019700
+
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000578 >= 1 && StrCmpChat == 1900321 && gold < 5000
+endwindow 7019701
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000578 >= 1 && StrCmpChat == 1900321 && gold >= 5000
+window 7019702,ok
+window_ok 
+LeaveGroup
+addgold -5000
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000578 >= 1 && StrCmpChat == 1900320 && gold < 5000
+endwindow 7019703
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000578 >= 1 && StrCmpChat == 1900320 && gold >= 5000
+window 7019704,ok
+window_ok 
+LeaveGroup
+addgold -5000
+###############################################
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000577 >= 1 && StrCmpChat == 1900322 && gold < 5000
+endwindow 7019705
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000577 >= 1 && StrCmpChat == 1900322 && gold >= 5000
+window 7019706,ok
+window_ok 
+LeaveGroup
+addgold -5000
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000577 >= 1 && StrCmpChat == 1900321 && gold < 5000
+endwindow 7019707
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000577 >= 1 && StrCmpChat == 1900321 && gold >= 5000
+window 7019708,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000577
+giveitem 1000579
+globalFlag 285 = 1
+window_ok ItemSpace < 1
+endwindow 7019709
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000577 >= 1 && StrCmpChat == 1900320 && gold < 5000
+endwindow 7019710
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000577 >= 1 && StrCmpChat == 1900320 && gold >= 5000
+window 7019711,ok
+window_ok 
+LeaveGroup
+addgold -5000
+##########################################
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000576 >= 1 && StrCmpChat == 1900322 && gold < 5000
+endwindow 7019712
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000576 >= 1 && StrCmpChat == 1900322 && gold >= 5000
+window 7019713,ok
+window_ok 
+LeaveGroup
+addgold -5000
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000576 >= 1 && StrCmpChat == 1900321 && gold < 5000
+endwindow 7019714
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000576 >= 1 && StrCmpChat == 1900321 && gold >= 5000
+window 7019715,ok
+window_ok 
+LeaveGroup
+addgold -5000
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000576 >= 1 && StrCmpChat == 1900320 && gold < 5000
+endwindow 7019716
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && item 1000576 >= 1 && StrCmpChat == 1900320 && gold >= 5000
+window 7019717,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000576
+giveitem 1000579
+globalFlag 285 = 1
+window_ok ItemSpace < 1
+endwindow 7019718
+#########################################################
+block globalFlag 284 == 1 && globalFlag 285 == 0
+endwindow 7019719
+
+block
+endwindow 7019720

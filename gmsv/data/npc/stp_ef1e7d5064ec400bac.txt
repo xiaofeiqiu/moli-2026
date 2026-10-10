@@ -1,0 +1,4 @@
+block
+window"\n\n@c 嘘………… \n@c 这可是个寂静的村庄.",next
+window"\n\n@c 这异样的寂静,多么美妙啊~~",next
+endwindow"\n\n\n@c 欢迎来到维拉村!"

@@ -1,0 +1,31 @@
+
+
+block Item 715145 >= 1
+endwindow "\n\n我的龙舟可都是精雕细琢纯手工制作的."
+
+
+block Item 715144 >= 1
+window "\n\n这是龙舟设计图吗?\n看来你找到小缨了吧.\n那么我马上开始帮你制作龙舟吧!\n麻烦稍等一下!",ok
+Window_OK
+KillItem 715144
+GiveLeak1Item 715145
+endwindow "\n\n这是你的龙舟.\n如果还有特别的香包,要记得给我."
+endblock
+
+
+block Item 715143 >= 1
+endwindow "\n\n小缨现在应该是在往啊巴尼斯村的路上吧.\n真是受不了他,总是这么健忘."
+
+
+block Item 715142 >= 1
+window "\n\n我最喜欢端午节.\n可以收集到各式各样的香包.\n你也有香包要给我吗?",next
+window "\n\n哇!好漂亮的香包,要给我的吗?",next
+window "\n\n原来是艾斯樵要我帮他做龙舟啊!\n但是专门画龙舟设计图的小缨出门去找灵感了,他应该会往啊巴尼斯村走去.\n可是他却忘了带我帮他做的饭团便当出门.\n麻烦你帮我跑一趟吧!\n他才刚刚出门应该不会走远.",ok 
+Window_OK
+KillItem 715142
+GiveLeak1Item 715143
+endblock
+
+
+block
+endwindow "\n\n我最喜欢端午节.\n可以收集到各式各样的香包.\n你也有香包要给我吗?"

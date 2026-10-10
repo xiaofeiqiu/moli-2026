@@ -1,0 +1,5 @@
+block Item 588152 >= 1
+window"\n\n\n @c ÇëÍ¨ÐÐ£¡",OK Item 588152 >= 1
+	Window_ok
+        killitem 588152,1
+        Warp 0,15527,15,27

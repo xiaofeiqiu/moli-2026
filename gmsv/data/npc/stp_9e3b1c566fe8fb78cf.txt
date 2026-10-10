@@ -1,0 +1,10 @@
+block floor == 43530 && xpos == 2 && Ypos == 12
+window "\n\n光之菱镜此时跟光反射到墙壁 出现了入口!",ok
+window_ok
+LeaveGroup
+killitem 87639
+Warp 0,29785,24,81
+
+
+block nowtime == 12 && floor == 43530
+endwindow "\n\n这里一片漆黑 好像什么都看不到"

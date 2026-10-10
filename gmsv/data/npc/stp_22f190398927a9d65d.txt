@@ -1,0 +1,24 @@
+block item 90858 >= 1
+window"@c\n\n这是我儿的胳膊吗...我的儿呀！！！~~~",next
+window"@c\n\n等等,确实是..不过这胎记不是我瓦忍家族遗传下来的",next
+window"@c\n\n我明白了哈哈哈哈,这么多年一直帮米斯特王养儿子哈哈哈哈",next
+window"@c\n\n因果报应,米斯特王若知道不知是什么滋味,只可怜我孤苦伶仃.一无所有.罢了罢了..",next
+window"@c\n\n今生已经如此,愿来世再无交集\n\n\n\n\n　　　　　----致人生中遇到的垃圾人",ok
+window_ok item 90858 >= 1
+killitem 90858
+giveitem (90861%2$5,90862%2$5,90863%2$1,90864%2$1)
+
+block level >= 180 && Luac stp:legacy:f7c1888b8b5365ed9a3c == 1 && item 90853 == 0
+window"@c\n\n这位冒险者..你怕鬼吗?",yes,no
+window_yes
+Endwindow"@c\n\n胆小鬼喝凉水，妈妈打你歪歪嘴"
+window_no level >= 180 && Luac stp:legacy:fe23148135253ba87b2f == 1 && item 90853 == 0
+window"@c\n\n事情是这样的...我本是“蒂娜村”的一户大户,家中闹鬼\n\n于是找了“杰诺瓦村”的假道士米斯特王帮我化解",next
+window"@c\n\n没想到这米斯特王串通内人已久\n\n里应外合图了家产不说\n\n那米斯特王也没将鬼患克制住\n\n我儿瓦忍苟也被困于那宅子中",next
+window"@c\n\n你们可以去拯救下我儿么?",yes,no
+window_yes level >= 180 && Luac stp:legacy:3f709d52236edde002fc == 1 && item 90853 == 0
+giveitem 90853
+Endwindow"@c\n\n蒂娜村东边的河岸有棵树,拿着这个插到树上便可"
+
+block
+Endwindow"@c\n\n接下来便交给你了!\n\n我的儿子不知道现在怎么样了...\n\n半个世纪了.."

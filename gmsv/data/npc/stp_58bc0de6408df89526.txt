@@ -1,0 +1,11 @@
+block item 87450 == 1
+endwindow "\n\n真的酒壶的事我就知道这么些，详细的你要去问加纳村酒吧前老板约翰了。"
+
+block item 87449 == 1
+window "\n\n亚留特村麦克的事我已经听说，我敢发誓保证这事绝对不是我干的。酒壶？酒壶是我从加纳村刚倒闭的酒吧老板那收来的。",ok
+window_ok
+killitem 87449
+giveitem 87450
+
+block
+endwindow "\n\n.............."

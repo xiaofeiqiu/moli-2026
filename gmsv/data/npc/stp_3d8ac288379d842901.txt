@@ -1,0 +1,6 @@
+block item 72028 == 1 && endevent 703 != 1
+	Window"\n\n¡­¡­",ok
+	Window_ok
+			killitem 72028,1
+			endevent 703 = 1
+			checktitle

@@ -1,0 +1,66 @@
+
+block item 39688 == 1
+Endwindow "\n\n记住,一定要把手洗干净."
+
+block item 39686 == 1 && item 39687 ==1
+Window "\n\n想不到你还挺能干的嘛,这么快就弄到了.",next
+Window "\n\n不过这瓶妖草的血怎么看起来颜色深了一点?你是不是找了只快枯死的妖草下的手啊.",next
+Window "\n\n算了,反正药性也没什么区别,你等一下,我配一下药,然后你带回去给你上峰.",next
+Window "\n\n...",next
+Window "\n\n.........",next
+Window "\n\n好了,拿好吧,记住,你如果不想死的话,交回去以后赶紧洗手,多洗几次,不然可别怪我没提醒你.",ok
+Window_ok item 39686 == 1 && item 39687 ==1
+killitem 39686
+killitem 39687
+giveitem 39688
+
+block item 39683 == 1
+Endwindow"\n\n你怎么还不快去,磨磨蹭蹭的,快点去!"
+
+block item 39682 == 1
+Window "\n\n嗯?你是来送信的?把信拿过来我看看.",next
+Window "\n\n...",next
+Window "\n\n......",next
+Window "\n\n原来如此,原来如此,好极了,你们这些人果然有点鬼主意,哈哈哈哈.",next
+Window "\n\n给你信的人吩咐你听我的指挥了吧,我现在需要些东西,你去帮我弄来.",next
+Window "\n\n这是清单,你手脚利索点,快去快回,要不是我被法兰的人盯上了,也就不用这么麻烦了.哼!",next
+Window "\n\n不过,你看起来很面熟啊,我怎么好像以前见过你啊.",ok
+Window_ok item 39682 == 1
+killitem 39682
+giveitem 39683
+
+
+
+block NowEvent 17 == 1 && NowEvent 7 == 0
+EndWindow 15149,OK
+
+
+block NowEvent 15 == 1
+EndWindow 15142,OK
+
+
+block EndEvent 578 == 1
+EndWindow 15101,OK
+
+
+block NowEvent 14 == 1 && StrCmpChat == 14912
+
+Window 15102,NEXT
+Window 15103,YES,NO
+Window_YES ItemSpace == 0
+EndWindow 15104,OK
+Window_YES ItemSpace != 0
+EndEvent 578 = 1
+GiveLeak1Item (18558%1$1,18559%1$1,18560%1$1,18561%1$1,18562%1$1,18563%1$1,18985%1$1)
+Window 15105,NEXT
+EndWindow 15106,OK
+Window_NO
+Window 15107,OK
+Window_OK
+LeaveGroup
+Warp 0,2216,10,11
+
+block
+EndWindow 15108,OK
+
+

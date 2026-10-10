@@ -1,0 +1,9 @@
+
+block item 200100 >= 1
+window "\n\n我们的冒险打破了古代神话不存在的事实,虽然很惊险,但是很高兴和你一起探险.",next
+window "\n\n收下这个吧,欢迎你加入我们的团队,希望以后还可以继续和你探索更多的未知.",ok
+window_ok
+killitem 200100
+giveitem 200103
+leavegroup
+Warp 0,43000,497,593

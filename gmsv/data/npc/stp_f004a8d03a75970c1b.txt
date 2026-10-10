@@ -1,0 +1,23 @@
+block Item 60456 == 1
+Window "\n\n这就是女神的恩赐吗?",yes,no
+Window_no
+Window_yes
+endevent 584 = 0
+endEvent 584 = 1
+Window "\n\n太好了,终于得到了,哈哈哈",ok
+Window_ok
+KillItem 60456,1
+
+block endevent 583 == 1
+Window "\n\n勇者,你没有让我失望!谢谢你!",yes,no
+Window_no
+Window_yes
+endevent 583 = 0
+
+
+block endevent 583 == 0
+Window "\n\n年轻人,我是一个来自北国的流浪者,现在我的家乡瘟疫肆虐,每时每刻都有人死去,更多人在痛苦的挣扎.\n我不远万里、跋山涉水来到这里,是为了得到『女神的恩赐』来拯救家乡的亲人、孩子.本来得我亲自去的,但是我实在太累了!你愿意帮助我吗?",next
+Window "\n\n我身无分文,没法给你报酬,你还愿意帮助我吗?",yes,no
+Window_no
+Window_yes
+endEvent 583 = 1

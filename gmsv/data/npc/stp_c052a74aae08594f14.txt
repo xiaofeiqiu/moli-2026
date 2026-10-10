@@ -1,0 +1,7 @@
+block Item 900006 >= 1
+	Window "\n\n\n@c欢迎光临流星会员之家",Next
+	Window "\n\n\n@c感谢您的支持",Yes,No
+		Window_Yes
+			Window "\n\n\n@c阁下请进。",OK
+				Window_OK 
+				Warp 0,991,50,50

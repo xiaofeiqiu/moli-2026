@@ -1,0 +1,20 @@
+block globalFlag 346 == 1 && globalFlag 347 == 0
+window 900377,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+globalFlag 347 = 1
+giveitem 61137
+window_ok ItemSpace < 1
+endwindow 900317
+
+
+block globalFlag 343 == 1 && globalFlag 344 == 0
+window 900378,next
+window 900379,next
+window 900380,ok
+window_ok
+LeaveGroup
+globalFlag 344 = 1
+
+block
+endwindow 900381

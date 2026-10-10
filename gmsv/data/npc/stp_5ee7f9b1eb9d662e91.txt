@@ -1,0 +1,32 @@
+block item 1000609 >= 1 && item 1000610 >= 1
+window 7019849,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 1000610
+window 7019850,next
+window 7019851,ok
+window_ok
+LeaveGroup
+killitem 1000609
+giveitem 1000611
+Warp 0,23228,51,103
+
+
+
+block item 1000609 >= 1
+window 7019840,next
+window 7019841,ok
+window_ok
+LeaveGroup
+Warp 0,23358,27,15
+
+block item 1000608 >= 1
+endwindow 7019836
+
+block
+window 7019835,ok
+window_ok
+LeaveGroup
+giveitem 1000608
+Warp 0,23358,27,15

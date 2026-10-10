@@ -1,0 +1,9 @@
+block item 50876 >= 1
+Window "\n\n\n\n打开鹤的礼包吗?",yes,no
+Window_no
+EndWindow "\n\n等你想好了在打开吧."
+Window_yes ItemSpace == 0
+EndWindow "\n\n抱歉,你的物品栏满了."
+Window_yes
+killitem 50876
+giveitem (50878%1,50879%1,50880%1,50881%1,50882%1,50883%1,50884%1)

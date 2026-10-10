@@ -1,0 +1,21 @@
+#唯一一个NPC  BHG小组Singa制作
+block item 56451 >= 1 && item 56452 >= 1 && item 56453 >= 1 && item 56454 >= 1 && item 56455 && Item 56447 >= 1 && Item 56448 >= 1 && Item 56449 >= 1
+	Window 25259,YES,NO
+	Window_YES 
+	KillItem 56451,1
+	KillItem 56452,1
+	KillItem 56453,1
+	KillItem 56454,1
+	KillItem 56455,1
+	KillItem 56447,1
+	KillItem 56448,1
+	KillItem 56449,1
+	GiveItem 56450,1
+	Window_NO
+	EndWindow 25259
+block item 56451 >= 1 && item 56452 >= 1 && item 56453 >= 1 && item 56454 >= 1 && item 56455 >= 1
+	EndWindow 25258
+block item 56451 >= 1 || item 56452 >= 1 || item 56453 >= 1 || item 56454 >= 1 || item 56455 >= 1
+	EndWindow 25257
+block
+	EndWindow 25260

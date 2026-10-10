@@ -1,0 +1,3 @@
+block
+KillItem 1000166,1,(70073)
+metamo 101934

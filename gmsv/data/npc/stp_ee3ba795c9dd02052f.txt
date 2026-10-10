@@ -1,0 +1,6 @@
+block
+	window "\n\n@n 确定要打开彩票吗!",yes,no
+	window_yes
+	KillItem 778923,1
+	giveitem (778924%90,778925%80,778926%6,778927%5,778928%2,778929%1)
+	window_no

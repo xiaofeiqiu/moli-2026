@@ -1,0 +1,36 @@
+block item 800116 >= 1
+window "\n\n终于,裂隙停止扩张了,不过诺斯菲拉特这下也是彻底变成了不可进入的地方",next
+window "\n\n我们回去哥拉尔吧,你完成了一件几乎不可能完成的任务",next
+killitem 800116
+giveitem 800117
+endwindow "\n\n勇者,我看好你哦"
+
+block item 800113 >= 1 && item 800114 >= 1
+window "\n\n你就是哥拉尔派来增援的人?只有你自己么?恐怕你难以胜任",yes,no
+window_yes
+window "\n\n哥拉尔方面是认真的?好吧,我相信你",next
+window "\n\n事情是这样的,在你破坏三巨龙守护的沙漏之后,原本不再扩张的裂隙开始膨胀",next
+window "\n\n现在,裂隙的边界已经快要覆盖整个诺斯菲拉特了,仅存的村民也已经四散奔逃",next
+window "\n\n而且现在,在裂隙中总能看到一张怪异的脸,还有恐怖的呻吟",next
+window "\n\n很难想象裂隙继续扩张会发生什么,是毁灭诺斯菲拉特?库鲁克斯?不,恐怕整个世界也会一同被吞噬吧",next
+window "\n\n这就是我们要求援助的原因,希望得以解决,你怎么看?",next
+window "\n\n原来如此,那就请替我们解决此事吧",next
+window "\n\n哥拉尔方面是认真的?好吧,我相信你",next
+killitem 800113
+killitem 800114
+giveitem 800115
+endwindow "\n\n希望你能完成任务"
+window_no
+endwindow "\n\n这里不是你这种人该来的地方"
+
+block
+endwindow "\n\n这里不是你这种人该来的地方"
+
+
+
+
+
+
+
+
+

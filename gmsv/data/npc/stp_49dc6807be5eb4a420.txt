@@ -1,0 +1,11 @@
+block HaveTitle == 12924
+	Window"\n\n呼风唤雨的人？！",next
+	Window"\n\n过去吧！",ok
+		Window_ok
+LeaveGroup
+Warp 0,18106,18,55
+
+block 
+	Window"\n\n我们需要呼风唤雨的人？！",next
+	Window"\n\n抱歉，我不能让你过去！",ok
+		Window_ok

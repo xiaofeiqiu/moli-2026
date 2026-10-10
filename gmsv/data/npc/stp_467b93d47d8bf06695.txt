@@ -1,0 +1,637 @@
+block petspace < 4
+Endwindow"@c\n\n\n请保留四个宠物空位\n\n\n且需要强化的宠物放到第一格!\n\n\n宠物BP已增加完毕~\n\n\n改造后需小退一下~"
+
+block Luac stp:legacy:1234c7bc977d3d63bb85 == 200
+Endwindow"@c\n\n\n改造过了还想干啥?"
+
+block Luac stp:legacy:de5675e3a127354db5bc == 100
+Endwindow"@c\n\n\n改造过了还想干啥?"
+
+block Luac stp:legacy:99b8e8c1abf2a653007b > 0
+Endwindow"@c\n\n\n请将宠物的BP点使用完再使用本道具~"
+
+#R
+block Luac stp:legacy:f597cb43a62ea6680aac >= 180 && Luac stp:legacy:006a278a86ae709b6b6f > 200 && Luac stp:legacy:fb21f299f0cc25ea7127 == 0
+window"@c\n\n\n确定强化改宠物吗?只能强化一次~",yes,no
+window_yes Luac stp:legacy:98904a679e29e596330e >= 180 && Luac stp:legacy:c303a94afa413631c1ab > 200 && Luac stp:legacy:c7c3a181817c63b90b65 == 0
+killitem 90630
+Luac stp:legacy:6584818b93eeaaabdabe
+Luac stp:legacy:b9dcc6e8f11c097704e9
+
+block Luac stp:legacy:2b901a7c7b89a2f8c2c2 >= 180 && Luac stp:legacy:6bb7a6365ff7f951a06e > 200 && Luac stp:legacy:5ef3dd410e5bd55cf2dc == 0
+window"@c\n\n\n确定强化改宠物吗?只能强化一次~",yes,no
+window_yes Luac stp:legacy:179381d0789206114d90 >= 180 && Luac stp:legacy:af8622665a9eab86af9c > 200 && Luac stp:legacy:8c4ff771ba8f4c5ff986 == 0
+killitem 90630
+Luac stp:legacy:5728559b736beb363eba
+Luac stp:legacy:bdeac1ffda4744aaaf45
+
+block Luac stp:legacy:531efb691e4ce3bf813b >= 180 && Luac stp:legacy:42bb442233ceba7f7543 > 200 && Luac stp:legacy:c323c4f6392993d6bb6d == 0
+window"@c\n\n\n确定强化改宠物吗?只能强化一次~",yes,no
+window_yes Luac stp:legacy:5a4069db003e6a8a9f9f >= 180 && Luac stp:legacy:88b2e271be2268492ad1 > 200 && Luac stp:legacy:1a0e52a824dd9399d962 == 0
+killitem 90630
+Luac stp:legacy:0cf721a80ca2e76a970d
+Luac stp:legacy:7a40880e7f5258adf86c
+
+block Luac stp:legacy:2cf00f2e839aaec2ea59 >= 180 && Luac stp:legacy:7b7a09792f42942536a5 > 200 && Luac stp:legacy:2978ed3bcb2b3293fe66 == 0
+window"@c\n\n\n确定强化改宠物吗?只能强化一次~",yes,no
+window_yes Luac stp:legacy:4bc307e1ed90d69285f0 >= 180 && Luac stp:legacy:f5467a95539e93c6f02f > 200 && Luac stp:legacy:f35141513507c1b2320a == 0
+killitem 90630
+Luac stp:legacy:0156c3c44aef1a32e9af
+Luac stp:legacy:959e4f8fc9b06eb18419
+
+
+#FR
+block Luac stp:legacy:ef934c5e87524c033a0a > 100 && Luac stp:legacy:05584e946a70a51255db >= 180 && Luac stp:legacy:ec2f911b97ae2f711598 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:63dd968da91eb41a635b > 100 && Luac stp:legacy:a50f92528ca2dc6234e5 >= 180 && Luac stp:legacy:c1ba80e73dee2de7d151 == 0
+killitem 90630
+Luac stp:legacy:a8e72d44ee2bd731d1ed
+Luac stp:legacy:276c526402e5653e4cd4
+
+block Luac stp:legacy:3f1b4df064fc043b8f79 > 100 && Luac stp:legacy:7d4e0dee988a085f87b9 >= 180 && Luac stp:legacy:22f4730be22e585482ca == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:aeea8feb3ef9fc527faa > 100 && Luac stp:legacy:984c4415a96a0d1ecd4b >= 180 && Luac stp:legacy:f0a83766f64620a0f462 == 0
+killitem 90630
+Luac stp:legacy:248d1cc5329f125ff14d
+Luac stp:legacy:c91ad75e8d96fa233f7d
+
+block Luac stp:legacy:50e04151f686731fc879 > 100 && Luac stp:legacy:8d032709182a5720a95f >= 180 && Luac stp:legacy:13788bb0cb445e6353f9 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:b7a12efd12786a9b6a2b > 100 && Luac stp:legacy:6e352515a07a8856b19f >= 180 && Luac stp:legacy:3a83d43d2ba87dfe7615 == 0
+killitem 90630
+Luac stp:legacy:8ad01337e9b8923b0993
+Luac stp:legacy:0453a6538eeabdc9d247
+
+block Luac stp:legacy:6c5867f8f5061fda4110 > 100 && Luac stp:legacy:1b60729e3c13553e3117 >= 180 && Luac stp:legacy:0579998e544d8cd5800e == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:f86e588c3f664307cd6e > 100 && Luac stp:legacy:3de95bb32e2113245ca0 >= 180 && Luac stp:legacy:77bfa6471c1345ca44d4 == 0
+killitem 90630
+Luac stp:legacy:26f85c21506923eca9d7
+Luac stp:legacy:8928cbda99f5b00afbdc
+
+block Luac stp:legacy:379eb76ec8fd9af5e4d8 > 100 && Luac stp:legacy:f4f8204d85512a41320f >= 180 && Luac stp:legacy:fd2c1b976bbf931b2221 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:78fa3add5dbba61da9c0 > 100 && Luac stp:legacy:36d18eaf29c96805eb90 >= 180 && Luac stp:legacy:5d1c6c6a1a64512e4102 == 0
+killitem 90630
+Luac stp:legacy:e669e88de4c5268cda61
+Luac stp:legacy:72117687919dc095ec0a
+
+block Luac stp:legacy:2eb3647d037377a5238a > 100 && Luac stp:legacy:edfac26514ba966590e2 >= 180 && Luac stp:legacy:386707cd606ebf23b999 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:f1da04d89c757738a565 > 100 && Luac stp:legacy:0cc01279b5f76eb9ca15 >= 180 && Luac stp:legacy:5abe7cedde67d60a5a68 == 0
+killitem 90630
+Luac stp:legacy:6cf3802f9fbfd404443f
+Luac stp:legacy:55601d988752779c3d5a
+
+block Luac stp:legacy:132c93ada6e28a42fbcb > 100 && Luac stp:legacy:3376c793287674c105a6 >= 180 && Luac stp:legacy:ed356de7e4369a418aac == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:e60e8a9b1ecb68168d3b > 100 && Luac stp:legacy:f5ff6da6e9bdef5265a6 >= 180 && Luac stp:legacy:da4868c0691a7de76ff9 == 0
+killitem 90630
+Luac stp:legacy:9b208d801c3fa860eb30
+Luac stp:legacy:2242b85202ba0b6a5b91
+
+block Luac stp:legacy:716ba7607b459cc5ba00 > 100 && Luac stp:legacy:6c915af701d32758c77e >= 180 && Luac stp:legacy:55467b94fd3983e34676 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:6c67be690bab40680ec6 > 100 && Luac stp:legacy:1577b5febe3cd33b5358 >= 180 && Luac stp:legacy:b763991190433e07478e == 0
+killitem 90630
+Luac stp:legacy:afff913ffbdddbf13508
+Luac stp:legacy:c2e70c5b459d372cce85
+
+block Luac stp:legacy:b08c36cfba07ff93adbc > 100 && Luac stp:legacy:e5ed4a696c1fe10b6419 >= 180 && Luac stp:legacy:3825f3820b273062b7ee == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:9bb7b4efb5c7354deafb > 100 && Luac stp:legacy:567991488d0029a59dff >= 180 && Luac stp:legacy:09e4e4c8f0a3bb52b237 == 0
+killitem 90630
+Luac stp:legacy:f7283e9cd1e1ea51f8c6
+Luac stp:legacy:5095011371efcb4c3e29
+
+block Luac stp:legacy:86cf7067bede62eb85fb > 100 && Luac stp:legacy:7c69abb4ee6e6b27b1bc >= 180 && Luac stp:legacy:3f07a407e6cfeb30fd40 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:953c9f25a32e28d7c402 > 100 && Luac stp:legacy:fe3ae457922a20f61807 >= 180 && Luac stp:legacy:44d04e1523667a3b7c91 == 0
+killitem 90630
+Luac stp:legacy:8ace507aa2b04d0fac5d
+Luac stp:legacy:f8e10b32b56b0f295ee8
+
+block Luac stp:legacy:5b686333373c02458826 > 100 && Luac stp:legacy:30513eef2cea11b0a80b >= 180 && Luac stp:legacy:e781dbc1cf166e808ad7 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:727db53ef9d30e91394e > 100 && Luac stp:legacy:7eeee9c77771e910fe99 >= 180 && Luac stp:legacy:ffb7ea6148f3ec9047e2 == 0
+killitem 90630
+Luac stp:legacy:c9eba005330c71c4ae25
+Luac stp:legacy:b4169231715025462d3e
+
+block Luac stp:legacy:69461c4d33e9ed00a101 > 100 && Luac stp:legacy:b473d725fba407f16c4c >= 180 && Luac stp:legacy:c14463f85de4d80656a3 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:51db2aa82eac8534dca5 > 100 && Luac stp:legacy:754fb0a5523119116d89 >= 180 && Luac stp:legacy:03f78831e32f9f280424 == 0
+killitem 90630
+Luac stp:legacy:0f864c6d55a7c44ecb8f
+Luac stp:legacy:8bc9a297dfd13a78b34b
+
+block Luac stp:legacy:1a83f388e97387a6ecd5 > 100 && Luac stp:legacy:bb7a73a7956c6fd8a559 >= 180 && Luac stp:legacy:44619c5c351879979272 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:f4c3e74498dc9c822b92 > 100 && Luac stp:legacy:cd9aaf2b59ab1102471a >= 180 && Luac stp:legacy:8ff09904144ff1b56fe8 == 0
+killitem 90630
+Luac stp:legacy:cda4a02224d8af9d0d5e
+Luac stp:legacy:e0f60b7d55510f263fa2
+
+block Luac stp:legacy:3ac90c463d0e6722023e > 100 && Luac stp:legacy:253b521d664815bd454a >= 180 && Luac stp:legacy:e9cf8eb06716879ecfb5 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:85b8bca17c29271204f7 > 100 && Luac stp:legacy:7eb3ffe9d6cc6fe6fe45 >= 180 && Luac stp:legacy:a71e6d8fdca228788218 == 0
+killitem 90630
+Luac stp:legacy:85e3348a1a832abc61db
+Luac stp:legacy:9645cd2b3701cc6a74e5
+
+block Luac stp:legacy:c3ea0914cd1447b6910e > 100 && Luac stp:legacy:a8118dcfd1a66b48307d >= 180 && Luac stp:legacy:bf1fc7c2ef6c2783b8d5 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:78a121b53bc79eb8bb9a > 100 && Luac stp:legacy:6da63ef94dc20031fc36 >= 180 && Luac stp:legacy:1d4fc3df14c92664400c == 0
+killitem 90630
+Luac stp:legacy:0dbf293cc8120a09de29
+Luac stp:legacy:c0b64a50957526a61e77
+
+block Luac stp:legacy:a64ba96dd52174426ad3 > 100 && Luac stp:legacy:cd57ab6234f07e7aad80 >= 180 && Luac stp:legacy:c264c68c0699ed4354f0 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:1f2b32a8cffc0e10f675 > 100 && Luac stp:legacy:3cbf78ed223d2540621f >= 180 && Luac stp:legacy:7105f481b23f6a607ea8 == 0
+killitem 90630
+Luac stp:legacy:6c4bb7102e5988de703a
+Luac stp:legacy:5e76e335043f6ea0ad2c
+
+block Luac stp:legacy:bcc58c2b1b095c703bc5 > 100 && Luac stp:legacy:6cbb108fd9ad06875f49 >= 180 && Luac stp:legacy:13e358164971e84f1d28 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:50df70582a4733f12805 > 100 && Luac stp:legacy:a925f961c962a9a6d78a >= 180 && Luac stp:legacy:a36a0270890987bab015 == 0
+killitem 90630
+Luac stp:legacy:d7a1654a7142653911bb
+Luac stp:legacy:02fd0cf04eaa630794bf
+
+block Luac stp:legacy:eda258270019bd9816e9 > 100 && Luac stp:legacy:4e5b95b369df91be2afd >= 180 && Luac stp:legacy:60d2277c260f8649a310 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:c821c92d8a12f9a1b0aa > 100 && Luac stp:legacy:cc0109f8c5c4b93313c9 >= 180 && Luac stp:legacy:942d8d3212b7ac4e1ef6 == 0
+killitem 90630
+Luac stp:legacy:ee7242688813d674d0af
+Luac stp:legacy:2bd3df3258a56638400a
+
+block Luac stp:legacy:0f96bffcb85a8ce9a1d7 > 100 && Luac stp:legacy:b6d73723a97acbb0ca5e >= 180 && Luac stp:legacy:0a3e1862f9ce2181b457 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:803907e61cac3876ce95 > 100 && Luac stp:legacy:6af12d1d9879dd09b919 >= 180 && Luac stp:legacy:8804ab94c738bbd530c9 == 0
+killitem 90630
+Luac stp:legacy:673df36a56862cca57f1
+Luac stp:legacy:d182d47e8a18e78ced5a
+
+block Luac stp:legacy:ffb8306195b24a209aa9 > 100 && Luac stp:legacy:d825de898bd2fc940f32 >= 180 && Luac stp:legacy:6616bb4f5694ca8de72f == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:0143ca9c2fe87e7cb199 > 100 && Luac stp:legacy:c0ce016dfef2955902c6 >= 180 && Luac stp:legacy:10b3150137e366b6ab4e == 0
+killitem 90630
+Luac stp:legacy:2a432a56759c1b83c927
+Luac stp:legacy:a2fb01c890f87478e3a8
+
+block Luac stp:legacy:11c20e7894d2e6d3bb70 > 100 && Luac stp:legacy:1f55fe2d1b6c026ec7e6 >= 180 && Luac stp:legacy:458aa8ae43d5a838685b == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:64a4d48f6e2935f52918 > 100 && Luac stp:legacy:07f4d617b67c682e2fa9 >= 180 && Luac stp:legacy:9c47bf5c0096a18f878b == 0
+killitem 90630
+Luac stp:legacy:0e233817dde9e1beb831
+Luac stp:legacy:9740e0e2fdc374ee6639
+
+block Luac stp:legacy:a5f9387bf32f465deb80 > 100 && Luac stp:legacy:4465515e8b02f6bb7bb5 >= 180 && Luac stp:legacy:e0842b6deff14cd233dd == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:3f611c76974f152710ea > 100 && Luac stp:legacy:1b55a033864663d5f7dd >= 180 && Luac stp:legacy:7da5a0085363f6634682 == 0
+killitem 90630
+Luac stp:legacy:8f12f526c3e276532a07
+Luac stp:legacy:a38f90bba66aec0aea4d
+
+block Luac stp:legacy:2c363c8e2b89cca6ed42 > 100 && Luac stp:legacy:bd1da6a835afd865d0a8 >= 180 && Luac stp:legacy:63dd2e2a505f0c323747 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:429ce283f59bcd6430bb > 100 && Luac stp:legacy:bfd1ffde0cb327fb6458 >= 180 && Luac stp:legacy:4417e9db4f0796f8e517 == 0
+killitem 90630
+Luac stp:legacy:97b5fb70ad31800125be
+Luac stp:legacy:5cd0ee111d1d1b634426
+
+block Luac stp:legacy:86d4982fea9cc98ad3ea > 100 && Luac stp:legacy:3741fab9249abc4a22c0 >= 180 && Luac stp:legacy:f3ce11f00653256ff56e == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:b7852b0e874420d09fe7 > 100 && Luac stp:legacy:30b6402ee71bb92d8579 >= 180 && Luac stp:legacy:ed6cfec6255517733a58 == 0
+killitem 90630
+Luac stp:legacy:cafd7ce8d35714fd4b80
+Luac stp:legacy:d6c580eae603ba73abda
+
+block Luac stp:legacy:05984942dc8fb45936ab > 100 && Luac stp:legacy:ae36549b7caf0510f65e >= 180 && Luac stp:legacy:83b9e370476678b465dc == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:3b6e85e23214293a0b72 > 100 && Luac stp:legacy:590e5940da7ad4bef00f >= 180 && Luac stp:legacy:051b4d3a59fc8015406a == 0
+killitem 90630
+Luac stp:legacy:d8b04d20eb7150f6c605
+Luac stp:legacy:5a9768ca9197db1099d5
+
+block Luac stp:legacy:bb8f39c8f8fb646e2677 > 100 && Luac stp:legacy:d5a9bbb08440a4437c3b >= 180 && Luac stp:legacy:67a5655f5966c6dcb7a7 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:36a78521c09d989e47a7 > 100 && Luac stp:legacy:c185bf85926d030562df >= 180 && Luac stp:legacy:bd0198ea52968baab497 == 0
+killitem 90630
+Luac stp:legacy:9905fcb15f8a437739fa
+Luac stp:legacy:2e47cfe2f16d393efab0
+
+block Luac stp:legacy:74e55958bb8dd33905e9 > 100 && Luac stp:legacy:40c4810749d0564a4221 >= 180 && Luac stp:legacy:cf1ce7b71a97d1127d46 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:72db2480f5f0c50bb962 > 100 && Luac stp:legacy:6ea74ff160ceaa2cb421 >= 180 && Luac stp:legacy:3e4fcf4c42ab2a142b3d == 0
+killitem 90630
+Luac stp:legacy:ad9d85059163435f344f
+Luac stp:legacy:df3bff39deca52b9c698
+
+block Luac stp:legacy:2465b92dd0965d64b6f4 > 100 && Luac stp:legacy:eedb30e2282628477132 >= 180 && Luac stp:legacy:d035ecccf0e92377ee99 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:247f227bae0dcfb1705a > 100 && Luac stp:legacy:16136b4e84058913415e >= 180 && Luac stp:legacy:8146f5c1c22439c2f574 == 0
+killitem 90630
+Luac stp:legacy:9618932a154f57befd67
+Luac stp:legacy:076f7cf5838f1a4ba5c0
+
+block Luac stp:legacy:64ef8de2ad50ac87ec13 > 100 && Luac stp:legacy:eb92363abb24b8feef8c >= 180 && Luac stp:legacy:5aab8a74a9aeb0d3edf4 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:6b9019fd653bc154bea0 > 100 && Luac stp:legacy:1af21b1e09e65bc3ca9b >= 180 && Luac stp:legacy:d8cd4ad04fe77bc7c4f7 == 0
+killitem 90630
+Luac stp:legacy:a15e23283e1c2c8c933d
+Luac stp:legacy:296a05714d471a2015ea
+
+block Luac stp:legacy:b891bdb02870e5f128a9 > 100 && Luac stp:legacy:d6622e001507fa87e0f2 >= 180 && Luac stp:legacy:f9ae20697078bfda942f == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:fb01bd1271531d2c217a > 100 && Luac stp:legacy:b3a8aed4eabc1d6d6b90 >= 180 && Luac stp:legacy:2303ad9f944df619e33a == 0
+killitem 90630
+Luac stp:legacy:1acf43f5dccd2dcd32c0
+Luac stp:legacy:b0ce1d365e9c64e902a7
+
+block Luac stp:legacy:4e3e6da60ad01a21a381 > 100 && Luac stp:legacy:1d2dcdab270f1fa7b9c2 >= 180 && Luac stp:legacy:3150377b6466695e6bcf == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:92a080f4d4f9f6abb681 > 100 && Luac stp:legacy:0d1daa93e50adaf74beb >= 180 && Luac stp:legacy:e0d08e9a4f220c1a62e9 == 0
+killitem 90630
+Luac stp:legacy:b5c31dba605a454c2636
+Luac stp:legacy:75390726d4fbdf598a6f
+
+block Luac stp:legacy:1d3ee99f475209a90391 > 100 && Luac stp:legacy:1e4ffd4ec466b3e2a27b >= 180 && Luac stp:legacy:9d16ba754162782b8996 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:84e1060d02f15595c1fc > 100 && Luac stp:legacy:9f49344f0316b411f4f2 >= 180 && Luac stp:legacy:7ffb7e4de511921eefee == 0
+killitem 90630
+Luac stp:legacy:f119d258b8d383c06acd
+Luac stp:legacy:f39e2fa964029cbfa7b0
+
+block Luac stp:legacy:e821d9948df83fd18092 > 100 && Luac stp:legacy:bd9fe2084124dad2fa99 >= 180 && Luac stp:legacy:653297d6c9226b4a3f85 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:a07bdaf876f26ae1d99a > 100 && Luac stp:legacy:f3bd48d211752e82de66 >= 180 && Luac stp:legacy:e083c35857310fc80729 == 0
+killitem 90630
+Luac stp:legacy:5c109e4396226f058da1
+Luac stp:legacy:55fce581c43666458b19
+
+block Luac stp:legacy:31cb199d1d2d56de7369 > 100 && Luac stp:legacy:79cd1399fd0eb65d264b >= 180 && Luac stp:legacy:6360f94007d744d756a7 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:fcb60888a2bcb3c8b7f6 > 100 && Luac stp:legacy:056ec2ef02e35dcb484d >= 180 && Luac stp:legacy:56ba0763da9e1830b215 == 0
+killitem 90630
+Luac stp:legacy:985097be35d8693d73b8
+Luac stp:legacy:7d6f82aac324f5d39e46
+
+block Luac stp:legacy:e7b30ab8f783d753eefc > 100 && Luac stp:legacy:f8477681288273271471 >= 180 && Luac stp:legacy:758a09e6c2c605e00dee == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:0894d0acbff62d923f14 > 100 && Luac stp:legacy:666d7f455265a70c6428 >= 180 && Luac stp:legacy:80ad90251777b85b2d9a == 0
+killitem 90630
+Luac stp:legacy:dfa4065633973c8e1005
+Luac stp:legacy:aec05a8df6a8814f0ea5
+
+block Luac stp:legacy:58415810362122276837 > 100 && Luac stp:legacy:bb65f49e79fedbd0c616 >= 180 && Luac stp:legacy:d747a710e857610b16d9 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:639eba4647faede1c063 > 100 && Luac stp:legacy:e1b533eceaafe178fe2d >= 180 && Luac stp:legacy:b138ab9d8832bef5ef77 == 0
+killitem 90630
+Luac stp:legacy:b3957cf58f28e1f7ac29
+Luac stp:legacy:8a93715c35fce083f6df
+
+block Luac stp:legacy:98da07c245ecabc5d527 > 100 && Luac stp:legacy:60250877dd1ce7e488c8 >= 180 && Luac stp:legacy:cd38023cc78f06d82740 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:77629e7b7b6ebcd44a66 > 100 && Luac stp:legacy:f19599eca4ce44980c8f >= 180 && Luac stp:legacy:263677513a516079220f == 0
+killitem 90630
+Luac stp:legacy:3f6d0f71fe83124bc3f7
+Luac stp:legacy:1ad0c55a16acf431260b
+
+block Luac stp:legacy:b2dd4920f7c9eb84cf4e > 100 && Luac stp:legacy:d2659ef45d80c5f53071 >= 180 && Luac stp:legacy:0758b763f0346b235b4d == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:f79df6584d9a11fe3065 > 100 && Luac stp:legacy:82f524e15ee8b4b12c8b >= 180 && Luac stp:legacy:bb3aba4dec58b54cbfff == 0
+killitem 90630
+Luac stp:legacy:868c60d292d39e6ec3ac
+Luac stp:legacy:6d74c5841a2f89ab1f09
+
+block Luac stp:legacy:984f47e481ca7dedc4e3 > 100 && Luac stp:legacy:511f73f9c8dfa57bdc5b >= 180 && Luac stp:legacy:0d1465c376add5cb0097 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:621fdb2767be020a985f > 100 && Luac stp:legacy:addeee303fe34ffbc76a >= 180 && Luac stp:legacy:ca3d45fe3bd4e5b7f551 == 0
+killitem 90630
+Luac stp:legacy:c304aa2675d9b9e2d13d
+Luac stp:legacy:bbb1078d9505943aa341
+
+block Luac stp:legacy:d223194b83d3661ace12 > 100 && Luac stp:legacy:499a8b5a869afdfaa63e >= 180 && Luac stp:legacy:429504d39b058da1dcac == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:213684c444561eb3f084 > 100 && Luac stp:legacy:bc0c191f3cba415a9ff9 >= 180 && Luac stp:legacy:8c52b56fe052c3ce0262 == 0
+killitem 90630
+Luac stp:legacy:7d507006045d3b8c936e
+Luac stp:legacy:91433747859563fdc0bc
+
+block Luac stp:legacy:f831d39243ab10d7a04f > 100 && Luac stp:legacy:61566cdc91858adefe90 >= 180 && Luac stp:legacy:6fbeb067bcf2c786ef0e == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:656cb4b70af277cb5a60 > 100 && Luac stp:legacy:8c02de754153a566ac54 >= 180 && Luac stp:legacy:ed61cd2c491f4555555e == 0
+killitem 90630
+Luac stp:legacy:1193f0879b6b2903492b
+Luac stp:legacy:d4347c5ef9a17759a84f
+
+block Luac stp:legacy:79a53461d955c829ea8e > 100 && Luac stp:legacy:91cbe3665a43b2639188 >= 180 && Luac stp:legacy:335e1451f5c554b7eaf4 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:b1199c8c2ae65713e976 > 100 && Luac stp:legacy:8adda5e2c9e75792b8c8 >= 180 && Luac stp:legacy:e9d01e49bc5f90769d2d == 0
+killitem 90630
+Luac stp:legacy:52f334e737bcd7be055f
+Luac stp:legacy:a89abc164a6cf6c53db3
+
+block Luac stp:legacy:f4cb69e77b951fe257ca > 100 && Luac stp:legacy:4b06ce4da423a3f887e2 >= 180 && Luac stp:legacy:276b5396069ad9fe334d == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:e8502007f8a02a044be6 > 100 && Luac stp:legacy:1cbd2dc2d9cc2b51c5ec >= 180 && Luac stp:legacy:30fda5214e6b36db766f == 0
+killitem 90630
+Luac stp:legacy:e802b242744f77911dbb
+Luac stp:legacy:1edea4620819c7a7d48a
+
+block Luac stp:legacy:47e00cbcc03d85236561 > 100 && Luac stp:legacy:3a109300c9ec1d249623 >= 180 && Luac stp:legacy:b31caaeb50f585ccfb53 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:19df30ff7af8941b4573 > 100 && Luac stp:legacy:5018e27cb261119e92b9 >= 180 && Luac stp:legacy:a7e338a719f16059ad05 == 0
+killitem 90630
+Luac stp:legacy:0aff53eb3d7217664776
+Luac stp:legacy:27a9b5a3de48826bff4f
+
+block Luac stp:legacy:b0994334f1e1aad14efc > 100 && Luac stp:legacy:4dd730946ec16c51c5ad >= 180 && Luac stp:legacy:f0196b7ba10f08069d68 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:21a462183d6f0bedbab6 > 100 && Luac stp:legacy:4ba8789484a8120e72da >= 180 && Luac stp:legacy:81423d1b10694d6d7ba1 == 0
+killitem 90630
+Luac stp:legacy:1cea4ead7742ca8b0a00
+Luac stp:legacy:188eda215fdca67f7571
+
+block Luac stp:legacy:7dccaa829627c553e7b8 > 100 && Luac stp:legacy:814c90340bf8de970e36 >= 180 && Luac stp:legacy:3d7330b5b862fa334471 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:7cb2f7a25dbadb43b374 > 100 && Luac stp:legacy:504667779475fb48a827 >= 180 && Luac stp:legacy:d50ffb7cb3797f5fc5f9 == 0
+killitem 90630
+Luac stp:legacy:8f05baa7c900086cb70b
+Luac stp:legacy:179ecb0a48fdec3540a7
+
+block Luac stp:legacy:63d345b5b58b2483b41e > 100 && Luac stp:legacy:603d0e81092e8460fb4c >= 180 && Luac stp:legacy:3b88040641bf8e1601b6 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:187137168bf846c17872 > 100 && Luac stp:legacy:154339ed80b8c898d63e >= 180 && Luac stp:legacy:dce32b737c2a26af56fd == 0
+killitem 90630
+Luac stp:legacy:a6f6a208854738ecd001
+Luac stp:legacy:0a4e9f4f570ef2c58cae
+
+block Luac stp:legacy:20770777e204daa7fa13 > 100 && Luac stp:legacy:c3bb134c3c38cf4f4f1e >= 180 && Luac stp:legacy:c3573fe33843071a0898 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:e8d849b65a080251eb17 > 100 && Luac stp:legacy:c0f0fbc16edd1a6cf536 >= 180 && Luac stp:legacy:c8c4fe4488e1f9fc3891 == 0
+killitem 90630
+Luac stp:legacy:da050d2655a5c4f59f19
+Luac stp:legacy:ee9886dced30cea10219
+
+block Luac stp:legacy:f876e56537ff7cb0e393 > 100 && Luac stp:legacy:248953639e3b824eb222 >= 180 && Luac stp:legacy:dd25eec5715e4ab032cc == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:e256ea05adbbedbae36d > 100 && Luac stp:legacy:7332b9595db6f7e2409a >= 180 && Luac stp:legacy:c34b98fe31a7c54fd846 == 0
+killitem 90630
+Luac stp:legacy:8887039bc2455a9a08da
+Luac stp:legacy:8129c0b2eaf065e8fc57
+
+block Luac stp:legacy:a144248cd2dd1bf0209c > 100 && Luac stp:legacy:4620c87a51bc7b28956a >= 180 && Luac stp:legacy:ee9c32b0d427f52356dc == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:b7cc65133092caa08c6b > 100 && Luac stp:legacy:7937589a71aca1120891 >= 180 && Luac stp:legacy:7f32f4f2bc6cd11fc12a == 0
+killitem 90630
+Luac stp:legacy:d3ac9962457869a0ddb8
+Luac stp:legacy:79181c1f4d1b4f2e5db0
+
+block Luac stp:legacy:c9c397026bca6eaf9f09 > 100 && Luac stp:legacy:092812a1fd2236ef7f9b >= 180 && Luac stp:legacy:bc92354d5c1912df7476 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:d4ad82271e767ae3bd11 > 100 && Luac stp:legacy:fab6e3c9524de583fbce >= 180 && Luac stp:legacy:be44fa34c0a055f19bb1 == 0
+killitem 90630
+Luac stp:legacy:c70019f8ef2013e94cdb
+Luac stp:legacy:baf433ada1bd680c2244
+
+block Luac stp:legacy:c70ce769b1c144c347b5 > 100 && Luac stp:legacy:ec91985243519ca26387 >= 180 && Luac stp:legacy:8b5be6ae41b471b910a5 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:206b114c8d335afa03f7 > 100 && Luac stp:legacy:a38ce11923d76cbca139 >= 180 && Luac stp:legacy:fc3bbb41c5cdf8ee691e == 0
+killitem 90630
+Luac stp:legacy:481f3148bb59c48a9279
+Luac stp:legacy:04af79d4d4ea70d33309
+
+block Luac stp:legacy:7f5737001bb793e50c99 > 100 && Luac stp:legacy:4f38a752f969721be5c5 >= 180 && Luac stp:legacy:3aa770d7dc73e8e000bb == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:cd4902b9c2b8dd39cc1d > 100 && Luac stp:legacy:61290edd801f95af17ed >= 180 && Luac stp:legacy:0b0f7818edfeddfd484a == 0
+killitem 90630
+Luac stp:legacy:8dfce96b36c3be8ec54d
+Luac stp:legacy:7d2e41a8d702c74bdfe8
+
+block Luac stp:legacy:81b9f90678efe897a6c3 > 100 && Luac stp:legacy:22734f80721b935858b1 >= 180 && Luac stp:legacy:fb2116b8fd9d0b6da9c5 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:e793941f25e152fe9b72 > 100 && Luac stp:legacy:43bd27c5950ea6568f8d >= 180 && Luac stp:legacy:09a790ea74ca473ac809 == 0
+killitem 90630
+Luac stp:legacy:e6e9c118e2e5ae45afec
+Luac stp:legacy:18366e9c177cfd8f9ecc
+
+block Luac stp:legacy:583a0727f8bbe928ea9b > 100 && Luac stp:legacy:d77b80c2feaa72965b10 >= 180 && Luac stp:legacy:5622753ab99a0d4cba6d == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:c29165018e4ff60614f6 > 100 && Luac stp:legacy:afc435acd6c68093b80d >= 180 && Luac stp:legacy:a7e9a70316af288a49c7 == 0
+killitem 90630
+Luac stp:legacy:dfb9ad041e6bd0ddab4d
+Luac stp:legacy:adfa4cc37c2f05b0cf02
+
+block Luac stp:legacy:04def05d9867e762cb32 > 100 && Luac stp:legacy:983f3d11ea70dcf6f4ab >= 180 && Luac stp:legacy:a4bd1f1a03cca250b044 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:987ed8db158c809c3e3f > 100 && Luac stp:legacy:4151600d13e4c628347c >= 180 && Luac stp:legacy:d6d307caa117185db160 == 0
+killitem 90630
+Luac stp:legacy:b9d651770a7b5bcf01f6
+Luac stp:legacy:ef13cee20ff39a3303a2
+
+block Luac stp:legacy:e7e84872960d42db94fd > 100 && Luac stp:legacy:42c0f2cd180d8d3ff31f >= 180 && Luac stp:legacy:c9e2df6b32a096e3ad12 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:1d246b170708b3892714 > 100 && Luac stp:legacy:706101431565c7413c50 >= 180 && Luac stp:legacy:6b0b79d8a6e8b0994d91 == 0
+killitem 90630
+Luac stp:legacy:4bb832d335ce1d9069f4
+Luac stp:legacy:9cac22ede28ef88e639b
+
+block Luac stp:legacy:6224f5999ac823035427 > 100 && Luac stp:legacy:762066a8d84ab7b48d8f >= 180 && Luac stp:legacy:7b89364c15e722a98026 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:4f0ae5ba0c21f9e14c41 > 100 && Luac stp:legacy:839f83452949313c8b0a >= 180 && Luac stp:legacy:22f9282cf40ce8edc8ca == 0
+killitem 90630
+Luac stp:legacy:c44d2391f74f2383e9e4
+Luac stp:legacy:5f661ff7501d0adb4f81
+
+block Luac stp:legacy:ba8dc88a3c43b0d97ba1 > 100 && Luac stp:legacy:842723a531fd4a6c88d5 >= 180 && Luac stp:legacy:dc3309be927095d5b437 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:3f4bf7400af362aee544 > 100 && Luac stp:legacy:53cb69aac02d2e7d8793 >= 180 && Luac stp:legacy:b4c4797de0a6faee0647 == 0
+killitem 90630
+Luac stp:legacy:5f6d6ddec9586dfa32e3
+Luac stp:legacy:849bbda7754a72ec4c91
+
+block Luac stp:legacy:4f0aac39f640b321b7d8 > 100 && Luac stp:legacy:23b005dab3b9bee88847 >= 180 && Luac stp:legacy:d69f05090a39377de433 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:41c91b16afd1b919d517 > 100 && Luac stp:legacy:8c6ef93d8a98d6b3b3c1 >= 180 && Luac stp:legacy:8cd257b8dc3361942132 == 0
+killitem 90630
+Luac stp:legacy:a0162804addfa3ed0f7d
+Luac stp:legacy:b688ce29ae0b0bd16bbc
+
+block Luac stp:legacy:70903765beadd9cd473b > 100 && Luac stp:legacy:184fb3ab1ff64258df53 >= 180 && Luac stp:legacy:54b46bd92f9659e9e419 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:672d45da3945e989feaf > 100 && Luac stp:legacy:40b2cbb88838c184ab87 >= 180 && Luac stp:legacy:f11ec31bed1c9e288a0d == 0
+killitem 90630
+Luac stp:legacy:83eef6f082ddd1412a8b
+Luac stp:legacy:d0003548f1f91bf1623b
+
+block Luac stp:legacy:7fb4f7e004a1308a3765 > 100 && Luac stp:legacy:f9ab9daa22eff3dba267 >= 180 && Luac stp:legacy:2a9f8097e1c57fc4d136 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:943365790e3d8733a7ea > 100 && Luac stp:legacy:63812bb239760f9c0eb2 >= 180 && Luac stp:legacy:2d51ce057d02186e1294 == 0
+killitem 90630
+Luac stp:legacy:c629a5c74ae9d60ac7b2
+Luac stp:legacy:3505fb5dff4b2fdbbd11
+
+block Luac stp:legacy:f8bb745efdf747e62b53 > 100 && Luac stp:legacy:4b7675d1732f931ba423 >= 180 && Luac stp:legacy:592a24f6b167dd91e298 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:7697d5e1ba4d71e33ec9 > 100 && Luac stp:legacy:08d9608e1efca81b9a2a >= 180 && Luac stp:legacy:d7a3b1ce6e912961fef9 == 0
+killitem 90630
+Luac stp:legacy:d0c000786296d11e081c
+Luac stp:legacy:d723f0b29ca5304bc4e2
+
+block Luac stp:legacy:56e9e7dc65305f92731b > 100 && Luac stp:legacy:b41645ddacd748c0ef04 >= 180 && Luac stp:legacy:815ae19095e434a3ddd8 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:39ca3bc3588ed0ead034 > 100 && Luac stp:legacy:1b6dcb723a49cb4fcc48 >= 180 && Luac stp:legacy:2143f2460caab2dc09f9 == 0
+killitem 90630
+Luac stp:legacy:3e2cbe89f88d4dda8f38
+Luac stp:legacy:16b736d38b19b440c394
+
+block Luac stp:legacy:11243b542097afd6055c > 100 && Luac stp:legacy:9d5c79443f3f8fa6dac1 >= 180 && Luac stp:legacy:c1bce9dbae2ed63efdb7 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:3285d985faa043b24d9d > 100 && Luac stp:legacy:993e5cfc18a686b63a28 >= 180 && Luac stp:legacy:6defb5901424e5c2d790 == 0
+killitem 90630
+Luac stp:legacy:e286be9abe7b6be155c8
+Luac stp:legacy:f19d7cea9c3a9aeff894
+
+block Luac stp:legacy:c8df104a598cca72c007 > 100 && Luac stp:legacy:f04e58585a51d5600833 >= 180 && Luac stp:legacy:bed3c344832225bc7278 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:6a3bcfe2d9abdd283e8b > 100 && Luac stp:legacy:cf55d43a43521bdb7d1e >= 180 && Luac stp:legacy:0cc1304aab6931df54ec == 0
+killitem 90630
+Luac stp:legacy:f3db2522ce67406d65fe
+Luac stp:legacy:41dedce9daab3e3aa235
+
+block Luac stp:legacy:bc83a96d744669c5d7a5 > 100 && Luac stp:legacy:47863e824e167a8e5596 >= 180 && Luac stp:legacy:3d1b96044099774e95bd == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:758754976625e439806b > 100 && Luac stp:legacy:9c6eb49b81d196dd1ac9 >= 180 && Luac stp:legacy:b17d3371425c3d0e6868 == 0
+killitem 90630
+Luac stp:legacy:b5189056a34e02e1b517
+Luac stp:legacy:e35803fa672ff8dfa989
+
+block Luac stp:legacy:e195ec31636463fd8e76 > 100 && Luac stp:legacy:e19a7643e1c8082ec309 >= 180 && Luac stp:legacy:b95c2e3eb0532f65a616 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:b6074d3f0e8b735e6d88 > 100 && Luac stp:legacy:169f59f45dd541cbf43b >= 180 && Luac stp:legacy:d1e4479ff4e3d85ef2c3 == 0
+killitem 90630
+Luac stp:legacy:58b7638b0ab935a3c30c
+Luac stp:legacy:f575b9a2f74b5aefe6e5
+
+block Luac stp:legacy:5842b4d7eafaaf61eeaa > 100 && Luac stp:legacy:2e119287adff5c8cf672 >= 180 && Luac stp:legacy:466c813790d3dd2d3c86 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:52390b00f6605be67968 > 100 && Luac stp:legacy:41341ff9917b0e3cdda9 >= 180 && Luac stp:legacy:bea57ca73ef50e83b064 == 0
+killitem 90630
+Luac stp:legacy:ffbb45ff0587b5e8a55b
+Luac stp:legacy:5d9e5c529a27b359eeb8
+
+block Luac stp:legacy:0022ba68f92e4dec3f72 > 100 && Luac stp:legacy:b40a551c5eb4bffcb191 >= 180 && Luac stp:legacy:c55d7ea765ce424214da == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:bfaaea1f500055fa7096 > 100 && Luac stp:legacy:c38e635a8305d4d5a10f >= 180 && Luac stp:legacy:da84e6b2be20544b1042 == 0
+killitem 90630
+Luac stp:legacy:db5461e165e937a8320a
+Luac stp:legacy:4b7e6b4305388e6b6c46
+
+block Luac stp:legacy:6841dc31ba9bcc47f049 > 100 && Luac stp:legacy:7974461cd49a4168a2af >= 180 && Luac stp:legacy:1cda40f44591da28df1e == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:827928d86402a4ce11a1 > 100 && Luac stp:legacy:8d52426698e1d772abe4 >= 180 && Luac stp:legacy:4874d27154b02ee7ccbc == 0
+killitem 90630
+Luac stp:legacy:54e0a971e0a1fc4efc5e
+Luac stp:legacy:5aabcc5c037b6d35cbda
+
+block Luac stp:legacy:67b5ce0302451fe37812 > 100 && Luac stp:legacy:175e26860d33aab2d0b2 >= 180 && Luac stp:legacy:bfeb4b25f400cbd5961d == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:03ffacba49c2ef2dcdb4 > 100 && Luac stp:legacy:f5712210bbb319344659 >= 180 && Luac stp:legacy:1d07bb5881760ffba215 == 0
+killitem 90630
+Luac stp:legacy:c4fb9a7e31284e708565
+Luac stp:legacy:d135feb3cb668deb2c38
+
+block Luac stp:legacy:14f06304f900c878ec89 > 100 && Luac stp:legacy:2fb25805ab791c6e0b96 >= 180 && Luac stp:legacy:71c5eca7c61d24af99a8 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:836ecb1906ecc648f7cd > 100 && Luac stp:legacy:33c430bf0fc97151cdfe >= 180 && Luac stp:legacy:29385eec6b9440d06daf == 0
+killitem 90630
+Luac stp:legacy:47cc9ce747229a5a79c9
+Luac stp:legacy:b8213c3e8c505332d6f1
+
+block Luac stp:legacy:df2ea540a5d63ba8672b > 100 && Luac stp:legacy:3e375cf716a506491d38 >= 180 && Luac stp:legacy:9d19b3eac8d2054f0ab5 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:8c80ebc852e684358f6c > 100 && Luac stp:legacy:eaa3a67cd8bc8ef636fc >= 180 && Luac stp:legacy:0e2e869897e0eeb78710 == 0
+killitem 90630
+Luac stp:legacy:2186b79112668382a1a7
+Luac stp:legacy:99faf9cb1c081c34922d
+
+block Luac stp:legacy:a2a2808a7e329cccf55a > 100 && Luac stp:legacy:2d942d9815dd10c52fd8 >= 180 && Luac stp:legacy:e0c1dd77c2f5798d3b87 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:8e7ddbcbde5cca61f0fe > 100 && Luac stp:legacy:d41ce6e1a2b9b93852e9 >= 180 && Luac stp:legacy:1611a1885ab793a46977 == 0
+killitem 90630
+Luac stp:legacy:3cb1d1481ba01f40e6cf
+Luac stp:legacy:5c4a277e7423cd929a5a
+
+block Luac stp:legacy:f5e1d7df52a6a9fd71d3 > 100 && Luac stp:legacy:ad7677580347faf4cc1d >= 180 && Luac stp:legacy:abc37640c9ffa3dc88a9 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:05f31633fad16085e156 > 100 && Luac stp:legacy:ca02478b2a0ce3c2a59f >= 180 && Luac stp:legacy:b3720817c2643d6483a6 == 0
+killitem 90630
+Luac stp:legacy:4f4ffc6b5ab66afcc505
+Luac stp:legacy:29f51cf119622a477b79
+
+block Luac stp:legacy:290f03ec8323c720765e > 100 && Luac stp:legacy:30b06c640deb033a9945 >= 180 && Luac stp:legacy:51a688a2c802a30e09b5 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:aab42fb7f747d651b1fd > 100 && Luac stp:legacy:00cb8afc79cc3c20ee3d >= 180 && Luac stp:legacy:9ca219f2189a859e98e4 == 0
+killitem 90630
+Luac stp:legacy:c1cbd4650b8601ed8aae
+Luac stp:legacy:cdf6a1e149d5162754f9
+
+block Luac stp:legacy:b31d75d581c785cfab62 > 100 && Luac stp:legacy:76017b8b7855e289596d >= 180 && Luac stp:legacy:9915784f5a76dd7abbe6 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:95a0ea8dffefb759911a > 100 && Luac stp:legacy:16d7bde26b8996e28774 >= 180 && Luac stp:legacy:cd9ac35c1f608cccf74e == 0
+killitem 90630
+Luac stp:legacy:ad43c68e63219c8f4c40
+Luac stp:legacy:74c69054de524bb18012
+
+block Luac stp:legacy:571409cba0fb437a067d > 100 && Luac stp:legacy:5a7f1f4f950634c76925 >= 180 && Luac stp:legacy:9161845cb72733b7cd5e == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:17bddb9a0276d1693fb8 > 100 && Luac stp:legacy:eeb914206744b6a5f3d5 >= 180 && Luac stp:legacy:1b11d461f0b9a061aaf4 == 0
+killitem 90630
+Luac stp:legacy:ce9f3e7721ebb0c2125b
+Luac stp:legacy:e76764487495c17b705d
+
+block Luac stp:legacy:17987c32242d3e34563a > 100 && Luac stp:legacy:73501cb525792e6a4f20 >= 180 && Luac stp:legacy:5862f8a3646504652153 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:c5a94d5f0bf0e1458f3e > 100 && Luac stp:legacy:ac28e7a768ed6bbf74e5 >= 180 && Luac stp:legacy:87fca401f671cd030fc8 == 0
+killitem 90630
+Luac stp:legacy:ccb32ba0b79dc8b991fb
+Luac stp:legacy:f721fb7da59bffba1a4d
+
+block Luac stp:legacy:bef8b00bbe7ab60ff93c > 100 && Luac stp:legacy:7c0d4ee227b7ea414d3a >= 180 && Luac stp:legacy:aeae937b5f1a124c3496 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:5eeaa38529616ac83c28 > 100 && Luac stp:legacy:98201273905ea3e7ae32 >= 180 && Luac stp:legacy:b0526b9a0f4deb86def0 == 0
+killitem 90630
+Luac stp:legacy:530a7757b67f3ef013c2
+Luac stp:legacy:85bce28108c5f7cdad10
+
+block Luac stp:legacy:21c27e80481204407842 > 100 && Luac stp:legacy:ad809ce1dc6957692db0 >= 180 && Luac stp:legacy:7366176eadb19d38a70a == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:f4ade086632663cef23a > 100 && Luac stp:legacy:c1a64a04d764e53b5e96 >= 180 && Luac stp:legacy:17798fcd1cba73b9ea6e == 0
+killitem 90630
+Luac stp:legacy:10b9c091775a006b449a
+Luac stp:legacy:06f59a3d79b2a48cf691
+
+block Luac stp:legacy:942729ea5119ba7aa59a > 100 && Luac stp:legacy:929698320d9d7b53aeb6 >= 180 && Luac stp:legacy:2884e872ced8e23262e1 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:920a4af10c1ccaaa5eed > 100 && Luac stp:legacy:3c3216b5e99bbf0bb228 >= 180 && Luac stp:legacy:5adc48599d8ce0647627 == 0
+killitem 90630
+Luac stp:legacy:7d3904a994feb39d4060
+Luac stp:legacy:37aafa04a8380102682f
+
+block Luac stp:legacy:ec541d0bd90ebdeda20f > 100 && Luac stp:legacy:c2664586594d7f30c234 >= 180 && Luac stp:legacy:abf619c5844416dcc578 == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:0c301d816d5e030b61cb > 100 && Luac stp:legacy:977db6b2b30e1e392977 >= 180 && Luac stp:legacy:67aa4ed7811afc03373f == 0
+killitem 90630
+Luac stp:legacy:f196b0049428175ef0a9
+Luac stp:legacy:2f20c7b1d2501615c918
+
+block Luac stp:legacy:f40808ff6242a4a27d19 > 100 && Luac stp:legacy:9931be172830a8c3cd81 >= 180 && Luac stp:legacy:c99a378a023a4ef4c6ab == 0
+window"@c\n\n\n确定强化该宠物吗?该阶段只能强化一次",yes,no
+window_yes Luac stp:legacy:e1eefd54beebd56619e7 > 100 && Luac stp:legacy:6ef2ca11be67499bb973 >= 180 && Luac stp:legacy:aa72a4332e6d557f4bd4 == 0
+killitem 90630
+Luac stp:legacy:cf1488852ef0353cdc4b
+Luac stp:legacy:4446f9dbed2aa6380283

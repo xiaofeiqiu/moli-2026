@@ -1,0 +1,11 @@
+block item 88389 == 1
+window "\n\n就是这里了，月魔宫就隐藏在火山主山口中心处，你也明白为什么需要这绳索啦。",next
+window "\n\n不过每次只能过去一人，你现在要用这绳索滑过去吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88389
+Warp 0,14326,74,93
+
+block
+endwindow "\n\n我是在这看风景的，哈哈！"

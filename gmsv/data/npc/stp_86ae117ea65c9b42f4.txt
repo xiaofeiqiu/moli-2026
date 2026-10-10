@@ -1,0 +1,6 @@
+block
+window "\n\n你要使用通行证进入诡异的房间吗？",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,28290,8,6

@@ -1,0 +1,7 @@
+block item 54011 >=1 ||54012 >=1||54008>=1||54013>=1||54009>=1
+	endwindow "\n\n\n\n@c 。。。。。。。"
+block item 54014 >=1
+killitem 54014
+Encount 3|||0,0,0,0|||||0|54016|
+block
+	endwindow "\n\n\n\n@c 。。。。。。。"

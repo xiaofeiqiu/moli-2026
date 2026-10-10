@@ -1,0 +1,13 @@
+block
+	Window "\n\n欢迎来挑战我,现在的问题是 1+1=1",yes,no
+	window_YES 
+	Window "\n\n不错,看来你上过大学,这么难的问题你都会,难道是传说中的博士后?",next
+	Window "\n\n妈的你骗我,装什么大瓣蒜!看我不弄死你...",ok
+	Window_OK 
+Encount 2|0,107,5,6||0|||||0|360113|||||||||
+
+	window_NO
+
+	Window "\n\n诚实的孩子啊,我喜欢你哦...",ok
+	leaveGroup
+	Warp 0,1000,242,88

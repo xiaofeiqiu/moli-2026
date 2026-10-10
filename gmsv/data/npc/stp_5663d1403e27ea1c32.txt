@@ -1,0 +1,7 @@
+block item 88358 == 1
+window "\n\n你要用钥匙打开通往地下室的门吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88358
+Warp 0,14296,2,11

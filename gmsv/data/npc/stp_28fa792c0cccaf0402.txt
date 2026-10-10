@@ -1,0 +1,43 @@
+block
+	LocalCount0 = random 8,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:6b64227d2f8ac1aaa140
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【暗黑龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:6e3be56e6f6b80459737
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【黄金龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:cd22b4267a7bffb7442a
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【毒龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:294d4699187f9e215782
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【风龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:d6e5cb25b15a4663a96b
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【火龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:b2be113de4ba1c83a8a6
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【冰龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:7fe34033bbe8cba3ddfd
+				endif
+	if localcount0==8
+		window "\n\n@c要将随从的形象永久变为【地龙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:d1d1557d74321dec3d5a
+				endif
+

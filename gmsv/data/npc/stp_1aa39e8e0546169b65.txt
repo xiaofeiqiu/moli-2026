@@ -1,0 +1,10 @@
+block	item 57751>=1	&&	item 57752>=1	&&	item 57753>=1	&&	item 57755>=1
+window"\n\n不知死活人啊,你可知道这个世界上.龙才是最强大的存在!\n\n作为我们守龙一族,更是神圣不可侵犯的!",ok
+window_ok
+killitem 57751,1
+killitem 57752,1
+killitem 57753,1
+killitem 57755,1
+Warp 0,172,4,24
+block
+Endwindow"\n\n不知死活人啊,你可知道这个世界上.龙才是最强大的存在!\n\n作为我们守龙一族,更是神圣不可侵犯的.!"

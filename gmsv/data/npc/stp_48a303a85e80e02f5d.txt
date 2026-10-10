@@ -1,0 +1,17 @@
+block HaveLeak1Item 70030 >= 1
+window 910092,next
+window 910093,next
+window 910094,next
+window 910095,next
+window 910096,next
+window 910097,next
+window 910098,ok
+window_ok
+leavegroup
+killitem 70030
+giveitem 70042
+Warp 0,25013,24,73
+
+block
+leavegroup
+Warp 0,25013,24,73

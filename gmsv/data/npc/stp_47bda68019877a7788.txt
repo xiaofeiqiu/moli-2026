@@ -1,0 +1,14 @@
+block EndEvent 514 == 1 || EndEvent 513 == 1
+EndWindow "\n\n(这条水龙蜥好像在找食物的样子...)"
+
+block item 15210 >= 1
+Window "\n\n(它好像对你身上的星鳗饭团很感兴趣,要喂它一份吗?)",yes,no
+Window_yes item 15210 >= 1
+Window "\n\n(它好像对你身上的星鳗饭团很感兴趣,要喂它一份吗?)",ok
+Window_ok item 15210 >= 1
+killitem 15210,1
+leavegroup
+Warp 0,57176,121,24
+
+block
+EndWindow "\n\n(这条水龙蜥好像在找食物的样子...)"

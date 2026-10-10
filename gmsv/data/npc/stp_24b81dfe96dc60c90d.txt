@@ -1,0 +1,8 @@
+block item 87696 == 1
+Warp 0,4000,31,40
+
+block
+window "\n\n救世主这个世界就靠你了，这是我守护之物交于你。",ok
+window_ok
+giveitem 87696
+Warp 0,4000,31,40

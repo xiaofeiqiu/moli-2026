@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【山飞甲】吗？",ok
+			Window_ok
+Luac stp:legacy:757b1f8e151896093e1a
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【独角兽】吗？",ok
+			Window_ok
+Luac stp:legacy:b90dd22817dbad1a9293
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【天马】吗？",ok
+			Window_ok
+Luac stp:legacy:2792acc55806095c1551
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【麒麟】吗？",ok
+			Window_ok
+Luac stp:legacy:5fa148628d0b117074b1
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【幼生独角兽】吗？",ok
+			Window_ok
+Luac stp:legacy:e02391b9c4253e81c347
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【幼生火焰独角兽】吗？",ok
+			Window_ok
+Luac stp:legacy:dea48bc21dcc72c0d577
+				endif
+

@@ -1,0 +1,10 @@
+block item 144 >= 1
+endwindow "\n\n我也想要收到信..."
+
+	
+block item 119 == 1
+window "\n\n我也想要收到信...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 144,1

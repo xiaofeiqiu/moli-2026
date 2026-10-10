@@ -1,0 +1,16 @@
+block
+window "\n\n耶!多谢多谢!",next
+window "\n\n『把事情的原委告诉了他...』",next
+window "\n\n我牺牲了?原来是这样啊!不错,像我的作风!替我安慰她,叫她不要伤心难过,一定会有更优秀的人照顾她的...我会永远留在这里.请帮我把这张照片带回现实世界吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 730063
+leavegroup
+Warp 0,1542,16,14
+
+
+
+
+
+

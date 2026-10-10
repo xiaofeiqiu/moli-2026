@@ -1,0 +1,22 @@
+block	level >= 20
+	window "看你玩得也累了。。",next
+	window "你想寻宝吗？",yes,no
+	window_yes "快去找藏宝图的碎片吧！你找完以后我可以帮你合成，不过我要收取服务费哦！",ok
+
+block	level >= 20 && item 600001 == 1 && item 600002 == 1  && item 600003 == 1 && item 600004 == 1 && gold >= 200000
+	window "\n\n  你集齐藏宝图的碎片了哦，\n  要我帮你合成吗？\n  不过我要收取服务费２０?哦！",yes,no
+	window_yes "\n\n  合成好了，给你藏宝图和铲子。\n  祝你好运，\n  谢谢你的２０?",ok
+	killitem 600001,1
+	killitem 600002,1
+	killitem 600003,1
+	killitem 600004,1
+	GiveItem 600005,1
+	giveitem 600008,1
+
+	addgold -200000
+
+block	level >= 20 && item 600001 == 1 && item 600002 == 1  && item 600003 == 1 && item 600004 == 1 && gold <= 200000
+	window "\n\n  你集齐藏宝图的碎片啦？\n  要我帮你合成吗？\n  不过我要收取服务费２０?。。\n  咦。。你。。。的钱好像不够哦？",ok
+
+block	level <= 20
+	window "\n\n  我有一件好康的事想要告诉你哦\n  。。看你样子还是菜菜的，我看还是算了。。",ok

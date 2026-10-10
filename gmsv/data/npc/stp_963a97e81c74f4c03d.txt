@@ -1,0 +1,36 @@
+block item 800053 == 1
+	Window"\n\n什么！！！你是怎么闯进来的！！！那我只能亲自干掉你！！！",ok
+		Window_ok item 800053 == 1 && Group == 1
+		Setaction 5
+Encount 3|0,18048,12,10|800053|||||||800027|||||||||
+
+block item 800046 == 1 && item 800043 == 1
+	Window"\n\n啊哈哈哈哈，我要把他的脑袋吊在旗杆上！！！",next
+	Window"\n\n这是我抢来的财宝中的一把剑，收下吧。",ok
+		Window_ok item 800046 == 1 && item 800043 == 1
+		killitem 800043
+		killitem 800041	
+		killitem 800046
+		giveitem 800047
+
+block item 800044 == 1
+	Window"\n\n干的漂亮，最后请你去干掉他们的族长，我们就能顺利的占领他们的村子啦。",ok
+		Window_ok item 800044 == 1
+		killitem 800044
+		giveitem 800045
+
+block item 800042 >= 10 && item 800043 == 0
+	Window"\n\n干的不错，看来你很强啊。",next
+	Window"\n\n接下来你要去干掉他们的自警团团长，杀掉那女人消弱他们的中间力量。",ok
+		Window_ok item 800042 >= 10
+		killitem 800042,10
+		giveitem 800043
+
+block item 800040 == 1
+	Window"\n\n想加入我们海盗团？",yes,no
+	Window_no
+	Window_yes
+	Window"\n\n我们正在和原住民干架中，你去干掉他们的卫兵，抢点他们的武器来给我。",ok
+		Window_ok item 800040 == 1
+		killitem 800040
+		giveitem 800041

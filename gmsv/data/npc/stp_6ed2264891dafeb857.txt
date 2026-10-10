@@ -1,0 +1,8 @@
+block item 87588 == 1
+endwindow "\n\n桌子上没有什么值得拿的东西了。"
+
+block
+window "\n\n桌子上有把钥匙要收起来吗？",yes,no
+window_no
+window_yes
+giveitem 87588

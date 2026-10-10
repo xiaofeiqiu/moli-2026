@@ -1,0 +1,16 @@
+block gold < 20000
+	endWindow "\n\n\n@c邀请雇佣兵需要20000金币，您的金钱似乎不够。"
+block petspace <= 1
+	endWindow "\n\n\n@c您的冒险队伍似乎满了，请清理下随从栏。"
+block itemspace <= 1
+	endwindow "\n\n\n@c把背包清理下再来找我吧。"
+block
+	window"\n\n\n@c挑战极限就是阿纳托利生命的意义，您的冒险队伍需要佣兵吗？",next
+	window"\n\n\n@c佣金是20000金币，要雇佣我的话请点【是】",yes,no
+	window_yes
+		addgold -20000
+		GivePet 400772
+		giveitem 60293
+		window "\n\n\n@c请使用佣兵就职证明设定佣兵的职业。",ok
+		window_ok
+	window_no

@@ -1,0 +1,22 @@
+block Item 22739 >= 1 && Item 22740 >= 1
+endwindow "\n\n已经没东西了!"
+
+
+block Item 22740 >= 1
+endwindow "\n\n已经没东西了!"
+
+
+block Item 22739 >= 1
+endwindow "\n\n已经没东西了!"
+
+
+block item 22738 >= 1
+window "\n\n地上发现一张纸条和一个戒指是否要拿起来?",yes,no
+window_no
+window_yes itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_yes item 22738 >= 1
+GiveItem 22739
+GiveItem 22740
+leavegroup
+Warp 0,23055,11,5

@@ -1,0 +1,10 @@
+block globalFlag 338 == 1 && globalFlag 340 == 0
+window 7020363,yes,no
+window_yes
+window 7020364,ok
+window_ok
+Encount 3|0,23317,11,7||0|||||0|6000270|
+window_no
+
+block
+endwindow 7020365

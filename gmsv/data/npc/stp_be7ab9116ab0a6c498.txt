@@ -1,0 +1,6 @@
+block haveleak1item == 86466 && item 86448 >= 1
+window 85679,ok
+window_ok
+leavegroup
+killitem 86466
+giveitem (86467%50,86468%50)

@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【杀人蜂】吗？",ok
+			Window_ok
+Luac stp:legacy:90c6c784ca9f221e3f1d
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【异型蜂】吗？",ok
+			Window_ok
+Luac stp:legacy:6345bb59f9d7fc996352
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【虎头蜂】吗？",ok
+			Window_ok
+Luac stp:legacy:02aa8e4e021adad57f98
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【黄蜂】吗？",ok
+			Window_ok
+Luac stp:legacy:c60f1bb38c9aa8b4cfa0
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【死亡蜂】吗？",ok
+			Window_ok
+Luac stp:legacy:2ed99b9639ff69939d30
+				endif
+

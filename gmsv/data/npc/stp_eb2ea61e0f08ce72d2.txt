@@ -1,0 +1,35 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 60411 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60411,1
+block item 60412 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60412,1
+block item 60413 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60413,1
+block item 60414 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60414,1
+block item 60415 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60415,1
+block item 60411 >= 1 && item 60412 >= 1 && item 60413 >= 1 && item 60414 >= 1 && item 60415 >= 1
+	window"\n\n最后再送你点小礼物吧……",ok
+		window_ok
+Encount 2|0,100,404,271||||||||6000061|||||||||
+block item 60421 >= 1 && item 60422 >= 1
+	window"\n\n这不可能，为什么会这么强大……不过已经晚了，看看你们手中的灵核吧，希望破灭，绝望孵化的瞬间就会充斥整个世界……",ok
+		window_ok
+			giveitem 60413,1
+			giveitem 60414,1
+block
+	window "\n\n想要实现愿望吗？",ok
+		window_ok
+			EndWindow "\n\n	那就和我签订契约成为魔法少女吧。"

@@ -1,0 +1,27 @@
+block item 200755 >= 1
+endwindow "\n\n我代表女骑士团感谢你的相助,谢谢."
+
+
+
+block item 200754 >= 1
+window "\n\n天作孽,犹可达,人作孽,不可活,罪犯已经尝到应有的报应,这件事总算是可以告一段落了.",ok
+window_ok
+killitem 200754
+giveitem 200755
+
+
+
+block item 200753 >= 1
+endwindow "\n\n这是逮捕令,有了这你就能逮捕那个非法研究员了."
+
+
+block item 200752 >= 1
+window "\n\n根据苏米的情报显示,现在已经到了抓捕的时候,辛亏在法兰境内,不然手续比较麻烦了.",next
+window "\n\n奈尔鲁会在奇力村的东门外等你,请尽快赶到,拜托了.",ok
+window_ok
+killitem 200752
+giveitem 200753
+
+
+block
+endwindow "\n\n女骑士团正在世界各地进行资料搜集,你先到阿凯鲁法村找「卡娜特」询问一下她那边的任务进展."

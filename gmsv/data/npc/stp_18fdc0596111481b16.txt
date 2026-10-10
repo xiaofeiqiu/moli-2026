@@ -1,0 +1,18 @@
+block Luac stp:legacy:42f90a77de7dbcebf97e == 1 && Luac stp:legacy:42f90a77de7dbcebf97e == 1 && Luac stp:legacy:42f90a77de7dbcebf97e == 1 && Luac stp:legacy:42f90a77de7dbcebf97e == 1 && Luac stp:legacy:42f90a77de7dbcebf97e == 1 && item 1000202 >= 1
+window "\n\n确定要交出所有风精合成巴拉斯吗?",yes,no
+window_no
+window_yes Luac stp:legacy:10a76d2cb39597f4664b == 1 || Luac stp:legacy:ab2985ff6b3911b44489 == 1 || Luac stp:legacy:8cc1d0e1bba26fbe9b35 == 1 || petspace >= 1
+endwindow "\n\n携带5个风精才能合成!"
+window_yes Luac stp:legacy:e33df777babafe290a81 == 1 && Luac stp:legacy:e33df777babafe290a81 == 1 && Luac stp:legacy:e33df777babafe290a81 == 1 && Luac stp:legacy:e33df777babafe290a81 == 1 && Luac stp:legacy:e33df777babafe290a81 == 1 && item 1000202 >= 1
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killitem 1000202,1
+givepet 330071
+endwindow "\n\n恭喜你合成了巴拉斯!"
+
+
+block
+endwindow "\n\n似乎缺少了某些宠物,无法使用!"

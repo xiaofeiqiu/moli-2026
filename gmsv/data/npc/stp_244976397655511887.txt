@@ -1,0 +1,40 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 1000322 == 0 && item 1000323 == 0 && item 1000324 == 0 && item 1000325 == 0 && item 1000326 == 0 && item 60407 == 0 && item 60408 == 0 && item 60409 == 0 && item 60410 == 0 && item 60411 == 0 && item 60412 == 0 && item 60413 == 0 && item 60414 == 0 && item 60415 == 0 && item 60416 == 0 && item 60417 == 0 && item 60418 == 0 && item 60419 == 0 && item 60420 == 0 && item 60421 == 0 && item 60422 == 0 && item 60423 == 0 && item 60424 == 0 && item 60425 == 0 && item 60426 == 0
+	window"\n\n请救救我……有人在追杀我……",next
+	window"\n\n虽然不清楚事情的来龙去脉，我们还是会帮助你的。",next
+	window"\n\n谢谢……请带上这个戒指去伊尔村，寻找一些线索……",ok
+		window_ok
+			giveitem 1000326,1
+block item 1000325 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 1000325,1
+block item 60410 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60410,1
+block item 60413 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60413,1
+block item 60414 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60414,1
+block item 60410 >= 1 && item 60413 >= 1
+	window"\n\n谢谢你们冒险者，不过事情似乎还没有完结……能再去趟圣拉鲁卡村看看吗？",ok
+		window_ok
+			killitem 60413,1
+			giveitem 60407,1
+block item 1000325 >= 1 && item 60414 >= 1
+	window"\n\n感觉好多了……这个是……谢谢你们，又帮我收回了一些遗失的物品。",next
+	window"\n\n这样的物品应该还有两个，再去亚留特村看看吧，对了，请把这个也带上。",ok
+		window_ok
+			killitem 1000325,1
+			killitem 60414,1
+			giveitem 60408,1
+block
+	window "\n\n…………",ok
+		window_ok
+			EndWindow "\n\n	我要死了吗……"

@@ -1,0 +1,49 @@
+block item 661019 ==1 && ItemCreateTime_652100 < 1800
+	window "\n\n　太谢谢你了~这把铲子好用吧。怎么样？2000魔币卖给你要吗？",yes,no
+	window_yes gold < 2000 && item 661019 ==1 && ItemCreateTime_652100 < 1800
+		killitem 661019,1
+		killitem 652100,1	
+		endwindow "\n\n　太可惜了，您的现金不足。",ok
+	window_yes item 661019 ==1 && ItemCreateTime_652100 < 1800
+		addgold -2000
+		killitem 661019,1
+		killitem 652100,1
+		giveitem 18770,1
+		endwindow "\n\n　谢谢你了，不是跟你吹，我这把铲子可是传家宝啊。",ok
+	window_no
+		killitem 661019,1
+		killitem 652100,1
+		endwindow "\n\n　太可惜了，这么好的东西你都看不上，说你小白你别不爱听。",ok
+
+block item 661019 ==1 && ItemCreateTime_652100 >= 1800
+	killitem 661019,1
+	killitem 652100,1
+	endwindow "\n\n　噢，天啊，@n，你真丢人。看来不应该把这么重要的事情交给你。",ok
+
+block item 661018 ==1
+	killitem 661018,1
+	killitem 652100,1
+	endwindow "\n\n　噢，天啊，@n，你真丢人。看来不应该把这么重要的事情交给你。",ok
+
+block item 18770 >=1
+	endwindow "\n\n　铲子的用处不小呢，好好利用吧。",ok
+
+block item 652100 ==1
+	endwindow "\n\n　拜托你了~ ^o^/~",ok
+
+block item 18770 ==0 && item 652100 ==0
+	window "\n\n　急死我了~好心人你愿意听听我的请求吗？",yes,no
+window_no
+	endwindow "\n\n　你太无情了，走路的时候注意脚下啊！不要让蚂蚁绊倒~！",ok
+window_yes
+	window "\n\n　太好了，法兰王国国王的宝石：杰姆被盗了，偷宝石的人在作案现场留下了一张纸条，写着：我把宝石埋在了法兰城中，如果在30分钟内找不到的话宝石就会被销毁掉。现在国王把这件事交给了我。你要不要帮帮忙呢？",yes,no
+	window_yes ItemSpace == 0
+		endwindow "\n\n　你身上的东西太多了！",ok	
+	window_yes
+		window "\n\n　这样，分给你一把铲子，帮忙在法兰城中找到有什么可以的地方可以埋宝石。",ok
+		window_ok item 18770 ==0 && item 652100 ==0
+			giveitem 652100,1
+		window_ok item 18770 >=1
+			endwindow "\n\n　小子！你想干什么？\n\n　你不是已经有铲子了吗？\n\n　别想蒙混过关！",ok
+	window_no
+		endwindow "\n\n　我费了这么多口水你都不同情一下，好歹也要请我喝杯果汁。我记住你了！@n！去吧去吧，看见你就烦。",ok

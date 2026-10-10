@@ -1,0 +1,27 @@
+block item 730103 >= 1
+endwindow "\n\n去探险团营地吧.接下来只要你和探险团的人合作找到诅咒的源头,再使用这个道具把它净化应当就可以了."
+
+
+block item 730101 >= 1
+window "\n\n完成了.我已经将解除诅咒的道具制作完毕了,请带好这个去探险团营地吧.接下来只要你和探险团的人合作找到诅咒的源头,再使用这个道具把它净化应当就可以了.",next
+window "\n\n那么,祝你万事顺利.",ok
+window_ok item 730101 >= 1
+killitem 730101
+giveitem 730103
+
+
+block item 730100 >= 1
+window "\n\n一路辛苦了.你真的得到了独角兽的帮助了么?有机会和我们讲讲你冒险的故事哦.",next
+window "\n\n好了,制作缓解诅咒的物品需要一段时间,请耐心等待一下吧.在此期间,去玩玩小游戏散散心吧.",next
+window "\n\n还有,如果你还想去幻境森林的话,只要带着这个宝石就可以让境界师帮你制作通路了.",ok
+window_ok itemspace < 3
+endwindow "\n\n你的背包满啦,请留出3个位置."
+window_ok item 730100 >= 1
+killitem 730100
+giveitem 730101
+giveitem 730102
+giveitem 730093,2
+
+
+block
+endwindow "\n\n调和调制~啊哈哈哈."

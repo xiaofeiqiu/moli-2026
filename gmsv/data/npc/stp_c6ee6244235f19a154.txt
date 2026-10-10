@@ -1,0 +1,16 @@
+
+
+
+block item 715311 > 0
+endwindow "\n\n没有反应..."
+
+block item 715309 == 0
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+
+block  Xpos == 434 && Ypos == 685
+killitem 715310,1
+GiveLeak1Item 715311,1
+
+
+block
+endwindow "\n\n不是定点无法挖掘."

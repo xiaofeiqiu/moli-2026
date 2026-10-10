@@ -1,0 +1,14 @@
+block item 1001009 >= 1
+window"\n\n\n  非常抱歉 您身上的物品“翡翠耳饰”属于BUG物品，请您在12月18日内更换无BUG的“翡翠耳饰”否则 您将会获得一定的处罚",OK
+window_OK
+killitem 1001009,1
+giveitem 1001109,1
+
+block item 890001 >= 1
+window"\n\n\n  非常抱歉 您身上的物品“不枯萎的树枝”属于BUG物品，请您在12月18日内更换无BUG的“不枯萎的树枝”否则 您将会获得一定的处罚",OK
+window_OK
+killitem 890001,1
+giveitem 8900012,1
+
+block
+endwindow"\n\n\n 请问有什么事嘛喵!!"

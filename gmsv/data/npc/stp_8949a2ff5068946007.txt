@@ -1,0 +1,9 @@
+block
+window "\n\n这是我的...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200008
+leavegroup
+Warp 0,25202,24,474
+

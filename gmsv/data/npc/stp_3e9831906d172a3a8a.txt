@@ -1,0 +1,17 @@
+block item 87534 == 1
+window "\n\n你又想去那座小岛啊？",yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,29705,90,15
+
+block item 87529 == 1
+window "\n\n老家伙又给我找事做，要不是看在救过我的份上...，这是你要去的目的地？正好我们的船会经过那一带。大海不像陆地止吐药对你是必需品。",ok
+window_ok
+LeaveGroup
+killitem 87529
+giveitem 87530
+Warp 0,29703,40,25
+
+block
+endwindow "\n\n想用我们船进行走私~~没门！"

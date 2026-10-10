@@ -1,0 +1,12 @@
+block item 86448 < 1
+window 85685,yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86448
+endwindow 85686
+window_yes ItemSpace < 1
+endwindow 85687
+
+block
+endwindow 85681

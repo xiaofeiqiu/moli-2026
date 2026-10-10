@@ -1,0 +1,12 @@
+block PetSpace == 0
+	EndWindow "\n\n\n@c宠物栏已经满了",ok
+
+block Item 700099 == 1
+	Window "\n\n\n@c想要敲开外壳让小东西孵化出来吗？",YES,NO
+	Window_YES PetSpace != 0 && item 700099 == 1
+	KillItem 700099,1,(21473)
+	GivePet 678852
+	Window_YES PetSpace == 0
+	EndWindow "\n\n\n@C宠物栏已经满了",ok
+
+	Window_NO

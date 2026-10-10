@@ -1,0 +1,20 @@
+block item 86633 == 1 && item 86635 < 1
+window "\n\n哦? 果然拿来了阿, 不错. 不过你能看穿到最后的真实嘛? 我很期待哦。",ok
+window_ok
+leavegroup
+giveitem 86635
+endwindow "\n\n想看到真实的话就去看看我身后的石碑吧。"
+
+
+block item 86629 == 1 && item 86632 < 1
+window "\n\n嘿嘿嘿,想知道这里的人都去哪里了?可以阿,但是你要把象征你身份的武器交给我。",yes,no
+window_no
+endwindow "\n\n嘿嘿嘿,果然你是个聪明人,不要打扰我了。"
+window_yes
+leavegroup
+killitem 86629
+giveitem 86632
+endwindow "\n\n好吧,这个给你,回去问问你的老大吧。"
+
+block
+endwindow "\n\n.............."

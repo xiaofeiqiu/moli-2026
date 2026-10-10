@@ -1,0 +1,6 @@
+block	item 591256>=1&&item 591257>=1&&item 591255>=1
+window"\n\n@c 准备好了吗? 那么就开始吧!!",ok
+window_ok
+Encount 3|0,34114,11,18|||||0|||530047|||||||||
+block
+Endwindow"\n\n@c 勇者之路 充满了各种试练!"

@@ -1,0 +1,11 @@
+block item 1000083 >= 1
+window "\n\n你要拿10根羽毛换一双鞋子吗?",yes,no
+window_yes item 1000083 >=10
+killitem 1000083,10
+GiveItem (1000081%1,1000082%1)
+window_no
+window_yes
+endwindow "\n\n对不起,你的羽毛数量不足."
+
+block
+endwindow "\n\n我这里也没啥可以分配的物资啊,你想做啥?"

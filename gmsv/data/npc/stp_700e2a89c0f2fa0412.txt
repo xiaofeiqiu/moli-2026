@@ -1,0 +1,13 @@
+block ShipCharTake 10,6 == 1
+Window 15674,YES,NO
+Window_YES ShipCharTake 10,6 == 1
+LeaveGroup
+ShipCharTake 10,6
+Endblock
+Window_YES
+EndWindow 15675,OK
+Window_NO
+Endblock
+
+block
+EndWindow 70826,OK

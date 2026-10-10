@@ -1,0 +1,15 @@
+block	EndEvent 631==1
+Endwindow"\n\n\n我想德里特应该得到应有的教训了..."
+block	EndEvent 648==0
+Endwindow"\n\n\n你看上去弱弱的样子！真不知道你怎么来到这里的."
+block	item 191710>=1||item 191711>=1
+Endwindow"\n\n@c咿？你怎么回来了???"
+block	itemspace<1
+Endwindow"\n\n\n@c 你的物品满了！"
+block	item 191700>=1
+Endwindow"\n\n这个是通行证，请拿好哦！"
+block
+window"\n\n是啊，听说大陆的南方最近又打起来了，真是很想去看看呢！可惜还不知道发生了什么。(@n,)，你能帮我们去看看发生了什么吗？",next
+window"\n\n这个是通行证，请拿好哦！",ok
+window_ok
+Giveitem 191700,1

@@ -1,0 +1,5 @@
+block
+window "\n\n终于有人类可以踏入神圣的亚特兰蒂斯了,去吧～大海召唤了你,大海也会考验你.",yes,no
+window_yes
+leavegroup
+Warp 0,60011,316,323

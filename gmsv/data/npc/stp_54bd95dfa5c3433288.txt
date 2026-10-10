@@ -1,0 +1,16 @@
+
+block itemspace == 0
+endwindow "\n\n\n@c请整理下你的物品栏."
+
+block item 15680 == 0 && itemspace >= 1
+window "\n\n\n@c你,你是人类么............ ",yes,no
+window_no
+endwindow "\n\n\n@c你是它们的傀儡,失去灵魂的东西,走开."
+window_yes
+window "\n\n\n@c真...真的嘛,孩子,你怎么会到这个鬼地方,我已经被困在这里数十年了.如今我的身体恐怕支撑不了多久了,这里有块手牌,就送给你吧,你是我临走前唯一见过的人,如果有机会,请把它交还给我妻子.",yes,no
+window_no
+endwindow "\n\n\n@c那么不好意思,希望在我倒下前可以在一次见到人类.."
+window_yes
+giveitem 15680
+endwindow "\n\n\n@c那么麻烦你了,我想我已经不行了............"
+

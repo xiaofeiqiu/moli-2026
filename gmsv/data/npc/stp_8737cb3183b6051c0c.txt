@@ -1,0 +1,14 @@
+block item 800100 >= 1 && item 800101 >= 1 && item 800102 >= 1 && item 800103 >= 1 && petlevel 100083 == 1 && petlevel 100084 == 1 && petlevel 100085 == 1 && petlevel 100086 == 1 && itemspace >= 1
+window "\n\n你确定兑换改造里雍的蛋吗?",yes,no
+window_yes
+killitem 800100,1
+killitem 800101,1
+killitem 800102,1
+killitem 800103,1
+killitem 800104,1
+killpetl 100083
+killpetl 100084
+killpetl 100085
+killpetl 100086
+giveitem 800112,1
+window_no

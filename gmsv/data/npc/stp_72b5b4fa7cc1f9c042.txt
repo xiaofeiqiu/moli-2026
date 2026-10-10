@@ -1,0 +1,11 @@
+block item 87583 == 1
+endwindow "\n\n你还有什么问题吗？"
+
+block StrCmpChat == 278698
+window "\n\n圣鸟阿鲁卡那斯？原来你也要找，不过我已经知道它在哪了，不过不能让你不劳而获，你就跟着我写的笔录慢慢找寻答案吧。",ok
+window_ok
+giveitem 87583
+Warp 0,29705,90,15
+
+block
+endwindow "\n\n我的梦想即将实现！"

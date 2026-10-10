@@ -1,0 +1,8 @@
+block
+endwindow "\n\n　远方来的客人啊，你似乎并不属于这个世界，好自为之吧。"
+#,yes,no
+#window_no
+#window_yes
+#EndEvent 0 = 1
+#SetLoginPoint 0
+#endwindow "\n\n　只要登出即可回到法兰城"

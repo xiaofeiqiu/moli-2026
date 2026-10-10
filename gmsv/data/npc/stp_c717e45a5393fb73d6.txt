@@ -1,0 +1,45 @@
+block item 39685 == 1
+Endwindow "\n\n把这些情况写一份回执给你,你带回去给顾问大人吧."
+
+block item 39684 == 1
+Window "\n\n我很忙的,你有什么事吗?",next
+Window "\n\n安全顾问大人的亲笔标注,我看看啊...",next
+Window "\n\n............",next
+Window "\n\n妖草的血!我懂了,这就是上次法兰城发生的命案里犯人使用过的毒药啊,想不到有人又要使用这种东西..",next
+Window "\n\n妖草的血的毒性很强,中毒者几乎无药可解,但是与之非常相似的蔓陀罗的血却没有毒性,即使是直接喝下去,也不过是拉几次肚子而已.",next
+Window "\n\n逆香花很稀有,我也不知道它生长在哪里.这一种特殊的植物,它的萃取液可以清除掉许多液体的味道.",next
+Window "\n\n我把这些情况写一份回执给你,你带回去给顾问大人吧.",ok
+Window_ok item 39684 == 1
+killitem 39684
+giveitem 39685
+
+block NowEvent 16 == 1
+EndWindow 14969,OK
+
+block EndEvent 16 == 1
+EndWindow 14970,OK
+
+block NowEvent 557 == 1 && StrCmpChat == 14971
+EndWindow 14972,OK
+
+block NowEvent 557 == 1 && StrCmpChat == 14912
+EndWindow 14973,OK
+
+block NowEvent 557 == 1 && StrCmpChat == 14910
+EndWindow 14974,OK
+
+block NowEvent 557 == 1
+EndWindow 14975,OK
+
+block EndEvent 8 == 1 && Item 18553 == 1
+KillItem 18553
+NowEvent 557 = 1
+EndWindow 14976,OK
+
+block EndEvent 8 == 1
+EndWindow 14977,OK
+
+block
+EndWindow 14978,OK
+
+

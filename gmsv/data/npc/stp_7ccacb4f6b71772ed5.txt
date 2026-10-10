@@ -1,0 +1,12 @@
+block item 60501 >= 1
+window "\n\n刚才突然想起有样东西要交付于你,就将那个孩子安顿在一个安全的地方休息,然后独自追来了.",next
+window "\n\n不过这条路应该是错误的,我现在送你回去,寻找真正的道路吧.这件东西拥有看透被隐藏的真实的能力,也许对你会有帮助.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 60501 >= 1
+giveitem 60510
+leavegroup
+Warp 0,57093,20,22
+
+
+

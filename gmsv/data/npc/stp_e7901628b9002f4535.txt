@@ -1,0 +1,10 @@
+block item 87932 == 1
+endwindow 933516
+
+block item 87931 == 1
+window 933517,ok
+window_ok
+Encount 2|0,27367,7,4||0|||||0|88040|||||||||
+
+block
+endwindow 933518

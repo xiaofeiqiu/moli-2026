@@ -1,0 +1,25 @@
+block HaveLeak1Item == 70030
+window 910221,next
+window 910222,next
+window 910223,next
+window 910224,next
+window 910225,next
+window 910226,next
+window 910227,next
+window 910228,next
+window 910229,next
+window 910230,next
+window 910231,next
+window 910232,next
+window 910233,next
+window 910234,next
+window 910235,ok
+window_ok
+leavegroup
+killitem 70030
+giveitem (70040%50,70041%50)
+Warp 0,25013,24,73
+
+block
+leavegroup
+Warp 0,25013,24,73

@@ -1,0 +1,19 @@
+##战后使者##
+block EndEvent 679 == 0
+	Window "\n\n确实，你拥有这个世界的顶峰的力量!",NEXT
+	Window "\n\n可是只能抵挡我2成功力的你还不够资格进那个世界，来吧，拿着我的印记，你可以再此晋级！晋级完再回来找我",OK
+	Window_OK
+	EndEvent 679 = 1
+	CheckTitle
+	GiveItem 82053
+	LeaveGroup
+	Warp 0,1000,242,85
+	
+block EndEvent 679 == 1
+	Window "\n\n太古的封印已沉寂了数千年的时间，你拥有到达那个世界的勇气和决心!",NEXT
+	Window "\n\n犹如触及那个世界的懵懂的孩子一样，请允许我这样称呼你吧，新世界的接触者！希望下次在那个世界里我们再次相遇时你能有一番作为！",OK
+	Window_OK
+	GiveItem 2800012
+	GiveItem 82053
+        LeaveGroup
+	Warp 0,1000,242,85

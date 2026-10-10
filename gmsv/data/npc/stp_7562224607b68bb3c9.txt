@@ -1,0 +1,9 @@
+block
+window "\n\n『发现了一把军刀,要捡起来吗?』",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 666056
+leaveGroup
+Warp 0,400,233,339

@@ -1,0 +1,6 @@
+Block
+Window "进入古墓，接受守护者的试炼。胜利后才能进入老界神墓葬。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:740f3f37374e82cc1a67

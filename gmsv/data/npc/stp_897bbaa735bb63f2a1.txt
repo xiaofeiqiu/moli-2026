@@ -1,0 +1,9 @@
+block item 200516 >= 1 && item 200517 >= 1
+window "\n\n你要床上夜行衣后用绳子爬下去吗?",yes,no
+window_yes
+killitem 200516
+killitem 200517
+leavegroup
+Warp 0,27526,12,8
+
+

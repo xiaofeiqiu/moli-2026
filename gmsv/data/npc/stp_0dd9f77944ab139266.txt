@@ -1,0 +1,14 @@
+
+block item 715296 > 0
+endwindow "\n\n学长正在找此花的资料\n晚上会随意在沙漠中找地方睡\n你可以找他看看有啥线索."
+
+
+block
+window "\n\n阳光真大呀\n好想留住阳光洒落的感觉.",next
+window "\n\n我听说沙漠中有种阳光般的花朵\n不晓得有没有机会见到.",next
+window "\n\n你想看吗?我这边有相关的古籍\n也许对你有帮助.",next
+Window_ok itemspace == 0
+endwindow 11716
+Window_ok
+GiveLeak1Item 715296,1
+endwindow "\n\n学长正在找此花的资料\n晚上会随意在沙漠中找地方睡\n你可以找他看看有啥线索."

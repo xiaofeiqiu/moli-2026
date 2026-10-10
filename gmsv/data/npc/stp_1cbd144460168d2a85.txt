@@ -1,0 +1,10 @@
+block EndEvent 513 == 1
+Window "\n\n『修特受到致命打击,口吐鲜血』",next
+Window "\n\n我想...这就是宿命吧...",next
+Window "\n\n我好想...再见...瑞娜一面...",next
+Window "\n\n『时空转移的魔法能力已耗尽,你感到周围的场景在扭曲』",ok
+Window_ok
+EndEvent 514 = 1
+CheckTitle
+LeaveGroup
+Warp 0,1000,162,130

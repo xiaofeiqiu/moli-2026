@@ -1,0 +1,26 @@
+block item 90857 == 0
+localcount19 = random 3,0
+
+if localcount19 == 1
+window"@c\n\n这个蜡像就跟活得一样,总感觉贼溜溜的盯着你..不好！",ok
+window_ok
+killitem 90857
+Encount 
+endif
+
+if localcount19 == 2
+window"@c\n\n蜡像发出了咯咯咯咯咯咯的笑声,阴森恐怖..随着一阵邪风被吹出了古宅",ok
+window_ok
+setdur 90856,-1
+Warp 0,42,42,38
+endif
+
+if localcount19 == 3
+window"@c\n\n蜡像发出了咯咯咯咯咯咯的笑声,阴森恐怖..随着一阵邪风被吹出了古宅",ok
+window_ok
+setdur 90856,-1
+Warp 0,42,42,38
+endif
+
+block
+Endwindow"@c\n\n这些蜡像好古怪,一动不动仿佛一直盯着你.."

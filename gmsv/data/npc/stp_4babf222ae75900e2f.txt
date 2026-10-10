@@ -1,0 +1,37 @@
+######## 灰熊厉害擂台赛########
+##C级勋章收集熊
+
+
+####有60个C级勋章
+block Item 715272 >= 60
+window "\n\n您要用60个C级勋章兑换一套能力护符吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 6 && Item 715272 >= 60
+KillItem 715272,60
+GiveLeak1Item 715282
+GiveLeak1Item 715283
+GiveLeak1Item 715284
+GiveLeak1Item 715285
+GiveLeak1Item 715286
+GiveLeak1Item 715287
+Window_YES ItemSpace < 6
+endwindow "\n\n你的物品拦位不够喔!"
+
+####有5个C级勋章
+block Item 715272 >= 5
+window "\n\n您要用5个C级勋章随机兑换一个能力护符吗?",yes,no
+Window_NO
+endwindow "\n\n您再考虑看看吧!"
+Window_YES ItemSpace >= 1 && Item 715272 >= 5
+KillItem 715272,5
+GiveLeak1Item (715282%1,715283%1,715284%1,715285%1,715286%1,715287%1)
+Window_YES ItemSpace < 1
+endwindow "\n\n你的物品拦位不够喔!"
+
+
+block
+endwindow "\n\n只要收集C级勋章就可以跟我换奖品喔!\n\n＝＝＝＝＝＝＝＝＝奖品内容＝＝＝＝＝＝＝＝＝\n\n@c能力护符全套=60枚C级勋章\n\n@c能力护符一个=5枚C级勋章"
+
+
+ 

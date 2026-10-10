@@ -1,0 +1,31 @@
+#加
+#持有道具
+
+##############  ##############
+block  Item 18989 != 0 && Item 900017 == 1 && Item 900018 == 1	
+	Leavegroup
+	window "\n\n　其实我早就预料到会有人出面找到我们的，只是没想到会那么快，那么这两个东西我先收下了。",next
+	window "\n\n　我们不打算跟你们走了。我选择了跟美鲁娜一起生活，没有比跟自己深爱的人在一起生活更美好的事情了,那么拜托你们帮助我们回去跟两族解释真相，我决定跟美鲁娜长想厮守",ok
+	window_ok itemspace != 0
+	killitem 900017
+       killitem 900018
+       giveitem 900027
+       Warp 0,1000,242,85
+	endwindow "\n\n　。"
+	window_ok itemspace == 0
+	window "\n\n　带着那么多东西，难道你想送给我们做纪念？"
+
+block Item 18989 != 0 && Item 900028 == 1 && Item 900029 == 1	
+        window "\n\n　嘻嘻，又见到你们了。恩？你们带着结晶的石头呢，那我来给你们合成吧。但是合成这种时候的几率很低，如果失败，废品或许也用得着，好好利用哦",ok
+        window_OK
+        killitem 900028
+        killitem 900029
+        giveitem (18699%10,16915%5,13669%15,13619%10,13629%15,13639%10,13649%15,13659%10,13664%10),1
+        Leavegroup
+        Warp 0,1000,242,85
+
+block  Item 18989 != 0
+        EndWindow 900042,OK
+
+block
+        EndWindow 900031,OK

@@ -1,0 +1,13 @@
+block item 15061 >= 1 && item 15062 >= 1 && item 15063 >= 1 && item 15064 >= 1 && item 15065 >= 1 && Luac stp:legacy:8fc7f9ce413f04aa689e == 1
+window 80036,yes,no
+window_no
+endwindow 80037,ok
+window_yes item 15061 >= 1 && item 15062 >= 1 && item 15063 >= 1 && item 15064 >= 1 && item 15065 >= 1 && Luac stp:legacy:f4637847fb8b19da52d6 == 1
+killitem 15061
+killitem 15062
+killitem 15063
+killitem 15064
+killitem 15065
+killpetl 31
+givepet 3141
+endwindow 80038,ok

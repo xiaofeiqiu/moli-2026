@@ -1,0 +1,19 @@
+block item 88021 == 1
+endwindow 501105
+
+block item 88020 == 1
+window 501106,next
+window 501107,next
+window 501108,ok
+window_ok
+giveitem 88021
+
+block item 88019 == 1
+window 501109,ok
+window_ok
+LeaveGroup
+killitem 88019
+Warp 0,27531,2,2
+
+block
+endwindow 501110

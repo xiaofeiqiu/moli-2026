@@ -1,0 +1,12 @@
+block item 77012 >= 1
+Endwindow 7019355
+
+block Pitem 77011
+Endwindow 7019356
+
+block item 77011 >= 1
+window 7019357,next
+window 7019358,next
+window 7019359,ok
+window_ok
+Encount 2|0,42007,17,29|||||||0|70006|5|0|||||5|0|

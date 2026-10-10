@@ -1,0 +1,9 @@
+block
+window 501638,next
+window 501639,ok
+window_ok ItemSpace < 1
+endwindow 501640
+window_ok
+LeaveGroup
+givepet 211
+Warp 0,45141,67,168

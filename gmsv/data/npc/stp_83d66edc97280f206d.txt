@@ -1,0 +1,27 @@
+################### 魔力情人 织女
+
+block Group > 1
+window "\n\n解散队伍.",ok
+Window_ok
+LeaveGroup
+
+block Item 715223 >= 1 || Item 715224 >= 1
+endwindow "\n\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!"
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715222 >= 1
+window "\n\n没想到你们真的找到了他们!\n他们不能来赴约真是太可惜了!\n我想他们一定过的很幸福吧!\n\n让我来把这宝石镶成戒指送给你!\n希望你们也一样幸福!\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!",next
+KillItem 715222
+GiveLeak1Item 715224
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715222 >= 1
+window "\n\n没想到你们真的找到了他们!\n他们不能来赴约真是太可惜了!\n我想他们一定过的很幸福吧!\n\n让我来把这宝石镶成戒指送给你!\n希望你们也一样幸福!\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!",next
+KillItem 715222
+GiveLeak1Item 715224
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715222 >= 1
+window "\n\n没想到你们真的找到了他们!\n他们不能来赴约真是太可惜了!\n我想他们一定过的很幸福吧!\n\n让我来把这宝石镶成戒指送给你!\n希望你们也一样幸福!\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!",next
+KillItem 715222
+GiveLeak1Item 715224
+
+block 
+endwindow "\n\n不被祝福的爱情,我想一定过的很辛苦吧!\n曾经听人提起他们好像受到阿斯提亚的保护\n我们约定50年后再见,你能帮我找寻他们吗?"

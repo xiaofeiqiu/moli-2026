@@ -1,0 +1,153 @@
+#小爱　
+#给香草店的信		47783
+#百合盆栽		47787
+#委托单		47788  土1
+#委托单		47789　水1
+#委托单		47790  土2	
+#委托单		47791水2, 
+#委托单		47792土3
+#委托单		47793水三
+#1111659	我听说有种月夜下盛开，香气十足的花朵，我想看看那种花。	1
+#1111660	法兰城有间香料店，不知道他们有没有情报。	1
+#1111675	是这样呀～那可以麻烦你帮我找土之营养剂与妖草的血吗？	1
+#1111676	麻烦你了～	1
+#1111677	真令人失望～～	1
+#1111678	麻烦您给我土之营养剂。	1
+#1111679	麻烦您给我妖草的血。	1
+#1111680	现在好像不是使用的时候。	1
+#1111681	谢谢你，我终于闻到了月夜百合的花香。	1
+#1111682	这是一点小礼物，请您收下吧。	1
+#1111683	你可以帮我吗？	1
+#nowtime  现在的时间(0 清晨-正午  1 正午-傍晚 2 傍晚-晚上 3 晚上-清晨)
+#土地营养剂18795
+#妖草的血18456
+#夜光守护者46283/爆怒之心46405  命运之轮 45938
+block item 46283 >0 || item 46405 >0 || item 45837 >0
+	endwindow 7001061
+
+## 水3
+block item 1000283 >0  && item 18456 >0 && nowtime == 2
+	killitem 1000283,1
+	killitem 18456,1
+	GiveLeak1Item (47794%50$1,1000284%50$1,1000285%25$1,1000286%25$1)
+	window 7001061,next
+	endwindow 7001062
+block item 1000283 >0  && item 18456 >0 && nowtime == 3
+	killitem 1000283,1
+	killitem 18456,1
+	GiveLeak1Item (47794%50$1,1000284%50$1,1000285%25$1,1000286%25$1)
+	window 7001061,next
+	endwindow 7001062
+block item 1000283 >0  && item 18795 >0 
+	 endwindow 7001060
+block item 1000283 >0
+	endwindow 7001059	 
+#土3
+block item 1000282 >0  && item 18795 >0 && nowtime == 0
+	killitem 1000282,1
+	killitem 18795,1
+	GiveLeak1Item 1000283,1
+	endwindow 7001056
+block item 1000282 >0  && item 18795 >0 && nowtime == 1
+	killitem 1000282,1
+	killitem 18795,1
+	GiveLeak1Item 1000283,1
+	endwindow 7001056
+block item 1000282 >0  && item 18795 >0 
+	 endwindow 7001060
+	 
+block item 1000282 >0
+	endwindow 7001058	 
+## 水2
+block item 1000281 >0  && item 18456 >0 && nowtime == 2
+	killitem 1000281,1
+	killitem 18456,1
+	GiveLeak1Item 1000282,1
+	endwindow 7001056
+	
+block item 1000281 >0  && item 18456 >0 && nowtime == 3
+	killitem 1000281,1
+	killitem 18456,1
+	GiveLeak1Item 1000282,1
+	endwindow 7001056
+	
+block item 1000281 >0  && item 18795 >0 
+	 endwindow 7001060	
+block item 1000281 >0
+	endwindow 7001059
+
+#土2
+block item 1000280 >0  && item 18795 >0 && nowtime == 0
+	killitem 1000280,1
+	killitem 18795,1
+	GiveLeak1Item 1000281,1
+	endwindow 7001056
+block item 1000280 >0  && item 18795 >0 && nowtime == 1
+	killitem 1000280,1
+	killitem 18795,1
+	GiveLeak1Item 1000281,1
+	endwindow 7001056
+block item 1000280 >0  && item 18795 >0 
+	 endwindow 7001060
+block item 1000280 >0
+	endwindow 7001058
+	 
+## 水1
+block item 1000279 >0  && item 18456 >0 && nowtime == 2
+	killitem 1000279,1
+	killitem 18456,1
+	GiveLeak1Item 1000280,1
+	endwindow 7001056
+block item 1000279 >0  && item 18456 >0 && nowtime == 3
+	killitem 1000279,1
+	killitem 18456,1
+	GiveLeak1Item 1000280,1
+	endwindow 7001056
+block item 1000279 >0  && item 18795 >0 
+	 endwindow 7001060	 
+block item 1000279 >0
+	endwindow 7001059
+ 
+
+## 土一
+block item 1000278 >0  && item 18795 >0 && nowtime == 0
+	killitem 1000278,1
+	killitem 18795,1
+	GiveLeak1Item 1000279,1
+	endwindow 7001056
+
+block item 1000278 >0  && item 18795 >0 && nowtime == 1
+	killitem 1000278,1
+	killitem 18795,1
+	GiveLeak1Item 1000279,1
+	endwindow 7001056
+	
+block  item 18795 >0  && item 1000278 >0 
+	 endwindow 7001060
+	 
+block item 1000278 >0
+	endwindow 7001058	
+
+block item 1000277 >0
+	window 7001055,yes,no
+	Window_yes item 1000277 >0
+	killitem 1000277,1
+	GiveLeak1Item 1000278,1
+	endwindow 7001056
+	Window_yes
+	Window_no
+	endwindow 7001057
+
+block item 1000273 >0 || item 1000274 >0 || item 1000275 >0 || item 1000276 >0
+	endwindow 7001039
+block 
+	window 7001039,next
+	Window 7001040,next
+	Window 7001063,yes,no
+	Window_yes itemspace >0
+	GiveLeak1Item 1000273,1
+	endwindow 7001056
+	Window_yes
+	Window_no
+	endwindow 7001057
+	

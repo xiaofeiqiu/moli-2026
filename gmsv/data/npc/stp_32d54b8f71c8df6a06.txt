@@ -1,0 +1,4 @@
+block
+window"\n\n °¡~¡ª¡ª £¬ÎÒµÄÍ·£¡",ok
+window_ok
+	Setaction 10

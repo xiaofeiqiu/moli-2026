@@ -1,0 +1,13 @@
+block
+window "\n\n恩?你竟然活着上来了?",next
+window "\n\n难道你没遇见我那些可爱的小宝贝么??",next
+window "\n\n现在你回头还能活哦....",yes,no
+window_yes
+endwindow "\n\n聪明的人才能存活下去."
+window_no
+window "\n\n恩?你要继续下去??",next
+window "\n\n那先陪我的小可爱们玩玩吧.....他们可是很温柔的哦!!!",ok
+window_ok
+Encount 2|0,31502,9,14||0|||||0|21214|||||||||
+
+

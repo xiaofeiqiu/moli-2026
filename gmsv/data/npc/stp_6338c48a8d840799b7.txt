@@ -1,0 +1,13 @@
+block 
+	 Window 7000402,NEXT
+	 Window 7000403,YES,NO
+	 	 Window_YES ItemSpace <2
+	 	 EndWindow 7000404
+	 	 Window_YES
+	 	 GiveStackItem 1000002,30
+		 GiveStackItem 1000003,30
+		 KillItem 1000005,1
+		 Endblock
+	 
+		 Window_NO
+	 	 endblock	 

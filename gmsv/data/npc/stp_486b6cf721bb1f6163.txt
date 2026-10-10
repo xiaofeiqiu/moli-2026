@@ -1,0 +1,14 @@
+block Level >= 90 && Group == 1
+Window 910360,OK,CANCEL
+Window_OK Level < 90 && Group == 1
+EndWindow 910361
+
+Window_OK Level >= 90 && Group == 1
+Window 910362,OK,CANCEL
+Window_OK Group > 1
+Window 910363,YES,NO
+Window_YES Group > 1
+LeaveGroup
+Window_NO
+Window_OK Group == 1
+Warp 0,25015,85,77

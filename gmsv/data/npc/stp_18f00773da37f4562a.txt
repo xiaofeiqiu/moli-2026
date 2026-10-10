@@ -1,0 +1,26 @@
+block item 86637 == 1 && item 86638 < 1 && Luac stp:legacy:4745cc5dd6d8e313242c >= 1
+window "\n\n 勇士哟, 你完成了王最后的愿望.",next
+window "\n\n勇士哟, 王给你的最后一个忠告.",next
+window "\n\n当时没有选择剑鞘,而是选择了剑的我, 最终倒在了这里.",next
+window "\n\n勇士哟,要知道, 无味的残杀的最终, 得到的是自我的毁灭."next
+window "\n\n勇士哟,懂得去保护,才会得到真正的坚强. 你...找到了自己的剑鞘了嘛?",next
+window "\n\n骑士王安详的闭上了眼睛.",ok
+window_ok
+leavegroup
+killitem 86637
+giveitem 86638
+endwindow "\n\n耳边再次传来了精灵的歌声."
+
+block item 86637 == 1 && item 86639 < 1
+window "\n\n勇敢的战士哟, 你懂得帮助朋友,从而达成了王最后的愿望.",next
+window "\n\n懂得友情的你,懂得去帮助的你,我已经没有什么需要嘱咐的了.",next
+window "\n\n去吧,愿你的生命和你的灵魂一样光辉无瑕.",next
+window "\n\n骑士王安详的闭上了眼睛.",ok
+window_ok
+leavegroup
+killitem 86637
+giveitem 86639
+endwindow "\n\n耳边再次传来了精灵的歌声."
+
+block
+endwindow "\n\n............."

@@ -1,0 +1,7 @@
+block globalFlag 341 == 1
+window 900617,ok
+window_ok
+LeaveGroup
+globalFlag 341 = 0
+globalFlag 342 = 1
+Warp 0,23321,33,21

@@ -1,0 +1,11 @@
+block StrCmpChat == 220000
+window "\n\n请吃!请吃!这是之前一位戴着南瓜头套的巫师交给我的,吃得开心点..",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200801
+
+
+block
+window "\n\n欢迎来到以矿山和药闻名的圣拉鲁卡村.",next
+endwindow "\n\n武器和防具的公会会长在卖装备的店里哦!"

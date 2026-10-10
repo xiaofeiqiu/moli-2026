@@ -1,0 +1,6 @@
+Block
+Window "史贝克：请带来议会特派员证明×1，我会交给你下一步的调查资料。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:e00c9936b349c702fc90

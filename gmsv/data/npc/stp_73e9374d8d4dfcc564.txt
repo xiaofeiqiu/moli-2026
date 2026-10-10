@@ -1,0 +1,6 @@
+block
+	Window 820111,NEXT
+
+	Window 820112,OK
+	Window_OK
+Encount 3|0,43131,21,15|||||0|||900194|||||||||

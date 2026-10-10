@@ -1,0 +1,5 @@
+block item 200747 >= 1
+window "\n\n我对你擅闯我的神殿不予追究,都是因为你们人类把我妹妹害成这样,你们马上给我滚回你们的世界.",ok
+window_ok
+leavegroup
+Warp 0,1530,15,6

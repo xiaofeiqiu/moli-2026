@@ -1,0 +1,7 @@
+block
+Window 70823,YES,NO
+Window_YES
+LeaveGroup
+Warp 0,57452,117,70
+Window_NO
+	

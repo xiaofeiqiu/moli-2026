@@ -1,0 +1,11 @@
+block	item 52211 >= 1 && item 52212 >= 1 && item 52213 >= 1 && item 52214 >= 1
+window"\n\n\n神之创世 万物归一",OK
+window_OK
+window"\n\n@c要打开位于三界最顶端的那扇门吗？",ok
+window_ok
+killitem 52211,1
+killitem 52212,1
+killitem 52213,1
+killitem 52214,1
+         leavegroup
+         Warp 0,676,24,19

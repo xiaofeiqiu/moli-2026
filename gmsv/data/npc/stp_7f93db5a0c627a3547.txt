@@ -1,0 +1,9 @@
+block nowevent 559 == 1 && item 681118 == 1
+	ShapeNext 107904
+	Setaction 6
+	window"\n\n就知道你们会来的,准备受死吧!",next
+	ShapeNext 107904
+	Setaction 3
+	window"这次一定不会让你跑了",ok
+	window_ok
+Encount 3|0,1198,8,10|||||0|||601205|||||||||

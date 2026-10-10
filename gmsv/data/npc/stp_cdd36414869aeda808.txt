@@ -1,0 +1,34 @@
+block NowEvent 553 == 1
+EndWindow "\n\n再次感谢你!作为回报,送你一条哥拉尔城通往雷克塔尔镇的地道权限吧!今后你就可以去找我的同类们带你迅速到达雷克塔尔镇了,它就在哥拉尔城的西方城门外,现在就去找它吧"
+
+block item 50863 == 1
+Window "\n\n再次感谢你!作为回报,送你一条哥拉尔城通往雷克塔尔镇的地道权限吧!今后你就可以去找我的同类们带你迅速到达雷克塔尔镇了,它就在哥拉尔城的西方城门外,现在就去找它吧",ok
+Window_ok
+killitem 50863
+NowEvent 553 = 1
+
+block item 50862 == 1
+ChangePal 30,400
+Window "\n\n『你与掘地族的小古一同喝下了阿斯提亚试验药』",ok
+Window_ok
+killitem 50862
+LeaveGroup
+globalFlag 257 = 0
+globalFlag 258 = 0
+leavegroup
+Warp 0,57462,7,7
+
+block item 50858 == 1
+EndWindow "\n\n没有『贝尼恰斯』教团的许可,船是不能出航的.快去拿给岬之神殿里面的『贝尼恰斯』教团成员看看吧."
+
+block item 50861 == 1
+Window "\n\n吱?!你...你能听懂我的语言吗?",next
+Window "\n\n我们掘地族遍布库鲁克斯岛与诺斯非拉特大陆的地底,是地底世界的居民,你就叫我小古好了.",next
+Window "\n\n现在的我很虚弱...不能再继续挖掘地道了.不久前我做了一个噩梦,在梦中,我身体的某一部分被魔物夺走了...你能想办法帮帮我吗...?",ok
+Window_ok
+killitem 50861
+globalFlag 258 = 1
+
+block
+Window "\n\n『它在用恐惧的眼神看着你...但是却没有逃跑,似乎发生了什么事』",next
+EndWindow "\n\n『也许找附近的阿斯提亚炼金师问问会有线索』"

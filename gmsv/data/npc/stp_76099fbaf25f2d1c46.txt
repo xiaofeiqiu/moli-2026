@@ -1,0 +1,18 @@
+block item 200505 >= 1
+endwindow "\n\n你快去追吧,等卡塔尔来了,我们会转告他的."
+
+
+block item 200504 >= 1
+window "\n\n卡塔尔的小女儿失踪了,这是怎么回事,貌似就在刚才好像看见她和一位老奶奶出城了.",next
+window "\n\n你赶快跟出城,或许还能追上他们.",ok
+window_ok
+killitem 200504
+giveitem 200505
+
+
+block
+endwindow "\n\n从圣加鲁都城出去就是法达利亚区域了,出城后会碰到很多魔物,请多加小心."
+
+
+
+

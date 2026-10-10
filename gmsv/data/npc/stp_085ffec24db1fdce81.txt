@@ -1,0 +1,27 @@
+block item 61113 >= 1
+window 900476,next
+window 900477,ok
+window_ok
+killitem 61113
+Warp 0,23313,126,656
+
+block item 61111 >= 1 && globalFlag 330 == 0
+window 900478,next
+window 900479,next
+window 900480,ok
+window_ok
+LeaveGroup
+killitem 61111
+globalFlag 330 = 1
+
+block level >= 70 &&  globalFlag 328 == 0 && globalFlag 329 == 0
+window 900481,yes,no
+window_no
+window_yes
+window 900482,ok
+window_ok
+LeaveGroup
+globalFlag 328 = 1
+
+block
+endwindow 900483

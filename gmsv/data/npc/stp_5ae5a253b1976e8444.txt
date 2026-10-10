@@ -1,0 +1,14 @@
+
+
+
+block item 39819 >= 1
+window "\n\n真是痛快,这就是黄金粽子,去完成少女的托付吧!",ok
+window_ok
+killitem 39819
+giveitem 39820
+leavegroup
+Warp 0,2200,64,19
+
+
+
+

@@ -1,0 +1,7 @@
+block
+window 501223,next
+window 501224,next
+window 501225,next
+window 501226,ok
+window_ok
+Warp 0,45237,0,7

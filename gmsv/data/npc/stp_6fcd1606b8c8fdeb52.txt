@@ -1,0 +1,11 @@
+block NowEvent 553 == 1
+Window "\n\n欢迎使用我们的地底通道,朋友.",ok
+Window_ok
+NowEvent 553 = 0
+EndEvent 571 = 1
+CheckTitle
+LeaveGroup
+Warp 0,43000,590,380
+
+block
+EndWindow "\n\n吱~!"

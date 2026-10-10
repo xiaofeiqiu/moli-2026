@@ -1,0 +1,15 @@
+block
+window "\n\n勇者,想挑战一下十二星座的威力吗?",next
+window "\n\n里面的星座boss可不是吃素的,没实力可得找虐",next
+window "\n\n进去可有限制,必须140级以上\n\n为了就是保障你的生命安全",next
+window "\n\n我可是要收取门票费用的\n\n每个人头10万魔币",yes,no
+window_yes gold < 100000
+endwindow "\n\n没钱还想我放你进去,休想"
+window_yes level < 140
+endwindow "\n\n小伙子,我可不想抬你出来"
+window_yes
+addgold -100000
+leavegroup
+Warp 0,9314,22,12
+window_no
+endwindow "\n\n算你有自知之明,下次再来吧"

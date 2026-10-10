@@ -1,0 +1,8 @@
+block floor == 33000 && xpos == 504 && Ypos == 362
+window "\n\n这里有个洞，要爬下去吗?",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 87465
+Warp 0,29649,94,18
+ 

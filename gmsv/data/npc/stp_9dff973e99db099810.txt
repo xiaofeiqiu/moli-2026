@@ -1,0 +1,11 @@
+block item 87697 == 1
+endwindow "\n\n看来你见过玄武大人了。"
+
+block item 87696 == 1
+window "\n\n来吧，玄武大人正在等您呢！",ok
+window_ok
+leavegroup
+Warp 0,29956,55,3
+
+block
+endwindow "\n\n你怎么会来这么冷的地方！"

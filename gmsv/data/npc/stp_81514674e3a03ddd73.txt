@@ -1,0 +1,14 @@
+block item 22735 >= 1
+window "\n\n原来是这样,但是亚尔早上只来一会说来看看我就回去了..难道..",next
+window "\n\n@n,还要问下去吗?",yes,no
+window_no
+window_yes
+window "\n\n近段时间来,村民们有的说经常在回村路上看到一个女人总喜欢站在村子附近,脸色很苍白,看起来很奇怪,更有的村民说是雪女,引起村民的恐慌..至今没人敢上去问过一句话,但那女人一直总在附近出现.我担心亚尔不知道这事,会不会碰上那个女人了...",next
+window "\n\n@n,要去探查个究竟吗?",yes,no
+window_no
+window_yes
+window "\n\n年轻人,这可不是开玩笑的,万一真像村民所说的,相传雪女是会害人的..怎么能随便拿自己的生命开玩笑.",next
+window "\n\n既然这样你决定了,我也不好再说什么.请小心,这个东西给你.",ok
+window_ok item 22735 >= 1
+killitem 22735
+GiveItem 22736

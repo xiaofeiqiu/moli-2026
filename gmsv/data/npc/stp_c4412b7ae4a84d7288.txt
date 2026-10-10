@@ -1,0 +1,11 @@
+block globalFlag 339 == 1
+endwindow 900559
+
+block globalFlag 338 == 1 && globalFlag 339 == 0 && globalFlag 340 == 0
+window 900560,next
+window 900561,next
+window 900562,next
+window 900563,ok
+window_ok
+LeaveGroup
+globalFlag 339 = 1

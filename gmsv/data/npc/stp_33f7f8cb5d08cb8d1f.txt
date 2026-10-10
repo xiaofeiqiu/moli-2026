@@ -1,0 +1,12 @@
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200577 >= 1
+window "\n\n古代花瓶?那可是我祖传的宝物哦,给我多少钱都不卖.",next
+window "\n\n不过…不过…我好久没做梦了,如果你们能让我做个梦,无论好坏都行,我就将古代直接送给你们,如何.",yes,no
+window_yes 
+killitem 200577
+leavegroup
+Warp 0,27666,6,9
+
+
+
+block
+endwindow "\n\n我已经好久没有做过梦了."

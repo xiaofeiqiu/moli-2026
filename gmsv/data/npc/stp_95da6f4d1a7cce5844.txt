@@ -1,0 +1,9 @@
+block item 90871 == 0 && gold >= 30000
+window"@c\n\n\n\n如果没时间练级的话\n\n可在我这消费3W魔币购张离线经验收益卡\n\n最高期限不得超过一周\n\n否则将失效",yes,no
+window_yes item 90871 == 0 && gold >= 30000
+addgold -30000
+giveitem 90871
+
+
+block
+Endwindow"@c\n\n\n身上的票子带够了吗？身上有多余的券吗？"

@@ -1,0 +1,13 @@
+block item 87099 == 1 && item 87100 < 1
+window "\n\n你们手上的画像怎么像我的弟弟。你们是来找我弟弟的吗？",next
+window "\n\n你们来的不巧啊。他上个月从圣域回来后神神秘秘的，突然说要离家去阿塔兰忒过隐居的生活，着实叫我们全家人很担心。",next
+window "\n\n不过他还是留下了隐居地的地址，如果你要去找他能帮我顺路带封信吗？",yes,no
+window_no
+window_yes item 87100 < 1
+LeaveGroup
+giveitem 87100
+endwindow "\n\n我弟弟维斯留下的地址是在阿塔兰忒东北面的某地！"
+
+
+block
+endwindow "\n\n请问找我有何贵干！"

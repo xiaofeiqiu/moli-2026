@@ -1,0 +1,9 @@
+block 
+	Window "\n\n\n\n@c是否使用时间水晶恢复打卡时间",Yes,No 
+	Window_Yes Item 60054 >= 1 
+PlaySE 280,320,240 
+		KillItem 60054,1,(4421) 
+		AddFeverSec +21600 
+		SystemMessage 4421 
+	Window_Yes 
+	Window_No

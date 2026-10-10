@@ -1,0 +1,13 @@
+block item 800193 >= 1
+endwindow "\n\n过去发生的一切,永远也改变不了."
+
+block
+window "\n\n对于四元素中掌管力量的我来讲,你就是一个错误的存在!不过你的存在却保持了一个全新的平衡.或许你已经不记得了,但有些真相你需要了解.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 800193
+endwindow "\n\n这里蕴藏着我曾经的记忆,它将通过我身后的石碑,带你穿越时空,回到过去!但记住,过去发生的一切,永远也改变不了."
+
+
+

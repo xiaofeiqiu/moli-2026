@@ -1,0 +1,11 @@
+block item 86239 >= 1
+endwindow "\n\n地上的笔记本你已经拿过了!"
+
+
+block
+window "\n\n好像是一本日记,上面的署名是...贝...拉...米?需要拿走调查吗?",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+GiveItem 86239

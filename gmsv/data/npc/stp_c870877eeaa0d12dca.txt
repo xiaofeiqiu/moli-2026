@@ -1,0 +1,9 @@
+block item 1002000 == 1 && item 1002001 == 1
+window "\n\n　我在这住了几百年了...好象没见过你？请问你到这里来要做什么呢？",next
+window "\n\n　原来是村长派来给祭坛送供品的呀...那就进去吧。\n　嘿嘿嘿嘿...",yes
+window_yes
+leavegroup
+Warp 0,60180,206,78
+
+block
+endwindow "\n\n　未经许可是不得随便进入神庙的，尽管里面没什么东西..."

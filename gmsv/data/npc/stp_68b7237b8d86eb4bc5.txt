@@ -1,0 +1,8 @@
+block
+gawindow "\n\n哇哈哈哈,法兰来的勇者,好久不见啊.\n看出我是谁了吗?你觉得你现在还是我的对手吗?",yes,no
+window_no
+gaendwindow "\n\n我就知道,你已经害怕了,哈哈哈哈."
+window_yes
+gawindow "\n\n那就来吧,哈哈哈.",ok
+window_ok
+Encount 3|0,60221,10,8||||||||400310|||||||||

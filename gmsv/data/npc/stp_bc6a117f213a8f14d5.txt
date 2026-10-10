@@ -1,0 +1,8 @@
+##阿鲁巴斯的蛋##
+block
+window"\n\n要打开这个充满邪魔气息的蛋吗?",yes,no
+window_yes PetSpace != 0
+killitem 515,1
+givepet (3128%1,3129%1)
+Endwindow"\n\n得到了长得很像阿鲁巴斯的宠物(哈哈)",ok
+window_no

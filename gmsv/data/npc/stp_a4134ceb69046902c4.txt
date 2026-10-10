@@ -1,0 +1,2 @@
+block
+endwindow "\n\n请不要打扰我和这孩子的修行."

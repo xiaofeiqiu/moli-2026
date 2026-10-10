@@ -1,0 +1,7 @@
+block item 200126 >= 1
+window "\n\n到空之神殿必须要国王的批准哦.",next
+window "\n\n既然你有批准,那就出发吧.",ok
+window_ok
+killitem 200126
+leavegroup
+Warp 0,17203,20,87

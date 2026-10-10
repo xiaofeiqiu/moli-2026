@@ -1,0 +1,11 @@
+Block level < 160
+EndWindow "我还有工作。"
+Block
+Window "我还有工作。",yes,no
+Window_no
+EndWindow "下次再来。"
+Window_yes gold < 0
+EndWindow "我还有工作。"
+Window_yes
+AddGold -0
+Warp 0,1001,49,28

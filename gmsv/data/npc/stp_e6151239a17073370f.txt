@@ -1,0 +1,20 @@
+block Item 18395 >= 1 && Item 99881 == 0
+	Window "\n\n厉害厉害!这么快就找了一个这么漂亮的耳饰来!恰丝莉小姐一定很喜欢!",next
+	Window "\n\n但是,我还有事,你能帮我送去吗?恰丝莉小姐就在大剧院休息室里",yes,no
+	Window_yes
+			Window "\n\n那么,我就给你写张推荐信吧!恰丝莉小姐看后就会知道了",ok
+			Window_ok	
+			giveitem 99881			
+			Window_ok
+        	Window "\n\n你想用外挂?去死吧外挂!",ok
+        	Window_ok
+
+block Item 99881 == 1	Window "\n\n我还很忙,你去找恰丝莉小姐吧!",ok
+	Window_ok
+block
+	Window "\n\n你知道吗?兰国的超级大明星恰丝莉小姐来到法兰表演了!我是她的私人秘书!",next
+	Window "\n\n想看她表演吗?可惜我们还没有准备好,对了,你想帮助我们为表演做准备吗?会给你报酬的,你放心好了!",yes,no
+		Window_yes
+			Window "\n\n那么~首先去帮我找一个漂亮的耳饰来!",ok
+		Window_no
+			Window "\n\n是吗?那我自己找好了!",ok

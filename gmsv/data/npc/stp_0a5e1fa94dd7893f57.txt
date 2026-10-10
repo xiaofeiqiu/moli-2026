@@ -1,0 +1,9 @@
+block item 200013 >= 1
+window "\n\n快进来吧,你们已经晚了.",ok
+window_ok
+killitem 200013
+leavegroup
+Warp 0,25255,312,68
+
+block
+endwindow "\n\n没什么事的话,不要打扰我."

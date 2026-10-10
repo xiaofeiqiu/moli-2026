@@ -1,0 +1,23 @@
+
+block item 730099 >= 1
+window "\n\n欢迎来到炼金之馆.实际上呢,如果你有从幻境森林中得到的幻想碎片,我也可以帮你合成一只幼生独角兽,而且能力和哥哥制作的一样哦.",ok
+window_ok item 730099 < 50
+endwindow "\n\n凑够50个幻想碎片就来找我吧."
+window_ok item 730099 >= 50
+window "\n\n小心培养哦.",ok
+window_ok petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_ok
+killitem 730099,50
+givepet 800261
+
+
+block
+endwindow "\n\n欢迎来到炼金之馆.实际上呢,如果你有从幻境森林中得到的幻想碎片,我也可以帮你合成一只幼生独角兽,而且能力和哥哥制作的一样哦."
+
+
+
+
+
+
+

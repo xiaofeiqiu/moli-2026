@@ -1,0 +1,15 @@
+block itemspace < 1 && petspace < 1
+endwindow "\n\n你的背包或宠物栏满啦!"
+
+
+block
+LocalCount20 = random 10,0
+if LocalCount20 < 5
+killitem 60511
+giveitem (60514%1$1,60514%1$2,60514%1$3,60514%4,60514%1$5)
+else
+if LocalCount20 > 5
+killitem 60511
+givepet 715
+endif
+

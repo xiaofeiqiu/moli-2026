@@ -1,0 +1,26 @@
+
+block item 715303 > 0
+killitem 715303,1
+GiveLeak1Item 715304,1
+window "\n\n原来哥哥还活着呀～～\n谢谢你～～",next
+window "\n\n小女子无以为报\n这东西就送您吧!",next
+window "\n\n时候不早\n我送您进蒂那村内\n好传回城吧!",ok
+window_ok
+Warp 0,4200,38,46
+Endblock
+
+
+block item 715299 > 0
+endwindow "\n\n呜～～\n我家人一夕间都不见了～～"
+
+block 
+window "\n\n呜～～\n我家人一夕间都不见了～～",next
+window "\n\n只有我跟哥哥逃出来\n可是我跟哥哥又失散了～～",next
+window "\n\n你帮我找哥哥好吗?",ok
+Window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+Window_yes
+GiveLeak1Item 715299,1
+endwindow "\n\n谢谢你!"
+Window_no
+endblock

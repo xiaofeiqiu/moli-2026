@@ -1,0 +1,17 @@
+block item 730026 >= 1
+Window "\n\n没想到你脚步还挺快的.",next
+EndWindow "\n\n醒酒汤既然已经拿来了,就给那个喝醉的男人喝下去吧,我们店里的生意还要继续做下去呢"
+
+block item 730023 >= 1
+EndWindow "\n\n帮我去大圣堂找僧侣特伦要一份醒酒汤来吧!"
+
+block
+Window "\n\n你好,欢迎光临安其摩酒吧!",next
+Window "\n\n您说哪个人?哦!他啊...天呐,别提了,这家伙天天喝的烂醉,我老婆光照顾他了,连正常的生意都没办法照顾了...您找他有事情?先帮我去找大圣堂的僧侣特伦要一份醒酒汤来吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 730023
+
+block
+EndWindow "\n\n酒...老板给我酒...玛莎...不要离开我...玛莎...唔..."

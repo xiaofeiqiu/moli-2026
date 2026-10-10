@@ -1,0 +1,9 @@
+###°×»¢´óÈË
+block item 1000291 >0
+	 Window 7019146,ok
+	 Window_ok
+	 killitem 1000291
+Encount 2|0,32157,17,12||0|||||0|6000044|||||||||	 
+	 Endblock
+block 
+	endWindow 7019146

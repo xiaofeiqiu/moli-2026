@@ -1,0 +1,16 @@
+block endevent 565 == 1
+endwindow "\n\n风雨十年感恩魔力.还请继续多多支持."
+
+
+block item 19675 >= 30
+window "\n\n你已经获得了30个小奖牌,要兑换军官称号么?",yes,no
+window_no
+endwindow "\n\n拥有军官称号就可以进入军官大厅获取特别奖励哦,好好努力吧!"
+window_yes item 19675 >= 30
+killitem 19675,30
+endevent 565 = 1
+endwindow "\n\n恭喜你,指挥官!"
+
+
+block
+endwindow "\n\n你好,如果你参加模拟战并获得了30个小奖牌的话,我就承认你是一位合格的指挥官!"

@@ -1,0 +1,9 @@
+block job == 901
+	Window "\n\n　来吧，学习终极技能吧。",ok
+	window_ok
+        leavegroup
+        Warp 0,677,24,19
+block job < 901
+        Window "\n\n　您并非我族！不得入内！",ok
+	window_ok
+        

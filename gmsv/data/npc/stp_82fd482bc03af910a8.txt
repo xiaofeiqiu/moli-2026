@@ -1,0 +1,12 @@
+block item 880013 == 1
+endwindow "\n\n快去吧"
+
+block item 880012 == 1
+window "\n\n啊,你来了!我已经接到我朋友的消息了,快把书给我看看!",next
+window "\n\n恩...我明白了,需要的材料有3种,你得先去获得圣女大人的许可,这3种材料都在雷克塔尔的附近迷宫深处,没有圣女大人的许可是不能进去的.",next
+window "\n\n收集好材料后就带着我的信直接回去找我的学者朋友吧!尽快收集好吧",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 880012 == 1
+killitem 880012
+giveitem 880013

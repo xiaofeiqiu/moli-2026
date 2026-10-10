@@ -1,0 +1,27 @@
+block item 200568 >= 1
+endwindow "\n\n由你在我身旁相助就能知道爷爷心中埋葬多年的秘密."
+
+
+
+block item 200567 >= 1
+window "\n\n谢谢你帮我找到了爷爷,我也拿到了爷爷说的思念力结晶,你这么厉害不如我和你们一起冒险吧.",yes,no
+window_yes
+window "\n\n那么我们赶快去赛利鲁村找装备店老板吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200568
+
+
+block item 200562 >= 1
+endwindow "\n\n独眼龙经常出没于赛利特村的酒吧里."
+
+
+
+block
+window "\n\n我爷爷卡纳鲁德是位杰出的文物鉴定专家,几天前被赛利鲁村的独眼龙请去鉴赏古玩字画到现在还没回家,我有些担心了.",next
+window "\n\n你能否帮我去看看爷爷到底出什么事了吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200562

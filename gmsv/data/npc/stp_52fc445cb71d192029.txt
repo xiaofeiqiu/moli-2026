@@ -1,0 +1,7 @@
+block item 3793 >= 1
+	endwindow "\n\n法兰的命运就掌握在你的手中了",ok
+
+block HaveTitle == 1048
+	window "\n\n最近听说里雍又再度复活了,扬言要杀死所有的勇者,并且要霸占法兰城,你把这封信交给我弟弟,他是亚诺曼城近卫军,他会告诉你关于里雍的具体消息",ok
+	window_ok
+	Giveitem 3793,1

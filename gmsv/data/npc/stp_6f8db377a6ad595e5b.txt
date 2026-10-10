@@ -1,0 +1,13 @@
+block globalFlag 337 == 1 
+endwindow 900613
+
+block Luac stp:legacy:5663325bd3bd7000e4ce >= 1 && globalFlag 340 == 0
+window 900614,next
+window 900615,yes,no
+window_yes
+LeaveGroup
+globalFlag 337 = 1
+window_no
+
+block
+endwindow 900616

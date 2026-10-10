@@ -1,0 +1,24 @@
+德鬼任务脚本 2008年12月30日小叶编写 QQ 94452739
+block	item 950304 >=1 && item 950305 >= 1 && item 950306 >= 1 && petlevel 2000366 >= 1
+	window "\n\n@c亲爱的勇者我可以帮助你改造他，但是改造完的德鲁伊之鬼的力量很强大,不知道您能否驾奴他那？",yes,no
+	window_no
+	window "\n\n@c 很遗憾",ok
+	Window_Yes item 950304 >=1 && item 950305 >= 1 && item 950306 >= 1 && petlevel 2000366 >= 1
+	KillItem 950304,1
+	KillItem 950305,1
+	KillItem 950306,1
+	KillPeth 2000366,1
+	GivePet 123483
+	Endwindow "\n\n@n 您就是来自法兰城的勇者？好强的力量，未来还是要掌握在你们年轻人的手里啊。。。我想只有您才真正适合拥有他，好好珍惜他，他会给予你很大帮助的。
+block	item 950303 ==1
+	Endwindow "\n\n@n	你个小样的接完任务还不赶快收集齐3魂再来找我！
+block	
+	window "\n\n@c伟大的勇者你好，我们又见面了。。。",next
+	window "\n\n@c上次我太高兴了忘记了跟你说，我可以帮你把德鲁伊之鬼变的更强哟。。。",next
+	window "\n\n@c想把他变强也不是件容易的事，你需要帮我找到诅咒者的灵魂。。。",next
+	window "\n\n@c不信？呵呵，试试就知道了。。。",yes,no
+	window_no
+	window "\n\n@c 很遗憾",ok
+	window_yes
+	giveitem 950303,1
+	Endwindow "\n\n@n 强化完成它将会成为你的好伴侣的。。"

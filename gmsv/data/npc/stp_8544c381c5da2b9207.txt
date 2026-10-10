@@ -1,0 +1,5 @@
+block
+	Window"\n\n\n@c@n勇士要上去吗？",yes,no
+		Window_yes
+		Leavegroup
+		Warp 0,18066,2,8

@@ -1,0 +1,194 @@
+block	gold <10000
+	endwindow 7019430,ok
+
+block	StrCmpChat == 800186
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0
+	killitem 661052,1
+	killitem 661048,1
+	addgold -100000
+	giveitem 661068
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800187
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661049==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661049>=0
+	killitem 661052,1
+	killitem 661049,1
+	addgold -100000
+	giveitem 661067
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800188
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661051>=0
+	killitem 661052,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661066
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800189
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661050==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661050>=0
+	killitem 661052,1
+	killitem 661050,1
+	addgold -100000
+	giveitem 661065
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800190
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661049==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661049>=0
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661049,1
+	addgold -100000
+	giveitem 661064
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800191
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661051>=1
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661063
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800192
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661050==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661050>=1
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661050,1
+	addgold -100000
+	giveitem 661062
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800193
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661049==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661049>=0 && item 661051>=1
+	killitem 661052,1
+	killitem 661049,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661061
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800194
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661049==0 || item 661050==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661049>=0 && item 661050>=1
+	killitem 661052,1
+	killitem 661050,1
+	killitem 661049,1
+	addgold -100000
+	giveitem 661060
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800195
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661050==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661050>=0 && item 661051>=1
+	killitem 661052,1
+	killitem 661050,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661059
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800196
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661049==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661049>=1 && item 661051>=1
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661049,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661058
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800197
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661049==0 || item 661050==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661049>=1 && item 661050>=1
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661049,1
+	killitem 661050,1
+	addgold -100000
+	giveitem 661056
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800198
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661050==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661050>=1 && item 661051>=1
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661050,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661055
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800199
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661049==0 || item 661050==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661049>=0 && item 661050>=1 && item 661051>=1
+	killitem 661052,1
+	killitem 661049,1
+	killitem 661050,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661054
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800200
+	window 7019425,yes,no
+	window_yes item 661052==0 || item 661048==0 || item 661049==0 || item 661050==0 || item 661051==0
+	endwindow 7019426,ok
+	window_yes item 661052>=1 && item 661048>=0 && item 661049>=1 && item 661050>=1 && item 661051>=1
+	killitem 661052,1
+	killitem 661048,1
+	killitem 661049,1
+	killitem 661050,1
+	killitem 661051,1
+	addgold -100000
+	giveitem 661053
+	endwindow 7019428,ok
+
+block	StrCmpChat == 800201
+	window 7019429,yes,no
+	window_yes
+	addgold -50000
+	giveitem 661052
+	endwindow 7019428,ok
+
+block
+	window 7019424,ok

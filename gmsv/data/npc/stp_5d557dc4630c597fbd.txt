@@ -1,0 +1,12 @@
+block item 86318 < 1
+window 85401,yes,no
+window_no
+window_yes
+window 85402,yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86318
+Warp 0,1000,233,78
+window_yes ItemSpace < 1
+endwindow 85403

@@ -1,0 +1,19 @@
+block Item 700098 >= 320
+	window "\n\n\n@c你又在挖土豆吗？",next
+	window "\n\n　我好想要土豆哦，挖来挖去就得了几个大石头，你有土豆就跟我换好不好？",ok
+	window_ok
+	KillItem 700098,320
+	giveitem 554104
+	EndWindow "\n\n\n@c你还有的话可以继续跟我换哦！"
+
+block Item 700098 >= 80
+	window "\n\n\n@c你又在挖土豆吗？",next
+	window "\n\n　我好想要土豆哦，挖来挖去就得了几个大石头，你有土豆就跟我换好不好？",ok
+	window_ok
+	KillItem 700098,80
+	giveitem (13609%50,13619%50,13629%50,13639%50,13649%50,13659%50,13669%50,13679%50)
+	EndWindow "\n\n\n@c你还有的话可以继续跟我换哦!"
+
+
+block
+	Endwindow "\n\n\n@c我好想要小土豆哦！"

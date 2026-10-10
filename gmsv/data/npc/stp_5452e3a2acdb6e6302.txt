@@ -1,0 +1,17 @@
+block item 1002005 == 1
+endwindow "\n\n　这里好象可以种什么东西的样子。"
+
+block petlevel 401 == 1
+window "\n\n　要把树精栽到这里吗？",yes,no
+window_yes itemspace == 0
+endwindow "\n\n　请先清理下背包。"
+window_yes petlevel 401 == 1&& item 1002005 == 0
+KillPetl 401,1
+giveitem 1002005
+systemmessage 8100238
+Warp 0,60158,47,93
+window_no
+endwindow "\n\n　还是算了.."
+
+block
+endwindow "\n\n　这里好象可以种什么东西的样子。"

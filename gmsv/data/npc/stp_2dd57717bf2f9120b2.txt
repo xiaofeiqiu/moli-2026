@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【盾】吗？",ok
+			Window_ok
+Luac stp:legacy:d6fed828f0d2dc9368de
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【潜盾】吗？",ok
+			Window_ok
+Luac stp:legacy:516d38f4a5e0abdb201e
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【强盾】吗？",ok
+			Window_ok
+Luac stp:legacy:d716850a32b8a32df044
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【神盾】吗？",ok
+			Window_ok
+Luac stp:legacy:d5fb94e8dfc7a5311c30
+				endif
+

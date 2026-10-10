@@ -1,0 +1,1315 @@
+block globalFlag 373 == 1
+Endwindow "\n\n快去找15号考官吧!"
+
+block globalFlag 372 == 0
+Endwindow "\n\n你还没找13号考官呢!快去吧"
+
+block globalFlag 75 == 1 || globalFlag 359 == 1 
+
+localcount1 = random 20,0
+
+if localcount1 == 1
+Window"\n\n\n　　在洋务运动期间有一种观点:只要中国富强,外敌自敛手,中国自然获得民族独立.到了20世纪初,中国出现了实业救国的浪潮,我们认为这两种观点都不可能实现,从根本上是因为",next
+
+       Window"\n\n　　答案一：\n\n　　中国的自然经济占主导地位.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　中国没有真正获得民族独立,没有富强的基础.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　中国的民族资产阶级具有软弱性和妥协性缺陷 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+       
+endif
+
+if localcount1 == 2
+Window"\n\n\n　　最先证明地球是球形的历史事件是?",next
+
+       Window"\n\n　　答案一：\n\n　　哥伦布到达美洲大陆.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+
+       Window_no
+       Window"\n\n　　答案二：\n\n　　人造地球卫星的发射和使用.\n\n　　切换其他答案请选择『否』.",yes,no
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       
+       Window_no
+       Window"\n\n　　答案三：\n\n　　指南针的发明.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+endif
+
+if localcount1 == 3
+Window"\n\n\n　　人们划分五带的依据是",next
+
+       Window"\n\n　　答案一：\n\n　　获得太阳光热的多少.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+
+       Window_no
+       Window"\n\n　　答案二：\n\n　　有无太阳光的直射.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　有无四季变化.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 4
+
+Window"\n\n\n　　世界上面积最大、平均水温最高、水体最深的大洋是什么洋",next
+
+       Window"\n\n　　答案一：\n\n　　太平洋\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　大西洋.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　印度洋.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+
+if localcount1 == 5
+
+Window"\n\n\n　　当地壳板块发生张裂时，地表会产生什么现象",next
+
+       Window"\n\n　　答案一：\n\n　　形成盆地或丘陵.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　形成高大的山脉.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　形成裂谷或海洋.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 6
+
+
+Window"\n\n\n　　中央气象台天气预报：广州11月1日的气温为15～21℃。15℃是指一天中什么时候的气温",next
+
+       Window"\n\n　　答案一：\n\n　　日出前后.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　日落前后.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　午夜.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 7
+
+Window"\n\n\n　　世界上跨经度最多的大洲和大洋是",next
+
+       Window"\n\n　　答案一：\n\n　　南极洲.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　北冰洋.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　太平洋.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 8
+
+Window"\n\n\n　　“春暖、夏热、秋凉、冬冷”指的是",next
+
+       Window"\n\n　　答案一：\n\n　　温带四季的气温变化.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　五带四季的气温变化.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　寒带四季的气温变化.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+
+if localcount1 == 9
+
+Window"\n\n\n　　关于我国首都北京经纬度位置（40°N，116°E）的叙述正确的是",next
+
+       Window"\n\n　　答案一：\n\n　　位于北半球、东半球.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　位于南半球、东半球.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　位于南半球、西半球.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 10
+
+Window"\n\n\n　　每年北半球的12、1、2三个月是四季中的什么季",next
+
+       Window"\n\n　　答案一：\n\n　　夏季.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　秋季.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　冬季.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+
+if localcount1 == 11
+
+Window"\n\n\n　　北温带和热带分界线的是？",next
+
+       Window"\n\n　　答案一：\n\n　　北回归线.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　南回归线.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　南极圈.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+if localcount1 == 12
+
+Window"\n\n\n　　五一节之日，太阳直射点位于？",next
+
+       Window"\n\n　　答案一：\n\n　　北半球，往南移动.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　南半球，往南移动.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　北半球，往北移动.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+
+if localcount1 == 13
+
+Window"\n\n\n　　世界最高峰珠穆朗玛峰的海拔为8848米，世界最深的海沟马里亚纳海沟的水深为11034米，两者相对高度为多少米？",next
+
+       Window"\n\n　　答案一：\n\n　　3152米.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　19852米.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　19882米.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 14
+
+
+Window"\n\n\n　　被太平洋、印度洋、大西洋包围的大洲是？",next
+
+       Window"\n\n　　答案一：\n\n　　南极洲.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　亚洲.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　大洋洲.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+if localcount1 == 15
+
+Window"\n\n\n　　亚洲与非洲的分界线是？",next
+
+       Window"\n\n　　答案一：\n\n　　苏伊士运河.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　乌拉尔山脉.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　尼罗河.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 16
+
+Window"\n\n\n　　农业生产中的“春耕、夏种、秋收、冬藏”，主要的影响因素是？",next
+
+       Window"\n\n　　答案一：\n\n　　气候变化\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　纬度位置\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　海陆位置\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 17
+
+
+Window"\n\n\n　　有地图指向标的地图，其指向标的箭头指示的方向一般为？",next
+
+       Window"\n\n　　答案一：\n\n　　西向.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　北向.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　南向.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+Endif
+
+
+if localcount1 == 18
+
+Window"\n\n\n　　某断崖处有五条等高线重叠，相邻等高线之间的距离是50米，该断崖的相对高度可能是？",next
+
+       Window"\n\n　　答案一：\n\n　　259米 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　380米 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　199米.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 19
+
+Window"\n\n\n　　北京时间2003年1月2日19点小明在邹平给在布宜诺斯艾利斯（35°S、 59°W）工作的父亲打电话，语言表达正确的是？",next
+
+       Window"\n\n　　答案一：\n\n　　爸爸，晚上好。注意防暑。 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　爸爸，晚上好。注意防寒。 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　爸爸，早上好。注意防暑。 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 20
+
+Window"\n\n\n　　澳大利亚所在的板块为？",next
+
+       Window"\n\n　　答案一：\n\n　　印度洋板块  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 373 = 1
+       EndWindow"\n\n\n　　答对！你去找3号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　太平洋板块  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　南极洲板块 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+Endif
+
+block
+Endwindow "\n\n你没有领取任务!请到科举任务报名进行报名"

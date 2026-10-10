@@ -1,0 +1,8 @@
+############## 任务内容开始 ##############
+block	item 670040 == 1 && item 18541 == 1 && item 18542 == 1 && item 18375 == 1
+	window"\n\n@c 呵呵 好久没遇到过这么拼命的人了",yes,no
+	window_yes
+	giveitem 670039
+
+block
+	EndWindow 670047,ok

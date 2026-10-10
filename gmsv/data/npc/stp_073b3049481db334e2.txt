@@ -1,0 +1,34 @@
+block item 87948 == 1
+endwindow 933470
+
+block item 87933 == 1 && item 87942 == 1 && item 87947 == 1
+window 933471,next
+window 933472,ok
+window_ok
+killitem 87933
+killitem 87942
+killitem 87947
+giveitem 87948
+
+block item 87945 == 1
+endwindow 933473
+
+block item 87944 == 1
+window 933474,next
+window 933475,next
+window 933476,ok
+window_ok
+killitem 87944
+giveitem 87945
+
+block item 87943 == 1
+endwindow 933477
+
+block item 87933 == 1 && item 87942 == 1
+window 933478,next
+window 933479,ok
+window_ok
+giveitem 87943
+
+block
+endwindow 933480

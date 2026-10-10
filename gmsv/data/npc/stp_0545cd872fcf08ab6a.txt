@@ -1,0 +1,5 @@
+block item 800142 >= 1
+window "\n\n居然追到这里来,也好省得我去找你了,来吧",yes,no
+window_no
+window_yes item 800142 >= 1
+Encount 2|0,1976,20,23|800142|-1|||||0|28077|5|0|||||5|0|

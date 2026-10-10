@@ -1,0 +1,90 @@
+block skill 228 >= 1
+endwindow "\n\n怎么样?对这个新技能有什么特别的想法吗?"
+
+
+block item 1000131 >= 1
+endwindow "\n\n拿着推荐信去找那边的达姆斯特,他会带你去基地的."
+
+
+block item 1000130 >= 1 && item 9613 >= 20 && item 10002 >= 20 && item 12802 >= 20 && item 12004 >= 20 && item 12401 >= 20 && item 3229 >= 1 && item 820 >= 1 && item 4420 >= 1 && item 4822 >= 1
+window "\n\n已经收集齐了吗?我看看.",next
+window "\n\n(罗赛特正在清点你收集来的物品)",next
+window "\n\n恩,做的不错,给你,这是推荐信.拿着推荐信去找那边的达姆斯特,他会带你去基地的.",ok
+window_ok item 1000130 >= 1 && item 9613 >= 20 && item 10002 >= 20 && item 12802 >= 20 && item 12004 >= 20 && item 12401 >= 20 && item 3229 >= 1 && item 820 >= 1 && item 4420 >= 1 && item 4822 >= 1
+killitem 1000130
+killitem 9613,20
+killitem 10002,20
+killitem 12802,20
+killitem 12004,20
+killitem 12401,20
+killitem 3229
+killitem 820
+killitem 4420
+killitem 4822
+giveitem 1000131
+
+
+block item 1000130 >= 1
+endwindow "\n\n还没有集齐所需要的道具吗?请继续努力."
+
+
+block item 1000128 >= 1 && item 1000129 >= 1
+window "\n\n这么快就回来了?真实辛苦你了.",next
+window "\n\n说起来,你对我们这个行业有兴趣么?",yes,no
+window_no
+window "\n\n哦,这样啊,真实遗憾.不管怎样,今天你帮了我一个大忙,这个宝石就当是谢礼吧.以后有需要的地方随时来找我哟!",ok
+window_ok item 1000128 >= 1 && item 1000129 >= 1
+killitem 1000128
+killitem 1000129
+giveitem (3822%1,3823%1,3824%1,3825%1,3826%1,3827%1,3828%1,3829%1)
+window_yes
+window "\n\n我们这个行业是最近新兴起的一种行业,一般被称做杂货加工,从业者都是其他行业来兼职的.比如我本身是个裁缝,而推荐我加入杂货业的前辈是个非常厉害的鉴定师,据说他曾经打倒过树海里的四个斗神!咳咳......说远了.",next
+window "\n\n怎么样,是不是越来越有兴趣了?",yes,no
+window_no
+window "\n\n哦,这样啊,真实遗憾.不管怎样,今天你帮了我一个大忙,这个宝石就当是谢礼吧.以后有需要的地方随时来找我哟!",ok
+window_ok item 1000128 >= 1 && item 1000129 >= 1
+killitem 1000128
+killitem 1000129
+giveitem (3822%1,3823%1,3824%1,3825%1,3826%1,3827%1,3828%1,3829%1)
+window_yes
+window "\n\n那么,想不想进入我们这个行业呢?",yes,no
+window_no
+window "\n\n哦,这样啊,真实遗憾.不管怎样,今天你帮了我一个大忙,这个宝石就当是谢礼吧.以后有需要的地方随时来找我哟!",ok
+window_ok item 1000128 >= 1 && item 1000129 >= 1
+killitem 1000128
+killitem 1000129
+giveitem (3822%1,3823%1,3824%1,3825%1,3826%1,3827%1,3828%1,3829%1)
+window_yes
+window "\n\n恩恩,我就知道你肯定会这么说的.想要加入也不是很难的啦,只要我做你的推荐人就可以加入组织.不过呢,要我作为你的推荐人的话,你还需要经过一个小试炼.",next
+window "\n\n作为一个杂货工,你将会接触到以前从来没接触到过的材料,你有能力收集到那些材料吗?作为一个杂货工,你有可能制作那些你以前从未制作过类型的道具,你知道那些类型道具的样子吗?所以这个测试的内容就是收集这些道具,需要收集的东西我已经写到纸条上了,一旦收集齐,就请拿来找我吧.注意纸条不要丢掉哟.",ok
+window_ok item 1000128 >= 1 && item 1000129 >= 1
+killitem 1000128
+killitem 1000129
+giveitem 1000130
+
+
+block item 1000126 >= 1 || item 1000127 >= 1
+endwindow "\n\n请尽快把货物送达目的地吧,拜托了."
+
+
+block job == 205
+window "\n\n这位朋友,是否能帮我个忙?",yes,no
+window_no
+endwindow "\n\n哦,这样啊.那我再找别的人吧."
+window_yes
+window "\n\n是这样的,我这里有些东西需要送给别人,本来应该是我的一个朋友帮忙送过去的,但他昨天突然生病了.而我自己这里要做的事情也实在太多,所以......你能不能帮我这个忙?",yes,no
+window_no
+endwindow "\n\n哦,这样啊.那我再找别的人吧."
+window_yes
+window "\n\n那真是太谢谢你了.要送的东西就是这两个箱子.\n\n(罗赛特将两个箱子交给了你)\n\n都是刚刚做好的材料,红色的箱子要送到哥拉尔镇的杂货店的拉瑟瑞,黄色的箱子则要送给奇利村装备品店的穆恩.",next
+window "\n\n对了,因为那些材料比较特殊,不要带着它经过远距离的传送石比较好.",next
+window "\n\n那么,一切就拜托了.",ok
+window_ok itemspace < 2
+endwindow "\n\n啊呀,你身上的空间不够了,请腾出一些空间吧."
+window_ok
+giveitem 1000126
+giveitem 1000127
+
+
+block
+endwindow "\n\n唉......阿酷怎么偏偏这个时候生病呢."

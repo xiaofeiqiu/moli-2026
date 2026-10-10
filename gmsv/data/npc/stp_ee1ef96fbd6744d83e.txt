@@ -1,0 +1,9 @@
+block item 60501 >= 1
+window "\n\n生命之光与石像产生了共鸣,一阵眩光闪过.",ok
+window_ok item 60501 >= 1
+leavegroup
+Warp 0,57094,14,8,0,57095,14,8,0,57096,14,8
+
+
+
+

@@ -1,0 +1,8 @@
+block item 86750 == 1
+Warp 0,33500,43,26
+
+block
+window "\n\n虽然汝成功的将轮回之路的缝隙修复，但汝等的任务并未结束……切记~~",ok
+window_ok
+giveitem 87650
+Warp 0,33500,40,21

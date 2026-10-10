@@ -1,0 +1,21 @@
+block item 59912 >= 1
+        Window "\n\n@c你是永远战胜不了我的！",ok
+	Window_ok
+        killitem 59912,1
+
+Encount 3|0,8882,9,9|||||0|||59975|||||||||
+
+block item 59913 >= 1
+        Window "\n\n@c你是永远战胜不了我的！",ok
+	Window_ok
+        killitem 59913,1
+
+Encount 3|0,8882,9,9|||||0|||59976|||||||||
+
+
+
+block
+	Window "\n\n@c你是永远战胜不了我的！",ok
+	Window_ok
+
+Encount 3|0,8882,9,9|||||0|||59970|||||||||

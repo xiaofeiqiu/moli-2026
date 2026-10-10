@@ -1,0 +1,26 @@
+block item 87972 == 1
+window 933529,ok
+window_ok
+killitem 87972
+giveitem (87973%50,87974%50)
+givepet (101112%50,401%50)
+
+block item 87965 == 1
+endwindow 933530
+
+block item 87964 == 1
+window 933531,next
+window 933532,next
+window 933533,next
+window 933534,next
+window 933535,next
+window 933536,next
+window 933537,yes,no
+window_no
+window_yes
+killitem 87964
+giveitem 87965
+endwindow 933538
+
+block
+endwindow 933539

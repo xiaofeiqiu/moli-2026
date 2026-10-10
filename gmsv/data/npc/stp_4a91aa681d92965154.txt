@@ -1,0 +1,11 @@
+block item 800115 >= 1
+window "\n\n好像要被吸进异次元空间了,要前进么?",yes,no
+window_yes
+leaveGroup
+Warp 0,21511,280,240
+window_no
+endwindow "\n\n害怕就别来这里,傻屌!"
+
+block
+endwindow "\n\n你是谁?你在这里干嘛?"
+

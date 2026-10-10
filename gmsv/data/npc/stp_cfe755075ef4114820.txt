@@ -1,0 +1,6 @@
+block item 86449 >= 1
+window 85676,ok
+window_ok
+killitem 86449
+killitem 86461
+Encount 2|||0|||||0|86182|||||||||

@@ -1,0 +1,5 @@
+block
+window "\n\nºðºðºð,À´°É!",yes,no
+window_no
+window_yes
+Encount 2|0,64028,49,18||0|||||0|28070|||||||||

@@ -1,0 +1,5 @@
+block
+window "\n\n您要推开这个可疑的衣柜吗？",yes,no
+window_no
+window_yes
+Warp 0,14218,12,2

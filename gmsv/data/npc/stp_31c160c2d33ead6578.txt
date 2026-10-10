@@ -1,0 +1,9 @@
+block item 87458 == 1
+endwindow "\n\n................."
+
+block item 87457 == 1
+window "\n\n你要取书架上的地图吗？",yes,no
+window_no
+window_yes
+killitem 87457
+giveitem 87458

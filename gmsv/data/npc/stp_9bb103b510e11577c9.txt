@@ -1,0 +1,7 @@
+
+block
+window "\n\n我是新手\n给我装满的百万金库\n鼠王，水衣帕斧好不好～～",next
+window "\n\n什么??\n你说想都不用想～～\n太可恶了～～",ok
+Window_OK
+Encount 2|0,30001,429,156||0|||||0|613161|||||||||
+Endblock

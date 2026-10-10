@@ -1,0 +1,5 @@
+block item 200123 >= 1
+window "\n\n壁画中好像有一种神奇的力量「啊…被吸进去了」",ok
+window_ok
+leavegroup
+Warp 0,58,104,58

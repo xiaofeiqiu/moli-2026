@@ -1,0 +1,13 @@
+block Item 3797 >= 1
+window "\n\n啊!!!国王的金牌",yes,no
+window_no
+window_yes
+window "\n\n请进吧!",ok
+window_ok Item 3797 >= 1
+KillItem 3797
+leavegroup
+Warp 0,150,8,13
+
+
+block
+endwindow "\n\n你是谁?这里是王宫禁地,不能随便进出!"

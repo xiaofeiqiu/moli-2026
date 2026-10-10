@@ -1,0 +1,17 @@
+block globalFlag 309 == 1 && item 1000646 >= 1
+window 7020405,yes,no
+window_no
+window_yes gold >= 1000
+addgold -1000
+window 7020406,ok
+window_ok gold >= 3000
+LeaveGroup
+addgold -3000
+Warp 0,23234,14,21
+window_ok gold < 3000
+endwindow 7020407
+window_yes gold < 1000
+endwindow 7020407
+
+block
+endwindow 7020408

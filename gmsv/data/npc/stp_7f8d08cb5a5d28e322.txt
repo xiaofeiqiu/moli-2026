@@ -1,0 +1,24 @@
+block	level >= 190 && item 895018 < 1 && item 895019 < 1
+window"\n\n\n好久都没有陌生人来到这里了.我是十分的诧异啊！什么？你是来创世之地的所在的？",OK
+window_OK
+window"\n\n@c其实有些事情未必是知道了就是好事.不过你既然这么虔诚,我这里有封信,麻烦你带给我的老朋友霍依吧！",yes,no
+window_yes
+giveitem 895018,1
+endwindow"\n\n@c拿者吧，切记不可打开看里面的内容..."
+window_NO
+endwindow"\n\n@c那算了吧，你当我没说过"
+
+block	item 895018 >=1
+window"\n\n\n@c怎么？还在这里逗留？",next
+window"\n\n\n@c你想放弃吗?看来不能勉强你呢",yes,no
+window_yes
+KillItem 895018,1
+window"\n\n\n@c那抱歉了，信我要收回了",OK
+window_no
+window"\n\n\n@c那快去吧！",OK
+
+block	item 895019 >=1
+window"\n\n\n@c谢谢你..这个东西或许能帮助你.未明的异界来客",OK
+window_ok
+killitem 895019,1
+giveitem 52201,1

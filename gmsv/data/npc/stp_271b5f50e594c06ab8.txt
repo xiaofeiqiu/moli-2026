@@ -1,0 +1,17 @@
+block item 730072 >= 1
+endwindow "\n\n一有分析结果我就会通知你的."
+
+
+block item 730071 >= 1
+window "\n\n恩?这个是莎莲娜岛遗迹发掘出的?让我看看.",next
+window "\n\n看起来这些是某些祭奠仪式上使用的物品.分析起来有些麻烦啊!",next
+window "\n\n谢谢你辛苦送来,请拿着这个,一有分析结果我就会通知你的.",ok
+window_ok item 730071 >= 1
+killitem 730071
+giveitem 730072
+
+
+block
+window "\n\n...某些从未在历史中记载的邪恶力量始终潜藏在黑暗中,它们有着无限的耐心,等待着我们露出弱点...",next
+endwindow "\n\n这段记载总是让我看的毛骨悚然."
+

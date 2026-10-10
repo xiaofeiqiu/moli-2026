@@ -1,0 +1,1821 @@
+block Item 1000002 >0 && Item 600016 >0  ##  刚毅  
+	 Window 7000454  ,YES,NO  
+	 Window_YES Item 1000002 >= 1 && Item 600016 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600016 ==1
+	 SetDur  600016, +10  
+	 KillItem 1000002,1
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理刚毅吗？    
+block Item 1000002 >0 && Item 600015 >0  ##  弯勾剑  
+	 Window 7000455 ,YES,NO  
+	 Window_YES Item 1000002 >= 1 && Item 600015 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600015 == 1
+	 SetDur  600015, +10  
+	 KillItem 1000002,1 
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理弯勾剑吗？    
+block Item 1000002 >0 && Item 600002 >0  ##  黑作太刀  
+	 Window 7000456 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600002 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600002 == 1
+	 SetDur  600002, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理黑作太刀吗？    
+block Item 1000002 >0 && Item 202 >0  ##  草薙剑  
+	 Window 7000457  ,YES,NO   
+	 Window_YES Item 1000002 >= 1 && Item 202 >= 2
+	 EndWindow 7000452 
+	 Window_YES Item 1000002 >= 1 && Item 202 == 1
+	 SetDur  202, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理草薙剑吗？    
+block Item 1000002 >0 && Item 200 >0  ##  水龙之剑  
+	 Window 7000458   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 200 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 200 == 1
+	 SetDur  200, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙之剑吗？    
+block Item 1000002 >0 && Item 97 >0  ##  曲刀  
+	 Window 7000459   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 97 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 97 == 1
+	 SetDur  97, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理曲刀吗？    
+block Item 1000002 >0 && Item 94 >0  ##  青龙刀  
+	 Window 7000460   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 94 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 94 == 1
+	 SetDur  94, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理青龙刀吗？    
+block Item 1000002 >0 && Item 88 >0  ##  细刃重剑  
+	 Window 7000461   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 88 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 88 == 1
+	 SetDur  88, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理细刃重剑吗？    
+block Item 1000002 >0 && Item 87 >0  ##  钢硬巨剑  
+	 Window 7000462   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 87 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 87 == 1
+	 SetDur  87, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理钢硬巨剑吗？    
+block Item 1000002 >0 && Item 77 >0  ##  细柄短剑  
+	 Window 7000463   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 77 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 77 == 1
+	 SetDur  77, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理细柄短剑吗？    
+block Item 1000002 >0 && Item 73 >0  ##  长军刀+  
+	 Window 7000464   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 73 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 73 == 1
+	 SetDur  73, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长军刀+吗？    
+block Item 1000002 >0 && Item 70 >0  ##  护身短剑  
+	 Window 7000465   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 70 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 70 == 1
+	 SetDur  70, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理护身短剑吗？    
+block Item 1000002 >0 && Item 67 >0  ##  巨剑  
+	 Window 7000466,YES,NO
+	 Window_YES Item 1000002 >= 1 && Item 67 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 67 == 1
+	 SetDur  67, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理巨剑吗？    
+block Item 1000002 >0 && Item 63 >0  ##  长军刀  
+	 Window 7000467   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 63 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 63 == 1
+	 SetDur  63, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长军刀吗？    
+block Item 1000002 >0 && Item 57 >0  ##  双刃阔剑  
+	 Window 7000468   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 57 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 57 == 1
+	 SetDur  57, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双刃阔剑吗？    
+block Item 1000002 >0 && Item 56 >0  ##  猪牙剑  
+	 Window 7000469   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 56 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 56 == 1
+	 SetDur  56, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理猪牙剑吗？    
+block Item 1000002 >0 && Item 48 >0  ##  长锷剑  
+	 Window 7000470   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 48 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 48 == 1
+	 SetDur  48, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长锷剑吗？    
+block Item 1000002 >0 && Item 42 >0  ##  格斗剑  
+	 Window 7000471   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 42 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 42 == 1
+	 SetDur  42, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理格斗剑吗？    
+block Item 1000002 >0 && Item 39 >0  ##  锁刃剑  
+	 Window 7000472   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 39 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 39 == 1
+	 SetDur  39, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理锁刃剑吗？    
+block Item 1000002 >0 && Item 37 >0  ##  双刃长剑  
+	 Window 7000473   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 37 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 37 == 1
+	 SetDur  37, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双刃长剑吗？    
+block Item 1000002 >0 && Item 28 >0  ##  双手剑  
+	 Window 7000474   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 28 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 28 == 1
+	 SetDur  28, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双手剑吗？    
+block Item 1000002 >0 && Item 22 >0  ##  面包剑  
+	 Window 7000475   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 22 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 22 == 1
+	 SetDur  22, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理面包剑吗？    
+block Item 1000002 >0 && Item 18 >0  ##  火舌剑  
+	 Window 7000476   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 18 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 18 == 1
+	 SetDur  18, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理火舌剑吗？    
+block Item 1000002 >0 && Item 16 >0  ##  突刺剑  
+	 Window 7000477   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 16 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 16 == 1
+	 SetDur  16, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理突刺剑吗？    
+block Item 1000002 >0 && Item 8 >0  ##  长剑  
+	 Window 7000478   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 8 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 8 == 1
+	 SetDur  8, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长剑吗？    
+block Item 1000002 >0 && Item 3 >0  ##  阔剑  
+	 Window 7000479   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 3 == 1
+	 SetDur  3, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理阔剑吗？    
+block Item 1000002 >0 && Item 600216 >0  ##  重击斧  
+	 Window 7000480   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600216 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600216 == 1
+	 SetDur  600216, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理重击斧吗？    
+block Item 1000002 >0 && Item 600215 >0  ##  高速斧  
+	 Window 7000481   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600215 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600215 == 1
+	 SetDur  600215, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理高速斧吗？    
+block Item 1000002 >0 && Item 600202 >0  ##  钻宝雷格之斧  
+	 Window 7000482   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600202 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600202 == 1
+	 SetDur  600202, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理钻宝雷格之斧吗？    
+block Item 1000002 >0 && Item 895 >0  ##  处刑斧  
+	 Window 7000483   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 895 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 895 == 1
+	 SetDur  895, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理处刑斧吗？    
+block Item 1000002 >0 && Item 890 >0  ##  金属重斧  
+	 Window 7000484   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 890 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 890 == 1
+	 SetDur  890, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理金属重斧吗？    
+block Item 1000002 >0 && Item 885 >0  ##  弯月长柄斧  
+	 Window 7000485   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 885 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 885 == 1
+	 SetDur  885, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理弯月长柄斧吗？    
+block Item 1000002 >0 && Item 883 >0  ##  薄刃钩爪斧  
+	 Window 7000486   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 883 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 883 == 1
+	 SetDur  883, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理薄刃钩爪斧吗？    
+block Item 1000002 >0 && Item 878 >0  ##  新月斧  
+	 Window 7000487   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 878 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 878 == 1
+	 SetDur  878, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理新月斧吗？    
+block Item 1000002 >0 && Item 875 >0  ##  大型双刃斧+  
+	 Window 7000488   ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 875 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 875 == 1
+	 SetDur  875, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理大型双刃斧+吗？    
+block Item 1000002 >0 && Item 872 >0  ##  米诺陶斯战斧  
+	 Window 7000489  ,YES,NO  
+	 Window_YES Item 1000002 >= 1 && Item 872 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 872 == 1
+	 SetDur  872, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理米诺陶斯战斧吗？    
+block Item 1000002 >0 && Item 867 >0  ##  超大皇帝斧  
+	 Window 7000490  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 867 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 867 == 1
+	 SetDur  867, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理超大皇帝斧吗？    
+block Item 1000002 >0 && Item 863 >0  ##  大型双刃斧  
+	 Window 7000491  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 863 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 863 == 1
+	 SetDur  863, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理大型双刃斧吗？    
+block Item 1000002 >0 && Item 854 >0  ##  弯月大战斧  
+	 Window 7000492  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 854 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 854 == 1
+	 SetDur  854, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理弯月大战斧吗？    
+block Item 1000002 >0 && Item 852 >0  ##  大型阔刃斧  
+	 Window 7000493  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 852 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 852 == 1
+	 SetDur  852, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理大型阔刃斧吗？    
+block Item 1000002 >0 && Item 842 >0  ##  阔刃斧  
+	 Window 7000494  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 842 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 842 == 1
+	 SetDur  842, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理阔刃斧吗？    
+block Item 1000002 >0 && Item 841 >0  ##  钩爪斧  
+	 Window 7000495  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 841 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 841 == 1
+	 SetDur  841, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理钩爪斧吗？    
+block Item 1000002 >0 && Item 838 >0  ##  双刃斧  
+	 Window 7000496  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 838 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 838 == 1
+	 SetDur  838, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双刃斧吗？    
+block Item 1000002 >0 && Item 830 >0  ##  长战斧  
+	 Window 7000497  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 830 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 830 == 1
+	 SetDur  830, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长战斧吗？    
+block Item 1000002 >0 && Item 826 >0  ##  钢斧  
+	 Window 7000498  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 826 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 826 == 1
+	 SetDur  826, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理钢斧吗？    
+block Item 1000002 >0 && Item 820 >0  ##  格斗手斧  
+	 Window 7000499  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 820 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 820 == 1
+	 SetDur  820, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理格斗手斧吗？    
+block Item 1000002 >0 && Item 812 >0  ##  宽手斧  
+	 Window 7000500  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 812 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 812 == 1
+	 SetDur  812, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理宽手斧吗？    
+block Item 1000002 >0 && Item 811 >0  ##  战斗手斧  
+	 Window 7000501  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 811 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 811 == 1
+	 SetDur  811, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理战斗手斧吗？    
+block Item 1000002 >0 && Item 809 >0  ##  勇气之斧  
+	 Window 7000502  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 809 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 809 == 1
+	 SetDur  809, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理勇气之斧吗？    
+block Item 1000002 >0 && Item 805 >0  ##  手斧  
+	 Window 7000503  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 805 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 805 == 1
+	 SetDur  805, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理手斧吗？    
+block Item 1000002 >0 && Item 207 >0  ##  暗黑之斧  
+	 Window 7000504  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 207 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 207 == 1
+	 SetDur  207, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理暗黑之斧吗？    
+block Item 1000002 >0 && Item 205 >0  ##  水龙之斧  
+	 Window 7000505  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 205 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 205 == 1
+	 SetDur  205, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙之斧吗？    
+block Item 1000002 >0 && Item 600416 >0  ##  穿刺枪  
+	 Window 7000506  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600416 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600416 == 1
+	 SetDur  600416, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理穿刺枪吗？    
+block Item 1000002 >0 && Item 600415 >0  ##  痛击枪  
+	 Window 7000507  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600415 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600415 == 1
+	 SetDur  600415, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理痛击枪吗？    
+block Item 1000002 >0 && Item 600402 >0  ##  偃月刀  
+	 Window 7000508  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600402 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600402 == 1
+	 SetDur  600402, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理偃月刀吗？    
+block Item 1000002 >0 && Item 1698 >0  ##  三叉战戟  
+	 Window 7000509  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1698 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1698 == 1
+	 SetDur  1698, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理三叉战戟吗？    
+block Item 1000002 >0 && Item 1695 >0  ##  异型枪  
+	 Window 7000510  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1695 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1695 == 1
+	 SetDur  1695, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理异型枪吗？    
+block Item 1000002 >0 && Item 1686 >0  ##  原始枪  
+	 Window 7000511  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1686 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1686 == 1
+	 SetDur  1686, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理原始枪吗？    
+block Item 1000002 >0 && Item 1684 >0  ##  钩爪枪  
+	 Window 7000512  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1684 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1684 == 1
+	 SetDur  1684, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理钩爪枪吗？    
+block Item 1000002 >0 && Item 1678 >0  ##  阔刃枪  
+	 Window 7000513  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1678 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1678 == 1
+	 SetDur  1678, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理阔刃枪吗？    
+block Item 1000002 >0 && Item 1673 >0  ##  东方长刺枪  
+	 Window 7000514  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1673 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1673 == 1
+	 SetDur  1673, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理东方长刺枪吗？    
+block Item 1000002 >0 && Item 1672 >0  ##  蝎枪+  
+	 Window 7000515  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1672 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1672 == 1
+	 SetDur  1672, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理蝎枪+吗？    
+block Item 1000002 >0 && Item 1669 >0  ##  双刃枪  
+	 Window 7000516  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1669 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1669 == 1
+	 SetDur  1669, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双刃枪吗？    
+block Item 1000002 >0 && Item 1663 >0  ##  蝎枪  
+	 Window 7000517  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1663 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1663 == 1
+	 SetDur  1663, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理蝎枪吗？    
+block Item 1000002 >0 && Item 1658 >0  ##  长尖枪  
+	 Window 7000518  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1658 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1658 == 1
+	 SetDur  1658, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长尖枪吗？    
+block Item 1000002 >0 && Item 1657 >0  ##  大砍枪  
+	 Window 7000519  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1657 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1657 == 1
+	 SetDur  1657, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理大砍枪吗？    
+block Item 1000002 >0 && Item 1649 >0  ##  骑士枪  
+	 Window 7000520  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1649 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1649 == 1
+	 SetDur  1649, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理骑士枪吗？    
+block Item 1000002 >0 && Item 1643 >0  ##  护卫枪  
+	 Window 7000521  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1643 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1643 == 1
+	 SetDur  1643, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理护卫枪吗？    
+block Item 1000002 >0 && Item 1635 >0  ##  穗枪  
+	 Window 7000522  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1635 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1635 == 1
+	 SetDur  1635, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理穗枪吗？    
+block Item 1000002 >0 && Item 1634 >0  ##  双叉戟  
+	 Window 7000523  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1634 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1634 == 1
+	 SetDur  1634, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双叉戟吗？    
+block Item 1000002 >0 && Item 1629 >0  ##  长柄弯枪  
+	 Window 7000524  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1629 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1629 == 1
+	 SetDur  1629, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长柄弯枪吗？    
+block Item 1000002 >0 && Item 1625 >0  ##  长柄尖枪  
+	 Window 7000525  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1625 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1625 == 1
+	 SetDur  1625, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长柄尖枪吗？    
+block Item 1000002 >0 && Item 1619 >0  ##  刺枪  
+	 Window 7000526  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1619 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1619 == 1
+	 SetDur  1619, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理刺枪吗？    
+block Item 1000002 >0 && Item 1613 >0  ##  金属枪  
+	 Window 7000527  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1613 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1613 == 1
+	 SetDur  1613, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理金属枪吗？    
+block Item 1000002 >0 && Item 1608 >0  ##  短矛  
+	 Window 7000528  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1608 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1608 == 1
+	 SetDur  1608, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理短矛吗？    
+block Item 1000002 >0 && Item 1606 >0  ##  攻城枪  
+	 Window 7000529  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 1606 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 1606 == 1
+	 SetDur  1606, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理攻城枪吗？    
+block Item 1000002 >0 && Item 212 >0  ##  圣杯之枪  
+	 Window 7000530  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 212 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 212 == 1
+	 SetDur  212, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理圣杯之枪吗？    
+block Item 1000002 >0 && Item 210 >0  ##  水龙之枪  
+	 Window 7000531  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 210 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 210 == 1
+	 SetDur  210, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙之枪吗？    
+block Item 1000002 >0 && Item 600616 >0  ##  月之弓  
+	 Window 7000532  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600616 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600616 == 1
+	 SetDur  600616, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理月之弓吗？    
+block Item 1000002 >0 && Item 600615 >0  ##  调和之弓  
+	 Window 7000533  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600615 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600615 == 1
+	 SetDur  600615, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理调和之弓吗？    
+block Item 1000002 >0 && Item 600602 >0  ##  米斯特汀之弓  
+	 Window 7000534  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600602 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 600602 == 1
+	 SetDur  600602, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理米斯特汀之弓吗？    
+block Item 1000002 >0 && Item 2098 >0  ##  魔弹  
+	 Window 7000535  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2098 >= 2
+	 EndWindow 7000452  Window_YES Item 1000002 >= 1 && Item 2098 == 1
+	 SetDur  2098, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理魔弹吗？    
+block Item 1000002 >0 && Item 2095 >0  ##  摘星之弓  
+	 Window 7000536  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2095 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2095 == 1
+	 SetDur  2095, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理摘星之弓吗？    
+block Item 1000002 >0 && Item 2083 >0  ##  灵魂之弓  
+	 Window 7000537  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2083 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2083 == 1
+	 SetDur  2083, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理灵魂之弓吗？    
+block Item 1000002 >0 && Item 2082 >0  ##  平行弓  
+	 Window 7000538  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2082 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2082 == 1
+	 SetDur  2082, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理平行弓吗？    
+block Item 1000002 >0 && Item 2078 >0  ##  重弦弓  
+	 Window 7000539  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2078 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2078 == 1
+	 SetDur  2078, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理重弦弓吗？    
+block Item 1000002 >0 && Item 2071 >0  ##  原始石弓  
+	 Window 7000540  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2071 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2071 == 1
+	 SetDur  2071, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理原始石弓吗？    
+block Item 1000002 >0 && Item 2070 >0  ##  月光之弓+  
+	 Window 7000541  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2070 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2070 == 1
+	 SetDur  2070, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理月光之弓+吗？    
+block Item 1000002 >0 && Item 2063 >0  ##  破邪长弓  
+	 Window 7000542  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2063 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2063 == 1
+	 SetDur  2063, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理破邪长弓吗？    
+block Item 1000002 >0 && Item 2062 >0  ##  月光之弓  
+	 Window 7000543  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2062 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2062 == 1
+	 SetDur  2062, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理月光之弓吗？    
+block Item 1000002 >0 && Item 2055 >0  ##  巨弓  
+	 Window 7000544  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2055 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2055 == 1
+	 SetDur  2055, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理巨弓吗？    
+block Item 1000002 >0 && Item 2052 >0  ##  长格斗弓  
+	 Window 7000545  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2052 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2052 == 1
+	 SetDur  2052, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理长格斗弓吗？    
+block Item 1000002 >0 && Item 2049 >0  ##  杀手长弓  
+	 Window 7000546  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2049 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2049 == 1
+	 SetDur  2049, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理杀手长弓吗？    
+block Item 1000002 >0 && Item 2042 >0  ##  冲击弓  
+	 Window 7000547  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2042 >= 2
+	 EndWindow 7000452  Window_YES Item 1000002 >= 1 && Item 2042 == 1
+	 SetDur  2042, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理冲击弓吗？    
+block Item 1000002 >0 && Item 2038 >0  ##  超强狙击弓  
+	 Window 7000548  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2038 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2038 == 1
+	 SetDur  2038, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理超强狙击弓吗？    
+block Item 1000002 >0 && Item 2035 >0  ##  狙击之弓  
+	 Window 7000549  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2035 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2035 == 1
+	 SetDur  2035, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理狙击之弓吗？    
+block Item 1000002 >0 && Item 2023 >0  ##  格斗弓  
+	 Window 7000550  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2023 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2023 == 1
+	 SetDur  2023, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理格斗弓吗？    
+block Item 1000002 >0 && Item 2022 >0  ##  强弓  
+	 Window 7000551  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2022 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2022 == 1
+	 SetDur  2022, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理强弓吗？    
+block Item 1000002 >0 && Item 2017 >0  ##  猎弓  
+	 Window 7000552  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2017 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2017 == 1
+	 SetDur  2017, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理猎弓吗？    
+block Item 1000002 >0 && Item 2010 >0  ##  短战弓  
+	 Window 7000553  ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2010 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2010 == 1
+	 SetDur  2010, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理短战弓吗？    
+block Item 1000002 >0 && Item 2002 >0  ##  威力短弓  
+	 Window 7000554 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2002 >= 2
+	 EndWindow 7000452  
+	 Window_YES Item 1000002 >= 1 && Item 2002 == 1
+	 SetDur  2002, +10  
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##  \n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理威力短弓吗？    
+block Item 1000002 >0 && Item 2000 >0  ##轻型弓	 
+	 Window 7000555,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2000 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2000 == 1
+	 SetDur  2000, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理轻型弓吗？    
+block Item 1000002 >0 && Item 217 >0  ##天狼星
+	 Window 7000556,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 217 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 217 == 1
+	 SetDur  217, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理天狼星吗？    
+block Item 1000002 >0 && Item 215 >0  ##水龙之弓	 
+	 Window 7000557	,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 215 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 215 == 1
+	 SetDur  215, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙之弓吗？    
+block Item 1000002 >0 && Item 600816 >0  ##星锤杖
+	 Window 7000558,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600816 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 600816 == 1
+	 SetDur  600816, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理星锤杖吗？    
+block Item 1000002 >0 && Item 600815 >0  ##王者之手
+	 Window 7000559,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600815 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 600815 == 1
+	 SetDur  600815, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理王者之手吗？    
+block Item 1000002 >0 && Item 600802 >0  ##魔晶之杖
+	 Window 7000560 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 600802 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 600802 == 1
+	 SetDur  600802, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理魔晶之杖吗？    
+block Item 1000002 >0 && Item 2497 >0  ##星屑短杖
+	 Window 7000562 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2497 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2497 == 1
+	 SetDur  2497, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理星屑短杖吗？    
+block Item 1000002 >0 && Item 2495 >0  ##天使之杖
+	 Window 7000563 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2495 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2495 == 1
+	 SetDur  2495, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理天使之杖吗？    
+block Item 1000002 >0 && Item 2493 >0  ##圣者之杖
+	 Window 7000564 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2493 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2493 == 1
+	 SetDur  2493, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理圣者之杖吗？    
+block Item 1000002 >0 && Item 2492 >0  ##太阳短杖
+	 Window 7000565 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2492 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2492 == 1
+	 SetDur  2492, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理太阳短杖吗？    
+block Item 1000002 >0 && Item 2488 >0  ##光明短杖
+	 Window 7000566 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2488 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2488 == 1
+	 SetDur  2488, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理光明短杖吗？    
+block Item 1000002 >0 && Item 2486 >0  ##恶魔之杖	 
+	 Window 7000567 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2486 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2486 == 1
+	 SetDur  2486, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理恶魔之杖吗？    
+block Item 1000002 >0 && Item 2484 >0  ##落雷权杖+	 
+	 Window 7000568 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2484 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2484 == 1
+	 SetDur  2484, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理落雷权杖+吗？    
+block Item 1000002 >0 && Item 2478 >0  ##隐者之杖
+	 Window 7000569 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2478 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2478 == 1
+	 SetDur  2478, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理隐者之杖吗？    
+block Item 1000002 >0 && Item 2473 >0  ##怒音之杖
+	 Window 7000570 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2473 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2473 == 1
+	 SetDur  2473, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理怒音之杖吗？    
+block Item 1000002 >0 && Item 2462 >0  ##神圣之杖
+	 Window 7000571 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2462 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2462 == 1
+	 SetDur  2462, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理神圣之杖吗？    
+block Item 1000002 >0 && Item 2461 >0  ##元素之杖
+	 Window 7000572 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2461 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2461 == 1
+	 SetDur  2461, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理元素之杖吗？    
+block Item 1000002 >0 && Item 2450 >0  ##琥珀权杖
+	 Window 7000573 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2450 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2450 == 1
+	 SetDur  2450, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理琥珀权杖吗？    
+block Item 1000002 >0 && Item 2449 >0  ##琥珀杖
+	 Window 7000574 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2449 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2449 == 1
+	 SetDur  2449, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理琥珀杖吗？    
+block Item 1000002 >0 && Item 2447 >0  ##贤者手杖
+	 Window 7000575 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2447 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2447 == 1
+	 SetDur  2447, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理贤者手杖吗？    
+block Item 1000002 >0 && Item 2446 >0  ##贤者权杖
+	 Window 7000576 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2446 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2446 == 1
+	 SetDur  2446, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理贤者权杖吗？    
+block Item 1000002 >0 && Item 2435 >0  ##魔之手杖
+	 Window 7000577 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2435 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2435 == 1
+	 SetDur  2435, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理魔之手杖吗？    
+block Item 1000002 >0 && Item 2434 >0  ##魔之权杖
+	 Window 7000578 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2434 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2434 == 1
+	 SetDur  2434, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理魔之权杖吗？    
+block Item 1000002 >0 && Item 2418 >0  ##激流权杖
+	 Window 7000579 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2418 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2418 == 1
+	 SetDur  2418, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理激流权杖吗？    
+block Item 1000002 >0 && Item 2413 >0  ##大地之杖
+	 Window 7000580 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2413 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2413 == 1
+	 SetDur  2413, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理大地之杖吗？    
+block Item 1000002 >0 && Item 2404 >0  ##短杖
+	 Window 7000581 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2404 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2404 == 1
+	 SetDur  2404, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理短杖吗？    
+block Item 1000002 >0 && Item 2402 >0  ##权杖
+	 Window 7000582 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2402 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2402 == 1
+	 SetDur  2402, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理权杖吗？    
+block Item 1000002 >0 && Item 222 >0  ##CEN-1088Prototype
+	 Window 7000583 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 222 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 222 == 1
+	 SetDur  222, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理CEN-1088Prototype吗？    
+block Item 1000002 >0 && Item 220 >0  ##水龙之杖
+	 Window 7000584 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 220 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 220 == 1
+	 SetDur  220, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙之杖吗？    
+block Item 1000002 >0 && Item 601016 >0  ##节制飞镖
+	 Window 7000585 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 601016 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 601016 == 1
+	 SetDur  601016, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理节制飞镖吗？    
+block Item 1000002 >0 && Item 601015 >0  ##基盘飞镖
+	 Window 7000586 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 601015 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 601015 == 1
+	 SetDur  601015, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理基盘飞镖吗？    
+block Item 1000002 >0 && Item 601002 >0  ##北斗之鎌刀
+	 Window 7000587 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 601002 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 601002 == 1
+	 SetDur  601002, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理北斗之鎌刀吗？    
+block Item 1000002 >0 && Item 2899 >0  ##天秤回力镖
+	 Window 7000588 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2899 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2899 == 1
+	 SetDur  2899, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理天秤回力镖吗？    
+block Item 1000002 >0 && Item 2898 >0  ##治愈回力镖
+	 Window 7000589 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2898 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2898 == 1
+	 SetDur  2898, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理治愈回力镖吗？    
+block Item 1000002 >0 && Item 2889 >0  ##普利辛回力镖
+	 Window 7000590 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2889 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2889 == 1
+	 SetDur  2889, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理普利辛回力镖吗？    
+block Item 1000002 >0 && Item 2887 >0  ##天使之翼
+	 Window 7000591 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2887 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2887 == 1
+	 SetDur  2887, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理天使之翼吗？    
+block Item 1000002 >0 && Item 2874 >0  ##赤狮回力镳
+	 Window 7000592 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2874 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2874 == 1
+	 SetDur  2874, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理赤狮回力镳吗？    
+block Item 1000002 >0 && Item 2871 >0  ##凶豹回力镳
+	 Window 7000593 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2871 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2871 == 1
+	 SetDur  2871, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理凶豹回力镳吗？    
+block Item 1000002 >0 && Item 2870 >0  ##熊翼回力镖+
+	 Window 7000594 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2870 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2870 == 1
+	 SetDur  2870, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理熊翼回力镖+吗？    
+block Item 1000002 >0 && Item 2863 >0  ##闪光回力镖
+	 Window 7000595 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2863 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2863 == 1
+	 SetDur  2863, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理闪光回力镖吗？    
+block Item 1000002 >0 && Item 2862 >0  ##熊翼回力镖
+	 Window 7000596 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2862 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2862 == 1
+	 SetDur  2862, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理熊翼回力镖吗？    
+block Item 1000002 >0 && Item 2859 >0  ##蛇狮回力镖
+	 Window 7000597 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2859 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2859 == 1
+	 SetDur  2859, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理蛇狮回力镖吗？    
+block Item 1000002 >0 && Item 2850 >0  ##鸫回力镖
+	 Window 7000598 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2850 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2850 == 1
+	 SetDur  2850, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理鸫回力镖吗？    
+block Item 1000002 >0 && Item 2848 >0  ##翼鹿回力镖
+	 Window 7000599 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2848 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2848 == 1
+	 SetDur  2848, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理翼鹿回力镖吗？    
+block Item 1000002 >0 && Item 2843 >0  ##回力镖
+	 Window 7000600 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2843 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2843 == 1
+	 SetDur  2843, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理回力镖吗？    
+block Item 1000002 >0 && Item 2834 >0  ##狮子回力镖
+	 Window 7000601 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2834 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2834 == 1
+	 SetDur  2834, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理狮子回力镖吗？    
+block Item 1000002 >0 && Item 2832 >0  ##锐角回力镖
+	 Window 7000602 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2832 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2832 == 1
+	 SetDur  2832, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理锐角回力镖吗？    
+block Item 1000002 >0 && Item 2823 >0  ##杀敌回力镖
+	 Window 7000603 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2823 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2823 == 1
+	 SetDur  2823, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理杀敌回力镖吗？    
+block Item 1000002 >0 && Item 2820 >0  ##暗杀回力镖
+	 Window 7000604 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2820 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2820 == 1
+	 SetDur  2820, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理暗杀回力镖吗？    
+block Item 1000002 >0 && Item 2815 >0  ##彩光回力镖
+	 Window 7000605 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2815 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2815 == 1
+	 SetDur  2815, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理彩光回力镖吗？    
+block Item 1000002 >0 && Item 2812 >0  ##追迹者
+	 Window 7000606 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2812 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2812 == 1
+	 SetDur  2812, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理追迹者吗？    
+block Item 1000002 >0 && Item 2806 >0  ##木制大型回力镖
+	 Window 7000607 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2806 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2806 == 1
+	 SetDur  2806, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理木制大型回力镖吗？    
+block Item 1000002 >0 && Item 2801 >0  ##青铜回力镖
+	 Window 7000608 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 2801 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 2801 == 1
+	 SetDur  2801, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理青铜回力镖吗？    
+block Item 1000002 >0 && Item 227 >0  ##佛利波罗
+	 Window 7000609 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 227 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 227 == 1
+	 SetDur  227, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理佛利波罗吗？    
+block Item 1000002 >0 && Item 225 >0  ##水龙回力镖
+	 Window 7000610 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 225 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 225 == 1
+	 SetDur  225, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙回力镖吗？    
+block Item 1000002 >0 && Item 601216 >0  ##凶残刀
+	 Window 7000611 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 601216 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 601216 == 1
+	 SetDur  601216, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理凶残刀吗？    
+block Item 1000002 >0 && Item 601215 >0  ##破灭刀
+	 Window 7000612 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 601215 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 601215 == 1
+	 SetDur  601215, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理破灭刀吗？    
+block Item 1000002 >0 && Item 601202 >0  ##忍者飞镖
+	 Window 7000613 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 601202 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 601202 == 1
+	 SetDur  601202, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理忍者飞镖吗？    
+block Item 1000002 >0 && Item 3299 >0  ##幻之匕首
+	 Window 7000614 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3299 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3299 == 1
+	 SetDur  3299, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理幻之匕首吗？    
+block Item 1000002 >0 && Item 3294 >0  ##勾爪掷刀
+	 Window 7000615 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3294 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3294 == 1
+	 SetDur  3294, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理勾爪掷刀吗？    
+block Item 1000002 >0 && Item 3288 >0  ##华丽小刀
+	 Window 7000616 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3288 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3288 == 1
+	 SetDur  3288, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理华丽小刀吗？    
+block Item 1000002 >0 && Item 3281 >0  ##手里剑
+	 Window 7000617 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3281 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3281 == 1
+	 SetDur  3281, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理手里剑吗？    
+block Item 1000002 >0 && Item 3279 >0  ##古传小刀
+	 Window 7000618 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3279 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3279 == 1
+	 SetDur  3279, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理古传小刀吗？    
+block Item 1000002 >0 && Item 3276 >0  ##切肉小刀
+	 Window 7000619 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3276 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3276 == 1
+	 SetDur  3276, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理切肉小刀吗？    
+block Item 1000002 >0 && Item 3270 >0  ##疾速短刀+
+	 Window 7000620 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3270 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3270 == 1
+	 SetDur  3270, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理疾速短刀+吗？    
+block Item 1000002 >0 && Item 3269 >0  ##凶杀刀
+	 Window 7000621 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3269 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3269 == 1
+	 SetDur  3269, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理凶杀刀吗？    
+block Item 1000002 >0 && Item 3260 >0  ##汉拉堤小刀
+	 Window 7000622 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3260 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3260 == 1
+	 SetDur  3260, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理汉拉堤小刀吗？    
+block Item 1000002 >0 && Item 3253 >0  ##触角小刀
+	 Window 7000623 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3253 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3253 == 1
+	 SetDur  3253, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理触角小刀吗？    
+block Item 1000002 >0 && Item 3251 >0  ##阔刃小刀
+	 Window 7000624 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3251 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3251 == 1
+	 SetDur  3251, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理阔刃小刀吗？    
+block Item 1000002 >0 && Item 3245 >0  ##球锷小刀
+	 Window 7000625 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3245 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3245 == 1
+	 SetDur  3245, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理球锷小刀吗？    
+block Item 1000002 >0 && Item 3241 >0  ##双刃小刀
+	 Window 7000626 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3241 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3241 == 1
+	 SetDur  3241, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理双刃小刀吗？    
+block Item 1000002 >0 && Item 3235 >0  ##骑士小刀
+	 Window 7000627 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3235 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3235 == 1
+	 SetDur  3235, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理骑士小刀吗？    
+block Item 1000002 >0 && Item 3230 >0  ##耳柄小刀
+	 Window 7000628 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3230 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3230 == 1
+	 SetDur  3230, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理耳柄小刀吗？    
+block Item 1000002 >0 && Item 3229 >0  ##细直刃小刀
+	 Window 7000629 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3229 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3229 == 1
+	 SetDur  3229, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理细直刃小刀吗？    
+block Item 1000002 >0 && Item 3222 >0  ##滑翔小刀
+	 Window 7000630 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3222 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3222 == 1
+	 SetDur  3222, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理滑翔小刀吗？    
+block Item 1000002 >0 && Item 3213 >0  ##细刃掷刀
+	 Window 7000631 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3213 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3213 == 1
+	 SetDur  3213, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理细刃掷刀吗？    
+block Item 1000002 >0 && Item 3212 >0  ##圆盘小刀
+	 Window 7000632 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3212 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3212 == 1
+	 SetDur  3212, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理圆盘小刀吗？    
+block Item 1000002 >0 && Item 3204 >0  ##锐刃小刀
+	 Window 7000633 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3204 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3204 == 1
+	 SetDur  3204, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理锐刃小刀吗？    
+block Item 1000002 >0 && Item 3201 >0  ##小刀
+	 Window 7000634 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 3201 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 3201 == 1
+	 SetDur  3201, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理小刀吗？    
+block Item 1000002 >0 && Item 232 >0  ##亚尔提小刀
+	 Window 7000635 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 232 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 232 == 1
+	 SetDur  232, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理亚尔提小刀吗？    
+block Item 1000002 >0 && Item 230 >0  ##水龙小刀
+	 Window 7000636 ,YES,NO 
+	 Window_YES Item 1000002 >= 1 && Item 230 >= 2
+	 EndWindow 7000452
+	 Window_YES Item 1000002 >= 1 && Item 230 == 1
+	 SetDur  230, +10
+	 KillItem 1000002,1  
+	 EndWindow 7000399  
+	 Window_NO
+	 ##\n\n　　　　超级武器魔布，\n　　　　能将你的武器耐久恢复１０，　　　　你确定要修理水龙小刀吗？    
+block
+EndWindow 7000848
+##\n\n\n@你没有任何武器需要回复耐久喔！！	1

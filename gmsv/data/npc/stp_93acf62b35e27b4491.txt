@@ -1,0 +1,21 @@
+block EndEvent 546 == 1
+window "\n\n你是否要前往圣迦尔德王国?",yes,no
+window_yes
+window "\n\n请上船吧,船马上就要起航了,一会就到了,祝你旅途愉快.",ok
+window_ok
+leavegroup
+Warp 0,27100,54,49
+
+
+
+block item 200205 >= 1
+window "\n\n你是否要前往圣迦尔德王国?",yes,no
+window_yes
+window "\n\n请上船吧,船马上就要起航了,一会就到了,祝你旅途愉快.",ok
+window_ok
+leavegroup
+Warp 0,27100,54,49
+
+
+block
+endwindow "\n\n你没有船票是无法登船前往圣迦尔德王国的."

@@ -1,0 +1,6 @@
+block
+window "\n\n你想去[珊瑚小镇]吗?",yes,no
+window_yes gold < 0
+endwindow "\n\n你的钱不够"
+window_yes
+Warp 0,5000,49,8

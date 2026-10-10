@@ -1,0 +1,13 @@
+block item 1000211 >= 15
+window "\n\n收集到那么多结晶了?\n\n交给我吧,我会给你更有趣的东西",yes,no
+window_yes itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_yes
+killitem 1000211,15
+giveitem (1000212%1,1000213%1,1000214%1,1000215%1)
+window_no
+endwindow "\n\n那你还有什么有趣的东西?"
+
+
+block
+endwindow "\n\n你有什么有趣的东西?"

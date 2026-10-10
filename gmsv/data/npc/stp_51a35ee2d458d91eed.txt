@@ -1,0 +1,9 @@
+Block Itemdur 661201==1
+EndWindow"\n\n\n@c请你们一定要消灭他们...."
+Block Item 661201 >=1
+Window"\n\n\n勇者....我已经无能为力了 邪魔组织的力量比我想象当中的还厉害.我手下的3名将领已经全部被消灭,我只知道邪魔现在就在冰雪的牢城展开大屠杀....请你们一定要消灭他们....",ok
+Window_ok
+Setdur 661201,-1
+
+Block
+EndWindow"\n\n\n…………"

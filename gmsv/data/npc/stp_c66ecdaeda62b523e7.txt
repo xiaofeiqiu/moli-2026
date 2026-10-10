@@ -1,0 +1,14 @@
+block item 200800 >= 1 && item 200801 >= 1 && item 200802 >= 1
+window "\n\n『把全部的糖果放到嘴里...』",ok
+window_ok
+window "\n\n...",next
+changepal 20,300
+window "\n\n.....",next
+window "\n\n.......",next
+window "\n\n『你渐渐失去了知觉...』",ok
+window_ok
+killitem 200800
+killitem 200801
+killitem 200802
+leavegroup
+Warp 0,57308,10,13

@@ -1,0 +1,8 @@
+block
+window "\n\n这里是中级战训练.适合级别是Lv70左右,你要参加训练么?",yes,no
+window_no
+endwindow "\n\n随时可以来找我参加训练."
+window_yes
+leavegroup
+Warp 0,57119,13,8
+

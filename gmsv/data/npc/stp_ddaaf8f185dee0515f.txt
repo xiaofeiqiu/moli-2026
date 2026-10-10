@@ -1,0 +1,8 @@
+block item 87783 == 1
+endwindow "\n\n我们快去问问莫里森这到底是怎么一回事！"
+
+block
+window "\n\n幸亏莫里森的帮忙救了我们，并把我们父母安顿在一个很安全的地方！",next
+window "\n\n父母在走之前说有什么疑问可以找莫里森，他会给我们解开所有谜团的。",ok
+window_ok
+giveitem 87783

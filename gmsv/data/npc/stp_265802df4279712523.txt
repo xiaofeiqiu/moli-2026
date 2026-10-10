@@ -1,0 +1,11 @@
+block item 87630 == 1
+endwindow "\n\n这颗邪恶之心毕竟是仿制的，不知道里面还少什么成份。"
+
+block item 87629 == 1
+window "\n\n你要我们仿制的邪恶之心？看在你是开启者的份上没问题的，即使落在坏人手里也没用。这东西只对那些心里善良却易于诱惑的人才有影响。",ok
+window_ok
+killitem 87629
+giveitem 87630
+
+block
+endwindow "\n\n请不要打扰我进行研究。"

@@ -1,0 +1,9 @@
+block item 87441 == 1 && item 87473 == 1
+window "\n\n这...这...就是阿鲁巴斯做出来的中和剂，太好了。我马上去实验室进行检测。这是跟随我多年的宝贝送给你吧！",ok
+window_ok
+LeaveGroup
+killitem 87441
+killitem 87473
+giveitem (87478%50,87479%50)
+givepet (101116%25,1057%75)
+Warp 0,1000,233,78

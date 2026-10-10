@@ -1,0 +1,47 @@
+###########################
+block item 70033 < 1 && item 70034 == 1 && item 70035 == 1
+endwindow 910331
+
+block item 70033 == 1 && item 70034 < 1 && item 70035 == 1
+endwindow 910332
+block item 70033 == 1 && item 70034 == 1 && item 70035 < 1
+endwindow 910333
+
+block item 70033 < 1 && item 70034 < 1 && item 70035 == 1
+endwindow 910334
+block item 70033 < 1 && item 70034 == 1 && item 70035 < 1
+endwindow 910335
+block item 70033 == 1 && item 70034 < 1 && item 70035 < 1
+endwindow 910336
+###########################
+block item 70033 == 1 && item 70034 == 1 && item 70035 == 1
+window 910337,next
+window 910338,next
+window 910339,next
+window 910340,next
+window 910341,next
+window 910342,next
+window 910343,next
+window 910344,next
+window 910345,next
+window 910346,next
+window 910347,ok
+window_ok
+leavegroup
+killitem 70032
+killitem 70033
+killitem 70034
+killitem 70035
+giveitem 70039
+Warp 0,25077,11,11
+###############
+block
+window 910348,next
+window 910349,next
+window 910350,next
+window 910351,next
+window 910352,next
+window 910353,next
+window 910354,next
+window 910355,ok
+window_ok

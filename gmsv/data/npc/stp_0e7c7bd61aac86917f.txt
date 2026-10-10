@@ -1,0 +1,12 @@
+block item 87618 == 1
+endwindow "\n\n为了保证船员们的性命，船长决定让大家弃船逃生。"
+
+block item 87617 == 1
+window "\n\n你是来调查我们船受袭击的事件吗，那天我正好在船的上甲板上，当时海上突然涌起浓雾，从浓雾中出现了无数的怪物向我们扑来，我也在袭击中受了伤。",next
+window "\n\n你看，从那天开始，离海岸稍微远一点的海面上就一直被浓雾笼罩，看不见远方了。",ok
+window_ok
+killitem 87617
+giveitem 87618
+
+block
+endwindow "\n\n有怪物有怪物..."

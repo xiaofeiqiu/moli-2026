@@ -1,0 +1,12 @@
+
+block petspace == 0
+endwindow "\n\nÄãµÄ³èÎïÀ¸ÂúÀ²!"
+
+block
+killitem 39878
+givepet 200178
+
+
+
+
+

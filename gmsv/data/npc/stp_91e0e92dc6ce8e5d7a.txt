@@ -1,0 +1,22 @@
+block item 1000248 ==	1
+	Window "\n\n开启者,你不是去洛丹伦了么?",next
+	Window "\n\n那里的居民正在受苦,快去解救他们吧!",OK
+	Window_OK
+
+block level >= 100 && endevent 56 == 1
+	Window "\n\n开启者啊,从远方的洛丹伦国的使者来向我们法蓝王国求救了!",next
+	Window "\n\n听说那里被邪恶的瘟疫入侵了,我和国王商量后决定让你代表我们国家去",next
+	Window "\n\n一切就靠你了,开启者",OK
+	Window_OK
+	giveitem 1000248
+
+block level >=100 && endevent 64 == 1
+	Window "\n\n开启者啊,从远方的洛丹伦国的使者来向我们法蓝王国求救了!",next
+	Window "\n\n听说那里被邪恶的瘟疫入侵了,我和国王商量后决定让你代表我们国家去",next
+	Window "\n\n一切就靠你了,开启者",OK
+	Window_OK
+	giveitem 1000248
+			
+
+block
+	endWindow "\n\n看看包裹是否满了或者你还有没有满足任务条件\n\n接此任务需要有兰国二等或艾国二等勋章的称号哦!"

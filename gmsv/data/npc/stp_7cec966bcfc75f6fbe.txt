@@ -1,0 +1,7 @@
+block Item 591377 >= 1
+Window "\n\n          进去吧!",ok
+Window_ok
+LeaveGroup
+Warp 0,510,21,98
+block
+window"\n\n\n @c  任务提示:物品不全 …… "

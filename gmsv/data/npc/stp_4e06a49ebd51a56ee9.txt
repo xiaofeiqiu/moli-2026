@@ -1,0 +1,19 @@
+block globalFlag 358 == 1 && globalFlag 357 == 0 && item 70001 >= 1
+endwindow 910099
+
+block globalFlag 358 == 1 && globalFlag 357 == 0 && item 70043 >= 1
+window 910100,next
+window 910101,next
+window 910102,next
+window 910103,next
+window 910104,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 70043
+giveitem 70001
+globalFlag 357 = 1
+window_ok ItemSpace < 1
+endwindow 910105
+
+block
+endwindow 910106

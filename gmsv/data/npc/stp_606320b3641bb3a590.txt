@@ -1,0 +1,17 @@
+block endevent 568 == 1
+window "\n\n请带我到光之彼岸去吧!",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,50001,5,14
+
+
+block
+window "\n\n请带我到光之彼岸去吧!",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 730147
+leavegroup
+Warp 0,50001,5,14

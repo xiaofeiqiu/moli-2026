@@ -1,0 +1,6 @@
+block item 1002014 == 1
+systemmessage 8105160
+systemmessage 8105161
+killitem 1002014
+leavegroup
+Warp 0,60532,14,20

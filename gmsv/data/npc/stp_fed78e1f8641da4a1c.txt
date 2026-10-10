@@ -1,0 +1,12 @@
+block endevent 584 == 1
+Window "\n\n这些可恶的魔物,我不会放过他们的\n\n请尽快去石灵之地吧,我感受到了危机",yes,no
+Window_no
+Window_yes endevent 584 == 1
+endEvent 584 = 0
+Warp 0,64077,733,410
+block endevent 584 == 0
+Window "\n\n火之精灵情况不对,要帮忙吗?",yes,no
+Window_no
+Window_yes endevent 584 == 0
+endEvent 584 = 1
+Encount 3||||||0|||900033|||||||||

@@ -1,0 +1,7 @@
+block item 88299 == 1
+window "\n\n根据这张图画上的标示，黄金鸟的巢穴应该就在这棵树上。你要爬上去吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88299
+Warp 0,14154,38,59

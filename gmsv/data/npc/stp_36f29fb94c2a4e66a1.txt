@@ -1,0 +1,13 @@
+block
+	Window "\n\n\n@c能发现这里不容易啊，既然来了就卖你一块宝石吧",NEXT
+	Window "\n\n\n@c具体是什么宝石可是随机的，每块100000",NEXT
+	Window "\n\n\n@c是不是要碰碰运气？",Yes,No
+		Window_Yes
+		Addgold -100000
+		GiveItem (13659%50,13649%30,13639%40,13629%20,16916%2,16915%8)
+		Warp 0,1000,242,100
+		Window_No
+		SetLP +99999
+		Window "\n\n\n@c那我就送你回去吧",Ok
+		Window_Ok
+		Warp 0,1000,242,100

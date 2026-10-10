@@ -1,0 +1,6 @@
+block item 58811 >= 1 && level >= 112
+killitem 58811,1
+LeaveGroup
+Warp 0,373,83,22
+block
+	Window "\n\n@c有股力量牵制了你,或自身实力不够..不能进入这个洞穴..",ok

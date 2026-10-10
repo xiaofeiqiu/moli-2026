@@ -1,0 +1,13 @@
+block
+window "\n\n传送到法兰城需要425G,你确定要传送吗?",yes,no
+window_yes gold < 425
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -425
+leavegroup
+Warp 0,63415,11,37
+window_no
+endwindow "\n\n欢迎你再度使用."
+
+block
+endwindow"\n\n这里是前往法兰城的传送石,你还没资格使用它."

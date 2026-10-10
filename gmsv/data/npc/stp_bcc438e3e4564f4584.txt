@@ -1,0 +1,72 @@
+block item 88079 == 1
+endwindow 501078
+
+block item 88078 == 1
+window 501079,next
+window 501080,ok
+window_ok
+killitem 88078
+giveitem 88079
+
+block item 88030 == 1 && item 88028 == 1
+window 501081,next
+window 501082,ok
+window_ok
+killitem 88028
+killitem 88030
+giveitem 88031
+givepet 11
+
+block item 88029 == 1
+endwindow 501083
+
+block item 88028 == 1
+window 501084,next
+window 501085,next
+window 501086,ok
+window_ok
+giveitem 88029
+
+block item 88027 == 1
+window 501087,next
+window 501088,next
+window 501089,ok
+window_ok
+
+block item 88025 == 1
+window 501090,next
+window 501091,next
+window 501092,ok
+window_ok
+LeaveGroup
+killitem 88025
+giveitem 88026
+Warp 0,27539,10,28
+
+block item 88024 == 1
+endwindow 501093
+
+block item 88023 == 1 && item 88020 == 1 && StrCmpChat == 278878
+window 501094,next
+window 501095,next
+window 501096,ok
+window_ok
+killitem 88023
+giveitem 88024
+
+block item 88019 == 1
+endwindow 501097
+
+block item 88018 == 1 && havetitle == 8149 && ItemCreateTime 88018 >= 60
+window 501098,next
+window 501099,next
+window 501100,next
+window 501101,next
+window 501102,next
+window 501103,ok
+window_ok
+killitem 88018
+giveitem 88019
+
+block
+endwindow 501104

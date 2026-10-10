@@ -1,0 +1,23 @@
+block Item 360313 == 0 && Item 360318 == 0 && Endevent 697 == 0
+	Window 33386,Next
+	Window "\n\n 你也有自己的父母吧?\n\n 你也很关心他们对吗?你可以帮我达成心愿吗?",YES,NO
+		Window_NO
+        	EndWindow "\n\n\n@c　是吗...我还是自己想办法吧...圣诞快乐! 
+		Window_yes
+		Window 33387,Next
+		Window 33388,Next
+		EndWindow 33389,OK
+		GiveItem 360314
+
+block Item 360313 == 1 && Item 360318 == 1 && Endevent 697 == 0
+	Window "\n\n 哇～～!爸爸妈妈给我的礼物耶～～! \n\n 我好高兴,谢谢你!对了,这些玩具送给你,圣诞快乐!",OK
+        	Window_OK
+		KillItem 360313
+		KillItem 360318
+		GiveItem 1000789,1
+		GiveItem 360316,1
+		GiveItem 360318,1
+		Endevent 697 = 1
+
+block  Endevent 697 == 1
+	Window " \n\n 我好高兴,谢谢你!圣诞快乐!",OK

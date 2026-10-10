@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【妖草】吗？",ok
+			Window_ok
+Luac stp:legacy:49e530e196e62ae4bb54
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【蔓陀罗草】吗？",ok
+			Window_ok
+Luac stp:legacy:b3137f049590341f48f4
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【妖花】吗？",ok
+			Window_ok
+Luac stp:legacy:628570749b3453682057
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【人魔草】吗？",ok
+			Window_ok
+Luac stp:legacy:d7a457a6a2d5fbcc9385
+				endif
+

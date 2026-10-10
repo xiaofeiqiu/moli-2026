@@ -1,0 +1,24 @@
+block item 50862 == 1
+EndWindow "\n\n我是新派来的药剂师.这里的圣村环境真是恶劣啊,如果你哪里不舒服的话随时来找我."
+
+block globalFlag 258 == 1
+Window "\n\n进入梦境世界吗...?想制作那种药水也不是不可能,阿斯提亚对这方面也有不少的资料记载,只要你给我带来20朵蝴蝶花,我就可以帮你制作.",next
+Window "\n\n请尽快将20朵蝴蝶花带来.",ok
+Window_ok item 12802 >= 20
+killitem 12802,20
+giveitem 50862
+
+
+
+block item 50861 == 1
+EndWindow "\n\n我是新派来的药剂师.这里的圣村环境真是恶劣啊,如果你哪里不舒服的话随时来找我."
+
+block globalFlag 257 == 1
+Window "\n\n你想听懂大地鼠的语言?完全没有问题!我带来了各种各样的药水以对付各种未知的困难.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 50861
+
+block
+EndWindow "\n\n我是新派来的药剂师.这里的圣村环境真是恶劣啊,如果你哪里不舒服的话随时来找我."

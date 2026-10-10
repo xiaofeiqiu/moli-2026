@@ -1,0 +1,14 @@
+#½øÈë933
+
+##############  ##############
+block Item 900023 == 1
+	Window 900041,OK
+	Window_OK
+	KillItem 900023
+	GiveItem 900024
+	LeaveGroup
+	Warp 0,933,9,16
+
+##############  ##############
+block
+	EndWindow 900042,OK

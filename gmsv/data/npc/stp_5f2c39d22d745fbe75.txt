@@ -1,0 +1,5 @@
+block item 86295 >= 1 && item 86296 >= 1
+window 85293,next
+window 85294,ok
+window_ok
+Encount 3|0,28146,8,24||0|||||0|86107|

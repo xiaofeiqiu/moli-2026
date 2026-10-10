@@ -1,0 +1,11 @@
+block gold >= 10000 && level >= 150
+	window"\n\n 您好，这里是为了体现各位实力所开展的擂台赛。比赛分为三组，当然，怎么选择的权利在于您。顺利通过并获得冠军的话会有很棒的奖励哦。",next
+	window"\n\n 如何？要参加比赛吗？参赛手续费需要30000金币。",yes,no
+	window_yes
+	addgold -30000
+	leavegroup
+	Warp 0,641,0,25
+	window_no
+	window"\n\n 这样啊，那么您要继续变得更强呢，我很期待为您服务。",ok
+block
+	window"\n\n 等级低于150或者携带魔币不足30000是不能参加擂台赛的。",ok

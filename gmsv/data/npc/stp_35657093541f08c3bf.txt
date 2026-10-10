@@ -1,0 +1,646 @@
+
+
+
+
+block EndEvent 646 == 1
+endwindow "\n\n　你已经修成正果了，去做别的任务吧，不要来找我啦。"
+
+
+block level >= 120 && EndEvent 646 == 0
+  window "\n\n　恭喜你升级到120级，请收下我的礼物吧，随机1个福袋+宠物蛋一只哦。" ,yes,no
+   window_yes itemspace >= 1 && EndEvent 646 == 0
+    EndEvent 646 = 1
+   giveitem (18960,18771,18804,18932),1
+   giveitem (7412,7413,588805),1
+         endwindow "\n\n　玩愉快点哦"
+
+block EndEvent 645 == 1
+endwindow "\n\n　快努力升级到90级吧，可以得到1个福袋+宠物蛋一只呢。"
+
+
+block level >= 90 && EndEvent 645 == 0
+  window "\n\n　恭喜你升级到90级，请收下我的礼物吧，2个6小时时水哦+1个福袋哦。" ,yes,no
+   window_yes itemspace >= 2 && EndEvent 645 == 0
+    EndEvent 645 = 1
+	Giveitem 7032,2
+   giveitem (18960,18771,18804,18932),1
+      endwindow "\n\n　玩愉快点哦"
+
+block EndEvent 644 == 1
+endwindow "\n\n　快努力升级到90级吧，可以得到2个6小时时水哦+1个福袋呢。"
+
+
+block level >= 60 && EndEvent 644 == 0
+  window "\n\n　恭喜你升级到60级，请收下我的礼物吧，1个6小时时水+宠物蛋一只哦。" ,yes,no
+   window_yes itemspace >= 2 && EndEvent 644 == 0
+    EndEvent 644 = 1
+	Giveitem 660130,1
+   giveitem (7408,7409),1
+      endwindow "\n\n　玩愉快点哦"
+
+block EndEvent 643 == 1
+endwindow "\n\n　快努力升级到60级吧，可以得到1个6小时时水+宠物蛋一只呢。"
+
+
+##30级以上
+block level >= 30 && item 18463 == 1 && EndEvent 643 == 0
+	window "\n\n@n,我真没看错你.勇气可嘉",next
+	window "\n\n你已经完成了最后一个任务了.相信还有人会需要你的帮助的.",yes
+	window_yes itemspace <= 6
+	endwindow "你拿不动东西啊,小朋友."
+#生产
+	window_yes Luac stp:legacy:e5ccffcbaec1e711d9af >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 2832,1
+	giveitem 5231,1
+	giveitem 4031,1
+	giveitem 6031,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+ 	endwindow "你生产系的任务已经全部完成了."
+#剑士
+	window_yes Luac stp:legacy:16473e528f8b61b01370 >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 39,1
+	giveitem 3635,1
+	giveitem 4434,1
+	giveitem 5631,1
+	giveitem 6434,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#斧头
+	window_yes Luac stp:legacy:02f40a824bde62fb055e >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 838,1
+	giveitem 3635,1
+	giveitem 4434,1
+	giveitem 5631,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#骑士
+	window_yes Luac stp:legacy:f211b8a7d1587c3061a6 >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 1634,1
+	giveitem 3635,1
+	giveitem 4434,1
+	giveitem 5631,1
+	giveitem 6434,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#弓手
+	window_yes Luac stp:legacy:80dc077462e0d60f6c15 >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 2038,1
+	giveitem 4031,1
+	giveitem 4833,1
+	giveitem 6031,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#士兵
+	window_yes Luac stp:legacy:0fe312f3d7f30adbb4bd >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 39,1
+	giveitem 3635,1
+	giveitem 4434,1
+	giveitem 5631,1
+	giveitem 6434,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#传教-咒术
+	window_yes Luac stp:legacy:4c097542067c72c3e8f0 >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 2447,1
+	giveitem 4031,1
+	giveitem 5231,1
+	giveitem 6031,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#封印-盗贼
+	window_yes Luac stp:legacy:af4307835b72143f8c4e >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 3235,1#武器
+	giveitem 4031,1#头
+	giveitem 4833,1#身
+	giveitem 6031,1#脚
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#巫师
+	window_yes Luac stp:legacy:625ae4dc00febcf6df6b >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 2447,1
+	giveitem 4031,1
+	giveitem 5231,1
+	giveitem 6031,1
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#格斗
+	window_yes Luac stp:legacy:d57a268276814c9a76c8 >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 4031,1#头
+	giveitem 4833,1#身
+	giveitem 6031,1#脚
+	Giveitem 660130,1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+#忍者
+	window_yes Luac stp:legacy:70db0ca9c4ffc4bee64f >= 1 && itemspace >= 6 && EndEvent 643 == 0
+	killitem 18463,1
+	giveitem 7027,1
+	giveitem 39,1#武器
+	giveitem 838,1#武器
+	giveitem 1634,1#武器
+	Giveitem 660130,1
+   giveitem (7087,7088,7089),1
+   EndEvent 643 = 1
+      endwindow "\n\n　你不是麦兜？"
+
+block EndEvent 642 == 1
+endwindow "\n\n　快努力升级到30级吧，去做沙漠之祠任务拿着古文书来。"
+
+
+###20级以上
+block level >= 20 && item 18303 == 1 && EndEvent 642 == 0
+	window "\n\n@n,你真把干粮拿来啦！！",yes,no
+	window_yes
+	window "\n\n你太让为师难过了.居然不得不给你东西。",ok
+	window_ok 
+	window "\n\n记得下次满30级来交任务，任务是“沙漠之祠”得到古文书，这个任务好长的说，具体见论坛攻略吧，记得下次满30级来交任务。",yes
+	window_yes
+	window "\n\n来来,任务完成了.上级派发的东西属于你啦，生产系的要留9个空格哈。",yes,no
+	window_yes itemspace <= 9
+	endwindow "\n你拿不动东西啊,小朋友.还你"
+#生产
+	window_yes Luac stp:legacy:35e7a58690469617b226 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 2823,1
+	giveitem 4821,1
+	giveitem 5223,1
+	giveitem 4020,1
+	giveitem 6025,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+
+#剑士
+	window_yes Luac stp:legacy:49d29c24ddc56af9b403 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 28,1
+	giveitem 3620,1
+	giveitem 4421,1
+	giveitem 5621,1
+	giveitem 6425,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#斧头
+	window_yes Luac stp:legacy:7732607202f92ff0d435 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 826,1
+	giveitem 4421,1
+	giveitem 5621,1
+	giveitem 3620,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#骑士
+	window_yes Luac stp:legacy:e38c06dae9fab2934b4b >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 1625,1
+	giveitem 3620,1
+	giveitem 4421,1
+	giveitem 5621,1
+	giveitem 6425,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#弓手
+	window_yes Luac stp:legacy:ab387b39410f26680937 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 2023,1
+	giveitem 4020,1
+	giveitem 4821,1
+	giveitem 6025,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#士兵
+	window_yes Luac stp:legacy:846326acf2c2740734a1 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 28,1
+	giveitem 3620,1
+	giveitem 4421,1
+	giveitem 5621,1
+	giveitem 6425,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#传教-咒术
+	window_yes Luac stp:legacy:0f2d3ac3901578541b59 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 2435,1
+	giveitem 4020,1
+	giveitem 5223,1
+	giveitem 6025,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#封印-盗贼
+	window_yes Luac stp:legacy:847c53ee9d166d063918 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 76666,1#武器
+	giveitem 4020,1#头
+	giveitem 4821,1#身
+	giveitem 6025,1#脚
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#巫师
+	window_yes Luac stp:legacy:21f4b517049ad7b013b2 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 2435,1
+	giveitem 4020,1
+	giveitem 5223,1
+	giveitem 6025,1
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#格斗
+	window_yes Luac stp:legacy:c3d2fc8dcee32de90590 >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 4020,1#头
+	giveitem 4821,1#身
+	giveitem 6025,1#脚
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+#忍者
+	window_yes Luac stp:legacy:d016b6c28c21d57266cc >= 1 && itemspace >= 9 && EndEvent 642 == 0
+	killitem 18303,1
+	giveitem 7026,1
+	giveitem 28,1#武器
+	giveitem 826,1#武器
+	giveitem 1625,1#武器
+##################
+	Giveitem 591463,3
+	NowEvent 566 = 1
+   EndEvent 642 = 1
+      endwindow "\n\n　你神似麦兜了"
+
+	window_no
+	endwindow "厄~~~你真牛插"
+
+block EndEvent 641 == 1
+endwindow "\n\n　快努力升级到20级吧，记得同时做好寻找雷兹任务拿着旅行的干粮来。"
+
+
+##10级以上
+block level >= 10 && EndEvent 641 == 0 && item 18236 == 1
+	window "\n\n怎么样?逛了一圈.灵堂里面好玩吗?",next
+	window "\n\n呵呵,东西都带回来了真棒！不过记得下次是20级交任务哈。\n\n任务是“寻找雷兹”，获得旅行的干粮来找我.",next
+	window "\n\n缩什么?我又不会拿你的.\n来,把手伸出来,我给你好东西，不过要记得就职哦，不然我不知道给你什么装备好。",yes,no
+	window_yes itemspace <= 7
+	endwindow "你拿不动东西啊,小朋友."
+#生产
+	window_yes Luac stp:legacy:3d03755d19d620e9d7f1 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 2815,1
+	giveitem 5211,1
+	giveitem 4013,1
+	giveitem 6011,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#剑士
+	window_yes Luac stp:legacy:e008b68e68279cc41aa4 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 18,1
+	giveitem 3612,1
+	giveitem 4411,1
+	giveitem 5612,1
+	giveitem 6412,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#斧头
+	window_yes Luac stp:legacy:fcaf3a23aa595b610af5 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 811,1
+	giveitem 3612,1
+	giveitem 4411,1
+	giveitem 5612,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#骑士
+	window_yes Luac stp:legacy:ef8abcb9bdc68cc6e974 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 1613,1
+	giveitem 3612,1
+	giveitem 4411,1
+	giveitem 5612,1
+	giveitem 6412,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#弓手
+	window_yes Luac stp:legacy:6b342783e4a10ddc373e >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 2017,1
+	giveitem 4013,1
+	giveitem 4813,1
+	giveitem 6011,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#士兵
+	window_yes Luac stp:legacy:45a68b601bed56b04cfe >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 18,1
+	giveitem 3612,1
+	giveitem 4411,1
+	giveitem 5612,1
+	giveitem 6412,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#传教-咒术
+	window_yes Luac stp:legacy:bca72b7b0bba1c2bd901 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 2413,1
+	giveitem 4013,1
+	giveitem 5211,1
+	giveitem 6011,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+
+#封印-盗贼
+	window_yes Luac stp:legacy:81f89ec8c52af3a4ef57 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 3213,1#武器
+	giveitem 4013,1#头
+	giveitem 4813,1#身
+	giveitem 6011,1#脚
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#巫师
+	window_yes Luac stp:legacy:0e767b121ea2f389938b >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 2413,1
+	giveitem 4013,1
+	giveitem 5211,1
+	giveitem 6011,1
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#格斗
+	window_yes Luac stp:legacy:aea966e3c15585ec13cc >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 4013,1#头
+	giveitem 4813,1#身
+	giveitem 6011,1#脚
+	giveitem 591463,1
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+#忍者
+	window_yes Luac stp:legacy:d0446372242fd91de0b6 >= 1 && itemspace >= 8 && EndEvent 641 == 0
+	killitem 18236,1
+	giveitem 7025,1
+	giveitem 18,1#武器
+	giveitem 811,1#武器
+	giveitem 1613,1#武器
+	giveitem 591463,2
+   EndEvent 641 = 1
+      endwindow "\n\n　你越来越像麦兜了"
+
+	window_no
+	endwindow "厄~~~你真牛插"
+
+
+block EndEvent 640 == 1
+endwindow "\n\n　快努力升级到10级吧，记得同时做好灵堂任务拿着祈祷的耳饰来。"
+
+
+
+###1-10级
+block level >= 1 && EndEvent 640 == 0 && item 18195 >= 1
+	window "\n\n 嗯,你合格了.欢迎加入麦兜勇士队伍。n\n下一个任务后是到达法兰城毕安扎的家(132.132)对话他的妻子罗珊娜.之后到法兰城地下迷宫(灵堂)找到毕安扎.说“阿比安吉”后会获得“誓言的念珠”把“念珠”交给 罗珊娜换取“祈祷的耳饰”.携带耳饰到我这里来就行。\n\n 记得要满20级哈！",next
+	window "\n\n 下面你将获得一套奖励.生产系的奖励与游民一样\n\n如果你还未就职,请选否,先去就职.然后获得相应奖励",yes,no
+	window_yes itemspace <= 7
+	endwindow "你拿不动东西啊,小朋友."
+
+	window_yes job == 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 3,1
+	giveitem 5205,1
+	giveitem 4001,1
+	giveitem 6002,1
+##################
+	giveitem 591463,1
+    EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:4e86a33c5e6883481d56 >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 3,1
+	giveitem 5205,1
+	giveitem 4001,1
+	giveitem 6002,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:a4d5d980b1a439cdc66d >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 3,1
+	giveitem 3602,1
+	giveitem 4405,1
+	giveitem 5601,1
+	giveitem 6402,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:5d510dd3134ece10628b >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 809,1
+	giveitem 3602,1
+	giveitem 4405,1
+	giveitem 5601,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:9aa2081b049ff5c49f10 >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 1606,1
+	giveitem 3602,1
+	giveitem 4405,1
+	giveitem 5601,1
+	giveitem 6402,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:1083ca6f300a886e4348 >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 2002,1
+	giveitem 4001,1
+	giveitem 4806,1
+	giveitem 6002,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:9e00ebb599ae60bbc803 >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 3,1
+	giveitem 3602,1
+	giveitem 4405,1
+	giveitem 5601,1
+	giveitem 6402,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:90a03a7159251ad754b7 >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 2404,1
+	giveitem 4001,1
+	giveitem 5205,1
+	giveitem 6002,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:56dabce9384c32b5879d >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 3204,1#武器
+	giveitem 4001,1#头
+	giveitem 4806,1#身
+	giveitem 6002,1#脚
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:f06f835a90944c630d9b >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 2404,1
+	giveitem 4001,1
+	giveitem 5205,1
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:35edface3899337c3229 >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 4001,1#头
+	giveitem 4806,1#身
+	giveitem 6002,1#脚
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_yes Luac stp:legacy:8735ea9f13ad1aa7078f >= 1 && itemspace >= 7 && EndEvent 640 == 0
+	killitem 18195,1
+	giveitem 7024,1
+	giveitem 3,1#武器
+	giveitem 809,1#武器
+	giveitem 1606,1#武器
+##################
+	giveitem 591463,1
+   EndEvent 640 = 1
+      endwindow "\n\n　你开始有点像麦兜了"
+
+	window_no
+	endwindow "\n\n小朋友真乖.先去就职吧!"
+
+
+
+
+
+
+
+
+block
+	endwindow "\n　你好!我是麦兜魔力专门负责照顾新人的.\n　如果对游戏有不了解的地方,可以打开新手帮助书查看\n　到了1、10、20、30、60、90、120级和完成相应的任务可以到我这里来领取奖励\n　现在你先到法兰城附近杀哥布林.得到绿头盔1级后就可以来找我!"

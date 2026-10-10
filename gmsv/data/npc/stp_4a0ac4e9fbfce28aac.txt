@@ -1,0 +1,21 @@
+block item 1000710 >= 1 && item 1000711 >= 1 && item 1000712 >= 1 &&  item 1000717 >= 1
+window 7020118,next
+window 7020119,next
+window 7020120,ok
+window_ok
+LeaveGroup
+killitem 1000710
+killitem 1000711
+killitem 1000712
+killitem 1000717
+giveitem 1000714
+
+block item 1000716 >= 1
+window 7020121,next
+window 7020122,ok
+window_ok
+killitem 1000716
+giveitem 1000717
+
+block
+endwindow 7020123

@@ -1,0 +1,7 @@
+block item 3805 == 1 && ItemCreateTime 3805 >= 10
+killitem 3805,1
+giveitem (3802%1,3803%1,3804%1)
+	
+	
+block item 3805 == 1 && ItemCreateTime 3805 <= 9
+endwindow "\n\n\n\n时间未到,无法开启圣杯!"

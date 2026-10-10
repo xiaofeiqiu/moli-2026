@@ -1,0 +1,8 @@
+block item 200200 >= 1 && item 200201 >= 1
+window "\n\n没想到你一来就帮了这么大的忙,让我刮目相看啊,海盗事件安保队长已经获悉了,这里善后交给我吧,队长现在好像找你有事.",ok
+window_ok
+killitem 200200
+killitem 200201
+giveitem 200204
+leavegroup
+Warp 0,45070,27,25

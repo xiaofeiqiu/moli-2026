@@ -1,0 +1,4 @@
+block
+window "\n\n这里是法兰最受瞩目的女骑士团休息室,你想要进去看看吗?",yes,no
+window_yes
+Warp 0,44871,8,14

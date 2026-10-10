@@ -1,0 +1,9 @@
+block item 86419 >= 1 && item 86409 >= 1
+window "\n\n你就是那位帮助调查的人啊，要进到里面去吗？",yes,no
+window_no
+window_yes
+window "\n\n博士他们已经先下去了，你也快追上去吧。",ok
+window_ok
+leavegroup
+killitem 86419
+Warp 0,28226,34,37

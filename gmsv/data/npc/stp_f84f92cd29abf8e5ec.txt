@@ -1,0 +1,14 @@
+block globalFlag 260 == 1
+Endwindow"\n\n快走吧,你想我暴露啊,没见过你这么笨的."
+
+
+block StrCmpChat == 9111 && item 39674 == 1
+Window "\n\n飓风!",next
+Window "\n\n你是谁,我没见过你.",next
+Window "\n\n轻点!没看见那边有个小姑娘吗?你想我暴露啊!",next
+Window "\n\n上面怎么会派你这么个愣头青来接头的,看你这副模样就不像是干情报收集的料.",next
+Window "\n\n上头派你来有什么要交代的吗?",next
+Window "\n\n乌克兰村?我没发现过这么两个人,这里每天来来往往的人没有1000也有800,根本看不过来.",next
+Window "\n\n不过最近村里人说村外有过山贼出没,这可是以前从来没有过的事情,他们好像在村南面的海底洞窟附近出没,你去看看情况吧.",ok
+Window_ok item 39674 == 1
+globalFlag 260 = 1

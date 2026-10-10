@@ -1,0 +1,5 @@
+block item 86527 == 1
+window "\n\n希望你们一路顺风。",ok
+window_ok
+leavegroup
+Warp 0,28303,36,15

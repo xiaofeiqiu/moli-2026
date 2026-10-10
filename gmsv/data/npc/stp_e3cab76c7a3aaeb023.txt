@@ -1,0 +1,6 @@
+block item 88091 == 1 && item 88095 == 1
+window 501218,yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,45232,13,6

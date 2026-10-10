@@ -1,0 +1,9 @@
+block
+	Window 7020585,YES,NO
+	window_yes
+	window 7020586,NEXT
+	window 7020587,NEXT
+	window 7020588,NEXT
+	window 7020589,OK
+	window_NO
+	Window 7020590,OK

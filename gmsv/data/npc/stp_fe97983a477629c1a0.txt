@@ -1,0 +1,4 @@
+block	item 700174	>=	1
+SystemMessage 1886031
+block	item 700173	>=	1
+giveitem 700174,1

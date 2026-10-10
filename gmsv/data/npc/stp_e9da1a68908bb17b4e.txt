@@ -1,0 +1,26 @@
+block item 730030 >= 1
+Window "\n\n因为生活拮据,鲁耶莉莲娜和基里安特主仆只能勉强租住在这里.",next
+Window "\n\n本想引荐你和鲁耶莉莲娜见面的,可就在刚才,鲁耶莉莲娜突然不见了!",next
+Window "\n\n你们能接济基里安特他们的生活已经是万分好心了,如果再提出过分的要求实在是有些过分.不过事态紧急,不允许考虑这么多了.",next
+Window "\n\n能请你帮忙寻找鲁耶莉莲娜吗?",yes,no
+Window_no
+EndWindow "\n\n唉,我真是自不量力.这个要求太过分了."
+Window_yes
+Window "\n\n真是不知道说什么好了!太感激你们了.这是刚刚我在屋内找到的鲁耶莉莲娜留下的便条,拿给基里安特看看吧,也许能有什么线索.",ok
+Window_ok item 730030 >= 1
+killitem 730030
+giveitem 730031
+
+Block
+localcount1 = random 3,0
+if localcount1 == 1
+Message 3017
+EndIf
+#
+if localcount1 == 2
+Message 3018
+EndIf
+#
+if localcount1 == 3
+Message 3019
+EndIf

@@ -1,0 +1,6 @@
+block
+window 7020453,next
+window 7020454,next
+window 7020455,next
+window 7020456,ok
+window_ok

@@ -1,0 +1,5 @@
+block item 87213 == 1
+window "\n\n你要进入神柱地下吗？",ok
+window_ok
+LeaveGroup
+Warp 0,45274,99,106

@@ -1,0 +1,10 @@
+block item 81025 >= 1
+	Endwindow "\n\n大侠饶命……"
+
+block item 81020 >= 1
+	window "\n\n@c你不是星灵人，你是从哪里来的？\n\n你手里居然有我族令牌...可恶，就算你不是星灵人今天也一样要死在这里！",ok
+	window_ok item 81020 >= 1
+Encount 2|0,225,390,128||0|||||0|70019|||||||||
+
+block
+	Endwindow "\n\n你不是星灵界人，你是从哪里来的？"

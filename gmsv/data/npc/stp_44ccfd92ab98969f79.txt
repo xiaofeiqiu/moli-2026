@@ -1,0 +1,18 @@
+block nowtime != 1
+EndWindow 900367,OK
+
+block globalFlag 349 == 0
+Endwindow 900358
+
+block Group != 1
+Endwindow 900364
+
+block 
+Window 900368,YES,NO
+Window_YES Gold < 10000 && globalFlag 349 == 1
+EndWindow 900361
+Window_YES Group == 1 && Gold >= 10000 && globalFlag 349 == 1
+AddGold -10000
+Warp 0,23323,5,7
+Window_NO
+Endwindow 900362

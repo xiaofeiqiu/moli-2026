@@ -1,0 +1,4 @@
+block
+window 7019352,ok
+window_ok
+Encount 2|0,42015,36,49||0|||||0|70011|

@@ -1,0 +1,25 @@
+block item 86320 >= 1 && item 86321 < 1 && item 86322 < 1 && item 86323 < 1
+window 85404,next
+window 85405,next
+window 85406,ok
+window_ok
+leavegroup
+killitem 86320
+giveitem 86325
+Warp 0,28182,59,30
+
+block item 86320 >= 1 && item 86321 >= 1 && item 86322 >= 1 && item 86323 >= 1
+window 85407,next
+window 85408,next
+window 85409,yes,no
+window_no
+window_yes
+window 85410,ok
+window_ok
+leavegroup
+killitem 86320
+killitem 86321
+killitem 86322
+killitem 86323
+giveitem 86324
+Warp 0,28182,59,30

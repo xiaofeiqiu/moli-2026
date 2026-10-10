@@ -1,0 +1,10 @@
+block
+window "\n\n@c要传送到村子的入口迷宫处么?",yes,no
+window_yes itemdur 22227 == 1
+killitem 22227
+leaveGroup
+Warp 0,3100,54,28
+window_yes
+setdur 22227,-1
+leaveGroup
+Warp 0,3100,54,28

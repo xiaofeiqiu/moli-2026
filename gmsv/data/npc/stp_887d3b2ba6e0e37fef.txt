@@ -1,0 +1,10 @@
+block item 800170 == 1
+Window "\n\n邪灵鸟人败给你了?让我瞧瞧你的实力!",ok
+Window_ok item 800170 == 1
+Encount 3|0,44879,11,12|||||0|||613022|
+
+block
+Window "\n\n你是谁?快出去!",ok
+window_ok
+leavegroup
+Warp 0,400,131,341

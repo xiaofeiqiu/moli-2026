@@ -1,0 +1,8 @@
+block
+window "\n\n托尔丘被你打败了…",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem (200157%1,200158%1)
+leavegroup
+Warp 0,1530,15,6

@@ -1,0 +1,10 @@
+
+block globalFlag 259 == 1 && globalFlag 260 == 1 && item 39674 == 1
+Window "\n\n朋友,没事别乱走,这边是我们的地头!",next
+Window "\n\n你干什么!小子你找死啊!",ok
+Window_ok item 39674 == 1
+Encount 2|0,45090,36,36||0|||||0|50173|||||||||
+
+
+block
+Endwindow"\n\n朋友,没事别乱走,这边是我们的地头!"

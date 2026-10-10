@@ -1,0 +1,8 @@
+block
+	window"\n\n是否变成莉莉丝（绿）形象，更改后头像将变为影角（女）？",ok
+	window_ok
+Luac stp:legacy:51781c7c0fef74203c66
+Luac stp:legacy:21a93f77be7ce8dd0205
+Luac stp:legacy:2340447502f6bc50c6ff
+Luac stp:legacy:d3d8a35a80bc3b221c7b
+		killitem 60254,1

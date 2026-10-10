@@ -1,0 +1,18 @@
+block globalFlag 284 == 1 && item 61088 >= 1 && item 61149 < 1 && globalFlag 285 == 0 && globalFlag 286 == 0
+killitem 61088
+window 1900369,next
+window 1900370,next
+window 1900371,next
+window 1900372,OK
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem (61149%30,61150%30,61151%30)
+window_ok ItemSpace < 1
+endwindow 1900373
+
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && globalFlag 286 == 0
+endwindow 1900374
+
+block
+endwindow 1900375

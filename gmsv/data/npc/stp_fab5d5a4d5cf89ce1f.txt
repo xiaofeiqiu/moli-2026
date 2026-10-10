@@ -1,0 +1,8 @@
+block item 661087 >= 1
+endwindow "\n\n......真,强."
+
+
+block
+window "\n\n考验......力量.\n\n......来!",ok
+window_ok
+Encount 2|0,59919,79,108||0|||||0|60025|||||||||

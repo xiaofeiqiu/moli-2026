@@ -1,0 +1,3 @@
+block
+	LeaveGroup
+	Warp 0,698,11,20

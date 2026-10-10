@@ -1,0 +1,13 @@
+block item 72007 == 1
+	Window"\n\n用火把照了一下，仔细观察它会发现他的左眼是空的，不像右眼放有一颗黑色宝石,\n雕像附近的寒气熄灭了火焰...",ok
+		Window_ok item 72007 == 1
+			killitem 72007,1
+			giveitem 72008,1
+
+block item 72012 == 1
+	Window"\n\n取出黑色石头镶上。嘿！没想到非常吻合！！",ok
+		Window_ok item 72012 == 1
+			killitem 72012,1
+			giveitem 72013,1
+			Leavegroup
+			Warp 0,1511,12,11

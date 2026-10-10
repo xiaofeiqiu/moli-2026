@@ -1,0 +1,16 @@
+block item 200234 >= 1
+endwindow "\n\n算凯尔宾有眼光,咱家出的米做出来的酒那可是一个香."
+
+
+
+block item 200233 >= 1
+window "\n\n凯尔宾那混球,我说怎么那么久没来买米了,原来被几个黑巫师吓得不敢出城了.",next
+window "\n\n酿酒技术我保证他很行,但那胆子比小孩还小.",next
+window "\n\n这次米你拿去给他,告诉他下次不亲自来拿,我可要涨价了.",ok
+window_ok
+killitem 200233
+giveitem 200234
+
+
+block
+endwindow "\n\n我家历代都是农户,最擅长种植大米."

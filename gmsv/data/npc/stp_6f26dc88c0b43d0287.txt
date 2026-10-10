@@ -1,0 +1,25 @@
+block Item_21021 == 0
+
+	If Item_21022 >= 1 && Xpos == 638 && Ypos == 428
+
+		If LocalFlag0 == 0
+
+PlaySE 260,320,240
+			ShapeNext 103011
+			LocalFlag0 = 1
+
+		endif
+
+	endif
+
+
+	If Item_21022 >= 1 && Xpos == 637 && Ypos == 428
+
+		If LocalFlag0 == 1
+
+			LeaveGroup
+			Warp 0,7210,11,40
+
+		endif
+
+	endif

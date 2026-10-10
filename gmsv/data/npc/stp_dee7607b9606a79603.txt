@@ -1,0 +1,15 @@
+block item 88327 == 1
+Warp 0,33000,632,388
+
+block item 88324 == 1
+window "\n\n你要捡起地上的甲虫的腿吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_yes
+LeaveGroup
+giveitem 88327
+Warp 0,33000,632,388
+
+block
+Warp 0,33000,632,388

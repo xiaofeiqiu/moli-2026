@@ -1,0 +1,73 @@
+block itemspace <= 1
+endwindow "\n\n把背包清理下再来找我吧."
+
+
+block item 160404 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160404 >= 2
+killitem 160404,1
+
+
+block item 160415 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160415 >= 2
+killitem 160415,1
+
+
+block item 160421 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160421 >= 2
+killitem 160421,1
+
+
+block item 160422 >= 2
+window "\n\n你身上好像有多余的东西,要我帮忙清理下吗?",ok
+window_ok item 160422 >= 2
+killitem 160422,1
+
+
+block item 160421 >= 1 && item 160422 >= 1
+window "\n\n巨大的黑暗开始笼罩法兰城,要继续去挑战吗?",yes,no
+window_yes item 160421 >= 1 && item 160422 >= 1
+LeaveGroup
+Warp 0,65,130,145
+window_no
+EndWindow "\n\n那就在做点准备工作吧."
+
+
+block item 160411 >= 1 && item 160412 >= 1 && item 160413 >= 1 && item 160414 >= 1 && item 160415 >= 1
+window "\n\n从丘比手中夺回少女们的灵核吧,要继续去挑战吗?",yes,no
+window_yes item 160411 >= 1 && item 160412 >= 1 && item 160413 >= 1 && item 160414 >= 1 && item 160415 >= 1
+LeaveGroup
+Warp 0,66,241,88
+window_no
+EndWindow "\n\n那就在做点准备工作吧."
+
+
+block item 160404 >= 1 && item 160415 >= 1
+window "\n\n冒险者,你们似乎带来些有趣的东西,信的内容我看了,把你们知道的都告诉我吧.",next
+window "\n\n（你仔细回忆了所有的细节...）",next
+window "\n\n泽尔里奇的身后闪出一个黑影...",ok
+window_ok item 160404 >= 1 && item 160415 >= 1
+killitem 160404,1
+Encount 2|0,61,2,4||||||||400008|||||||||
+
+
+block item 160415 >= 1 && item 160421 >= 1
+window "\n\n刚刚发生了什么?那个年轻的女孩实力很强...",next
+window "\n\n（你继续讲述事件细节...）",next
+window "\n\n很有意思...我年轻的时候也干过一段时间的侦探,和汉克搭档的日子想想还真是值得纪念...",next
+window "\n\n请您先说正事...",next
+window "\n\n咳咳...我已经有线索了,剩下的还需要一些证据,不过你们最好还是做好最坏的打算,因为有些事情已经发生了,而且不可挽回...奥对了,把灵核交给我吧,我回转交给奎因的.",next
+window "\n\n但是...这个是丘比的东西...",next
+window "\n\n还不明白吗,冒险者?造成这一切的正是丘比,不要再被它欺骗了...",next
+window "\n\n（巨大的黑暗开始笼罩法兰城...一只利箭从远方射来...）",next
+window "\n\n你们...呜呜...你们到底做了什么...把我的伙伴们还给我!",ok
+window_ok item 160415 >= 1 && item 160421 >= 1
+Encount 2|0,65,130,145||||||||400007|||||||||
+
+
+block
+window "\n\n您好冒险者,有什么需要帮忙的吗?",ok
+window_ok
+endWindow "\n\n欢迎来拜访我."

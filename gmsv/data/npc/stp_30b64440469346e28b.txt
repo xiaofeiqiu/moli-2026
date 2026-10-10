@@ -1,0 +1,50 @@
+block  Luac stp:legacy:f90f63dae3acfdf8d335 >= 1 && item 90001 == 0 && item 90002 == 1 && item 90003 == 1
+
+        	
+	window "\n\n　不...不要...请不要窥视我的内心...！",ok
+	Window_ok
+	killitem 90002
+	Warp 0,30192,7,9
+
+block  item 90004 == 1 && item 90005 == 1 && item 90006 == 1 && item 90007 == 1 
+	window "\n\n　虽然很唐突，但是既然帮助我战胜自己，那总该谢谢你！！",next
+	killitem 90004
+	killitem 90005
+	killitem 90006
+	killitem 90007
+	window "\n\n　嘿嘿，我很感谢你哦，做为谢谢你的礼物，这个给你吧，你的坚强，让我更坚定了战斗的决心，战胜了骚动的恶魔，也许你是对的！",ok
+	window_ok item 90004 == 0 && item 90005 == 0 && item 90006 == 0 && item 90007 == 0 
+	giveitem 900013
+	Leavegroup
+	Warp 0,1000,242,85
+
+block  item 90008 == 1 && item 90009 == 1
+	window "\n\n　什么是善良？什么是罪恶？你明白吗？证明我收下了？",next
+	killitem 90008
+	killitem 90009
+	window "\n\n　能明白这一切，说明你已经超越自我，希望你能有所作为，不要混乱自我！",ok
+	window_ok item 90008 == 0 && item 90009 == 0
+	giveitem 90012
+	Leavegroup
+	Warp 0,1000,242,85
+
+block  item 90008 == 1
+	window "\n\n　什么是善良？什么是罪恶？你居然不明白？证明我收下了？",next
+	killitem 90008
+	window "\n\n　原来你跟我一样，在混乱中不断的摸爬滚打，寻找追求一个能战胜自我的答案！即便这样没，你的心里还是混乱的，我说得对吧！加油吧勇者。",ok
+	window_ok item 90008 == 0
+	giveitem 90010
+	Leavegroup
+	Warp 0,1000,242,85
+
+block  item 90009 == 1
+	window "\n\n　什么是善良？什么是罪恶？你居然不明白？证明我收下了？",next
+	killitem 90008
+	window "\n\n　原来你跟我一样，在混乱中不断的摸爬滚打，寻找追求一个能战胜自我的答案！即便这样没，你的心里还是混乱的，我说得对吧！加油吧勇者。",ok
+	window_ok item 90009 == 0
+	giveitem 90011
+	Leavegroup
+	Warp 0,1000,242,85	
+
+block
+	endwindow "\n\n　你是什么人！胆敢闯进本少爷的房间！！给我滚出去！"

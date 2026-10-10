@@ -1,0 +1,11 @@
+block
+	window "\n\n\n   你确定要合成火焰牛头怪吗?成功率40% \n  失败将变成一只烈豹蜥蜴",YES,NO
+	window_YES item 60321 >= 15
+	KillItem 60321,15
+	KillItem 60324,1
+	KillItem 9203,1
+	givepet (922%40,704%60)
+	window_YES
+	Endwindow "\n\n  您材料不够!合成此需要的材料是\n  【宠物化石蛋15个】【火的水晶】"
+	window_NO
+	Endwindow "\n\n\n   你考虑清楚后在使用我吧"

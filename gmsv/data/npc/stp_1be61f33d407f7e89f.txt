@@ -1,0 +1,15 @@
+block item 795062 >= 1 && item 795063 >= 1 && item 795064 >= 1 && item 795065 >= 1 && item 795066 >= 1 && item 795067 >= 1 && item 795068 >= 1
+window "\n\n嗯...你们是回来复命的吧?什么?啊...你们是开启者!",ok
+window_ok item 795062 >= 1 && item 795063 >= 1 && item 795064 >= 1 && item 795065 >= 1 && item 795066 >= 1 && item 795067 >= 1 && item 795068 >= 1
+killitem 795062
+killitem 795063
+killitem 795064
+killitem 795065
+killitem 795066
+killitem 795067
+killitem 795068
+Encount 3|0,60269,8,6|||||0|||800013|||||||||
+
+
+block
+endwindow "\n\n..."

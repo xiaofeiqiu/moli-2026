@@ -1,0 +1,21 @@
+block item 87455 == 1
+endwindow "\n\n现在的古墓越来越少，害我只能跑老远的地方直接去偷别人的古董。"
+
+block item 87454 == 1
+window "\n\n老大放过我吧，你都把我们老窝都给灭了。",next
+window "\n\n壶和地图？那是我从一个考古学家的家里偷来的。他就住在坎那贝拉村里面。",ok
+window_ok
+giveitem 87455
+
+block item 87452 == 1
+endwindow "\n\n快去吧，不然老大要睡觉了。"
+
+block item 87451 == 1
+window "\n\n走...走...没看见我和旁边的小姐搭讪吗？壶？你要那玩意？可惜我前段时间卖掉了，你有大买卖给我？",next
+window "\n\n大买卖的话，我拿不了决定。你还是去找我们老大吧，这是我的帽子。你到村外有个山谷，山谷里有我的兄弟，你给他看我帽子他就明白了，他会带你去见我老大的。",ok
+window_ok
+killitem 87451
+giveitem 87452
+
+block
+endwindow "\n\n小姐陪我喝一杯！"

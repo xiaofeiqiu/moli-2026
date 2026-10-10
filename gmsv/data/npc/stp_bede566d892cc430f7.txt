@@ -1,0 +1,14 @@
+block item 22463 == 0
+endwindow "\n\n我很忙,没有要紧事请不要打扰我."
+
+
+block item 22463 == 1
+window "\n\n国王目前惊吓过度正在休息,我是代国王和王后他们二位来向您表示由衷的感谢的.",next
+window "\n\n可恶的骑士营地居然把奸细安插到如此深的地步,接下来王宫内部的成员要进行一次彻底的盘查了.",next
+window "\n\n多谢您的及时出手挽救了这个国家!啊,对了,差点忘记了,这个是王后交给我来感谢您的!",next
+window "\n\n请务必要收下!",ok
+window_ok item 22463 == 1
+killitem 22463
+giveitem 22464
+leavegroup
+Warp 0,1000,233,78		

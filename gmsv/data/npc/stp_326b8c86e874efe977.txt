@@ -1,0 +1,5 @@
+block
+	Window "\n\n　听说裘瑟贝改造的宠物受到勇者们的欢迎,他也会一些改造宠物的技术，并且想和裘瑟贝较量一番。",next
+	Window "\n\n　拿着这个传单去找博士吧!",ok
+		Window_OK
+			giveitem 99001

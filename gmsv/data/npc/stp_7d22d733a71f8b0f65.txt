@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【大蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:788eda7a9d6bea362f8a
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【巨蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:c5783f7bb755b600f6e4
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【海蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:9e85191e9c00eb12a03a
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【胖蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:d255bfdc05ad978e31fb
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【兔耳蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:bbfd4894219e62aa5280
+				endif
+

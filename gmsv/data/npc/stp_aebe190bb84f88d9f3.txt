@@ -1,0 +1,11 @@
+block item 61189 >= 1
+window 1900563,next
+window 1900564,next
+window 1900565,ok
+window_ok
+LeaveGroup
+killitem 61189
+giveitem (61190%50,61191%50,61192%50)
+
+block
+endwindow 1900566

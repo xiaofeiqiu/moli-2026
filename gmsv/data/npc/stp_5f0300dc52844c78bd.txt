@@ -1,0 +1,10 @@
+block item 21019 == 1
+	endwindow "\n仙人掌已经裂开了.里面的东西好像已经被拿走了"
+block item 21017 == 1 && item 21020 == 1 && item 21012 >= 1 && item 21013 >= 1
+	window "\n@n拿起柴刀就是一阵乱劈.",next
+	window "\n@n戴上手套拔开了仙人掌.哇",ok
+	window_ok item 21017 == 1 && item 21020 == 1 && item 21012 >= 1 && item 21013 >= 1
+	killitem 21012,1
+	killitem 21013,1
+	giveitem 21019,1
+	endwindow "\n得到了酷似火元素的东西?"

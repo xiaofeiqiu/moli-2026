@@ -1,0 +1,11 @@
+block
+window "\n\n白帝龙的力量正在聚集...",ok
+window_ok
+leavegroup
+Warp 0,56000,76,193
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+block item 200794 >= 1
+endwindow "\n\n快去吧,我的同伴在阿凯鲁法村."
+
+
+block havetitle == 5200
+window "\n\n四时不正,四精躁动乃至天地震动.",next
+window "\n\n你虽然已经完成了镇抚四精的使命,但要想正正的理解四精还差的很远,请带着护符去米内葛尔岛的阿凯鲁法村找同为祭祀巫女的我的同伴吧,她们会指引你真正理解四精的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200794
+
+
+block
+endwindow "\n\n四时不正,四精躁动乃至天地震动."

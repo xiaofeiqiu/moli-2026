@@ -1,0 +1,105 @@
+block item 52267 == 1
+
+window"\n不会吧.原来龙也能跑这么快的..都怪小凯这头猪太懒了..打到一半竟然去泡妞.",OK
+
+window_OK
+
+window"\n\n@c我已经没有时间去追他了,不过他已经重伤在身,我想以你的实力,可以战胜他.你要追击吗？",yes,no
+
+window_yes
+
+killitem 52267,1
+
+giveitem 52268,1
+
+setaction 14
+
+endwindow"\n\n@c记住这是他的龙骨，他往西面逃去了,祝你好运！"
+
+window_NO
+
+endwindow"\n\n@c那算了吧，你当我没说过"
+
+
+block	item 52268 >=1
+
+window"\n\n\n@c怎么？还在这里逗留？",ok
+
+
+
+block item 301 >= 1 && item 58852 >= 1 && item 18375 >= 5 && item 18464 >= 1
+
+window"\n你身上的这些东西貌似可以让我炼成一把不错的圣剑..",OK
+
+window_OK
+
+window"\n\n@c如果你愿意的话给我的话...我想我们会是朋友...",yes,no
+
+window_yes item 301 >= 1 && item 58852 >= 1 && item 18375 >= 5 && item 18464 >= 1
+
+killitem 301,1
+killitem 58852,1
+killitem 18375,5
+killitem 18464,1
+giveitem 59912,1
+
+setaction 14
+
+endwindow"\n\n谢了！"
+
+window_NO
+
+endwindow"\n\n@c没事，我自己会寻找到一把合适我的终极神剑的."
+
+
+
+
+block item 7002 >= 10
+
+window"\n钱当然是好东西了.而且你的可是金币哦！",OK
+
+window_OK
+
+window"\n\n@c我正好缺点铸剑材料呢？你愿意帮我吗？",yes,no
+
+window_yes item 7002 >= 10
+
+killitem 7002,10
+
+giveitem 59912,1
+
+setaction 14
+
+endwindow"\n\n谢了！"
+
+window_NO
+
+endwindow"\n\n@c没事，我自己会寻找到一把合适我的终极神剑的."
+block item 7899876 >= 10
+
+window"\n钱当然是好东西了.而且你的可是金卡哦！",OK
+
+window_OK
+
+window"\n\n@c我正好缺点铸剑材料呢？你愿意帮我吗？",yes,no
+
+window_yes item 7899876 >= 10
+
+killitem 7899876,10
+
+giveitem 59912,1
+
+setaction 14
+
+endwindow"\n\n谢了！"
+
+window_NO
+
+endwindow"\n\n@c没事，我自己会寻找到一把合适我的终极神剑的."
+
+
+block
+
+window"\n\n@c笑了,你怎么穿得像个外星人.你问我是谁吗？圣雷剑士阿克瑞斯是也,你再往穿过罗德洞窟就可以到奇奥村庄了,那是我的家乡",ok
+window_ok
+setaction 14

@@ -1,0 +1,5 @@
+block
+	window"\n\n嘟！嘟！嘟！嘟！嘟！嘟！\n \n传感器正在发送传送目标！.\n \n位置瓦尔基尔村！GO！",ok
+	window_ok
+	leavegroup
+	Warp 0,6003,80,29

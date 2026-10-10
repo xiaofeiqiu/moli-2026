@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物抗醉能力1点！",ok
+	window_ok
+Luac stp:legacy:506cf74804667886f7c8
+		killitem 60274,1

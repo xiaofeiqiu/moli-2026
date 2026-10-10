@@ -1,0 +1,6 @@
+block
+window "\n\n因为伪神的沉睡,这个神殿也要沉入地下,要解放元素之力并传送回地面么?",yes,no
+window_no
+window_yes
+leaveGroup
+Warp 0,1948,38,13

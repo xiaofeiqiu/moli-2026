@@ -1,0 +1,10 @@
+block item 795114 == 1
+window "\n\n原来是法兰来的勇士.\n你们一定要帮助我们击败狂战,还雷克塔尔镇的和平!",next
+window "\n\n我把魔法传送装置的钥匙给你,它在西南方向我把它隐蔽了起来防止魔族破坏,你要注意安全,你是我们的希望!",ok
+window_ok item 795114 == 1
+killitem 795114
+giveitem 795115
+
+
+block
+endwindow "\n\n可恶的狂战将军,我不会放过你的!"

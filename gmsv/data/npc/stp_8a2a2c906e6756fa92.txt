@@ -1,0 +1,29 @@
+block item 86315 >= 1 && item 86316 < 1
+window 85361,ok
+window_ok
+leavegroup
+killitem 86315
+giveitem 86316
+endwindow 85362
+
+block item 86305 >= 1
+endwindow 85363
+
+block level >= 45 && havetitle == 61
+window 85364,next
+window 85365,next
+window 85366,yes,no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86305
+endwindow 85367
+window_yes ItemSpace < 1
+endwindow 85368
+window_no
+endwindow 85369
+
+block
+window 85370,next
+window 85371,next
+window 85372,ok
+window_ok

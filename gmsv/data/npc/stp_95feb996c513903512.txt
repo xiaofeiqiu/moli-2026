@@ -1,0 +1,13 @@
+block item 87432 == 1
+endwindow "\n\n这孩子性格很孤僻，这次一声不吭的去找人修行，害我担心的要死，都不敢跟妹妹在信里提起这事！"
+
+block item 87431 == 1
+window "\n\n这不是我妹妹的信物吗，莫非你是来找他养子的？",next
+window "\n\n真不巧，他前段时间离家出走了，留下书信说去找杰诺瓦镇的神官比尔班修行！",ok
+window_ok
+killitem 87431
+giveitem 87432
+EndWindow "\n\n这是他那是留下的书信或许对你有用。麻烦见到他后叫他立马回家。"
+
+block
+endwindow "\n\n圣女占卜的时候请保持安静！"

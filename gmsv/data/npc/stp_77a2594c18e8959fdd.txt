@@ -1,0 +1,10 @@
+block item 86530 >= 1
+window "\n\n帮艾诺雅揭开锁链。",next
+window "\n\n谢谢你们……希望有一天光明精灵与黑精灵能和平相处……这是谢礼。你们快走吧，种子的事由我来和族长解释……",ok
+window_ok
+killitem 86530
+giveitem 86531
+Warp 0,1000,233,78
+
+block
+endwindow "\n\n............"

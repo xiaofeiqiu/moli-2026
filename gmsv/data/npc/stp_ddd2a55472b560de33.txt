@@ -1,0 +1,5 @@
+block item 400073 == 1
+	Window"\n\n@c可悲的人们啊！你们并不知道你们在干什么！！！",ok
+		Window_ok item 400073 == 1
+		Setaction 5
+Encount 3|0,18064,16,12|400073|||||||800037|||||||||

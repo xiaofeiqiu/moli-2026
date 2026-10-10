@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【鸟人】吗？",ok
+			Window_ok
+Luac stp:legacy:ada0d03192f7e58d0ab7
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【幻歌妖】吗？",ok
+			Window_ok
+Luac stp:legacy:a56d6d9b0df1fefd4a2f
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【狠毒鸟人】吗？",ok
+			Window_ok
+Luac stp:legacy:71eaab1670149ae0d66c
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【烈风鸟人】吗？",ok
+			Window_ok
+Luac stp:legacy:a72ec3e8920cf9ba35be
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【黑暗鸟人】吗？",ok
+			Window_ok
+Luac stp:legacy:1c7de80023aadb201722
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【鸟人酋长】吗？",ok
+			Window_ok
+Luac stp:legacy:8194a9a42f8c975876e1
+				endif
+

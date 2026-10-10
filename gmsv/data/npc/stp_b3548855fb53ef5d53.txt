@@ -1,0 +1,8 @@
+block itemspace == 0 || petspace == 0
+	window"物品栏或宠物栏已满！",ok
+
+block item 795022 == 1
+	window"要打开Q零件兑换卡么？",yes,no
+	window_yes
+	killitem 795022
+	giveitem (554101%2,554102%90,554103%4,554104%4)

@@ -1,0 +1,10 @@
+block item 40580 >= 1
+endwindow"\n\n@背叛龙神之人我绝不饶恕。\n\n@c 请记住我的忠告吧"
+
+block item 40584 >= 1
+window"\n\n 接受吾等考验者才可以入殿内见到水龙之王!\n@c …………准备好了吗？！",ok
+window_ok
+Encount 3|0,3504,54,59||0|||||0|35210|||||||||
+
+block
+endwindow"\n\n\n@c 不想死的给我滚开，这里不适合像你这种平民呆的地方"

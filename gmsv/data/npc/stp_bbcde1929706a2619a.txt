@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至积雪的山道 ？",yes,no
+		Window_yes
+			KillItem 60227,1
+			Warp 0,402,81,191
+		Window_no

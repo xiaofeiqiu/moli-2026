@@ -1,0 +1,6 @@
+block item 200151 >= 1
+window "\n\n一旦进去,你就再也无法返回了.",ok
+window_ok
+killitem 200151
+leavegroup
+Warp 0,124,12,11

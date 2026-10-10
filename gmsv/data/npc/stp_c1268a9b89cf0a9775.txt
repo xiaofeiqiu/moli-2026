@@ -1,0 +1,156 @@
+block EndEvent 612 == 0
+	window "\n\n您似乎还没有加入佣兵工会，请在旁边服务人员处办理一下手续。",ok
+		Window_ok
+block item 15201 >= 1 && EndEvent 617 == 1
+	window "\n\n冒险者你完成了面包的委托，要交付吗？",ok
+		Window_ok
+			killitem 15201,1
+			GiveItem 60290,1
+			addgold 600
+			EndEvent 617 = 0
+block item 12411 >= 1 && EndEvent 618 == 1
+	window "\n\n冒险者你完成了砂糖的委托，要交付吗？",ok
+		Window_ok
+			killitem 12411,1
+			GiveItem 60290,1
+			addgold 600
+			EndEvent 618 = 0
+block item 40098 >= 1 && EndEvent 619 == 1
+	window "\n\n冒险者你完成了平民剑的委托，要交付吗？",ok
+		Window_ok
+			killitem 40098,1
+			GiveItem 60290,1
+			addgold 800
+			EndEvent 619 = 0
+block item 15605 >= 1 && EndEvent 620 == 1
+	window "\n\n冒险者你完成了生命力回复药（75）的委托，要交付吗？",ok
+		Window_ok
+			killitem 15605,1
+			GiveItem 60290,1
+			addgold 500
+			EndEvent 620 = 0
+block item 14400 >= 1 && EndEvent 621 == 1
+	window "\n\n冒险者你完成了封印卡（人形系）的委托，要交付吗？",ok
+		Window_ok
+			killitem 14400,1
+			GiveItem 60290,1
+			addgold 500
+			EndEvent 621 = 0
+block item 15200 >= 1 && EndEvent 622 == 1
+	window "\n\n冒险者你完成了糖果的委托，要交付吗？",ok
+		Window_ok
+			killitem 15200,1
+			GiveItem 60290,1
+			addgold 800
+			EndEvent 622 = 0
+block item 18310 >= 1 && EndEvent 623 == 1
+	window "\n\n冒险者你完成了地的水晶碎片的委托，要交付吗？",ok
+		Window_ok
+			killitem 18310,1
+			GiveItem 60290,1
+			addgold 500
+			EndEvent 623 = 0
+block item 14836 >= 1 && EndEvent 624 == 1
+	window "\n\n冒险者你完成了小石像怪卡片的委托，要交付吗？",ok
+		Window_ok
+			killitem 14836,1
+			GiveItem 60290,1
+			addgold 500
+			EndEvent 624 = 0
+block item 18194 >= 1 && EndEvent 625 == 1
+	window "\n\n冒险者你完成了红头盔的委托，要交付吗？",ok
+		Window_ok
+			killitem 18194,1
+			GiveItem 60290,1
+			addgold 500
+			EndEvent 625 = 0
+block item 18158 >= 1 && EndEvent 626 == 1
+	window "\n\n冒险者你完成了高级番茄的委托，要交付吗？",ok
+		Window_ok
+			killitem 18185,1
+			GiveItem 60290,1
+			addgold 300
+			EndEvent 626 = 0
+block EndEvent 618 == 0 && EndEvent 619 == 0 && EndEvent 620 == 0 && EndEvent 621 == 0 && EndEvent 622 == 0 && EndEvent 623 == 0 && EndEvent 624 == 0 && EndEvent 625 == 0 && EndEvent 626 == 0 && EndEvent 240 == 0
+	window "\n\n要领取随机任务吗？一但选定就不能放弃，完成后才可接下个随机任务。",next
+		LocalCount10 = random 10,0
+		if localcount10==10
+			EndEvent 626 = 1
+			window "\n\n我需要1个高级番茄，伐木或狩猎技能在贝蒂的家（银行前的小屋）田地里可以获得，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==9
+			EndEvent 625 = 1
+			window "\n\n我需要1个红头盔，可以通过消灭红帽哥布林或者法兰南门讨伐哥布林士官获取，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==8
+			EndEvent 624 = 1
+			window "\n\n我需要1张小石像怪卡片，灵堂打消灭小石像怪能获取，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==7
+			EndEvent 623 = 1
+			window "\n\n我需要1个地的水晶碎片，打地属性怪物可以掉落，也可以通过可可特村怪物狩猎大量获取，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==6
+			EndEvent 622 = 1
+			window "\n\n我需要1个糖果，可以在拿潘食品点购买，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==5
+			EndEvent 621 = 1
+			window "\n\n我需要1张1级封印卡（人形系），可以在达美姐妹的店中购买，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==4
+			EndEvent 620 = 1
+			window "\n\n我需要1个生命力回复药（75），可以东医院药剂师波洛姆处购买，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==3
+			EndEvent 619 = 1
+			window "\n\n我需要1个平民剑，可以里谢里雅堡南门的武器商人处购买，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==2
+			EndEvent 618 = 1
+			window "\n\n我需要1个砂糖，可以通过狩猎技能获得也可以前往维诺亚村购买，能帮我取来吗？",ok
+				Window_ok
+					endif
+		if localcount10==1
+			EndEvent 617 = 1
+			window "\n\n我需要1个面包，你可以自己制作或者到伊尔村的酒吧购买，能帮我取来吗？",ok
+				Window_ok
+					endif
+block EndEvent 617 == 1
+	window "\n\n你已经接到面包的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 618 == 1
+	window "\n\n你已经接到砂糖的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 619 == 1
+	window "\n\n你已经接到平民剑的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 620 == 1
+	window "\n\n你已经接到生命力回复药（75）的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 621 == 1
+	window "\n\n你已经接到封印卡（人形系）的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 622 == 1
+	window "\n\n你已经接到糖果的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 623 == 1
+	window "\n\n你已经接到地的水晶碎片的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 624 == 1
+	window "\n\n你已经接到小石像怪卡片的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 625 == 1
+	window "\n\n你已经接到红头盔的委托，请先去完成任务。",ok
+		Window_ok
+block EndEvent 626 == 1
+	window "\n\n你已经接到高级番茄的委托，请先去完成任务。",ok
+		Window_ok

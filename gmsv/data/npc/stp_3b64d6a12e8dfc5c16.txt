@@ -1,0 +1,10 @@
+block item 715337 > 1
+endwindow "\n\n持有两个宝藏不能打开喔."
+
+block 
+window "\n\n\ 你要打开宝藏吗?",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 715337
+giveitem (16915%1,16916%1,18699%1,715338%1)

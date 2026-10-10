@@ -1,0 +1,19 @@
+block item 200221 >= 1
+window "\n\n为什么你还不走～嫌给的小费少啊.",next
+window "\n\n不对,看你的眼神难道,你是…受死吧.",ok
+window_ok
+killitem 200221
+Encount 2|0,27125,23,15||0|||||0|50309|||||||||
+
+
+
+block item 200220 >= 1
+window "\n\n哎呀～哎呀～真是辛苦你了,你就把货物放这地上吧,过会村里会有人来接我的,你可以回去了.",next
+window "\n\n这点小费是打赏你的,别人问你送到哪里,你就说送到谢奈斯村了,可别提起这块地方哦.",ok
+window_ok
+killitem 200220
+giveitem 200221
+
+
+block
+endwindow "\n\n小朋友有没有兴趣陪婆婆过夜啊."

@@ -1,0 +1,12 @@
+block item 200125 >= 1
+window "\n\n这一切都是宿命.",next
+window "\n\n命运的沙漏总归都是要被打破的.",next
+window "\n\n勇者啊,时间的沙漏再次被打破了.",next
+window "\n\n开启四兽的奥义,你不是已经知道了吗?",next
+window "\n\n那就是时空里存在的属性呀.",next
+window "\n\n我也即将消失了...",next
+window "\n\n希望我还能在遥远的以后再见到你",ok
+window_ok
+leavegroup
+Warp 0,17213,38,38
+

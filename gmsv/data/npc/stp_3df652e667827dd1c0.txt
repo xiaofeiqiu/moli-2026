@@ -1,0 +1,14 @@
+
+block itemspace > 0 && item 715302 == 0
+GiveLeak1Item 715302,1
+window "\n\n我就是守护之花\n这个水晶坑支撑着整个南方大陆\n也是灵魂的归依.",next
+window "\n\n这些人们只顾私利,不惜破坏这里.",next
+window "\n\n因为惊动了这山的山神\n才会造成土石崩落.",next
+window "\n\n如果有心了解这村子的过去\n就拿这个给还活着的人吧!",ok
+window_ok
+leavegroup
+Warp 0,30014,62,59
+endblock
+
+block
+endwindow "\n\n你的背包满啦!"

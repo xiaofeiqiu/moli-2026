@@ -1,0 +1,28 @@
+block ItemDur 60451 == 4
+Window "\n\n女神的光辉包围着你",ok
+
+Window_ok ItemDur 60451 == 4
+SetDur 60451,-1
+Warp 0,64050,728,411
+
+block ItemDur 60451 == 3
+Window "\n\n女神的光辉包围着你",ok
+
+Window_ok ItemDur 60451 == 3
+SetDur 60451,-1
+Warp 0,64050,741,52
+
+
+block ItemDur 60451 == 2
+Window "\n\n女神的光辉包围着你",ok
+
+Window_ok ItemDur 60451 == 2
+SetDur 60451,-1
+Warp 0,64050,59,185
+
+block ItemDur 60451 == 1
+Window "\n\n女神的光辉包围着你",ok
+
+Window_ok ItemDur 60451 == 1
+killitem 60451
+Warp 0,64050,255,567

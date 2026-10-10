@@ -1,0 +1,20 @@
+block item 86403 >= 1 && item 86405 >= 1 && item 86406 < 1
+window 85620,ok
+window_ok
+leavegroup
+killitem 86403
+killitem 86405
+giveitem 86406
+givepet (102022%25,102023%25,102024%25,102025%25,102026%25,102027%25,111%5)
+
+block level >= 60 &&  havetitle == 8043 && item 86404 < 1 && item 86406 < 1
+window 85621,next
+window 85622,yes,no
+window_yes
+leavegroup
+giveitem 86404
+endwindow 85623
+window_no
+leavegroup
+killitem 86403
+endwindow 85624

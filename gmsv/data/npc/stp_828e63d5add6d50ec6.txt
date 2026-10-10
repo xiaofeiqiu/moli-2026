@@ -1,0 +1,10 @@
+block
+	window "\n\n　要挑战万众瞩目的勇气终极连战吗？\n\n　一不小心可是会飞到外太空喔~",Yes,No
+		Window_Yes
+			Window "\n\n  喔喔~那就接受勇气的试炼吧！哈哈哈！",Yes,No
+				Window_Yes
+Encount 3|0,60116,15,14||0|||||0|6000098|||||||||
+				Window_No
+					Endwindow "\n\n   …"
+		Window_No
+			Endwindow "\n\n   …"

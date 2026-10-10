@@ -1,0 +1,12 @@
+########## 给予 ##########
+block Luac stp:legacy:07683409d22bc4d32e8a >= 1
+	Window "\n\n\n@c请进吧，请进入学习我们的独特技能吧!",ok
+	Window_ok
+	leavegroup
+	Warp 0,941,17,18
+	window_no
+	Endwindow "\n\n\n@c需要进去面见族长跟我说声!",ok
+	
+	
+block
+	Endwindow "\n\n\n@c非我族人请勿入内!",ok

@@ -1,0 +1,124 @@
+block StrCmpChat == 9153
+window "\n\n要换钢鬼吗?",yes,no
+window_no
+window_yes petlevel 5803 == 1 && gold > 2000
+addgold -2000
+killpetl 5803
+givepet 21803
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9152
+window "\n\n要换火焰之刃吗?",yes,no
+window_no
+window_yes petlevel 603 == 1 && gold > 2000
+addgold -2000
+killpetl 603
+givepet 603
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9151
+window "\n\n要换翠绿菇吗?",yes,no
+window_no
+window_yes petlevel 5401 == 1 && gold > 2000
+addgold -2000
+killpetl 5401
+givepet 21401
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9150
+window "\n\n要换海蝙蝠吗?",yes,no
+window_no
+window_yes petlevel 253 == 1 && gold > 2000
+addgold -2000
+killpetl 253
+givepet 253
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9149
+window "\n\n要换地狱妖犬吗?",yes,no
+window_no
+window_yes petlevel 34 == 1 && gold > 2000
+addgold -2000
+killpetl 34
+givepet 34
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9148
+window "\n\n要换布丁史莱姆吗?",yes,no
+window_no
+window_yes petlevel 504 == 1 && gold > 2000
+addgold -2000
+killpetl 504
+givepet 504
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9147
+window "\n\n要换蜥蜴斗士吗?",yes,no
+window_no
+window_yes petlevel 702 == 1 && gold > 2000
+addgold -2000
+killpetl 702
+givepet 702
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9146
+window "\n\n要换杀人蜂吗?",yes,no
+window_no
+window_yes petlevel 311 == 1 && gold > 2000
+addgold -2000
+killpetl 311
+givepet 311
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block StrCmpChat == 9145
+window "\n\n要换亡灵吗?",yes,no
+window_no
+window_yes petlevel 123 == 1 && gold > 2000
+addgold -2000
+killpetl 123
+givepet 123
+leavegroup
+Warp 0,1000,233,78
+window_yes
+endwindow "\n\n你身上没合适的宠物可换或钱不够!"
+
+block
+window "\n\n哇～好久没见过人了.你怎么会有这个石头咧?它是我很久很久前为了报答一位照顾了在街上晕倒的我而送给他的,现在在你手上,那就是那个人送给你的吧～",next
+window "\n\n嗯,一定是这样～我知道你想问什么～每个人都想问～想知道我里面有什么吧?你真的很想知道吗～你真的真的很想知道吗～",next
+window "\n\n我才不告诉你咧～!",next
+window "\n\n...喵...?",next
+window "\n\n咦～咦～别走啦～",next
+window "\n\n作为拥有这个石头,并且是我好久好久好久好久...我也不知道多久才又一次见到的人,就给你点好处吧～",next
+window "\n\n如果你有一只一级的杀人蜂、蜥蜴斗士、布丁史莱姆、地狱妖犬、亡灵、海蝙蝠、翠绿菇、火焰之刃、钢鬼的宝宝的话,我可以跟你换1只同样的宝宝哦～不骗你～不过要付2000g哦～",next
+window "\n\n全部都是一只换一只,要换什么就直接跟我说～",next
+endwindow "\n\n打个比方,如果你拿来一只一级的「亡灵」,就跟我说“亡灵”,我马上跟你换一只一级的「亡灵」～"
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+block
+Window "\n\n\n\n要去玄心岛吗？要我开船的话请支付1000费用.",yes,no
+Window_yes Gold >= 1000
+addgold -1000
+LeaveGroup
+Warp 0,570,35,12

@@ -1,0 +1,14 @@
+block item 211 >= 1 && item 18456 >= 10 && item 18450 >= 10
+
+window"\n\n\n@c我知道了...未来的黑暗骑士大人..",ok
+Window_ok
+
+killitem 211,1
+killitem 18456,10
+killitem 18450,10
+giveitem 58859,1
+
+
+block
+
+window"\n\n\n@c你好，我是圣都奥德赛的右翼将军雷诺..",ok

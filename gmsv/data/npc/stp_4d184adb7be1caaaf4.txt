@@ -1,0 +1,14 @@
+block item 126 >= 1
+endwindow "\n\n阿夏芙跟耶卡他们终于在一起了...只可惜啊...你先走吧,我还想多留一会..."
+
+	
+block item 119 == 1
+window "\n\n你觉得阿夏芙是坏人吗?",yes,no
+window_yes
+endwindow "\n\n你才是坏人...走开啦,别在这里打扰她墓地的宁静..."
+window_no
+window "\n\n嗯,真为阿夏芙和耶卡的爱情感慨啊...我就只是想把这个皇冠献给她...不过,哎,给你吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 126,1

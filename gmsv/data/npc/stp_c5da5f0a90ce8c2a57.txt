@@ -1,0 +1,2 @@
+block
+window"\n\n\n 记载着当年发生的种种...",ok

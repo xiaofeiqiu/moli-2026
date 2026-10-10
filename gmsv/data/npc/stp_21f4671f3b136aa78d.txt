@@ -1,0 +1,7 @@
+block
+window "\n\n你有实力消灭魔物，进入冥狱。",yes,no
+window_no
+giveitem 87513
+Warp 0,1403,33,21
+window_yes
+Warp 0,29688,81,78

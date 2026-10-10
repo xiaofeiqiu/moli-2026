@@ -1,0 +1,10 @@
+
+block
+window "\n\n\n@c幼稚的孩子,你认为你真的击败我了么,我的生命将寄托在这里面,你永远也无法将我击败.来吧,放我出去,我可以给你想要的一切.",yes,no
+window_no
+KillItem 15686
+giveitem 15687
+endwindow "\n\n\n@c就算你不放了我,总有一天我也可以靠自己的力量走出去.你会后悔的."
+window_yes
+KillItem 15686
+endwindow "\n\n\n@c你真的很幼稚.魔鬼的话是永远不可信的."

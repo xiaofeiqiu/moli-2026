@@ -1,0 +1,5 @@
+block
+window "\n\n你要为失去心灵能量的水晶注入心灵能量吗?",yes,no
+window_yes
+leavegroup
+Warp 0,27703,26,12

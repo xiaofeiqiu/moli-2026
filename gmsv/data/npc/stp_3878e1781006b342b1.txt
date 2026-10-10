@@ -1,0 +1,12 @@
+block item 88361 == 1
+endwindow "\n\n你去神殿接待处找神殿的接待员吧，她会安排你的食宿！"
+
+block item 88360 == 1
+window "\n\n我知道你来找我的目的，你过会再来找我吧！先让我和圣女大人商量一下关于月魔石的事。",next
+window "\n\n你去神殿接待处找神殿的接待员吧，她会安排你的食宿！",ok
+window_ok
+killitem 88360
+giveitem 88361
+
+block
+endwindow "\n\n圣女的地位在艾尔巴尼亚国是至高无上的！"

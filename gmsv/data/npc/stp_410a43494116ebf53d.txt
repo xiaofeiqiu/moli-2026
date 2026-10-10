@@ -1,0 +1,6 @@
+block item 60417 >= 1 && item 60418 >= 1 && item 60419 >= 1 && item 60420 >= 1 && item 60424 >= 1
+	window"\n\n我并不孤独……对吗？小焰……",ok
+		window_ok
+Encount 2|0,100,404,271||||||||6000062|||||||||
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

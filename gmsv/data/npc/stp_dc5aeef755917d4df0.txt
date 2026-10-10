@@ -1,0 +1,10 @@
+block item 87147 == 1
+endwindow "\n\n从这把剑的掉落方向看，那个守卫被什么人从这堵墙给带出村外了！"
+
+block item 87146 == 1
+window "\n\n地上有个把剑你要捡起来吗？",yes,no
+window_no
+window_yes itemSpace >= 1
+giveitem 87147
+window_yes itemSpace < 1
+endwindow "\n\n你物品栏已满！"

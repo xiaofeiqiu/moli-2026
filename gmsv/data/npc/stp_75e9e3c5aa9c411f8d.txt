@@ -1,0 +1,33 @@
+block Item 39662 >= 1 || Item 39661 >= 1
+endwindow "\n\n也许是冥冥中自有定数\n\n彩叶草－Coleus\n\n是她的名字,却也是绝望的爱情!"
+
+
+block Item 39664>=1
+endwindow "\n\n快去彩叶原阻止奥菲尔吧!"
+
+
+block Item 39666 >= 1 && Item 39667 > 1 && Item 39668 > 1
+endwindow "\n\n去找拉杰法尔,把妹妹的日记拿给他吧!"
+
+
+block Item 39663>=1
+endwindow "\n\n快去阻止奥菲尔破坏封印."
+
+
+block
+window "\n\n你是从修伯特大哥那来的?",next
+window "\n\n是的!",next
+window "\n\n告诉大哥!除非可丽儿复活,不然不可能重修旧好!",next
+window "\n\n我是为了封印的事而来!",next
+window "\n\n什么?哥哥居然会帮奥菲尔?",next
+window "\n\n奥菲尔?那是谁?我是来阻止巴克达的!",next
+window "\n\n巴克达就是奥菲尔,他是想远远的看着可丽儿,才毁容改名为巴克达,好投身亚诺曼王室执教!看样子他派手下来抢地图,真的是要破坏封印!",next
+window "\n\n请您帮助我,阻止魔龙复活?",next
+window "\n\n魔龙?那来的魔龙?那只是晃子!",next
+window "\n\n那原因是...",next
+window "\n\n原因是...都是过去的事了!\n\n他还一直忘不了她!",next
+window "\n\n这是我的徽章,你找露咪进入神殿之底、奈特进入砂之塔、若伊进入火炎之谷,封印就在这三个的地方!",ok
+window_ok itemspace < 1
+endwindow "\n\n物品栏已满"
+window_ok
+giveLeak1Item 39663,1

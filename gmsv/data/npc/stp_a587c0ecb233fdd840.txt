@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至莎莲娜西方洞窟 ？",yes,no
+		Window_yes
+			KillItem 60225,1
+			Warp 0,400,233,339
+		Window_no

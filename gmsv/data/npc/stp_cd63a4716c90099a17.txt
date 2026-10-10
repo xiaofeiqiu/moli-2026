@@ -1,0 +1,56 @@
+block item 1000052 >= 1
+endwindow "\n\n请带着这个去伊尔村的码头找他们吧."
+
+block item 1000051 >= 1 && ItemCreateTime 700007 >= 5
+window "\n\n恩,检讨结果已经出来了.为了调查北方大陆到底发生了什么异变,警备队联合冒险家公会及炼金师公会组织了一只精炼的小分队,打算乘坐战舰绕过已经无法通行的航路,从北方大陆的西方登陆.",next
+window "\n\n像你这样有能力的冒险家正是他们所需要的帮手.请带着这个去伊尔村的码头找他们吧.",ok
+window_ok item 1000051 >= 1
+killitem 1000051
+giveitem 1000052
+
+
+block item 1000051 >= 1
+endwindow "\n\n检讨结果要过一段时间才能出来,到时候再来吧."
+
+block item 1000050 >= 1
+window "\n\n你们半路上就受到了大量的怪物袭击么?这样的话,看来需要仔细检讨下这起事件了.总之,请先耐心等待检讨结果吧.",ok
+window_ok item 1000050 >= 1
+killitem 1000050
+giveitem 1000051
+
+block item 1000048 >= 1
+endwindow "\n\n请带着证明去蒂娜村外的商船找他们吧."
+
+block item 1000047 >= 1 && ItemCreateTime 700003 >= 5
+window "\n\n感谢你的协助,我们已经得知事情的真相了.",next
+window "\n\n收到袭击的船只是属于北方航路的商船,他们会在每年的固定时间航向遥远的北方大陆,与那里的居民进行交易, 根据日记记载,他们半路上突然受到了大量怪物袭击,船只受伤后漂流到了岸边.",next
+window "\n\n我们已经通知了商船所属商会,他们提出了护航申请.上次的调查行动很成功,所以我向他们推荐了你,请带着这个证明去蒂娜村外的商船找他们吧.",next
+window "\n\n祝你一路平安.",ok
+window_ok item 1000047 >= 1
+killitem 1000047
+giveitem 1000048
+
+block item 1000047 >= 1
+endwindow "\n\n调查结果还没有讨论出来,请稍等片刻."
+
+block item 1000046 >= 1
+window "\n\n船长的航行日记么,感谢你的协助调查,我们需要调查一下日记,请过一会儿再来吧.",ok
+window_ok item 1000046 >= 
+killitem 1000046
+giveitem 1000047
+
+block item 1000045 >= 1
+endwindow "\n\n莎莲娜岛杰诺瓦镇东北方海岸边有船搁浅,请小心调查."
+
+block
+window "\n\n你好,冒险者,我是特殊调查管理官.",next
+window "\n\n因为现在各地的各种突发事件增多,为了更好更快的解决这些事件,所以成立了我们这个特殊调查部队.当然了,我们也是人手不足,所以也在努力的募集有经验的冒险者来进行协助调查.",next
+window "\n\n目前传闻莎莲娜岛杰诺瓦镇东北方海岸边有船搁浅,而且附近还有怪物出没,你有没有时间帮我们调查一下这件事情呢?",yes,no
+window_no
+window "\n\n人手不足啊.",ok
+window_yes
+window "\n\n那么请多加小心.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 1000045

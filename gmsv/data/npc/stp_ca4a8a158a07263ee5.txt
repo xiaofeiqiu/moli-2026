@@ -1,0 +1,10 @@
+block item 200125 >= 1 && item 200127 >= 1
+window "\n\n这个跟石碑上的字一模一样耶.",next
+window "\n\n贴上去看看.",next
+window "\n\n发出刺眼的光芒...",ok
+window_ok
+killitem 200127
+leavegroup
+Warp 0,17207,24,14
+
+

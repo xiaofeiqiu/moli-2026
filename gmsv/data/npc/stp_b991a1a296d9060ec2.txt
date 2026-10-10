@@ -1,0 +1,22 @@
+block item 1000488 == 1 && endevent 677 == 0
+	window"\n\n 那位大人允许我把这个交付与你，请务必珍惜这个机会哦！",ok
+	window_ok
+	AddSkillSlot
+	killitem 1000488
+	endevent 677 = 1
+	leavegroup
+	Warp 0,1000,238,88
+block item 1000488 == 2 && endevent 677 == 0
+	window"\n\n 那位大人允许我把这个交付与你，请务必珍惜这个机会哦！",ok
+	window_ok
+	AddSkillSlot
+	killitem 1000489
+	endevent 677 = 1
+	leavegroup
+	Warp 0,1000,238,88
+block endevent 677 == 1
+	window"\n\n 抱歉啊，礼物只能获得一次，不要贪心哦！",ok
+	leavegroup
+	Warp 0,1000,238,88
+block
+	window"\n\n 没有誓言之花是不能给你奖励的！",ok

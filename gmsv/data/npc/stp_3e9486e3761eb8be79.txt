@@ -1,0 +1,2 @@
+block
+	window"你好.要喝点什么吗？",ok

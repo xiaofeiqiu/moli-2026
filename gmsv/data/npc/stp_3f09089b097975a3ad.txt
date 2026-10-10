@@ -1,0 +1,153 @@
+block item 39740 >= 1 && item 39806 >= 1 && item 39807 >= 1 && item 39808 >= 1 && item 39809 >= 1 && Luac stp:legacy:486bb517fbcb77d5aab2 == 1
+window "\n\n要兑换改造漂浮炸弹吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39740 >= 1 && item 39806 >= 1 && item 39807 >= 1 && item 39808 >= 1 && item 39809 >= 1
+killitem 39740
+killitem 39806
+killitem 39807
+killitem 39808
+killitem 39809
+killpetl 666032
+givepet 12409
+
+
+block item 39739 >= 1 && item 39802 >= 1 && item 39803 >= 1 && item 39804 >= 1 && item 39805 >= 1 && Luac stp:legacy:1e4f621e270a8bd5f983 == 1
+window "\n\n要兑换改造沼泽树精吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39739 >= 1 && item 39802 >= 1 && item 39803 >= 1 && item 39804 >= 1 && item 39805 >= 1
+killitem 39739
+killitem 39802
+killitem 39803
+killitem 39804
+killitem 39805
+killpetl 666032
+givepet 12408
+
+
+block item 39738 >= 1 && item 39798 >= 1 && item 39799 >= 1 && item 39800 >= 1 && item 39801 >= 1 && Luac stp:legacy:4afaf30502c622077983 == 1
+window "\n\n要兑换改造水蓝鸟魔吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39738 >= 1 && item 39798 >= 1 && item 39799 >= 1 && item 39800 >= 1 && item 39801 >= 1
+killitem 39738
+killitem 39798
+killitem 39799
+killitem 39800
+killitem 39801
+killpetl 666032
+givepet 12407
+
+
+block item 39737 >= 1 && item 39794 >= 1 && item 39795 >= 1 && item 39796 >= 1 && item 39797 >= 1 && Luac stp:legacy:fea39a6a7d46e4a62f1d == 1
+window "\n\n要兑换改造火焰龟吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39737 >= 1 && item 39794 >= 1 && item 39795 >= 1 && item 39796 >= 1 && item 39797 >= 1
+killitem 39737
+killitem 39794
+killitem 39795
+killitem 39796
+killitem 39797
+killpetl 666032
+givepet 12406
+
+
+block item 39736 >= 1 && item 39790 >= 1 && item 39791 >= 1 && item 39792 >= 1 && item 39793 >= 1 && Luac stp:legacy:b234319eb685590e4420 == 1
+window "\n\n要兑换改造血腥之刃吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39736 >= 1 && item 39790 >= 1 && item 39791 >= 1 && item 39792 >= 1 && item 39793 >= 1
+killitem 39736
+killitem 39790
+killitem 39791
+killitem 39792
+killitem 39793
+killpetl 666032
+givepet 12405
+
+
+block item 39735 >= 1 && item 39786 >= 1 && item 39787 >= 1 && item 39788 >= 1 && item 39789 >= 1 && Luac stp:legacy:67754bb352b54cd37581 == 1
+window "\n\n要兑换改造螳螂吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39735 >= 1 && item 39786 >= 1 && item 39787 >= 1 && item 39788 >= 1 && item 39789 >= 1
+killitem 39735
+killitem 39786
+killitem 39787
+killitem 39788
+killitem 39789
+killpetl 666032
+givepet 12404
+
+
+block item 39734 >= 1 && item 39782 >= 1 && item 39783 >= 1 && item 39784 >= 1 && item 39785 >= 1 && petlevel 616 >= 1
+window "\n\n要兑换改造纯白吓人箱吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39734 >= 1 && item 39782 >= 1 && item 39783 >= 1 && item 39784 >= 1 && item 39785 >= 1
+killitem 39734
+killitem 39782
+killitem 39783
+killitem 39784
+killitem 39785
+killpetl 616
+givepet 12403
+
+
+block item 39733 >= 1 && item 39778 >= 1 && item 39779 >= 1 && item 39780 >= 1 && item 39781 >= 1 && Luac stp:legacy:3eba7ecc54f3d38a3b76 == 1
+window "\n\n要兑换改造地狱猎犬吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39733 >= 1 && item 39778 >= 1 && item 39779 >= 1 && item 39780 >= 1 && item 39781 >= 1
+killitem 39733
+killitem 39778
+killitem 39779
+killitem 39780
+killitem 39781
+killpetl 666032
+givepet 12402
+
+
+block item 39732 >= 1 && item 39774 >= 1 && item 39775 >= 1 && item 39776 >= 1 && item 39777 >= 1 && Luac stp:legacy:d0e954b2b393bc33b242 == 1
+window "\n\n要兑换改造黄蜂吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39732 >= 1 && item 39774 >= 1 && item 39775 >= 1 && item 39776 >= 1 && item 39777 >= 1
+killitem 39732
+killitem 39774
+killitem 39775
+killitem 39776
+killitem 39777
+killpetl 304
+givepet 12401
+
+
+block item 39731 >= 1 && item 39770 >= 1 && item 39771 >= 1 && item 39772 >= 1 && item 39773 >= 1 && Luac stp:legacy:9c8bd95b229b9959a5a9 == 1
+window "\n\n要兑换改造丘比特吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_yes item 39731 >= 1 && item 39770 >= 1 && item 39771 >= 1 && item 39772 >= 1 && item 39773 >= 1
+killitem 39731
+killitem 39770
+killitem 39771
+killitem 39772
+killitem 39773
+killpetl 666032
+givepet 12400
+
+
+
+block
+endwindow "\n\n如果你集齐了任意一套改造宠物设计图和对应的1级宠物,我可以帮你改造出更强力的宠物!"

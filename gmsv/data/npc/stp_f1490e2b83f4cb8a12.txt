@@ -1,0 +1,6 @@
+block Luac stp:legacy:2c26ecb564bdd6405d65 >= 1
+	Window "\n\n 使用后学习黑暗骑士终极技能--冥界冲击波",ok
+        Window_ok
+        killitem 52202
+        leavegroup
+        Warp 0,690,25,20

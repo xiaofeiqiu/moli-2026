@@ -1,0 +1,13 @@
+block ShipCharTake 30,1802 == 1
+	Window "\n\n\n\n@c要搭乘魔龙征服者号吗？",YES,NO
+	Window_YES ShipCharTake 30,1802 == 1
+	LeaveGroup
+	ShipCharTake 30,1802
+	Endblock
+	Window_YES
+	EndWindow "\n\n\n\n@c赶不上这班船了。",OK
+	Window_NO
+	Endblock
+
+block
+	EndWindow "\n\n\n\n\n@c距离下次入港还有@t30,1802。",OK

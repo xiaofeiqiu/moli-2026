@@ -1,0 +1,6 @@
+block item 58852 >= 1
+killitem 58852,1
+LeaveGroup
+Warp 0,211,6,14
+block
+	Window "\n\n@c这里是凯恩大人的家.不要随意逗留.",ok

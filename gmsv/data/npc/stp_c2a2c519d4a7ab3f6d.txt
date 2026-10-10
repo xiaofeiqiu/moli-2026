@@ -1,0 +1,33 @@
+##########判断探索器##########
+block item 1000484 != 0
+	EndWindow "\n\n\n可疑的坑道，强烈的在拒绝你的进入，丢掉圣物吧",OK
+block item 1000486 != 0
+	EndWindow "\n\n\n可疑的坑道，强烈的在拒绝你的进入，丢掉圣物吧",OK
+block Item 700086 == 0
+	EndWindow "\n\n\n可疑的坑道，不敢确定还是别下去的好",OK
+
+########## 无药料理 ##########
+block drugdish == 0 && Item 700086 != 0
+	Window "这里应该是传说中坑道了，是否使用探测器进入呢?",YES,NO
+	Window_YES drugdish == 0
+	killitem 700086
+	LeaveGroup
+	Warp 0,930,25,6
+	Window_YES drugdish != 0
+	Endwindow "\n\n\n@c您的信仰心还不够，回去吧!",OK
+
+	Window_NO
+
+########## 药料理 ##########drugdish == 0 && Item 700085 != 0
+block drugdish != 0
+	Window "\n\n\n@c悠远的响起回声：凡间的食物不应带进圣域！",YES,NO
+	Window_YES
+	Window "\n\n\n@c那么我将消灭您所带的食物！",OK
+	Window_OK
+	killdrugdish
+	killitemall 700086
+	leavegroup
+	Warp 0,930,25,6
+
+	Window_NO
+	EndWindow "\n\n\n@c您的信仰心还不够，回去吧!",OK

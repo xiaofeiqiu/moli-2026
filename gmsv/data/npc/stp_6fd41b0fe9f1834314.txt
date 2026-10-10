@@ -1,0 +1,28 @@
+block endevent 562 == 1
+window "\n\n管理官已经通知我了,让我们出发吧!",ok
+window_ok
+leavegroup
+Warp 0,63417,178,242
+
+
+block item 1000079 >= 1
+window "\n\n很好,让我们出发吧!",ok
+window_ok item 1000079 >= 1
+leavegroup
+Warp 0,63417,178,242
+
+
+block item 1000078 >= 1
+endwindow "\n\n以前去莎莲娜岛的魔法大学那边运送货物的时候曾经听那里的魔法师说过这类法术的事情,你去那里问问他们有什么解决方法没有吧."
+
+
+block item 1000077 >= 1
+window "\n\n管理官已经通知我了,不过现在有个问题,灯塔的大门也被浓雾笼罩了,这绝对不是什么自然现象.",next
+window "\n\n我记得以前去莎莲娜岛的魔法大学那边运送货物的时候曾经听那里的魔法师说过这类法术的事情,我给你写封信,你去那里问问他们有什么解决方法没有.",ok
+window_ok item 1000077 >= 1
+killitem 1000077
+giveitem 1000078
+
+
+block
+endwindow "\n\n听说又有船队被袭击了,真是太惨了."

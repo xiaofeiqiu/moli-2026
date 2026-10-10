@@ -1,0 +1,6 @@
+block item 87506 == 1
+window "\n\n别东张西望的，赶快给我进擂台比武，不...是跟其他会员切磋武艺。",ok
+window_ok
+leavegroup
+giveitem 87508
+Warp 0,29678,28,22

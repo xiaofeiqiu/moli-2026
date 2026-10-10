@@ -1,0 +1,21 @@
+block item 800107 == 1 && item 800110 == 1
+	window "\n\n我已经认输了,你还想咋样?",yes
+
+
+
+block item 800110 == 1
+	window "\n\n臭小鬼,看什么,闪开!",yes,no
+	window_yes
+	endwindow "\n\n很好,乖乖的闪开吧",ok
+  window_no
+  window "\n\n干什么,你想打架?",yes,no
+  window_no
+ 	endwindow "\n\n那还不闪开?",ok
+  window_yes
+Encount 2|||0|||||0|8577|||||||||
+  
+ 
+
+  
+block
+	endwindow "\n\n今天收获不错,HOHO!",ok

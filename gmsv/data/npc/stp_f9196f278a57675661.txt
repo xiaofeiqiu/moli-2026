@@ -1,0 +1,23 @@
+########## 给予 ##########
+
+block nowevent 583 == 1
+	window "\n\n\n@c没错，鲶鱼的伤口是我造成的又如何?",next
+	window "\n\n    那个可恶的家伙，只是一个复制体而已，和我又有什么差别?我不甘心。。。为什么罗连斯大人选择他做为凭依体而不选择我?那家伙也和我一样，是不可能制造出拥有着那种血液的种族的.那种族还活着，让你也感受下那血之恐怖吧!",ok
+	window_ok
+	nowevent 583 = 0
+Encount 3|0,937,16,32|||||0|||700084|||||||||
+
+block 
+	Window "\n\n    本以为你我不会再见面，居然让你来到了这里，如果和我合作的话，我可以给你个奖励哦!",yes,no
+	Window_yes petspace !=0
+	leavegroup
+	Giveitem 700099
+	Warp 0,1000,242,85
+	window_no
+		window "\n\n\n@c那我只能让你乖乖的做我的新实验品了!",ok
+		window_ok
+		nowevent 583 = 1
+Encount 3|0,937,16,32|||||0|||700084|||||||||
+
+block petspace ==0
+	Endwindow "\n\n\n@c带那么多宝宝想送给我吗!",ok

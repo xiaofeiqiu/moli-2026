@@ -1,0 +1,2 @@
+block
+endwindow "\n\n不要,你们不要过来."

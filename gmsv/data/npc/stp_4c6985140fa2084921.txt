@@ -1,0 +1,12 @@
+block item 88363 == 1
+endwindow "\n\n如果没有我的名片他是不会把货卖给任何人的！"
+
+block item 88362 == 1
+window "\n\n蜡烛？哎呀真不凑巧都卖完了。供货商乾巧还没到，我实在没办法卖你。",next
+window "\n\n要不你到村外路口处等等看他来了没，这是我杂货铺的名片，给他后他就会卖你所需的货物了。",ok
+window_ok
+killitem 88362
+giveitem 88363
+
+block
+endwindow "\n\n今天小店生意兴隆啊！"

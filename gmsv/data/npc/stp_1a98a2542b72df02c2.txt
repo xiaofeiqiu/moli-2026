@@ -1,0 +1,17 @@
+block item 800206 >= 1
+endwindow "\n\n什么也没有了."
+
+block havetitle == 2075
+window "\n\n可疑的骸骨，扒开来看看吗？",yes,no
+window_no
+endwindow "\n\n."
+window_yes itemspace == 0
+window "\n\n你的背包满啦",ok
+window_yes
+giveitem 800206
+
+
+block
+endwindow "\n\n这是一具看起来很恐怖的骸骨."
+
+

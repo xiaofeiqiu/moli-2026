@@ -1,0 +1,8 @@
+block item 22750 >= 1 && Item 22739 >= 1 && Item 22737 >= 1 && Item 22753 >= 1
+window "\n\n酒吧特制好酒哟,一瓶只要10000魔币.",ok
+window_ok gold < 10000
+endwindow "\n\n你的金币不够."
+window_ok item 22750 >= 1 && Item 22739 >= 1 && Item 22737 >= 1 && Item 22753 >= 1
+addgold -10000
+killitem 22753
+GiveItem 22754

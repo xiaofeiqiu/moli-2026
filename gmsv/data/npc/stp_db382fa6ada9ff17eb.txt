@@ -1,0 +1,4 @@
+block
+	Window "\n\n °¡ ~ ",OK
+	Window_OK
+Encount 3|0,50,42,36|||||0|||454006|||||||||

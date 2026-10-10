@@ -1,0 +1,10 @@
+block
+window "\n\n我要代表陨石消灭你!",ok
+window_ok
+Encount 2|||0|||||0|21226|||||||||
+
+
+
+
+
+

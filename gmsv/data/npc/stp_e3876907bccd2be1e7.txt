@@ -1,0 +1,7 @@
+block Floor == 300 && Xpos == 614 && Ypos == 259 && item 800207 >= 1 && item 800208 >= 1
+window "\n\nËÆºõÍÚµ½ÁËÊ²Ã´...",yes,no
+window_yes item 800207 >= 1 && item 800208 >= 1
+killitem 800207
+killitem 800208
+leavegroup
+Warp 0,44981,429,37

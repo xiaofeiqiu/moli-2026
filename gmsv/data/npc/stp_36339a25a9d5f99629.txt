@@ -1,0 +1,19 @@
+block	item 591425>=1
+Endwindow"\n\n\n@c 快去看看吧!"
+block	item 591424>=1
+window"\n\n\n@c 哦？杰恩还好吧？原来这些怪物是你们的老对手啊！听说临近的西克村附近的洞也遇到了这样的问题，我是听克礼茨说的，他就在西克村，是个怪物专家，请顺便把报告交给他吧！",ok
+window_ok
+killitem 591424,1
+Giveitem 591425,1
+Endwindow"\n\n\n@c 快去看看吧!"
+block	itemspace<1
+Endwindow"\n\n\n@c你的物品满了哦。"
+block	item 591422>=1
+Endwindow"\n\n\n@c 他就在村门口去看看吧！"
+block	Endevent 648==1
+window"\n\n 陌生人，听说你战胜了世界树，真是不可思议的强大！",next
+window"\n\n 那么，村口的学者杰恩正有发愁的事，你能不能帮他解决一下呢？",ok
+window_ok
+Giveitem 591422,1
+block
+EndWindow "\n\n@c你好外来人,请随便看看吧.这个大陆很丰饶的."

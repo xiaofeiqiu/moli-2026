@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【石像怪】吗？",ok
+			Window_ok
+Luac stp:legacy:0167df49ecf49e7465e6
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【血魔】吗？",ok
+			Window_ok
+Luac stp:legacy:7e877d36b18116b6a930
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【堕天使】吗？",ok
+			Window_ok
+Luac stp:legacy:ad8e16afdbd35580dd81
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【恶魔】吗？",ok
+			Window_ok
+Luac stp:legacy:22587e89853a098dba7e
+				endif

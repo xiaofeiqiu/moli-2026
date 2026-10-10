@@ -1,0 +1,3 @@
+block
+window"\n\n\n@c什么?想要欺负老头吗?",next
+endwindow"\n\n\n@c我,什么都不会说的……"

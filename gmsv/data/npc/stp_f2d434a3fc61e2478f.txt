@@ -1,0 +1,8 @@
+block item 200103 >= 1
+window "\n\n我们再一次完成了惊人的探险,也许你在工会的级别也该提升一下了.",ok
+window_ok
+killitem 200103
+giveitem 200109
+leavegroup
+Warp 0,300,399,280
+

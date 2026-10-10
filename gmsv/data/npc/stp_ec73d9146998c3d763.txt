@@ -1,0 +1,18 @@
+
+block item 715217 >= 1
+endwindow "\n\n不要管我,法兰的粽子要紧~~~~~~"
+
+
+
+
+
+block
+window "\n\n哎呀呀,还好偶跑的快,8然偶的脑袋早丢掉了.\n可惜这些粽子怎么办?\n谁会来这鬼地方帮偶.\n又要被国王骂了55555555~~~",next
+window "\n\n你真的愿意帮偶?",yes,no
+window_no
+endwindow "\n\n555555,挨骂8要紧,可惜的是粽子要坏掉了:(\n偶怎么这么倒霉呢????"
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 715217
+endwindow "\n\n太好了,这下应该8会挨骂了.\n麻烦帮偶把这些粽子交给阿凯鲁法村的卡洛儿啊.\n他就在港口大门外等着....\n现在你只有击败牛鬼了才能离开这个鬼地方哦.\n拜托了,时间应该来得及~~~"

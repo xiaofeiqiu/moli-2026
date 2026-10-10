@@ -1,0 +1,10 @@
+block item 87474 == 1 && item 87475 == 1 && item 87476 == 1 && item 87477 == 1 && petlevel 102 == 1
+window "\n\n　丧尸强化后会变成病毒丧尸\n\n　你要强化吗？",yes,no
+window_no
+window_yes  item 87474 == 1 && item 87475 == 1 && item 87476 == 1 && item 87477 == 1 && petlevel 102 == 1
+killitem 87474
+killitem 87475
+killitem 87476
+killitem 87477
+KillPetl 102,1
+givepet 88487

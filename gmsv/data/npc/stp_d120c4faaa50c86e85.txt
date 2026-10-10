@@ -1,0 +1,7 @@
+block endevent 558 == 1
+LeaveGroup
+Warp 0,63441,4,16
+
+block item 1000059 >= 1
+LeaveGroup
+Warp 0,63413,4,16

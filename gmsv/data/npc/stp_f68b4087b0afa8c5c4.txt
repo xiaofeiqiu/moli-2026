@@ -1,0 +1,26 @@
+######### 圣诞节节庆任务########
+##编织师珍甄
+####只能给一个人通过
+block Group > 1
+LeaveGroup
+
+##有圣诞圣诞鞋
+block Item 39867 >= 1
+endwindow "\n\n快拿去给尼古拉斯吧!他现在一定很着急."
+
+##有1双运动鞋及1组鹿皮
+block Item 6001 >= 1 && Item 18211 >= 40 
+window "\n\n材料准备好了啊!这样就没问题了,你等一下.",next
+KillItem 6001,1
+KillItem 18211,40
+window "\n\n完成了,这是你要的圣诞鞋.",ok
+Window_OK 
+GiveItem 39867,1
+
+##有圣诞物品明细
+block Item 39866 >= 1
+endwindow "\n\n原来是这样啊,可是时间这么短又刚好是圣诞节,成品都卖光了,不然这样,你准备一双运动鞋和一组鹿皮,我帮你改成圣诞鞋,应该来得及完成."
+
+##一般
+block
+endwindow "\n\n对不起鞋子都卖完了喔,下次请早."

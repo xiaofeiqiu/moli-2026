@@ -1,0 +1,5 @@
+block item 730004 >= 1
+window "黑暗终归是黑暗,所有的人都无法改变...",ok
+window_ok
+killitem 730004
+Encount 3|0,45059,7,5|||||0|||83001|||||||||

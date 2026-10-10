@@ -1,0 +1,11 @@
+block item 500144 == 1
+window "\n\n你来啦~你要找的人原来是当今法兰的皇妃！现在她一直在寝室里没出来过，如果你要调查她的话，我可以协助你潜入皇宫。",next
+window "\n\n你现在就要潜入皇宫吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 500144
+Warp 0,14217,0,7
+
+block
+endwindow "\n\n......................."

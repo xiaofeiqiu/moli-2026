@@ -1,0 +1,10 @@
+#µÚ91µÀ³¡
+#
+##############  ##############
+block
+	Window 790003,OK,NO
+	Window_OK
+	KillItem 1000772,1
+	LeaveGroup
+	Warp 0,9291,5,10
+	Window_NO

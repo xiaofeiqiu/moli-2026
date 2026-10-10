@@ -1,0 +1,10 @@
+block item 652607 >= 1
+window "\n\n你就是派来增援我们的开启者???\n里面非常危险,请小心!",ok
+window_ok item 652607 >= 1
+killitem 652607
+leavegroup
+Warp 0,44701,14,15
+
+
+block
+endwindow "\n\n这里很危险,请尽快离开!!!!"

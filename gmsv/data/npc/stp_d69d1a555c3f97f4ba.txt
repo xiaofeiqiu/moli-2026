@@ -1,0 +1,4 @@
+block item 200757 >= 1 && floor == 33500 && Xpos == 38 && Ypos == 22
+killitem 200757
+leavegroup
+Warp 0,28324,12,40

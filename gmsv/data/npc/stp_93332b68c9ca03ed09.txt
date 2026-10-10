@@ -1,0 +1,20 @@
+block petlevel 602 >= 100 && item 59914 >= 100
+	window "\n这把刀将会带着你斩尽一切邪恶的龙族",ok
+	window_ok petspace != 4
+        window "\n请记得你的义务！",ok
+	window_ok petlevel 602 >= 100
+	killpeth 602,1
+                killitem 59914,100
+        givepet 59922
+
+
+
+
+block petlevel 602 >= 100
+	window "\n孩子,看来你原本就有一颗毁灭恶龙从儿保卫和平的心,这样的话,你应该去那个那里试练一下.",ok
+	window_ok petlevel 602 >= 100
+	Warp 0,192,325,335
+
+block
+	window "\n传说中的勇者是不惧怕任何危险的,就算那强大的龙族又怎么样.",ok
+	window_ok

@@ -1,0 +1,23 @@
+
+########## 给予 ##########
+block Item 700087 != 0 && Item 700088 != 0
+	Window "\n\n    人类啊，你的眼里充满着黑暗的诱惑，你也要成为露比那样永远被黑暗操纵的傀儡吗!?",yes,no
+	Window_yes
+		window "\n\n\n@c为了这个世界的光明，我不得不与你刀刃相向!",ok
+		window_ok
+Encount 3|0,1530,15,6|||||0|||700081|||||||||
+	
+	window_no
+		Endwindow "\n\n\n@c请珍惜你心中的那一点光芒吧",ok
+
+block Item 700089 != 0
+	Window "\n\n\n@c……(沉默是最好的拒绝方式，还是离开吧)",OK
+	window_ok
+	leavegroup
+	Warp 0,1530,15,6
+##########无道具##########
+block 
+	Window "\n\n\n@c……(沉默是最好的拒绝方式，还是离开吧)",OK
+	window_ok
+	leavegroup
+	Warp 0,1530,15,6

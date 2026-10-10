@@ -1,0 +1,5 @@
+block item 60527 >= 1
+window "\n\n!%......гд!!!!!!!!!",ok
+window_ok item 60527 >= 1
+killitem 60527
+Encount 2|0,45081,383,254||0|||||0|21193|||||||||

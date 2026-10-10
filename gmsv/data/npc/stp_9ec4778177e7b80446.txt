@@ -1,0 +1,5 @@
+block
+window "\n\n『发现了地下迷宫入口,要进入吗?』",yes,no
+window_no
+window_yes
+Warp 0,57627,12,15

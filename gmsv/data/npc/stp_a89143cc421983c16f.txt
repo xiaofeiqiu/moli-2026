@@ -1,0 +1,11 @@
+block globalFlag 310 == 1
+window 7020181,next
+window 7020182,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000640
+window_ok ItemSpace < 1
+endwindow "900317£¡"
+
+block
+endwindow 7020183

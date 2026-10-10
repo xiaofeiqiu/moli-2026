@@ -1,0 +1,7 @@
+block SkillLevel 203 == 10
+window"\n\n\n@c 即将学习 10C弓 破甲弩 制作！",ok
+window_ok
+	KillItem 591364,1
+	GiveRecipe 1126
+block
+Endwindow"\n\n\n@c 你的造弓技能还未10级，无法学习！"

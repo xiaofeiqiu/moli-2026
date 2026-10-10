@@ -1,0 +1,7 @@
+block item 40584 == 1
+ChangePal 30,6
+window"\n\n\n@c…………你感到一阵莫名的眩晕感.!?虽然有护头但还是迷迷糊糊的..",ok
+window_ok
+PlaySE 134,320,240
+leavegroup
+Warp 0,3505,52,53

@@ -1,0 +1,3 @@
+block
+window"\n\n\n@c暂不开放传送",next
+endwindow"\n\n\n@c真奇怪,传送石居然消失了."

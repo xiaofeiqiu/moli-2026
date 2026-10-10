@@ -1,0 +1,6 @@
+block
+window 1900638,next
+window 1900639,next
+window 1900640,ok
+window_ok
+Encount 3|0,23378,10,11||0||||||61075|6|0|||||||

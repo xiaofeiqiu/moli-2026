@@ -1,0 +1,18 @@
+block globalFlag 317 == 1 && globalFlag 318 == 0
+window 7020511,next
+window 7020512,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 1000694,5
+globalFlag 318 = 1
+window_yes ItemSpace < 1
+endwindow 7020513
+window_no ItemSpace >= 1
+LeaveGroup
+giveitem 1000695,5
+globalFlag 318 = 1
+window_no ItemSpace < 1
+endwindow 7020514
+
+block
+endwindow 7020515

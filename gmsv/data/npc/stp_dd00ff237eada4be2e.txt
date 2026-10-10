@@ -1,0 +1,7 @@
+Block
+Window "\n\n一张字条,上面写了一行字...",next
+Window "\n\n死亡的笔记,只要写上人的名字,便可以杀死任何一个人!",next
+Window "\n\n突然一声断喝!",next
+Window "\n\n把你肮脏的手从这张纸上拿开!",ok
+Window_ok
+Encount 2|0,62101,9,4||0|||||0|370050|||||||||

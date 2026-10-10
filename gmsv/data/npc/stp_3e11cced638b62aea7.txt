@@ -1,0 +1,15 @@
+
+
+
+block
+window "\n\n恭喜你通过当前的试炼,请继续努力.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 39745,1
+leavegroup
+Warp 0,44992,16,9
+
+
+
+

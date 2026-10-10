@@ -1,0 +1,5 @@
+block globalFlag 264 == 1
+Endwindow "\n\n去去去,一边去,别在这碍眼."
+
+block item 39678 == 1
+Endwindow "\n\n在大哥面前放尊重点儿,不然大哥一巴掌拍死你."

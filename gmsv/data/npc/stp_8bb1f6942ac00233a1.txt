@@ -1,0 +1,16 @@
+block globalFlag 347 == 0
+globalFlag 347 = 1
+Endwindow 7020168,OK
+
+block Group != 1
+Endwindow 7020169,OK
+
+block
+Window 7020170,YES,NO
+Window_YES Gold < 500
+EndWindow 7020165,OK
+Window_YES Group == 1 && Gold >= 500
+AddGold -500
+Warp 0,23233,7,20
+Window_NO
+Endwindow 7020171,OK

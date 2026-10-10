@@ -1,0 +1,5 @@
+block item 661002 == 1
+	window"要打开鼠王惊奇蛋么？",yes,no
+	window_yes
+	killitem 661002
+	addgold 500

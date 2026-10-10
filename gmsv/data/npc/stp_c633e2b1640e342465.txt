@@ -1,0 +1,24 @@
+block item 50560 == 1
+window"\n\n    这个东西让我知道了一切的源头",ok
+window_ok
+killitem 50560,1
+nowevent 571 = 1
+giveitem 505601,1
+
+block item 50561 == 1
+window"\n\n    这个东西让我知道了一切的源头",ok
+window_ok
+killitem 50561,1
+nowevent 573 = 1
+giveitem 505611,1
+
+block item 50562 == 1
+window"\n\n    这个东西让我知道了一切的源头",ok
+window_ok
+killitem 50562,1
+nowevent 572 = 1
+giveitem 505621,1
+
+
+block
+endwindow"\n\n 啊!!我是从另外一个地方来的,不知道为什么?\n来到这里的时候似乎被一种力量包围住了"

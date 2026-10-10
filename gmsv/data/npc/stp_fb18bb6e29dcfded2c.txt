@@ -1,0 +1,9 @@
+block item 70038== 1 && item 70039 == 1
+window 910491,next
+window 910492,ok
+window_ok
+killitem 70039
+Encount 2|0,25065,8,18||0|||||0|70055|||||||||
+
+block
+endwindow 910493

@@ -1,0 +1,9 @@
+
+block
+	Window "\n\n又见面了，勇敢的冒险者！愿诸神赐福予你！",ok
+		window_ok ItemSpace < 1
+			EndWindow"\n\n@c抱歉，你的物品栏不够了。"
+		Window_ok
+			LeaveGroup
+			giveitem 51013,50
+			Warp 0,1000,153,33

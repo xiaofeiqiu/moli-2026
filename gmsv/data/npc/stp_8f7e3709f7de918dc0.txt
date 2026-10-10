@@ -1,0 +1,12 @@
+
+
+block Item 715328 >= 2
+endwindow "\n\n同时拥有2个以上的海贼香槟是不能使用的."
+
+
+block
+EndEvent 525 = 1
+CheckTitle
+KillItem 715328,1,(777572)
+SetCharm -1
+

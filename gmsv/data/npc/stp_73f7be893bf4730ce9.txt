@@ -1,0 +1,21 @@
+block item 1000705 >= 1
+window 7020234,next
+window 7020235,ok
+window_ok
+LeaveGroup
+killitem 1000705
+giveitem 1000706
+globalFlag 320 = 1
+
+block globalFlag 320 == 0
+window 7020236,yes,no
+window_no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 1000699
+endwindow 7020237
+window_yes ItemSpace < 1
+endwindow 7020238
+
+block
+endwindow 7020239

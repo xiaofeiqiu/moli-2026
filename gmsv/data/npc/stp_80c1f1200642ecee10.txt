@@ -1,0 +1,6 @@
+block item 58812 >= 20
+killitem 58812,20
+LeaveGroup
+Warp 0,169,0,9
+block
+	Window "\n\n@c这里是波杰大人的家.不要随意逗留.",ok

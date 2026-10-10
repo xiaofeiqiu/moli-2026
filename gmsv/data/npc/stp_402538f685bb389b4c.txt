@@ -1,0 +1,21 @@
+##奈九兄弟任务
+##奈力王
+
+
+block Item 1000023 >= 1 && Group == 1
+window "\n\n看来你跟我一样是个有热情又有耐力的好青年,进去吧.",ok
+Window_OK Item 1000023>= 1
+KillItem 1000023,1
+Warp 0,32354,24,36
+
+
+block Item 1000023 >= 1 && Group > 1
+LeaveGroup
+
+
+block
+window "\n\n啊差~~~\n我是最热情最有耐力的奈力王,什么?\n你想进去找我老弟奈九王啊,啊差~~~\n那当然没问题\n不过得先让我看看你的热情跟那力够不够.\n啊差~~~要接受挑战吗?",yes,no
+Window_YES
+Encount 3|0,30110,31,6||0|||||0|333344|||||||||
+Window_NO
+endwindow "\n\n啊差~~~\n年纪轻轻怎么像个老头子,一点朝气都没有."

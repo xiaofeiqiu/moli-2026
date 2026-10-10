@@ -1,0 +1,14 @@
+block item 3807 ==	1
+	Window "\n\n请允许我与您一同消灭瘟疫吧!",OK
+		Window_OK
+block item 1000248 ==	1
+	Window "\n\n你就是父王请来的开启者么?",next
+	Window "\n\n我是这个国家的王子,阿尔萨斯",next
+	Window "\n\n请允许我与您一同消灭瘟疫吧!",OK
+		Window_OK
+			killitem 1000248,1
+			giveitem 3807,1
+block
+	Window "\n\n你好,我这这个国家的王子",next
+	Window "\n\n对这里有什么建议请向我汇报,谢谢",OK
+		Window_OK

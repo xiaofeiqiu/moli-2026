@@ -1,0 +1,10 @@
+block itemspace < 1
+endwindow "\n\nÄãµÄ±³°üÂúÀ²!"
+
+block
+killitem 39700
+giveitem (39701%1,39702%1,39703%1,39704%1)
+
+
+
+

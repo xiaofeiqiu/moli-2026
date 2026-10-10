@@ -1,0 +1,3 @@
+block
+window"\n\n@c 有个哥哥真好,好羡慕你啊~蒙奇",next
+endwindow"\n\n@c 听说他在读有关其他世界的书呢,好厉害的"

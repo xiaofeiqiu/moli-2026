@@ -1,0 +1,9 @@
+block item 50829 >=1
+Window"\n\n\n@c你是否要吹响古代的哨子.",yes,no
+Window_no
+Window_YES PetSpace == 0 
+##1100004	\n\n\n\n\n@c宠物栏已经满了.	1
+EndWindow 1100004	 
+Window_yes
+killitem 50829
+GivePet 713

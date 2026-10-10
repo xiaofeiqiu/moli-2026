@@ -1,0 +1,10 @@
+block item 200549 >= 1 && item 200550 >= 1 && item 200551 >= 1 && item 200552 >= 1 && item 200553 >= 1
+window "\n\n你要把四种晶灵石放进石碑中吗?",yes,no
+window_yes
+killitem 200549
+killitem 200550
+killitem 200551
+killitem 200552
+killitem 200553
+leavegroup
+Warp 0,27585,71,74

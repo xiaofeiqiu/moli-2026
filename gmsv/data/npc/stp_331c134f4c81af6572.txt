@@ -1,0 +1,4 @@
+block item 87507 == 1
+leavegroup
+killitem 87507
+Warp 0,29678,16,22

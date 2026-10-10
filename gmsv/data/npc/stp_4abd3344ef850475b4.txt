@@ -1,0 +1,17 @@
+block item 200569 >= 1
+endwindow "\n\n辛格从你拿着心灵晶核开始,你真正的命运次轮才刚刚开始."
+
+
+
+block item 200567 >= 1 && item 200568 >= 1
+window "\n\n这不是辛格吗?瞧你竟然把思念力结晶带来,看来你爷爷已经下定决心了.",next
+window "\n\n按照我和你爷爷的约定,这个心灵晶核你收好,我也知道你内心充满了很多疑问,不过有些事你还是去让村长给你解答吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200569
+
+
+
+block
+endwindow "\n\n欢迎来到我的装备店."

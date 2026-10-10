@@ -1,0 +1,12 @@
+block Item 18568 >= 1 && Item 715187 >= 1 && Item 715188 >= 1
+Window "\n\n要制作香菇粽子吗?",ok
+Window_ok
+killitem 715215,1
+killitem 18568,1
+killitem 715187,1
+killitem 715188,1
+giveitem 715209
+
+
+block
+endwindow "\n\n制作香菇粽子需要1个莎莲娜蘑菇,1份粽子叶,1份江米."

@@ -1,0 +1,8 @@
+block item 200120 >= 1
+window "\n\nвлвл,п║пднрр╖кюдЦ.",ok
+window_ok
+Encount 2|0,34000,25,38||0|||||0|50111|||||||||
+
+
+block
+endwindow "\n\n...."

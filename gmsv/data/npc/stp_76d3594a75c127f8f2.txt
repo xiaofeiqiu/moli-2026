@@ -1,0 +1,7 @@
+block xpos==78 && ypos==100
+window "\n\n　有一条小路通往密林深处，要进去吗？",yes,no
+window_no
+window_yes item 1002005 == 1
+Warp 0,60158,38,95
+window_yes
+Warp 0,60157,38,95

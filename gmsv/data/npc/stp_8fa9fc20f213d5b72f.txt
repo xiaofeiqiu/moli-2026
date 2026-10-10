@@ -1,0 +1,14 @@
+block item 125 >= 1
+endwindow "\n\n如花,这个名字起得..."
+
+
+block item 119 == 1
+window "\n\n如花在屋子里面,你看见她了吗?",yes,no
+window_no
+endwindow "\n\n如果有空你可以去看看..."
+window_yes
+window "\n\n哈哈,如花姐姐好可爱...还在挖鼻孔呢~~~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 125,1

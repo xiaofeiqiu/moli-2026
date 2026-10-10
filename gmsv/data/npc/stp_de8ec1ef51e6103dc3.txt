@@ -1,0 +1,7 @@
+block petspace < 1
+Endwindow"\n\n\n@c 宠物栏位置满了！清理一下吧."
+block
+	window"\n\n蛋里孵化出了一只宠物!",ok
+	Window_OK
+	KillItem 589156,1
+	givepet 889949

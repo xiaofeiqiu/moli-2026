@@ -1,0 +1,6 @@
+block Item 800095 == 1
+	Window"\n\n滚开！你们不能伤到主人！",next
+	Window"\n\n我要埋葬你们！！！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18097,24,26|800095|||||||800043|||||||||

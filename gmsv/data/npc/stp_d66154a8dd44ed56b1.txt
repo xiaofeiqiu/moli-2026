@@ -1,0 +1,9 @@
+#####面包&奶茶#####原创任务######
+block
+if item 60385 == 1
+window "\n要使用这把钥匙吗？",yes,no
+Window_YES
+killitem 60385,1
+Warp 0,7005,30,14
+else
+window "\n门被锁住了……",ok

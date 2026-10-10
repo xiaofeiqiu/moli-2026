@@ -1,0 +1,8 @@
+block item 88383 == 1
+window "\n\n朋友你终于来了，我等你很久了。别误会不是我带你去魔鬼岛，我可是个旱鸭子。带你去岛上的人已经在码头上等你了。",ok
+window_ok
+LeaveGroup
+Warp 0,14313,84,56
+
+block
+endwindow "\n\n等人最心急！"

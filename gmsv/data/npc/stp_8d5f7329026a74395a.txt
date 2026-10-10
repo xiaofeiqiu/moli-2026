@@ -1,0 +1,14 @@
+block endevent 650 == 0
+
+        window"\n你好,欢迎你开启迪尼莎村庄的传送.",ok
+
+        Window_ok endevent 650 == 0
+
+	Endevent 650 = 1
+
+block endevent 650 == 1
+
+
+        window"\n你已经开启这个传送了.",ok
+
+        Window_ok

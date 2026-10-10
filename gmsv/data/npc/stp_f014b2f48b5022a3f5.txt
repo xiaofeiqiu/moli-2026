@@ -1,0 +1,12 @@
+block item 87589 == 1
+Warp 0,400,321,500
+
+block
+window "\n\nx月x日：一路上虽然平静，但我总是有不好的预感。",next
+window "\n\nx月x日：天气很坏，海面上起了大雾，我们只能放慢航行速度。",next
+window "\n\nx月x日：这几天不断有怪物来袭击，已经有很多水手受伤了，船体也受到了损害。",next
+window "\n\nx月x日：无法再前进了，许多水手被袭击的怪物抓走，我命令商船返航，希望诸神保佑，能让我们剩下的人回到家。",ok
+window_ok
+killitem 87588
+giveitem 87589
+Warp 0,400,321,500

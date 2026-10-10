@@ -1,0 +1,21 @@
+block skill 228 >= 1
+window "\n\n欢迎回来,@n.\n\n要进行会基地看看吗?",yes,no
+window_no
+endwindow "\n\n需要的时候随时可以来找我."
+window_yes
+leavegroup
+Warp 0,27240,29,10
+
+
+
+block item 1000131 >= 1
+window "\n\n对不起,我没有兴趣与陌生人聊天.",next
+window "\n\n哦?是罗赛特先生推荐你来的吗?把推荐信给我看看.",next
+window "\n\n恩,好的.既然是罗赛特先生推荐的人,想来是没有问题的,请跟我来吧.",ok
+window_ok item 1000131 >= 1
+leavegroup
+Warp 0,27240,29,10
+
+
+block
+endwindow "\n\n对不起,我没有兴趣与陌生人聊天."

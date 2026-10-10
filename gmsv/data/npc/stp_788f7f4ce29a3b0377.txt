@@ -1,0 +1,10 @@
+block item 1000326 >= 1
+	window"\n\n你们也是丘比的同伙吗？不可原谅！欺骗我们，你们也要付出代价……",ok
+		window_ok
+Encount 2|0,45116,2,4||||||||6000058|||||||||
+block item 60409 >= 1 && item 60413 >= 1
+	window"\n\n…………",ok
+		window_ok
+Encount 2|0,45116,2,4||||||||6000064|||||||||
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

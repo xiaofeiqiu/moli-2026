@@ -1,0 +1,5 @@
+block
+window "\n\n吼吼吼...",next
+window "\n\n好像打不死的样子,是不死之身吗?",next
+window "\n\n你们快闪开（从背后传来了一个女人的声音）",ok
+window_ok

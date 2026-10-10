@@ -1,0 +1,272 @@
+#####冒险之星#####
+block item 13608 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级冒险之星+10万魔币=1个10级冒险之星\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13608 >= 5
+killitem 13608,5
+addgold -100000
+giveLeak1Item 13609,1
+endwindow "\n\n欢迎下次再来!"
+block item 13607 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级冒险之星+5万魔币=1个9级冒险之星\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13607 >= 3
+killitem 13607,3
+addgold -50000
+giveLeak1Item 13608,1
+endwindow "\n\n欢迎下次再来!"
+
+#####石榴石#####
+block item 13618 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级石榴石+10万魔币=1个10级石榴石\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13618 >= 5
+killitem 13618,5
+addgold -100000
+giveLeak1Item 13619,1
+endwindow "\n\n欢迎下次再来!"
+block item 13617 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级石榴石+5万魔币=1个9级石榴石\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13617 >= 3
+killitem 13617,3
+addgold -50000
+giveLeak1Item 13618,1
+endwindow "\n\n欢迎下次再来!"
+
+#####骑士宝石#####
+block item 13628 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级骑士宝石+10万魔币=1个10级骑士宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13628 >= 5
+killitem 13628,5
+addgold -100000
+giveLeak1Item 13629,1
+endwindow "\n\n欢迎下次再来!"
+block item 13627 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级骑士宝石+5万魔币=1个9级骑士宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13627 >= 3
+killitem 13627,3
+addgold -50000
+giveLeak1Item 13628,1
+endwindow "\n\n欢迎下次再来!"
+
+#####黄宝石#####
+block item 13638 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级黄宝石+10万魔币=1个10级黄宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13638 >= 5
+killitem 13638,5
+addgold -100000
+giveLeak1Item 13639,1
+endwindow "\n\n欢迎下次再来!"
+block item 13637 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级黄宝石+5万魔币=1个9级黄宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13637 >= 3
+killitem 13637,3
+addgold -50000
+giveLeak1Item 13638,1
+endwindow "\n\n欢迎下次再来!"
+
+#####蓝宝石#####
+block item 13648 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级蓝宝石+10万魔币=1个10级蓝宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13648 >= 5
+killitem 13648,5
+addgold -100000
+giveLeak1Item 13649,1
+endwindow "\n\n欢迎下次再来!"
+block item 13647 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级蓝宝石+5万魔币=1个9级蓝宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13647 >= 3
+killitem 13647,3
+addgold -50000
+giveLeak1Item 13648,1
+endwindow "\n\n欢迎下次再来!"
+
+#####绿宝石#####
+block item 13658 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级绿宝石+10万魔币=1个10级绿宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13658 >= 5
+killitem 13658,5
+addgold -100000
+giveLeak1Item 13659,1
+endwindow "\n\n欢迎下次再来!"
+block item 13657 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级绿宝石+5万魔币=1个9级绿宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13657 >= 3
+killitem 13657,3
+addgold -50000
+giveLeak1Item 13658,1
+endwindow "\n\n欢迎下次再来!"
+
+#####紫水晶#####
+block item 13668 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级紫水晶+10万魔币=1个10级紫水晶\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13668 >= 5
+killitem 13668,5
+addgold -100000
+giveLeak1Item 13669,1
+endwindow "\n\n欢迎下次再来!"
+block item 13667 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级紫水晶+5万魔币=1个9级紫水晶\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13667 >= 3
+killitem 13667,3
+addgold -50000
+giveLeak1Item 13668,1
+endwindow "\n\n欢迎下次再来!"
+
+#####红宝石#####
+block item 13678 >= 5
+window "\n\n我可以帮你合成更高级的宝石!\n\n5个9级红宝石+10万魔币=1个10级红宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 100000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 100000 && item 13678 >= 5
+killitem 13678,5
+addgold -100000
+giveLeak1Item 13679,1
+endwindow "\n\n欢迎下次再来!"
+block item 13677 >= 3
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级红宝石+5万魔币=1个9级红宝石\n\n需要我合成吗?",yes,no
+window_yes gold < 50000
+endwindow "\n\n你的钱不够!"
+window_yes gold >= 50000 && item 13677 >= 3
+killitem 13677,3
+addgold -50000
+giveLeak1Item 13678,1
+endwindow "\n\n欢迎下次再来!"
+
+###对话###
+block
+window "\n\n我可以帮你合成更高级的宝石!\n\n3个8级宝石+5万魔币=1个9级宝石\n\n5个9级红宝石+10万魔币=1个10级红宝石\n\n需要我合成吗?",yes,no
+window_yes
+endwindow "\n\n那就把宝石带来给我,顺便把魔币也准备好"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

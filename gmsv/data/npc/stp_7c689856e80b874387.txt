@@ -1,0 +1,6 @@
+block
+window "\n\n你确定要释放邪恶的里雍吗?",yes,no
+window_yes
+killitem 800112
+givepet (1043%1,1044%1)
+window_no

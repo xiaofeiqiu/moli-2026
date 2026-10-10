@@ -1,0 +1,24 @@
+block item 87527 == 1
+endwindow "\n\n说不定你能找到多年前消失的群岛哦！"
+
+block item 87526 == 1
+endwindow "\n\n说不定你能找到多年前消失的群岛哦！"
+
+block item 87526 == 1
+window "\n\n亡者之岛？那不是消失已久的加拉巴哥斯群岛中的其中一座小岛吗？详细情况你得找图书馆的博学者，他对此事比较了解。",ok
+window_ok
+giveitem 87527
+endwindow "\n\n这枚跟随我多年的戒指就当完美完成此次任务的奖励送给你吧！
+
+block item 87525 == 1
+endwindow "\n\n我的属下一听到鬼魂之类的立马全都闪的人影都没。"
+
+block level  >= 60 && Luac stp:legacy:d3629e8722b054d8b63f >= 1
+window "\n\n我这里急缺人手，你愿意帮忙吗？",yes,no
+window_no
+window_yes
+giveitem 87525
+endwindow "\n\n先谢谢你了！蒂娜村的信使送来情报，说村民近些天半夜经常听到屋外有『呜呜呜』的哭声，但是当村民透过窗户向外看时却什么人也没有，非常诡异！希望你今晚就过去调查此事吧，越快越好！"
+
+block
+endwindow "\n\n最近蒂娜村频频出现闹鬼事件！这太恐怖了！"

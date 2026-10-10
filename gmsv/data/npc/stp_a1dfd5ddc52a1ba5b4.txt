@@ -1,0 +1,9 @@
+block item 88355 == 1
+endwindow "\n\n没有值得寻找的地方了！"
+
+block item 88354 == 1
+window "\n\n恭喜您找到一把钥匙！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+giveitem 88355

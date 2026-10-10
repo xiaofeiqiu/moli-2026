@@ -1,0 +1,5 @@
+block item 730003 >= 5
+window "\n\n好吧,我可以帮你把这些星珠合成星石.",ok
+window_ok
+killitem 730003,5
+giveitem 730004,1

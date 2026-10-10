@@ -1,0 +1,6 @@
+block
+	Window "\n\n\n@c冥王的子弟是永远的忠臣!",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c胆小鬼.",OK
+	Window_YES
+Encount 2|||0|||||0|6000152|||||||||

@@ -1,0 +1,10 @@
+block item 666086 >=1
+endwindow "\n\n你们真是太强悍了,打不过你们也不是我的错!"	
+	
+	
+block
+window "\n\n退兵?你也不看看你自己的实力!要来体验一下被飞的感觉么?",yes,no
+window_yes
+Encount 2|||0|||||0|8544|||||||||
+window_no
+endwindow "\n\n我是不是非常强悍呢!吓退了你们!哈哈哈!"

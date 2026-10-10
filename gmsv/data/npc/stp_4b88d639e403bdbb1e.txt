@@ -1,0 +1,38 @@
+block item 8900012 != 0 || item 890208 != 0
+endwindow "\n\n　真是谢谢你的帮助了。这样祭祀仪式就可以正常举行了"
+
+block item 1002008 == 1
+window "\n\n　辛苦你了！有了这个就可以举行祭祀仪式了！虽然和原来的有些微小差异，不过还是很感谢您的帮助！",ok
+window_ok item 1002008 == 1
+endevent 680 = 1
+killitem 1002008
+giveitem 8900012
+checktitle
+
+block item 1002009 == 1
+window "\n\n　哇！除了比原来的新一些外，简直和原来的一模一样！真的是太感谢您的帮助了！有了这个就可以举行祭祀仪式了！对了！这是给您的奖励",ok
+window_ok item 1002009 == 1
+endevent 680 = 1
+killitem 1002009
+giveitem 890208
+checktitle
+
+block item 1002007 != 0
+endwindow "\n\n　哦，没听清楚吗？那我就再说一次，你要听清楚了\n　那位人类雕刻师住在森林[西北]边的科多力斯山的山顶上。"
+
+block StrCmpChat == 8105112 && item 1002006 == 0
+window "\n\n　嗯？你问我发生了什么事？",next
+window "\n\n　过几天村子里就要举办一年一度的祭祀仪式了，而村子里的守护图腾前些天却不翼而飞！",next
+window "\n\n　那个守护图腾是参照精灵露维斯大人的形象雕刻的\n　我们的祭祀活动就是为了感谢精灵露维斯大人守护着这个森林而举行的。如果没有那个图腾我们的祭祀仪式就无法举行...",next
+window "\n\n　那个图腾是古时候流传下来的宝物，我们这个村里又没有擅长雕刻的村民，虽然这个岛上有位技术高超的人类雕刻大师...但是他住的地方在森林西北边的科多力斯山的山顶上...",next
+window "\n\n　那座山里栖息的巨狼们很不友善，我们只能在冬天上山才能避免受到攻击，而现在离冬天还有好长的时间，因此无法上山请他来帮忙...",next
+window "\n\n　您看起来好象很强壮的样子，能帮忙去山上拜访下那位雕刻家吗？",yes,no
+window_yes item 1002007 == 0 && itemspace >= 1
+giveitem 1002007
+endwindow "\n\n　那就拜托您了，请您尽快找到他！"
+window_yes
+endwindow "\n\n　你东西太多了，已经拿不下了"
+window_no
+endwindow "\n\n　这样啊..."
+block
+endwindow "\n\n　真是快急死了！到底该怎么办！图腾到底哪去了！"

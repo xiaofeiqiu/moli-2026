@@ -1,0 +1,115 @@
+block globalFlag 290 == 1 && globalFlag 291 == 0
+window 7019665,ok
+window_ok gold <= 995000
+LeaveGroup
+addgold 5000
+globalFlag 291 = 1
+window_ok gold > 995000
+endwindow 7019666
+
+block globalFlag 287 == 1 && globalFlag 288 == 0
+window 7019667,ok
+window_ok
+LeaveGroup
+globalFlag 288 = 1
+
+block item 1000591 >= 1
+window 7019668,next
+window 7019669,ok
+window_ok
+LeaveGroup
+killitem 1000591
+giveitem 1000592
+
+block item 1000590 >= 1
+endwindow 7019670
+
+block item 1000589 >= 1
+killitem 1000589
+window 7019671,next
+window 7019672,yes,no
+window_yes
+LeaveGroup
+giveitem 1000590
+window_no
+
+block globalFlag 286 == 1 && item 1000588 >= 1 && globalFlag 287 == 0
+window 7019673,next
+window 7019674,ok
+window_ok
+LeaveGroup
+killitem 1000588
+globalFlag 287 = 1
+
+block globalFlag 283 == 1 && HaveLeak1Item == 13644 && item 1000575 < 1
+window 7019675,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 13644
+giveitem 1000575
+window_ok ItemSpace < 1
+endwindow 7019676
+
+block globalFlag 282 == 1 && globalFlag 283 == 0 && petlevel 2000323 >= 1
+window 7019677,yes,no
+window_no
+window_yes
+LeaveGroup
+Killpeth 2000323,1
+window 7019678,ok
+window_ok
+LeaveGroup
+globalFlag 283 = 1
+
+block globalFlag 280 == 1 && globalFlag 281 == 0 && item 1000574 >= 1
+window 7019679,ok
+window_ok
+LeaveGroup
+killitem 1000574
+window 7019680,next
+window 7019681,yes,no
+window_yes
+LeaveGroup
+globalFlag 281 = 1
+window_no
+
+block globalFlag 278 == 1  && globalFlag 279 == 0 && item 1000573 >= 1
+window 7019682,yes,no
+window_yes
+killitem 1000573
+globalFlag 279 = 1
+endwindow 7019683
+window_no
+
+block globalFlag 276 == 1 && globalFlag 277 == 0 && StrCmpChat == 1900319
+window 7019684,ok
+window_ok
+LeaveGroup
+globalFlag 277 = 1
+
+block globalFlag 274 == 1 && globalFlag 275 == 0 && StrCmpChat == 1900318
+window 7019685,ok
+window_ok
+LeaveGroup
+globalFlag 275 = 1
+
+block globalFlag 272 == 1 && globalFlag 273 == 0 && StrCmpChat == 1900317
+window 7019686,ok
+window_ok
+LeaveGroup
+globalFlag 273 = 1
+
+block ItemCreateTime 61145 >= 2880 && globalFlag 271 == 0
+window 7019687,yes,no
+window_yes
+window 7019688,ok
+window_ok gold <= 996000
+LeaveGroup
+killitem 1000572
+addgold 4000
+globalFlag 271 = 1
+window_ok gold > 996000
+endwindow 7019689
+
+block
+endwindow 7019690

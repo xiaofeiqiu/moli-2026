@@ -1,0 +1,25 @@
+
+
+
+block Item 715295 > 1
+endwindow "\n\n一次只能携带一份结穗的种子,否则将无法打开此项道具."
+
+ 
+
+
+block Item 715295 == 1
+window "\n\n你想点开结穗的种子吗?",yes,no
+Window_YES PetSpace != 0 && Item 715295 == 1
+KillItem 715295,1
+GivePet (421%12,422%20,423%15,424%15,27173%5,27174%10,27175%10,27176%10,27177%3)
+endwindow "\n\n得到了一只植物系的宠物!"
+Window_YES PetSpace == 0
+endwindow "\n\n你的宠物栏满啦!"
+
+
+  
+
+
+
+
+

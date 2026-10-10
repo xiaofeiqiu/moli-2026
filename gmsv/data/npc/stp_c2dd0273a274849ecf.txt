@@ -1,0 +1,20 @@
+block ItemCreateTime 87098 >= 1 && item 87098 == 1
+window "\n\n恩~~情报已经传来了。",next
+window "\n\n请报上说原先教皇身边有个忠心的侍应不知何故前段时间被赶出了圣域，他是教皇身边最亲信的人估计他知道了什么不可告人的事情。",next
+window "\n\n情报里还附带了他的画像，你可以带着画像去他的老家米尼基亚村打听他的行踪。",ok
+window_ok item 87099 < 1
+LeaveGroup
+killitem 87098
+giveitem 87099
+
+block ItemCreateTime 87098 < 1 && item 87098 == 1
+endwindow "\n\n你还真心急，时间还没到呢！情报不可能立马就会飞来！"
+
+block item 87097 == 1
+window "\n\n什么？圣域的教皇失踪了？",next
+window "\n\n你想让我调查这件失踪案件？这件事看来非同小可我要出动我的王牌情报组了。",next
+window "\n\n我情报收集也需要一段时间。这个委托函你拿着，过段时间来听我的好消息吧!",ok
+window_ok item 87098 < 1
+LeaveGroup
+killitem 87097
+giveitem 87098

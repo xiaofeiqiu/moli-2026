@@ -1,0 +1,14 @@
+block item 1000158 == 1
+EndWindow"\n\n万圣节快乐,万圣糖果正在愉快的发放中哦."
+
+
+block item 1000157 == 1
+Window "\n\n哦,哇,补充的糖果,我这里正为存量不足发愁呢,多谢啦.",ok
+Window_ok itemspace == 0
+EndWindow "\n\n你的背包满啦"
+Window_ok item 1000157 == 1
+giveitem 1000158
+
+
+block
+EndWindow "\n\n万圣节快乐,万圣糖果正在愉快的发放中哦."

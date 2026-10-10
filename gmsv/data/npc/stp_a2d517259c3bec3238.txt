@@ -1,0 +1,20 @@
+block globalFlag 342 == 1
+window 900619,next
+window 900620,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+globalFlag 342 = 0
+giveitem 61135
+window_ok ItemSpace < 1
+endwindow 900621
+
+block StrCmpChat == 900309 && globalFlag 341 == 0
+window 900622,next
+window 900623,yes,no
+window_yes
+LeaveGroup
+globalFlag 341 = 1
+window_no
+
+block
+endwindow 900624

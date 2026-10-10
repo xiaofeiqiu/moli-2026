@@ -1,0 +1,9 @@
+block item 200013 >= 1
+endwindow "\n\n....."
+
+block item 200012 >= 1
+window "\n\n好像有本破旧的笔记本,你要捡起来吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200013

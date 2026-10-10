@@ -1,0 +1,13 @@
+block
+window "\n\n 听说,在晚上墓地里传出可怕的声音..好可怕的~!",next
+window "\n\n 你想进去吗?我看你还是别去好了.好多人进去了就没有出来过~!" ,yes,no
+window_no "\n\n 算了.算了."
+window_yes 
+if item 666071==1
+killitem 666071,1
+Leavegroup
+Warp 0,906,12,18
+else
+Endwindow "@n~ \n\n 等你能力再强点的时候来吧~!"
+endif
+endwindow "\n\n 小心哦！"

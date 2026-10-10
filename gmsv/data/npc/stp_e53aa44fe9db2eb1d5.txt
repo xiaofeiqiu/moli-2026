@@ -1,0 +1,35 @@
+block itemspace <= 1
+endwindow "\n\n把背包清理下再来找我吧."
+
+
+block item 160416 >= 1 || item 160423 >= 1 || item 160426 >= 1
+endwindow "\n\n不知道下次会不会在这里见面,(坏笑...)."
+
+
+block item 160411 >= 1 && item 160412 >= 1 && item 160413 >= 1 && item 160414 >= 1 && item 160415 >= 1
+window "\n\n似乎被强大的力量给震飞到这里,真是命大了冒险者,奥对了拿上这个,这是掉落在你们身边的,去给奎因看看吧",ok
+window_ok item 160411 >= 1 && item 160412 >= 1 && item 160413 >= 1 && item 160414 >= 1 && item 160415 >= 1
+killitem 160421,1
+killitem 160422,1
+killitem 160410,1
+giveitem 160426,1
+
+
+block item 160424 >= 1
+window "\n\n又见面了冒险者,竟然从山巅的乌克兰村跌落到这里.",next
+window "\n\n(...总感觉头有点晕,原来是这么回事,糟了魔女呢!)",next
+window "\n\n放心,别一脸惊慌的样子,你掉下来之前那边的黑暗已经消失了.但是你们的工作似乎没完成,埃露戴娜和诚惠应该已经前去做最后准备了,就让我送你们一程,把匕首给我吧,我会还给诺瓦尔的.",next
+window "\n\n带上你遗失的东西,拿好这片羽毛,如果失败了去城里找我,我会再次送你过去的.",ok
+window_ok item 160424 >= 1
+killitem 160411,1
+killitem 160424,1
+giveitem 160416,1
+giveitem 160423,1
+LeaveGroup
+Warp 0,67,12,13
+
+
+block
+window "\n\n您好冒险者,有什么需要帮忙的吗?",ok
+window_ok
+endWindow "\n\n欢迎来拜访我."

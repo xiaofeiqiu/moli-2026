@@ -1,0 +1,8 @@
+block
+window"无知的人!!你为你的无知而后悔去吧!\n一旦依莎贝的灵识解封,几年后!她就有能力重新唤醒她的信徒们!\n到时候!你们这个世界就是蝼蚁!",yes,no
+window_yes
+endevent 678 = 1
+leavegroup
+Warp 0,15523,11,9
+window_no
+Encount 2|0,1000,238,88||0|||||0|670126|

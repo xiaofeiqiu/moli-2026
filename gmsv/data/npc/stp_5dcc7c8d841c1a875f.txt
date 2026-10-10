@@ -1,0 +1,9 @@
+block
+window "\n\n都是深海那群怪物强迫我们来的.\n\n他们说,让我们杀的鱼越多越好.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200775
+leavegroup
+Warp 0,32748,23,31
+

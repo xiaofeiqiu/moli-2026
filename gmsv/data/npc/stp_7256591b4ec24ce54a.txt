@@ -1,0 +1,24 @@
+block ItemDUR 87508 == 15
+EndWindow "\n\n比武开始！",OK
+
+block ItemDUR 87508 >= 5 && ItemDUR 87508 <= 14
+SetDUR 87508,15
+EndWindow "\n\n继续继续，你还没跟对手分出胜负！",OK
+
+block ItemDUR 87508 <= 4
+Window "\n\n恭喜你击败对手获得胜利!",OK
+Window_OK
+window "\n\n老板对你的表现非常满意，叫你立刻去他房间领取奖励。你现在就要去吗？",yes,no
+window_yes
+LeaveGroup
+killitem 87508
+Warp 0,29679,28,15
+window_no
+LeaveGroup
+killitem 87508
+giveitem 87508
+endwindow "\n\n你觉得还不过瘾，那请你继续！"
+
+
+
+

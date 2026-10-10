@@ -1,0 +1,5 @@
+block item 800095 == 1 && item 800096 == 0 
+	Window"\n\n小家伙你很勇敢！拿着这个吧",ok
+window_ok
+killitem 800095,1
+giveitem 800096,1

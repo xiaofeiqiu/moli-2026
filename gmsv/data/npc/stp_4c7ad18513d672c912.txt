@@ -1,0 +1,22 @@
+block Item 888881 >= 1 && 888882 >= 1 && 888883 >= 1 && 888884 >= 1
+      window 888890,OK
+      window_ok
+      KillItem 888881
+      KillItem 888882
+      KillItem 888883
+      KillItem 888884
+      KillItem 888885
+      AddGold 10000
+      GivePet (25%50,26%50)
+
+block Item 888885 >= 1
+      EndWindow 888889,OK
+
+block 
+        Window 888886,YES,NO
+	Window_YES
+	window 888897,OK
+        window_ok
+        giveitem 888885
+	Window_NO
+        EndWindow 888888,OK

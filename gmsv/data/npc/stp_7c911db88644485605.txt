@@ -1,0 +1,8 @@
+block item 86538 == 1
+window "\n\n雄黄酒...讨厌...要我老命了555555555(⊙o⊙)…我要挂了!",next
+window "\n\n你残忍的把蛇皮给剥下来了~~",ok
+window_ok item 86538 == 1
+leavegroup
+killitem 86538
+giveitem 86539
+Warp 0,100,718,265

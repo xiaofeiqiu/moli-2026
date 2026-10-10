@@ -1,0 +1,19 @@
+block item 795377 == 1 && item 795378 == 1 && item 795381 == 1
+Window "\n\n新年快乐.",next
+endWindow "\n\n我代表哥拉尔城的全体村民,为法兰的勇士们祈福."
+
+
+block item 795377 == 1 && item 795378 == 1
+Window "\n\n新年快乐.",next
+Window "\n\n我代表哥拉尔城的全体村民,为法兰的勇士们祈福.",ok
+Window_OK itemspace == 0
+endWindow "\n\n你的背包满啦."
+Window_OK item 795377 == 1 && item 795378 == 1
+giveitem 795381
+
+
+block
+Window "\n\n新年快乐.",next
+endWindow "\n\n我代表哥拉尔城的全体村民,为法兰的勇士们祈福."
+
+

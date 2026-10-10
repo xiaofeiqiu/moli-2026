@@ -1,0 +1,6 @@
+block
+		window "\n\n@c　极限连战卷2，使用后能穿送到极限连战2层,按确认进行传送,不使用可以和下层的兑换员兑换积分奖励",ok
+
+	window_ok item 795002 ==1
+		LeaveGroup
+		Warp 0,60112,16,23

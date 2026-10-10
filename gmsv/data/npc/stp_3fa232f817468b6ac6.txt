@@ -1,0 +1,37 @@
+block item 200018 >= 1 && item 200021 >= 1
+window "\n\n这个是?\n\n真不敢相信国王会让人类通过.",next
+window "\n\n既然这样,你把这个带上.\n\n至少到那边不会立即被抓住.",ok
+window_ok
+killitem 200018
+leavegroup
+Warp 0,27961,243,107
+
+
+block item 200018 >= 1
+window "\n\n这个是?\n\n真不敢相信国王会让人类通过.",next
+window "\n\n既然这样,你把这个带上.\n\n至少到那边不会立即被抓住.",ok
+window_ok
+killitem 200018
+giveitem 200019
+leavegroup
+Warp 0,27961,243,107
+
+
+
+block item 200002 >= 1
+endwindow "\n\n那边不能过去哦,那边就是火焰鼠帝国了,没有签证是没办法过去的."
+
+block item 200000 >= 1
+window "\n\n在这里居然还能看到传说中的人类,不过刚才那两人似乎要找什么东西似的,对了,这是我婆婆送给我的面包吗?",yes,no
+window_yes
+window "\n\n哈哈,美滋滋,这个正是我喜欢吃的,真是怀念啊～你们还单独跑一趟,原来是这样,只是想顺便逛逛,真是感动呀.",next
+window "\n\n真好吃呀,你们要不要来一块?(继续吃着)…不过那边不能过去哦,那边就是火焰鼠帝国了,没有签证是没办法过去的,说话你们可不可以帮我把刚才人类突袭的事情告诉国王呢,那请把这个交给国王吧.",next
+window "\n\n还有那两个人掉落的地图也给你.",next
+window "\n\n快回去吧...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 200000
+giveitem 200001
+giveitem 200002
+endevent 543 = 1

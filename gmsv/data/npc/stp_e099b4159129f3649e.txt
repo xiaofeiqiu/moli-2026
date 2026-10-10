@@ -1,0 +1,5 @@
+block item 141180 >= 1
+Window "\n\n打开项链上的吊坠,在里面发现了一张『航海图』",ok
+Window_ok item 141180 >= 1
+killitem 141180
+giveitem 141178

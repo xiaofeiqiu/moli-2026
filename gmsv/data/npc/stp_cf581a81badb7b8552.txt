@@ -1,0 +1,8 @@
+block
+window "\n\n可恶,没想到不只是我的力量提升了,你们也变强了!力量,我需要力量!啊啊啊啊啊啊.一股神秘力量给你传出的水光神殿.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 795116
+Leavegroup
+Warp 0,43000,615,551

@@ -1,0 +1,8 @@
+block EndEvent 513 == 1
+Window "\n\n¹¾......!",ok
+Window_ok
+LeaveGroup
+Warp 0,57248,33,28
+
+block
+EndWindow "\n\n¹¾~?"

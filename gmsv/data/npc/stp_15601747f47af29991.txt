@@ -1,0 +1,22 @@
+block endevent 650 == 1
+
+        window"\n你好,需要传送到奇奥村吗,需要3000金币？",yes,no
+
+        Window_yes endevent 650 == 1
+
+        addgold -3000
+
+	LeaveGroup
+
+	Warp 0,562,11,22
+
+        Window_no     
+
+        window"\n若有需要请随时找我",ok
+
+block endevent 650 == 0
+
+
+        window"\n你并没有开启这个传送.",ok
+
+        Window_ok

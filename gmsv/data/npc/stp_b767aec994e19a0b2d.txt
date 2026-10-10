@@ -1,0 +1,15 @@
+block item 661020 ==1 && ItemCreateTime_652100 < 1800
+	window "\n\n　很脏得箱子，要打开箱子看看嘛？",yes,no
+		window_yes item 661020 ==1
+		killitem 661020,1
+		giveitem (661019%5,661021%15,661022%15,661023%15,9600%15,10000%15,12006%15),1
+	window_no
+		endwindow "\n\n　那还是算了。",ok
+		
+block item 661020 ==1 && ItemCreateTime_652100 >= 1800
+	window "\n\n　很脏得箱子，要打开箱子看看嘛？",yes,no
+		window_yes item 661020 ==1
+		killitem 661020,1
+		giveitem (661018,661021,661022,661023,9600,10000,12006),1
+	window_no
+		endwindow "\n\n　那还是算了。",ok

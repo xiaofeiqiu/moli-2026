@@ -1,0 +1,67 @@
+block item 200583 >= 1
+endwindow "\n\n传闻拉休是专门提供给晶盘师肉食的猎人."
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200582 >= 1
+window "\n\n看来万事具备,只欠东风,现在超能灵武晶盘的部件都已经齐全,只要找到晶盘师即可组合.",next
+window "\n\n你们去赛利鲁村附近找一个叫拉休的猎人,只有他知道晶盘师的住处.",ok
+window_ok
+killitem 200582
+giveitem 200583
+
+
+
+block item 200580 >= 1
+endwindow "\n\n镜中的世界谁都没进去过,你要小心啊."
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200579 >= 1
+window "\n\n心之镜你拿到了吗?到法达利亚104.63处即可进入心之镜的世界.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200580
+
+
+
+block item 200576 >= 1
+endwindow "\n\n黑市老板私下收藏着很多奇珍异宝."
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200575 >= 1
+window "\n\n根据这个上古卷抽上的叙述迪米斯晶石出自心之镜中的晶石怪身上.",next
+window "\n\n还好我知道心之镜目前在谁的手上,你可以去文物黑市找黑市老板.",ok
+window_ok
+killitem 200575
+giveitem 200576
+
+
+block item 200572 >= 1
+endwindow "\n\n快去吧."
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1
+window "\n\n看来你们已经拿到了心灵治愈石了,在你们进入梦境的时候,我思索了一下,如何进入被冰封的皇宫,结果我想到了炎之地洞的火种.",next
+window "\n\n它的炎热足以融化任何的冰层,你们立刻启程赶赴炎之地洞.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200572
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200570 >= 1
+window "\n\n辛格王子你准备好拯救复兴这个国家了吗?",yes,no
+window_yes
+window "\n\n自从本国受到20年前的大劫难后,我们的国民就叜一夜之间丧失了心灵感应的能力.",next
+window "\n\n我想这可能跟念力水晶塔中的心灵水晶有关,传说只有赛利鲁国皇室血脉的人持有上古神器,超能灵武晶盘才能启动进入.",next
+window "\n\n你们手中的上古神器只是超能灵武晶盘的组成部分,现在还缺少心灵治愈石和迪米斯晶石.",next
+window "\n\n传说心灵治愈石只会出现在赛利鲁国历代公主的梦境中,而迪米斯晶石的下落只有找到冰封在湖底皇宫,先皇王座暗格内的上古卷抽才能知道.",next
+window "\n\n进入公主的梦境对我来说是小菜一碟,至于进入被冰封的湖底的皇宫我就爱莫能助了,你现在就要进入公主的梦境吗?",yes,no
+window_yes
+killitem 200570
+leavegroup
+Warp 0,27652,96,77
+
+
+block
+endwindow "\n\n朋友要我为你占卜一下吗?"

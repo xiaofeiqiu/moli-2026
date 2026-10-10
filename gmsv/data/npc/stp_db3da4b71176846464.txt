@@ -1,0 +1,23 @@
+block item 88358 == 1
+endwindow "\n\n这里的事您别管了，快去地下室！"
+
+block item 88354 == 1 && item 88355 == 1 && item 88356 == 1 && item 88357 == 1
+window "\n\n就是这三把钥匙，你赶快拿钥匙去地下室看看情况，这里有我和汉斯看着。",ok
+window_ok
+killitem 88354
+killitem 88355
+killitem 88356
+killitem 88357
+giveitem 88358
+
+block item 88354 == 1
+endwindow "\n\n任何角落都可能是我藏钥匙的地方！"
+
+block
+window "\n\n情况有点不对劲啊！这帮人不像是来盗博物馆的藏品，好像是来找什么东西的？难道...难道...他们是冲那个来的？",next
+window "\n\n不好~~喂~~不管你叫什么，帮我去找打开博物馆地下室的钥匙，我忘记放哪了，开门的钥匙为三把不同式样的才能打开，请记住！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+giveitem 88354
+endwindow "\n\n任何角落都可能是我藏钥匙的地方！"

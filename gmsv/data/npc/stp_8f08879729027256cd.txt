@@ -1,0 +1,19 @@
+block item 16424 >= 1 && item 800115 >= 1
+window "\n\nÊÇ·ñÒªÐÞ¸´É³Â©?",yes,no
+window_yes
+killitem 16424
+killitem 800115
+giveitem 800116
+leaveGroup
+Warp 0,45096,114,70
+
+
+
+
+
+
+
+
+
+
+

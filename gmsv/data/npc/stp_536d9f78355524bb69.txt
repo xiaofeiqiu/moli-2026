@@ -1,0 +1,27 @@
+block item 61091 >= 1
+window 900412,next
+window 900413,ok
+window_ok
+LeaveGroup
+killitem 61091
+giveitem 61092
+
+block ItemCreateTime 61088 < 420 && item 61088>= 1 &&  item 61087 >= 1
+endwindow 900414
+
+block ItemCreateTime 61088 >= 420 && item 61088>= 1 &&  item 61087 >= 1
+window 900415,ok
+window_ok
+LeaveGroup
+killitem 61087
+killitem 61088
+giveitem 61089
+
+block item 61087 >= 1
+window 900416,next
+window 900417,next
+window 900418,ok
+window_ok
+
+block
+endwindow 900419

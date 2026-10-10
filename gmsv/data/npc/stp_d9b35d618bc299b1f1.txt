@@ -1,0 +1,7 @@
+block item 72035 == 0 && item 72040 == 1
+	Window"\n\n没想到还能有人来到这里,原来你有地图，年轻的勇士,你的路还很长，要学会适可而止!",ok
+		Window_ok
+			killitem 72040,1
+			giveitem 72035,1
+			Leavegroup
+			Warp 0,4458,65,16

@@ -1,0 +1,6 @@
+block	itemspace	<	1
+Endwindow"\n\n\n@c 你的物品满了哦！！！"
+block
+Giveitem 591002,1
+leavegroup
+Warp 0,1000,233,78

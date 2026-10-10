@@ -1,0 +1,8 @@
+block  item 87468 == 1 && item 87469 == 1 && item 87470 == 1 &&  item 87471 == 1
+window "\n\n我们启动了毁灭武器，不过安教授的方法先把他缠住在这中央。",ok
+window_ok
+killitem 87468
+killitem 87469
+killitem 87470
+killitem 87471
+Encount 2|0,29653,35,38||0|||||0|86683|||||||||

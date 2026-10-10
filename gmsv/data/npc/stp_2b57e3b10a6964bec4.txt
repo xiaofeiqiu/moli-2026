@@ -1,0 +1,10 @@
+block item 86553 == 1 && item 86554 < 1
+window "\n\n你们是卡娜特说的帮忙调查穴龙事件的人吧！我已经查到点他们行踪的蛛丝马迹。",next
+window "\n\n当魔物无法实地解析时，研究员会把这些魔物送至索奇亚岛的某处，更详细的消息麻烦你去鲶鱼洞窟的地底湖找那里调查的苏米吧。",ok
+window_ok
+leavegroup
+killitem 86553
+giveitem 86554
+
+block
+endwindow "\n\n我是法兰女骑士团驻维诺亚的武官。羡慕吧！"

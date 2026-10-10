@@ -1,0 +1,11 @@
+block Item 360296 == 0
+	EndWindow "\n\n 你有什么事吗?
+
+block Item 360296 == 1 && Endevent 697 == 0
+	Window "\n\n 哦?是磊磊叫你送来的吗? \n\n 这孩子真懂事...我们节日还在工作,没时间好好回家陪他...\n\n 对了,谢谢你大老远的为我送来这礼物!能否帮我把这个交给我的儿子?",OK
+        	Window_OK
+		KillItem 360296
+		GiveItem 360318,1
+
+block  Endevent 697 == 1
+	Window " \n\n 我们全家都很感谢你,圣诞快乐!",OK

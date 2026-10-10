@@ -1,0 +1,29 @@
+block item 500140 == 1
+endwindow "\n\n特效药已经做好了，你回去给那个中毒的服用吧！"
+
+block item 500139 == 1 && item 500136 >= 50 && item 500137 >= 50 && item 500138 >= 50
+window "\n\n不错~~不错~~你材料都弄齐了。我立马可以制作特效药！",ok
+window_ok
+killitem 500139
+killitem 500136,50
+killitem 500137,50
+killitem 500138,50
+giveitem 500140
+endwindow "\n\n特效药已经做好了，你回去给那个中毒的服用吧！"
+
+block item 500139 == 1
+endwindow "\n\n详细采集点请查询论坛相关任务攻略！"
+
+block item 500135 == 1
+window "\n\n年轻人看你急冲冲的样子肯定是有求于我吧？",yes,no
+window_no
+window_yes
+window "\n\n这就是你要让我给他医治那人的病情记录，别急先让我瞧瞧。",next
+window "\n\n嗯~~情况不容乐观，由于你们给其的解药分量不足使毒素产生了变异。还好有我在，我肯定能想出医治他的方法。",next
+window "\n\n嗯...嗯...有了。你要分别前往洪恩大风洞、土之洞窟 第3层、芙蕾亚维诺亚域这些地方使用8级狩猎、挖掘和伐木技能获取蜘蛛丝X50、大地结晶X50、断魂草X50拿回来给老夫制作药物！",ok
+window_ok
+killitem 500135
+giveitem 500139
+
+block 
+endwindow "\n\n我只给有缘人看病

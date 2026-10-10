@@ -1,0 +1,13 @@
+block Item 99883 == 1
+	Window "\n\n你想要天衣无缝书?",yes,no
+	Window_yes Item 99883 == 1
+	killitem 99883
+	giveitem 99884
+	Window_no
+
+block Item 99884 == 1
+	Window "\n\n你好~",ok
+	Window_ok
+block
+	Window "\n\n呃,你好~!",ok
+	Window_ok

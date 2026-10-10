@@ -1,0 +1,27 @@
+block item 123020 >= 1
+endwindow "\n\n快去吧!"
+
+
+block item 123021 >= 1
+window "\n\n呵呵!呵呵呵呵!!就是它!没错,的确是它\n\n开启者啊...你们的存在真是奇妙\n\n不过也就到此为止吧!",ok
+window_ok item 123021 >= 1
+nowevent 556 = 1
+Encount 2||123021|-1|||||0|28015|5|0|||||5|0|
+
+
+block level >= 120 && HaveTitle == 61
+window "\n\n你能不能帮我把他拿来?我实在是很想研究一下.但是那里都是凶残的魔族,我不敢去的,所以希望你能帮我拿来.可以吗?",yes,no
+window_no
+endwindow "\n\nbye."
+window_yes
+window "\n\n那么这就去吧,记得千万别打开盒子啊,你也打不开的,上面有封印,只有我能打开.",next
+window "\n\n快去吧...快去吧...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 123020,1
+endwindow "\n\n拿着这个,这个魔石能帮你打开封印的结界...祝你顺利."
+
+
+block
+endwindow "\n\n........................"

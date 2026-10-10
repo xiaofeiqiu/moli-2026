@@ -1,0 +1,2138 @@
+block globalFlag 376 == 1
+Endwindow "\n\n快去找18号考官吧!"
+
+block globalFlag 375 == 0
+Endwindow "\n\n你还没找16号考官呢!快去吧"
+
+block globalFlag 75 == 1 || globalFlag 359 == 1 
+localcount1 = random 32,0
+if localcount1 == 2
+Window"\n\n\n　　纯羊绒的含绒量在多少?",next
+
+       Window"\n\n　　答案一：\n\n　　85%以上.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+
+       Window_no
+       Window"\n\n　　答案二：\n\n　　90%以上.\n\n　　切换其他答案请选择『否』.",yes,no
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       
+       Window_no
+       Window"\n\n　　答案三：\n\n　　95以上.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+endif
+
+if localcount1 == 3
+Window"\n\n\n　　从古至今，北京有几次被定为都城？?",next
+
+       Window"\n\n　　答案一：\n\n　　11次.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+
+       Window_no
+       Window"\n\n　　答案二：\n\n　　12次.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+
+       Window_no
+       Window"\n\n　　答案三：\n\n　　13次.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 4
+Window"\n\n\n　　淬火后，钢的硬度有什么变化",next
+
+       Window"\n\n　　答案一：\n\n　　提高.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　不变.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　减少.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+
+if localcount1 == 5
+
+Window"\n\n\n　　当你面朝南时，左面是什么方向",next
+
+       Window"\n\n　　答案一：\n\n　　北.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　东.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　西.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 6
+
+
+Window"\n\n\n　　地球的年龄约有多久",next
+
+       Window"\n\n　　答案一：\n\n　　46亿年.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　36亿年.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　47亿年.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 7
+
+Window"\n\n\n　　第一次鸦片战争发生的时间是",next
+
+       Window"\n\n　　答案一：\n\n　　1841年6月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　1839年6月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　1840年6月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 8
+
+Window"\n\n\n　　泼水节是我国哪一民族一年中最盛大的节日",next
+
+       Window"\n\n　　答案一：\n\n　　傣族.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　回族.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　壮族.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+
+if localcount1 == 9
+
+Window"\n\n\n　　藏语扎西得勒的意思是?",next
+
+       Window"\n\n　　答案一：\n\n　　吉祥如意.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　再见.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　欢迎光临.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 10
+
+Window"\n\n\n　　武则天的墓碑上有几个字?",next
+
+       Window"\n\n　　答案一：\n\n　　10个.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　1个.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　0个.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+
+if localcount1 == 11
+
+Window"\n\n\n　　从何时开始，我国有了民办报纸？",next
+
+       Window"\n\n　　答案一：\n\n　　宋朝.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　明朝.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　清朝.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+if localcount1 == 12
+
+Window"\n\n\n　　多少级以上的地震会造成破坏？",next
+
+       Window"\n\n　　答案一：\n\n　　4级.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　5级.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　3级.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+
+Endif
+
+if localcount1 == 13
+
+Window"\n\n\n　　工业革命的发祥地在？",next
+
+       Window"\n\n　　答案一：\n\n　　美国.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　法国.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　英国.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 14
+
+
+Window"\n\n\n　　故宫是世界上最大的宫殿，共有几个朝代把它作为皇宫？",next
+
+       Window"\n\n　　答案一：\n\n　　2个.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　3个.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　1个.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+if localcount1 == 15
+
+Window"\n\n\n　　国际奥委会评估团2月底对北京进行了为期几天的考察？",next
+
+       Window"\n\n　　答案一：\n\n　　4天.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　3天.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　5天.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 16
+
+Window"\n\n\n　　全唐诗共收录了多少首诗？",next
+
+       Window"\n\n　　答案一：\n\n　　4万2千首.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　4万1千首.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　4万3千首.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 17
+
+
+Window"\n\n\n　　佛教是什么朝代传入我国？",next
+
+       Window"\n\n　　答案一：\n\n　　隋朝.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　南北朝.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　唐朝.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+Endif
+
+
+if localcount1 == 18
+
+Window"\n\n\n　　多大的数字被称为天文数字？",next
+
+       Window"\n\n　　答案一：\n\n　　亿以上的数字 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　十亿以上的数字 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　一千万以上的数字.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 19
+
+Window"\n\n\n　　法国资产阶级革命爆发的时间是？",next
+
+       Window"\n\n　　答案一：\n\n　　1789年9月9日  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　1789年12月14日  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       addgold 1000
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　1789年7月14日 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 20
+
+Window"\n\n\n　　冰球比赛中每队上场？？",next
+
+       Window"\n\n　　答案一：\n\n　　6人  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　4人  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　8人 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+Endif
+
+
+if localcount1 == 21
+
+Window"\n\n\n　　毕升发明活字印刷比欧洲早了多少年？",next
+
+       Window"\n\n　　答案一：\n\n　　400年.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　350年  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　300年.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+       
+Endif
+
+if localcount1 == 22
+
+Window"\n\n\n　　被称为菊月的月份是？",next
+
+       Window"\n\n　　答案一：\n\n　　8月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　9月  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　10月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+
+if localcount1 == 23
+
+Window"\n\n\n　　被称为荷月的月份是？",next
+
+       Window"\n\n　　答案一：\n\n　　4月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　5月  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　6月.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 24
+
+Window"\n\n\n　　北宋时代的都城名称是什么？",next
+
+       Window"\n\n　　答案一：\n\n　　北平.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　东京  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　长安  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+			 addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 25
+
+Window"\n\n\n　　奥斯卡金像奖的造型是一个男人，他的手里有？",next
+
+       Window"\n\n　　答案一：\n\n　　一柄长剑.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　一个奖杯.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+			 addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　它不是空手的么？.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+			 addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 26
+
+Window"\n\n\n　　11月6日在珠海开幕的中国航空航天博览会是第几届？",next
+
+       Window"\n\n　　答案一：\n\n　　第三届.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　第四届.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　第二届.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 27
+
+Window"\n\n\n　　一年有几个节气？",next
+
+       Window"\n\n　　答案一：\n\n　　23.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　24.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　25.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 27
+
+Window"\n\n\n　　外国资本主义的入侵对中国民族资本主义的产生客观上所起的促进作用主要体现在？",next
+
+       Window"\n\n　　答案一：\n\n　　使中国日益陷入资本主义市场.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　提供了市场劳动力的技术条件 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　促进了中国自然经济的解体 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 28
+
+Window"\n\n\n　　我国也是世界上现存最早的农书是?",next
+
+       Window"\n\n　　答案一：\n\n　　梦溪笔谈.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　氾胜之书 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　齐民要术 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 29
+
+Window"\n\n\n　　自宋代以来租佃经营已成为仅次于自耕农形式的重要经营方式,这一方式的影响?",next
+
+       Window"\n\n　　答案一：\n\n　　使政府对百姓的控制加强.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　农民的生产自主性大为加强 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　自然经济向商品经济转化 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 30
+
+Window"\n\n\n　　中国古代官营手工业代表生产技艺的最高水平主要原因是?",next
+
+       Window"\n\n　　答案一：\n\n　　统治者的重视.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　中央集权的作用  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 31
+
+Window"\n\n\n　　“会子则公私买卖支给，无往而不用，……千里之远，数万之缗，一夫之力克日可达。”这段史料主要反映了南宋时期",next
+
+       Window"\n\n　　答案一：\n\n　　纸币的广泛使用.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　交通运输业的发达  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　商品交易额巨大 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 32
+
+Window"\n\n\n　　明朝万历年间,掌握纺织业技能的人口开始进入苏州.清晨,这些有技术的<机工>仁立桥头,等待<机户>雇佣,暮息而归.这现象出现实质反映了",next
+
+       Window"\n\n　　答案一：\n\n　　生产力的发展.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　劳动力专业化出现  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　资本主义生产关系普及 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+
+Endif
+
+if localcount1 == 1
+
+Window"\n\n\n　　近代前期,一些商办企业往往向外商支付一笔费用,然后以他们的名义注册,江苏,浙江,福建,广东省的商办小轮船公司几乎都采用这种做法,导致这一现象的主要原因是",next
+
+       Window"\n\n　　答案一：\n\n　　民族资本依附外国资本.\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案二：\n\n　　民族资本受外国资本控制  .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 359 = 0
+			 globalFlag 360 = 0
+			 globalFlag 361 = 0
+			 globalFlag 362 = 0
+			 globalFlag 363 = 0
+			 globalFlag 364 = 0
+			 globalFlag 365 = 0
+			 globalFlag 366 = 0
+			 globalFlag 367 = 0
+			 globalFlag 368 = 0
+			 globalFlag 369 = 0
+			 globalFlag 370 = 0
+			 globalFlag 371 = 0
+			 globalFlag 372 = 0
+			 globalFlag 373 = 0
+			 globalFlag 374 = 0
+			 globalFlag 375 = 0
+			 globalFlag 376 = 0
+			 globalFlag 377 = 0
+			 globalFlag 378 = 0
+			 globalFlag 379 = 0
+       addgold 1000
+       EndWindow"\n\n\n　　答错啦！！我还是找个合适的人选吧，但还是很谢谢你，这是给你的报酬，请笑纳。"
+       Window_no
+       Window"\n\n　　答案三：\n\n　　民族资本受本国官政府压制 .\n\n　　切换其他答案请选择『否』.",yes,no
+       Window_yes
+       globalFlag 376 = 1
+       EndWindow"\n\n\n　　答对！你去找4号考官吧!!"
+       Window_no
+       Endwindow"\n\n\n\n　　　　　　　　　没有其他答案了."
+       
+endif
+
+
+
+block
+Endwindow "\n\n你没有领取任务!请到科举任务报名进行报名"

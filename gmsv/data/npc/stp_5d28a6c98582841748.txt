@@ -1,0 +1,7 @@
+block
+window 7020466,ok
+window_ok
+LeaveGroup
+giveitem 1000644
+globalFlag 310 = 0
+Warp 0,23311,238,172

@@ -1,0 +1,11 @@
+block
+Window "\n\n美味的星鳗饭团哟,一份只要10000金哦,朋友,要来一份吗?",yes,no
+Window_no
+Window_yes ItemSpace == 0
+EndWindow "\n\n你带的东西太多了"
+Window_yes gold < 10000
+EndWindow "\n\n穷鬼,想吃霸王餐呀!!"
+Window_yes
+addgold -10000
+giveitem 15210,1
+EndWindow "\n\n谢谢惠顾!"

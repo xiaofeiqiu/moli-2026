@@ -1,0 +1,39 @@
+block	Item 670041 == 1 && BBImage >= 106250 && BBImage <= 106423
+	Window 670049,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,60520,19,16
+
+block	Item 670041 == 1 && BBImage >= 105250 && BBImage <= 105423
+	Window 670049,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,60520,19,16
+
+block	Item 670041 == 1 && BBImage >= 100250 && BBImage <= 100423
+	Window 670049,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,60520,19,16
+
+##
+block	Item 670041 == 1 && BBImage >= 106000 && BBImage <= 106173
+	Window 670049,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,60520,19,16
+
+block	Item 670041 == 1 && BBImage >= 105000 && BBImage <= 105173
+	Window 670049,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,60520,19,16
+
+block	Item 670041 == 1 && BBImage >= 100000 && BBImage <= 100173
+	Window 670049,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,60520,19,16
+
+block	
+	endwindow 670034,OK

@@ -1,0 +1,5 @@
+block 
+	Window"\n\n您要传送到危险的山道绝吗？",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18042,105,193

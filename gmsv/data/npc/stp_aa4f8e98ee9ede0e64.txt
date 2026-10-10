@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【狮面女神】吗？",ok
+			Window_ok
+Luac stp:legacy:01d824880f011fa1a200
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【猫脸女神】吗？",ok
+			Window_ok
+Luac stp:legacy:a50fc39a15e98a198f0f
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【猫队长】吗？",ok
+			Window_ok
+Luac stp:legacy:d6d04b41ace17b140fb0
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【福尔菲斯】吗？",ok
+			Window_ok
+Luac stp:legacy:803f69e366c09ffe2019
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【修雷丁格】吗？",ok
+			Window_ok
+Luac stp:legacy:897f3e53397e194fab79
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【恶梦猫】吗？",ok
+			Window_ok
+Luac stp:legacy:1f9beb068469bf99821b
+				endif
+

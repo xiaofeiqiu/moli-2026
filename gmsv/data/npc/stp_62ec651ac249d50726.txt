@@ -1,0 +1,11 @@
+block item 500134 == 1
+window "\n\n年纪轻轻能力非凡，看来有机会还能靠你夺回我的宫殿。",next
+window "\n\n你准备好了吗？本王亲自送你去！",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 500134
+Warp 0,14235,11,193
+
+block
+endwindow "\n\n你是谁离我远点！"

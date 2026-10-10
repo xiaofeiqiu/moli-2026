@@ -1,0 +1,10 @@
+block
+window "\n\n呼...呼...我好累...看来我真的、快不行了",next
+window "\n\n虽然有些不甘...但接下去的...拜托你了.",ok
+window_ok
+leavegroup
+Warp 0,57088,26,10
+
+
+
+

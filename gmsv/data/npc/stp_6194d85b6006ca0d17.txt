@@ -1,0 +1,17 @@
+block item 81033 >= 1
+	window "\n\n@c　　虽然驱毒药水可以帮你驱除食人花的毒素，但是那些食人花还是蛮恐怖的。\n\n　　不管怎么说，祝你好运吧。"
+
+block item 81032 >= 1 && item 18454 >= 1 && item 18456 >= 1
+	window "\n\n@c　　你要制作植物驱毒药水呀...\n\n这个我确实可以帮你，在很久之前里雍大人也来找过我。",next
+	window "\n\n@c　　食人花的魔性确实很恐怖，拿去吧，已经给你制作好了。",ok
+	window_ok item 81032 >= 1 && item 18454 >= 1 && item 18456 >= 1
+	killitem 81032,1
+	killitem 18454,1
+	killitem 18456,1
+	giveitem 81033,1
+
+block item 81032 >= 1
+	Endwindow "\n@c　　花仙子的叶子？……\n\n　　看来你想让我帮你制作解除食人花毒素的植物驱毒药水？\n\n那你还需要找来妖草的血和曼陀罗草的皮一起交给我。"
+
+block
+	Endwindow "\n\n@c　　??????你是谁...\n\n　　没事情不要打扰我。"

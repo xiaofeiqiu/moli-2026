@@ -1,0 +1,18 @@
+block getplaydb 45 != 1 && level < 180
+Endwindow"@c\n\n\n条件不达标!"
+
+block getplaydb 45 == 1 && level >= 180
+window"@c\n\n\n确认进行二次转生吗?等级降为90级,附赠BP点80点~",yes,no
+window_yes
+killitem 90859
+Luac stp:legacy:ecf275671945f3fe0483
+Luac stp:legacy:33c5b24f46903dfdd020
+Luac stp:legacy:577470924be8ce9dfb42
+Luac stp:legacy:cab9ead818f9e0f5443d
+Luac stp:legacy:da9660e3f02094f1f953
+Luac stp:legacy:5419452ebd71ba835126
+Luac stp:legacy:5db50ea8a5a0df4df304
+Luac stp:legacy:37ffd85427d35458ec7c
+Luac stp:legacy:654ea246557ac6c9d54d
+giveitem 90873
+Endwindow"@c\n\nOK~等级已经重置为90级!附赠80点BP(一转90级BP点为466)"

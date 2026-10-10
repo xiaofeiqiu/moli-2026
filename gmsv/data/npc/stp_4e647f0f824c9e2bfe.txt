@@ -1,0 +1,11 @@
+block item 200732 >= 1 && floor == 60050 && Xpos == 305 && Ypos == 25
+window "\n\n眼前勾勒出一条道路,你要一探究竟吗?",yes,no
+window_yes
+killitem 200732
+leavegroup
+Warp 0,60052,130,106
+
+
+
+block
+endwindow "\n\n只有在云端（305.25）处才能使用."

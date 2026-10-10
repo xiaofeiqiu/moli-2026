@@ -1,0 +1,10 @@
+block item 19677 >= 5
+window "\n\n终于找到5块宝石原石了,那就让我来帮你研磨吧!",yes,no
+window_no
+window_yes item 19677 >= 5
+killitem 19677,5
+giveitem (19678%1,19679%1,19680%1,19681%1,19682%1)
+
+
+block
+endwindow "\n\n你好,如果你有5块宝石原石的话,我就可以帮你研磨成宝石,而且我的技术比较好,可以研磨出高级宝石哦."

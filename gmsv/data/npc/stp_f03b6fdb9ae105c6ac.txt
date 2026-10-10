@@ -1,0 +1,20 @@
+block item 123199 >= 1
+Endwindow "\n\n......................"
+block item 123198 >= 1
+window "\n\n迷惑之心老夫可没有迷惑水晶倒是有一个要吗?",yes,no
+window_no
+window_yes
+window "\n\n那拿出2W来吧.",yes,no
+window_no
+window_yes gold < 20000
+Endwindow "'\n\n你的钱呢?没钱一切免谈!"
+window_yes
+window "\n\n迷惑水晶只是一团气体而已.",next
+window "\n\n拿回去要迅速找魔导师转化哦\n\n不然给发挥完了可就没了哦.",ok
+window_ok item 123198 >= 1
+addgold -20000
+killitem 123198,1
+giveitem 123199
+
+block 
+Endwindow "\n\n......................"

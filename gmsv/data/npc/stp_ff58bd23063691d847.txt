@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物抗毒能力1点！",ok
+	window_ok
+Luac stp:legacy:a2188378ffff382cc16f
+		killitem 60271,1

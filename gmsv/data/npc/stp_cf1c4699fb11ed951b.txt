@@ -1,0 +1,10 @@
+block
+window "\n\n我刚才做了什么?",next
+window "\n\n对不起,让你受伤这么严重,我不知道怎么了不能控制自己,看到任何人都想杀掉!",next
+window "\n\n实在抱歉,那么作为打败我的证明,这个交给你吧!",ok
+Window_Ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 530,1
+leaveGroup
+Warp 0,2042,23,23

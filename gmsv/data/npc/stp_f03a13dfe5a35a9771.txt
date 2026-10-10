@@ -1,0 +1,11 @@
+block item 88015 == 1
+endwindow 501068
+
+block item 88012 == 1
+window 501069,ok
+window_ok
+killitem 88012
+giveitem 88015
+
+block
+endwindow 501070

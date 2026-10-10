@@ -1,0 +1,58 @@
+block globalFlag 288 == 1 && globalFlag 289 == 0
+window 7019721,next
+window 7019722,ok
+window_ok
+LeaveGroup
+globalFlag 289 = 1
+
+block item 1000588 >= 1
+endwindow 7019723
+
+block globalFlag 286 == 1 && item 1000587 >= 1 && item 9639 >= 40 && item 12811 >= 40 && item 12418 >= 40 && globalFlag 287 == 0 
+window 7019724,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 1000587
+killitem 9639,40
+killitem 12811,40
+killitem 12418,40
+window 7019725,ok
+window_ok
+LeaveGroup
+giveitem 1000588
+
+block globalFlag 280 == 1 && globalFlag 281 == 0 && item 1000574 < 1 && item 280 >= 5 && item 15219 >= 5 && item 15615 >= 5
+window 7019726,ok
+window_ok
+LeaveGroup
+killitem 280,5
+killitem 15219,5
+killitem 15615,5
+giveitem 1000574
+
+block globalFlag 280 == 1 && globalFlag 281 == 0
+window 7019727,ok
+window_ok
+
+block globalFlag 269 == 1 && globalFlag 270 == 0 && item 1000569 >= 10 && item 1000570 >= 10
+LeaveGroup
+killitem 1000569,10
+killitem 1000570,10
+window 7019728,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000571
+window_ok ItemSpace < 1
+endwindow 7019729
+
+
+block globalFlag 268 == 1 && globalFlag 269 == 0
+window 7019730,yes,no
+window_yes
+LeaveGroup
+globalFlag 269 = 1
+window_no
+
+block
+endwindow 7019731

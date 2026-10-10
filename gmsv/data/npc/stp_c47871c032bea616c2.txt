@@ -1,0 +1,8 @@
+block item 730051 == 1
+Window "\n\n勇敢的冒险者,我已经看到了你的决心.拿好我给你的证明,继续挑战下一试炼吧.",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏不够了."
+Window_ok item 730051 == 1
+giveitem 730054
+LeaveGroup
+Warp 0,30002,240,11

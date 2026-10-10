@@ -1,0 +1,9 @@
+block item 88324 == 1
+window "\n\n叔叔阿姨我身后有一个虫洞里面有只很大的甲虫，你有没有兴趣捉住它？",yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,14181,9,23
+
+block
+endwindow "\n\n告诉你个秘密我身后有个虫洞，里面生活着一直老大老大的甲虫。"

@@ -1,0 +1,15 @@
+block item 200105 >= 1
+endwindow "\n\n快去吧."
+
+
+block EndEvent 540 == 1 && item 200103 >= 1
+window "\n\n我们探访这里的历史学家,根据当地的历史记录在古时期,此处是一片绿洲,后来一阵莫名的风沙,将这里变成了不毛之地.",next
+window "\n\n而我们也探索到这里有一处隐藏的风口,风力特别的强,我们无法继续前行,这就是我们最近的探索报告,你赶快回去把报告交给希堤博士吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200105
+
+
+block
+endwindow "\n\n有什么事吗?"

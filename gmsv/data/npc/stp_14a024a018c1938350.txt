@@ -1,0 +1,6 @@
+block
+Window "\n\n勇者啊......你又一次完成了你的使命\n\n命运的车轮由于你的勇气而维持正义的方向,感谢你!",ok
+window_OK itemSpace >= 1
+GiveItem 60475,1
+LeaveGroup
+Warp 0,64071,1,3

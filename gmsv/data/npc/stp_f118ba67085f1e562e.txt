@@ -1,0 +1,20 @@
+block itemspace >= 8
+window "\n\n选[是]将获得一套极品5A级别的轻装\n\n\n\n选[否]则获得一套极品5A级别的重装",yes,no
+window_yes
+killitem 795356
+giveitem 541
+giveitem 542
+giveitem 543
+giveitem 544
+giveitem 546
+giveitem 548
+giveitem 549
+giveitem 551
+window_no
+killitem 795356
+giveitem 538
+giveitem 539
+giveitem 540
+giveitem 545
+giveitem 550
+giveitem 552

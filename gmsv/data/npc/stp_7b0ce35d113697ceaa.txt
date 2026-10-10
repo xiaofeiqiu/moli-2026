@@ -1,0 +1,6 @@
+block item 60008>= 1
+window "\n\n教主已经恭候多时,快进去吧.",ok
+window_ok
+killitem 60008
+leavegroup
+Warp 0,19054,14,19

@@ -1,0 +1,21 @@
+block item 88027 == 1 && item 88020 == 1
+window 501132,next
+window 501133,ok
+window_ok
+killitem 88027
+killitem 88020
+giveitem 88028
+Warp 0,45141,67,168
+
+block item 88025 == 1
+Warp 0,45141,67,168
+
+block item 88020 == 1
+window 501134,next
+window 501135,next
+window 501136,next
+window 501137,next
+window 501138,ok
+window_ok
+giveitem 88025
+Warp 0,45141,67,168

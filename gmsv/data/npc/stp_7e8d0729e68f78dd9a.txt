@@ -1,0 +1,10 @@
+block endevent 558 == 1
+endwindow "\n\n物资消耗的很厉害,幸好从村子里购买了一些进行补充.不过这里有很多新的植物和作物呢,看来要向国内申请调动学者们来进行研究了."
+
+
+block item 1000063 >= 1
+window "\n\n辛苦了,请收下这些补给吧",ok
+window_ok item 1000063 >= 1
+killitem 1000063
+giveitem 15608,2
+endevent 558 = 1

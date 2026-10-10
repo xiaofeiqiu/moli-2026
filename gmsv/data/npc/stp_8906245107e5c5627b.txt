@@ -1,0 +1,25 @@
+block item 87705 == 1
+window "\n\n你来啦，经过我们众神的一致认可将委托你一向艰巨的任务，你愿意接受吗？",yes,no
+window_no
+killitem 87705
+Warp 0,1000,233,78
+window_yes
+window "\n\n太好了，我代表神界感谢你，这样你也就是拯救了人神两界。详情是这样的，我们神界将派出神兵神将吸引牵制魔族的的部队，你作为特别攻击队潜入魔族领地，拿着神器击败位于魔宫内的魔王左鲁达。",next
+window "\n\n你有什么异议吗？同意的话趁现在武神的部队牵制着魔族部队你快进入魔族领地吧！",ok
+window_ok
+Warp 0,29938,141,22
+
+block item 87704 == 1
+endwindow "\n\n快拿着图纸和四象珠找神匠制造神器吧。"
+
+block item 87703 == 1
+endwindow "\n\n找武神拿神器制作图啊，不过你要注意他脾气不是怎么好。"
+
+block item 87702 == 1
+endwindow "\n\n四象珠是制作神器必不可少的组件。"
+
+block
+window "\n\n感谢你的鼎立相助，把四象珠带到神界，有了这秘宝我们离与魔族之战的胜利越来越近。",next
+window "\n\n按我旨意立即叫神匠把四象珠打造成神器。",ok
+window_ok
+giveitem 87702

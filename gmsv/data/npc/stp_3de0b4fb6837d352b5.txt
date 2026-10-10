@@ -1,0 +1,20 @@
+block Item 1000820 == 1 || Item 1000819 == 1 
+	Endwindow "\n\n　好像有人来过把东西挖走了。",OK
+
+block Item 1000821 == 1
+	Endwindow "\n\n　还是打开箱子看看再挖吧。",OK
+	
+block Item 652100 ==1
+	Window "\n\n　这块土有些松，要挖挖看吗？",Yes,No
+	Window_Yes ItemSpace == 0
+		Endwindow "\n\n　你身上的东西太多了！",OK		
+	Window_Yes Item 652100 == 1
+		GiveItem 1000821,1
+	Window_No
+		EndWindow "\n\n　去别的地方找找看。",OK
+
+block Item 652100 ==0 && Item 1000818 ==0
+	EndWindow "\n\n　奇怪，这里的土有些松，好像谁埋了什么东西……",OK
+
+block
+	EndWindow "\n\n　………………………………",OK

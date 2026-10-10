@@ -1,0 +1,18 @@
+block Item 60469 >= 1 || Item 60470 >= 1
+endWindow "\n\n......"
+
+
+
+block
+window "\n\n深受重伤的女神索菲亚准备用最后的灵力为你洗涤心中的邪恶\n\n你是否接受",yes,no
+window_no ItemSpace < 1
+Endwindow "\n\n物品栏已满"
+window_no
+GiveItem 60470,1
+endWindow "\n\n女神被你杀死了,得到女神的佩剑"
+window_yes ItemSpace < 1
+Endwindow "\n\n物品栏已满"
+window_yes
+Endevent 582 = 0
+GiveItem 60469,1
+endWindow "\n\n拿着我的佩剑,去终结你的命运吧"

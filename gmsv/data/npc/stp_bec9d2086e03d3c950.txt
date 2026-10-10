@@ -1,0 +1,12 @@
+block item 666082 >=1 && item 666083 >=1 && item 666084 >=1 && item 666085 >=1 && item 666086 >=1 && item 666087 >=1
+window "\n\n你既然有本事劝服众树精退兵,那就看看你有没有本事赢我!",yes,no
+window_yes item 666082 >=1 && item 666083 >=1 && item 666084 >=1 && item 666085 >=1 && item 666086 >=1 && item 666087 >=1
+killitem 666082,1
+killitem 666083,1
+killitem 666084,1
+killitem 666085,1
+killitem 666086,1
+killitem 666087,1
+Encount 2|0,62045,17,28||0|||||0|8554|||||||||
+window_no
+endwindow "\n\n呵呵!看来你没有诚心来和我们谈判,再见吧!"

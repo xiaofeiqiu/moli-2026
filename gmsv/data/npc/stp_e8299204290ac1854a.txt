@@ -1,0 +1,3 @@
+block
+	Window "\n\n@c这是哪里？怎么突然来到这里了？黑翼呢？",ok
+	Window_ok

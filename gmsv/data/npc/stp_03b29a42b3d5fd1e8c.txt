@@ -1,0 +1,9 @@
+block item 57739 >= 1
+	window "\n\n感觉到一阵光芒袭来.慢慢的你失去了知觉.要使用这个卷轴吗？",yes,no
+	window_yes gold <= 100000
+	endwindow "\n您身上的魔币不足以学习邪眼,邪眼技能基本价格为100000G.请到好学费"
+	window_yes item 57739 >= 1 && gold >= 100000
+	killitem 57739,1
+        endevent 638 = 1
+	LeaveGroup
+	Warp 0,8881,23,27

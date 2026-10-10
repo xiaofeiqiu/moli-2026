@@ -1,0 +1,52 @@
+################### 魔力情人 阿土伯
+
+block Group > 1
+window "\n\n请解散队伍.",ok
+Window_ok
+LeaveGroup
+
+
+
+block ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+block Item 715227 >= 1 || Item 715221 >= 1 || Item 715222 >= 1 || Item 715223 >= 1 || Item 715224>= 1 || Item 715225 >= 1 || Item 715226 >= 1
+endwindow "\n\n咦?\n真面熟.........\n我们才刚见过面是吗?\n\n别看我年纪大,其实我的记性还不错哦!"
+
+block BBImage >= 100250 && BBImage <= 100423
+window "\n\n咳!咳!小女孩!\n帮我告诉牛郎跟织女......\n虽然我们己经老了.........\n但是我们永远不会忘记五十年前.........\n那天晚上他们的祝福.",next
+endwindow "\n\n咳!对了!\n我的老伴儿好像有话对你说........."
+
+block BBImage >= 105250 && BBImage <= 105423
+window "\n\n咳!咳!小女孩!\n帮我告诉牛郎跟织女......\n虽然我们己经老了.........\n但是我们永远不会忘记五十年前.........\n那天晚上他们的祝福.",next
+endwindow "\n\n咳!对了!\n我的老伴儿好像有话对你说........."
+
+block BBImage >= 106250 && BBImage <= 106423
+window "\n\n咳!咳!小女孩!\n帮我告诉牛郎跟织女......\n虽然我们己经老了.........\n但是我们永远不会忘记五十年前.........\n那天晚上他们的祝福.",next
+endwindow "\n\n咳!对了!\n我的老伴儿好像有话对你说........."
+
+block BBImage >= 100000 && BBImage <= 100173
+window "\n\n咳!咳!小家伙!\n帮我告诉牛郎跟织女!\n虽然我们己经老了.........\n但是我们永远不会忘记五十年前.........\n那天晚上他们的祝福.",next
+window "\n\n谢谢你带来的消息......\n咳.咳.咳.\n这颗宝石给你\n如果有一天你遇到你所爱的人\n这宝石可以让你们长长久久.",next
+window "\n\n你确定要接受这个宝石\n并回到亚诺曼城吗?",yes,no
+Window_YES BBImage >= 100000 && BBImage <= 100173 && Group == 1 
+GiveLeak1Item 715222
+Warp 0,30010,148,116
+
+
+block BBImage >= 105000 && BBImage <= 105173
+window "\n\n咳!咳!小家伙!\n帮我告诉牛郎跟织女!\n虽然我们己经老了.........\n但是我们永远不会忘记五十年前.........\n那天晚上他们的祝福.",next
+window "\n\n谢谢你带来的消息......\n咳.咳.咳.\n这颗宝石给你\n如果有一天你遇到你所爱的人\n这宝石可以让你们长长久久.",next
+window "\n\n你确定要接受这个宝石\n并回到亚诺曼城吗?",yes,no
+Window_YES BBImage >= 100000 && BBImage <= 100173 && Group == 1 
+GiveLeak1Item 715222
+Warp 0,30010,148,116
+
+
+block BBImage >= 106000 && BBImage <= 106173
+window "\n\n咳!咳!小家伙!\n帮我告诉牛郎跟织女!\n虽然我们己经老了.........\n但是我们永远不会忘记五十年前.........\n那天晚上他们的祝福.",next
+window "\n\n谢谢你带来的消息......\n咳.咳.咳.\n这颗宝石给你\n如果有一天你遇到你所爱的人\n这宝石可以让你们长长久久.",next
+window "\n\n你确定要接受这个宝石\n并回到亚诺曼城吗?",yes,no
+Window_YES BBImage >= 100000 && BBImage <= 100173 && Group == 1 
+GiveLeak1Item 715222
+Warp 0,30010,148,116

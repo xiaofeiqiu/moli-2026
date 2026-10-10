@@ -1,0 +1,6 @@
+block item 200588 >= 1 && item 200592 >= 1
+window "\n\n你要将超能灵武晶盘放入水晶中吗?",yes,no
+window_yes
+killitem 200588
+leavegroup
+Warp 0,27691,10,9

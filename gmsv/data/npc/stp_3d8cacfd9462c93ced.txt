@@ -1,0 +1,4 @@
+block item 86433 >= 1 && item 86436 >= 1 && item 86437 < 1
+leavegroup
+killitem 86436
+giveitem 86437

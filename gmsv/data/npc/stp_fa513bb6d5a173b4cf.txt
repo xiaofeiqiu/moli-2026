@@ -1,0 +1,6 @@
+Block
+Window "酒吧老板：请带来水果沙拉的配方×1，我会交给你下一步的调查资料。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:cf084fb1cb3b28d94b11

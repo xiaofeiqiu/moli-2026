@@ -1,0 +1,8 @@
+block item 795100 == 1
+window "\n\n　圣物不是你这种人所能得到的，放弃吧。",yes,no
+window_yes
+window_no
+window "\n\n　那就为你的决定慢慢后悔吧，哈哈哈哈。",ok
+window_ok
+Leavegroup
+Warp 0,60201,0,2

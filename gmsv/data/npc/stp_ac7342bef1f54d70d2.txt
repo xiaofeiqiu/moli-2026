@@ -1,0 +1,58 @@
+
+
+block item 715312 > 0
+endwindow "\n\n老哥也真是的,为了公主,冒这点险也是值得的～～"
+
+block item 715311 > 0
+killitem 715311,1
+GiveLeak1Item 715312,1
+window "\n\n盒子??里面的东西我会转呈上殿.",next
+window "\n\n另外这是事主说要给您的.",next
+window "\n\n谢谢您了～～",ok
+Window_ok item 715309 > 0 && item 715310 > 0
+killitem 715309,1
+killitem 715310,1
+endblock
+Window_ok item 715309 > 0  
+killitem 715309,1
+endblock 
+Window_ok item 715310 > 0
+killitem 715310,1
+endblock 
+window_ok
+endblock
+
+
+block item 715309 > 0
+endwindow "\n\n老哥也真是的,为了公主,冒这点险也是值得的～～"
+
+block item 715308 > 0
+endwindow "\n\n再麻烦您,帮准备六个蓝羽毛还有一捆20个香草,送到雷克塔尔给木塔."
+
+block item 715307 > 0 && item 16378 > 5
+killitem 715307,1
+killitem 16378,6
+GiveLeak1Item 715308,1
+endwindow "\n\n再麻烦您,帮准备六个蓝羽毛还有一捆20个香草,送到雷克塔尔给木塔."
+
+block item 715307 > 0 
+endwindow "\n\n可否麻烦您,帮我准备六个红羽毛呢?"
+block item 715306 > 0 && item 10010 > 19
+killitem 715306,1
+killitem 10010,20
+GiveLeak1Item 715307,1
+window "\n\n不好意思,因为哥哥居然帮流犯传话,我只好先支开您.",next
+endwindow "\n\n可否麻烦您,帮我准备六个红羽毛呢?"
+
+block item 715306 > 0
+endwindow "\n\n麻烦你,先帮我准备单木20个吧."
+
+block item 715305 > 0
+killitem 715305,1
+GiveLeak1Item 715306,1
+window "\n\n木塔?老哥没事找我干麻.",next
+window "\n\n哎呀呀～～老哥不要命了是吧～～",next
+endwindow "\n\n麻烦你,先帮我准备单木20个吧."
+
+block 
+endwindow "\n\n这里哥拉尔便是艾尔巴尼亚的首都.很漂亮吧?"

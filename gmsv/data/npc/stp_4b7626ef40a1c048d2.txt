@@ -1,0 +1,7 @@
+block item 15066 >= 30
+killitem 15066,30
+giveitem 15067
+
+
+block
+endwindow "\n\n好像数量不够30个,无法使用."

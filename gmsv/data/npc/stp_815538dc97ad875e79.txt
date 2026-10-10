@@ -1,0 +1,13 @@
+block item 88374 == 1
+window "\n\n汝等凡人居然破灭了我几千年来的夙愿，尔等必遭天谴。",next
+window "\n\n封印盒...不...我不现再关进那黑暗的空间，我还没完成毁天灭地重塑新世纪的夙愿。",next
+window "\n\n如果你放了我，我会完成你的所有愿望，不要封印我...",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88374
+giveitem 88390
+Warp 0,43100,118,214
+
+block
+Warp 0,43100,118,214

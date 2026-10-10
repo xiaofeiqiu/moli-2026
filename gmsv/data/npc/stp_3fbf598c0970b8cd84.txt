@@ -1,0 +1,8 @@
+block
+window "\n\n要打开这个迅猛龙蛋吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满啦"
+window_yes
+killitem 50875,1
+givepet 9177

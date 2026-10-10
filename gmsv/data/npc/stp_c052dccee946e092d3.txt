@@ -1,0 +1,13 @@
+block
+window "\n\n我要去给在圣拉鲁卡村的奶奶送点心啦,但是现在,路上有好多怪物啊,我好害怕.\n\n求求你帮我送过去吗?",yes,no
+window_no
+endwindow "\n\n哼,那我自己走过去."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 351
+endwindow "\n\n嘻,你真是好人,奶奶这时候一定在食品店呢."
+
+
+block
+endwindow "\n\n奶奶就在圣拉鲁卡村啦,这时候一定在食品店呢."

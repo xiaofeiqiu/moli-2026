@@ -1,0 +1,14 @@
+block
+window "\n\n你拿起箱子里的物品时,突然感到了一股奇怪的能量.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包装不下了!"
+window_ok
+giveitem 730069
+giveitem 730070
+leavegroup
+Warp 0,57033,27,9
+
+
+
+
+

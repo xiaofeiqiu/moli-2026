@@ -1,0 +1,26 @@
+block Item 39663 > 0 && Item 15213 > 0 && Group > 1
+endwindow "\n\n请解散队伍"
+
+
+block Item 39663 > 0 && Item 15213 > 0
+window "\n\n韩式泡菜饭是要请我吃的吗??",yes,no
+window_no
+endwindow "\n\n好冷喔!想吃韩式泡菜饭暖暖身子!"
+window_yes group > 1
+endwindow "\n\n请解散队伍"
+window_yes
+window "\n\n谢谢～\n真是好吃,身体都暖洋洋呢?",next
+window "\n\n你刚说什么?要进神殿之底?",next
+window "\n\n嗯～入口就在后方,进去吧～",ok
+window_ok
+killitem 15213,1
+leavegroup
+Warp 0,45083,71,316
+
+
+block Item 39663 > 0
+endwindow "\n\n好冷喔!好想吃韩式泡菜饭暖暖身子!"
+
+
+block
+endwindow "\n\n这里真是冷呀!"

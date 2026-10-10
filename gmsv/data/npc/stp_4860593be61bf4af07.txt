@@ -1,0 +1,5 @@
+block
+	Window 7020582,NEXT
+	Window 7020583,NEXT
+	Window 7020584,OK
+	Window_OK

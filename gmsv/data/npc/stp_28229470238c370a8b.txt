@@ -1,0 +1,20 @@
+block item 87783 == 1
+endwindow "\n\n好心人有劳了！"
+
+block item 87782 == 1
+window "\n\n出事了~~出事了~~先前来了一队王国军队把父母无故抓走了，哥哥怎么还不回来啊！",next
+window "\n\n这样吧，你去法兰城找我们的伯父，以他的人脉应该能救出我们的父母。等哥哥回来我们会在伯父家与你汇合的。",ok
+window_ok
+killitem 87782
+giveitem 87783
+
+block item 87779 == 1
+endwindow "\n\n哥哥他们就在村外南面的森林里。"
+
+block
+window "\n\n哥哥的好友切斯塔来找他外出打猎。可是到现在还没有回来，马上家里要开饭了。要是被父母发现他是溜出去打猎的话，一定会罚他不许吃饭的。",next
+window "\n\n你能帮我去传个口信让我哥哥尽快回来吃饭。",yes,no
+window_no
+window_yes
+giveitem 87779
+endwindow "\n\n这个布娃娃给他看就知道是我托你帮忙的。"

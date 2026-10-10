@@ -1,0 +1,10 @@
+block item 666084 >=1
+endwindow "\n\n最近气血不足,一时被你打赢了!"
+
+	
+block
+window "\n\n别看我脸色惨白,我要赢你那是So Easy!",yes,no
+window_yes
+Encount 2|||0|||||0|8534|||||||||
+window_no
+endwindow "\n\n赶紧回家睡觉吧!别做无谓的事!"

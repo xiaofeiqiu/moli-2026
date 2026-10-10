@@ -1,0 +1,6 @@
+Block
+Window "赫顿的式神：请通过我的试炼，胜利后领取调查信物。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:988faa909bcaa8d4f9f9

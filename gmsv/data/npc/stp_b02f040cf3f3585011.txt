@@ -1,0 +1,15 @@
+block item 70029 >= 1
+window 910236,next
+window 910237,next
+window 910238,next
+window 910239,next
+window 910240,next
+window 910241,next
+window 910242,next
+window 910243,ok
+window_ok
+leavegroup
+Warp 0,25070,17,16
+
+block
+window 910244

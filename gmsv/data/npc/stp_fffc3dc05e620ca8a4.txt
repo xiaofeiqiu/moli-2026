@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【火精】吗？",ok
+			Window_ok
+Luac stp:legacy:cc94df6f23b1f3137e3c
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【风精】吗？",ok
+			Window_ok
+Luac stp:legacy:87077512c94c08e5eb10
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【水精】吗？",ok
+			Window_ok
+Luac stp:legacy:b258cfb1b4fac6365651
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【地精】吗？",ok
+			Window_ok
+Luac stp:legacy:46780e573fcf13b19f57
+				endif
+

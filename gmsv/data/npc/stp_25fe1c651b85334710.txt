@@ -1,0 +1,35 @@
+block Endevent 656 == 1
+	Endwindow "\n\n@c法兰王国的人民都和你一样友善吗?"
+
+block level < 30
+	Endwindow "\n\n@c原来法兰王国的小盆友已经可以长得那么高了哟~~~~"
+
+block item 81005 >= 1
+	window "\n\n@c星灵界与法兰王国的秘密连接地在芙蕾亚538.87，只有拥有星灵令牌才能够打开仙洞之门。\n\n很遗憾，暂时不能带你游玩了。",next
+	Endwindow "\n\n@c我得留在法兰等待你们国王的接见，尊敬的界神有封密函让我交给他。"
+
+block item 81000 >= 1 && item 81001 >= 1 && item 81002 >= 1 && item 81003 >= 1 && item 81004 >= 1 && level >= 30
+	window "\n\n@c感谢你为我凑齐了所有物品，我刚接到界王传达的新任务，不知道能否请你帮助我将物资送往试炼之村交给村长。",yes,no
+	window_no
+	window_yes
+	window "\n\n@c太感谢你了，这是星灵令牌，有了它就可以帮你安全到达星灵界。已经很久没有外界的人进入过了。村里的村民要是看到你们一定会很开心的。 ",ok
+	window_ok item 81000 >= 1 && item 81001 >= 1 && item 81002 >= 1 && item 81003 >= 1 && item 81004 >= 1
+	killitem 81000,1
+	killitem 81001,1
+	killitem 81002,1
+	killitem 81003,1
+	killitem 81004,1
+	giveitem 81005,1
+
+block item 81000 == 0 && item 81001 == 0 && item 81002 == 0 && item 81003 == 0 && item 81004 == 0 && level >= 30
+	window "\n\n@c你好，冒险者，我来自星灵界。我们尊敬的界神即将要召开登基大典，需要很多物资，听说贵国有地大物博，所以我特意来此采购。",next
+	window "\n\n@c什么，你愿意帮助我?那太好了!我正为找不到村庄发愁呢。",next
+	window "\n\n@c这是所需物资的材料清单，等我事情办完，一定邀请你到星灵界游玩。我们那虽然地方较小，但是风景优美，我想你一定会喜欢的!",ok
+	window_ok itemSpace < 1
+	Endwindow "\n\n@c这……你的背包已经满了，整理一下我在将清单交给你。"
+
+	window_ok itemSpace >= 1 && item 81000 == 0 && item 81001 == 0 && item 81002 == 0 && item 81003 == 0 && item 81004 == 0 && level >= 30
+	giveitem 81000,1
+
+block
+	Endwindow "\n\n@c法兰王国的人民都和你一样友善吗?"

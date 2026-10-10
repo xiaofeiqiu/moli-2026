@@ -1,0 +1,22 @@
+block item 86411 >= 1 && item 86412 < 1
+window "\n\n谢谢你的帮助，看来我与那家伙沟通有问题。",next
+window "\n\n在你去寻找塔达斯的时候我回忆了一下，这个叫做赫顿的孩子，我在三天前刚到法兰城的时候曾经见过，当时他正在马车站与来自亚留特村的加奈交谈。",next
+window "\n\n这个叫做加奈的家伙我与他曾经打过交道，非常厚道的一个旅行商人。不过你若找他就尽快动身吧，作为旅行商人是不会在法兰城内呆太久的。",ok
+window_ok
+leavegroup
+killitem 86411
+giveitem 86412
+
+block StrCmpChat == 85646 && item 86409 >= 1 && item 86410 < 1
+window "\n\n我是来自伊尔村的旅行商人，在这里正在等圣拉鲁卡的旅行商人塔达斯，这家伙让我苦等了好久。我现在没有心情回答你的问题，就算你是大侦探汉克的助手也没有例外！除非你先帮我找到塔达斯，否则免谈。",next
+window "\n\n你要帮忙吗？",yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86410
+endwindow "\n\n纸条上写了我给他的留言，让他尽快到冒险者旅馆找我，我的生意可是很繁忙的！"
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block
+endwindow "\n\n塔达斯这个白痴，说好今天在这里见面，让我给他从伊尔村带来海产样本，还让我别迟到，但自己却却迟迟不来，他到底在搞些什么！还想不想做生意了！"

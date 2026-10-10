@@ -1,0 +1,24 @@
+block item 61030 >= 1
+window 900329,ok
+window_ok gold <= 985000
+LeaveGroup
+killitem 61030
+addgold 15000
+giveitem 61031
+window_ok gold > 985000
+endwindow 900330
+
+block globalFlag 309 == 1
+window 900331,next
+window 900332,ok
+window_ok
+LeaveGroup
+giveitem 61032
+
+block globalFlag 308 == 0
+window 900333,ok
+window_ok
+LeaveGroup
+globalFlag 308 = 1
+
+

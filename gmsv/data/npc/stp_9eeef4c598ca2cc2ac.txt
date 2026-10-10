@@ -1,0 +1,6 @@
+block item 39633 >= 1
+window "\n\n你跟这个女人是一伙的?去死吧!",ok
+window_ok
+Encount 3|0,44872,20,32||0|||||0|6000048|||||||||
+block
+Endwindow "\n\n这不是你该来的地方..."

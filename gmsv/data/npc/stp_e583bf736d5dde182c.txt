@@ -1,0 +1,7 @@
+block endevent 541 == 1 && floor == 25200 && Xpos == 362 && Ypos == 408
+leavegroup
+Warp 0,25204,414,374
+
+block item 200000 >= 1 && floor == 25200 && Xpos == 362 && Ypos == 408
+leavegroup
+Warp 0,25203,414,374

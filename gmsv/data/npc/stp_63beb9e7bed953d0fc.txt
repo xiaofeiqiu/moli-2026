@@ -1,0 +1,35 @@
+block item 87622 == 1
+window "\n\n很好，让我们出发吧！",ok
+window_ok
+LeaveGroup
+Warp 0,29767,0,32
+
+block item 87621 == 1
+endwindow "\n\n快去找魔法大学的魔法师吧！"
+
+block item 87620 == 1
+window "\n\n队长已经通知我了，不过现在有个问题，灯塔的大门也被浓雾笼罩了，这绝不是什么自然现象。",next
+window "\n\n我记得以前在莎莲娜岛的魔法大学那边运送货物的时候曾经听那里的魔法师说过这类法术的事情，我给你写封信，你去那里问问他们有什么解决方法没有。",ok
+window_ok
+killitem 87620
+giveitem 87621
+
+block item 87615 == 1
+window "\n\n辛苦啦，这就是能在晚上发光的夜明珠？我会立马安装在灯塔上的。",next
+window "\n\n这条珍珠项链是我私人感谢你帮忙送你纪念得请收好。",ok
+window_ok
+killitem 87615
+giveitem 87616
+
+block item 87609 == 1
+endwindow "\n\n镇长年轻的时候就是这灯塔的建造者。"
+
+block item 87608 == 1
+window "\n\n队长叫你来帮忙的吗？太好了，目前灯塔遇到了非常棘手的问题。",next
+window "\n\n因海啸问题，灯塔损坏很严重，特别是灯塔无法放射光源引导船只入港。麻烦你回镇里寻找镇长，看看他有什么法子能解决。",ok
+window_ok
+killitem 87608
+giveitem 87609
+
+block
+endwindow "\n\n灯塔的维修工作出乎意料的艰难。"

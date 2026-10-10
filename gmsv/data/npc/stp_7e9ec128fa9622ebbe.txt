@@ -1,0 +1,9 @@
+block
+Window"\n\n谢谢你帮我做试验!给你下个房间的钥匙,准备好了再使用喔!唔嘿嘿.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok
+giveitem 50826,1
+giveitem 50820,2
+LeaveGroup
+Warp 0,57245,17,15

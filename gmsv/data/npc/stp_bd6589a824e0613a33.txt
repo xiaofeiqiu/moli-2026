@@ -1,0 +1,6 @@
+block
+window 900654,next
+window 900655,next
+window 900656,next
+window 900657,ok
+window_ok

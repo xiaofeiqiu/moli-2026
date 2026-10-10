@@ -1,0 +1,15 @@
+block	Item 99882 == 1	
+	Window "\n\noh~是恰丝莉小姐的紫水晶啊~这是布料,你收好了啊~",ok		
+	Window_ok		
+	killitem 99882		
+	giveitem 99883			
+	Window_ok		
+	Window "\n\n呵呵,想用挂?",ok		
+	Window_ok
+
+block Item 99883 == 1		
+	Window "\n\n快回去吧!",ok		
+	Window_ok
+
+block	Window "\n\n你好~",ok	
+	Window_ok

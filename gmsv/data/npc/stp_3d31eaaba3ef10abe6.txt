@@ -1,0 +1,9 @@
+block
+window "\n\n似乎是个老旧的烛台,要试着点亮吗?",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,57059,25,30
+
+
+

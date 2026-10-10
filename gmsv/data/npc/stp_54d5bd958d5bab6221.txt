@@ -1,0 +1,6 @@
+block item 3501 >= 1
+endWindow "\n这里已经调查过了.",ok
+block
+window "\n这里有被暴力撬开的痕迹,要打开查看吗?",ok
+window_OK  item 3501 < 1
+giveitem 3501

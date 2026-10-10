@@ -1,0 +1,11 @@
+block item 87512 == 1
+window "\n\n我们已经寻找到了魔物的出口，已经有士兵在把守，你确定要进去吗？",yes,no
+window_no
+killitem 87512
+window_yes
+LeaveGroup
+killitem 87512
+Warp 0,29686,9,20
+
+block
+endwindow "\n\n.................."

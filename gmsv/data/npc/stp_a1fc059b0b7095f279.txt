@@ -1,0 +1,11 @@
+block item 812302 == 1
+	window "\n\n@c 我妹妹的信喔...\n\n@c好久没见到他们了....\n\n@c很是想念他们...",next
+	window "\n\n@c 能把这封信送给我的管家么? 管家会带你们去我们的父母那",yes,no
+	window_yes 
+	killitem 812302,1
+	giveitem 812303,1
+	window "\n\n@c谢谢你.....辛苦了",ok
+	window_no
+	endwindow "\n\n@c  这样啊那么就算了把"
+block item 812302 == 0
+	endwindow "\n\n@c 你从哪里来...找我做什么....."

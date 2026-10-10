@@ -1,0 +1,29 @@
+block
+LocalCount22 = Random 3,0
+
+if localcount 22 == 1
+window"@c\n\n\n是否使用瓦米斯特王的希望?",yes,no
+window_yes
+killitem 90862
+message 378683
+setlp -15000
+endif
+
+if localcount 22 == 2
+window"@c\n\n\n是否使用瓦米斯特王的希望?",yes,no
+window_yes
+killitem 90862
+message 378683
+setlp -15000
+endif
+
+if localcount 22 == 3
+window"@c\n\n\n是否使用瓦米斯特王的希望?",yes,no
+window_yes
+killitem 90862
+message 378684
+setlp +15000
+endif
+
+
+

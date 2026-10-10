@@ -1,0 +1,6 @@
+block item 652585 >= 1
+leavegroup
+Warp 0,44690,97,86
+
+block
+endwindow "\n\n\n\n　　　　　···一个冰冷的石碑···"

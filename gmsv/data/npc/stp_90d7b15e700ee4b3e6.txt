@@ -1,0 +1,7 @@
+block item 660148 < 1
+	Window "\n@c得到了绳？？？",ok
+	Window_ok
+       	giveitem 660148,1
+block item 660148 >=1
+	Window "\n\n@c不许乱偷东西哦",ok
+	Window_ok

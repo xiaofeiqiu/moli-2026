@@ -1,0 +1,35 @@
+
+###看门的团员
+
+
+block Item 715244 >= 1
+endwindow "\n\n．．．．．．"
+
+
+block Group > 1 
+endwindow "\n\n请解散队伍!" 
+
+
+block BBImage == 101803 && Item 715242 >= 1
+window "\n\n看你的穿着就知道你是自己人.\n快点呦!\n集会要开始啰!",ok
+Window_OK BBImage == 101803 && Item 715242 >= 1
+Warp 0,32398,2,10
+
+
+
+
+block Item 715242 >= 1
+window "\n\n你是日月组织的团员?\n对不起啊!你的穿着不符合规定\n所以我不能让你进去.\n先去换装吧!",ok
+Window_OK Item 715242 >= 1
+Warp 0,1000,233,78
+
+
+block BBImage == 101803 
+##1053430\n\n你没有我们的证件吗?\n那是从哪里弄到这套衣服的.\n快点回去把证件找出来.
+window "\n\n你没有我们的证件吗?\n那是从哪里弄到这套衣服的.\n快点回去把证件找出来.",ok 
+Window_OK BBImage == 101803
+Warp 0,1000,233,78
+
+
+block
+endwindow "\n\n请你不要在我面前晃来晃去!\n我还要值勤,你这样走来走去我都眼花了."

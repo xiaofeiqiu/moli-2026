@@ -1,0 +1,14 @@
+block item 132 >= 1
+endwindow "\n\n幽灵在哪里?怕怕..."
+
+	
+block item 119 == 1
+window "\n\n我想弹钢琴,可是那个服务生说这里有幽灵,你相信么?",yes,no
+window_yes
+endwindow "\n\n哦,是么..."
+window_no
+window "\n\n呵呵,等我一会再去纠缠一下他,HOHO~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 132,1

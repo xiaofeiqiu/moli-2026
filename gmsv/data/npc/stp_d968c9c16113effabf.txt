@@ -1,0 +1,9 @@
+block Item 1000516 >=1
+	Window "\n\n\n@c杀戮?!无尽的杀戮？？？",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c胆小鬼.",OK
+	Window_YES
+	KillItem 1000516,1
+Encount 2|||0|||||0|6000151|||||||||
+block
+Window "\n\n  滚远点。。卑劣的人类",ok

@@ -1,0 +1,17 @@
+block Item 1000194 >= 1
+gawindow "\n\n欢迎我们的活祭品的光临,无比荣幸的邀请到了开启者的到来.",next
+gawindow "\n\n你那个通行标志在发生教会成员失踪的事情后,我们已经全部更换掉了.",next
+gawindow "\n\n而拥有以前标志的你无疑是那个什么兰国的狗屁公主的走狗,你以为成员失踪的事情以及幕后的指使者能瞒过我的眼睛吗?",next
+gawindow "\n\n士兵们,把他给我抓起来吧!",next
+changepal 12,90
+gawindow "\n\n(神像突然幻化成了一个人型生物的形状,祭祀克洛斯:“什么?达努耶利神居然降临了?”)",next
+gawindow "\n\n\n\n@c······",next
+changepal 14,90
+gawindow "\n\n(一阵奇怪的光后,祭祀们和教会群众都不见了!)",ok
+window_ok Item 1000194 >= 1
+LeaveGroup
+Warp 0,1613,1,28
+
+
+block
+endwindow "\n\n你是怎么混进来的?快给我滚开!"

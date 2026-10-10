@@ -1,0 +1,12 @@
+block
+	window "\n\n@c你是小花仙请来解救我们大家的?",next
+	window "\n\n@c她平安无事真好...这次是我们大意了……\n\n平静了太久，谁知魔族会突然入侵，而我们还毫无防范准备。",next
+	window "\n\n@c我这就安排我们家园入口增加监控和防卫。\n\n不管怎么说，这是真的多谢你了。",next
+	window "\n\n@c在我们花仙之地，有一些可爱的寄居蟹，不如我送你一只作为宠物，让它在日后的战斗中为勇士效力。",ok
+	window_ok petSpace < 1
+	Endwindow "\n\n@c看来勇士的战斗伙伴已经足够多了。"
+
+	window_ok petSpace >= 1
+	givepet (70026%1,70027%1,70028%1,70029%1)
+	LeaveGroup
+	Warp 0,1000,141,148

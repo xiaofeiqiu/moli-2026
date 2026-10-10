@@ -1,0 +1,23 @@
+block item 800115 >= 1
+window "\n\n嗯?又是你?你来这里做什么?喜欢我的杰作么?",next
+window "\n\n所以说,你是来解决我的异次元,解决我的?",next
+window "\n\n不不不,还不是时候,我的玩偶",yes,no
+window_yes HaveTitle == 1016
+Encount 2|0,21512,111,104||0|||||0|28021|||||||||
+window_yes HaveTitle == 1024
+Encount 2|0,21512,111,104||0|||||0|28021|||||||||
+window_yes HaveTitle != 1016
+endwindow "\n\n对不起,你没有一等称号,我帮不了你"
+window_yes HaveTitle != 1024
+endwindow "\n\n对不起,你没有一等称号,我帮不了你"
+window_no
+endwindow "\n\n没胆量就别来这里"
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+block
+EndWindow "\n\n现在是深夜,请一切小心行事."

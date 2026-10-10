@@ -1,0 +1,37 @@
+block item 200539 >= 1
+window "\n\n利德:我说过村长是个老顽固.",next
+window "\n\n梅洛蒂:是不是你们村子不同意我留在这儿啊,什么?你们在村长家被长得跟阿尔法一样的东西袭击了,难道我的行踪这么快被国师他们发现了.",next
+window "\n\n利德&法拉:你身上到底发生什么事了.",next
+window "\n\n梅洛蒂:这…这个…现在还不是时候,等时机成熟后我会把所有的事情告诉你们,现在你们能否帮我一个忙?",yes,no
+window_yes
+window "\n\n梅洛蒂:你们在法达利亚有没有见过这卷轴上的吟文.",next
+window "\n\n利德&法拉&@n:没有.",next
+window "\n\n法拉:不过～可以去村外农田找我伯父,他年轻的时候在天空之城皇宫内做过学士,他肯定比我和利德懂得多.",ok
+window_ok
+killitem 200539
+giveitem 200540
+leavegroup
+Warp 0,27555,57,54
+
+
+
+block
+window "\n\n迷之少女:谢谢大家救了我,我替刚才行为鲁莽的护卫型机器人阿尔法跟你们道歉.",next
+window "\n\n迷之少女:不知道各位呵呵称呼.",next
+window "\n\n利德:我叫利德.",next
+window "\n\n法拉:我叫法拉.",next
+window "\n\n迷之少女:我叫梅洛蒂,嗯～对了,还有你怎么称呼.",next
+window "\n\n利德&法拉:对～对～我们都忘记问你叫什么了.",next
+window "\n\n我:@n.",next
+window "\n\n梅洛蒂:我又个请求麻烦大家行吗?就是你们千万别问我的来历,问我也是白问,我是不会说的.",next
+window "\n\n大伙:嗯～好吧,等你想告诉我们的时候在说吧.",next
+window "\n\n法拉:利德我们去找村长商量一下如何收留梅洛蒂吧.",next
+window "\n\n利德:好的,不过村长是个老顽固,我们可别抱太大的希望哦.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200538
+leavegroup
+Warp 0,27555,57,54
+
+

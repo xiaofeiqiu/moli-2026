@@ -1,0 +1,41 @@
+block item 87284 == 1 && item 87282 == 1
+window "\n\n7颗龙珠终于到手了，快看龙珠开始有反应了。",next
+window "\n\n7颗龙珠开始融合了.............哇~~~太神奇了。居然变成...变成...一颗巨大的龙珠唉！",ok
+window_ok
+killitem 87284
+killitem 87282
+giveitem 87285
+endwindow "\n\n其实我身旁的老者其实是神龙的化身，你把这龙珠给他或许会得到意想不到的礼物！"
+
+block item 87284 == 1
+endwindow "\n\n快去吧，龙珠绝不能落入心术不正之人的手里!"
+
+block item 87283 == 1 && item 87281 == 1
+window "\n\n辛苦啦，现在咱们只差一个了，废话不多说了，现在雷达捕捉到的信号在阿巴尼斯村外附近。",ok
+window_ok
+killitem 87283
+killitem 87281
+giveitem 87284
+
+
+block item 87283 == 1
+endwindow "\n\n快去吧，龙珠绝不能落入心术不正之人的手里!"
+
+block item 87279 == 1 && item 87280 == 1
+window "\n\n从你拿回来的三星龙珠看来，接下来雷达收到的信号不是一星就是五星龙珠了。看雷达有信号了位置在米内葛尔岛东北方的海上。",ok
+window_ok
+killitem 87279
+killitem 87280
+giveitem 87283
+
+block item 87279 == 1
+endwindow "\n\n雷达只能锁定一个区域但没法精确到坐标！
+
+block level >= 50
+window "\n\n你想要帮我们寻找剩下的龙珠吗，刚好我发明了可以捕获龙龙珠信号的袖珍雷达，可以方便你们寻找。",next
+window "\n\n按照雷达捕捉到的信号只知道最近的在索奇亚岛的某个村子里。",ok
+window_ok
+giveitem 87279
+
+block
+endwindow "\n\n不好意思你的等级还没达到此次任务规定的要求。"

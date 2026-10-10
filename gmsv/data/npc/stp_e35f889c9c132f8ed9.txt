@@ -1,0 +1,12 @@
+block Item 6518 >= 1
+	Window "\n\n少女:\n\n艾丝大妈,我真的是公主啊,您不认识我了吗?用奶水抚养我长大的您难道忘记了我的说话的习惯以及对您的了解了吗?",NEXT
+	Window "\n\n艾丝:\n\n你这又丑又肮脏的疯子快滚远些,我没时间听你在这里胡言乱语,不要玷污我们公主殿下的清白!",OK
+	Window_OK
+	LeaveGroup
+	Warp 0,6746,12,9
+
+block
+	Window "\n\n逐渐失去了记忆...",OK
+	Window_OK
+	LeaveGroup
+	Warp 0,30010,175,172

@@ -1,0 +1,16 @@
+block item 81005 >= 1
+	window "\n\n@c……\n\n非我族者请交出令牌。",ok
+	window_ok item 81005 >= 1
+	killitem 81005,1
+	LeaveGroup
+	Warp 0,224,20,24
+	Endwindow "\n\n@c欢迎进入星灵界境内。"
+
+block Endevent 656 == 1
+	window "\n\n@c欢迎进入星灵界境内。",ok
+	window_ok Endevent 656 == 1
+	LeaveGroup
+	Warp 0,224,20,24
+
+block
+	Endwindow "\n\n@c这块山壁似乎是空的…"

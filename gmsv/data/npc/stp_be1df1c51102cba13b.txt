@@ -1,0 +1,12 @@
+
+
+block floor == 25032 && XPos >= 39 && YPos >= 15
+window 910155,yes,no
+window_yes
+killitem 70012
+LeaveGroup
+Warp 0,25039,4,3
+window_no
+
+block 
+endwindow 910156

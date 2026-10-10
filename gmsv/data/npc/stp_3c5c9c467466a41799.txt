@@ -1,0 +1,10 @@
+block Item 52291 >= 1 && item 52292 >= 1 && item 52293 >= 1 && item 52294 >= 1
+
+	window "\n去揭开远古之路,维纳亚的征途了,勇士",yes,no
+
+	window_yes Item Item 52291 >= 1 && item 52292 >= 1 && item 52293 >= 1 && item 52294 >= 1
+			killitem 52223 ,1
+
+			killitem 52224 ,1
+
+			killitem 52225 ,1

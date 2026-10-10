@@ -1,0 +1,19 @@
+block
+LocalCount15 = random 20,0
+if LocalCount15 <= 5
+killitem 800177
+Encount 2|||0|||||0|613027|||||||||
+else
+if LocalCount15 <= 10
+killitem 800177
+Encount 2|||0|||||0|613028|||||||||
+else
+if LocalCount15 <= 15
+killitem 800177
+Encount 2|||0|||||0|613029|||||||||
+else
+if LocalCount15 <= 20
+killitem 800177
+Encount 2|||0|||||0|613030|||||||||
+endif
+

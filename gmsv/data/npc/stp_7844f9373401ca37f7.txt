@@ -1,0 +1,9 @@
+block
+	Window"\n\n你好！请问您是否愿意参加法兰硬实力调研活动？",yes,no
+		Window_no
+		Window_yes
+	Window"\n\n接下来您将进入“挑战场地”，在那里将会有7个测试员等待您的挑战，请量力而行！",ok
+		Window_ok
+			giveitem 50815
+			LeaveGroup
+			Warp 0,44837,12,11

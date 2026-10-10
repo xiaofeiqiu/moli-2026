@@ -1,0 +1,10 @@
+block item 87513 == 1 && item 87515 == 1 && item 87516 >= 1 && item 87517 >= 1 && item 87518 >= 1
+killitem 87513
+killitem 87515
+killitem 87516
+killitem 87517
+killitem 87518
+giveitem 87519
+
+block
+endwindow "\n\n集齐“守卫者之血”“噬魂者之血”“主宰者之魂”“嘉奖勋章”和“士兵徽章”可以与我换取冥狱之斧"

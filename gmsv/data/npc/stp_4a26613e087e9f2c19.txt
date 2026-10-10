@@ -1,0 +1,23 @@
+block item 730146 >= 1
+window "\n\n辛苦了啾!",ok
+window_ok item 730146 >= 1
+leavegroup
+Warp 0,50001,4,15
+
+
+block item 730145 >= 1
+window "\n\n这边请!",ok
+window_ok item 730145 >= 1
+leavegroup
+Warp 0,50001,4,15
+
+
+block item 730144 >= 1
+window "\n\n这是那个孩子的一部分啾,你是来帮助她的么啾啾?",yes,no
+window_no
+endwindow "\n\n果然,啾也是无法挣脱宿命的力量么!啾啾."
+window_yes
+window "\n\n啾果然是拥有打破宿命之力的人啾!那么,啾就全靠你了!",ok
+window_ok item 730144 >= 1
+leavegroup
+Warp 0,50001,4,15

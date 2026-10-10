@@ -1,0 +1,9 @@
+block item 22825 == 1 && item 22827 ==1
+
+	Window  "\n\n	刚才不是进去了吗?真勇敢,还要再次进去哦?",OK
+
+	Window_OK
+
+		LeaveGroup
+
+		Warp 0,62067,9,2

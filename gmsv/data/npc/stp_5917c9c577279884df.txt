@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【大型半兽人】吗？",ok
+			Window_ok
+Luac stp:legacy:53c38daaec0c564811a6
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【猪鬼】吗？",ok
+			Window_ok
+Luac stp:legacy:ba5d7440db85bb980278
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【钢鬼】吗？",ok
+			Window_ok
+Luac stp:legacy:61a5cadb34f4f61e732e
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【半兽人】吗？",ok
+			Window_ok
+Luac stp:legacy:f5bd84d85bea4dc817cb
+				endif
+

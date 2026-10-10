@@ -1,0 +1,10 @@
+block item 3796 >= 1
+endwindow "\n\n亚诺曼城的命运就掌握在你的手中了",ok
+
+
+block nowevent 21 == 1
+window "\n\n听说亚诺曼城的国王疯了...我曾经给他看过病,这是他的诊断病历,把它交给我的师傅,他会告诉你国王的详情.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+Giveitem 3796,1

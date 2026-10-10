@@ -1,0 +1,13 @@
+block item 200790 >= 1 && item 200791 >= 1 && item 200792 >= 1
+window "\n\n完成的不错,不过四精的躁动远未平息,你可随时继续完成任务.",ok
+window_ok item 200790 >= 1 && item 200791 >= 1 && item 200792 >= 1
+killitem 200790
+killitem 200791
+killitem 200792
+giveitem 200793
+EndEvent 547 = 1
+CheckTitle
+
+
+block
+endwindow "\n\n与法阵中的四精对话就可以进入四精之界,带回证明就可找我换取奖励,努力吧."

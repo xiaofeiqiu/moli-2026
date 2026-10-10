@@ -1,0 +1,9 @@
+block Item 1000517 >=1
+	Window "\n\n\n@c人类？？？实在太可笑了。。",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c胆小鬼.",OK
+	Window_YES
+	KillItem 1000517,1
+Encount 2|||0|||||0|6000154|||||||||
+block
+Window "\n\n  你没资格挑战我!走开啦...",ok

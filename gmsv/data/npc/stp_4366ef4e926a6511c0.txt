@@ -1,0 +1,33 @@
+block item 86280 >= 1 && item 86282 >= 1&&  item 86283 >= 1
+window 85234,ok
+window_ok
+leavegroup
+killItem 86280
+killItem 86282
+killItem 86283
+giveitem 86284
+Warp 0,1000,233,78
+
+block item 86283 >= 1
+window 85235,ok
+window_ok
+leavegroup
+killItem 86283
+giveitem 86285
+Warp 0,1000,233,78
+
+block item 86282 >= 1
+window 85236,ok
+window_ok
+leavegroup
+killItem 86282
+giveitem 86285
+Warp 0,1000,233,78
+
+block item 86280 >= 1
+window "",ok
+window_ok
+leavegroup
+killItem 86280
+giveitem 86285
+Warp 0,1000,233,78

@@ -1,0 +1,47 @@
+
+block Item 715162 >= 1
+endwindow "\n\n希望我以后也能像你一样帮助别人."
+
+
+block Item 715161 >=1 && ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+block Item 715161 >=1 && ItemSpace >= 1
+window "\n\n哇!你找到我妈妈了,这是她的项链.\n我听到妈妈的声音了.",ok
+Window_OK Item 715161 >=1 && ItemSpace >= 1
+KillItem 715161
+giveitem 715162
+endwindow "\n\n我妈妈说,过几天她就会来接我了.\n为了感谢你找到我妈妈,我要把我的宝物送给你.\n希望我以后也能像你一样帮助别人."
+
+
+block Item 12400 >= 20 && Item 12409 >= 20 && Item 12404 >= 20 && Item 12408 >= 20 && ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+block Item 715160 >= 1
+endwindow "\n\n快把纸条交给我妈妈吧."
+
+
+block Item 12400 >= 20 && Item 12409 >= 20 && Item 12404 >= 20 && Item 12408 >= 20 && ItemSpace >= 1
+window "\n\n真是太好了,这样就可以放心回家了,接下来只要等妈妈就大功告成了.",ok
+Window_OK Item 12400 >= 20 && Item 12409 >= 20 && Item 12404 >= 20 && Item 12408 >= 20 && ItemSpace >= 1
+KillItem 12400,20
+KillItem 12409,20
+KillItem 12404,20
+KillItem 12408,20
+GiveItem 715160
+endwindow "\n\n可是妈妈好久都没来,如果你有看到妈妈,请将这纸条交给她,这样她才知道要怎么找到我.(真想把这小孩带去宠物走失中心)"
+
+
+block
+window "\n\n你好,我跟妈妈来这城买东西可是在路上遇到粉凶的大叔结果妈妈走散了,所以我要在这等我妈妈.",next
+window "\n\n妈妈把钱放在我这,可是我不认识买东西的路,妈妈说要买小麦粉、酱油、鸡蛋、胡椒各一组.",next
+endwindow "\n\n不过我在这好几天了,把钱都快花光了,所以你一定要帮我找这些东西回来哦.(这小孩的妈妈没教他不要随便麻烦陌生人吗?)"
+
+
+
+
+
+
+
+
+

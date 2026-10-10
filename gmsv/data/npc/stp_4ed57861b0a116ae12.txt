@@ -1,0 +1,15 @@
+block item 800205 >= 1
+endwindow "\n\n呜~呜~呜~呜~师傅...我的吉娜师傅..."
+
+block item 800204 >= 1
+window "\n\n都是你的错!你把神兽史雷普尼尔消灭之后,邪恶的堕落僧侣梅鲁袭击了巫师吉娜大人,明明是开启者,却黑白不分,你是坏人!",next
+window "\n\n但是,吉娜大人却那么相信你,竟然命我见到你后,将这本书交给你,这可是她的毕生心血啊...你可不能辜负吉娜大人啊!",ok
+window_ok itemspace == 1
+endwindow "\n\n你的背包满啦"
+window_ok item 800204 >= 1
+giveitem 800205
+endwindow "\n\n呜~呜~呜~呜~师傅...我的吉娜师傅..."
+
+
+block
+endwindow "\n\n呜~呜~呜~呜~师傅...我的吉娜师傅..."

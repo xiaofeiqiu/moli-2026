@@ -1,0 +1,6 @@
+
+
+
+block
+KillItem 715321,1
+AddFeverSec +3600

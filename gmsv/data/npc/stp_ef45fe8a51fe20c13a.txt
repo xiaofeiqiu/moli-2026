@@ -1,0 +1,4 @@
+block item 70029 >= 1
+window 910369,ok
+window_ok
+Encount 2|0,25074,19,14||0|||||0|70051|||||||||

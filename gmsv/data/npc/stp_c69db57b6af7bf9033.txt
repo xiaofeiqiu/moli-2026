@@ -1,0 +1,9 @@
+block
+window "\n\n你们!算了,我们退兵,这就送给你作为礼物了,我相信你除了来阻止我们,同样也会去阻止破坏森林的樵夫,让我们和谐共处.",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+givepet (1%5,2%5,3%5,4%5,5%1,6%1)
+Warp 0,100,557,249
+window_no
+endwindow "\n\n不要礼物就哥屋恩"

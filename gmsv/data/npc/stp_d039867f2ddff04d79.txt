@@ -1,0 +1,27 @@
+block item 1000037 >= 1 && item 1000038 >= 1 && item 1000039 >= 1
+endwindow "\n女仆梅露:\n你好,我是这家的佣人"
+
+
+block group == 1 && item 1000037 >= 1 && item 1000038 >= 1
+window "\n女仆梅露:\n啊,吓死我了~!刚...刚刚往...窗外看的时候...看到了一个黑影...往古井那边...跑过去了...你快去那附近打听一下看看吧...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦"
+window_ok item 1000037 >= 1 && item 1000038 >= 1
+giveitem 1000039
+
+
+block item 1000037 >= 1
+endwindow "\n女仆梅露:\n你好,我是这家的佣人"
+
+block group == 1
+window "\n女仆梅露:\n你好,我是这家的佣人",ok
+window_ok
+window "\n女仆梅露:\n啊,什么?你是来调查盗贼这件事的?是这样的,最近村子经常发生盗窃情况.因为这个村长在门口安排了守卫,还在晚上的时候在村子中安排了巡逻的人.不但没有抓住盗贼,直到现在连盗贼是什么样子的人都没见到过.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 1000037
+
+block
+endwindow "\n女仆梅露:\n你好,我是这家的佣人"
+

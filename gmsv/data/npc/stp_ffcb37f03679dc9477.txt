@@ -1,0 +1,15 @@
+block level > 59 && item 353 == 0 && itemspace >=1
+	Window"\n\n你好啊!是啊,刚从那里出来,我捡了一个宝贝,墓地旁边的教授肯定感兴趣!你想进去?我可以5000G卖给你给教授他就能让你进去",yes,no
+		Window_no
+	Endwindow"\n\n那算了哦."
+		Window_yes
+	Window"\n\n给你吧~",ok
+		Window_ok
+			addgold -5000
+			giveitem 353,1
+
+block item 353 == 1
+	Endwindow"\n\n嗯,快去吧."
+
+block
+	Endwindow"\n\n你好,旅行者,你的背后看起来好重."

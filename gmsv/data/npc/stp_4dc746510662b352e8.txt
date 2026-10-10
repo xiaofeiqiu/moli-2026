@@ -1,0 +1,4 @@
+block
+window"\n\n@c 哼!好豪华的房子 \n 可惜没人住了~",next
+window"\n\n@c 不过,还真想住在这里呢,虽然是个小村子.也挺安静的",next
+endwindow"\n\n@c 可惜,没有上头的允许,不能把这房子作为私人的吧"

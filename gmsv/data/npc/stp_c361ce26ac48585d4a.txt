@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至风鸣之塔 ？",yes,no
+		Window_yes
+			KillItem 60221,1
+			Warp 0,300,464,404
+		Window_no

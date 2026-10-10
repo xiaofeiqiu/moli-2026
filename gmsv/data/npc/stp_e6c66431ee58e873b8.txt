@@ -1,0 +1,18 @@
+block item 1000199 == 1 && itemspace >= 1
+window "\n\n恭喜你完成了第四章任务,这个给你的奖励!",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes item 1000199 == 1
+giveItem (1000200%1,1000201%1,1000202%1,1000203%1)
+leaveGroup
+Warp 0,1530,15,6
+window_no
+endwindow "\n\n不要奖励吗?那就再见!"
+
+
+block
+window "\n\n这里不是你该来的地图,我送你回去吧",yes,no
+window_no
+window_yes
+leaveGroup
+Warp 0,1530,15,6

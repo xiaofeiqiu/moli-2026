@@ -1,0 +1,121 @@
+##任务使用标旗73-78##
+
+block item 39692 == 1
+Endwindow "\n\n我们还没有完全剿灭这些人,你的身份又已经暴露了,这段时间出入一定要小心."
+
+block item 39691 == 1
+Window "\n\n这是!!你从哪找来的?",next
+Window "\n\n原来如此,哎,虽然你身份暴露了,接头的也跑掉了,但是总算不是一无所获.",next
+Window "\n\n这份名册交给我吧,我会安排人逐个排查这些人的,一定不让他们有逃脱的机会.",next
+Window "\n\n我向国王汇报过你的功绩了,国王决定破例颁发给你一枚禁卫勋章,对你予以褒奖.",ok
+Window_ok item 39691 == 1
+globalFlag 259 =0
+globalFlag 260 =0
+globalFlag 261 =0
+globalFlag 262 =0
+globalFlag 263 =0
+globalFlag 264 =0
+killitem 39691
+giveitem 39692
+
+block item 39690 == 1
+Endwindow "\n\n去吧,千万注意安全."
+
+block item 39689 == 1
+Window "\n\n看来他们的行动越来越频繁,动静也越来越大了,这样下去不是办法,看来我们需要行动了.",next
+Window "\n\n现在首要任务是摸清他们的组织结构,可惜到现在咱们都没有更多线索.",next
+Window "\n\n我看这样吧,你去和那个接头人见一下,随意说点什么,然后在附近隐藏起来跟踪他,看看能不能找到新线索.",next
+Window "\n\n这是一块忍者用使用隐身术时使用的布,你靠在树干上用它蒙住自己,就能达到隐身的效果.",next
+Window "\n\n不过你要千万注意,不要拿反了面.",ok
+Window_ok item 39689 == 1
+killitem 39689
+giveitem 39690
+
+block item 39686 == 1
+Endwindow"\n\n千万不要让梅兹看出破绽,那家伙可是很警觉的."
+
+block item 39685 == 1
+Window "\n\n果然如此,看来他们是想利用梅兹的毒药来毒害什么人,绝对不能让他们得逞.",next
+Window "\n\n既然辛德说蔓陀罗的血和妖草的血非常近似,那你就去搞一瓶蔓陀罗草的血给梅兹拿去.",next
+Window "\n\n这样一方面可以不让你暴露,继续打入他们内部,另一方面也可以让他们的计划更快的浮现出来.",next
+Window "\n\n逆香花我已经派人给你采回来了,你拿着,然后找到蔓陀罗草的血一起给梅兹拿去.",ok
+Window_ok item 39685 == 1
+killitem 39685
+giveitem 39686
+
+block item 39684 == 1
+Endwindow"\n\n辛德就在圣拉鲁卡村的医院,你抓紧时间快去吧."
+
+block item 39683 == 1
+Window "\n\n这清单上居然有妖草的血,这可不是一般的毒物啊,可不能轻易给他弄到材料.",next
+Window "\n\n你去圣拉鲁卡村找药剂师辛德,她对毒的东西很有研究,让她看看这些材料到底是做什么的.",next
+Window "\n\n我直接在这张清单上写上给辛德的手谕,你直接给她看就行,就不要把这张纸带回给梅兹了,就说是你已经销毁了.",next
+Window "\n\n你去圣拉鲁卡的这段时间,我派人帮你去找逆香花,免得你耽误太久被他们怀疑.",ok
+Window_ok item 39683 == 1
+killitem 39683
+giveitem 39684
+
+block globalFlag 264 == 1
+Endwindow "\n\n做的太好了,虽然只是打入他们组织的第一步,但万事开头难,你先休息几天,我们商量一下下一步的计划,有消息再通知你."
+
+block item 39681 == 1
+Endwindow "\n\n嘿嘿,这么快就弄到了,厉害."
+
+
+block item 39680 == 1
+Endwindow "\n\n去维诺亚洞窟杀只穴熊,把穴熊的血抹在这件衣服上,保证能骗过他们."
+
+block globalFlag 263 == 1
+Window "\n\n哼哼,雕虫小技,我教你个办法对付他.",next
+Window "\n\n你带上这件卫兵服,然后去维诺亚洞窟杀只穴熊,把穴熊的血抹在这件衣服上,保证能骗过他们.",ok
+Window_ok itemspace == 0
+Endwindow "\n\n你的背包满啦"
+Window_ok
+giveitem 39680
+
+block globalFlag 262 == 1
+Endwindow "\n\n别放过任何线索,好好干,我很看好你."
+
+block item 39677 == 1
+Endwindow"\n\n别放过任何线索,好好干,我很看好你."
+
+block item 39676 == 1
+Endwindow"\n\n快按照队长说的去地下牢房,你可以去再审审他,看看有没有新线索."
+
+block globalFlag 261 == 1
+Endwindow"\n\n队长他们已经回来了,具体情况你去问队长吧."
+
+block item 39675 == 1
+Window "\n\n哦?嫌犯的口供!",next
+Window "\n\n干的太好了,我看看啊...",next
+Window "\n\n嗯,嗯,原来是这样,他们果然有所企图,",next
+Window "\n\n既然队长亲自带人去扫到这帮山贼的基地了,那你就暂时休息一下,等队长他们回来再说吧,",next
+Window "\n\n放心吧,禁卫队的实力可是很强的.",ok
+Window_ok item 39675 == 1
+killitem 39675
+globalFlag 259 =0
+globalFlag 260 =0
+globalFlag 261 =1
+
+block item 39674 == 1
+Endwindow"\n\n先去乌克兰村接应一下密探吧."
+
+block EndEvent 5 == 1
+Window "\n\n你就是开启者呀,能遇到你真是太好了,本人是法兰国王室的御用安全顾问,是专门负责王室安全的,法兰禁卫部队都归属我指挥.",next
+Window "\n\n我们最近发现了一些异常线索,可能有人要对国王不利,所以我把禁卫队派出去搜集情报.",next
+Window "\n\n像你这样有能力有抱负的人是国家不可多得的栋梁,你愿意为国家出一份力吗?",yes,no
+Window_yes
+Window "\n\n好极了,果然我没有看错人.",next
+Window "\n\n其实我们已经掌握了一点线索,但是还没有落实,有人反映这次的事件可能和之前城里的一宗毒杀案有关系.",next
+Window "\n\n哦?你之前也参与调查过那件案子吗?那太好了,我手下的密探已经前往乌克兰村调查了,你去接应他一下吧.",next
+Window "\n\n这张通告给你,证明你是我特邀的助手,另外,记住与密探的接头暗号,你对他说“驱雾”,他会回答“飓风”.",ok
+Window_ok itemspace == 0
+Endwindow "\n\n你的背包满啦"
+Window_ok
+giveitem 39674
+Window_no
+Endwindow"\n\n我真是看错你了."
+
+
+block
+Endwindow"\n\n你!东张西望的干什么!"

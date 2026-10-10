@@ -1,0 +1,14 @@
+
+
+
+block item 39818 >= 1
+window "\n\n不错,我战的很愉快,就给予你证明信吧.",ok
+window_ok
+killitem 39818
+giveitem 39819
+leavegroup
+Warp 0,3200,74,68
+
+
+
+

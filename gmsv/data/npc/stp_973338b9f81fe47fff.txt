@@ -1,0 +1,13 @@
+block item 11200 >= 20 && item 12410 >= 20 && item 12404 >= 20 && item 12004 >= 20
+window 7020154,next
+window 7020155,yes,no
+window_no
+window_yes
+killitem 11200,20
+killitem 12410,20
+killitem 12404,20
+killitem 12004,20
+giveitem 1000678
+
+block
+endwindow 7020156

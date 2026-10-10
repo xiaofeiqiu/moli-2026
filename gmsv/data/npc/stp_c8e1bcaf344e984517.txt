@@ -1,0 +1,6 @@
+block item 200758 >= 1
+window "\n\n鳞片与缝隙产生了强烈的共鸣,鳞片融合在了缝隙之中,缝隙消失了.",ok
+window_ok
+killitem 200758
+leavegroup
+Warp 0,28334,4,9

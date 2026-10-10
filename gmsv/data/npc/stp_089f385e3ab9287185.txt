@@ -1,0 +1,12 @@
+block item 1000824 >= 1
+	window "\n\n　这钱币擦擦可能还能用，要擦干净这枚钱币嘛？",yes,no
+	window_yes	gold == 1000000 && item 1000824 >=1
+		killitem 1000824,1
+		endwindow "\n\n　您都那么富有了，怎么还那么贪啊？",ok
+	window_yes item 1000824 >=1
+		killitem 1000824,1
+		addgold 1	
+		endwindow "\n\n　收走脏的钱币。",ok
+
+	window_no
+		endwindow "\n\n　那还是算了。",ok

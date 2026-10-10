@@ -1,0 +1,14 @@
+block item 61162 >= 1
+endwindow 1900413
+
+block globalFlag 286 == 1 && globalFlag 287 == 0
+window 1900414,next
+window 1900415,OK
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61162
+window_ok ItemSpace < 1
+endwindow 1900416
+
+block
+endwindow 1900417

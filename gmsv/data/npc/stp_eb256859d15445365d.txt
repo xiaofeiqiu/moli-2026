@@ -1,0 +1,5 @@
+block
+window "\n\n来让我试试你们的实力吧,我将独自面对你们,也请你们尊重我",yes,no
+window_no
+window_yes
+Encount 2|0,64032,90,93||0|||||0|28074|||||||||

@@ -1,0 +1,14 @@
+block	item 591130>=1||item 591131>=1||item 591132>=1||item 591133>=1||item 591134>=1||item 591135>=1
+Endwindow"\n\n\n@c 咿～ 你身上还有菜呀！快快去处理掉吧！"
+block	item 7002>=2||item 7899876>=2
+window"\n\n@c 要进入奥丁的菜园么? \n\n 进入1次才需要2金币或者2金卡哦!",ok
+Window_OK Item 7002>=2
+killitem 7002,2
+	leavegroup
+	Warp 0,250,5,74
+Window_OK Item 7899876>=2
+killitem 7899876,2
+	leavegroup
+	Warp 0,250,5,74
+block
+Endwindow"\n\n@c 这里是奥丁的菜园哦～ \n\n 进入一次需要2金币或者2金卡!"

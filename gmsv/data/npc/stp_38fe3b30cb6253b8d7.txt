@@ -1,0 +1,38 @@
+block item 39718 >= 1
+window "\n\n谢谢你帮我家老爷的忙,作为回报,这瓶酒送给你",ok
+window_ok
+killitem 39718
+giveitem 39717
+
+
+block bbimage == 120069
+endwindow "\n\n如果能伪装成强盗的样子,也许能净化他们的灵魂."
+
+
+block item 39715 >= 1
+endwindow "\n\n唉,当年的罪过啊.如果我还是当年那么年轻就好了,拜托你了,勇敢的冒险者."
+
+
+block item 39714 >= 1
+endwindow "\n\n可恶,这些阴魂不散的家伙.现在的状况恐怕你要找我家老爷商量一下了.老爷身体行动不便,请进屋子和他商量一下吧."
+
+
+block
+window "\n\n友善的朋友你好.",next
+window "\n\n我家小姐在回来的路上碰到了强盗,他们劫持了我家小姐并且向我们勒索赎金.",next
+window "\n\n我家老爷身体行动不便,你看起来是个有能力的冒险者,能否请你帮忙去和劫匪交涉把我家小姐赎回来呢?",yes,no
+window_no
+endwindow "\n\n没人能帮忙么.急死我了."
+window_yes
+window "\n\n快去吧,有什么小道消息记得告诉我哦~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 39713
+
+
+
+
+
+
+

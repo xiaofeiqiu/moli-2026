@@ -1,0 +1,30 @@
+block item 563 >= 1 && item 564 >= 1 && item 565 >= 1 && item 566 >= 1 && item 567 >= 1 && petlevel 531 == 1 && petlevel 533 == 1 && petlevel 2047 == 1 && petlevel 2052 == 1
+window "\n\n选[是]交出50万和所有纯白设计图\n获得改造纯白的蛋(特殊)\n\n选[否]交出50万和所有道具\n获得改造纯白的蛋(邪魔)",yes,no
+window_yes gold >= 500000
+killitem 563,1
+killitem 564,1
+killitem 565,1
+killitem 566,1
+killitem 567,1
+killpetl 531,1
+killpetl 533,1
+killpetl 2047,1
+killpetl 2052,1
+addgold -500000
+giveitem 568,1
+leaveGroup
+Warp 0,1000,233,78
+window_no gold >= 500000
+killitem 563,1
+killitem 564,1
+killitem 565,1
+killitem 566,1
+killitem 567,1
+killpetl 531,1
+killpetl 533,1
+killpetl 2047,1
+killpetl 2052,1
+addgold -500000
+giveitem 569,1
+leaveGroup
+Warp 0,1000,233,78

@@ -1,0 +1,7 @@
+block
+window "\n\n　你醒了啊，昨晚还真是危险，顶着大雨把桅杆给从新固定好了。暴风雨虽然已经过去了，但是我们已经迷失了方位。",next
+window "\n\n　刚才据我观察前方好像有个岛屿，我们现在正向那个岛屿的方向航行，估计再过几分钟就能到达那里……",next
+leavegroup
+systemmessage 8100962
+systemmessage 8100963
+Warp 0,60199,5,4

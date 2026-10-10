@@ -1,0 +1,7 @@
+block
+window 7020385,yes,no
+window_yes
+window 7020386,ok
+window_ok
+Encount 3|0,23309,28,13||0|||||0|6000269|
+window_no

@@ -1,0 +1,10 @@
+block Item 6515 >= 1
+Window "\n\n这个是?难道你就是大侦探汉克派来协助调查的吗?那么快请进,船长已经为这件事苦恼很多天了.",OK
+Window_OK Item 6515 >= 1
+KillItem 6515,1
+LeaveGroup
+Warp 0,41028,2,10
+
+block
+Window "\n\n你说什么也不行,在船航行时,我不能让你打扰船长,这是对整个船的命运开玩笑.",OK
+Window_OK

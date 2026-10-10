@@ -1,0 +1,21 @@
+#第100道场
+#
+##############  ##############
+
+#block
+#	Window "\n\n要使用乐园的镜子进入最终道场，满属性轮盘是必须的。\n使用后乐园的镜子和满属性轮盘将化为乌有。\n\n@c但我们现只是测试阶段，\n@c所以并不需要满属性轮盘。",OK
+#	Window_OK
+#	KillItem 800010,1
+#	LeaveGroup
+#	Warp 0,9300,15,33
+#	Window_NO
+
+
+block Item 661053 >= 1
+	Window 790003,OK,NO
+	Window_OK
+	KillItem 1000773,1
+	KillItem 661053,1
+	LeaveGroup
+	Warp 0,9300,15,33
+	Window_NO

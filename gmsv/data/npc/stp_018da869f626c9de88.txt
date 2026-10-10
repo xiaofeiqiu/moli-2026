@@ -1,0 +1,9 @@
+block item 1000162 == 1
+Window"\n\n呜哇哇,人类来袭击啦!",ok
+Window_ok item 1000162 == 1
+LeaveGroup
+Warp 0,60041,6,18
+
+
+block
+endWindow"\n\n呜哇哇,人类来袭击啦!"

@@ -1,0 +1,44 @@
+block item 6610003 >= 1 || item 6610004 >= 1 || item 6610005 >= 1
+Window "\n\n  什么？？这是龙魄？？只要你给我足够的材料！我可以为你打造属于超神器级的枪！",yes,No
+	Window_Next
+		Window "\n\n  你想使用冰龙之魄打造冰魄龙枪么？",Yes,No
+	Window_YES item 6610003 >= 1 && item 18853 >= 1 && item 18450 >= 30
+		killitem 6610003,1
+		killitem 18853,1
+		killitem 18450,30
+		giveitem 6610006
+	Window_YES item 6610003 < 1 || item 18853 < 1 || item 18450 < 30
+		EndWindow "\n\n  您的材料不够呀！"
+	Window_No
+		Window "\n\n  你想使用炎龙之魄打造炎魄龙枪么？",Yes,No
+	Window_YES item 6610004 >= 1 && item 18853 >= 1 && item 18450 >= 30
+		killitem 6610004,1
+		killitem 18853,1
+		killitem 18450,30
+		giveitem 6610007
+	Window_YES item 6610004 < 1 || item 18853 < 1 || item 18450 < 30
+		EndWindow "\n\n  您的材料不够呀！"
+	Window_No
+		Window "\n\n  你想使用魔龙之魄打造诸邪龙枪么？",Yes,No
+	Window_YES item 6610005 >= 1 && item 18853 >= 1 && item 18450 >= 50
+		killitem 6610005,1
+		killitem 18853,1
+		killitem 18450,50
+		giveitem 6610008
+	Window_YES item 6610005 < 1 || item 18853 < 1 || item 18450 < 50
+		EndWindow "\n\n  您的材料不够呀！"
+	Window_No
+		Window "\n\n  你想使用魔龙之魄打造天龙八步枪么？",Yes,No
+	Window_YES item 6610005 >= 3 && item 211 >= 5 && item 18853 >= 5 && item 554104 >= 1
+		killitem 6610005,3
+		killitem 211,5
+		killitem 18853,5
+		killitem 13629,1
+		giveitem 6610009
+	Window_YES item 6610005 < 3 || item 211 < 5 || item 18853 < 5 || item 554104 < 1
+		EndWindow "\n\n  您的材料不够呀！"
+	Window_No
+		EndWindow "\n\n  没有足够的材料么？"
+
+block 
+	EndWindow "\n\n  我很想得到传说中的龙魄，你能为我找来么？"

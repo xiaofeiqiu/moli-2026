@@ -1,0 +1,6 @@
+block item 88352 == 1
+window "\n\n您就是第33兵团长派给我的人手吗？看起来很强的样子，现在你就编入晚上博物馆的巡视组。",yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,14295,12,56

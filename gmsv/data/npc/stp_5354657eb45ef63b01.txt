@@ -1,0 +1,30 @@
+block	item 591337>=1
+Endwindow"\n\n\n 请把这个带给王妃吧~!"
+block	item 591334>=10&&item 591335>=10&&item 591336>=10
+window"\n\n\n （道具足够）太棒了！",ok
+window_ok
+killitemall 591334
+killitemall 591335
+killitemall 591336
+killitemall 591341
+Giveitem 591337,1
+Endwindow"\n\n\n 请把这个带给王妃吧~!"
+block	item 591334>=1&&item 591334<10||item 591335>=1&&item 591335<10||item 591336>=1&&item 591336<10
+Endwindow"\n\n\n （道具不足）这些材料还不够做蛋糕呢！"
+block	item 591341>=1
+Endwindow"\n\n\n  真是讨厌，过年的时候，制作蛋糕的材料商人都休息了，连王宫的蛋糕都没办法供给了。"
+block	item 591333>=1
+window"\n\n\n 真是讨厌，过年的时候，制作蛋糕的材料商人都休息了，连王宫的蛋糕都没办法供给了。",next
+window"\n\n\n [@n] 能不能拜托你去帮我弄些原材料呢？",yes,no
+window_no
+Endwindow"\n\n\n 哎，那我只好也去休息了。"
+window_yes
+window"\n\n\n 太好了！",next
+window"\n\n\n 最缺少的三种材料是水果、面包和奶油，我听说，这些原材料在霞之洞窟、流星山丘和深绿的山路可以弄到，请帮我每样带回10个来，好吗？",yes,no
+window_no
+window_yes
+killitem 591333,1
+Giveitem 591341,1
+Endwindow"\n\n\n 那么真是太感谢你了！"
+block
+Endwindow"\n\n\n 真是讨厌，过年的时候，制作蛋糕的材料商人都休息了，连王宫的蛋糕都没办法供给了。"

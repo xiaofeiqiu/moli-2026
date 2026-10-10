@@ -1,0 +1,12 @@
+block havetitle == 61 && item 86520 < 1
+window "\n\n我们的勇者大人，最近法兰各地都不安，国王陛下下令召集开启者调查此事，查清灵堂歌声的原因。",next
+window "\n\n开启者啊~~要担负此次重任吗？",yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86520
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block
+endwindow "\n\n....................."

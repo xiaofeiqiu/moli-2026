@@ -1,0 +1,9 @@
+block item 88324 == 1
+window "\n\n我们不知不觉挖到了一个很久很久以前废弃的矿坑，里面还时不时传来一阵恐怖的叫声。你是否有勇气进去一探究竟？",yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,14286,29,22
+
+block
+endwindow "\n\n真扫兴，挖到一个废弃的矿坑！"

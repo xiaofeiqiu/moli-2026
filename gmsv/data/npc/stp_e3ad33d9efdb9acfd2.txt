@@ -1,0 +1,8 @@
+block item 87586 == 1
+Warp 0,29705,90,15
+
+block
+window "\n\n羽毛你们拿去吧，不过我巢穴的位置要保密。",ok
+window_ok
+giveitem 87586
+Warp 0,29705,90,15

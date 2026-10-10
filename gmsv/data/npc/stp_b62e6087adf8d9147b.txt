@@ -1,0 +1,33 @@
+#
+#Ò»ÈÕº¬°üÉ¢
+#
+
+#######################################
+#¶¾Ò©#
+
+#######################################
+block Item 430002 >= 1 && itemcreatetime 430002 >= 60 && itemspace >= 1
+
+	Window 430027,OK
+	Window_OK
+	endevent 696 = 1
+#	playse 304,1,1
+	KillItem 430002
+	giveitem 430003
+
+
+block Item 430002 >= 1 && itemcreatetime 430002 >= 60 && itemspace == 0
+
+
+	EndWindow 430026,OK
+
+block Item 430002 >= 1 && itemcreatetime 430002 >= 0
+
+	Window 430027,OK
+	Window_OK
+#	playse 304,1,1
+
+block Item 430002 >= 1
+
+	EndWindow 430027,OK
+

@@ -1,0 +1,14 @@
+block item 87039 == 1 && item 87040 >= 1 && item 15215 >= 2 && item 15218 >= 3
+window "\n\n哈哈，潘多拉大人很久没犒劳我们了。都馋死我了，你进去吧！进去你也是死路一条！！",ok
+window_ok
+LeaveGroup
+killitem 87040
+killitem 15215,2
+killitem 15218,3
+Warp 0,25118,82,85
+
+block item 87039 == 1
+endwindow "\n\n想见我们潘多拉大人？我看你是不要命了！如果你执意要进去的话就拿一瓶米尼基亚村产的红酒、二份牛排、三份鱼翅汤来孝敬孝敬我可能我会放你进去噢！"
+
+block
+endwindow "\n\n滚开~~离我远点！"

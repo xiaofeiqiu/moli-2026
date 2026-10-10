@@ -1,0 +1,84 @@
+block	group!=5
+Endwindow"\n\n\n@c队伍内人数少于5人！找朋友一起来吧!"
+block	item 591511 >=1	&&floor==100&&Xpos==285&&Ypos==141
+localcount1 = random 13,0
+if localcount1 == 1
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530070|
+endif
+if localcount1 == 2
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,9,19||0|||||0|530071|
+endif
+if localcount1 == 3
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530072|
+endif
+if localcount1 == 4
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,9,19||0|||||0|530073|
+endif
+if localcount1 == 5
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530074|
+endif
+if localcount1 == 6
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,9,19||0|||||0|530075|
+endif
+if localcount1 == 7
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530076|
+endif
+if localcount1 == 8
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,9,19||0|||||0|530077|
+endif
+if localcount1 == 9
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530078|
+endif
+if localcount1 == 10
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,9,19||0|||||0|530079|
+endif
+if localcount1 == 11
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530080|
+endif
+if localcount1 == 12
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,9,19||0|||||0|530081|
+endif
+if localcount1 == 13
+window"\n\n\n@c发现怪物!",ok
+window_ok
+killitem 591511,1
+Encount 2|0,1004,8,19||0|||||0|530082|
+endif
+block
+Endwindow"\n\n\n@c猎物坐标：285,141!请速度前去猎杀..."

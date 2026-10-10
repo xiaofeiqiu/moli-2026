@@ -1,0 +1,6 @@
+block
+window"\n\n\n@c确定要去第61层吗?",yes,no
+window_yes
+killitem 366511
+leavegroup
+Warp 0,21541,1,4

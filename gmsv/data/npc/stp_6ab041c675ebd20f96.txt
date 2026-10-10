@@ -1,0 +1,15 @@
+block item 87605 == 1
+Warp 0,29741,92,144
+
+block item 87604 == 1
+window "\n\n散发着邪恶气息的水晶，要打碎它吗？",yes,no
+window_no
+window_yes
+window "\n\n洞穴剧烈的震颤着，邪气消散了。",ok
+window_ok
+killitem 87604
+giveitem 87605
+Warp 0,29741,92,144
+
+block
+Warp 0,29741,92,144

@@ -1,0 +1,18 @@
+block
+window "\n\n嗯...定位没有问题...运转正常...3000多年了...终于研究出来了...果然...神的智慧不是我们能够轻易理解的...",next
+window "\n\n你是从那里来的!!!快出去!!!",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 652583,1
+leaveGroup
+Warp 0,1000,233,78
+
+
+
+
+
+
+
+

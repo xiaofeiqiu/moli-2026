@@ -1,0 +1,31 @@
+block item 200503 >= 1
+endwindow "\n\n这是写给我父亲的信,麻烦您交给他,希望希瑞没出什么事."
+
+
+
+block item 200502 >= 1
+window "\n\n什么?你把整个城都找遍了,还没找到希瑞.",next
+window "\n\n这么久了,我有点担心啊,你帮我去哈依帝鲁贝堡找我们当差的父亲卡塔尔,让他想想办法,我去亲戚家找找看,是不是躲在他们家玩去了.",ok
+window_ok
+killitem 200502
+giveitem 200503
+
+
+
+block item 200500 >= 1
+endwindow "\n\n你只要在城里提她的名字,基本上本城的人都认识她."
+
+
+block
+window "\n\n咦～我叫妹妹去酒吧食品店找倪米丽买条鱼回来,怎么到现在还没回家!",next
+window "\n\n陌生的好心人,你能否帮我去找找?",yes,no
+window_yes
+window "\n\n她的名字很好记叫「希瑞」",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200500
+
+
+
+

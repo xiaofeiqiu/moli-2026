@@ -1,0 +1,12 @@
+block item 1000811 == 1
+	window"\n\n  快点去吧！",OK
+		window_ok
+block Item 1000799 == 1
+	Window "\n\n　小山茶的妈妈绑架了",next
+	Window "\n\n　谢谢你帮我,好心人",OK
+		Window_OK
+			killitem 1000799
+			giveitem 1000811
+block
+	window"\n\n 你有什么事？",OK
+		window_OK

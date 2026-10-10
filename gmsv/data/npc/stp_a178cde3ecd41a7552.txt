@@ -1,0 +1,22 @@
+block endevent 663 == 1
+endwindow"\n\n 欢迎来到罗斯城哦!"
+
+block nowevent 571 == 1 || nowevent 572 == 1 || nowevent 573 == 1
+endwindow"\n\n 欢迎来到罗斯城哦!"
+
+block item 40580 == 1 ||item 40581 == 1 ||item 40582 == 1 ||item 40583 == 1 ||item 40584 == 1
+endwindow"\n\n 欢迎来到罗斯城哦!"
+
+
+block
+window"\n\n 关于罗斯城里的湖,还有一个美丽的传说",next
+window"\n\n 传说 ,哈利亚有4个神明在守护着。风之神明背有双翼，疾步如风\n似乎连肉眼都无法捕捉到",next
+window"\n\n\n 炎之神明 焰如晚霞 双翅遮天，\n犹如熊熊圣火 永不熄灭",next
+window"\n\n\n 岩之神明 宏伟如山,\n可屹立几年不动",next
+window"\n\n\n 水之神明 长如绞绳,\n叫一声可风云大作狂风怒吼",next
+window"\n\n 可惜! 这些毕竟是传说..无从考证...不过有一天下暴风雨 听镇里人说看到一条黑影盘旋在空中,可能是幻觉吧",next
+window"\n\n 似乎你对此事很后兴趣呢 !你可以去问一个人,\n@c不过没有酒 他是不会说什么的哦",next
+window"\n\n …………酒，要100000 要购买吗",ok
+window_ok
+addgold -100000
+giveitem 40583

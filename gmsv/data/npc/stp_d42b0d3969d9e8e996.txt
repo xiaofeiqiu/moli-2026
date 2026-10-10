@@ -1,0 +1,39 @@
+block petlevel 70018 >= 1 && petlevel 70019 >= 1 && petlevel 70020 >= 1 && petlevel 70021 >= 1
+	window "\n\n@c勇士哥哥，你又来找我玩啦~~~~",next
+	window "\n\n@c噢？这4只寄居蟹你不喜欢了哦？那要不然我换成可爱的便便寄居蟹变身卡给你好不好呀！",yes,no
+	window_no
+
+	window_yes petlevel 70018 >= 1 && petlevel 70019 >= 1 && petlevel 70020 >= 1 && petlevel 70021 >= 1 && petSpace < 1
+	Endwindow "\n\n@c哥哥你背包里有5个宠物，我怕跟你交换错了呢。"
+
+	window_yes petlevel 70018 >= 1 && petlevel 70019 >= 1 && petlevel 70020 >= 1 && petlevel 70021 >= 1 && itemSpace < 1
+	Endwindow "\n\n@c哥哥你的背包太满了呢。"
+
+	window_yes petlevel 70018 >= 1 && petlevel 70019 >= 1 && petlevel 70020 >= 1 && petlevel 70021 >= 1 && petSpace == 1
+	killpeth 70018
+	killpeth 70019
+	killpeth 70020
+	killpeth 70021
+	giveitem 81034,1
+
+
+block item 81033 >= 1
+	window "\n\n@c那么快就把药水制作好了，那我带你去我们的家园吧，里面还有好多魔族把守，我只能带你到入口。\n\n剩下的就靠你了勇士……",ok
+	window_ok item 81033 >= 1
+	LeaveGroup
+	Warp 0,228,6,29
+
+block item 81032 >= 1
+	Endwindow "\n\n@c也不知道那个人还在不在魔法大学，不论如何，还是麻烦勇士走一趟了..."
+
+block
+	window "\n\n@c呜呜呜...\n\n谁能帮帮我，这些外来的魔族简直是太坏了...",next
+	window "\n@c不知道为什么，这段时间突然来了好多植物系的魔族，挟持了我们大王，更有一个坏蛋把我们花仙和树精融合在一起，制造出了恐怖的食人花。所有小伙伴都被困住了，只有我运气好偷偷逃出来了...",next
+	window "\n\n@c真的吗?你真的可以帮助我吗?...可是那些怪物真的好恐怖诶...",next
+	window "\n\n@c噢?你就是传说中的法兰王国的人?听长老们说过，多年前在法兰王国有个叫里雍的冒险者也帮助过我们。",next
+	window "\n@c真是太好了，我想我和我的小伙伴这下有救了。要打败这些恐怖的怪物恐怕只靠你一个人的能力还不够，食人花的毒性太强大了，你要带上特制的驱毒药水才出发。",next
+	window "\n\n@c传说当年的里雍勇士是在魔法大学找人制作出来的，并且需要我们花仙的叶子作为药引，另外还需要找到妖草的血和曼陀罗草的皮。",ok
+	window_ok item 81032 == 0 && itemSpace < 1
+	Endwindow "\n\n@c你的背包里已经装不下了噢..."
+	window_ok item 81032 == 0 && itemSpace >= 1
+	giveitem 81032,1

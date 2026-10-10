@@ -1,0 +1,21 @@
+block item 87615 == 1
+endwindow "\n\n海神一族送你的礼物要好好珍惜。"
+
+block item 87613 == 1
+window "\n\n恩，人鱼是海族，你还因为寻找夜明珠卷入了海神一族的纠纷，听起来真是精彩！",next
+endwindow "\n\n有关这海族宝珠的事情，我好像记得在哪里听到过，你去问问镇里的一些居民吧。"
+
+block item 87610 == 1
+endwindow "\n\n关于夜明珠的事情也只有历任镇长才能知道。"
+
+block item 87609 == 1
+window "\n\n我一看你手里的信就知道灯塔方面遇到困难了。",next
+window "\n\n灯塔光源？我知道了，可惜我们跟法兰失去联系很长时间了很多这方面的零部件都得不到补充。",next
+window "\n\n为了尽快的解决这问题，只要你找到夜明珠就行，不过夜明珠被海神一族看管着。",next
+window "\n\n你觉得自己实力不错的话，可以前往本岛的北方，那有个洞口就是那海神一族所在的无极深渊入口。",ok
+window_ok
+killitem 87609
+giveitem 87610
+
+block
+endwindow "\n\n欢迎来到西尔维镇！"

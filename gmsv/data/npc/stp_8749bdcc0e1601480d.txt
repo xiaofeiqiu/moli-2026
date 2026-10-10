@@ -1,0 +1,12 @@
+block item 200152 == 1 && item 200153 == 1 && item 200154 == 1 && item 200155 == 1 && item 200156 == 1
+window "\n\n提示:即将传送,请组队.",ok
+window_ok
+killitem 200152
+killitem 200153
+killitem 200154
+killitem 200155
+killitem 200156
+Warp 0,131,17,52
+
+block
+endwindow "\n\n身上的记忆不齐全,无法传送."

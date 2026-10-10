@@ -1,0 +1,216 @@
+#####有任意天数债券时#####
+block item 39638 == 1 || item 39639 == 1 || item 39640 == 1 || item 39641 == 1 || item 39642 == 1
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+#####麻布披风#####
+block StrCmpChat == 9052
+Window "\n\n你确定要用5个法兰王国纪念币兑换麻布披风吗",yes,no
+window_no
+window_yes itemspace == 0 || item 39643 < 5
+EndWindow "\n\n抱歉你无法兑换奖励\n\n你身上没有5个法兰王国纪念币\n\n也可能是你背包满啦"
+window_yes
+killitem 39643,5
+giveitem 39644
+EndWindow "\n\n欢迎下次再来"
+
+#####木棉披风#####
+block StrCmpChat == 9053
+Window "\n\n你确定要用10个法兰王国纪念币兑换木棉披风吗",yes,no
+window_no
+window_yes itemspace == 0 || item 39643 < 10
+EndWindow "\n\n抱歉你无法兑换奖励\n\n你身上没有10个法兰王国纪念币\n\n也可能是你背包满啦"
+window_yes
+killitem 39643,10
+giveitem 39645
+EndWindow "\n\n欢迎下次再来"
+
+#####毛毡披风#####
+block StrCmpChat == 9054
+Window "\n\n你确定要用25个法兰王国纪念币兑换毛毡披风吗",yes,no
+window_no
+window_yes itemspace == 0 || item 39643 < 25
+EndWindow "\n\n抱歉你无法兑换奖励\n\n你身上没有25个法兰王国纪念币\n\n也可能是你背包满啦"
+window_yes
+killitem 39643,25
+giveitem 39646
+EndWindow "\n\n欢迎下次再来"
+
+#####棉披风#####
+block StrCmpChat == 9055
+Window "\n\n你确定要用35个法兰王国纪念币兑换棉披风吗",yes,no
+window_no
+window_yes itemspace == 0 || item 39643 < 35
+EndWindow "\n\n抱歉你无法兑换奖励\n\n你身上没有35个法兰王国纪念币\n\n也可能是你背包满啦"
+window_yes
+killitem 39643,35
+giveitem 39647
+EndWindow "\n\n欢迎下次再来"
+
+#####绢布披风#####
+block StrCmpChat == 9056
+Window "\n\n你确定要用60个法兰王国纪念币兑换绢布披风吗",yes,no
+window_no
+window_yes itemspace == 0 || item 39643 < 60
+EndWindow "\n\n抱歉你无法兑换奖励\n\n你身上没有35个法兰王国纪念币\n\n也可能是你背包满啦"
+window_yes
+killitem 39643,60
+giveitem 39648
+EndWindow "\n\n欢迎下次再来"
+
+#####取7天#####
+block StrCmpChat == 9047
+Window "\n\n你确定要用7天的法兰王国国债券提前取出魔币吗?\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!",yes,no
+window_no
+window_yes itemspace == 0 || gold >= 1
+EndWindow "\n\n抱歉你无法兑换债券和奖励\n\n身上必须0魔币才能兑换\n\n也可能是你背包满啦"
+window_yes itemcreatetime 39638 < 10080
+killitem 39638
+addgold 900000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+window_yes itemcreatetime 39638 >= 10080
+Window "\n\n感叹终于等到第7天对吧?你可以获得3枚法兰王国纪念币\n\n同时返还你的魔币100万",ok
+window_ok
+killitem 39638
+giveitem 39643,3
+addgold 1000000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+
+#####取15天#####
+block StrCmpChat == 9048
+Window "\n\n你确定要用15天的法兰王国国债券提前取出魔币吗?\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!",yes,no
+window_no
+window_yes itemspace == 0 || gold >= 1
+EndWindow "\n\n抱歉你无法兑换债券和奖励\n\n身上必须0魔币才能兑换\n\n也可能是你背包满啦"
+window_yes itemcreatetime 39639 < 21600
+killitem 39639
+addgold 900000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+window_yes itemcreatetime 39639 >= 21600
+Window "\n\n感叹终于等到第15天对吧?你可以获得5枚法兰王国纪念币\n\n同时返还你的魔币100万",ok
+window_ok
+killitem 39639
+giveitem 39643,5
+addgold 1000000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+
+#####取30天#####
+block StrCmpChat == 9049
+Window "\n\n你确定要用30天的法兰王国国债券提前取出魔币吗?\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!",yes,no
+window_no
+window_yes itemspace == 0 || gold >= 1
+EndWindow "\n\n抱歉你无法兑换债券和奖励\n\n身上必须0魔币才能兑换\n\n也可能是你背包满啦"
+window_yes itemcreatetime 39640 < 43200
+killitem 39640
+addgold 900000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+window_yes itemcreatetime 39640 >= 43200
+Window "\n\n感叹终于等到第30天对吧?你可以获得11枚法兰王国纪念币\n\n同时返还你的魔币100万",ok
+window_ok
+killitem 39640
+giveitem 39643,11
+addgold 1000000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+
+#####取45天#####
+block StrCmpChat == 9050
+Window "\n\n你确定要用45天的法兰王国国债券提前取出魔币吗?\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!",yes,no
+window_no
+window_yes itemspace == 0 || gold >= 1
+EndWindow "\n\n抱歉你无法兑换债券和奖励\n\n身上必须0魔币才能兑换\n\n也可能是你背包满啦"
+window_yes itemcreatetime 39641 < 64800
+killitem 39641
+addgold 900000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+window_yes itemcreatetime 39641 >= 64800
+Window "\n\n感叹终于等到第45天对吧?你可以获得17枚法兰王国纪念币\n\n同时返还你的魔币100万",ok
+window_ok
+killitem 39641
+giveitem 39643,17
+addgold 1000000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+
+#####取60天#####
+block StrCmpChat == 9051
+Window "\n\n你确定要用60天的法兰王国国债券提前取出魔币吗?\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!",yes,no
+window_no
+window_yes itemspace == 0 || gold >= 1
+EndWindow "\n\n抱歉你无法兑换债券和奖励\n\n身上必须0魔币才能兑换\n\n也可能是你背包满啦"
+window_yes itemcreatetime 39642 < 86400
+killitem 39642
+addgold 900000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+window_yes itemcreatetime 39642 >= 86400
+Window "\n\n感叹终于等到第60天对吧?你可以获得24枚法兰王国纪念币\n\n同时返还你的魔币100万",ok
+window_ok
+killitem 39642
+giveitem 39643,24
+addgold 1000000
+EndWindow "\n\n欢迎下次再购买法兰王国国债券"
+
+#####存7天#####
+block StrCmpChat == 9042
+Window "\n\n要换取7天的法兰王国国债券吗?",yes,no
+window_no
+Window_yes gold < 1000000 || itemspace == 0
+EndWindow "\n\n抱歉你无法购买债券\n\n可能钱不够,国债价格是100万\n\n也可能是你背包满啦"
+Window_yes
+Addgold -1000000
+Giveitem 39638
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+#####存15天#####
+block StrCmpChat == 9043
+Window "\n\n要换取15天的法兰王国国债券吗?",yes,no
+window_no
+Window_yes gold < 1000000 || itemspace == 0
+EndWindow "\n\n抱歉你无法购买债券\n\n可能钱不够,国债价格是100万\n\n也可能是你背包满啦"
+Window_yes
+Addgold -1000000
+Giveitem 39639
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+#####存30天#####
+block StrCmpChat == 9044
+Window "\n\n要换取30天的法兰王国国债券吗?",yes,no
+window_no
+Window_yes gold < 1000000 || itemspace == 0
+EndWindow "\n\n抱歉你无法购买债券\n\n可能钱不够,国债价格是100万\n\n也可能是你背包满啦"
+Window_yes
+Addgold -1000000
+Giveitem 39640
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+#####存45天#####
+block StrCmpChat == 9045
+Window "\n\n要换取45天的法兰王国国债券吗?",yes,no
+window_no
+Window_yes gold < 1000000 || itemspace == 0
+EndWindow "\n\n抱歉你无法购买债券\n\n可能钱不够,国债价格是100万\n\n也可能是你背包满啦"
+Window_yes
+Addgold -1000000
+Giveitem 39641
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+#####存60天#####
+block StrCmpChat == 9046
+Window "\n\n要换取60天的法兰王国国债券吗?",yes,no
+window_no
+Window_yes gold < 1000000 || itemspace == 0
+EndWindow "\n\n抱歉你无法购买债券\n\n可能钱不够,国债价格是100万\n\n也可能是你背包满啦"
+Window_yes
+Addgold -1000000
+Giveitem 39642
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+#####默认对话#####
+Block
+Window "\n\n你好,这里是法兰王国国债发行处,如果您购买法兰王国国债,则会收到王国给予的丰厚奖励.\n国债的发行以1000000金钱为单位.",next
+Window "\n国债分为5种,分别是:\n\n7天期　15天期　30天期　45天期　60天期\n\n在购买对应的国债后,到达期限后就可以来我这里领回购买国债时所花费的金钱.并能收到法兰王国给予的奖励.",next
+Window "\n如果您要购买国债,请告诉我您要存几天:\n\n存7天　存15天　存30天　存45天　存60天\n\n取的时候也要打:\n\n取7天　取15天　取30天　取45天　取60天",next
+Window "\n\n当然你也可以在我这里将法兰王国纪念币兑换成相应的奖品.只需要您说出想要兑换的奖品名称.每种奖品对应的硬币数如下",next
+Window "\n麻布披风=====5枚\n\n木棉披风=====10枚\n\n毛毡披风=====20枚\n\n棉被风=======35枚\n\n绢布披风=====60枚",next
+EndWindow "\n\n特别提醒您哦\n\n如果未到期间就兑换国债的话\n\n会被扣除10%的手续费!请特别注意!"
+
+
+
+

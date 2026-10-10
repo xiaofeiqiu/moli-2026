@@ -1,0 +1,35 @@
+block item 86295 >= 1 && item 86296 >= 1 && StrCmpChat == 85242 && jobs >= 84 && item 86297 < 1
+window 85261,ok
+window_ok
+window 85262,next
+window 85263,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86297
+endwindow 85264
+window_ok ItemSpace < 1
+endwindow 85265
+
+block item 86287 >= 1 && item 86291 >= 1 && item 86293 >= 1 && item 86294 < 1 && StrCmpChat == 85241
+window 85266,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86294
+window_ok ItemSpace < 1
+endwindow 85267
+
+block item 86287 >= 1 && item 86291 >= 1 && item 86292 >= 1 && item 86293 < 1
+window 85268,next
+window 85269,next
+window 85270,next
+window 85271,next
+window 85272,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 86292
+GiveItem 86293
+window_ok ItemSpace < 1
+endwindow 85273
+
+block
+endwindow 85274

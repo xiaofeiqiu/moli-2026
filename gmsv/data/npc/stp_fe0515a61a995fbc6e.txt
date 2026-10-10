@@ -1,0 +1,8 @@
+block item 200702 >= 1 && floor == 43000 && Xpos == 369 && Ypos == 483
+window "\n\n要吹响这个号角吗?",yes,no
+window_yes
+window "\n\n耳边传出一个声音,前方海面上发出一道刺眼的光芒!啊…身体无法动弹了.\n\n渐渐地…失去了知觉.",ok
+window_ok
+killitem 200702
+leavegroup
+Warp 0,60011,43,39

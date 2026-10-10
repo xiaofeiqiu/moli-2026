@@ -1,0 +1,14 @@
+block Item 3801 == 1
+window "你手上的戒指???",next
+window "我是ONePIece.",next
+window "原来真的是你解救我的?",yes,no
+window_no
+window_yes
+window "\n\n由于我的魔性十分强大\n\n你手上的戒指还是还给我吧\n\n不过有一个小小的决斗!",ok
+window_ok Item 3801 == 1
+changePal 8,6
+Encount 3|0,60303,62,26||0|||||0|360116|||||||||
+
+	
+block
+endwindow "\n\n歌姬的意念正在法兰城内求救,哎...",ok

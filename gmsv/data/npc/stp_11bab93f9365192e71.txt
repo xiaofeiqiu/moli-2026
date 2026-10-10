@@ -1,0 +1,12 @@
+block Luac stp:legacy:4528e5fe9054f4c411fd >= 1 && Luac stp:legacy:98d8b52af954e2828277 >= 1
+endwindow 7020317
+
+block Luac stp:legacy:14bff13302a47247a040 >= 1
+window 7020318,yes,no
+window_yes petspace >= 1
+LeaveGroup
+killitem 1000751
+givepet (3000552%20,3000553%20,11%10,301%5,301%20,401%20,501%20,1%20)
+window_yes petspace < 1
+endwindow 7020319
+window_no

@@ -1,0 +1,38 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【魔术机甲】吗？",ok
+			Window_ok
+Luac stp:legacy:15487d6e2c0aca7e7b85
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【魔术机乙】吗？",ok
+			Window_ok
+Luac stp:legacy:3e7ddcf15098c9139077
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【魔术机丙】吗？",ok
+			Window_ok
+Luac stp:legacy:e12b744b923853d47603
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【魔术机丁】吗？",ok
+			Window_ok
+Luac stp:legacy:bdd0058f7c0fda06fd41
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【魔术机戊】吗？",ok
+			Window_ok
+Luac stp:legacy:b6167410ce75645c0a16
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【魔术机己】吗？",ok
+			Window_ok
+Luac stp:legacy:271ea0a832c8eb8ad974
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【魔动铠甲】吗？",ok
+			Window_ok
+Luac stp:legacy:0585d8e5effc867d5e63
+				endif
+

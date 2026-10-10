@@ -1,0 +1,17 @@
+block item 730050 == 1
+EndWindow "\n\n请带上这张卡片到义勇军前哨站找我的弟弟【埃尔斯多】吧,他会负责引导你们的."
+
+block item 730047 == 1
+Window "\n\n你好,这里是萨蒂神殿试炼招募登记处,我是总负责人埃尔斯潘.",next
+Window "\n\n勇敢的冒险者啊,你可有信心来挑战它?",yes,no
+Window_no
+Window_yes
+Window "\n\n欢迎你的挑战,勇敢的冒险者,我期待你的胜利归来!那么你是否做好了参加挑战的准备了呢?",yes,no
+Window_no
+Window_yes
+Window "\n\n以义勇军的名义,祝你胜利归来!",next
+Window "\n\n请带上这张卡片到义勇军前哨站找我的弟弟【埃尔斯多】吧,他会负责引导你们的.",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏不够了."
+Window_ok item 730047 == 1
+giveitem 730050

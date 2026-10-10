@@ -1,0 +1,17 @@
+block item 1000464 == 0 && item 1000465 == 1
+	Window"\n\n感谢你们勇士，愿天使保用你们!请把这份报告书交给战争学院的炽天使之主·米伽鲁！",yes,no
+		Window_no
+		Window_yes
+killitem 1000465,1
+giveitem 1000464,1
+
+block item 1000470 == 0 && item 1000464 == 0 && item 1000463 == 0 && item 1000462 == 0 && item 1000461 == 0
+	Window"\n\n你们好，是来帮助我们的人吗？",yes,no
+		Window_no
+		Window_yes
+	Window"\n\n对没错！是纳萨里克林地出事了！曾静是我们热爱的大地可现在，魔王！一定要消灭它！请麻烦你去精灵物语找到桂，她现在可能遇到了麻烦。",ok
+		Window_ok level >= 100 && item 1000470 == 0
+			giveitem 1000470,1
+
+block item 1000470 == 1
+	endWindow"\n\n拜托你了！就在村子南边的出口，能找到一个去往精灵物语的传送石。"

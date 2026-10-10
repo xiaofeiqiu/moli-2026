@@ -1,0 +1,13 @@
+block endevent 584 == 1
+Window "\n\n谢谢你们,请尽快去帮助其他人吧",yes,no
+Window_no
+Window_yes endevent 584 == 1
+endEvent 584 = 0
+Warp 0,64077,57,187
+
+block endevent 584 == 0
+Window "\n\n水之精灵情况不对,要帮忙吗?",yes,no
+Window_no
+Window_yes endevent 584 == 0
+endEvent 584 = 1
+Encount 3||||||0|||900031|||||||||

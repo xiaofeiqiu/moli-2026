@@ -1,0 +1,48 @@
+block
+	LocalCount0 = random 9,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【银狮】吗？",ok
+			Window_ok
+Luac stp:legacy:a103a47c7b2694ac1ee6
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【黄铜怪】吗？",ok
+			Window_ok
+Luac stp:legacy:c4424ca6c62eb3d8e33e
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【铁狮】吗？",ok
+			Window_ok
+Luac stp:legacy:09de63c447087a35abdc
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【红铜怪】吗？",ok
+			Window_ok
+Luac stp:legacy:f3f197d5956460e10657
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【银风狮】吗？",ok
+			Window_ok
+Luac stp:legacy:c3e597e6cecaa537cca7
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【火铁狮】吗？",ok
+			Window_ok
+Luac stp:legacy:ee481c60b74e1db487f9
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【大地铜狮】吗？",ok
+			Window_ok
+Luac stp:legacy:0b6ef61b39cfa653cc52
+				endif
+	if localcount0==8
+		window "\n\n@c要将随从的形象永久变为【幻狮】吗？",ok
+			Window_ok
+Luac stp:legacy:a439ad7da8f9bde8d3dc
+				endif
+	if localcount0==9
+		window "\n\n@c要将随从的形象永久变为【醒狮】吗？",ok
+			Window_ok
+Luac stp:legacy:eeeb414c75c163cdfe2e
+				endif
+

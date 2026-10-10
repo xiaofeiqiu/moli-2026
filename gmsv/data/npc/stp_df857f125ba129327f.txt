@@ -1,0 +1,6 @@
+block
+	Window "\n\n\n@c不管你是谁。。来我这里的。没人能活着出去!",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c滚开",OK
+	Window_YES
+Encount 2|0,1000,162,130|||||0|||6000145|||||||||

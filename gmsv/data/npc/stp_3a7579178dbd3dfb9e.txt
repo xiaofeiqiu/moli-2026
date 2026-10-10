@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【哥布林】吗？",ok
+			Window_ok
+Luac stp:legacy:3647fece8fe7e4fba8ff
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【红帽哥布林】吗？",ok
+			Window_ok
+Luac stp:legacy:b0198d793f82bdc09005
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【火焰哥布林】吗？",ok
+			Window_ok
+Luac stp:legacy:b170fd1cc0100e348b4b
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【烈风哥布林】吗？",ok
+			Window_ok
+Luac stp:legacy:551d6e68733f93d9b980
+				endif
+

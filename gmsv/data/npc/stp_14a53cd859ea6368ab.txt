@@ -1,0 +1,9 @@
+block item 50972 >= 1
+Window "\n\n我们要去贝尼恰斯火山,你做好准备出发了么.",ok
+Window_ok item 50972 >= 1
+LeaveGroup
+Warp 0,57133,53,46
+
+
+block
+Endwindow"\n\n\n愿龙神的祝福常在你身."

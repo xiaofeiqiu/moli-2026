@@ -1,0 +1,11 @@
+block Item 1000252 == 1
+	Endwindow"\n\n快去找亚留特的”阿姆的老大”给你解析称号吧。"
+
+block ItemCreateTime 39668 < 30 && Item 1000251 == 1
+	Window"\n\n咿，你怎么知道我在这啊，太感谢你了，这个”称号解析信”你先拿着吧。",next
+	Window"\n\n由于我元气大伤，现在无法给你解析，你拿着他到亚留特的一个房子内找我的朋友”阿姆的老大”就明白了。",ok
+		Window_ok Item 1000251 == 1
+			killitem 1000251,1
+			giveitem 1000252,1
+block
+	Message 70090

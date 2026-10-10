@@ -1,0 +1,14 @@
+block item 113 >= 1
+endwindow "\n\n被抓走了,被抓走了,好害怕..."
+
+
+block item 114 >= 1 && item 18403 >= 1
+endwindow "\n\n你打倒了坏人也不能救出我的伙伴吗?还是很谢谢你!"
+
+	
+block item 119 == 1
+window "\n\n好害怕丫...那个洞里...伙伴都被抓走了...\n\n这是主人的东西,你一定要带回去给她!如果能救救我的伙伴我会很感谢你!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 113,1

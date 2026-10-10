@@ -1,0 +1,10 @@
+block item 60003>= 1
+endwindow "\n\n拒绝黄牛倒卖."
+
+block item 60002>= 1
+window "\n\n今天是我酿制葡萄酒喜迎30周年,在这一天对民众开放购买,你要买葡萄酒吗？每瓶售价1万魔币.",yes,no
+window_yes gold < 10000
+endwindow "\n\n你的金币不够。"
+window_yes
+AddGold -10000
+giveitem 60003

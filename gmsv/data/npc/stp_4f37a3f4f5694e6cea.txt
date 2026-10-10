@@ -1,0 +1,26 @@
+######âú¿ÞµÄÁé»ê######
+block item 795154 == 1
+endwindow 8000091
+block nowevent 562 == 1 && item 795153 == 1
+window 8000092,yes,no
+window_yes item 795153 == 1
+nowevent 562 = 0
+killitem 795153
+killitem 795151
+giveitem 795154
+endwindow 8000093
+block item 795152 == 1
+endwindow 8000094
+
+
+block item 795151 >= 1
+endwindow 8000095
+
+block item 795150 == 1
+window 8000096,yes,no
+window_yes item 795150 == 1
+killitem 795150
+giveitem 795151
+endwindow 8000097
+window_no
+killitem 795150

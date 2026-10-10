@@ -1,0 +1,35 @@
+block item 88352 == 1 && item 88390 == 1
+window "\n\n你的事迹已经传为艾尔巴尼亚国的佳话，女王陛下也为之大悦。",next
+window "\n\n月魔石你就放心吧，禁卫军已经全面接手看护月魔石的封印盒了。不过至此你也到光荣退役的时候了，女王陛下特别准备了厚礼犒劳你的功绩。",ok
+window_ok
+killitem 88352
+killitem 88390
+givepet 1
+
+block item 88352 == 1
+endwindow "\n\n请您上2楼向你们兵团长报道！"
+
+block item 88351 == 1
+window "\n\n恭喜您成为一名真正的士兵，这是您的身份证明，请务必收好！",ok
+window_ok
+killitem 88351
+giveitem 88352
+endwindow "\n\n您现在已被安排在艾尔巴尼亚国后备役第33兵团服役，请您上2楼向你们兵团长报道！"
+
+block item 88350 == 1
+endwindow "\n\n接受士兵长武艺考试,可以寻找外援或同僚,以组队方式进行武艺应试。"
+
+block level >= 80
+window "\n\n你想报名参加艾尔巴尼亚国军队吗？",yes,no
+window_no
+window_yes
+window "\n\n恭喜您即将成为我们的一员，不过在此之前要先获得我们士兵长的武艺考试。",next
+window "\n\n通过武艺考试后，你将成为一名真正的士兵，请您拿着入伍考试卡前往隔壁兵营找士兵长进行武艺考试！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+LeaveGroup
+giveitem 88350
+
+block
+endwindow "\n\n凡满80级的本国平民或异地冒险者均可报名参加艾尔巴尼亚国军队！"

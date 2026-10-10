@@ -1,0 +1,5 @@
+block item 800026 == 1
+	Window"\n\n请把这份报告带回去给指挥官。",ok
+		Window_ok item 800026 == 1 && item 800027 == 0
+		giveitem 800027
+		Window_ok

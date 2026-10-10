@@ -1,0 +1,34 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【戴靴怪】吗？",ok
+			Window_ok
+Luac stp:legacy:da42e487da9e51b8dcd9
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【舞靴怪】吗？",ok
+			Window_ok
+Luac stp:legacy:a32edc57d00c6eb9bd1f
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【潜靴怪】吗？",ok
+			Window_ok
+Luac stp:legacy:d19195c09c46ab93d3ec
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【咚咚靴怪】吗？",ok
+			Window_ok
+Luac stp:legacy:eead933556a2437b2347
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【耶诞帽怪】吗？",ok
+			Window_ok
+Luac stp:legacy:dde12a69d97190309619
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【白色耶诞怪】吗？",ok
+			Window_ok
+Luac stp:legacy:835068b5b052d65babaa
+				endif
+
+

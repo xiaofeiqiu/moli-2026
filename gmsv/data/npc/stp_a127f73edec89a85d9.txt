@@ -1,0 +1,12 @@
+block item 87698 == 1
+endwindow "\n\n你见到朱雀大人了吗？"
+
+block item 87699 == 1
+window "\n\n尊敬的救世主啊，朱雀大人已经等你好久了，请随我来吧。",ok
+window_ok
+leavegroup
+killitem 87699
+Warp 0,29960,96,76
+
+block
+endwindow "\n\n在索奇亚沙漠中就只有这么一片绿洲！"

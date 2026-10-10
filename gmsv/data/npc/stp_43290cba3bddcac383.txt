@@ -1,0 +1,20 @@
+block item 87650 == 1
+window "\n\n刚才我接到消息，储备库的幽灵已经被您驱散了，非常感谢您的协助！让蕾欧娜村得以重获安宁。这是议会对您的嘉奖，请您务必收下！再次感谢您的大力协助！",ok
+window_ok
+killitem 87650
+giveitem 87651
+
+block item 87647 == 1
+endwindow "\n\n那么就拜托你了，请多加小心！"
+
+block havetitle == 1048
+window "\n\n杰诺姆岛的民宅在蕾欧娜村，如今那里居然会有幽灵出没，搞的大家都没办法进去储备物资了...士兵们不敢去和幽灵战斗，我正在招募敢于面对幽灵的勇士去前往调查，您要报名吗？",yes,no
+window_no
+endwindow "\n\n看来有些勉强啊...，下一个下一个~"
+window_yes
+window "\n\n这个“议会特派员证明”请收好别弄丢了，到克雷姆村里找史贝克，给他看这个证件就能去地下室了。",ok
+window_ok
+giveitem 87647
+
+block
+endwindow "\n\n我正在招募敢于面对幽灵的勇士"

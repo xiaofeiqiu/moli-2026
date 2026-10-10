@@ -1,0 +1,11 @@
+block	item 591136>=1||item 591137>=1||item 591138>=1||item 591139>=1
+Endwindow"\n\n@c快快去收集吧！"
+block	itemspace<1
+Endwindow"\n\n\n@c 你的物品满了."
+block
+window"\n\n@c 看到这些菜单真是头疼～\n\n 你愿意帮我去摘这些东西吗?",yes,no
+window_no
+Endwindow"\n\n@c那算了...."
+window_yes
+Giveitem (591136%1,591137%1,591138%1,591139%1)
+Endwindow"\n\n@c快快去收集吧！"

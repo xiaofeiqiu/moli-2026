@@ -1,0 +1,18 @@
+#进入加特洛
+#持有道具
+
+##############  ##############
+block Item 900016 == 1 && Item 18989 != 0
+	Window 900033,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,930,12,23
+
+block Item 900027 == 1 && Item 18989 != 0
+	Window 900058,OK
+	Window_OK
+	LeaveGroup
+	Warp 0,930,12,23
+
+block
+        EndWindow 900034,OK

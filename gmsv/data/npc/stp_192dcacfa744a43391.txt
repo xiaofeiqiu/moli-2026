@@ -1,0 +1,36 @@
+block Item 700098 >= 80
+	window "\n\n\n@c你也在挖土豆吗？",next
+	window "\n\n　我好想要土豆哦，挖来挖去就得了几个大石头，你有土豆就跟我换好不好？",ok
+	window_ok
+	KillItem 700098,80
+	giveitem (1000483%80,1000484%10)
+	EndWindow "\n\n\n@c你还有的话可以继续跟我换哦！"
+
+block Item 700098 >= 60
+	window "\n\n\n@c你也在挖土豆吗？",next
+	window "\n\n　我好想要土豆哦，挖来挖去就得了几个大石头，你有土豆就跟我换好不好？",ok
+	window_ok
+	KillItem 700098,80
+	giveitem (554101%70,554102%30)
+	EndWindow "\n\n\n@c你还有的话可以继续跟我换哦！"
+
+block Item 700098 >= 40
+	window "\n\n\n@c你也在挖土豆吗？",next
+	window "\n\n　我好想要土豆哦，挖来挖去就得了几个大石头，你有土豆就跟我换好不好？",ok
+	window_ok
+	KillItem 700098,40
+	giveitem 554101
+	EndWindow "\n\n\n@c你还有的话可以继续跟我换哦！"
+
+
+
+block Item 700098 >= 20
+	window "\n\n\n@c你也在挖土豆吗？",next
+	window "\n\n　我好想要土豆哦，挖来挖去就得了几个大石头，你有土豆就跟我换好不好？",ok
+	window_ok
+	KillItem 700098,20
+	giveitem (13606%50,13616%50,13626%50,13636%50,13646%50,13656%50,13666%50,13676%50)
+	EndWindow "\n\n\n@c你还有的话可以继续跟我换哦！"
+
+block
+	Endwindow "\n\n\n@c我好想要小土豆哦！"

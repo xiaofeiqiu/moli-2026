@@ -1,0 +1,7 @@
+block item 200110 >= 1
+window "\n\n唔...只是想采集资料吗?\n那随便你好了.",ok
+window_ok
+killitem 200110
+giveitem 200116
+leavegroup
+Warp 0,1530,15,6

@@ -1,0 +1,13 @@
+block item 39706 >= 1
+window "\n\n您就是法兰王国的国王陛下派来的冒险家吗?不久前进入洞窟的迪恩不知道是否平安,如果你进去的话,请务必找到他.也许他能提供给您一些帮助.洞里非常危险,进入前请做好准备.",next
+window "\n\n你已经准备好了吗?",yes,no
+window_no
+endwindow "\n\n请做好准备再来."
+window_yes item 39706 >= 1
+leavegroup
+Warp 0,64088,10,10
+
+
+
+block
+endwindow "\n\n里面很危险,你不能进去."

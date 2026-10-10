@@ -1,0 +1,17 @@
+block item 87690 == 1
+endwindow "\n\n这缆绳我身平也就制作过2条，他的坚韧度也算是世界之最了。"
+
+block item 87685 == 1 && item 87686 >= 1 && item 87687 >= 1 && item 87688 >= 1 && item 87689 >= 1
+window "\n\n莫里先生遇到麻烦了吗？哎~~他肯定又在外面宣传我的手艺精湛了。",next
+window "\n\n让我瞧瞧要我帮他什么忙呢？缆绳？这到很简单，不过据闻这材料特别难弄到，对吧。",next
+window "\n\n以前我也帮忙做过一条，那你就稍微等下我马上给做好。",ok
+window_ok
+killitem 87685
+killitem 87686
+killitem 87687
+killitem 87688
+killitem 87689
+giveitem 87690
+
+block
+endwindow "\n\n我的编织技术可是法兰首屈一指的。"

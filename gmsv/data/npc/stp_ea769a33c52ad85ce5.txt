@@ -1,0 +1,6 @@
+block
+	window"\n\n无数的光点将你围绕,突然腾空而起!\n \n你的身体张出一对翅膀\n \n向法兰城飞去",ok
+	window_ok
+	killitem 3794
+	leavegroup
+	Warp 0,34463,41,87

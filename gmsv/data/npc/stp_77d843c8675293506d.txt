@@ -1,0 +1,13 @@
+block item 61175 >= 1
+window 1900501,yes,no
+window_no
+window_yes 
+killitem 61175
+window 1900502,next
+window 1900503,next
+window 1900504,ok
+window_ok
+Encount 3|||0|||||0|61055|
+
+block
+endwindow 1900505

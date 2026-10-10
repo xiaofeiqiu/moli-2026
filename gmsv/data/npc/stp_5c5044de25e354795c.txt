@@ -1,0 +1,11 @@
+block itemspace == 0
+endwindow "\n\n你的东西太多了"
+
+block item 795150 >= 1 || item 795151 >= 1 || item 795152 >= 1 || item 795153 >= 1 || item 795154 >= 1
+endwindow "\n\n士兵已经断气了."
+
+block level >= 80 || item 795150 == 0 ||item 795151 == 0 || item 795152 == 0 || item 795153 == 0 || item 795154 == 0
+window "\n\n我是驻守在帝娜村的士兵,村子一直很安静,可是有一天来了支军队,对我们展开了进攻,我军死伤无数,我从村子的地下道路逃跑出来,一路上糟到追击,我快不行了...请帮我将这求救信转交给国王",next
+giveitem 795150
+setaction 10
+endwindow "\n\n(说完士兵就死掉了)"

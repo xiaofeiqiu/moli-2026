@@ -1,0 +1,17 @@
+block item 60493 >= 1 && item 60494 >= 1
+window "\n\n哈哈哈哈哈!还是被拆穿了吗!",next
+window "\n\n不错,我不是梅伯尔,叫梅伯尔的早就已经死了.嘿嘿,我有很多很多的兄弟,他们都叫梅伯尔,就让你见识一下吧～",ok
+window_ok item 60493 >= 1 && item 60494 >= 1
+killitem 60493
+killitem 60494
+leavegroup
+Encount 2|||0|||||0|50188|||||||||
+
+
+block
+endwindow "\n\n你好,我是哥拉尔王宫卫队的士兵,我叫梅伯尔."
+
+
+
+
+

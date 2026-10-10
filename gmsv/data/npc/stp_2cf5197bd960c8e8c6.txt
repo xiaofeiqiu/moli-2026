@@ -1,0 +1,26 @@
+block item 87197 == 1
+endwindow "\n\n真是万分之感谢！"
+
+block item 87195 == 1 && item 87193 == 1
+window "\n\n谢谢你们帮我们找回守护之圣物，这是小小谢意请收好！",ok
+window_ok
+LeaveGroup
+killitem 87193
+killitem 87195
+giveitem 87197
+Warp 0,25178,128,241
+
+block item 87193 == 1
+endwindow "\n\n一切拜托了..."
+
+block item 87151 == 1
+window "\n\n你是霍格村的战狼勇士吧，我们看你们是善良的人，能否帮我们一个小忙？",yes,no
+window_no
+endwindow "\n\n原来你跟你们村的侏儒一样贪婪！"
+window_yes
+window "\n\n你们霍格村有位侏儒...他日日夜夜想抢我们守护的黄金，所以我们编了个谎话吓唬他，说只要发誓永远抛弃爱情就可得到黄金，戴上用黄金打造成的指环就可统治世界后，他就乘我们外出就把黄金偷走了！",next
+window "\n\n你们能帮我们找回黄金吗？这可是我们祖传的圣物！",ok
+window_ok
+LeaveGroup
+giveitem 87193
+Warp 0,45274,99,106

@@ -1,0 +1,9 @@
+block
+window "\n\n饶命啊～我教并没有做过伤天害理之事,只是原先在法兰教坛房租太贵,所以才搬到无人问津的黄陵来,没想到国王会来祭祀先祖,我立马搬出去,解散神教.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 60009
+EndEvent 526 = 1
+leavegroup
+Warp 0,1000,153,149

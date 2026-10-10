@@ -1,0 +1,15 @@
+block item 200771 >= 1
+endwindow "\n\n她肯定距离这里不远."
+
+
+
+block item 200770 >= 1
+window "\n\n原来你是来帮忙的,我这里有些线索.\n\n公主殿下最喜欢吃的居然遗落在这里.",ok
+window_ok
+killitem 200770
+giveitem 200771
+
+
+
+block
+endwindow "\n\n找有我事吗?"

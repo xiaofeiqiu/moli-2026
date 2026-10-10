@@ -1,0 +1,9 @@
+block globalFlag 339 == 1 && globalFlag 340 == 0
+window 900334,next
+window 900335,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61132
+globalFlag 340 = 1
+window_ok ItemSpace < 1
+endwindow 900317

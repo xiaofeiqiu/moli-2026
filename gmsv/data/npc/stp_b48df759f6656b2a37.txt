@@ -1,0 +1,13 @@
+
+
+
+#########################################################################
+block petspace == 0
+	EndWindow "\n\n 身上请留好1个宠物位置"
+block Item 670100 >= 1
+	Window"\n\n 你想要打开这神秘的蛋么？",YES,NO
+	Window_NO
+	Window_YES Item 670100 >= 1
+	Killitem 670100,1
+	GivePet 454101
+	EndWindow"\n\n 得到宠物,请确认!",OK

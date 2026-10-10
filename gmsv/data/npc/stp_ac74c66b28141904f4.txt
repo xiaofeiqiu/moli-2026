@@ -1,0 +1,11 @@
+block item 86632 == 1 && item 86633 < 1
+window "\n\n这..这是谁给你的? 这难道是库..嘛,不说也罢,既然你拿着这个说明你有足够的能力,我来把它恢复魔力。",ok
+window_ok
+leavegroup
+killitem 86632
+giveitem 86633
+endwindow "\n\n好了,拿着它回去吧,也许这是所有骑士的命运。"
+
+
+block
+endwindow "\n\n............."

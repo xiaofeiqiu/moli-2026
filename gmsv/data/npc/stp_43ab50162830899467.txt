@@ -1,0 +1,15 @@
+block Level >= 70 && Item 940112 == 1 && Item 940120 == 1
+window "\n\n\n觉醒吧!沉睡的冥神之力!吾赐予你们真正的神力!",ok
+window_ok Item 940112 == 1 && Item 940120 == 1
+killItem 940120,1
+giveItem 940122,1
+leaveGroup
+Warp 0,718,16,19
+
+
+block Item 940112 == 1 || Level >= 69
+endwindow "\n\n\n你好,有什么可以服务的么?"
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

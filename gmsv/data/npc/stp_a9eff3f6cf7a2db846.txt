@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【顽皮炸弹】吗？",ok
+			Window_ok
+Luac stp:legacy:da68dcb7bfcb92baeadf
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【宝贝炸弹】吗？",ok
+			Window_ok
+Luac stp:legacy:4459cc9d3c37f9ca1605
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【大炸弹】吗？",ok
+			Window_ok
+Luac stp:legacy:b3ee7fcf1aac6f64816c
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【漂浮炸弹】吗？",ok
+			Window_ok
+Luac stp:legacy:8445a09514be464f4d41
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【丸子炸弹】吗？",ok
+			Window_ok
+Luac stp:legacy:0a2e4afe2dbfb85f5a29
+				endif
+

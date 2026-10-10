@@ -1,0 +1,17 @@
+#吉娜
+
+#####   #####
+block Item 18989 != 0 && Item 900017 == 1 && Item 900018 == 1
+	gawindow "\n\n    你们人类欲望那难填的沟壑是多么的可耻，想要找到他们就打败我吧！！！",ok
+	window_ok
+Encount 3|0,937,60,31|||||0|||670127|||||||||
+
+
+block Item 18989 != 0 && Item 900028 == 1 && Item 900029 == 1
+	window "\n\n　是你啊，深水的刻印被你开启，我将开启时空之门，加特洛跟美鲁娜正在我的房间等你呢，请进吧",ok
+	Window_OK
+	LeaveGroup
+	Warp 0,937,60,31
+
+block
+	endwindow "\n\n\n\n@c............"

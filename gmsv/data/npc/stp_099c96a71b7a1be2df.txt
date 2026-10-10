@@ -1,0 +1,10 @@
+block
+window "\n\n©Ñ©Ò©n©Ñ©Ò",ok
+window_ok itemspace < 1
+endwindow "\n\nÄãµÄ±³°üÂúÀ²!"
+window_ok
+GiveItem (200783%1,200784%1,200785%1,200786%1,200787%1,200788%1,200789%1)
+leavegroup
+Warp 0,1530,15,6
+
+

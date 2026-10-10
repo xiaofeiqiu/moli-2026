@@ -1,0 +1,12 @@
+block item 715189 >= 1 && item 715190 >= 1 && item 715191 >= 1 && item 715192 >= 1 && petlevel 2 == 1
+killitem 715189
+killitem 715190
+killitem 715191
+killitem 715192
+killpetl 2
+givepet 27086
+
+
+
+block
+endwindow "\n\n好像缺少了某些东西,导致无法使用."

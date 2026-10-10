@@ -1,0 +1,14 @@
+block item 812304 == 1 
+	window "\n\n@c 你是来帮管家拿药的么.....",ok,no
+	window_ok
+	killitem 812304,1
+	giveitem 812305,1
+	giveitem 1000825,1
+	window "请快点送去把......",ok
+	window_no
+	endwindow "\n\n\n@c 噢.... 真可惜啊......"
+block item 812305 == 1
+	endwindow " \n\n\n@c 怎么还不去送给管家呢......"
+
+block item 812304 == 0
+	endwindow " \n\n\n@c 你是谁啊...不认识你..."

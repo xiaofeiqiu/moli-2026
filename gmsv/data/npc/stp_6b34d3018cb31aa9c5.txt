@@ -1,0 +1,10 @@
+block item 200720 >= 1
+window "\n\n魔眼…使你看到我的存在,莫非亡魂,竟能寻觅到此处.\n\n\n如果,你想要去冥界的话,需要留下你的躯体,让你的灵魂跟我走.",ok
+window_ok
+killitem 200720
+leavegroup
+Warp 0,60024,119,190
+
+
+block
+endwindow "\n\n你死了吗?否则怎么会在地狱."

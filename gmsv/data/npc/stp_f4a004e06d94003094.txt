@@ -1,0 +1,31 @@
+block item 87963 == 1
+endwindow 933645
+
+block item 87962 == 1
+window 933646,next
+window 933647,next
+window 933648,ok
+window_ok
+killitem 87962
+giveitem 87963
+
+block item 87958 == 1
+endwindow 933649
+
+block item 87957 == 1 && StrCmpChat == 278807
+window 933650,ok
+window_ok
+killitem 87957
+giveitem 87958
+
+block item 87954 == 1
+endwindow 933651
+
+block
+window 933652,next
+window 933653,next
+window 933654,yes,no
+window_no
+window_yes
+giveitem 87954
+endwindow 933656

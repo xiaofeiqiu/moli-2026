@@ -1,0 +1,15 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block EndEvent 628 == 1 && gold < 1000
+	window "\n\n\n\n@c您的金钱不足1000G，不能清除悬赏任务。",ok
+		Window_ok
+block EndEvent 628 == 1
+	window "\n\n\n\n@c要清除已经接到的悬赏任务吗？\n\n需要手续费1000G。",yes,no
+		Window_yes
+			addgold -1000
+			EndEvent 628 = 0
+		Window_no
+block EndEvent 628 == 0
+	window "\n\n\n\n@c您好，这里是任务清除处，如果您的悬赏任务布告丢失，可以在此处将接到的任务清除，需要手续费1000G。",ok
+		Window_ok

@@ -1,0 +1,5 @@
+block xpos == 3 && ypos == 13
+window "\n\n　听声音好象风雨都停了，还是出去看看吧",ok
+window_ok
+leavegroup
+Warp 0,60191,35,16

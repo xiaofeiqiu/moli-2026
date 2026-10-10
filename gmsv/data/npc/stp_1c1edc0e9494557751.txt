@@ -1,0 +1,34 @@
+block item 652596 >= 5
+window "\n\n哦哦哦,就是这个就是这个!创造新的强力宠物就要依靠这个了,那么你是否愿意与我交换呢?",yes,no
+window_no
+endwindow "\n\n啊啊,你为何就没有研究的精神呢!?"
+window_yes
+window "\n\n十分感谢,那么请收下我的谢意吧!",ok
+window_ok itemspace < 1 || petspace == 0
+endwindow "\n\n背包满了或宠物栏满了!"
+window_ok item 652599 >= 1 && item 652600 >= 1 && item 652601 >= 1 && item 652602 >= 1 && item 652603 >= 1 && petlevel 206 >= 1
+killitem 652599,1
+killitem 652600,1
+killitem 652601,1
+killitem 652602,1
+killitem 652603,1
+killpetl 206
+givepet 12308
+window_ok item 652596 >= 10 && petlevel 204 == 1
+killitem 652596,10
+killpetl 204
+givepet 206
+window_ok
+killitem 652596,5
+giveitem (652599%1,652600%1,652601%1,652602%1,652603%1)
+
+
+
+block
+window "\n\n你好,我是专门研究宠物的学者梅塔,如你所知,神界出现的三座塔中蕴涵着强大的能量.通过研究,我发现只要将其中的能量加以提纯就可以创造出更强的宠物来!",next
+window "\n\n但是我这里得到的蕴涵着这种强大力量的物品太少了,怎么样,要帮我收集相关的道具么?当然了.为了表示我的感谢,只要你给我5个这样的物品我就会送你一张新的强力宠物改造图哦.",next
+window "\n\n而且我还可以用10个这样的物品将一只1级的小恶魔净化成丘比特.",next
+endwindow "\n\n那么,如果你找到了这样的物品,就来找我交换吧!"
+
+
+

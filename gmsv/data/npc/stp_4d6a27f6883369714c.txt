@@ -1,0 +1,14 @@
+block item 730098 >= 1
+window "\n\n独角兽温柔的目光注视着你,某些声音在你的脑中回响.",next
+window "\n\n【追寻者啊,你的来意我已尽知.作为奖励你面对邪恶势力毫不退缩的勇气,请收下我的力量吧.祝你一路平安,归来之时如出发之日一样神采飞扬.】",ok
+window_ok item 730098 >= 1
+killitem 730098
+giveitem 730100
+leavegroup
+Warp 0,4400,40,27
+
+
+
+
+block
+endwindow "\n\n......"

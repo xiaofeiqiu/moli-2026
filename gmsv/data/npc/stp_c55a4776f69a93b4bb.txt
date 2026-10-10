@@ -1,0 +1,46 @@
+######### 圣诞节节庆任务########
+##尼古拉斯
+####只能给一个人通过
+block Group > 1
+LeaveGroup
+
+##有圣诞礼物
+block Item 39871 >= 1
+endwindow "\n\n今年圣诞节又有得忙了,喔呵呵~~"
+
+##有所有圣诞物品
+block Item 39867 >= 1 && Item 39868 >= 1 && Item 39869 >= 1 && Item 39870 >= 1
+window "\n\n小伙子真有你的,这么短的时间就把东西准备好了,这样我就不用烦恼了,这是我准备的圣诞礼物,你就拿一份去吧!",ok
+Window_OK 
+KillItem 39866,1
+KillItem 39867,1
+KillItem 39868,1
+KillItem 39869,1
+KillItem 39870,1
+GiveItem 39871,1
+
+##有圣诞物品任一种(圣诞帽、圣诞鞋、铃铛、麋鹿角)
+block Item 39867 >= 1 || Item 39868 >= 1 || Item 39869 >= 1 || Item 39870 >= 1
+endwindow "\n\n还差几样,拜托你了."
+
+##有圣诞物品明细
+block Item 39866 >= 1
+endwindow "\n\n只剩下一点时间了,希望来得及."
+
+##有啤酒
+block Item 360004 >= 1
+window "\n\n老伯这瓶酒请你喝.",next
+KillItem 360004,1
+window "\n\n年轻人真是好心,像你这么善良的人可不可以再帮我个忙?",yes,no
+Window_YES
+window "\n\n事情是这样,我每年圣诞节都会扮成圣诞老人沿街发送圣诞礼物,可是今年在准备礼物时发现有些圣诞物品不见了,时间又快到,一时之间也不知道去哪准备,所以要麻烦你帮我准备明细表上的物品.除了我以外应该还有其他人也会扮成圣诞老人,所以你可以去问问看,这些物品要去哪准备,最后要麻烦你快点,因为时间就快到了.",ok
+Window_OK itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+GiveItem 39866,1
+Window_NO
+endwindow "\n\n那就不要来烦我."
+
+##一般
+block 
+endwindow "\n\n唔~~快拿酒来."

@@ -1,0 +1,9 @@
+block item 800095 == 1 && HaveTitle == 12921
+	Window"\n\n这里是禁地，不能擅自进入，有什么事吗？！",next
+	Window"\n把信物给我看一下，进去吧！",ok
+	Window_ok 	
+			Leavegroup
+			Warp 0,18088,7,22
+
+block 
+	Window"\n\n这里是禁地，不能擅自进入？！",ok

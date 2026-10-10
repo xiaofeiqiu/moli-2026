@@ -1,0 +1,20 @@
+
+block item 60403==1
+
+Endwindow "你给我记住!!!我一定会回来报仇的......",ok
+
+block item 60400==0
+
+Endwindow "这条村子应该很富裕!~咦!?你是谁?快走开!别挡著大爷发财!!!",ok
+
+block item 60400==1
+
+window "咦!?你竟然有这件宝贝!既然你看到我的真身,那你也别想活著离开这里!!!",yes
+
+window_yes
+        KillItem 60400
+Encount 3|||0|||||0|9991|
+
+
+
+

@@ -1,0 +1,10 @@
+block item 88304 == 1
+endwindow "\n\n地上什么也没有了！"
+
+block
+window "\n\n这不就是我们种下的种子码？你确定要从那一坨坨恶性的东西里拿出来吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+giveitem 88304
+Warp 0,36002,33,19

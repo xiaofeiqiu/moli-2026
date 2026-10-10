@@ -1,0 +1,9 @@
+block
+window"\n\n 呵呵! 做了半辈子的纺织工,一下想要停下可还真是停不下来了呢,虽然手脚已经不灵活了",next
+window"\n\n 为了维持生计，从我这边可以买到法兰城喊话券的哦。前两天有个旅人带来的。",next
+window"\n\n@c …………一个200000 要吗?",yes,no
+window_yes
+addgold -200000
+giveitem 40585
+window_no
+endwindow"\n\n\n@c 不会勉强你的，看来那个旅人也猜到你不会需要这种东西了呢。"

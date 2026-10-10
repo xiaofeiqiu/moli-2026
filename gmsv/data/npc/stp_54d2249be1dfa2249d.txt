@@ -1,0 +1,17 @@
+block item 1000555 >= 1 && item 1000556 < 1
+window 7019515,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 1000555
+window 7019516,ok
+window_ok gold >= 5000
+LeaveGroup
+addgold -5000
+giveitem 1000556
+endwindow 7019517
+window_ok gold < 5000
+endwindow 7019518
+
+block
+endwindow 7019519

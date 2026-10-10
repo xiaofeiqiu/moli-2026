@@ -1,0 +1,6 @@
+Block
+Window "线索已经齐全。战胜龙王的残影后，我会用调查凭证为你换取圣剑。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:b61ade755b45f058cff4

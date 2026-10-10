@@ -1,0 +1,17 @@
+block
+window "召唤之书!",next
+window "要召唤出传说中的神兽需要一只[1级亚特拉斯巨神]作祭品!",next
+window "要召唤出神兽吗?",yes,no
+window_yes petlevel 814 == 1
+        KillItem 60406
+	KillPetl 814,1
+        GivePet 9218
+
+window_yes petlevel 814 >= 2
+Endwindow "您好像没有[1级亚特拉斯巨神]祭品!",ok
+
+window_yes Petspace <= 1
+Endwindow "您好像没有宠物栏位!",ok
+
+window_no
+Endwindow

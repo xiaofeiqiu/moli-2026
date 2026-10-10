@@ -1,0 +1,17 @@
+###dodo_item_715245.txt
+###物品收集单点2下可以得知第二次集会要给联络人的贡品.
+###第二次的物品收集单
+
+
+block Item 715245 >= 1
+window "\n\n此张纸条具有自动保密的机能效果\n阅读之后将会自动销毁\n你是否要现在阅读此纸条?",yes,no
+Window_NO 
+Window_YES
+window "\n\n你所需要收集的物品是:\n树精卡片3张.\n本纸条将会在5秒后自动销毁!",next
+window "\n\n五",next
+window "\n\n四",next
+window "\n\n三",next
+window "\n\n二",next
+window "\n\n一",next
+window "\n\n～噗啾～",next
+KillItem 715245,(777453) 

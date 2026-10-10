@@ -1,0 +1,22 @@
+block itemspace == 0
+endwindow "\n\n这里是阿鲁巴斯大人的研究所!不准你随便进来!哼!反正你也只是成为魔族食物的份儿!哈哈哈!"
+
+block item 800178 >= 1
+endwindow "\n\n快变成我宠物们的饵食吧!"
+
+
+block
+window "\n\n哈哈哈!没想到你居然进的来.",next
+window "\n\n这就给你吧!然后你就会被我的宠物们打死的.哈哈哈!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 800178,1
+endwindow "\n\n快变成我宠物们的饵食吧!"
+
+
+
+
+
+
+

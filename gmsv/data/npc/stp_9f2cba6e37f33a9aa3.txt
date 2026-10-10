@@ -1,0 +1,6 @@
+Block
+Window "要使用宠物迅速果断卷吗？消耗后效果不可撤销。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:a7f6cfec9cc0f3576e24

@@ -1,0 +1,39 @@
+block	group	>	2
+Endwindow"\n\n\n任务提示：队伍内只能有2个人！"
+block	item 599139	>=	20
+window"\n\n 哇，那是什么… （很贪婪的表情，伸手过来……）\n\n\n <<GM：要趁它不注意揍晕偷跑到对面过去么？>>",yes,no
+window_yes
+Setaction 5
+killitem 599139,20
+killitem 599140,20
+killitem 599141,40
+Warp 0,50,42,30
+window_no
+SystemMessage 54030
+killitem 599139,999
+killitem 599140,999
+killitem 599141,999
+block	item 599140	>=	20
+window"\n\n 哇，那是什么… （很贪婪的表情，伸手过来……）\n\n\n <<GM：要趁它不注意揍晕偷跑到对面过去么？>>",yes,no
+window_yes
+Setaction 5
+killitem 599140,20
+Warp 0,50,42,30
+window_no
+SystemMessage 54030
+killitem 599139,999
+killitem 599140,999
+killitem 599141,999
+block	item 599141	>=	40
+window"\n\n 哇，那是什么… （很贪婪的表情，伸手过来……）\n\n\n <<GM：要趁它不注意揍晕偷跑到对面过去么？>>",yes,no
+window_yes
+Setaction 5
+killitem 599141,40
+Warp 0,50,42,30
+window_no
+SystemMessage 54030
+killitem 599139,999
+killitem 599140,999
+killitem 599141,999
+block
+Endwindow"\n\n 喂，走开。 "

@@ -1,0 +1,16 @@
+block item 88378 == 1 && item 88375 == 1
+window "\n\n你是来竞拍宝物的贵宾吗，本慈善义拍所获钱物都会分发给贫苦百姓哦。不过能让我看看你的请帖好吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88375
+window "\n\n请帖没问题，请跟我走吧！",ok
+window_ok
+LeaveGroup
+Warp 0,14305,22,6
+
+block item 88375 == 1
+endwindow "\n\n慈善义拍？听都没听过，客人你找错地方了吧！"
+
+block
+endwindow "\n\n您好你需要什么服务呢？"

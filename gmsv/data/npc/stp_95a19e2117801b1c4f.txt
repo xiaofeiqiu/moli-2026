@@ -1,0 +1,5 @@
+block	item 591005	>=	1
+killitem 591005,1
+Encount 2|0,0,0,0||0|||||0|530014|||||||||
+block
+Endwindow"\n\n\n@c ¡­¡­¡­¡­¡­¡­¡­¡­"

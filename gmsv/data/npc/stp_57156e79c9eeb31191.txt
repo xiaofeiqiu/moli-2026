@@ -1,0 +1,13 @@
+block item 61084 >= 1
+endwindow 900487
+
+block level >= 60
+window 900488,yes,no
+window_yes
+LeaveGroup
+Encount 3|||0|900196|||||61029|6|2|||6|2|||
+window_no
+endwindow 900489
+
+block
+endwindow 900490

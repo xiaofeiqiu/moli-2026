@@ -1,0 +1,8 @@
+block Item 61026 == 1
+Window 900720,YES,NO
+Window_YES group != 1
+EndWindow 900721,OK
+Window_YES group == 1
+LeaveGroup
+Warp 0,23238,7,4
+Window_NO

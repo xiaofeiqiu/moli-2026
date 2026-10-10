@@ -1,0 +1,9 @@
+block item 87469 == 1
+endwindow "\n\n机关已启动！"
+
+block item 87467 == 1
+window "\n\n你要把水晶球放入机关吗？",yes,no
+window_no
+window_yes
+killitem 87467
+giveitem 87469

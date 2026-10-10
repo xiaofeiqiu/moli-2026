@@ -1,0 +1,8 @@
+block item 88083 == 1
+window 501378,ok
+window_ok
+Warp 0,45141,67,168
+
+block
+window 501379,ok
+window_ok

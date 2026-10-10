@@ -1,0 +1,5 @@
+block	level	<=	110
+	LeaveGroup
+	Warp 0,43131,20,41
+block
+Endwindow"\n\n\n@c 小于 110 级的人物才可入内。"

@@ -1,0 +1,6 @@
+block
+window "\n\n要打开这个特殊材料包吗?",yes,no
+window_no
+window_yes
+killitem 19688
+giveitem (18450%1,18451%1,18452%1,18454%1,18455%1,18456%1)

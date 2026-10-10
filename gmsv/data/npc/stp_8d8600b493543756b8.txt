@@ -1,0 +1,22 @@
+block
+localcount1 = random 4,0
+if localcount1 == 1
+killitem 15059
+metamo 101800
+setfeverflg 1
+EndIf
+if localcount1 == 2
+killitem 15059
+metamo 101801
+setfeverflg 1
+EndIf
+if localcount1 == 3
+killitem 15059
+metamo 101802
+setfeverflg 1
+EndIf
+if localcount1 == 4
+killitem 15059
+metamo 101803
+setfeverflg 1
+EndIf

@@ -1,0 +1,8 @@
+block item 1000162 == 1
+Window"\n\n大人的怨恨永世不灭!",ok
+Window_ok itemspace == 0
+Window"\n\n你的背包满啦"
+Window_ok item 1000162 == 1
+giveitem 1000171
+LeaveGroup
+Warp 0,402,279,140

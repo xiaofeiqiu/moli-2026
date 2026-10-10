@@ -1,0 +1,14 @@
+block
+	Window "\n\n　嘿，老兄！想不想变NB点啊？拿点银子来我花花就OK了拉",YES,NO
+			Window_YES Gold < 500000
+		Endwindow "\n\n　没钱也来凑热闹，欠K啊…"
+			Window_YES JobRank >= 4
+			AddGold -100000
+			Endwindow "\n\n　我靠，你已经那么强了还想来捣乱，罚款10W以示惩戒…"
+			Window_YES Gold >= 500000
+			AddGold -500000
+			EndEvent 693 = 1
+		Endwindow "\n\n　恭喜发财，红包拿来！收你50W让你功力大增，很划算吧！哈哈…"
+			Window_NO
+		Endwindow "\n\n　FAINT！哪有不想变厉害的傻瓜啊，真是的…"
+

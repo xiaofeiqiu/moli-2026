@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至贝兹雷姆神殿 ？",yes,no
+		Window_yes
+			KillItem 60226,1
+			Warp 0,400,136,336
+		Window_no

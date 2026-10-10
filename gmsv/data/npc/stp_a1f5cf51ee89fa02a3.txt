@@ -1,0 +1,6 @@
+block item 200238 >= 1 && floor == 27147 && Xpos == 202 && Ypos == 310
+window "\n\n你要进入天地树内部吗?",yes,no
+window_yes
+killitem 200238
+leavegroup
+Warp 0,27155,24,68

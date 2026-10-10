@@ -1,0 +1,8 @@
+block
+	window"\n\n是否变成亚纪公主（蓝）形象，更改后头像将变为影角（女）？",ok
+	window_ok
+Luac stp:legacy:3e61073648bb5c368e92
+Luac stp:legacy:a64b2dbd22a5c93a6f2b
+Luac stp:legacy:43a6ff5612362137546c
+Luac stp:legacy:81db10ddd62f976ca889
+		killitem 60258,1

@@ -1,0 +1,45 @@
+block Item 99004 = 1 && petlevel 21 == 50
+	Window "\n\n　我对你的表现很满意，我将我最珍贵的研究产品送给你",yes,no
+		window_yes
+			killitem 99004,1
+			killpet 21,1
+			givepet 602,1
+		window_no
+			Endwindow "\n\n　看来你帮不上我啊"
+block Item 99004 = 1 && petlevel 21 == 40
+	Window "\n\n　你的表现很不错，这个研究产品送给你",yes,no
+		window_yes
+			killitem 99004,1
+			killpet 21,1
+			petlevel 14,1
+		window_no
+			Endwindow "\n\n　看来你帮不上我啊"
+block Item 99003 = 1 && petlevel 21 == 30
+	Window "\n\n　宠物成长很不错,继续努力",yes,no
+		window_yes
+			killitem 99003,1
+			giveitem 99004,1
+		window_no
+			Endwindow "\n\n　看来你帮不上我啊"
+block Item 99002 = 1 && petlevel 21 == 20
+	Window "\n\n　宠物成长很不错,继续努力",yes,no
+		Window_yes
+			killitem 99002,1
+			giveitem 99003,1
+		window_no
+			Endwindow "\n\n　看来你帮不上我啊"
+block Item 99000 = 1 && petlevel 21 == 10
+	Window "\n\n　宠物成长很不错,继续努力",yes,no
+		Window_yes
+			killitem 99000,1
+			giveitem 99002,1
+		window_no
+			Endwindow "\n\n　看来你帮不上我啊"
+block Item 99001 =1
+	Window "\n\n　你愿意替我试验么?",yes,no
+		window_yes
+			killitem 99001,1
+			givepet 21,1
+			giveitem 99000,1
+		window_no
+			Endwindow "\n\n　很遗憾"

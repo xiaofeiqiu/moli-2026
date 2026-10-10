@@ -1,0 +1,8 @@
+block
+window "\n\n要打开这个精华吗?",yes,no
+window_no
+window_yes petspace == 0
+endwindow "\n\n宠物栏满了"
+window_yes petspace >= 1
+killitem 800144
+givepet 82

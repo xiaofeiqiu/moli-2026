@@ -1,0 +1,10 @@
+block item 3504 >= 1
+window "\n收藏家的狗?昨天我在村外散步时候有看到它跑的很快往西边的方向去了,对了我这有本兽语翻译书,也许能给予你帮助.",yes,no
+window_YES item 3504 >= 1 && item 3505 < 1 && itemSpace >= 1
+giveitem 3505,1
+window_YES item 3505 >= 1
+endWindow "\n还不快去追!!!",ok
+window_YES itemSpace < 1
+endWindow "\n你的物品满啦!",ok
+block
+window "\n恩...空闲时街道上散步也是很惬意的!我很喜欢动物,因为它们可以陪我度过无聊的时间.",ok

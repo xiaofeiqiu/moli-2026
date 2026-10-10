@@ -1,0 +1,10 @@
+block item 86410 >= 1 && item 86411 < 1
+window "\n\n冒险者旅馆？！（震惊的表情）",next
+window "\n\n难道不是旅馆吗！我记得明明有旅馆两字啊！可能是我记错了。无所谓啦，我会尽快去找他的。你先帮我跑个腿，把这张纸条交给他，我现在先去收拾行李，搬到冒险者旅馆里。这个旅馆闹鬼！住不得！住不得！",ok
+window_ok
+leavegroup
+killitem 86410
+giveitem 86411
+
+block
+endwindow "\n\n这里晚上可是在闹鬼啊！你可千万别住进来！"

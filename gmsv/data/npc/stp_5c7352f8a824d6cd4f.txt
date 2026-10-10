@@ -1,0 +1,13 @@
+block item 70023 == 1
+window 910364,next
+window 910365,next
+window 910366,next
+window 910367,ok
+window_ok
+leavegroup
+killitem 70023
+systemmessage 910066
+Warp 0,25057,5,1
+###############
+block item 70023 != 1
+endwindow 910368,ok

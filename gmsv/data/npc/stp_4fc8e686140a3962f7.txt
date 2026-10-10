@@ -1,0 +1,51 @@
+block item 87664 == 1
+endwindow "\n\n我们有缘还会相见的。"
+
+block item 87663 == 1
+window "\n\n抱歉之前跟你开了个玩笑，不过我们的本意是好的。",next
+window "\n\n这个万年河童是最近才出现的妖怪，在加纳村祸害了不少孩子，我们正是来此收服它的。",next
+window "\n\n是鲁耶利莲娜大人接到了诺伦科的消息，说你们即将到来，作为一种考验，正好试试你们的能力。",next
+window "\n\n果然你们不出所望，出色的完成了任务。另外，作为一点点补偿，这些东西还请收下吧。我们有缘还会相见的。",ok
+window_ok
+killitem 87663
+giveitem 87664
+
+block item 87662 == 1
+endwindow "\n\n唉...愁死我了..."
+
+block item 87661 == 1
+window "\n\n啊！啊！啊！我家的女主人怎么跑去了那个地方？那里非常的危险，就连守卫法兰城的士兵都很难通过那里。",next
+window "\n\n我现在因为酒喝的很多，已经很难走动了，要不我一定会立刻跑去那里带回女主人，能帮我去一趟那里吗？",yes,no
+window_no
+window_yes
+window "\n\n太谢谢你了，那好这封信，我家主人看到就明白了。",next
+window "\n\n她现在应该在沙漠里1个破破烂烂的村庄里，去那里找找吧，应该能有所发现。",ok
+window_ok
+killitem 87661
+giveitem 87662
+
+block item 87660 == 1
+endwindow "\n\n去找井口边上的依莉吧!"
+
+block item 87659 == 1
+window "\n\n别烦我，让我一人喝酒！",next
+window "\n\n嗯...好酒！",next
+window "\n\n...莲娜大人...永别了...",next
+window "\n\n『是否要拉住他？』",yes,no
+window_no
+window_yes
+window "\n\n别拉我...让我去死...",next
+window "\n\n你是谁？为什么要救我？",next
+window "\n\n我的名字叫基里安特，是落魄贵族鲁耶利的管家。因为时运不济，家族落魄而变得囊中羞涩。",next
+window "\n\n可现在的生活就连正常的糊口都快成了问题，哪里有钱去买奢侈品？",next
+window "\n\n行行好，接济我2000金币渡过难关吧！",yes,no
+window_no
+window_yes
+window "\n\n太好了，真不知道应该怎么谢你。请拿着这个“便条”去找井口边上的依琳吧，她会给你引路的觐见物品的女主人的。",ok
+window_ok gold >= 2000
+addgold -2000
+killitem 87659
+giveitem 87660
+
+block
+endwindow "\n\n别烦我，让我一人喝酒！"

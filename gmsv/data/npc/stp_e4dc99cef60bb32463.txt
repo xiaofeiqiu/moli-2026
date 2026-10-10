@@ -1,0 +1,8 @@
+block item 730000 >= 1
+window "\n\n你们果真很强大...我们何尝想这样,我为耶卡和阿夏芙死也是很同情,可以我们都受着李雍的控制.",next
+window "\n\n要把这个送给我吗?我也送还你们一样东西,你们带着它去讨伐神主吧,祝你们好运.",ok
+window_ok
+leavegroup
+killitem 730000
+giveitem 730001
+Warp 0,45060,511,466

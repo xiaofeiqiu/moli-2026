@@ -1,0 +1,15 @@
+block item 3500 >= 1 && item 3501 >= 1 && item 3502 >= 1 && item 3503 >= 1
+window "\n这么快就有眉目了吗?让我瞧瞧.",ok
+window_OK item 3500 >= 1 && item 3501 >= 1 && item 3502 >= 1 && item 3503 >= 1
+killitem 3500,1
+killitem 3501,1
+killitem 3502,1
+killitem 3503,1
+window "\n孽畜啊,原来偷东西的是我养的那只孽畜!开启者,既然都到这种地步了还拜托你帮我去收服了那只孽畜!",yes,no
+window_YES item 3504 < 1
+giveitem 3504,1
+leaveGroup
+Warp 0,33200,196,162
+
+block
+window "\n怎样?有什么线索了吗?",ok

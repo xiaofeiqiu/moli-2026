@@ -1,0 +1,14 @@
+block item 87705 == 1
+window "\n\n凭你一己之力就像与我们整个魔族相抗衡，简直是吃人说梦话。",next
+window "\n\n现在人神两界极度堕落，只有让我们魔族统治才会兴旺辉煌，现在已经没有人能阻止我们了。",next
+window "\n\n我看你也算是个人才，如果你能归入我麾下，日后等我夺下人魔两界，你我就平分这个世界如何？",yes,no
+window_no
+window "\n\n看来你是死心跟我作对了，那我就让你见识一下什么叫地狱！",ok
+window_ok
+Encount 2|0,29982,23,23||0|||||0|86937|||||||||
+window_yes
+killitem 87705
+window "\n\n这绝对是你明智的选择，我将授予你魔族的最高荣誉。",ok
+window_ok
+giveitem 87706
+Warp 0,1533,15,6

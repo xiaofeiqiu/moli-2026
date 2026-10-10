@@ -1,0 +1,21 @@
+block item 88378 == 1
+endwindow "\n\n这样打扮才对嘛！"
+
+block item 88376 == 1
+endwindow "\n\n任务完成后记得还给钱！"
+
+block item 88375 == 1 && StrCmpChat == 279016
+window "\n\n好心人啊，你还真是会开玩笑！我就是汉斯派来协助你的情报员038.",next
+window "\n\n我比你先来一段时间，在酒吧后面蹲守到现在还没发现有可疑人进入。怎么你就穿成这样进入酒吧去参与竞拍？",next
+window "\n\n你穿成这样还没进入酒吧，人都被你吓跑了。我还是借你点钱去村里商店做身合适的衣裳吧！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+giveitem 88376
+endwindow "\n\n任务完成后记得还给钱！"
+
+block item 88375 == 1
+endwindow "\n\n先生、小姐我已经几天没吃东西了，能否给点钱我去饭馆吃一顿？"
+
+block
+endwindow "\n\n先生、小姐施舍点吧！"

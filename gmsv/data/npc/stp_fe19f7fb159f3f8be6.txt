@@ -1,0 +1,49 @@
+block Item 1000410 >= 1 && Item 1000411 >= 1 && Item 1000412 >= 1 && Item 1000413 >= 1 && Item 1000414 >= 1 && Item 1000415 >= 1 && Item 1000416 >= 1 && Item 1000417 >= 1 && Item 1000418 >= 1 && Item 1000419 >= 1 && Item 1000420 >= 1 && Item 1000421 >= 1 
+	Window "\n\n	我想要十二星座BOSS的签名，如果你有，可以带来和我换12星座勋章。",Next 
+	Window "\n\n	点击 <是> 使用十二星座BOSS签名换取1件首饰<12星座勋章>。选择<是>后可选择轻装或者重装。",yes,no 
+		Window_NO  
+			EndWindow "\n\n	兑换失败。",OK 
+		Window_YES  
+			Window "\n\n	点击 <是> 选择轻装版本的<12星座勋章>，点击 <否> 选择重装版本的<12星座勋章>。",yes,no 
+				Window_YES itemspace < 1 
+					endwindow "\n\n	你的包包好像满了...先整理一下吧！" 
+				Window_NO itemspace < 1 
+					endwindow "\n\n	你的包包好像满了...先整理一下吧！" 
+				Window_YES itemspace >= 1 &&  Item 1000410 >= 1 && Item 1000411 >= 1 && Item 1000412 >= 1 && Item 1000413 >= 1 && Item 1000414 >= 1 && Item 1000415 >= 1 && Item 1000416 >= 1 && Item 1000417 >= 1 && Item 1000418 >= 1 && Item 1000419 >= 1 && Item 1000420 >= 1 && Item 1000421 >= 1 
+					KillItem 1000410,1  
+					KillItem 1000411,1  
+					KillItem 1000412,1  
+					KillItem 1000413,1  
+					KillItem 1000414,1  
+					KillItem 1000415,1  
+					KillItem 1000416,1  
+					KillItem 1000417,1  
+					KillItem 1000418,1  
+					KillItem 1000419,1  
+					KillItem 1000420,1 
+					KillItem 1000421,1 
+					GiveItem 1000422,1 
+					EndWindow "\n\n	兑换成功。",OK 
+				Window_NO  itemspace >= 1 &&  Item 1000410 >= 1 && Item 1000411 >= 1 && Item 1000412 >= 1 && Item 1000413 >= 1 && Item 1000414 >= 1 && Item 1000415 >= 1 && Item 1000416 >= 1 && Item 1000417 >= 1 && Item 1000418 >= 1 && Item 1000419 >= 1 && Item 1000420 >= 1 && Item 1000421 >= 1 
+					KillItem 1000410,1  
+					KillItem 1000411,1  
+					KillItem 1000412,1  
+					KillItem 1000413,1  
+					KillItem 1000414,1  
+					KillItem 1000415,1  
+					KillItem 1000416,1  
+					KillItem 1000417,1  
+					KillItem 1000418,1  
+					KillItem 1000419,1  
+					KillItem 1000420,1 
+					KillItem 1000421,1 
+					GiveItem 1000423,1 
+					EndWindow "\n\n	兑换成功。",OK 
+				Window_YES 
+					EndWindow "\n\n	兑换失败。",OK 
+				Window_NO 
+					EndWindow "\n\n	兑换失败。",OK 
+ 
+block  
+	Window "\n\n	我想要十二星座BOSS的签名，如果你有，可以带来和我换12星座勋章。",Next 
+	EndWindow "\n\n	不过我知道你现在没有。马上去挑战十二星座BOSS，期待你的战绩。",OK

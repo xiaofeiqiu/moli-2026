@@ -1,0 +1,6 @@
+block item 200592 >= 1
+window "\n\n你要将调和的血液放入水晶中吗?",yes,no
+window_yes
+killitem 200592
+leavegroup
+Warp 0,27692,10,9

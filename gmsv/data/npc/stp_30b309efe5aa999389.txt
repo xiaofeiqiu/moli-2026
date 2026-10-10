@@ -1,0 +1,18 @@
+
+##########
+block Item 3793 >= 1
+	Window "\n\n难道我哥哥把事情都告诉你了?",YES,no
+	Window_YES
+	Window "\n\n为了查明真相,我带你去里雍的宝座去看看吧!",OK
+	Window_OK
+	KillItem 3793,1
+	leavegroup
+	Warp 0,8,28,19
+	Window_NO
+
+##########
+block
+	endWindow "\n\n闲杂人等禁止入内!"
+
+
+

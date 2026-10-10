@@ -1,0 +1,11 @@
+block item 87780 == 1 && item 87781 == 1
+endwindow "\n\n快拿去给古雷斯瞧瞧这野猪有多大！"
+
+block item 87780 == 1
+window "\n\n兄弟我们要好好配合克雷斯哦~~，快看野猪被赶出来了，赶快抓捕！",ok
+window_ok
+LeaveGroup
+Encount 2|||0|||||0|86983|||||||||
+
+block
+endwindow "\n\n明明看见那头野猪往这里跑的，怎么一下子消失了踪影。"

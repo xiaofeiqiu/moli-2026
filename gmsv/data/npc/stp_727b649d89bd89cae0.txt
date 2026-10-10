@@ -1,0 +1,6 @@
+block item 87102 == 1 && item 87089 == 1
+window "\n\n你要打开前往亚特兰蒂斯的通道吗？",ok
+window_ok
+LeaveGroup
+killitem 87089
+Warp 0,25168,25,183

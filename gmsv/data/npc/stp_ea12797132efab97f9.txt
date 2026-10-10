@@ -1,0 +1,25 @@
+block Group > 1
+endwindow "\n\n请解散队伍"
+
+
+block item 39664 >= 1
+window "\n\n在这里,埋葬着彩叶草之女\n我的妻子,可丽儿皇后!",next
+window "\n\n虽然,我以拙劣的理由!\n卑鄙的政治手段,娶她为妻!\n而我!没有履行承诺!",next
+window "\n\n她为我,生下了儿子!\n可是我知道～\n她不爱我!永远都不可能爱我!",next
+window "\n\n我这一生最大的败笔,就是聘用了那个男人!\n那个丑陋不堪男人,那个为我妻子毁容的男人!\n当我儿子的老师!",next
+window "\n\n我作梦也想不到,他就是当年俊俏的情敌\n为了爱妻,不惜伤害自己\n只为了多看她几眼～",next
+window "\n\n我害怕!我愤怒!我不愿失去她!\n可是～我终究失去了她\n她没有背叛我\n\n是我～失手杀了她!",next
+window "\n\n阿杰斯神呀!我有罪!请降罪给我!\n难道这一切,是命中注定吗?\n就如同这彩叶草的花语～\n是我们三个人～绝望的爱情～",ok
+window_ok itemspace < 1
+endwindow "物品栏已满"
+window_ok item 39664 >= 1
+KillItem 39664,1
+GiveLeak1Item (39661%99$1,39662%1$1)
+LeaveGroup
+Warp 0,30001,440,482
+window_ok
+endwindow "\n\n你的东西怎么少了!想丢地帮人作弊吗!"
+
+
+block
+endwindow "\n\n..."

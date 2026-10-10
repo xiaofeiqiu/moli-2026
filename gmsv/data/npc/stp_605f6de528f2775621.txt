@@ -1,0 +1,29 @@
+block item 61211 >= 1
+window 1900617,next
+window 1900618,next
+window 1900619,ok
+window_ok
+LeaveGroup
+killitem 61211
+giveitem 61212
+
+block item 61206 >= 1
+LeaveGroup
+killitem 61206
+window 1900620,next
+window 1900621,yes,no
+window_no
+window_yes
+LeaveGroup
+giveitem 61207
+endwindow 1900622
+
+block item 61206 < 1 && item 61207 < 1 && item 61208 < 1 && item 61209 < 1 && item 61210 < 1 && item 61211 < 1 && item 61212 < 1
+window 1900623,next
+window 1900624,yes,no
+window_no
+window_yes
+endwindow 1900625
+
+block
+endwindow 1900626

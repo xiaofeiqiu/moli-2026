@@ -1,0 +1,12 @@
+block
+window"\n\n陌生人，你怎么会来这里呢？",next
+window"\n\n哦？竟然有人这样说我，我猜到是谁了，难道你相信他了吗？",next
+window"\n\n应该是德里特，他是达比的手下，在达比的指挥下，到处编制谎言陷害别人。这是他们一贯的风格，喜欢用各种各样的卑鄙手段来打败其他的神。",next
+window"\n\n你不相信我也没有关系，你可以去向村民求证.",next
+window"\n\n听我说了这些真相，你还想来挑战我吗？",yes,no
+window_yes
+Encount 2|0,0,0,0||0|||||0|530085|
+window"\n\n太可恶了！",ok
+window_no
+leavegroup
+Warp 0,1008,30,19

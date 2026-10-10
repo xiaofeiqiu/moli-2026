@@ -1,0 +1,11 @@
+block item 730148 >= 1 && item 730149 >= 1 && item 730150 >= 1
+window "\n\n很好,你完成了秘密任务,这是你的奖励,请拿好!",ok
+window_ok item 730148 >= 1 && item 730149 >= 1 && item 730150 >= 1
+killitem 730148
+killitem 730149
+killitem 730150
+giveitem 730151
+
+
+block
+endwindow "\n\n新任务工作执行中!"

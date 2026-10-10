@@ -1,0 +1,2 @@
+block XPos == 285 && YPos == 200
+	Endwindow "\n\n@c……星灵界花仙子的住所，闲人勿进。…"

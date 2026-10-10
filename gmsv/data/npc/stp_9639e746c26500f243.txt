@@ -1,0 +1,38 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【番茄精灵】吗？",ok
+			Window_ok
+Luac stp:legacy:0cc6b73e5b3a4df88846
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【圣诞精灵】吗？",ok
+			Window_ok
+Luac stp:legacy:68e8747fae4daebe7587
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【番茄公主】吗？",ok
+			Window_ok
+Luac stp:legacy:11e9eef553932ed777f2
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【水果公主】吗？",ok
+			Window_ok
+Luac stp:legacy:8147faae52434e463d5c
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【南瓜公主】吗？",ok
+			Window_ok
+Luac stp:legacy:d0e0d740a32aa18ac373
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【橘子公主】吗？",ok
+			Window_ok
+Luac stp:legacy:eb2b16717b3888bd1516
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【哈密瓜公主】吗？",ok
+			Window_ok
+Luac stp:legacy:f9a14ca9c64f015bc515
+				endif
+

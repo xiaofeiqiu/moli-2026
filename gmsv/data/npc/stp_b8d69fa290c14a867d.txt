@@ -1,0 +1,8 @@
+block Endevent 647==1
+Endwindow"\n\n@c 感谢你勇者!"
+block
+window"\n\n还好不是真神!只是修炼起来的魔族罢了!",next
+window"\n\n还是很感谢你,勇者",ok
+window_ok
+Endevent 647=1
+CheckTitle

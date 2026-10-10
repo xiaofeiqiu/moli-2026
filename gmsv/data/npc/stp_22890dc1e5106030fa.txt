@@ -1,0 +1,17 @@
+block item 800053 == 1 || item 800054 == 1
+	Window"\n\n勇士饶命，我让送你下去。",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18042,210,250
+
+block item 800040 == 1 || item 800041 == 1 || item 800043 == 1 || item 800045 == 1 || item 800046 == 1 || item 800047 == 1
+	Window"\n\n你想下船吗？",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18042,210,250
+
+block
+	Window"\n\n上了贼船就别想回去了！！！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18042,210,250|0|||||||800025|||||||||

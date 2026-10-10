@@ -1,0 +1,10 @@
+block item 666085 >=1
+endwindow "\n\n我输了就输了!你还想干啥!走开!"	
+	
+	
+block
+window "\n\n害怕死亡吗?不赶紧逃跑?那就让你知道什么是死亡之路!",yes,no
+window_yes
+Encount 2|||0|||||0|8539|||||||||
+window_no
+endwindow "\n\n逃跑就是正确的选择!"

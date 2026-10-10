@@ -1,0 +1,32 @@
+block PetSpace == 0 &&  Item 6530 >= 1 && Xpos == 24 && Ypos == 72 
+	Window "\n\n你身上的宠物太多了,萌子遗留下的书和镜子虽然产生了共鸣,但是仍旧无法进入结界!",OK
+	Window_OK
+
+block PetSpace == 0 &&  Item 6530 >= 1 && Xpos == 25 && Ypos == 72 
+	Window "\n\n你身上的宠物太多了,萌子遗留下的书和镜子虽然产生了共鸣,但是仍旧无法进入结界!",OK
+	Window_OK
+
+block PetSpace == 0 &&  Item 6530 >= 1 && Xpos == 26 && Ypos == 72 
+	Window "\n\n你身上的宠物太多了,萌子遗留下的书和镜子虽然产生了共鸣,但是仍旧无法进入结界!",OK
+	Window_OK
+
+block  Item 6530 >= 1 && Xpos == 24 && Ypos == 72
+	Window "\n\n萌子遗留下的书和镜子产生的共鸣\n整个人被吸入了镜子!",OK
+	Window_OK Item 6530 >= 1
+	KillItem 6530,1
+	LeaveGroup
+	Warp 0,6738,24,72
+
+block  Item 6530 >= 1 && Xpos == 25 && Ypos == 72
+	Window "\n\n萌子遗留下的书和镜子产生的共鸣\n整个人被吸入了镜子!",OK
+	Window_OK Item 6530 >= 1
+	KillItem 6530,1
+	LeaveGroup
+	Warp 0,6738,25,72
+
+block  Item 6530 >= 1 && Xpos == 26 && Ypos == 72
+	Window "\n\n萌子遗留下的书和镜子产生的共鸣\n整个人被吸入了镜子!",OK
+	Window_OK Item 6530 >= 1
+	KillItem 6530,1
+	LeaveGroup
+	Warp 0,6738,26,72

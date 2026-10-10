@@ -1,0 +1,10 @@
+block
+	Window "\n\n　开启者果然是开启者",Next
+	Window "\n\n　真厉害阿,给这个是我所放出细菌的源泉!",Next
+	Window "\n\n　去找泰若纳斯领赏吧",OK
+		Window_OK
+			giveitem 99994
+			LeaveGroup
+			Warp 0,33200,178,134
+		
+

@@ -1,0 +1,13 @@
+
+block StrCmpChat == 1900535
+window 7019531,yes,no
+window_no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 1000549
+Warp 0,23362,385,334
+window_yes ItemSpace < 1
+endwindow 7019532
+
+block
+endwindow 7019533

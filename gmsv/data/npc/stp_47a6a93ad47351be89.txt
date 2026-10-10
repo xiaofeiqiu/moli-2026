@@ -1,0 +1,7 @@
+block item 200579 >= 1 && item 200580 >= 1 && floor == 27631 && Xpos == 104 && Ypos == 63
+window "\n\n你要使用心之镜进入镜之世界吗?",yes,no
+window_yes
+killitem 200580
+killitem 200579
+leavegroup
+Warp 0,27671,34,39

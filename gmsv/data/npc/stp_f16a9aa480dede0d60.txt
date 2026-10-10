@@ -1,0 +1,146 @@
+block globalFlag 289 == 1 && globalFlag 290 == 0
+window 1900424,ok
+window_ok
+LeaveGroup
+globalFlag 290 = 1
+
+
+block globalFlag 287 == 1 && globalFlag 288 == 0
+endwindow 1900425
+
+block globalFlag 286 == 1 && globalFlag 287 == 0
+window 1900426,next
+window 1900427,yes,no
+window_yes
+endwindow 1900428
+window_no
+
+block globalFlag 285 == 1 && globalFlag 286 == 0 && item 61152 >= 1
+window 1900429,yes,no
+window_yes gold <= 990000
+LeaveGroup
+killitem 61152
+addgold 10000
+globalFlag 286 = 1
+window_yes gold > 990000
+endwindow 1900430
+window_no
+
+block globalFlag 284 == 1 && globalFlag 285 == 0 && globalFlag 286 == 0
+endwindow 1900431
+
+block globalFlag 283 == 1 && globalFlag 284 == 0 && item 61148 >= 1
+LeaveGroup
+killitem 61148
+window 1900432,ok
+window_ok gold <= 992000
+LeaveGroup
+addgold 8000
+globalFlag 284 = 1
+window_ok gold > 992000
+endwindow 1900433
+
+block globalFlag 283 == 1 && globalFlag 284 == 0
+window 1900434,ok
+window_ok
+
+block globalFlag 282 == 1 && globalFlag 283 == 0
+window 1900435,yes,no
+window_yes
+window_no
+
+block globalFlag 281 == 1 && globalFlag 282 == 0
+window 1900436,ok
+window_ok gold <= 995000
+LeaveGroup
+addgold 5000
+addpet 101114
+globalFlag 282 = 1
+window_ok gold > 995000
+endwindow 1900437
+
+block globalFlag 279 == 1 && globalFlag 280 == 0
+window 1900438,next
+window 1900439,ok
+window_ok
+LeaveGroup
+globalFlag 280 = 1
+
+block globalFlag 278 == 1 && globalFlag 279 == 0 && item 61146 < 1
+window 1900440,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+giveitem 61146
+endwindow 1900441
+window_yes ItemSpace < 1
+endwindow 1900442
+window_no
+
+block globalFlag 277 == 1 && globalFlag 278 == 0
+window 1900443,next
+window 1900444,ok
+window_ok gold <= 995500
+LeaveGroup
+addgold 4500
+globalFlag 278 = 1
+window_ok gold > 995500
+endwindow 1900445
+
+block globalFlag 275 == 1 && globalFlag 276 == 0
+window 1900446,next
+window 1900447,ok
+window_ok
+LeaveGroup
+globalFlag 276 = 1
+
+block globalFlag 273 == 1 && globalFlag 274 == 0
+window 1900448,next
+window 1900449,ok
+window_ok
+LeaveGroup
+globalFlag 274 = 1
+
+block globalFlag 271 == 1 && globalFlag 272 == 0
+window 1900450,yes,no
+window_yes
+LeaveGroup
+globalFlag 272 = 1
+endwindow 1900451
+window_no
+
+block globalFlag 270 == 1 && globalFlag 271 == 0
+window 1900452,next
+window 1900453,next
+window 1900454,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61145
+window_ok ItemSpace < 1
+endwindow 1900455
+
+block globalFlag 270 == 0 && item 61144 >= 1
+window 1900456,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 61144
+window 1900457,next
+window 1900458,ok
+window_ok gold <= 996500
+LeaveGroup
+addgold 3500
+globalFlag 270 = 1
+window_ok gold > 996500
+endwindow 1900459
+
+block level >= 100 && globalFlag 268 == 0
+window 1900460,yes,no
+window_yes
+window 1900461,ok
+window_ok
+LeaveGroup
+globalFlag 268 = 1
+window_no
+
+block
+endwindow 1900462

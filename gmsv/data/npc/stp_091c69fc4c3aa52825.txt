@@ -1,0 +1,51 @@
+block item 88332 == 1 && ItemCreateTime 88332 >= 1440
+window "\n\n您来啦，这是王子首次采摘下来的果实您尝尝！",ok
+window_ok
+killitem 88332
+giveitem 88330
+
+block item 88332 == 1 && ItemCreateTime 88332 < 1440
+endwindow "\n\n王子邀请您来品尝绝世水果的时间还未到呢！"
+
+block item 88329 == 1
+window "\n\n这就是王子需要的植物成长加速剂吗？王子嘱咐老臣转告您，他为了奖励你无偿的帮助希望你1天后来品尝果苗所结出来的果实。",ok
+window_ok
+LeaveGroup
+killitem 88329
+giveitem 88332
+
+block item 88321 == 1
+window "\n\n太谢谢您了~~多亏你的帮忙王子终于安心待在皇宫了。",next
+window "\n\n王子陛下也吩咐老臣，只要你来找他就带你去他的秘密花园，你现在就要跟老臣一起前往吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,14172,14,16
+
+block item 88314 == 1
+endwindow "\n\n这封老臣的信，麻烦带给太傅，他看后就知你的来意。"
+
+block item 88313 ==  1
+window "\n\n您回来啦，在你去找王子的时候，他回来过并寻问我关于森林之王的事。",next
+window "\n\n这种事老臣怎么会知道呢，老臣自小在皇宫长大对外面的世界一无所知。由于老臣无法给王子答案，所以他又偷偷跑出皇宫了。",next
+window "\n\n我估摸着王子这时候一定去找他的太傅去了。你快去阿凯鲁法城的酒吧吧，太傅这时候应该在那喝酒呢。",ok
+window_ok
+killitem 88313
+giveitem 88314
+endwindow "\n\n这封老臣的信，麻烦带给太傅，他看后就知你的来意。"
+
+block item 88300 == 1
+endwindow "\n\n按照往常出走的规律，他肯定是去过再生花园。"
+
+block StrCmpChat == 279000
+window "\n\n哎呀~没想的您也跟我们家王子有一样的癖好啊！可是...可是...王子陛下他又独自跑出去收罗奇异的水果去了。国王陛下要是知道后一定大发雷霆，会怪罪老臣看管不力的。",next
+window "\n\n砍老臣的头是小事，要是国王没继位者，那老臣就成千古罪人了。你愿意帮老臣我寻回王子陛下吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_yes
+giveitem 88300
+endwindow "\n\n按照往常出走的规律，他肯定是去过再生花园。"
+
+block
+endwindow "\n\n王子陛下您在哪里，你不会又跑出去了吧！"

@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【苍蝇王】吗？",ok
+			Window_ok
+Luac stp:legacy:7af28168127cf9d078aa
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【地狱大公】吗？",ok
+			Window_ok
+Luac stp:legacy:6c4e4f4b29dc88507550
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【比利尔】吗？",ok
+			Window_ok
+Luac stp:legacy:ef408caceee701b6ca24
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【路西法】吗？",ok
+			Window_ok
+Luac stp:legacy:810b2d97f64301d61322
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【撒旦】吗？",ok
+			Window_ok
+Luac stp:legacy:2ae36da048cf635e27aa
+				endif
+

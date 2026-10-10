@@ -1,0 +1,17 @@
+block item 200566 >= 1
+endwindow "\n\n欢迎下次再来."
+
+
+
+block item 200565 >= 1
+window "\n\n你是来打酒的吗?一瓶售价5000魔币,你确定要打酒吗?",yes,no
+window_yes gold < 5000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -5000
+killitem 200565
+giveitem 200566
+
+
+block
+endwindow "\n\n欢迎光临本酒吧."

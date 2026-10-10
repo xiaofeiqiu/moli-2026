@@ -1,0 +1,55 @@
+block item 87619 == 1
+endwindow "\n\n快去码头找队长召集部队。"
+
+block item 87618 == 1
+window "\n\n据一些受伤的船员说怪物像是顺着灯塔光乘着浓雾而来袭击了咱们的船，没错，那天我正好去队长那运送物资，无意中看到浓雾和怪物来的方向我看是灯塔指向的方向。",next
+window "\n\n既然是队长命你来调查，还不赶快找队长联络部队去那个灯塔上看看。天知道什么时候怪物会来袭击这个镇子。",ok
+window_ok
+killitem 87618
+giveitem 87619
+
+block item 87607 == 1
+endwindow "\n\n路上请多加小心。"
+
+block item 87606 == 1 && ItemCreateTime 87606 >= 3
+window "\n\n辛苦了，受队长委托，告知各位最新进展。",next
+window "\n\n首先，目前已经启用了法兰到先前驻地的临时航线，持有通行证即可往来两地。",next
+window "\n\n其次，驻地通往西尔维镇的新道路还无法通行。目前只能靠驻地打开传送门到达村长家的地下室。",next
+window "\n\n根据联络员的报告，队长正在安排人手修复码头，这是他们急需的建造物资请收好，尽快去镇的东北方与队长会合。",next
+window "\n\n路上请多加小心。",ok
+window_ok
+killitem 87606
+giveitem 87607
+
+
+block item 87605 == 1 && item 87595 == 1
+window "\n\n有奇怪的水晶导致怪物变得狂暴么？辛苦了，我会把碎片交给有关人员进行调查的。",next
+window "\n\n队长那边的调查也传来消息了，据说码头暂时不能使用，他们正在寻找人员进行修复，等有消息的时候我会第一时间通知你的。",ok
+window_ok
+killitem 87595
+killitem 87605
+giveitem 87606
+
+block item 87604 == 1
+endwindow "\n\n征集帮手去西方野外调查一下吧！"
+
+block item 87603 == 1
+window "\n\n在野外遭到了狂暴的怪物的袭击？值得调查一下。",next
+window "\n\n征集帮手去西方野外调查一下吧！",ok
+window_ok
+killitem 87603
+giveitem 87604
+
+
+block item 87601 == 1
+endwindow "\n\n总觉得有某股力量在阻止我们寻找这群岛。"
+
+block item 87600 == 1
+window "\n\n据说东北方有码头，以前很多船靠这往来此镇和法兰。不过听镇里的人说，最近这里地震连连，而且地震引起的雪崩把很多的山路给掩埋了。",next
+window "\n\n队长带着部分人去渡口调查了，你现在镇子中休息休息吧，看看镇民们有没有需要帮助的事情。毕竟他们这些年远离了法兰，跟他们打好关系能让他们知道，法兰这些年一直在寻找他们的下落。",ok
+window_ok
+killitem 87600
+giveitem 87601
+
+block
+endwindow "\n\n我们终于抵达了久违的西尔维镇。"

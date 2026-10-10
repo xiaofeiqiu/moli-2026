@@ -1,0 +1,69 @@
+block item 39690 == 1
+Endwindow "\n\n早就跟你说过,没什么事情不要来找我,被法兰的禁卫发现了怎么办."
+
+block item 39689 == 1
+Endwindow "\n\n没什么事你就回法兰城继续探察军方的消息吧,有消息再来通知我."
+
+block item 39688 == 1
+Window "\n\n干的很好,梅兹大人有嘱咐你什么其他的事情吗?",next
+Window "\n\n没有吗?那好吧,为了奖励你的功绩,我授予你这个东西,你一定要贴身携带,不要轻易让法兰城的人看到.",next
+Window "\n\n没什么事你就回法兰城继续探察军方的消息吧,有消息再来通知我.",ok
+Window_ok item 39688 == 1
+killitem 39688
+giveitem 39689
+
+block item 39687 >= 1
+Endwindow "\n\n蔓陀罗草的血是一种能杀死人的毒药"
+
+
+block item 39682 == 1
+Endwindow "\n\n记住,梅兹大人让你干什么你就干什么."
+
+
+block globalFlag 264 == 1
+Window "\n\n怎么样,军方有是动静没有?",yes,no
+Window_yes
+Endwindow"\n\n嗯?怎么其他人都没有发现军方的动作,只要你说军方有动静?你小子是不是胡编情报给我啊!"
+Window_no
+Window "\n\n其他人也没有发现什么,你这么闲着也不是办法,我给你个其他任务吧.",next
+Window "\n\n你去过乌克兰村吗?",yes,no
+Window_no
+Endwindow"\n\n想不到你这么没用,情报收集不到,连跑个腿都做不到,没用的家伙!"
+Window_yes
+Window "\n\n很好,乌克兰村有一位名叫梅兹的大人,你帮我带封信给他,记住,梅兹大人让你干什么你就干什么.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+globalFlag 264 = 0
+giveitem 39682
+
+block item 39681 == 1
+Window "\n\n好样的,果然是个有胆识的人,既然这样我就同意你加入了.",next
+Window "\n\n最近法兰城里的那帮官老爷似乎发现了我们的行动,前几天还抓了我们一个人.",next
+Window "\n\n让这小子去伺机救人,结果他差点也被抓,真是废物.",next
+Window "\n\n我现在交给你一个任务,你回法兰去给我打听一下军方对我们是不是要有下一步行动,最好能把行动计划搞来.",next
+Window "\n\n只要你搞清楚他们的计划,那就是大功一件,我一定给你向上级请功,到时候你想要什么就给你什么.",ok
+Window_ok item 39681 == 1
+killitem 39681
+globalFlag 263 = 0
+globalFlag 264 = 1
+
+
+block globalFlag 263 == 1
+Endwindow "\n\n你现在就回法兰去,干掉一个卫兵,把他的士兵服带回来,如果你能做到,我们就吸收你进组织."
+
+block item 39678 == 1
+Window "\n\n你就是那个新入行的小子啊,嗯,筋骨还不错.",next
+Window "\n\n不过我们可不是一般的组织,跟我们一起干虽然前途无量,但是我们也不是随便什么都收的.",next
+Window "\n\n要想正式加入我们,你就得去取得投名状来.",next
+Window "\n\n真是个菜鸟,连投名状是什么都不知道,就是去干掉一个法兰卫兵,你有这个胆量吗?",yes,no
+Window_no
+Endwindow "\n\n哼,我们的组织不需要你这种胆小鬼."
+Window_yes
+Window "\n\n好,有那么股魄力,你现在就回法兰去,干掉一个卫兵,把他的士兵服带回来,如果你能做到,我们就吸收你进组织.",ok
+Window_ok item 39678 == 1
+killitem 39678
+globalFlag 263 = 1
+
+block
+Endwindow "\n\n走开,不要妨碍我."

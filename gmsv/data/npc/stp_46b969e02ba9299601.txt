@@ -1,0 +1,16 @@
+block item 87663 == 1
+Warp 0,3300,63,40
+
+block item 87662 == 1
+window "\n\n我叫鲁耶利莲娜，同诺伦科一样，是传承秘宝守护家族的后人之一。",next
+window "\n\n我们并不是什么没落的家族。很抱歉之前欺骗了你。你们的能力和品德我亲眼见到了，值得把秘密托付。",next
+window "\n\n之前的事情都是我叫基里安特做的，当然都是为了测试你们哦。",next
+window "\n\n拿着回信，回去找基里安特吧，他就会明白的。",next
+window "\n\n前面的路还很困难，加油，勇敢的冒险者！",ok
+window_ok
+killitem 87662
+giveitem 87663
+Warp 0,3300,63,40
+
+block
+Warp 0,3300,63,40

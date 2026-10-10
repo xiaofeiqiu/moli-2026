@@ -1,0 +1,19 @@
+block item 661090 >= 1 && itemcreatetime 661090 >= 1380 && item 12407 >= 40 && item 12001 >= 40 && item 12410 >= 40
+window "\n\n你已经有[海苔][姜][米]各40个,我可以用1个[元素结晶]来和你交换.",next
+window "\n\n是否要捐献呢?",yes,no
+window_no
+window_yes
+window "\n\n多谢你的捐献,希望你明天还能再来.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok item 661090 >= 1 && item 12407 >= 40 && item 12001 >= 40 && item 12410 >= 40
+killitem 661090
+killitem 12407,40
+killitem 12001,40
+killitem 12410,40
+giveitem 661090
+giveitem 1000090,1
+
+
+block
+endwindow "\n\n如果你有[海苔][姜][米]各40个的话,我就可以用1个[元素结晶]来和你交换.等拿够物资就可以来找我交换哦."

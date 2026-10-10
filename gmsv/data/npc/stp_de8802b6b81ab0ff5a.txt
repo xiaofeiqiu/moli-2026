@@ -1,0 +1,12 @@
+block
+gawindow "\n\n你敢来这里!知道我是谁吗?!",yes,no
+window_no
+gaendwindow "\n\n你已经害怕了,快离开吧!"
+window_yes
+gawindow "\n\n那就来吧!",ok
+window_ok
+Encount 3|0,906,12,18||||||||616001|||||||||
+
+
+block
+	Endwindow"\n\n呼呼 一阵奇怪的声音~"

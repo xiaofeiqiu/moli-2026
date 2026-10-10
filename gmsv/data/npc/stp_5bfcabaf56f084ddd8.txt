@@ -1,0 +1,16 @@
+block item 200752 >= 1
+endwindow "\n\n快回去找团长吧."
+
+
+
+block item 200751 >= 1
+window "\n\n我一路跟踪他们到这,发现此地并不是他们的目地.",next
+window "\n\n可惜我的行踪已经暴露了,已经不能再跟下去了,不过刚刚奈尔鲁传消息过来,她发现了他们的秘密研究所.",next
+window "\n\n你赶快回去法兰找我们的团长申请逮捕令,这回我们能人赃并获.",ok
+window_ok
+killitem 200751
+giveitem 200752
+
+
+block
+endwindow "\n\n我们女骑士团的情报能力全法兰第一."

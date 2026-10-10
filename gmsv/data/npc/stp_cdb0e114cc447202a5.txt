@@ -1,0 +1,6 @@
+block
+setaction 10
+endwindow "\n\n呜~痛!帝国...帝国就这样完了嘛...不甘心哇!"
+
+
+

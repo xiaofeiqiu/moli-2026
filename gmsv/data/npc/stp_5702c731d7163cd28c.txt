@@ -1,0 +1,4 @@
+block item 200123 >= 1
+window "\n\n不要打扰我睡觉.",ok
+window_ok
+Encount 2|0,60,31,4||0|||||0|50113|||||||||

@@ -1,0 +1,11 @@
+block
+window "\n\n恭喜你获胜,这是你赢得的奖励.请作好参加第二场比赛的准备吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你拿不下奖励了!"
+window_ok
+giveitem 39745,1
+leavegroup
+Warp 0,24075,63,9
+
+
+

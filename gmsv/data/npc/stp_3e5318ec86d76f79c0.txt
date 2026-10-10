@@ -1,0 +1,14 @@
+block item 50815 >=1
+	Window"\n\n好样的！法兰王国的硬实力数据正在迅速攀升。下面的测试员更厉害，您还要继续挑战吗？",yes,no
+		window_no ItemSpace < 1
+			EndWindow"\n\n@c你的物品栏不够了。"
+		Window_no
+			LeaveGroup
+			killitem 50815
+			giveitem (50809%20,18450%20)
+			Warp 0,4410,54,46
+		Window_yes
+	Window"\n\n请量力而行。",ok
+		Window_ok
+			LeaveGroup
+			Warp 0,44837,37,33

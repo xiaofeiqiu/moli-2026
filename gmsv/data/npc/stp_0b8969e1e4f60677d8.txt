@@ -1,0 +1,23 @@
+block
+	Window 900000,next
+	Window 900001,yes,no
+	Window_yes
+	GiveItem 990000,1
+	EndWindow 900002,ok
+	Window_no
+	EndWindow 900003,ok
+block Item 990000 >= 1
+	EndWindow 900004,ok
+block Item 990001 == 1
+	Window 7020591,next
+	Window 7020592,next
+	Window 7020593,yes,no
+	Window_yes
+	KillItem 990001,1
+	GiveItem 990002,1
+	GiveItem 990003,1
+	EndWindow 7020594,ok
+	Window_no
+	EndWindow 7020595,ok
+block Item 990002 >= 1 && Item 990003 >=1
+	EndWindow 7020596,ok

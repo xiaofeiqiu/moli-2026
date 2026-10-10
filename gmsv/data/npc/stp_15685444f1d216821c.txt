@@ -1,0 +1,8 @@
+block item 90003 == 1 && item 90001 == 0 && item 90002 == 0 && item 90006 == 0 
+
+	window "\n\n　事物是时常变化的，我们根本控制不了，难道以往的英雄也会因为黑暗魔掌的伸入而变心么？我多么希望万物一成不变，你觉得可能吗？",ok
+	window_ok itemspace != 0
+		giveitem 90006
+		
+	window_ok itemspace == 0
+		window "\n\n　贪心会害你走向绝路的！"

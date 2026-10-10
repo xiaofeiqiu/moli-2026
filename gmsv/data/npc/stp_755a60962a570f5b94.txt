@@ -1,0 +1,9 @@
+block item 3876 >= 1
+window "\n\n(终于来了吗)",next
+window "\n\n拥有白色意志的人啊,我们始终希望守护这个世界,但黑色的家伙却不断阻挠我们.为了将守护加以贯彻,必须先将黑色消灭殆尽.",next
+window "\n\n怎么样?与我联手,先将黑龙之长杀了吧.这样我们就可以完全地守护这个世界了!",yes,no
+window_no
+window_yes
+window "\n\n守护世界才是我们的宿命.",ok
+window_ok item 3876 >= 1
+Encount 2|0,57542,14,21||0|||||0|19059|||||||||

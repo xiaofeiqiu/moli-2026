@@ -1,0 +1,7 @@
+block item 200006 >= 1 && item 200007 >= 1
+window "\n\n什么东西触动了,魔法石镜...",ok
+window_ok
+killitem 200006
+killitem 200007
+leavegroup
+Warp 0,25207,128,343

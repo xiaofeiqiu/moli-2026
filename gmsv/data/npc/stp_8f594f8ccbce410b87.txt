@@ -1,0 +1,11 @@
+block item 86295 >= 1 && item 86296 < 1
+window 85310,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 86296
+Warp 0,2300,41,36
+window_ok ItemSpace < 1
+endwindow 85311
+
+block
+endwindow 85312

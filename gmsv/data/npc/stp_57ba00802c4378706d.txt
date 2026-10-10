@@ -1,0 +1,39 @@
+block item 697992 == 1 && nowevent 558 == 1
+window"\n\n额?我儿子写信给我?他不是和我一起吗?",next
+window"\n\n原来我儿子是这么想的吗?唉!",next
+window"\n\n这样吧,你找个失魂的项链给我,我就放弃了",yes,no
+window_no
+window"\n\n呵呵,那我还是自己解决吧,你可以走了"ok
+window_ok
+nowevent 558 = 0
+killitem 697992,1
+LeaveGroup
+Warp 0,1000,233,78
+window_yes
+window"\n\n恩,找到了就拿给我吧...我会放弃的",ok
+window_ok
+killitem 697992,1
+LeaveGroup
+Warp 0,1000,233,78
+block item 18327 >= 1 && nowevent 558 == 1
+ShapeNext 106580
+SetAction 6
+window"\n\n你拿来了??哈哈!!我终于能实现我的心愿了!",next
+ShapeNext 106580
+SetAction 5
+window"\n\n这东西是可以帮我招回我老婆的灵魂,你还想阻止我?",yes,no
+window_no
+window"\n\n还算你识相,快走开,别妨碍我!",ok
+window_ok
+nowevent 558 = 0
+LeaveGroup
+Warp 0,1000,233,78
+window_yes
+ShapeNext 106580
+SetAction 9
+window"\n\n那我只能把你杀了,阻止我的人没有好下场!\n\n你去死吧!!",ok
+window_ok
+ShapeNext 106580
+SetAction 5
+killitem 18327,1
+Encount 3|0,1197,3,14|||||0|||601204|||||||||

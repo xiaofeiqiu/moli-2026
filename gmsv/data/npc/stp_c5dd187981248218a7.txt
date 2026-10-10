@@ -1,0 +1,30 @@
+block floor==120
+	SetObject 0,120,341,65,15570
+	SetObject 0,120,341,66,15570
+	SetObject 0,120,341,67,15570
+	SetObject 0,120,341,68,15570
+	SetObject 0,120,341,69,15570
+	SetObject 0,120,341,70,15570
+	SetObject 0,120,341,71,15570
+	SetObject 0,120,341,72,15570
+	SetObject 0,120,341,73,15570
+	SetObject 0,120,341,74,15570
+	SetObject 0,120,341,75,15570
+	SetObject 0,120,341,76,15570
+	SetObject 0,120,341,77,15570
+	SetObject 0,120,341,78,15570
+	SetObject 0,120,341,79,15570
+	SetObject 0,120,341,80,15570
+	SetObject 0,120,341,81,15570
+	SetObject 0,120,341,82,15570
+	SetObject 0,120,341,83,15570
+	SetObject 0,120,341,84,15570
+	SetObject 0,120,341,85,15570
+	SetObject 0,120,341,86,15570
+Endwindow"\n\n@c 比赛围栏已经安置, 目前禁止入场!!"
+block
+block
+window"\n\n@c 进入赛跑 跑到!",ok
+window_ok
+	leavegroup
+	Warp 0,120,321,74

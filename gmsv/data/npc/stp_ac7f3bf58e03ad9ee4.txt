@@ -1,0 +1,5 @@
+block item 87207 == 1
+window "\n\n欢迎你再次到来！",ok
+window_ok
+LeaveGroup
+Warp 0,25221,12,18

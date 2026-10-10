@@ -1,0 +1,9 @@
+block
+window "\n\n感谢你们救了我.\n\n不过我还没有玩够,我先走了.",next
+window "\n\n好像从公主身上掉落了什么,先捡起来在说.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200773
+leavegroup
+Warp 0,32744,141,123

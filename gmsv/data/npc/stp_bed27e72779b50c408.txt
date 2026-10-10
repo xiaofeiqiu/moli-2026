@@ -1,0 +1,20 @@
+block item 200591 >= 1
+window "\n\n你踩到寒冰草了吗?贝梦斯坦医生在里面等你呢.",ok
+window_ok
+leavegroup
+Warp 0,27638,33,16
+
+
+
+
+block item 200589 >= 1
+window "\n\n辛格你来啦,快进去吧.",ok
+window_ok
+killitem 200589
+leavegroup
+Warp 0,27638,33,16
+
+
+
+block
+endwindow "\n\n里面是危重病房,闲杂人等免入."

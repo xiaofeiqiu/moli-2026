@@ -1,0 +1,21 @@
+block item 86428 >= 1 && item 86430 < 1
+window "\n\n是赫顿的笔迹！是赫顿的信！太好了！他说他要感谢留他住宿的维诺亚村村民，告诉他们他要回家了。这孩子真的长大了！太好了！",next
+window "\n\n请拿好，这是送给你的谢礼。虽然这微薄之礼算不了什么，但却装满了我们全家人的祝福。阿尔杰斯也会保佑好人的！",ok
+window_ok
+leavegroup
+killitem 86428
+giveitem 86430
+
+block item 86407 >= 1
+endwindow "\n\n我们的希望都寄托在您的身上了，谢谢您，请务必注意安全。"
+
+block
+window "\n\n二天过去了，赫顿还没有回来，他说自己出去玩，晚饭前回来，可是直到现在他也没有回来。我的妻子艾利娜这三天来寝室难安，我不知道赫顿他去那里了，一点头绪也没有。",next
+window "\n\n不知道你是否能够接受我的请求，帮助我与妻子寻找我们的孩子赫顿？",yes,no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86407
+endwindow "\n\n真的是万分感谢！这是赫顿的画像，请一定要保管好。无论结果如何，我已经做好心理准备了。"
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+window_no

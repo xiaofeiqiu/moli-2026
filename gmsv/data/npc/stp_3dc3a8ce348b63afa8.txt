@@ -1,0 +1,15 @@
+block item 200244 >= 1
+endwindow "\n\n诺亚矿石是神赐予我们王国的金属矿."
+
+
+block item 200243 >= 1
+window "\n\n这是我老婆让你带给我的便当啊,谢谢～我正好肚子很饿了.",next
+window "\n\n诺亚矿石?可惜我挖到的不多,不知道这些够不够你用.",ok
+window_ok
+killitem 200243
+giveitem 200244
+
+
+
+block
+endwindow "\n\n这里很危险,请小心啊."

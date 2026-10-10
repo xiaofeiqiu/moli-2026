@@ -1,0 +1,12 @@
+block item 60512 >= 1
+window "\n\n嘎嘎...终于等到这一天了...拿去吧...复仇吧...",ok
+window_ok item 60512 >= 1
+killitem 60512
+giveitem 60513
+leavegroup
+Warp 0,57093,20,22
+
+
+
+
+

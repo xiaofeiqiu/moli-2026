@@ -1,0 +1,16 @@
+block item 730080 >= 1 && item 730081 >= 1
+endwindow "\n\n请带着这个,去伊尔村的码头找战舰舰长,他会把你送到那里的."
+
+
+block item 730079 >= 1
+window "\n\n啊,你来了.如你所见,上次探险的分析结果已经得到了,但我们收到消息,在无名荒岛上的探险团那里发生了变故,希望你能尽快赶到那里,帮助他们.请带着这个,去伊尔村的码头找战舰舰长,他会把你送到那里的.",ok
+window_ok itemspace < 2
+endwindow "\n\n你的背包满啦,请留出2个位置."
+window_ok item 730079 >= 1
+killitem 730079
+giveitem 730080
+giveitem 730081
+
+
+block
+endwindow "\n\n对不起,我的工作很多,请不要来打扰我."

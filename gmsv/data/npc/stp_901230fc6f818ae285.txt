@@ -1,0 +1,6 @@
+Block
+Window "玉狮子：请通过我的试炼，胜利后领取调查信物。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:f446ced6d27d3d4f3d70

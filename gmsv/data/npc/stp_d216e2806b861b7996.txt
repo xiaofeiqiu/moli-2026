@@ -1,0 +1,10 @@
+block item 200545 >= 1
+endwindow "\n\n咋们拿过去问问管理员怎么回事."
+
+
+
+block item 200544 >= 1
+window "\n\n这好像就是制造维护传送水晶的设计文稿吧,不对啊,貌似好像后面少了半页.",ok
+window_ok
+killitem 200544
+giveitem 200545

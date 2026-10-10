@@ -1,0 +1,4 @@
+block item 800001 == 0
+	Window"Òª¼ñÆğÀ´Âğ£¿",yes,no
+		Window_yes
+		giveitem 800001

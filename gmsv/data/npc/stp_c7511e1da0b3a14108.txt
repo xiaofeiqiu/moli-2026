@@ -1,0 +1,5 @@
+block
+window 85435,next
+window 85436,next
+window 85437,ok
+window_ok

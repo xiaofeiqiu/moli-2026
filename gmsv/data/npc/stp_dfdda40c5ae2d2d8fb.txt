@@ -1,0 +1,14 @@
+block item 39744 >= 1 && itemcreatetime 39744 >= 1380
+window "\n\n你能参加的表演赛时间已经到了,可以入场.一旦入场就要重新等待时间,你确定要入场吗?",yes,no
+window_no
+endwindow "\n\n没胆量就别来嘛!"
+window_yes
+window "\n\n祝你好运.",ok
+window_ok item 39744 >= 1 && itemcreatetime 39744 >= 1380
+leavegroup
+Warp 0,24075,9,9
+
+
+block
+endwindow "\n\n请耐心等候,你所能参加的表演赛时间还不到."
+

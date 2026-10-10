@@ -1,0 +1,14 @@
+block item 88387 == 1
+endwindow "\n\n曼陀罗藤是长在我身上的呦~~不是想要多少就有多少滴！"
+
+block item 88386 == 1 && item 18454 >= 1
+window "\n\n不错不错感谢你帮我找回来，这个藤你拿去吧！",ok
+window_ok
+killitem 18454
+giveitem 88387
+
+block item 88386 == 1
+endwindow "\n\n曼陀罗藤吗？那可是我身上的宝贝，不过你能找回我丢失的曼陀罗草的皮话我能给你哦！"
+
+block
+endwindow "\n\n我可不是妖怪哦！"

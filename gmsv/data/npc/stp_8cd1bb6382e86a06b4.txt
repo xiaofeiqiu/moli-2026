@@ -1,0 +1,9 @@
+block
+window "\n\n勇敢的冒险者,果然他们是无法阻挡你成长的脚步,恭喜又成长了.",next
+window "\n\n以后你还会在这个世界遇到更大的阻碍和挑战,祝你能继续成功之路,请接受我们的祝福.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem (3744%1,3745%1)
+leavegroup
+Warp 0,1500,30,81

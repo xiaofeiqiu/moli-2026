@@ -1,0 +1,17 @@
+block item 3873 >= 1
+window "\n\n终于又见面了.这里是白与黑意志的交汇之所,也是我们与白龙族决一死战的地方.族长已经赶赴前线,一切都准备妥当后,我们也将出发.",next
+window "\n\n这是理念的斗争,我们不能妥协.",next
+window "\n\n去做最后的准备,能否守护这个世界就看这一战了.无论战果如何,都必须将黑之意志传承下去.",ok
+window_ok itemspace < 2
+endwindow "\n\n请空出2个以上物品栏位置"
+window_ok item 3873 >= 1
+killitem 3873
+giveitem 3883
+giveitem 3884
+leavegroup
+Warp 0,1000,233,78
+
+
+
+
+

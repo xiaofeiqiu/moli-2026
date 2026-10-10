@@ -1,0 +1,25 @@
+
+block
+window "\n\n嘿!年轻人.前阵子我在旁边这湖里冬泳时发现了点好东西!你想要吗?如果你给我50000金币就卖给你了.",next
+window "\n\n提醒你一下,是50000金币喔,不是5000,你确定吗?",yes,no
+window_no
+endwindow "\n\n那好吧,不识货的家伙."
+window_yes gold < 50000
+endwindow "\n\n你的金币好像不够啊."
+window_yes itemspace < 1
+endwindow "\n\n你的背包不够位置啊."
+window_yes
+addgold -50000
+giveitem 661092
+endwindow "\n\n嘿嘿,赚大发了."
+
+
+
+
+
+
+
+
+
+
+

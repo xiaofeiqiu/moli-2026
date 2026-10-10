@@ -1,0 +1,19 @@
+block  EndEvent 542 == 1
+window "\n\n注意：如果你想要重解大地鼠王国任务的话,需要交出大地鼠一等徽章称号,你是否愿意.",yes,no
+window_yes
+EndEvent 542 = 0
+CheckTitle
+window_no
+endwindow "\n\n等你考虑清楚了在来找我."
+
+
+block item 200000 >= 1
+endwindow "\n\n我这有刚出炉的烤种子面包!"
+
+
+block
+window "\n\n我这有刚出炉的烤种子面包!\n\n\n你可以帮我送到边境那儿麽?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200000

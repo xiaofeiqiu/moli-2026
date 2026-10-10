@@ -1,0 +1,13 @@
+〓Get制作系列脚本〓
+block EndEvent 629 = 1
+	Endwindow "\n\n@c……",ok
+block Item 13401 >= 1
+	Endwindow "\n\n@c去吧…",ok
+block level >= 40
+	Window "\n\n@c我是侦察员01，事情你一定都知道了，如果愿意接受我的委托那么我写一张字据给你",yes,no
+	Window_yes level >= 40
+	GiveItem 13401,1
+	Window_no
+	Endwindow "\n\n@c那算了…",ok
+block
+	Endwindow "\n\n@c有何贵干？",ok

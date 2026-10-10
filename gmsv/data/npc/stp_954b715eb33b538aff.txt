@@ -1,0 +1,13 @@
+block item 1002024 != 0
+window "\n\n　蜥蜴似乎被水果的香味唤醒了，用贪婪的眼神看着你。",next
+window "\n\n　要将奇怪的水果丢给蜥蜴吗？",yes,no
+window_no
+window_yes item 1002024 != 0
+killitem 1002024
+Warp 0,60168,93,59
+
+block
+window "\n\n　一只巨大的蜥蜴正挡在你的前面睡觉，要偷偷的绕过去吗？",yes,no
+window_yes
+systemmessage 8105269
+Encount 3|0,60168,93,59|||||0|||800209|||||||||

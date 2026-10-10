@@ -1,0 +1,16 @@
+#mayko_gm_1102737.txt 香草研究者
+block item 1000274 >0
+endwindow 7001064
+#endwindow 1111662
+
+block item 1000273 >0
+	#1111661	晚上开的香花很多，但是月下下盛开的品种，我没看过耶。	1
+	#1111662	我的老师为了研究香草植物，目前移居苏之国的阿凯鲁法村，您可以去拜访他。	1
+	Window 7001041,next
+	killitem 1000273,1
+	GiveLeak1Item 1000274,1
+	endwindow 7001042
+
+
+block
+endwindow 7001064

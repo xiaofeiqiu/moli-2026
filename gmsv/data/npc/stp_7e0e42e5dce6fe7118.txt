@@ -1,0 +1,6 @@
+block
+window "\n\n你要遵守与露比的约定吗?",ok
+window_ok
+killitem 1000204
+LeaveGroup
+Warp 0,1661,12,27

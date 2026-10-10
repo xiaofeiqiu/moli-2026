@@ -1,0 +1,6 @@
+Block
+Window "界神已经收到镇长急件。请将这封信交给星云，她会协助你调查古墓。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:ab755af346e2612f5e4a

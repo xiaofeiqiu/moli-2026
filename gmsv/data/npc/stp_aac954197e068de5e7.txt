@@ -1,0 +1,10 @@
+block
+window "\n\n你要打开此容器吗？",yes,no
+window_no
+window_yes Petspace >= 1
+leavegroup
+killitem 86439
+GivePet (122%50,22%50,322%50)
+Window_Yes Petspace == 0
+Endwindow "\n\n\n　你的宠物栏满了!"
+window_no

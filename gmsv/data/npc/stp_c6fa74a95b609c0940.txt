@@ -1,0 +1,10 @@
+block item 87596 == 1 && ItemCreateTime 87596 >= 3
+window "\n\n真是一波三折，我们终于到了。",ok
+window_ok
+LeaveGroup
+killitem 87596
+Warp 0,29728,9,17
+
+
+block item 87596 == 1 && ItemCreateTime 87596 < 3
+endwindow "\n\n希望航路上别出什么事情。"

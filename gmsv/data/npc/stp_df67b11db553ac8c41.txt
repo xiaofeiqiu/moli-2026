@@ -1,0 +1,5 @@
+block item 800099 >= 1
+	Window"\n\n把钥匙刚好插入门上的锁口，突然。。。大门打开了！",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18094,7,8

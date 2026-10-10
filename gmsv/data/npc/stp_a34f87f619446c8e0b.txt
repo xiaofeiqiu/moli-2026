@@ -1,0 +1,32 @@
+block item 880014 == 1
+window "\n\n啊,你回来了,我感觉到了你身上有某个东西散发出强大的神圣的力量.",next
+window "\n\n那么我们开始吧,加固封印的仪式!",next
+window "\n\n沉稳之地、流动之水、跳跃之火、飘柔之风,应我的呼唤来到我身边,化作光明的力量",next
+window "\n\n汇聚、融合...将神圣的力量施加在这封印之上吧!",next
+window "\n\n封印......破除吧!",next
+changepal 20,100
+window "\n\n在你还没有来得及反应的时候,强烈的白光笼罩住了你!在你失去意识的一瞬间,一道黑色的光芒从这无尽的白光中涌现出来",next
+changepal 19,100
+window "\n\n谢谢你了,我可爱的棋子!...伴着耳边响起的这句话,你彻底昏了过去",ok
+window_ok item 880014 == 1
+killitemall 880014
+leavegroup
+Warp 0,53006,40,21
+
+block item 880011 != 1 && level >= 120
+window "\n\n年轻人,我手里的有个戒指中散发出一股十分邪恶的力量...",next
+window "\n\n虽然这个戒指被封印了起来,但这个封印并不能完全将这残骸的力量封印住,总有一天它会自己破除封印的.",next
+window "\n\n你愿意重新加固这个封印吗?",yes,no
+window_yes item 880011 != 1 && itemspace > 0
+giveitem 880011
+endwindow "\n\n带着我的信去毁灭之村找一位研究恶魔的学者吧,他会为你制作加固封印的秘药的!"
+window_yes
+window_no
+endwindow "\n\n那么你要小心恶魔复苏呀..."
+
+block item 880011 == 1
+endwindow "\n\n请重新加固这个封印."
+
+
+block
+endwindow "\n\n年轻人,我手里的有个戒指中散发出一股十分邪恶的力量..."

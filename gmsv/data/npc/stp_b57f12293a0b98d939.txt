@@ -1,0 +1,8 @@
+block item 50823 >=1
+Window"\n\n要打开丧尸设计图包吗?\n设计图将随机开出一张.",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes item 50823 >=1
+killitem 50823
+GiveItem (50830%1,50831%1,50832%1,50833%1)

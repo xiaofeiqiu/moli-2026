@@ -1,0 +1,4 @@
+block	item 191701>=1
+killitem 191701,1
+leavegroup
+Warp 0,1005,23,28

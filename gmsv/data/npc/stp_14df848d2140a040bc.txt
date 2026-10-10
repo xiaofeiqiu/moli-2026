@@ -1,0 +1,31 @@
+
+
+block Item 715162 >= 1
+endwindow "\n\n谢谢你,我想我该回去了,真是好心人."
+
+
+block Item 715161 >=1
+endwindow "\n\n谢谢你.\n请带着它回去找那孩子,他见了就会明白了."
+
+
+block Item 715160 >=1 && ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+
+
+block Item 715160 >=1 && ItemSpace >= 1
+KillItem 715160
+GiveItem 715161
+endwindow "\n\n[@n]你找到我儿子了,真是太感谢了,请务必收下这个东西作为我的谢礼."
+
+block
+window "\n\n我来自远方的小村庄,前阵子跟我的儿子来这采买生活用品的时候遇到盗贼而走散了,盗贼真是太可怕了.",next
+window "\n\n真是不好意思,可以帮我找找我儿子吗?真是太感谢你了.",next
+endwindow "\n\n我跟儿子是在一个叫做伊尔村的附近走散的,不过我的身体因为受伤很虚弱实在不能到处乱跑,而且这里真是太大了啊."
+
+
+
+
+
+
+

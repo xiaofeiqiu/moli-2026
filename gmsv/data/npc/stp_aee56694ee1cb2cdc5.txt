@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物命中能力1点！",ok
+	window_ok
+Luac stp:legacy:e714f076f461186f2056
+		killitem 60279,1

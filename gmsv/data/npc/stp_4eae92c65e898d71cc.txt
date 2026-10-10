@@ -1,0 +1,24 @@
+block item 88006 == 1
+endwindow 501153
+
+block item 88005 == 1
+window 501154,next
+window 501155,next
+window 501156,next
+window 501157,ok
+window_ok
+giveitem 88006
+
+block item 88003 == 1
+endwindow 501158
+
+block item 87999 == 1 && item 88002 == 1
+window 501159,next
+window 501160,next
+window 501161,ok
+window_ok
+killitem 88002
+giveitem 88003
+
+block
+endwindow 501162

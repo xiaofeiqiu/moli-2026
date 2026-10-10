@@ -1,0 +1,6 @@
+block Item 591377 >= 1
+Endwindow"\n\n\n@c     Zzz. …… "
+block itemSpace == 0
+Endwindow"\n\n\n        任务提示，物品满了 …… "
+block
+giveitem 591377,1

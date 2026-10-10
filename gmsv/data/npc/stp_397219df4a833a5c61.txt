@@ -1,0 +1,10 @@
+block skilllevel 215 < 10
+EndWindow "\n\n　以你的厨艺还不能学习此技能"
+block skilllevel 215 == 10
+window "\n\n　要学习水果沙拉的制作方法吗？",yes,no
+window_no
+window_yes
+KillItem 1002027
+GiveRecipe 924
+block
+EndWindow "\n\n　你无法使用该物品"

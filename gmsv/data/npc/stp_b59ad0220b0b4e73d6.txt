@@ -1,0 +1,6 @@
+block item 54000 >=1
+	window "\n\n\n@c@n你有邀请帖\n\n那么，想让我送你去宴会地点么？",yes,no
+	window_no
+	window_yes
+	leavegroup
+	Warp 0,5400,16,30

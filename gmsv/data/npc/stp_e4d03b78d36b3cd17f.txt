@@ -1,0 +1,21 @@
+block item 87213 == 1
+endwindow "\n\n这就是你们上次给我的黄金如假包换，请你们不要再来打扰我了除非有值钱的玩意！"
+
+block item 87212 == 1
+window "\n\n哈哈~~我终于得到代表矮人族最高荣誉的战盔。给~~这黄金你拿去吧！",ok
+window_ok
+LeaveGroup
+killitem 87212
+giveitem 87213
+
+block item 87209 == 1
+endwindow "\n\n那三个女人骗我说这黄金能给我带来什么财富！全...都是...假的！"
+
+block item 87208 == 1
+window "\n\n这是也算是神谕？我随便在路边摊上能买到N份！",next
+window "\n\n不过我觉得么，你要我手上的黄金不是不可以，不过呢我要我们矮人族打造的秘银战盔，不知道你弄不弄得到呢！",next
+window "\n\n至于哪里能弄到估计你心里也有数了，这是头盔的设计图你拿着。",ok
+window_ok
+LeaveGroup
+killitem 87208
+giveitem 87209

@@ -1,0 +1,29 @@
+
+
+block
+
+	Window "\n\n每个人都把我当成是九尾妖狐打...我不过是和九尾妖狐长得像了那么一点点而已...",Next
+
+        if item 3506 >= 1 && petlevel 8603 == 1
+
+           Window "\n\n......",Next
+
+           Window "\n\n......我的孩子...",Next
+
+           Window "\n\n......我的孩子...",Next
+
+           Window "\n\n...谢谢你把我孩子带回来...",Next
+
+           Window "\n\n...当你带着这封信来的时候我就知道...",Next
+
+           Window "\n\n...如果你能答应我好好饲养我的孩子...",Next
+
+           Window "\n\n...那我就让他跟着你去冒险吧！",YES,No
+
+           Window_yes item 3506 >= 1 && petlevel 8603 == 1
+
+		KillItem 3506,1
+
+		KillPetl 8603,1
+
+		GivePet 8606

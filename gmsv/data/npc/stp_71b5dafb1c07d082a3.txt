@@ -1,0 +1,19 @@
+block  nowevent 579 == 1
+endwindow"\n\n\n@c你是不是忘记了什么事?"
+
+block  nowevent 578 == 1
+endwindow"\n\n\n@c还站在这里干什么,此事刻不容缓快,去吧..."
+
+
+block	item 95021 >=1 && nowevent 577 == 1
+window"\n\n\n@c哦! 你就是松田介绍过来的人吧",OK
+window_OK
+window"\n\n\n@c最近有个自称为基拉的人到处杀人",next
+window"\n\n@c可恶的家伙,虽然不知道他是怎么杀人的,不过好象已经知道大致的方法了",next
+window"\n\n@c经过我的调查,他只要知道对方的姓名与容貌才能杀人",next
+window"\n\n@c要是能知道他杀人的方法就好了,其他的去找我们的调查员夜神总一郎先生了解情况吧",OK
+window_OK
+nowevent 578 = 1
+
+block
+endwindow"\n\n\n@c你想干什么?绑架小孩吗?"

@@ -1,0 +1,10 @@
+block Item 1000033 > 0
+endwindow "\n\n你若能取得其它三位女神的首饰\n\n将可得到莫大的祝福!!"
+
+block 
+window "\n\n真没想到\n\n你来得及迎接新年的曙光呀!!",ok
+Window_OK ItemSpace == 0
+endwindow "\n\n你的背包满啦."
+Window_OK 
+GiveLeak1Item 1000033,1
+endwindow "\n\n这是我的首饰,你拿去吧!!"

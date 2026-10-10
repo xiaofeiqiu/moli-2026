@@ -1,0 +1,5 @@
+block item 123200 >= 1
+window "\n\n你是谁!",next
+window "\n\n刚好来给我们找点乐子.",ok
+window_ok
+Encount 3|0,63232,10,20||0|||||0|28056|||||||||

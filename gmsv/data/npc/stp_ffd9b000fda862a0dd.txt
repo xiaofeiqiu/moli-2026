@@ -1,0 +1,11 @@
+block item 18310 >=20 && item 18311 >=20 && item 18312 >=20 && item 18313 >=20
+window "\n\n 你确定是要见我们头领吗?不过进去之后,你身上的全部水晶碎片就会当做入门费了.",yes,no
+Window_yes item 18310 >=20 && item 18311 >=20 && item 18312 >=20 && item 18313 >=20
+killitem 18310,20
+killitem 18311,20
+killitem 18312,20
+killitem 18313,20
+leavegroup
+Warp 0,62044,37,38
+window_no
+endwindow "\n\n呵呵!看来你没有诚心来和我们谈判,再见吧!"

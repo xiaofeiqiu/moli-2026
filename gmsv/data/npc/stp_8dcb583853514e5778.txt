@@ -1,0 +1,4 @@
+block
+window"\n\n\n@c是改让我那儿子好好的独立下了",next
+window"\n\n\n@c作为父亲的我怎么能不给孩子成长的机会呢,",next
+endwindow"\n\n\n@c别看他像模像样的,其实还是个孩子呢."

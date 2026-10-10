@@ -1,0 +1,9 @@
+block globalFlag 309 == 1 && item 1000646 >= 1
+window 7020256,next
+window 7020257,ok
+window_ok
+LeaveGroup
+killitem 1000646
+globalFlag 309 = 0
+globalFlag 310 = 1
+Warp 0,23233,34,27

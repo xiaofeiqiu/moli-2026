@@ -1,0 +1,13 @@
+block item 87603 == 1
+endwindow "\n\n我们收拾一下就可以回村了。"
+
+block item 87602 == 1
+window "\n\n你是来寻找我们的么，真是太感谢了。",next
+window "\n\n实际上我们在经过前往西方海边路上时受到了北方出现的怪物的袭击，我们拼死逃到了这里，不过同伴们受了伤。外面又有那些怪物，我们一直无法离开这里。",next
+window "\n\n幸好你带来了这些东西，而且有你的保护，我想我们收拾一下就可以回村了。",ok
+window_ok
+killitem 87602
+giveitem 87603
+
+block
+endwindow "\n\n快来~~救救我们吧！"

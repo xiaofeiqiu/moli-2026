@@ -1,0 +1,10 @@
+block item 112 >= 1
+endwindow "\n\n我要飞得更高..."
+
+
+block item 119 == 1
+window "\n\n哦?是主人要你来找我吗?这里山好高啊...\n\n不过既然被你逮到了,就把这个小人偶给你吧!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 112,1

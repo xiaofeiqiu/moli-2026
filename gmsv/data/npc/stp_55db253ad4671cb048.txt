@@ -1,0 +1,16 @@
+block item 1000630 >= 1
+window 7020140,next
+window 7020141,ok
+window_ok ItemSpace >= 3
+LeaveGroup
+killitem 1000630,1
+giveitem 14492,3
+window_ok ItemSpace < 3
+endwindow 7020116
+
+
+block
+window 7020142,next
+window 7020143,yes,no
+window_yes
+window_no

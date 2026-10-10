@@ -1,0 +1,26 @@
+
+block item 715165 > 0
+endwindow "\n\n你真是个好心的年轻人."
+
+block Item 715164 > 0
+window "\n\n准备好我就帮你入地狱寻人.",yes,no 
+Window_NO
+endwindow "\n\n准备好再来找我."	
+Window_YES
+Warp 0,32271,31,42
+Endblock
+
+
+block Item 715163 > 0
+window "\n\n那个小女孩想到地狱探父\n孝心可嘉,可是太危险了.",next
+window "\n\n唔～你要帮他呀～\n像你这样的强者,应该没问题吧.",ok
+Window_OK Item 715163 > 0
+KillItem 715163,1
+GiveLeak1Item 715164,1
+endwindow "\n\n你只要把这朵普渡红莲,拿给小女孩的父亲就可以了～\n这样就可以超渡恶鬼,让他们短时间相会."
+
+
+block
+endwindow "\n\n那个小女孩想到地狱探父\n孝心可嘉,可是太危险了."
+ 
+	

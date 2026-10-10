@@ -1,0 +1,10 @@
+block item 660152 >= 1
+	Window "\n@c你竟然把它干掉了，我想你有资格进火之遗迹一试，要进去吗？",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c那好吧",OK
+	Window_YES
+       	killitem 660152,1
+        Warp 0,362,7,2
+block item 660152 < 1
+	Window "\n\n@c这里是地精灵神以前修炼的地方，禁止别人进入",ok
+	Window_ok

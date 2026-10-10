@@ -1,0 +1,23 @@
+block ShipCharDown 10 == 1 && ShipCharTake 10,6 == 1
+Window 70824,YES,NO
+Window_YES ShipCharDown 10 == 1 && ShipCharTake 10,6 == 1
+LeaveGroup
+ShipCharDown 10
+Window_YES
+EndWindow 15602,OK
+Window_NO
+
+block ShipCharDown 10 == 1 && ShipCharTake 10,7 == 1
+Window 70825,YES,NO
+Window_YES ShipCharDown 10 == 1 && ShipCharTake 10,7 == 1
+LeaveGroup
+ShipCharDown 10
+Window_YES
+EndWindow 15602,OK
+Window_NO
+
+block ShipGetStopTime2 < 60
+EndWindow 15601,OK
+
+block
+EndWindow 15733,OK 

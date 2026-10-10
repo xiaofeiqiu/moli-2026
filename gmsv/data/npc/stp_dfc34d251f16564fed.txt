@@ -1,0 +1,9 @@
+block item 1000692 == 1
+window 7020244,ok
+window_ok
+LeaveGroup
+killitem 1000692
+globalFlag 316 = 1
+
+block
+endwindow 7020245

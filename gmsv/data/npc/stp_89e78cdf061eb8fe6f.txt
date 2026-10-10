@@ -1,0 +1,6 @@
+block item 87200 == 1 && item 87201 == 1
+window "\n\n你要用火焰之石与诺顿剑进行摩擦吗？",ok
+window_ok
+LeaveGroup
+killitem 87200
+Warp 0,25215,47,16

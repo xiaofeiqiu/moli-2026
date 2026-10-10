@@ -1,0 +1,13 @@
+block item 999043 >= 1 
+EndWindow  "\n\n 谢谢你帮忙送粽子来！"
+
+block item 999042 >= 1 
+window "\n\n 什么？！特使们果真出事了！希望他们没有生命危险。\n 对了！谢谢你帮忙送粽子来，这个就算做报酬吧。",Ok
+Window_OK itemspace == 0 
+EndWindow  "\n\n 你好像拿太多东西了！"
+Window_OK 
+Killitem 999042 
+Giveitem 999043 
+
+block 
+EndWindow  "\n\n 我在等法兰特使送粽子来！他们早就出发了，可是到现在还没到，不会是出事了吧！"

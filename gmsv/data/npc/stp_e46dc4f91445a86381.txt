@@ -1,0 +1,18 @@
+block level <=10 && item 1000636>= 10
+window 7020432,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 1000636,10
+giveitem 1000637,1
+window_ok ItemSpace < 1
+endwindow 7020433
+
+block level <=10
+window 7020434,yes,no
+window_no
+endwindow 7020435
+window_yes
+endwindow 7020436
+
+block
+endwindow 7020437

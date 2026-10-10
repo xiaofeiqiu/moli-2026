@@ -1,0 +1,11 @@
+block item 21018 == 1
+	endwindow "\n照你这样.化石都化灰了"
+block item 21017 == 1 && item 21019 == 1 && item 21020 == 1 && item 21011 >= 1 && item 21014 >= 1
+	window "\n此化石已经存在几千万年之久.但看上去没有风化的迹象.\n\n是否进行调查?",yes,no
+	window_yes item 21017 == 1 && item 21019 == 1 && item 21020 == 1 && item 21011 >= 1 && item 21014 >= 1
+	window "\n@n拿出了了篙子先是拨开了泥土,再使用放大镜进行了调查",next
+	window "\n@n取出了酷似风元素的东西?",ok
+	window_ok item 21017 == 1 && item 21019 == 1 && item 21020 == 1 && item 21011 >= 1 && item 21014 >= 1
+	killitem 21011,1
+	killitem 21014,1
+	giveitem 21018,1

@@ -1,0 +1,33 @@
+block item 61123 >=1 && item 61125 >=1 && globalFlag 333 == 1
+endwindow 900576
+
+block item 61123 >=1 && item 61125 >=1 && globalFlag 333 == 0
+window 900577,next
+window 900578,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61126,5
+globalFlag 333 = 1
+window_ok ItemSpace < 1
+endwindow 900579
+
+block item 61125 >=1
+window 900580,ok
+window_ok
+Warp 0,23306,3,17
+
+block item 61123 >=1
+window 900581,ok
+window_ok
+Warp 0,23306,3,17
+
+block item 18699 >= 1 && globalFlag 336 == 0
+window 900582,yes,no
+window_yes
+window 900583,ok
+window_ok
+Warp 0,23306,3,17
+window_no
+
+Block
+endwindow 900584

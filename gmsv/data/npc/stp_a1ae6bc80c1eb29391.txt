@@ -1,0 +1,9 @@
+block item 200200 >= 1
+window "\n\n没想到能看见保安队的生面孔,你可以自由出入港口栈桥,你要前往栈桥吗?",yes,no
+window_yes
+leavegroup
+Warp 0,27000,16,55
+
+
+block
+endwindow "\n\n前往圣迦尔德王国的旅客,请到隔壁窗口办理相关手续."

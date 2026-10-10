@@ -1,0 +1,7 @@
+block SkillLevel 204 == 10
+window"\n\n\n@c 即将学习 10C杖 英勇之杖 制作！",ok
+window_ok
+	KillItem 591365,1
+	GiveRecipe 1127
+block
+Endwindow"\n\n\n@c 你的造杖技能还未10级，无法学习！"

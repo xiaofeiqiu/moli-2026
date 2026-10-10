@@ -1,0 +1,17 @@
+block	item 589131	>=	250
+window"\n\n收走250个碎片可以获得一个戒指!是否要兑换?",yes,no
+window_no
+window_yes
+killitem 589131,250
+Giveitem 589108,1
+block	item 589131	>=	100
+window"\n\n收走100个碎片可以获得一个戒指!是否要兑换?",yes,no
+window_no
+window_yes
+window"\n\n\n 给你个选择:想要犀利哥还是凤姐?\n\n选择[是]:犀利哥  选择[否]:凤姐",yes,no
+window_no
+killitem 589131,100
+Giveitem 589107,1
+window_yes
+killitem 589131,100
+Giveitem 589106,1

@@ -1,0 +1,16 @@
+block item 90856 == 1 && itemdur 90856 > 1
+window"@c\n\n是否进入古宅？",yes,no
+window_yes item 90856 == 1 && itemdur 90856 > 1
+setdur 90856,-1
+leavegroup
+Warp 0,50,17,49
+
+block item 90856 == 1 && itemdur 90856 == 1
+window"@c\n\n是否进入古宅？",yes,no
+window_yes item 90856 == 1 && itemdur 90856 == 1
+killitem 90856
+leavegroup
+Warp 0,50,17,49
+
+block
+Endwindow"@c\n\n门锁锈迹斑斑,好像需要一把钥匙.."

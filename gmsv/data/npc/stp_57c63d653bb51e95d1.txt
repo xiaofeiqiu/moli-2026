@@ -1,0 +1,4 @@
+block
+window 933604,ok
+window_ok
+Encount 2|0,27352,2,27||0|||||0|88033|||||||||

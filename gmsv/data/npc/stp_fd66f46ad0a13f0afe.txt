@@ -1,0 +1,16 @@
+block item 200351 >= 1
+endwindow "\n\n测试点就在里谢里雅堡."
+
+
+
+block item 200350 >= 1
+window "\n\n看来你需要去测试一下了.",ok
+window_ok
+killitem 200350
+giveitem 200351
+
+
+block
+window "\n\n听说了吗?传送中的魅影翼龙出现了.\n\n皇家骑士团正在选拔最优秀的5名骑士.\n他们将代表法兰王国前去捕捉这号称最强之龙.\n怎么你想去试试吗?",yes,no
+window_yes
+endwindow "\n\n勇气可嘉,但不是任何人都有资格参加这个测试的,先让我看看你的实力吧.\n\n知道索奇亚的流星山丘吗?哪里出现了狮子,知道该怎么做了吧,我等你的好消息."

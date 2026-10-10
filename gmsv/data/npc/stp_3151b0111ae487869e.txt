@@ -1,0 +1,10 @@
+block item 133 >= 1
+endwindow "\n\n我要靠自己的能力走出去..."
+
+	
+block item 119 == 1
+window "\n\n你是怎么进来的啊?我都走不出去了,小心你也走不出去,嘿嘿~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 133,1

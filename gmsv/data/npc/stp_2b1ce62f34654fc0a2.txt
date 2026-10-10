@@ -1,0 +1,8 @@
+block item 800089 == 1 && endevent 651 != 1
+	Window"\n\n没想到你们能击败魔龙·努牙，那怪物一直让我们很头疼。",next
+	Window"\n\n你有作为勇者的资质。",ok
+	Window_ok
+			killitem 800089,1
+			giveitem 800090,1
+			endevent 651 = 1
+			checktitle

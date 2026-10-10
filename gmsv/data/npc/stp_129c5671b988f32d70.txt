@@ -1,0 +1,77 @@
+block item 1002035 != 0
+
+endwindow "\n\n　谢谢你，阿比安吉"
+
+
+
+block NowEvent 582 == 1
+
+endwindow "\n\n　热心的年轻人...阿比安吉。"
+
+
+
+block item 1002036 == 1
+
+window "\n\n　找到我的家人了！？而且都很健康的生活着！？还带来了我的回信！？",next
+
+window "\n\n　读信中... ...",next
+
+window "\n\n　看来他们都很挂念我呢...",next
+
+window "\n\n　开启者啊！真是麻烦你了！这个护身符是我离开法兰时带来的，就送给你当作酬谢吧！虽然寒酸了点，但这个护身符就能让你减轻思乡之愁.\n　最后再委托你帮一个小忙...你再回法兰的时候希望你将这个信物带给我的妻子.",ok
+
+window_ok itemspace > 2
+
+killitem 1002036
+
+giveitem 1002039
+
+giveitem 1002038
+
+NowEvent 582 = 1
+
+endwindow "\n\n　热心的年轻人...阿比安吉。"
+
+window_ok
+
+endwindow "\n\n　年轻人,你身上的东西太多了"
+
+
+
+block StrCmpChat == 12030 && NowEvent 582 == 0
+
+window "\n\n　什么？你就是最近街上传闻中来自法兰的开启者吗？",yes,no
+
+window_no
+
+endwindow "\n\n　哦...看来我认错人了..."
+
+window_yes
+
+window "\n\n　据说你有能离开这个大陆的能力...所以我有个小小的请求想拜托你",ok
+
+window_ok
+
+window "\n\n　在这20年里我一直思念着我在法兰的家人...我的妻子和儿子，但和别人尝试过多次都无法离开这里后就放弃了",next
+
+window "\n\n　现在我上了年纪，体力也不如从前了，但是思念亲人之情却越发强烈",next
+
+window "\n\n　请你下次回到法兰的时候帮我把这封信交给我的家人吧",yes,no
+
+window_no
+
+window_yes itemspace > 1 && item 1002035 == 0
+
+giveitem 1002035
+
+endwindow "\n\n　谢谢你，阿比安吉"
+
+window_yes
+
+endwindow "\n\n　年轻人,你身上的东西太多了"
+
+
+
+block
+
+endwindow "\n\n　我是在20年前的一场海难事故中来到这里的。真是想念自己在故乡的家人啊。"

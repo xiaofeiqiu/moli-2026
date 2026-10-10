@@ -1,0 +1,31 @@
+
+
+
+#########################################################################
+block petspace != 4
+	EndWindow "\n\n 请带好1只1级或者2级李贝留斯\n\n 并且身上宠物只能为一只！"
+block Item 599133 >= 1 && petlevel 880100 == 2
+	Window"\n\n 你想要使用强化卷强化李贝留斯么？",YES,NO
+	Window_NO
+	Window_YES Item 599133 >= 1 && petlevel 880100 == 2
+	Window"\n\n 再次提示:你要使用强化卷强化李贝留斯么?",YES,NO
+	Window_NO
+	Window_YES Item 599133 >= 1 && petlevel 880100 == 2
+	Killitem 599133,1
+	KillPeth 880100,1
+	GivePet 454023
+	EndWindow"\n\n 强化成功,请确认!",OK
+block Item 599133 >= 1 && petlevel 880100 == 1
+	Window"\n\n 你想要使用强化卷强化李贝留斯么？",YES,NO
+	Window_NO
+	Window_YES Item 599133 >= 1 && petlevel 880100 == 1
+	Window"\n\n 再次提示:你要使用强化卷强化李贝留斯么?",YES,NO
+	Window_NO
+	Window_YES Item 599133 >= 1 && petlevel 880100 == 1
+	Killitem 599133,1
+	KillPetl 880100,1
+	GivePet 454023
+	EndWindow"\n\n 强化成功,请确认!",OK
+
+block
+	EndWindow "\n\n 请带好1只1级或者2级李贝留斯\n\n 并且身上宠物只能为一只！"

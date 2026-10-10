@@ -1,0 +1,19 @@
+block item 730109 >= 1
+window "\n\n欢迎你,勇敢的冒险者.实际上呢,你从幻境森林中得到的独角碎片除了制作成为净化诅咒用的道具外,还有剩余.",next
+window "\n\n我尝试着用剩余的材料与其他材料结合,帮你制作了一只幼生独角兽,就算是作为你冒险的奖励吧.你是否现在要领取呢?",yes,no
+window_no
+endwindow "\n\n随时欢迎你来领取."
+window_yes
+window "\n\n小心培养哦.",ok
+window_ok petspace == 0
+endwindow "\n\n你的宠物栏满啦!"
+window_ok item 730109 >= 1
+killitem 730109
+givepet 800261
+
+block
+endwindow "\n\n欢迎来到炼金之馆."
+
+
+
+

@@ -1,0 +1,27 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【托罗帝鸟】吗？",ok
+			Window_ok
+Luac stp:legacy:793f2e04554ddd3cb220
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【岩地跑者】吗？",ok
+			Window_ok
+Luac stp:legacy:2820006f2cb5520c58c6
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【火焰啄木鸟】吗？",ok
+			Window_ok
+Luac stp:legacy:a103c4b7de10c87bbb7a
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【狂奔鸟】吗？",ok
+			Window_ok
+Luac stp:legacy:72a1c7062581d9c22ff9
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【拳击企鹅】吗？",ok
+			Window_ok
+Luac stp:legacy:7831374cb3a73f626e9a
+				endif

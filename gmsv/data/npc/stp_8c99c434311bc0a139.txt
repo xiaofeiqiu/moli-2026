@@ -1,0 +1,52 @@
+
+
+
+block item 661101 == 1
+window "\n\n感谢你帮助我和牛郎的相聚,这个是对你的感谢,拿去吧.",ok
+window_ok
+killitem 661101
+giveitem 661104
+
+
+
+
+block item 661097 == 1 || item 661098 == 1 || item 661099 >= 1 || item 661100 >= 1
+Endwindow "\n\n一切就拜托你了."
+
+
+
+block item 661096 == 1
+window "\n\n感谢你帮我去向月老进行求证.\n\n可是最近我的心绪老是不安宁,本来我和牛郎生活得得好好的,但是牛郎好像很不开心啊.\n\n我准备回家一下,所以牛郎就麻烦你帮我照顾下.",yes,no
+window_yes
+killitem 661096
+giveitem 661097
+window_no
+Endwindow "\n\n我想回家都不能安心啊."
+
+
+
+
+block item 661095 == 1
+Endwindow "\n\n月老在灵堂那里呢."
+
+
+
+block item 661094 == 1
+window "\n羽衣在他手上,他不愿给你.\n\n什么?这是他的请求,既然我已经回不去了,那就只好委身与他了.\n\n我本乃王母娘娘的九女儿,不知道这样我这样是否会出错.\n\n要是能有月老帮测试姻缘,那该多好,您愿意去吗?",yes,no
+window_yes
+killitem 661094
+giveitem 661095
+Endwindow "\n\n一切就拜托你了."
+window_no
+Endwindow "\n\n你要半途而废吗?"
+
+
+block level >= 80
+window "\n\n呜呜呜呜呜呜!我的羽衣不见了......\n\n我刚才洗澡的时候明明藏在后面的.\n\n为什么不见了?好心的人啊,你愿意帮我寻找下吗?",yes,no
+window_yes
+Endwindow "\n\n桥对面的那个人好象很可疑..."
+window_no
+Endwindow "\n\n我回不去了,该怎么办呢?"
+
+block
+Endwindow "\n\n咦!你是谁啊?你也跑来这边洗澡吗?这里的湖水清澈,要不要一起洗啊?"

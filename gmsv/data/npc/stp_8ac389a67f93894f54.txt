@@ -1,0 +1,14 @@
+block globalFlag 305 == 1 && globalFlag 306 == 0 && item 11600 >= 200
+window 7020191,next
+window 7020192,ok
+window_ok
+LeaveGroup
+globalFlag 306 = 1
+killitem 11600,200
+giveitem 1000624
+
+block globalFlag 305 == 1
+endwindow 7020193
+
+block
+endwindow 7020194

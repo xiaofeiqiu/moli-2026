@@ -1,0 +1,14 @@
+block item 1000488 >= 1 || item 1000489 >= 1 || item 1000490 >= 1 || item 1000491 >= 1
+	killitem 1000488
+	killitem 1000489
+	killitem 1000490
+	killitem 1000491
+	window"誓言之花不该属于你！",ok
+block EndEvent 658 == 1
+	window"钻研技能，克服万千困难的人啊!已经做好接受更严酷的试炼的准备了吗？那么请进入吧！",yes,no
+	window_yes
+	Warp 0,50005,9,29
+	window_no
+	window"快滚开......",ok
+block
+	window"......",ok

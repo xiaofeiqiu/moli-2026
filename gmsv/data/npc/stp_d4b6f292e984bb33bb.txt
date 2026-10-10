@@ -1,0 +1,10 @@
+block floor == 300 && XPos >= 699 && YPos >= 319
+window 85592,yes,no
+window_no
+window_yes
+leavegroup
+killitem 86391
+Warp 0,28203,36,21
+
+block
+endwindow 85593

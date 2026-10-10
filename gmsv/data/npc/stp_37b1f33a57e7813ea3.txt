@@ -1,0 +1,14 @@
+block item 200757 >= 1
+endwindow "\n\n快去吧,不要打扰我睡觉."
+
+
+block item 200756 >= 1
+window "\n\n嗯,议会的特派员吗?怎么这么久才来,地下室里闹鬼闹好几天了,搞得我现在晚上都不敢睡觉,一到白天就打瞌睡.",next
+window "\n\n钥匙你收好哦,地下室就在村子的东北处,我接着睡了zzz ZZZ.",ok
+window_ok
+killitem 200756
+giveitem 200757
+
+
+block
+endwindow "\n\nzzz ZZZ."

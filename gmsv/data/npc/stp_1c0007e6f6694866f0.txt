@@ -1,0 +1,20 @@
+block item 800142 >= 1
+endwindow "\n\n快去瓦尼尔村吧!"
+
+
+block
+window "\n\n好吧,我把我知道的一切都告诉你",next
+window "\n\n几周前的某天,有一个奇怪的巫师来到村子里",next
+window "\n\n他教我们种植之法,使得我们的农田物产丰富,很快赢得了村民的信任",next
+window "\n\n之后又往我们的水井里注入了不知名的液体,很快干涸的水井又充满了盈盈的泉水",next
+window "\n\n但是村民喝过井里的水之后都开始出现了奇怪的变化,皮肤干裂,浑身恶臭",next
+window "\n\n在之后村里的人都变成了可怕的僵尸,我因为刚好没有在村中,躲过了这一劫",next
+window "\n\n但是很快那个巫师察觉到了我,我只有装疯卖傻的在村里游荡,他也没有对我做什么",next
+window "\n\n你们来了之后,巫师对你们的行动一直在暗中观察,我趁他不注意就跑出了村子",next
+window "\n\n你们已经知道真相了,下一步你们打算怎么做?",next
+window "\n\n你们要对抗那个巫师么,我只知道他藏身在瓦尼尔村,其他的就帮不到你们了",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 800142,1

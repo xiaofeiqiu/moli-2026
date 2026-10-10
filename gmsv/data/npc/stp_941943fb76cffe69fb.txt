@@ -1,0 +1,10 @@
+block item 87509 == 1
+endwindow "\n\n我都认罪了还找我干什么！"
+
+block item 87506 == 1
+window "\n\n你们真强，我投降了，饶命啊。这是我的认罪书你拿去吧，我会把这黑市格斗场俱乐部给解散，然后去士兵队长那自首的。",ok
+window_ok
+LeaveGroup
+killitem 87506
+giveitem 87509
+Warp 0,1403,33,21

@@ -1,0 +1,26 @@
+block
+window "\n\n作为阿尔杰斯之子,我可以很肯定的告诉你,神域根本不是梅鲁所说的那样!你一定要相信我,不要被坏人蒙蔽!神域一直在努力维系世界的平衡,如果不是七罪,世界不会这样.",next
+window "\n\n从梅鲁口中了解到,七罪虽然已经消灭了五罪,但阿尔卡迪亚和罗连斯分别拥有了七宗罪!他们虽然在几千年前死去,但现在却通过还魂珠寄存于其他人的身上.",next
+window "\n\n如果你想要获得七宗罪,尝试击败露比和阿鲁巴斯吧!或许你能从他们身上获得一些线索.",next
+window "\n\n为了世界的平衡,为了神域在人类心中的地位,我可以将稀有的神域之宠送给你,她还在成长阶段,需要人来照顾,但你相对的需要付出传说中的勇者称号,你愿意吗?",yes,no
+window_yes petspace == 0
+endwindow "\n\n你的宠物栏满了"
+window_yes
+endevent 566 = 0
+Checktitle
+givepet 800114
+leavegroup
+Warp 0,300,614,259
+
+window_no
+window "\n\n你一定希望自己通过双手来完成你的目标!加油!这枚戒指送给你,仅代表我对你的敬仰.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 800209
+leavegroup
+Warp 0,300,614,259
+
+
+
+

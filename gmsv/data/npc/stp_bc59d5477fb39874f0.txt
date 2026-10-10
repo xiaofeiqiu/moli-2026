@@ -1,0 +1,18 @@
+block itemcreatetime 200527 >= 60 && item 200527 == 1
+window "\n\n你手上的沙漏已经流失完了,回去拿一次再来找我.",ok
+window_ok
+killitem 200527
+leavegroup
+Warp 0,27539,10,27
+
+
+
+
+block item 200527 >= 1
+window "\n\n你要把手上的沙漏镶进这个大沙漏中吗?",yes,no
+window_yes
+killitem 200527
+leavegroup
+Warp 0,27541,37,38
+window_no
+endwindow "\n\n等你想好了在来."

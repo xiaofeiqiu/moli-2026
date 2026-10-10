@@ -1,0 +1,58 @@
+block item 800003 == 1
+	Window"\n\n时间不多了，去找你的猎物吧！！！哼哼哼！",ok
+
+block item 800001 == 1
+	Window"\n\n很好，帮我拿回了名单，那我也告诉你怎么获得任务资格，很简单就是去杀掉已获得资格的生物！",next
+	Window"\n给你一份名单，放心，已经帮你用你能看懂的文字写了。",ok
+		Window_ok
+			killitem 800001
+			giveitem 800003
+
+block item 800008 == 1
+	Window"\n你是怎么勾引那女人的。。。好吧，我承认除了战斗，你还有别的本事！",ok
+		Window_ok item 800013 >= 1 || item 800011 >= 1
+			killitem 800008
+		Window_ok item 800008 == 1
+			killitem 800008
+			giveitem 800011
+
+block item 800009 == 1
+	Window"\n你已经无人可挡！赛恩斯都败在你的剑下！看来我真要对你刮目相看了！",ok
+		Window_ok item 800013 >= 1 || item 800012 >= 1
+			killitem 800009
+		Window_ok item 800009 == 1
+			killitem 800009
+			giveitem 800012
+
+block item 800004 == 1
+	Window"\n你竟然干掉了那个恶心的烂泥，说明你比它更强！",ok
+		Window_ok item 800013 >= 1 || item 800013 >= 1
+			killitem 800004
+		Window_ok item 800004 == 1
+			killitem 800004
+			giveitem 800010
+
+block item 800000 == 0 && item 800013 == 1
+	Window"\n\n一个难度超乎想象的任务即将开始，你会进入一个虚幻的世界，你准备好了吗？！",next
+	Window"\n好，我帮你查询一下报名流程。。。。。。",next
+	Window"\n你真是个不走运的人，报名人数已满，哼哼哼！",next
+	Window"\n要不你帮我办一件事吧，事成之后或许我能帮你个小忙",next
+	Window"\n之前参加任务的人员名单搞丢了，你去帮我找回来，有可能已经被扔到垃圾堆里了！",ok
+		Window_ok item 800000 == 0 && item 800013 == 1
+			giveitem 800000
+
+block item 800000 == 0 && item 800013 == 0 && item 800012 == 1 || item 800000 == 0 && item 800013 == 0 && item 800011 == 1 || item 800000 == 0 && item 800013 == 0 && item 800010 == 1 
+	Window"\n\n寻找入口，进入虚幻世界，任务才刚刚开始！哼哼哼哼哼！",ok
+
+
+block item 800000 == 1
+	Window"\n\n说不定名单被某个捡垃圾的家伙拾去了。",ok
+
+block item 800000 == 0
+	Window"\n\n一个难度超乎想象的任务即将开始，你会进入一个虚幻的世界，你准备好了吗？！",next
+	Window"\n好，我帮你查询一下报名流程。。。。。。",next
+	Window"\n你真是个不走运的人，报名人数已满，哼哼哼！",next
+	Window"\n要不你帮我办一件事吧，事成之后或许我能帮你个小忙",next
+	Window"\n之前参加任务的人员名单搞丢了，你去帮我找回来，有可能已经被扔到垃圾堆里了！",ok
+		Window_ok
+			giveitem 800000

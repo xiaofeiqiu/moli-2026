@@ -1,0 +1,14 @@
+block item 39829 >= 1
+Endwindow "\n\n去魔法大学找温格教授吧,他会告诉你更多关于水怪的情报!"
+
+
+block StrCmpChat == 777039
+Window "\n\n哦?你也知道关于水怪的传说吗?那可是世界上最大的未解之谜哦!据说那是一种神秘的巨兽,像大象,又象长劲鹿,还有人说它是早已灭绝的恐龙呢!如果能抓到的话,那可是一大笔钱呢,肯定会有很多人来参观,你想知道更多吗?",yes,no
+Window_yes itemspace < 1
+Endwindow "\n\n你的背包满了."
+Window_yes
+giveitem 39829
+
+
+block
+Endwindow "\n\n怎么小伙子迷茫了?"

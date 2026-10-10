@@ -1,0 +1,15 @@
+block petlevel 2000334 >= 1 && globalFlag 323 == 0
+window 7020184,ok
+window_ok ItemSpace >= 5
+LeaveGroup
+Killpeth 2000334,1
+giveitem 14494,5
+globalFlag 323 = 1
+window_ok ItemSpace < 5
+endwindow 7020116
+
+block globalFlag 323 == 0
+endwindow 7020185
+
+block
+endwindow 7020186

@@ -1,0 +1,7 @@
+block
+	window 7020590,yes,no
+	window_yes item 360318 >= 1 && petspace >= 1
+	killitem 360318,1
+	Givepet 2017,1
+	endwindow 7020590,ok
+	window_no

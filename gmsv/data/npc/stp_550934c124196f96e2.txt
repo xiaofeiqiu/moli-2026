@@ -1,0 +1,11 @@
+block item 40583 == 1
+window"\n\n 为什么都不肯相信我..",next
+window"\n\n 什么?你问我出了什么事? 那我就告诉给你听吧,反正你也不会相信的",next
+window"\n\n 有一天晚上暴风雨，我喝完酒匆忙跑回家，突然听见头上一声轻吼，我就朝天空看去",next
+window"\n\n 太壮观了 一条很大的类似龙形状的黑影盘旋在空中,虽然大家都不相信我,可这是真的",ok
+window_OK
+killitem 40583,1
+giveitem 40584
+
+block
+endwindow"\n\n 神龙来啦~~神龙来啦！！"

@@ -1,0 +1,7 @@
+block
+window "\n\n人类啊~~前面是海皇波塞顿的领地，你们未经应许是禁止前往的。",next
+window "\n\n你们还是要硬闯吗？",yes,no
+window_no
+Warp 0,25115,151,165
+window_yes
+Encount 3|0,25167,17,29|||||0|||86441|||||||||

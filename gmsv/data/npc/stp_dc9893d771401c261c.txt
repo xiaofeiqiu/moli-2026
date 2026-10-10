@@ -1,0 +1,11 @@
+block item 87281 == 1
+Warp 0,33500,93,55
+
+block item 87283 == 1
+window "\n\nÄãÒª¼ñÆğÕâ¿ÅÁúÖéÂğ£¿",ok
+window_ok
+giveitem 87281
+Warp 0,33500,93,55
+
+block
+Warp 0,33500,93,55

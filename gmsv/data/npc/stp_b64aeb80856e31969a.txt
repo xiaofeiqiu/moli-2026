@@ -1,0 +1,10 @@
+block
+window "\n\n勇敢的冒险者你好,现在魔力宝贝十周年庆祝活动正在举办中.",next
+window "\n\n还记得那些你在冒险之路上遭遇到的各种强力boss么?王国的炼金术士们制作了追忆之路,将那些经典的boss复制在了其中,你要不要去挑战一下呢?",yes,no
+window_no
+endwindow "\n\n欢饮你来随时挑战哦."
+window_yes
+window "\n\n请多加小心哦.",ok
+window_ok
+leavegroup
+Warp 0,57114,15,126

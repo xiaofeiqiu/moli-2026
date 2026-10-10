@@ -1,0 +1,31 @@
+block globalFlag 325 == 1 && globalFlag 326 == 0 && StrCmpChat == 900226
+Window 900432,OK
+window_ok
+LeaveGroup
+setlp -1000
+Warp 0,1000,242,100
+globalFlag 326 = 1
+endwindow 900433
+####################################
+block globalFlag 325 == 1 && globalFlag 326 == 0 && StrCmpChat == 900225
+Window 900432,OK
+window_ok
+LeaveGroup
+setlp -500
+Warp 0,45268,6,8
+globalFlag 326 = 1
+endwindow 900433
+####################################
+block globalFlag 325 == 1 && globalFlag 326 == 0 && StrCmpChat == 900224
+Window 900432,OK
+window_ok
+LeaveGroup
+giveitem 61101 
+globalFlag 326 = 1
+###########################
+block globalFlag 325 == 1 && globalFlag 326 == 0
+Window 900220,OK
+window_ok
+################################
+block
+endwindow 900434

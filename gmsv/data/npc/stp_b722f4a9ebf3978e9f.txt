@@ -1,0 +1,47 @@
+block Item 60459 >= 1
+endWindow "\n\n魔石?.....\n\n你拿着这个去找大主教,给他看看,可能会知道些什么"
+
+block Item 60460 >= 1
+Window "\n\n圣拉鲁卡村也受到了袭击,怪物到底想要干什么?",ok
+Window_ok
+KillItem 60460,1
+Warp 0,64057,80,30
+
+
+block Item 60461 >= 1
+Window "\n\n伊尔村....亚留特村...圣拉鲁卡村...\n\n东........北........西........\n\n如果估计没错的话,下次的袭击地点应该是位于芙蕾雅南方的维诺亚村",next
+Window "\n\n你马上出发,希望能在被攻击前赶到",ok
+Window_ok
+KillItem 60461,1
+Warp 0,64058,48,44
+
+block Item 60462 >= 1
+Window "\n\n都是受污染的魔石......看来这些怪物是受到某些人的控制,到底是什么呢?策划这次事件的幕后人物为什么要一个一个去攻击村子来给我们留下救援的时间?他完全可以同时袭击从而削弱王国的实力......",next
+Window "\n\n勇敢的孩子,鉴于你的优秀表现,我要授予你荣誉勋章,希望你不要只满足于现在的成绩,继续努力吧!",ok
+Window_ok
+KillItem 60462,1
+GiveItem 60463,1
+
+block Item 60463 >= 1
+endWindow "\n\n继续努力吧"
+
+block Item 60458 >= 1
+Window "\n\n大主教担心的事情发生了,伊尔村才刚刚平息,亚留特村就受到袭击.看来这是一次针对王国的有预谋的袭击事件",next
+Window "\n\n@n:让我去调查一下情况吧",next
+Window "\n\n万事小心",ok
+Window_ok
+KillItem 60458,1
+Warp 0,64056,92,49
+
+
+block endevent 584 == 1
+Window "\n\n刚才巡逻队来报告,王国周围怪物变的更加暴躁了,难道要发生什么事情吗?",next
+Window "\n\n王国巡逻员:\n报告!伊尔村受到大量怪物袭击,请求支援!",next
+Window "\n\n@n:让我们去吧!",next
+Window "\n\n谢谢你,王国需要你这样的青年.快去吧,我等你好消息!",ok
+Window_ok endevent 584 == 1
+endEvent 584 = 0
+Warp 0,64055,30,3
+
+block
+endWindow "\n\n你好"

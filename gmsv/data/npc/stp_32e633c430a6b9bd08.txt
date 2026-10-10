@@ -1,0 +1,10 @@
+block item 86514 >= 1 && item 86516 >= 1 && item 86517 < 1
+window "\n\n你们不是复制人？为什么要假扮？9527？原来如此，唉，都是我们的失败！好吧，你们去找守门人。",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86517
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block
+endwindow "\n\n............."

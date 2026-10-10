@@ -1,0 +1,11 @@
+block item 660143 >= 10
+	Window "\n@c哇---哥哥你有这么多格利芬的羽毛啊，给我点吧好马？我拿妈妈做的冰激凌和你换哦",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c小气鬼！",OK
+	Window_YES
+        leavegroup
+	killitem 660143,10
+        giveitem 660144,1 
+block item 660143 < 10
+	Window "\n\n@c好喜欢外面的格利芬哦，它的羽毛好漂亮。。",ok
+	Window_ok

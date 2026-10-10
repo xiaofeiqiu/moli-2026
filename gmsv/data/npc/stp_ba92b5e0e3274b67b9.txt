@@ -1,0 +1,30 @@
+block item 200536 >= 1
+endwindow "\n\n别磨磨蹭蹭的,上路吧."
+
+
+
+block item 200535 >= 1
+endwindow "\n\n那晚上我在西村门口的展望台下等你."
+
+
+
+block item 200534 >= 1
+window "\n\n法拉答应了吗?太好了,这样你晚上也一起来吧,多一个眼见者就能证明我所言非虚,你愿意来吗?",yes,no
+window_yes
+killitem 200534
+giveitem 200535
+
+
+
+block item 200533 >= 1
+endwindow "\n\n把这封密函交给法拉就行,千万别让她父母知道这密函是我写的."
+
+
+block
+window "\n\n这段时间我每天晚上仰望天空,发觉我们天空之城所在的法达利亚大陆上空出现异象.",next
+window "\n\n可就是村里没有一个人相信我的话,并且发现他们对此事漠不关心,又好像对此现象一清二楚.",next
+window "\n\n现在就剩下我唯一的童伴法拉或许会相信我,据我长久观测,正好今晚这个异象会特别明显,你能帮我去约法拉晚上去村门口展望台等我吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200533

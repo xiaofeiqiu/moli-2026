@@ -1,0 +1,12 @@
+block
+window "\n\n你确定要离开梦之森吗?",yes,no
+Window_no
+EndWindow "\n\n想好再与我对话."
+Window "\n\n那我们下次再见!",ok
+Window_ok
+LeaveGroup
+Warp 0,1000,233,78
+
+
+
+

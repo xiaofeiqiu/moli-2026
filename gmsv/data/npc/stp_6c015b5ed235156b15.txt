@@ -1,0 +1,14 @@
+block EquipItem == 70032
+window 910323,next
+window 910324,ok
+window_ok
+Encount 2|0,25078,1,11||0|||||0|70054|||||||||
+###############
+block
+window 910325,next
+window 910326,next
+window 910327,next
+window 910328,next
+window 910329,next
+window 910330,ok
+window_ok

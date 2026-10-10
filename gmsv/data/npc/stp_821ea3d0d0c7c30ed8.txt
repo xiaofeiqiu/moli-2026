@@ -1,0 +1,9 @@
+block item 86268 >= 1
+endwindow 7019476
+
+block
+window 7019477,next
+window 7019478,ok
+window_ok
+leavegroup
+giveitem 86268

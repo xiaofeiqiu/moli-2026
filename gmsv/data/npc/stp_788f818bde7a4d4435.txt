@@ -1,0 +1,11 @@
+Block item 800171 == 1
+Window "\n\n持证之人有权开启真理之门的道路,请进!",ok
+window_ok item 800171 == 1
+leaveGroup
+Warp 0,44881,4,1
+
+
+
+
+Block
+Endwindow "\n\n这里不是人类该来的地方!"

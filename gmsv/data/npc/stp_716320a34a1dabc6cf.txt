@@ -1,0 +1,6 @@
+block item 86520 == 1
+window "\n\n不可能，我不可能会败了，可恶，那是什么，原来是光啊……",ok
+window_ok
+leavegroup
+killitem 86520
+Warp 0,28301,8,14

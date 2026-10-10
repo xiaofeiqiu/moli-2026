@@ -1,0 +1,4 @@
+block
+window "\n\n你确定要返回古代树吗?",yes,no
+window_yes
+Warp 0,11031,12,17

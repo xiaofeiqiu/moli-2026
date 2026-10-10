@@ -1,0 +1,30 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 60415 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 60415,1
+block item 1000323 >= 1
+	window"\n\n去干自己的事吧，我要重新开始研究了。",ok
+	window_ok
+		EndWindow "\n\n	有空常来看看，冒险者。"
+block item 60415 >= 1
+	window"\n\n像琥珀一样耀眼，魔力虽然归于沉寂，散发出的波动却依旧如此美丽……",next
+	window"\n\n似乎能从上面感受的一些忧伤的感情……这件事最好就此作罢，不要在继续追查下去了。",next
+	window"\n\n（拿出奎因的护身符）艾泽尔先生！我们需要您的帮助，无论发生什么，都是我们的选择……",next
+	window"\n\n奎因接受了你们？真是任性……算了，奎因看人的眼光从来不会错。",next
+	window"\n\n这个宝石蕴含的魔力即将枯竭，但里面存在的不属于这个世界的术式依旧在运作，当一切归于寂静，宝石的魔力将会反转，在这个过程中会产生巨大的能量。",next
+	window"\n\n为了获取力量，用希望孕育出巨大的绝望，这颗宝石的创造者是个危险的人，别在这里耽误时间，请把这个交给奎因，路上小心。",ok
+		window_ok
+			giveitem 1000323,1
+block item 60423 >= 1
+	window"\n\n看来并不顺利啊冒险者，要继续去挑战吗？",yes,no
+	window_yes
+		LeaveGroup
+		Warp 0,67,12,13
+	window_no
+		EndWindow "\n\n	那就在做点准备工作吧。"
+block
+	window "\n\n您好冒险者，有什么需要帮忙的吗？",ok
+		window_ok
+			EndWindow "\n\n	有空常来看看，冒险者。"

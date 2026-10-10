@@ -1,0 +1,15 @@
+block item 1000699 >= 1
+window 7020149,next
+window 7020150,yes,no
+window_yes item 15213 >= 1
+LeaveGroup
+killitem 1000699
+killitem 15213
+giveitem 1000700
+endwindow 7020151
+window_yes
+endwindow 7020152
+window_no
+
+block
+endwindow 7020153

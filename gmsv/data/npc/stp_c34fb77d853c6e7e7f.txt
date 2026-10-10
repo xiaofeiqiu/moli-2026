@@ -1,0 +1,8 @@
+block
+window "\n\n你要回营地了么?",yes,no
+window_yes
+leavegroup
+Warp 0,57036,64,27
+window_no
+endwindow "\n\n多加小心."
+

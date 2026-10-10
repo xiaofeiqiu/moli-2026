@@ -1,0 +1,29 @@
+block item 90857 == 0 && item 90856 == 1
+localcount19 = random 3,0
+
+if localcount19 == 1
+window"@c\n\n蜡像发出了咯咯咯咯咯咯的笑声,阴森恐怖..",ok
+window_ok
+Encount 3|0,0,0,0||||||||255414|||||||||
+endif
+
+if localcount19 == 2
+window"@c\n\n蜡像发出了咯咯咯咯咯咯的笑声,阴森恐怖..",ok
+window_ok
+setdur 90856,-1
+leavegroup
+message 378680
+Warp 0,42,42,38
+endif
+
+if localcount19 == 3
+window"@c\n\n蜡像发出了咯咯咯咯咯咯的笑声,阴森恐怖..",ok
+window_ok
+setdur 90856,-1
+leavegroup
+message 378680
+Warp 0,42,42,38
+endif
+
+block
+Endwindow"@c\n\n这些蜡像好古怪,一动不动仿佛一直盯着你.."

@@ -1,0 +1,6 @@
+block	item 589130	>=	100
+killitem 589130,100
+Giveitem 589114,1
+block	item 589130	>=	50
+Killitem 589130,50
+Giveitem (589111%1,589113%1)

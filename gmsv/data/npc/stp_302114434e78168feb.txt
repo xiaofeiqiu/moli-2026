@@ -1,0 +1,39 @@
+block item 200025 >= 1
+endwindow "\n\n真希望缺水的情况尽快能解决."
+
+
+block item 200024 >= 1
+window "\n\n这样来看王国缺水的根源应该找到了.",next
+window "\n\n这些人类的神秘组织到底在做什么,以至于王国毁灭.",next
+window "\n\n希望你们可以继续调查下去.",next
+window "\n\n请收下这个.",ok
+window_ok
+killitem 200024
+giveitem 200025
+
+
+
+block item 200022 >= 1
+endwindow "\n\n你可以去东部区域查看一下."
+
+
+block item 200021 >= 1
+window "\n\n感谢你,但是这些水也不能维持太久.",next
+window "\n\n有什么办法可以解救我们吗?\n\n你是否还可以在帮助我们.",yes,no
+window_yes
+killitem 200021
+giveitem 200022
+
+
+block item 200020 >= 1
+endwindow "\n\n这个是吸水镜,可以存储大量的水,尽快帮我们找水回来,拜托了."
+
+
+block item 200019 >= 1
+window "\n\n这不是刚刚在路上遇到的人吗?",next
+window "\n\n你们是怎么来到这里的.",next
+window "\n\n由于这里天气炎热缺水,我们很多天都没有水喝了.",next
+window "\n\n你可以帮助我们去取水吗?",yes,no
+window_yes
+killitem 200019
+giveitem 200020

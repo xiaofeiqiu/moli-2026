@@ -1,0 +1,15 @@
+block
+window "\n\n哎哟,你已经打败那家伙了嘛~\n这么好吃的雪饼你要不要试验吃吃看呢?",next
+window "\n\n看来你已经明白现在面临的危机了,Bingo!回答正确!\n虽然七之审判者已经被你打败,但人类的危机远没有结束.",next
+window "\n\n神已经遗弃了大地上的一切生物,审判只是开始,接下来就是肃清了.\n琉璃已经召唤出了阿尔杰斯的神使者了,但现在还有挽回的余地...",next
+window "\n\n我...身体...怎么...",next
+changepal 15,90
+window "\n\n(露比眼神变得暗淡无光起来!)",next
+window "\n\n(耳边传来露比的惨叫声!!!!!)",next
+window "\n\n(耀眼的光芒伴随着一股巨大的力量使你失去了意识...)",ok
+window_ok itemspace < 1
+endwindow "你的背包满啦"
+window_ok
+giveleak1Item 1000209
+leaveGroup
+Warp 0,1530,15,6

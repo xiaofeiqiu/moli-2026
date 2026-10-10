@@ -1,0 +1,12 @@
+block item 88324 == 1
+Warp 0,33000,290,433
+
+block
+window "\n\n您要拿桌面上的配方记录吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_yes
+LeaveGroup
+giveitem 88324
+Warp 0,33000,290,433

@@ -1,0 +1,9 @@
+block item 795119  == 1
+window "\n\n法兰城的勇士啊,终于等到你们了,让我们一起消灭他吧!",ok
+window_ok item 795119  == 1
+Leavegroup
+Warp 0,60287,32,37
+
+
+block 
+endwindow "\n\n你们怎么来到这里的?"

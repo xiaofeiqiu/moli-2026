@@ -1,0 +1,3 @@
+block Item 599130 >= 1
+		KillItem 599130,1
+		GiveItem 652104,20

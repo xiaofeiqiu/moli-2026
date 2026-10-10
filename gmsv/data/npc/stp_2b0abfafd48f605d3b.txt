@@ -1,0 +1,10 @@
+block item 122 >= 1
+endwindow "\n\n真热啊~"
+
+
+block item 119 == 1
+window "\n\n好热好热,你也很热吧!附近好像就这里有水,对了,给你这个,不能偷吃哦,给我主人吧,嘿嘿~~~",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 122,1

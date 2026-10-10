@@ -1,0 +1,22 @@
+block endevent 658 == 1
+	window "\n\n嘿嘿，为什么要有那样惊讶的表情呀？",next
+	window "\n\n我在这里有那么不可思议吗？",next
+	window "\n\n呵呵呵，能等到你来真是不错啊",next
+	window "\n\n我一直都在想能够见到你哟！",next
+	window "\n\n在遥远的记忆里，我们相遇的情形，我可都好好记着呢。",next
+	window "\n\n你比我想像中的人还要优秀哦。",next
+	window "\n\n一定，你有着无限的可能性呢。",next
+	window "\n\n呵呵呵，那么就这样你可以变的更强咯",next
+	window "\n\n你的能力，是我保证的哟！",next
+	window "\n\n要变得比现在更厉害喔。",next
+	window "\n\n呵呵呵，能等到你来真是不错啊",next
+	window "\n\n嘿嘿，好久没人来这陪我玩了，",next
+	window "\n\n你不常来的话，下次偶可要跑出去玩咯。",next
+	window "\n\n记住我们的约定喔。就由你手中的誓约之花代表我们的约定吧。",next
+	window "\n\n在我来夺走你生命的日子之前，你绝对不能死喔",next
+	window "\n\n要发誓遵守我们之间的这个约定哦！",ok
+	window_ok
+	GiveItem 900004
+	LeaveGroup
+	Warp 0,1000,242,85
+	

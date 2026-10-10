@@ -1,0 +1,25 @@
+block item 1000709 == 1 && itemcreatetime 1000709 >= 420
+endwindow "\n\n　你已在线超过7小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 360
+endwindow "\n\n　你已在线超过6小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 300
+endwindow "\n\n　你已在线超过5小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 240
+endwindow "\n\n　你已在线超过4小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 180
+endwindow "\n\n　你已在线超过3小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 120
+endwindow "\n\n　你已在线超过2小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 60
+endwindow "\n\n　你已在线超过1小时"
+
+block item 1000709 == 1 && itemcreatetime 1000709 >= 30
+endwindow "\n\n　你已在线超过30分钟"
+block
+endwindow "\n\n　你的在线时间还没有超过30分钟"

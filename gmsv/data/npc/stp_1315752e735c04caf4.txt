@@ -1,0 +1,14 @@
+block item 70038 >= 1
+endwindow 910147
+
+block
+window 910148,next
+window 910149,next
+window 910150,next
+window 910151,next
+window 910152,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 70038
+window_ok ItemSpace < 1
+endwindow 910153

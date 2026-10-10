@@ -1,0 +1,18 @@
+block item 88317 == 1
+endwindow "\n\n以后有什么好东西要卖记得找我哦！"
+
+block item 88316 == 1 && StrCmpChat == 279001
+window "\n\n恭喜您答对了！这是我收购你这箱货的钱~请收好。",ok
+window_ok
+killitem 88316
+giveitem 88317
+
+block item 88316 == 1
+window "\n\n伙计你身后的箱子里装的是什么呀？表怕蜀黍不是坏人，如果你里面的东西是我想要的，我愿出高价收购哦。",next
+window "\n\n嗯~就这些破玩意吗？你运气好今天我没收到什么有价值的商品，我全要了。不过你要完成我一道数学脑筋急转弯题目，如何？",yes,no
+window_no
+window_yes
+endwindow "\n\n题目是：一颗心值多少钱？（正确答案请输入阿拉伯数字，如：5000）
+
+block
+endwindow "\n\n不对~~不对~~"

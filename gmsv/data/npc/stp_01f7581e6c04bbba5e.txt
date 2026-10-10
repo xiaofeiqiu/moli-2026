@@ -1,0 +1,6 @@
+block itemdur 39671 ==1
+	killitem 1000254,1
+	metamo  101533
+block
+	SetDur 39671,-1
+	metamo  101533

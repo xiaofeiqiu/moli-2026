@@ -1,0 +1,12 @@
+block Item 1000199 >= 1
+window "\n\n碑文犹如拥有生命一样在跃动着\n\n转眼形成了一道门...",ok
+window_ok Group != 1
+endwindow "\n\n我的法力只能传诵一个勇者过去,请解散队伍."
+window_ok Group == 1
+killitem 1000199
+LeaveGroup
+Warp 0,1631,5,2
+
+
+block
+endwindow "\n\n\n\n　　　　　···一个冰冷的石碑···"

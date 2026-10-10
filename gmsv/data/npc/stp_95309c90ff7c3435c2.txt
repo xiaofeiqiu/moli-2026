@@ -1,0 +1,3 @@
+block 
+	Window"\n\n闲人速速离开。",ok
+		Window_ok

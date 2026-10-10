@@ -1,0 +1,42 @@
+block Item 60475 >= 1 && item 60468 >= 1
+Window "\n\n恭喜你通关了,我是该任务的作者,现针对你选择的结局给你奖励,...唔...我想这个比较适合你吧",ok
+window_OK
+killItem 60475,1
+killItem 60468,1
+GiveItem 60474,1
+LeaveGroup
+Warp 0,1000,233,78
+
+
+block Item 60469 >= 1 && item 60468 >= 1
+Window "\n\n恭喜你通关了,我是该任务的作者,现针对你选择的结局给你奖励,...唔...我想这个比较适合你吧",ok
+window_OK
+killItem 60469,1
+killItem 60468,1
+GiveItem 60472,1
+LeaveGroup
+Warp 0,1000,233,78
+
+
+block Item 60470 >= 1 && item 60468 >= 1
+Window "\n\n恭喜你通关了,我是该任务的作者,现针对你选择的结局给你奖励,...唔...我想这个比较适合你吧",ok
+window_OK
+killItem 60470,1
+killItem 60468,1
+GiveItem 60473,1
+LeaveGroup
+Warp 0,1000,233,78
+
+
+
+block
+Window "\n\n恭喜你通关了,我是该任务的作者,现针对你选择的结局给你奖励,...唔...我想这个比较适合你吧",ok
+window_OK itemspace < 2
+endwindow "你的背包满啦"
+window_OK
+GiveItem 60471
+GiveItem 60457
+LeaveGroup
+Warp 0,1000,233,78
+
+

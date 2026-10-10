@@ -1,0 +1,11 @@
+block Item 1000197 >= 1
+window "\n\n后面出现了条暗道,要进入吗?",yes,no
+window_yes Item 1000197 >= 1
+LeaveGroup
+Warp 0,1620,17,32
+window_no
+endwindow "\n\n还是准备一下再来比较稳妥!"
+
+
+block
+endwindow "\n\n......"

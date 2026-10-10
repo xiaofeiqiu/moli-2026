@@ -1,0 +1,15 @@
+block item 200107 >= 1
+endwindow "\n\n壮士,记得要把我的家传之宝还回来."
+
+
+block item 200106 >= 1
+window "\n\n之前你们的探险我已经听说了,真是不要命啊,不过我很喜欢这一类故事.",next
+window "\n\n我有一颗祖传的避风珠,可以减少风力的阻碍,这让我可以去一些别人无法到达的地方狩猎一些稀有的猎物.",next
+window "\n\n既然希堤博士的求助,拿去吧,如果你能活着回来,记得还我啊.",ok
+window_ok
+killitem 200106
+giveitem 200107
+
+
+block
+endwindow "\n\n最近连只猎物都打不到."

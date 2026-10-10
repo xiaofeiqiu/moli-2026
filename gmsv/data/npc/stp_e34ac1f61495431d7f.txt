@@ -1,0 +1,7 @@
+block item 1000493 == 1
+window"\n\n 这是卷轴的文字似乎记载一个名叫苍茫大陆的世界!\n它有着一股神秘的力量!要探询这个宝藏必须得开启这卷轴的力量!\n去雪山吧,那里有着最古老的法师!",ok
+window_ok
+leavegroup
+Warp 0,15523,11,9
+block
+window"\n\n 历史很好很强大！",ok

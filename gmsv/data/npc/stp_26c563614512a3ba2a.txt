@@ -1,0 +1,10 @@
+block item 660149 >= 1
+	Window "\n@c这个珍珠太漂亮了吧。送我吧，我让你进风遗迹探索宝藏！",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c小气鬼！",OK
+	Window_YES
+       	killitem 660149,1
+        Warp 0,355,50,39
+block item 660149 < 1
+	Window "\n\n@c这里是风精灵神以前修炼的地方，禁止别人进入",ok
+	Window_ok

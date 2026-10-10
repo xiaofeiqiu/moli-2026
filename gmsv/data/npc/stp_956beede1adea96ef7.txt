@@ -1,0 +1,39 @@
+block item 87151 == 1
+endwindow "\n\n你身上已经有战狼首饰了！"
+
+block item 87150 == 1
+window "\n\n哇~~这就是那女妖身上的鳞片，看来你们已经把它给灭了，这下我们村子可就安宁了。",next
+window "\n\n这个耳环是代表我们村子历代勇士用的就把它送给你们了。",ok
+window_ok
+killitem 87150
+giveitem 87151
+givepet 400761
+
+block item 87149 == 1
+endwindow "\n\n那女妖就在村子背面的山洞里，这个火把或许对你们有用请收好！"
+
+block item 87145 == 1 && item 87146 == 1 && item 87147 == 1 && item 87148 == 1
+window "\n\n这就是刚刚失踪守卫的东西？你不用说了我基本都明白了。",next
+window "\n\n你手上的是什么东西...这...怎么像格伦德尔头上的眼睛啊，这下...出大事了。",next
+window "\n\n如果让它母亲知道格伦德尔是死在你们手里必定会采取报复血洗我们村子的。",next
+window "\n\n格伦德尔的母亲是谁？她可是我们这的北海女妖，我们年年拿食物给其献祭所以一直井水不犯河水。",next
+window "\n\n趁那女妖还没对我们村进行报复，求求各位勇士能否帮我们赶快除掉这个祸根啊！",ok
+window_ok
+killitem 87145
+killitem 87146
+killitem 87147
+killitem 87148
+giveitem 87149
+
+block item 87145 == 1
+endwindow "\n\n建议你晚上进行调查！"
+
+block
+window "\n\n最近我们霍格村的战士一到晚上巡逻的时候，经常出现失踪的现象。",next
+window "\n\n你愿意帮我们调查出原因吗？最好尽可能的找出原因来！",yes,no
+window_no
+window_yes itemSpace >= 1
+giveitem 87145
+endwindow "\n\n最好尽可能的找出原因来！"
+window_yes itemSpace < 1
+endwindow "\n\n你物品栏已满！"

@@ -1,0 +1,55 @@
+block item 800035 == 1 && item 800012 == 1 ||  item 800033 == 1
+	Window"\n\n原来是这样，姐姐果然强大，稍等片刻，你会得到更强大的道具。",ok
+		Window_ok item 800035 == 1 && item 800033 == 1
+		killitem 800035
+		Window_ok item 800035 == 1 && item 800012 == 1
+		killitem 800035
+		killitem 800012
+		giveitem 800036
+
+block item 800035 == 1 && item 800011 == 1 ||  item 800033 == 1
+	Window"\n\n原来是这样，姐姐果然强大，稍等片刻，你会得到更强大的道具。",ok
+		Window_ok item 800035 == 1 && item 800033 == 1
+		killitem 800035
+		Window_ok item 800035 == 1 && item 800011 == 1
+		killitem 800035
+		killitem 800011
+		giveitem 800037
+
+block item 800035 == 1 && item 800010 == 1 ||  item 800033 == 1
+	Window"\n\n原来是这样，姐姐果然强大，稍等片刻，你会得到更强大的道具。",ok
+		Window_ok item 800035 == 1 && item 800033 == 1
+		killitem 800035
+		Window_ok item 800035 == 1 && item 800010 == 1
+		killitem 800035
+		killitem 800010
+		giveitem 800038
+
+block item 800030 == 1 && item 800031 == 1
+	Window"\n\n勇士祝贺你凯旋归来，圣光祝福你。",next
+	Window"\n\n我想帮你强化一下你的道具，不过你先要去主城找到我姐姐才行。",ok
+		Window_ok item 800030 == 1 && item 800031 == 1
+		killitem 800030
+		killitem 800031
+		giveitem 800032
+
+block item 800025 == 1
+	endWindow"\n\n快去找布隆。"
+
+block item 800023 >= 1 && item 800024 >= 1 && item 800022 == 1
+	Window"\n\n快把它给我，我得快点做出贤者之石。",ok
+		Window_ok item 800023 >= 1 && item 800024 >= 1
+		killitem 800022
+		killitem 800023,1
+		killitem 800024,1
+		giveitem 800025
+
+block item 800020 == 1
+	Window"\n\n这个村子受到了死亡森林的威胁，那些怪物源源不断的袭来，务必请你击退它们。",next
+	Window"\n\n请你帮我在这些怪物身上找点东西，或许能帮助我完成某种驱除它们的有效道具。",ok
+		Window_ok item 800020 == 1
+		killitem 800020
+		giveitem 800022
+
+#block 
+#	endWindow"\n\n拜托你们了。"

@@ -1,0 +1,20 @@
+
+block item 661098 >= 1
+window "\n\n你来晚了!牛郎与织女被处罚天各一方,只能隔着银河相望.\n\n每年只有七夕的时候才能靠喜雀的羽毛才能相会,你愿意去吗?但是要小心王母娘娘哦!",ok
+window_ok
+killitem 661098
+leavegroup
+Warp 0,4815,2,12
+
+
+block item 661095 >= 1
+window "\n\n织女与牛郎的这段姻缘前世就已经注定了,只是后路坎坷啊\n\n拿去吧!把这个东西给他们,回后你便会明白.",ok
+window_ok
+killitem 661095
+giveitem 661096
+
+
+
+
+block
+Endwindow "\n\n夏天的天气在这里都可以感觉到很热啊."

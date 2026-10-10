@@ -1,0 +1,23 @@
+block item 87939 == 1
+endwindow 933607
+
+block item 87938 == 1
+window 933608,next
+window 933609,next
+window 933610,ok
+window_ok
+killitem 87938
+giveitem 87939
+
+block item 87935 == 1
+endwindow 933611
+
+block item 87934 == 1
+window 933612,next
+window 933613,ok
+window_ok
+killitem 87934
+giveitem 87935
+
+block
+endwindow 933614

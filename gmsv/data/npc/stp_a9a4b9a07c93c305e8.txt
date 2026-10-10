@@ -1,0 +1,479 @@
+
+
+
+
+block Item 715326 >= 1 && StampCount 715326 == 23 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 23 && ItemCreateTime 715326 < 60
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 23 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 23 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 23 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n恭喜你达成了72小时不下线的考验.\n这是你的奖品,\n要好好保存呦!",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 23 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+KillItem 715326
+GiveLeak1Item 715328 
+
+
+
+block Item 715326 >= 1 && StampCount 715326 == 22 && ItemCreateTime 715326 < 60 
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 22 && ItemCreateTime 715326 < 60
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 22 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 22 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 22 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 22 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 21 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 21 && ItemCreateTime 715326 < 60
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 21 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 21 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 21 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 21 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 20 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 20 && ItemCreateTime 715326 < 60 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 20 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 20 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 20 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 20 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 19 && ItemCreateTime 715326 < 180
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 19 && ItemCreateTime 715326 < 180 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 19 && ItemCreateTime 715326 > 185
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 19 && ItemCreateTime 715326 > 185
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 19 && ItemCreateTime 715326 >= 180 && ItemCreateTime 715326 <= 185
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 19 && ItemCreateTime 715326 >= 180 && ItemCreateTime 715326 <= 185
+AddStampCount 715326,+1
+
+
+
+block Item 715326 >= 1 && StampCount 715326 == 18 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 18 && ItemCreateTime 715326 < 60 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 18 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 18 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 18 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n那么下次就再过3个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 18 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 17 && ItemCreateTime 715326 < 420
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 17 && ItemCreateTime 715326 < 420 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 17 && ItemCreateTime 715326 > 425
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 17 && ItemCreateTime 715326 > 425
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 17 && ItemCreateTime 715326 >= 420 && ItemCreateTime 715326 <= 425
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 17 && ItemCreateTime 715326 >= 420 && ItemCreateTime 715326 <= 425
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 16 && ItemCreateTime 715326 < 120
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 16 && ItemCreateTime 715326 < 120 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 16 && ItemCreateTime 715326 > 125
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 16 && ItemCreateTime 715326 > 125
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 16 && ItemCreateTime 715326 >= 120 && ItemCreateTime 715326 <= 125
+window "\n\n你真是准时的好小孩\n那么下次就再过7个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 16 && ItemCreateTime 715326 >= 120 && ItemCreateTime 715326 <= 125
+AddStampCount 715326,+1
+
+
+
+block Item 715326 >= 1 && StampCount 715326 == 15 && ItemCreateTime 715326 < 300
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 15 && ItemCreateTime 715326 < 300 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 15 && ItemCreateTime 715326 > 305
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 15 && ItemCreateTime 715326 > 305
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 15 && ItemCreateTime 715326 >= 300 && ItemCreateTime 715326 <= 305
+window "\n\n你真是准时的好小孩\n那么下次就再过2个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 15 && ItemCreateTime 715326 >= 300 && ItemCreateTime 715326 <= 305
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 14 && ItemCreateTime 715326 < 120
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 14 && ItemCreateTime 715326 < 120 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 14 && ItemCreateTime 715326 > 125
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 14 && ItemCreateTime 715326 > 125
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 14 && ItemCreateTime 715326 >= 120 && ItemCreateTime 715326 <= 125
+window "\n\n你真是准时的好小孩\n那么下次就再过5个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 14 && ItemCreateTime 715326 >= 120 && ItemCreateTime 715326 <= 125
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 13 && ItemCreateTime 715326 < 360
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 13 && ItemCreateTime 715326 < 360 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 13 && ItemCreateTime 715326 > 365
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 13 && ItemCreateTime 715326 > 365
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 13 && ItemCreateTime 715326 >= 360 && ItemCreateTime 715326 <= 365
+window "\n\n你真是准时的好小孩\n那么下次就再过2个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 13 && ItemCreateTime 715326 >= 360 && ItemCreateTime 715326 <= 365
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 12 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 12 && ItemCreateTime 715326 < 60 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 12 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 12 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 12 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+##1053757\n\n你真是准时的好小孩,\n那么下次就再过6个小时来找我确认,\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.
+Window 1053757,OK 
+Window_OK Item 715326 >= 1 && StampCount 715326 == 12 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 11 && ItemCreateTime 715326 < 240
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 11 && ItemCreateTime 715326 < 240 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 11 && ItemCreateTime 715326 > 245
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 11 && ItemCreateTime 715326 > 245
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 11 && ItemCreateTime 715326 >= 240 && ItemCreateTime 715326 <= 245
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 11 && ItemCreateTime 715326 >= 240 && ItemCreateTime 715326 <= 245
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 10 && ItemCreateTime 715326 < 180
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 10 && ItemCreateTime 715326 < 180 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 10 && ItemCreateTime 715326 > 185
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 10 && ItemCreateTime 715326 > 185
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 10 && ItemCreateTime 715326 >= 180 && ItemCreateTime 715326 <= 185
+##1053755\n\n你真是准时的好小孩,\n那么下次就再过4个小时来找我确认,\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.
+Window 1053755,OK 
+Window_OK Item 715326 >= 1 && StampCount 715326 == 10 && ItemCreateTime 715326 >= 180 && ItemCreateTime 715326 <= 185
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 9 && ItemCreateTime 715326 < 480
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 9 && ItemCreateTime 715326 < 480 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 9 && ItemCreateTime 715326 > 485
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 9 && ItemCreateTime 715326 > 485
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 9 && ItemCreateTime 715326 >= 480 && ItemCreateTime 715326 <= 485
+window "\n\n你真是准时的好小孩\n那么下次就再过3个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 9 && ItemCreateTime 715326 >= 480 && ItemCreateTime 715326 <= 485
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 8 && ItemCreateTime 715326 < 300
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 8 && ItemCreateTime 715326 < 300 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 8 && ItemCreateTime 715326 > 305
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 8 && ItemCreateTime 715326 > 305
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 8 && ItemCreateTime 715326 >= 300 && ItemCreateTime 715326 <= 305
+window "\n\n你真是准时的好小孩\n那么下次就再过8个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 8 && ItemCreateTime 715326 >= 300 && ItemCreateTime 715326 <= 305
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 7 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 7 && ItemCreateTime 715326 < 60 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 7 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 7 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 7 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n那么下次就再过5个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 7 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 6 && ItemCreateTime 715326 < 360
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 6 && ItemCreateTime 715326 < 360 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 6 && ItemCreateTime 715326 > 365
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 6 && ItemCreateTime 715326 > 365
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 6 && ItemCreateTime 715326 >= 360 && ItemCreateTime 715326 <= 365
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 6 && ItemCreateTime 715326 >= 360 && ItemCreateTime 715326 <= 365
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 5 && ItemCreateTime 715326 < 240
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 5 && ItemCreateTime 715326 < 240 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 5 && ItemCreateTime 715326 > 245
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 5 && ItemCreateTime 715326 > 245
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 5 && ItemCreateTime 715326 >= 240 && ItemCreateTime 715326 <= 245
+##1053757\n\n你真是准时的好小孩,\n那么下次就再过6个小时来找我确认,\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.
+Window 1053757,OK 
+Window_OK Item 715326 >= 1 && StampCount 715326 == 5 && ItemCreateTime 715326 >= 240 && ItemCreateTime 715326 <= 245
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 4 && ItemCreateTime 715326 < 60
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 4 && ItemCreateTime 715326 < 60 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 4 && ItemCreateTime 715326 > 65
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 4 && ItemCreateTime 715326 > 65
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 4 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+window "\n\n你真是准时的好小孩\n那么下次就再过4个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 4 && ItemCreateTime 715326 >= 60 && ItemCreateTime 715326 <= 65
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 3 && ItemCreateTime 715326 < 180
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 3 && ItemCreateTime 715326 < 180 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 3 && ItemCreateTime 715326 > 185
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 3 && ItemCreateTime 715326 > 185
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 3 && ItemCreateTime 715326 >= 180 && ItemCreateTime 715326 <= 185
+window "\n\n你真是准时的好小孩\n那么下次就再过1个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 3 && ItemCreateTime 715326 >= 180 && ItemCreateTime 715326 <= 185
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 2 && ItemCreateTime 715326 < 240
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 2 && ItemCreateTime 715326 < 240 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 2 && ItemCreateTime 715326 > 245
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 2 && ItemCreateTime 715326 > 245
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 2 && ItemCreateTime 715326 >= 240 && ItemCreateTime 715326 <= 245
+window "\n\n你真是准时的好小孩\n那么下次就再过3个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 2 && ItemCreateTime 715326 >= 240 && ItemCreateTime 715326 <= 245
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1 && StampCount 715326 == 1 && ItemCreateTime 715326 < 120
+window "\n\n你来的太早了\n时间还没有到\n所以你已经失去挑战资格了.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 1 && ItemCreateTime 715326 < 120 
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 1 && ItemCreateTime 715326 > 125
+window "\n\n你迟到了!\n所以你失去的挑战资格\n下次记得一定要准时呦!\n欢迎再次来挑战.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 1 && ItemCreateTime 715326 > 125
+KillItem 715326
+Warp 0,1193,24,23
+
+
+block Item 715326 >= 1 && StampCount 715326 == 1 && ItemCreateTime 715326 >= 120 && ItemCreateTime 715326 <= 125
+window "\n\n你真是准时的好小孩\n那么下次就再过4个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 && StampCount 715326 == 1 && ItemCreateTime 715326 >= 120 && ItemCreateTime 715326 <= 125
+AddStampCount 715326,+1
+
+
+block Item 715326 >= 1
+window "\n\n你真是准时的好小孩\n那么下次就再过2个小时来找我确认\n我只会等你5分钟呦,逾时不候!\n从你按下确定之后开始计时.",ok
+Window_OK Item 715326 >= 1 
+AddStampCount 715326,+1
+
+
+block 
+endwindow "\n\n我们正在进行“魔力大挑战之72小时不睡”的任务\n只要挑战成功就能够得到海贼香槟一个\n如果你有兴趣想要了解的话\n可以到里谢里雅堡找小琪询问\n小琪一定会给你最完整的解说."

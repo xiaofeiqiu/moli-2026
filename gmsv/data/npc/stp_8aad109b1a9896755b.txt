@@ -1,0 +1,17 @@
+block item 86325 >= 1
+window 85424,ok
+window_ok
+leavegroup
+killitem 86325
+giveitem 86327
+Warp 0,1000,233,78
+
+block item 86324 >= 1
+window 85425,next
+window 85426,next
+window 85427,ok
+window_ok
+leavegroup
+killitem 86324
+giveitem 86326
+Warp 0,1000,233,78

@@ -1,0 +1,5 @@
+block ItemSpace < 1	
+	EndWindow 1100002
+block ItemSpace >= 1
+	KillItem 60112,1
+	GiveLeak1Item (18313%1$99)

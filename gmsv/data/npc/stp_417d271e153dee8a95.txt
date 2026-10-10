@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【无头骑士】吗？",ok
+			Window_ok
+Luac stp:legacy:4e1d98ef707d300105f3
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【狂战将军】吗？",ok
+			Window_ok
+Luac stp:legacy:bf5f2f0636102f57c7e2
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【血腥骑士】吗？",ok
+			Window_ok
+Luac stp:legacy:b7241bfd16e9c01a51bb
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【地狱骑士】吗？",ok
+			Window_ok
+Luac stp:legacy:d4d124e1573f01e6421e
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【地狱将军】吗？",ok
+			Window_ok
+Luac stp:legacy:2679a88b36708303ad1a
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【死神】吗？",ok
+			Window_ok
+Luac stp:legacy:8320b98353c87b1e62f5
+				endif
+

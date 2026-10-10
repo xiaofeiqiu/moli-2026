@@ -1,0 +1,4 @@
+block 
+	Window "\n\n@c来吧！接受我的考验吧！",ok
+	Window_ok
+Encount 3|0,113,37,65|||||0|||52293|||||||||

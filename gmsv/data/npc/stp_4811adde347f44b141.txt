@@ -1,0 +1,20 @@
+
+
+
+
+block
+window "\n\n勇者啊,请原谅我的冒犯,或许刚才是我的错觉吧,如有冒犯请谅解.",next
+window "\n\n接下来将把你送往我们龙族的土地『龙王岛』",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 652641
+leavegroup
+Warp 0,56000,68,181
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+block item 730027 >= 1
+Window "\n\n谢谢...你是谁?",next
+Window "\n\n那是?难道是诺伦科?我的爱人...真的是他吗?",next
+Window "\n\n再次感谢你!这里的阴森令人毛骨悚然...我们回去吧!",ok
+Window_ok item 730027 >= 1
+killitem 730027
+giveitem 730028
+leavegroup
+Warp 0,2300,38,43

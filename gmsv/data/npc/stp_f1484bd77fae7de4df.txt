@@ -1,0 +1,13 @@
+block item 200007 >= 1
+endwindow "\n\n吹笛子的时候,老是有一种莫名其妙的感觉..."
+
+
+block item 200006 >= 1
+window "\n\n给你个曲谱自己吹去.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200007
+
+block
+endwindow "\n\n你好!我是爱吹笛子的贝特尔..."

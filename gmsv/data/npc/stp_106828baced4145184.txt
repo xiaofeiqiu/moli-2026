@@ -1,0 +1,2 @@
+block
+	EndWindow "\n\n\n@c　4转任务通道，带好50W！BOSS很BT哦，小心了！ \n\n"

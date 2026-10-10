@@ -1,0 +1,14 @@
+block item 200700 >= 1
+endwindow "\n\n只卖给你1000G,你赚大了."
+
+
+
+block
+window "\n\n小子,本大爷有一张神秘的航海图,你有兴趣吗?",yes,no
+window_yes
+window "\n\n这可不能白白给你,只要1000G酒钱，想要的话就把钱拿出来.",yes,no
+window_yes gold < 1000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -1000
+giveitem 200700

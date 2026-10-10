@@ -1,0 +1,94 @@
+block item 661089 >= 1
+endwindow "\n\n哎呀!你好.\n现在组织的成员还不够,\n我是想活动也不成啊.\n我可是很想和你并肩作战的,\n当然是越早越好."
+
+
+block item 661083 >= 1 && item 661084 >= 1
+window "\n\n『蓝之证明』,『赤之证明』\n的确都拿着啊.\n那就接受最后的试炼吧.",yes,no
+window_no
+endwindow "\n\n这样啊.\n那就等你做好准备了,\n再跟我说一声吧."
+window_yes
+window "\n\n那么,稍后再见.",ok
+window_ok item 661083 >= 1 && item 661084 >= 1
+killitem 661084
+killitem 661083
+Warp 0,59915,97,143
+
+
+block item 661084 >= 1
+endwindow "\n\n辛苦了.\n通过了第一个试炼了啊.\n第二个试炼是找到\n拿着和你拥有的证明的相对的『赤之证明』的人.\n\n等集齐了2个证明,\n就再次到我这里来吧."
+
+
+block item 661083 >= 1
+endwindow "\n\n辛苦了.\n通过了第一个试炼了啊.\n第二个试炼是找到\n拿着和你拥有的证明的相对的『蓝之证明』的人.\n\n等集齐了2个证明,\n就再次到我这里来吧."
+
+
+
+block
+window "\n\n你好.\n看起来你是位冒险者呢.\n能不能听我说说?",yes,no
+window_no
+endwindow "\n\n这样啊......"
+window_yes
+window "\n\n这个世界处在很不稳定的状态.为了保护我们的组织...啊,不,为了守护我们的国家,\n需要找到有『星咏巫女』资质的人,\n因此在找各位冒险者说话.",next
+window "\n\n怎么样,\n你要不要接受试练,\n看看有没有巫女的资质.",yes,no
+window_no
+endwindow "\n\n这样啊......\n等你想做了,可随时再来."
+
+
+###男路线###
+window_yes BBImage >= 100000 && BBImage <= 100173
+window "\n\n首先接受第一个试练吧.\n从现在开始你要去『蓝星考验』,\n向在其深层的证人展现出你的力量,\n并得到『蓝之证明』.",next
+window "\n\n那么祝你英勇奋战.",ok
+window_ok
+leavegroup
+Warp 0,59752,208,315
+
+
+window_yes BBImage >= 105000 && BBImage <= 105173
+window "\n\n首先接受第一个试练吧.\n从现在开始你要去『蓝星考验』,\n向在其深层的证人展现出你的力量,\n并得到『蓝之证明』.",next
+window "\n\n那么祝你英勇奋战.",ok
+window_ok
+leavegroup
+Warp 0,59752,208,315
+
+
+window_yes BBImage >= 106000 && BBImage <= 106173
+window "\n\n首先接受第一个试练吧.\n从现在开始你要去『蓝星考验』,\n向在其深层的证人展现出你的力量,\n并得到『蓝之证明』.",next
+window "\n\n那么祝你英勇奋战.",ok
+window_ok
+leavegroup
+Warp 0,59752,208,315
+
+
+###女路线###
+window_yes BBImage >= 100250 && BBImage <= 100423
+window "\n\n首先接受第一个试练吧.\n从现在开始你要去『红星考验』,\n向在其深层的证人展现出你的力量,\n并得到『赤之证明』.",next
+window "\n\n那么祝你英勇奋战.",ok
+window_ok
+leavegroup
+Warp 0,59752,241,348
+
+
+window_yes BBImage >= 105250 && BBImage <= 105423
+window "\n\n首先接受第一个试练吧.\n从现在开始你要去『红星考验』,\n向在其深层的证人展现出你的力量,\n并得到『赤之证明』.",next
+window "\n\n那么祝你英勇奋战.",ok
+window_ok
+leavegroup
+Warp 0,59752,241,348
+
+
+window_yes BBImage >= 106250 && BBImage <= 106423
+window "\n\n首先接受第一个试练吧.\n从现在开始你要去『红星考验』,\n向在其深层的证人展现出你的力量,\n并得到『赤之证明』.",next
+window "\n\n那么祝你英勇奋战.",ok
+window_ok
+leavegroup
+Warp 0,59752,241,348
+window_yes
+endwindow "\n\n不好意思...\n\n我实在无法辨别出你的性别耶..."
+
+
+
+
+
+
+
+

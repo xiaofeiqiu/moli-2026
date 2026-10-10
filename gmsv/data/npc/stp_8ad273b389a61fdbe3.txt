@@ -1,0 +1,6 @@
+block
+window "\n\n确定要使用变身卡并启动打卡工作时间吗?",yes,no
+window_yes
+killitem 200804
+setfeverflg 1
+metamo	110508

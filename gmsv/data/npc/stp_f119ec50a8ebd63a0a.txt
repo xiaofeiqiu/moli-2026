@@ -1,0 +1,27 @@
+#####阴森的洞窟#####
+block item 39711 >= 1 || item 39712 >= 1
+endwindow "\n\n今后请继续为我国努力."
+
+
+block item 39710 >= 1
+window "\n\n你果然不负所托.这是给你奖赏,拿去吧.今后请继续为我国努力.",ok
+window_ok item 39710 >= 1
+killitem 39710
+giveitem (39711%1,39712%1)
+
+
+block item 39705 >= 1
+endwindow "\n\n前往艾尔巴尼亚的船只应该在伊尔港内."
+
+
+block
+window "\n\n异界来的冒险者啊,很高兴朕又能遇到你.昨日我们接到来自艾尔巴尼亚女皇的来信,称在其境内出现了一个异常的洞窟,前去调查的士兵都未回来,所以想让本国出力协助调查.",next
+window "\n\n但你知道,目前我国正处在动荡时期,可以调动的士兵数量少之又少.正巧你是个勇敢而热爱冒险的人,我想讲这份差事托付于你,如何?",yes,no
+window_no
+endwindow "\n\n无妨,今后请继续为我国努力."
+window_yes
+window "\n\n这是国王写的推荐些,你带上它吧,相信会对你与偶帮助的.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满了."
+window_ok
+giveitem 39705

@@ -1,0 +1,33 @@
+block
+	LocalCount0 = random 6,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【乌贼怪】吗？",ok
+			Window_ok
+Luac stp:legacy:47e5a0b1982e7ff7d690
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【亭登乌贼】吗？",ok
+			Window_ok
+Luac stp:legacy:d3da5747de6460bb622b
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【赛修乌贼】吗？",ok
+			Window_ok
+Luac stp:legacy:9c93f76c2a7033d43853
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【西比亚乌贼】吗？",ok
+			Window_ok
+Luac stp:legacy:ab394f82bf63ff701265
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【赛比亚乌贼】吗？",ok
+			Window_ok
+Luac stp:legacy:78a7d0fb710720a1d780
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【克拉卡乌贼】吗？",ok
+			Window_ok
+Luac stp:legacy:956a538a66f9508cf88f
+				endif
+

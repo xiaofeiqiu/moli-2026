@@ -1,0 +1,12 @@
+Block
+Window "要使用钥匙开启遗迹宝箱吗？",YES,NO
+Window_NO
+EndWindow "需要时再来吧。"
+Window_YES itemSpace >= 1 && gold >= 0 && item 589102 >= 1
+KillItem 589102,1
+AddGold -0
+GiveItem 589105,1
+
+EndWindow "已经办妥，请按提示继续旅程。"
+Window_YES
+EndWindow "请确认任务道具、魔币和背包空位。"

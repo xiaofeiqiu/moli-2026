@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物闪避能力1点！",ok
+	window_ok
+Luac stp:legacy:989e6bed60d89e94eab2
+		killitem 60280,1

@@ -1,0 +1,12 @@
+block
+window 501389,next
+window 501390,next
+window 501391,next
+window 501392,next
+window 501393,next
+window 501394,next
+window 501395,next
+window 501396,next
+window 501397,ok
+window_ok
+Encount 2|0,45225,15,13||0|||||0|88157|||||||||

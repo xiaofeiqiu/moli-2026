@@ -1,0 +1,9 @@
+block job == 801
+	Window "\n\n　来吧，学习圣剑的终极技能吧。",ok
+	window_ok
+        leavegroup
+        Warp 0,190,2,17
+block job < 801
+        Window "\n\n　您并非神族！不得入内！",ok
+	window_ok
+        

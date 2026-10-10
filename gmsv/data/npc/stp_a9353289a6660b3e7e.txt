@@ -1,0 +1,26 @@
+block item 87448 == 1
+endwindow "\n\n请问还有什么事吗？"
+
+block ItemCreateTime 87447 >= 360 && item 87447 == 1
+window "\n\n你来啦，鉴定结果已经出来了，这你所称之为酒壶的是属于苏国一个灭亡几千年的卡尔蒂姆人的产物。",next
+window "\n\n据古文记载卡尔蒂姆人是被某种疾病给灭亡的，他们具体的生活区域现在无人知晓。",next
+window "\n\n经过我全面对此壶的鉴定发现里面残留了很多未知的病原体（病毒）。不过你不用紧张，进过几千年的洗礼该病原体是不会直接对人体构成威胁，除非间接...进入人体内，详细的我都写入鉴定报告里了。",next
+window "\n\n处于安全考虑我将销毁此壶，这份鉴定报告么你就拿回去仔细看一遍吧。",ok
+window_ok
+killitem 87447
+giveitem 87448
+
+block ItemCreateTime 87447 <= 359 && item 87447 == 1
+endwindow "\n\n不要那么急啊，我鉴定没这么快呢！"
+
+block item 87446 == 1 && item 87440 == 1
+window "\n\n你是来要求我鉴定的吗，那你有单子吗？我一般不帮外面做鉴定，只有我给熟人的鉴定单我才帮忙。",next
+window "\n\n嗯~~看来你有单子的，那你把单子和要鉴定的物品一并交于我就行。",ok
+window_ok
+killitem 87446
+killitem 87440
+giveitem 87447
+endwindow "\n\n这张是你过6小时后来拿鉴定物品和鉴定报告的签收单。"
+
+block
+endwindow "\n\n找我有事吗？"

@@ -1,0 +1,15 @@
+block itemspace <= 1
+	endwindow "\n\n把背包清理下再来找我吧。"
+block item 60411 >= 1
+	endwindow "\n\n…………。"
+block item 60412 >= 1
+	endwindow "\n\n…………。"
+block item 60421 >= 1 && item 60422 >= 1
+	window"\n\n小圆……不要啊小圆……为什么会这样……小圆，只要是为了你，就算身陷永恒的迷宫 ，我也在所不惜……我要打倒丘比……咳咳……一定会救你的……",next
+	window"\n\n这是我们的错……希望能给我们一个赎罪的机会，打倒丘比的任务就交给我们吧，为了小圆小姐的愿望，为了让法兰重见光明，拜托了！请相信我们！",next
+	window"\n\n谢谢……咳咳……请保存好这个，去打倒丘比……呜呜……请……咳咳……打……咳咳……",ok
+		window_ok
+			giveitem 60411,1
+			giveitem 60412,1
+block
+	endwindow "\n\n…………。"

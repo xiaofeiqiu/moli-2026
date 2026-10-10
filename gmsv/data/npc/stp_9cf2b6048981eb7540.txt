@@ -1,0 +1,38 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:cee56d6c613063037988
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【兔耳吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:b9df166d3b8792684cbd
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【红魔吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:a5785318b506af3e96f6
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【蓝魔吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:53b14bdd19cbe007283c
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【绿蛙吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:ea36af24eb3042a64101
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【纯白吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:d99cfd8bb7dc626bb5ae
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【恶魔吓人箱】吗？",ok
+			Window_ok
+Luac stp:legacy:28408cd9f0bfa0216b8a
+				endif
+

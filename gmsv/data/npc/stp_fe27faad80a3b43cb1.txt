@@ -1,0 +1,11 @@
+block Item 1000198 >= 1
+window "\n\n琉璃殿下在塔顶等着阁下,请随我来...",ok
+window_ok Item 1000198 >= 1
+killitem 1000198
+Warp 0,1694,14,55
+
+
+block
+window "\n\n干扰琉璃殿下者,杀无赦!",ok
+window_ok
+Encount 3|0,1696,38,11|||||0|||360207|||||||||

@@ -1,0 +1,5 @@
+block	
+if Level > 49
+LeaveGroup
+Warp 0,1001,38,62
+endif

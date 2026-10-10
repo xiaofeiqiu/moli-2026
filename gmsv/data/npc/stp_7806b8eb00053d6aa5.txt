@@ -1,0 +1,33 @@
+block item 21017 == 1 && item 21018 == 1 && item 21019 == 1 && item 21020 == 1
+	window "\n哇.实在是不错的东西.我寻找了好久.一直没有它们的消息.\n我非常需要它们,你可以借我几天用来研究吗?",next
+	window "\n什么?你是说需要我帮你制作一件防毒的装备?然后跟你对换?",yes,no
+	window_yes item 21017 == 1 && item 21018 == 1 && item 21019 == 1 && item 21020 == 1
+	window "\n对于我这种专业的旅行者来说...\n哈哈哈哈,那简直太简单了.",next
+	window "\n不过据说沙滩外面可以采集到“金沙”,这是一种制作法兰大陆G币的必要材料.\n因为金沙的防毒效果最好.百毒不染.\n所以呢.我建议你提供给我金沙.\n至于为什么嘛.嘿嘿.谁让你送我这么好的东西呢?",ok
+
+	window_ok item 21023 == 0
+	endwindow "\n你好像没有金沙耶.请个矿工叔叔去采集一点吧."
+
+	window_ok item 21023 >= 1
+	killitem 21023,1
+	window "\n好嘞,你等一下啊.我这就做.",next
+PlaySE 163,1,1
+	window "\n唰唰唰!!!",next
+PlaySE 163,1,1
+	window "\n唰唰唰!!!",next
+PlaySE 163,1,1
+	window "\n唰唰唰!!!",next
+PlaySE 163,1,1
+	window "\n唰唰唰!!!",next
+PlaySE 163,1,1
+	window "\n唰唰唰!!!",next
+	window "\n好啦.你需要的最佳防毒装备制作好啦.\n那么请遵守你的承诺.与我交换装备吧!",ok
+	window_ok item 21017 == 1 && item 21018 == 1 && item 21019 == 1 && item 21020 == 1
+	killitem 21017,1
+	killitem 21018,1
+	killitem 21019,1
+	killitem 21020,1
+	giveitem (21021%50,21022%50),1
+
+block
+	endwindow "\n天气真是好呀.不知道去哪转转好..."

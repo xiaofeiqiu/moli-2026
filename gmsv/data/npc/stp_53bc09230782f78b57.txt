@@ -1,0 +1,9 @@
+block item 1000107 >= 1
+window "\n\n你是否要打开宝石袋?",yes,no
+window_no
+endwindow "\n\n想打开的时候再来吧."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes  item 1000107 >= 1
+killitem 1000107
+giveitem (13607%13,13617%13,13627%12,13637%12,13647%12,13657%12,13667%13,13677%13)

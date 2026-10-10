@@ -1,0 +1,9 @@
+block Item 670045 == 1
+
+	Window "\n\n　没想到，你竟然拥有这么强的能力",next
+	Window "\n\n　居然能找到这来，那就让你受些苦头吧！",ok
+	window_ok
+Encount 2|0,59505,178,85||0|||||0|670119|
+block
+	Window "\n\n　没事远点呆着去，这不是你该来的地方！",ok
+	window_ok

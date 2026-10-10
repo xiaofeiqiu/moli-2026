@@ -1,0 +1,10 @@
+block level >= 170
+	Window "\n\n@c这是精灵神以前修炼过的地方，希望对你这样有能力的人有帮助！要进去么？",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c别在这里逗留！",OK
+	Window_YES
+	leavegroup
+	Warp 0,341,13,28
+block level < 170
+	Window "\n\n@c你的等级好像不够进入这个试练",ok
+	Window_ok

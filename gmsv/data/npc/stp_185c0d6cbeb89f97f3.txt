@@ -1,0 +1,9 @@
+Block
+localcount1 = random 2,0
+if localcount1 == 1
+Message 5086
+EndIf
+#
+if localcount1 == 2
+Message 5087
+EndIf

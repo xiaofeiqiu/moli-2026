@@ -1,0 +1,18 @@
+
+
+
+block item 715319 >= 1
+window "\n\n谢谢你～～\n这个坏掉的闹钟你拿去吧.",ok
+window_ok
+killitem 715319
+giveitem 715320
+
+
+
+
+block
+window "\n\n呜～\n我把爸爸的闹钟弄坏了～～\n怎么办～",next
+endwindow "\n\n我想拜托制时钟的爷爷\n可是我不知道怎么去亚诺曼城找他耶."
+
+
+

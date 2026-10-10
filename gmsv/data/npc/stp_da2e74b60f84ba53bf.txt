@@ -1,0 +1,8 @@
+block item 1000493 == 0
+window"\n\n我这里有一个古怪的卷轴,这里是密麻麻的写着的古代文字!送你了!",ok
+window_ok
+giveitem 1000493
+leavegroup
+Warp 0,1504,14,14
+block item 1000493 != 0
+window"\n\n历史这东西很有学问的。",ok

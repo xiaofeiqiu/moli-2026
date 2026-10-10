@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【法老王之棺】吗？",ok
+			Window_ok
+Luac stp:legacy:7c407537b9a0014ef7ce
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【吸血鬼之棺】吗？",ok
+			Window_ok
+Luac stp:legacy:8f7d809c539be6dbd731
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【炎魔之棺】吗？",ok
+			Window_ok
+Luac stp:legacy:91cd255862236a03c36e
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【死神之棺】吗？",ok
+			Window_ok
+Luac stp:legacy:9bbde31f88409aee3753
+				endif
+

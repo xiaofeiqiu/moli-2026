@@ -1,0 +1,14 @@
+block item 200511 >= 1
+endwindow "\n\n如果有做的不足之处,请多多关照."
+
+
+
+block item 200508 >= 1 && item 200509 >= 1 && item 200510 >= 1
+window "\n\n是监察组的大人啊,请随便看,我烧的食物绝对安全卫生,小朋友们吃的都很高兴.",ok
+window_ok
+killitem 200510
+giveitem 200511
+
+
+block
+endwindow "\n\n厨房重地,闲人勿扰."

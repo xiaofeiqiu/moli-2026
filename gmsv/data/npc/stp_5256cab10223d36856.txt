@@ -1,0 +1,16 @@
+block item 800187 == 1
+endwindow "\n\n拉斯特和她弟弟已经从村子中搬出去了,不知道去了哪里."
+
+block
+window "\n\n前几天,村里住进来一位婀娜多姿的美女,听说她正在重金招募找寻她哥哥下落的人,有兴趣帮她吗?",yes,no
+window_yes
+leaveGroup
+Warp 0,44888,10,16
+window_no
+endwindow "\n\n太可惜了"
+
+
+
+
+
+

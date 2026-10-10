@@ -1,0 +1,38 @@
+block
+	LocalCount0 = random 7,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【尤拉蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:2c5ca6b5eb1b58ec9daf
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【欧比尔蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:1f1fa4ef2c6e017a39c8
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【韦伯蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:f6a98d6d0a559e171c13
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【欧图蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:6c6b920112e3a783a678
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【米歇尔蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:d5236ba2c587391e0420
+				endif
+	if localcount0==6
+		window "\n\n@c要将随从的形象永久变为【爱丁奴蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:88c862f2b68bb77b3a91
+				endif
+	if localcount0==7
+		window "\n\n@c要将随从的形象永久变为【黑暗蝙蝠】吗？",ok
+			Window_ok
+Luac stp:legacy:89e8674729685e0873bf
+				endif
+

@@ -1,0 +1,12 @@
+block item 87614 == 1
+endwindow "\n\n找我何事？"
+
+block item 87613 == 1
+window "\n\n恩？海族受到攻击，需要我家的宝珠来拯救公主？",next
+window "\n\n没问题，这珠子虽然是传家宝，但是是我家的祖先拯救海族所得到的，现在用来拯救海族再适合不过了，我可不能做个让祖先蒙羞的自私子孙啊！你收好宝珠，赶快去吧。",ok
+window_ok
+killitem 87613
+giveitem 87614
+
+block
+endwindow "\n\n找我何事？"

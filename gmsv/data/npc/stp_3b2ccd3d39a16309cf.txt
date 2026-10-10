@@ -1,0 +1,18 @@
+block item 70029 == 1
+endwindow 910314
+###################
+block HaveLeak1Item == 70028 && EquipItem == 70028 && item 70030 < 1
+window 910315,next
+window 910316,next
+window 910317,next
+window 910318,next
+window 910319,next
+window 910320,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 70029
+window_ok ItemSpace < 1
+endwindow 910321
+###########################
+block
+endwindow 910322

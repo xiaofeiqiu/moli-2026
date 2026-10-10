@@ -1,0 +1,12 @@
+block Pitem 61214
+Endwindow 7019631
+
+block item 1000560 >= 1 && item 1000559 >= 1 && item 1000561 < 1
+window 7019632,next
+window 7019633,next
+window 7019634,ok
+window_ok
+Encount 2|0,23390,20,11|1000560|-1|||||0|6000203|5|0|||||5|0|
+
+block
+endwindow 7019635

@@ -1,0 +1,8 @@
+block item 50972 >= 1
+Window "\n\n你要使用火山的力量来净化吗?",yes,no
+Window_no
+Window_yes item 50972 >= 1
+Window "\n\n你抱持龙神之卵的双手感觉到一股温暖的力量流入,龙神之卵被净化了么?一切要等待破卵而出的时候.",ok
+Window_ok
+killitem 50972
+giveitem (50973%1,50977%1)

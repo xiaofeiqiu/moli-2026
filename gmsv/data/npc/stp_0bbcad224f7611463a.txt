@@ -1,0 +1,9 @@
+block
+window "\n\n勇士们,我是魔导师艾菲尔,大地之兽已经再次封印了,请帮我把这个大地之仗交给大地鼠王国代为保管.",next
+window "\n\n我在索奇亚定居,如果还有事情的话,你们可以来找我.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200016
+leavegroup
+Warp 0,100,329,530

@@ -1,0 +1,7 @@
+block SkillLevel 200 == 10
+window"\n\n\n@c 即将学习 10C剑 玄金剑 制作！",ok
+window_ok
+	KillItem 591143,1
+	GiveRecipe 1123
+block
+Endwindow"\n\n\n@c 你的造剑技能还未10级，无法学习！"

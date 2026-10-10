@@ -1,0 +1,16 @@
+block item 87522 == 1
+endwindow "\n\n卡翠娜继母去了断头谷？刚才我找过圣女得知无头骑士的墓地也在断头谷里，我们马上出发。"
+
+block item 87520 == 1
+window "\n\n治安官怎么快就要求我回去？这里的案件还没解决呢，目前受害者越来越多。",next
+window "\n\n为了能尽快抓住凶手你愿意协助我吗？",yes,no
+window_no
+window_yes
+window "\n\n这个连环凶杀案有个特点，案发时间都是晚上而且被害者都是被割去头颅。",next
+window "\n\n我估计凶手今晚还会犯案，不妨我们等到晚上拭目以待。",ok
+window_ok
+killitem 87520
+Warp 0,29699,6,10
+
+block
+endwindow "\n\n两个月内，小镇中已经三个人惨遭毒手。这里的连环凶杀案非常的棘手！"

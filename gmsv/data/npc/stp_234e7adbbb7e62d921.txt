@@ -1,0 +1,13 @@
+block item 61205 >= 1
+window 1900570,yes,no
+window_no
+window_yes ItemSpace >= 1
+LeaveGroup
+killitem 61205
+giveitem 61204
+Warp 0,23362,385,334
+window_yes ItemSpace < 1
+endwindow 1900571
+
+block
+endwindow 1900572

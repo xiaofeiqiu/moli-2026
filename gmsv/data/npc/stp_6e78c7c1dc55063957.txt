@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【爱丝波波】吗？",ok
+			Window_ok
+Luac stp:legacy:24eaf0fddf9c66d5d3e4
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【丝诺波波】吗？",ok
+			Window_ok
+Luac stp:legacy:ea98a837cfcbac8c6787
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【圣诞波波】吗？",ok
+			Window_ok
+Luac stp:legacy:6476f7b04dfca03c84a8
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【雪儿波波】吗？",ok
+			Window_ok
+Luac stp:legacy:a3738f2642b9c373a749
+				endif
+

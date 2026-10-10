@@ -1,0 +1,8 @@
+block Item 588111 >= 1
+window"\n\n\n @c 选 0是0 获得礼赞卷轴 选 0否0 获得唤神之卷",yes,no
+window_yes
+killitem 588111
+giveitem 588105
+window_no
+killitem 588111
+giveitem 588100

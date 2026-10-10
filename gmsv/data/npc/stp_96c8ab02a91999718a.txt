@@ -1,0 +1,59 @@
+#第二次完成任务镖旗159,并拥有证明
+block EndEvent 557 == 1 && item 730057 == 1
+Window "\n\n我们又见面了,恭喜你们通过了最终的试炼.",next
+Window "\n\n勇者啊!你们未来的路还很长,为此我特意准备了一个非常不错的礼物给你们.",next
+Window "\n\n但是需要你们将之前获得的名声都交还给我,而且还要付出10万金币,你确定吗?",yes,no
+Window_yes gold < 100000
+EndWindow "\n\n抱歉,你的金币没有带够"
+
+#选择是判断第二次以上完成任务给予洗礼项链
+Window_yes EndEvent 557 == 1 && item 730057 == 1 && checkskillslot == 11
+EndEvent 554 = 0
+EndEvent 555 = 0
+EndEvent 556 = 0
+EndEvent 557 = 1
+CheckTitle
+killitem 730057
+giveitem 730058
+
+#选择是判断第二次以上完成任务给予洗礼项链
+Window_yes EndEvent 557 == 1 && item 730057 == 1
+addgold -100000
+EndEvent 554 = 0
+EndEvent 555 = 0
+EndEvent 556 = 0
+EndEvent 557 = 1
+CheckTitle
+killitem 730057
+giveitem 730059
+Window_no
+EndWindow "\n\n那好吧,如果你想通了,在拿着这个证明来找我吧."
+
+
+
+#持有试炼通过证明
+block item 730057 == 1
+Window "\n\n我们又见面了,恭喜你们通过了最终的试炼.",next
+Window "\n\n勇者啊!你们未来的路还很长,为此我特意准备了一个非常不错的礼物给你们.",next
+Window "\n\n但是需要你们将之前获得的名声都交还给我,而且还要付出10万金币,你确定吗?",yes,no
+Window_yes gold < 100000
+EndWindow "\n\n抱歉,你的金币没有带够."
+Window_yes gold >=100000 && EndEvent 554 == 1 && EndEvent 555 == 1 && EndEvent 556 == 1
+addgold -100000
+EndEvent 554 = 0
+EndEvent 555 = 0
+EndEvent 556 = 0
+EndEvent 557 = 1
+CheckTitle
+giveitem 730059
+
+block EndEvent 556 == 1
+Window "\n\n这...你是龙族守护者?",next
+Window "\n\n原来如此,是她们叫你来找我的,事情的发生我已经知道了.",next
+Window "\n\n你要来参加最后的考验吗?",yes,no
+Window_no
+Window_yes
+Window "\n\n勇气可嘉,年轻人,你能来到这里,证明你已经拥有了相当的实力,请小心.",ok
+Window_ok
+LeaveGroup
+Warp 0,57300,12,30

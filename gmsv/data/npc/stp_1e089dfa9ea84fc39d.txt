@@ -1,0 +1,6 @@
+block
+window "\n\n......",next
+window "\n\n......",next
+window "\n\n你这人真的是好烦人耶!",ok
+window_ok
+Encount 2|0,50004,4,8||0|||||0|613087|||||||||

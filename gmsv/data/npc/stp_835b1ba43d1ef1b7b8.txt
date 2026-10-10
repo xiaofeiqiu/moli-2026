@@ -1,0 +1,12 @@
+block Item 60452 == 1
+EndWindow "\n\n不能再拿了..."
+
+
+block
+Window "\n\n要捡取石块吗?",yes,no
+Window_no
+Window_yes ItemSpace < 1
+endWindow "\n\n请整理下包裹再来"
+Window_yes ItemSpace >= 1
+GiveItem 60452,1
+EndWindow"\n\n出现了一些沙子"

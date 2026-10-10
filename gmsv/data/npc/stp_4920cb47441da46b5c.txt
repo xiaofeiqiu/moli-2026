@@ -1,0 +1,15 @@
+block item 200212 >= 1
+endwindow "\n\n麻烦给我转告下切露西婆婆,绝不能轻绕黑巫师."
+
+
+block item 200211 >= 1
+window "\n\n桃花枝?",next
+window "\n\n切露西婆婆叫你来拿这玩意,哎～看来谁又不幸中了黑巫术了,婆婆他估计又要和那施展黑巫术的人斗上一段时间了.",next
+window "\n\n给～快把桃花枝拿去给切露西婆婆,让她好好教训黑巫师,我们圣迦尔德王国的民众最厌恶这种黑巫师了.",ok
+window_ok
+killitem 200211
+giveitem 200212
+
+
+block
+endwindow "\n\n伐木可是一项苦差事."

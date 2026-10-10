@@ -1,0 +1,24 @@
+block item 666056 >= 1
+window "\n\n军刀!这的确是我的军刀!太棒了!这下又有肉吃了,嘿嘿嘿...咦?看看你身后是什么?",next
+window "\n\n『你感到一阵天旋地转,渐渐失去了意识』...",ok
+window_ok item 666056 >= 1
+killitem 666056
+leaveGroup
+Warp 0,57199,23,24
+
+
+block item 666055 >= 1
+endwindow "\n\n动身吧,朋友!全靠你了!"
+
+
+block
+window "\n\n肚子好饿啊!我的食材...啊不!是冒险者,你来的正好!我是贝尔,我需要你的帮助",next
+window "\n\n长话短说,我是一位探险家,在莎莲娜西边洞窟里,我发现了一条隐秘山道,我独自一人走到了深处,但我的军刀在与熊的搏斗中留在了它的身上.你能帮我取回来,对吧?",yes,no
+window_no
+endwindow "\n\n肚子好饿..."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+window "\n\n太谢谢你啦!我就知道你一定会答应的!你可以在莎莲娜西边洞窟里找到我的助手,他会让你下去的,这是证明信,希望你平安归来.",ok
+window_ok
+giveitem 666055

@@ -1,0 +1,8 @@
+block
+	window"\n\n是否变成潘妮（紫）形象，更改后头像将变为影角（女）？",ok
+	window_ok
+Luac stp:legacy:e96aba11383a15083141
+Luac stp:legacy:281fa077c7a4b8e90d08
+Luac stp:legacy:90ee8d53bf2c8005b298
+Luac stp:legacy:92055c8d31dbe649e138
+		killitem 60248,1

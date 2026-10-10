@@ -1,0 +1,12 @@
+block item 87678 == 1
+endwindow "\n\n你去国营第24坑道附近找找吧，估计他还在那边转悠。"
+
+block item 87677 == 1
+window "\n\n龙海姆吗？我们年轻的时候是有一点交情。至于他的下落这么多年过去了，也无从得知。",next
+window "\n\n不过我去法兰采购物品时倒是看见他的大弟子在国营第24坑道外面转悠，或许他应该知道龙海姆在什么地方。",ok
+window_ok
+killitem 87677
+giveitem 87678
+
+block
+endwindow "\n\n请问找我有何事！"

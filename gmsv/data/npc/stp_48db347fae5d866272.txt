@@ -1,0 +1,18 @@
+block endevent 584 == 1
+Window "\n\n差点就被控制了,四灵之地暂时是安全了,谢谢你们......\n",next
+Window "\n\n问起魔物入侵的事",next
+Window "\n\n嗯......没想到比预言提前了一千年......\n在女神封印魔王后,预言4000年后魔王就会冲破封印,重新危害人间.\n为了对付魔王,女神进入沉睡,积蓄力量.",next
+Window "\n\n女神的力量是善,是世间一切美好的事物,我们四灵则是忠孝仁义的化身,是女神力量的本源:\n魔王的力量是恶,对权利的欲望、金钱的欲望......一切的欲望一旦膨胀就会使人丧失本性善的一面,成为魔王行恶的工具.",next
+Window "\n\n问起 魔王的眼泪",next
+Window "\n\n女神刚刚苏醒,我想她会回答你的",yes,no
+Window_no
+Window_yes endevent 584 == 1
+endEvent 584 = 0
+Warp 0,64067,33,42
+
+block endevent 584 == 0
+Window "\n\n土之精灵情况不对,要帮忙吗?",yes,no
+Window_no
+Window_yes endevent 584 == 0
+endEvent 584 = 1
+Encount 3||||||0|||900034|||||||||

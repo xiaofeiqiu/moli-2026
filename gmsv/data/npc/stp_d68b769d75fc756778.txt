@@ -1,0 +1,5 @@
+block EndEvent 517 == 1 && item 141206 >= 1
+Window "\n\n『喝下了冥界之雨,与冥界(里)的联结变强了』",ok
+Window_ok item 141206 >= 1
+LeaveGroup
+Warp 0,57486,508,530

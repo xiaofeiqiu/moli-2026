@@ -1,0 +1,23 @@
+block	gold <10000
+	endwindow 7020562,ok
+
+
+
+
+
+
+
+
+block	StrCmpChat == 800201
+	window 7020561,yes,no
+	window_yes
+	addgold -10000
+	giveitem 661052
+	endwindow 7020560,ok
+
+
+block
+	window 7020556,ok
+
+
+

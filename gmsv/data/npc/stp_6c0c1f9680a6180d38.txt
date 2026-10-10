@@ -1,0 +1,8 @@
+block Level >= 10 && Item 940114 == 1
+killItem 940114,1
+giveItem 940110,1
+endwindow "\n\n\n很好...你有资格加入我们,去吧."
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

@@ -1,0 +1,10 @@
+block
+window "\n\n你要使用传送石前往赛利鲁村吗?费用是8000G.",yes,no
+window_yes gold < 8000
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -8000
+leavegroup
+Warp 0,27635,13,13
+window_no
+endwindow "\n\n欢迎你再度使用."

@@ -1,0 +1,234 @@
+#####绿色海神#####
+block item 3732 == 1 && ItemDur 3732 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <九头巨蛇> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3732
+givepet (3130%100)
+endwindow "\n\n幻化成功."
+
+
+#####地龙#####
+block petlevel 721 == 1
+window"\n\n你身上带有地龙蜥,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3732 == 1
+killpetH 721,1
+setdur 3732,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 721,1
+giveitem 3732
+setdur 3732,-1
+
+
+#####蓝色海神#####
+block item 3733 == 1 && ItemDur 3733 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <蛟龙> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3733
+givepet (3131%100)
+endwindow "\n\n幻化成功."
+
+
+#####水龙#####
+block petlevel 722 == 1
+window"\n\n你身上带有水龙蜥,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3733 == 1
+killpetH 722,1
+setdur 3733,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 722,1
+giveitem 3733
+setdur 3733,-1
+
+
+#####红色海神#####
+block item 3734 == 1 && ItemDur 3734 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <埃及眼睛蛇> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3734
+givepet (3132%100)
+endwindow "\n\n幻化成功."
+
+
+#####火龙#####
+block petlevel 723 == 1
+window"\n\n你身上带有火龙蜥,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3734 == 1
+killpetH 723,1
+setdur 3734,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 723,1
+giveitem 3734
+setdur 3734,-1
+
+
+#####白色海神#####
+block item 3735 == 1 && ItemDur 3735 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <八歧大蛇> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3735
+givepet (3133%100)
+endwindow "\n\n幻化成功."
+
+
+#####风龙#####
+block petlevel 724 == 1
+window"\n\n你身上带有风龙蜥,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3735 == 1
+killpetH 724,1
+setdur 3735,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 724,1
+giveitem 3735
+setdur 3735,-1
+
+
+#####大型地龙骨#####
+block item 3736 == 1 && ItemDur 3736 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <大型地龙骨> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3736
+givepet (3134%100)
+endwindow "\n\n幻化成功."
+
+
+#####蜥蜴战士#####
+block petlevel 701 == 1
+window"\n\n你身上带有蜥蜴战士,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3736 == 1
+killpetH 701,1
+setdur 3736,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 701,1
+giveitem 3736
+setdur 3736,-1
+
+
+#####大型冰龙骨#####
+block item 3737 == 1 && ItemDur 3737 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <大型冰龙骨> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3737
+givepet (3135%100)
+endwindow "\n\n幻化成功."
+
+
+#####蜥蜴斗士#####
+block petlevel 702 == 1
+window"\n\n你身上带有蜥蜴斗士,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3737 == 1
+killpetH 702,1
+setdur 3737,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 702,1
+giveitem 3737
+setdur 3737,-1
+
+
+#####大型火龙骨#####
+block item 3738 == 1 && ItemDur 3738 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <大型火龙骨> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3738
+givepet (3136%100)
+endwindow "\n\n幻化成功."
+
+
+#####蜥蜴武士#####
+block petlevel 703 == 1
+window"\n\n你身上带有蜥蜴武士,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3738 == 1
+killpetH 703,1
+setdur 3738,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 703,1
+giveitem 3738
+setdur 3738,-1
+
+
+#####大型风龙骨#####
+block item 3739 == 1 && ItemDur 3739 == 1
+window"\n\n你身上带有的封印魔法珠内已经封印满了\n\n要现在幻化出宠物 <大型风龙骨> 吗?",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes petSpace == 0
+endwindow "\n\n	你身上宠物太多了."
+window_yes
+killItemAll 3739
+givepet (3137%100)
+endwindow "\n\n幻化成功."
+
+
+#####烈豹蜥蜴#####
+block petlevel 704 == 1
+window"\n\n你身上带有烈豹蜥蜴,要封印进入我的魔法珠内吗?\n\n确认你身上只带了要封印的宠物\n\n否则我可是不知道会把哪一只封印进去的.",yes,no
+window_no
+endwindow"\n\n年轻人,你先考虑清楚.",Ok
+window_yes item 3739 == 1
+killpetH 704,1
+setdur 3739,-1
+window_yes itemspace<1
+endwindow"\n\n背包位置不足.",Ok
+window_yes
+killpetH 704,1
+giveitem 3739
+setdur 3739,-1
+
+
+block
+endwindow"\n\n呵呵,不想把宠物交给王者封印老头的话\n\n可以交给我啊,我可以帮你进化宠物!"

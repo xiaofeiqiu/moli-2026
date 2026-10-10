@@ -1,0 +1,9 @@
+block item 200225 >= 1
+window "\n\n公主:……",next
+window "\n\n宫女:快来人啊,请救救公主殿下.",next
+window "\n\n宫女:终于有人来了,快帮忙救救公主,大祭司伊莉露叛变击伤了公主后抢走了神之眼.",next
+window "\n\n宫女:快～一起把公主送回宫医治,呀～你身上有切露西婆婆的天波琴,能给我用来缓解公主的疼痛吗?",ok
+window_ok
+killitem 200225
+leavegroup
+Warp 0,27146,7,15

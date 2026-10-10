@@ -1,0 +1,16 @@
+block strCmpChat == 9085
+window "\n\n你是那个醉鬼派过来代替他的吧!!",yes,no
+window_no
+endwindow "\n\n你是从哪里弄来的口令,赶快说!!!"
+window_yes
+window "\n\n真是的,每次都找别人来代替,别看了,赶快进去!",ok
+window_ok
+killitem 1000242
+Warp 0,44650,10,5
+
+
+block item 1000242 >= 1
+endwindow "\n\n口令!!!"
+
+block
+endwindow "\n\n天气真是好啊!!!"

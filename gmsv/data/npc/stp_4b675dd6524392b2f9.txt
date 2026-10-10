@@ -1,0 +1,21 @@
+block item 697991 >= 1
+window"快去吧...我跟汉克在调查暗医",ok
+block item 697993 == 1 && nowevent 558 == 1
+window"\n\n额,等我来破解他的暗语!",next
+window"\n\n糟糕,暗医正在海盗头目那策划阴谋",next
+window"\n\n你们快赶去阻止他们吧,只能靠你们了",ok
+window_ok
+killitem 697993,1
+giveitem 681118,1
+nowevent 559 =1
+block HaveTitle == 1016 || HaveTitle == 1024
+window"\n\n帮我个忙吧!我太忙走不开,可以吗?",yes,no
+window_yes
+window"\n\n是这样的,我在豪华屋那发现了一对奇怪的父子,想你帮我调查下他们!",next
+window"\n\n那我给你这个侦探证,这样做事会方便点的!",ok
+window_ok
+giveitem 697991,1
+
+block EndEvent 579 == 1 || level <= 120
+window"\n\n别烦我,正忙着那...一边玩去!",ok
+window_ok

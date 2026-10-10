@@ -1,0 +1,47 @@
+block item 87693 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87692 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87691 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87690 == 1
+endwindow "\n\n我师傅现在已经归隐山林，他的小木屋就在莎莲娜山脉里，不过因为没有上山的路，所以你只能用手上缆绳爬上去。至于地点么你只要沿着莎莲娜山脉底下转悠就会发现一块和山上断了绳子的石块就是了。"
+
+block item 87689 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87688 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87687 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87686 == 1
+endwindow "\n\n我是来法兰求助的。"
+
+block item 87685 == 1
+endwindow "\n\n你是不是觉得收集这些东西很困难啊！"
+
+block item 87684 == 1
+window "\n\n看来我们村的灾情已经解决了，我会把师傅龙海姆的下落告诉你。",next
+window "\n\n不过目前最大的问题是我把师傅给我下山用的缆绳给弄丢了，所以告诉你他的所在也是白搭啊。",next
+window "\n\n除非你...你能把制作缆绳的材料弄齐后交给我们乌克兰村的纺织婆婆加工下就可以了。据我师傅说过制作这缆绳的材料是由土蜘蛛、水蜘蛛、火蜘蛛、风蜘蛛分别所吐得丝而成。",next
+window "\n\n这些生物我只记得老一辈人说过，他们分别都盘踞在传说中的四属性洞窟中，不过我也没见过，你可以去碰碰运气。",ok
+window_ok
+giveitem 87685
+
+block item 87679 == 1
+endwindow "\n\n我们的村子就在维诺亚镇附近的山麓上"
+
+block item 87678 == 1
+window "\n\n你要找我师傅吗？我现在遇到麻烦了，如果你能帮助我的话，我自然会告诉你他的下落。",next
+window "\n\n事情是这样的：前些天，我们乌克兰村发生了不明的洞窟塌方，塌方灾情严重，村长委托我来法兰求助，如果你肯帮忙，请尽快带着这个证明去吧。",ok
+window_ok
+killitem 87678
+giveitem 87679
+
+block
+endwindow "\n\n我是来法兰求助的。"

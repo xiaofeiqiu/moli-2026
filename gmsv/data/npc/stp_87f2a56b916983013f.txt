@@ -1,0 +1,6 @@
+block
+window"\n\n@c ¡­¡­Ï×³öÄãµÄÊÄÑÔ",OK
+window_OK
+killitem 505601
+leavegroup
+Warp 0,12641,15,18

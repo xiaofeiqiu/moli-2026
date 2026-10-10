@@ -1,0 +1,12 @@
+block	endevent 93 == 1 && endevent 91 == 1 && endevent 92 == 1 && item 812301 == 0
+	window "\n\n\n@c 你好....能帮我个忙么...",OK,no
+	window_ok 
+	window "\n\n\n@c我很想念我的妹妹，也想念我的家人，\n\n\n@c但是自己又无法去看望他们,请你帮我把信送给我妹妹!",yes
+	window_yes
+	giveitem 812301,1
+	window_no
+	endwindow "\n\n\n@c 真的是太可惜了...."
+block	endevent 93 != 1 && endevent 91 != 1 && endevent 92 != 1
+	endwindow "\n\n@c 你的实力不足以帮我这个忙...请强化下自己的实力吧!"	
+block	item 812301 == 1
+	endwindow "\n\n@c 怎么还不快去把信送给我妹妹......"	

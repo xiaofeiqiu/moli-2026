@@ -1,0 +1,6 @@
+Block
+Window "艾丝蒂亚：请带来土龙×10，我会交给你下一步的调查资料。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:b683ef524177223b6bd4

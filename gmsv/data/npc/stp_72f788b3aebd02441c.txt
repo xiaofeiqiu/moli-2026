@@ -1,0 +1,22 @@
+block item 200774 >= 1
+endwindow "\n\n从那边的通道就可以上去莲花之路了."
+
+
+block item 200773 >= 1
+window "\n\n原来是这样,公主殿下太胡闹了.",next
+window "\n\n刚好王国在莲花路举办宴会,你也去参加吧.",ok
+window_ok
+killitem 200773
+giveitem 200774
+
+
+block item 200770 >= 1
+endwindow "\n\n麻烦你别磨蹭了,快点去找吧."
+
+
+block
+window "\n\n怎么办…怎么办…\n\n公主殿下不见了,我该怎么办…\n你能帮我寻找公主殿下吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200770

@@ -1,0 +1,25 @@
+#mayko_gm_1102661.txt
+
+#1111174	\n\n\n　　　　这里有种奇特的记忆之砂，\n　　　　可以炼成宝石或是记忆之晶。	1
+#1111175	\n\n\n　　　　记忆之晶能回复勇者所制的武防具一点耐久度，\n　　　　是很罕见的宝石。	1
+#1111176	\n\n\n\n@c要一千颗砂才有机会炼出一颗记忆之晶。	1
+#1111177	\n\n\n　　　　你现在有一千个记忆之砂，\n　　　　愿意花一万Ｇ炼记忆之晶或宝石吗？	1
+#1111178	\n\n\n\n@c想炼记忆之晶或宝石再来找我。	1
+
+block item 1000299>9
+	 Window 7019176,yes,no
+	 Window_yes item 1000299>10 && gold >999
+	 Addgold -10000
+	 killitem 1000299,100
+	 GiveItem (13609%1,13619%1,13629%1,13639%1,13649%1,13659%1,13669%1,13679%1)
+	 endblock
+	 Window_yes item 1000299>9
+	 endwindow 3
+	 Window_yes
+	 Window_no
+	 endwindow 7019177
+block
+	 Window 7019173,next
+	 Window 7019174,next
+	 Endwindow 7019175	 
+	  

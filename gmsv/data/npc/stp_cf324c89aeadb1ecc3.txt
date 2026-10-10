@@ -1,0 +1,5 @@
+block
+Window "\n\n难道你要出去吗?怪物就在门外",yes,no
+Window_no
+Window_yes
+Warp 0,64058,69,46

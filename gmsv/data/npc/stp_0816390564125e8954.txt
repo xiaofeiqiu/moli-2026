@@ -1,0 +1,20 @@
+########## 给予 ##########
+block Luac stp:legacy:994355640a31dcc8ade7 >= 1
+	Window "\n\n\n@c请不要在贵重物品储藏室附近逗留!",next
+	Window "\n\n    你是血之一族？，您是想进去见族长呢？（是）还是想去精灵之约的哈利亚大陆？（否）",yes,no
+	Window_yes
+	leavegroup
+	Warp 0,940,11,11
+	window_no
+	Window "\n\n\n@c保重!",ok
+        Window_ok
+	leavegroup
+	Warp 0,45256,58,32
+block endevent 683 == 1
+	Window "\n\n\n@c精灵使者？？!",next
+	Window "\n\n    我知道了。。你要哈利亚么？",yes,no
+	Window_yes
+	LeaveGroup
+	Warp 0,45256,58,32
+	window_no
+	Endwindow "\n\n\n@c需要进去时跟我说声就行!",ok

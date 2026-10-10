@@ -1,0 +1,71 @@
+block Item 92008 >= 1 && Luac stp:legacy:588f14870b1110302842 >= 1 && level >= 25
+	window "\n\n\n想要学习神奇的11级装备的配方么？",yes,no
+	window_yes Luac stp:legacy:0fd3669f8cff8591f3de >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1175
+	GiveRecipe 1176
+	window_yes Luac stp:legacy:5d4e6caab4ac887baca5 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1208
+	GiveRecipe 1209
+	window_yes Luac stp:legacy:0b401aa807b6d183f245 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1241
+	GiveRecipe 1242
+	window_yes Luac stp:legacy:ea199392705f556dad5e >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1274
+	GiveRecipe 1275
+	window_yes Luac stp:legacy:8bd65a151c2bca7d8dad >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1307
+	GiveRecipe 1308
+	window_yes Luac stp:legacy:8bbb8aa8ab0e7f8feac3 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1340
+	GiveRecipe 1341
+	window_yes Luac stp:legacy:64683c10fb42fe2d6ce2 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1373
+	GiveRecipe 1374
+	window_yes Luac stp:legacy:54a39b3ce7573e258924 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1406
+	GiveRecipe 1407
+	window_yes Luac stp:legacy:51a6b3f092cff62ad440 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1440
+	GiveRecipe 1441
+	window_yes Luac stp:legacy:ac50436378eaa90c45ac >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1473
+	GiveRecipe 1474
+	window_yes Luac stp:legacy:d0532bf67f4f72947e61 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1506
+	GiveRecipe 1507
+	window_yes Luac stp:legacy:76cb155b9d6415c5738e >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1539
+	GiveRecipe 1540
+	window_yes Luac stp:legacy:81c54f31a958831fa5be >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1573
+	GiveRecipe 1574
+	window_yes Luac stp:legacy:f7e366b32471e5c60e8b >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1605
+	GiveRecipe 1606
+	window_yes Luac stp:legacy:82b455dd8b2d43239cf5 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1638
+	GiveRecipe 1639
+	window_yes Luac stp:legacy:f67c54bba7f18e7e998b >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1711
+	window_yes Luac stp:legacy:230c7c9faa4e3649c3d9 >= 1 && Item 92008 >= 1 && level >= 25
+	KillItem 92008,1
+	GiveRecipe 1712
+
+block
+	window "\n\n\n不是25级以上的制造系你还是别学了-x-~",ok

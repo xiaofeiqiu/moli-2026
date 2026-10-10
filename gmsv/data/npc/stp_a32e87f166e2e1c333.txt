@@ -1,0 +1,12 @@
+block item 87648 == 1
+endwindow "\n\n我接着睡了...ZZZ"
+
+block item 87647 == 1
+window "\n\n嗯？议会的特派员吗？怎么这么久！地下室里闹鬼闹了好几天了，搞的我现在晚上都不敢睡觉，一到白天就打瞌睡...",next
+window "\n\n钥匙你收好哦，地下室就在村子的东北处，我接着睡了...ZZZ",ok
+window_ok
+killitem 87647
+giveitem 87648
+
+block
+endwindow "\n\nZZZ..ZZZ..."

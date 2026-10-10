@@ -1,0 +1,12 @@
+block
+window "\n\n不行...",next
+window "\n\n好像失控了.",next
+window "\n\n大地的力量正在吞噬着我.",next
+window "\n\n啊啊啊啊啊...",next
+window "\n\n不要...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200014
+leavegroup
+Warp 0,2400,48,49

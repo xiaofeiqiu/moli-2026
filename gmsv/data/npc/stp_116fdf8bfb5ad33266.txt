@@ -1,0 +1,29 @@
+block group > 1
+window "\n\n请解散队伍",yes,no
+window_no
+window_yes
+LeaveGroup
+
+
+block endevent 573 == 0
+EndEvent 573 = 1
+endwindow "\n\n欢迎来到汉米顿村.\n\n这里是连结亚诺曼城和汉米顿村的传送点.\n\n弗利德岛的磁场紊乱,如果有磁石定位仪,你就可以自由来往两地了."
+
+
+block Level >= 50 && endevent 573 == 1 && Item 39660 >= 1
+window "\n\n这是通往亚诺曼城的传送石,要使用吗?\n\n费用是1500元.",yes,no
+window_no
+window_yes gold < 1500 || item 39660 < 1
+endwindow "\n\n你带的钱不够\n\n你少了磁石定位仪,无法传送."
+window_yes Item 39660 >= 1
+killitem 39660,1
+addgold -1500
+Warp 0,30199,10,33
+
+
+block Item 39660 < 1
+endwindow "\n\n你少了磁石定位仪,无法传送."
+
+
+block
+endwindow "\n\n你没有使用此传送石的资格."

@@ -1,0 +1,4 @@
+block
+window"\n\n\n@c西斯那小子,又跑了",next
+window"\n\n\n@c什么时候能让他成器啊……",next
+endwindow"\n\n\n@c要是那小子能再懂事点就好了."

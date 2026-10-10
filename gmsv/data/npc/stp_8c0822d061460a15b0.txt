@@ -1,0 +1,11 @@
+block item 200300 >= 1
+endwindow "\n\n您帮我带去鉴定一下吧,拜托你了."
+
+
+block
+window "\n\n这几日,一直有个人,带一些奇怪的东西来我这里寄卖.",next
+window "\n\n我这里还留有一样样品,您帮我带去鉴定一下吧,拜托你了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200300

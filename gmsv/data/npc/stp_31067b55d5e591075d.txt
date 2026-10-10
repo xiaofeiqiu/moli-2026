@@ -1,0 +1,6 @@
+block	item 7000188	==	1
+window"\n\n\n 你要打开神奇的宝箱么？",yes,no
+window_no
+window_yes
+killitem 7000188,1
+Giveitem (599144%20,599145%20,599146%20,599147%20,599148%20)

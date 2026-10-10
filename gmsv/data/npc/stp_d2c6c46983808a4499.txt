@@ -1,0 +1,18 @@
+block Luac stp:legacy:029d4113fbe0b78f1420 == 1 && Luac stp:legacy:029d4113fbe0b78f1420 == 1 && Luac stp:legacy:029d4113fbe0b78f1420 == 1 && Luac stp:legacy:029d4113fbe0b78f1420 == 1 && Luac stp:legacy:029d4113fbe0b78f1420 == 1 && item 1000203 >= 1
+window "\n\n确定要交出所有地精合成布拉兹吗?",yes,no
+window_no
+window_yes Luac stp:legacy:cd23b50b5defa954cb02 == 1 || Luac stp:legacy:77e8c13a76e5caecbec8 == 1 || Luac stp:legacy:9cdbd150bd4052a4a1ff == 1 || petspace >= 1
+endwindow "\n\n携带5个地精才能合成!"
+window_yes Luac stp:legacy:048d64294afdba78367e == 1 && Luac stp:legacy:048d64294afdba78367e == 1 && Luac stp:legacy:048d64294afdba78367e == 1 && Luac stp:legacy:048d64294afdba78367e == 1 && Luac stp:legacy:048d64294afdba78367e == 1 && item 1000203 >= 1
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killitem 1000203,1
+givepet 330072
+endwindow "\n\n恭喜你合成了布拉兹!"
+
+
+block
+endwindow "\n\n似乎缺少了某些宠物,无法使用!"

@@ -1,0 +1,11 @@
+block item 200022 >= 1 && item 200023 >= 1 && floor == 27992 && Xpos == 211 && Ypos == 19
+window "\n\n颤抖的好厉害,好像有什么东西要出来.",next
+window "\n\n好烫手,扔掉石头...",ok
+window_ok
+killitem 200022
+killitem 200023
+giveitem 200024
+
+
+block
+endwindow "\n\n发出微微的颤动,但是没有什么异常."

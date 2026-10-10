@@ -1,0 +1,5 @@
+#XXXX»¨Ñý±äÉí¿¨
+block
+
+	KillItem 652512,1,(8000016)
+	metamo  110391

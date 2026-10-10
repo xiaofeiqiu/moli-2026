@@ -1,0 +1,39 @@
+block
+if  Item 6517 >= 3 && Xpos == 60 && Ypos == 22
+changepal 0,180
+Window "\n\n魔族的封印逐渐被解开了.",next
+Window "\n\n...",next
+Window "\n\n...",OK
+Window_OK
+KillItem 6517,3
+LeaveGroup
+Warp 0,41033,2,10
+endif
+
+if  Item 6517 >= 3 && Xpos == 60 && Ypos == 21
+changepal 0,180
+Window "\n\n魔族的封印逐渐被解开了.",next
+Window "\n\n...",next
+Window "\n\n...",OK
+Window_OK
+KillItem 6517,3
+LeaveGroup
+Warp 0,41033,2,10
+endif
+
+if  Item 6517 >= 1 && Xpos == 60 && Ypos == 22
+Message 1023
+endif
+
+if  Item 6517 >= 1 && Xpos == 60 && Ypos == 21
+Message 1023
+endif
+
+if  Xpos == 60 && Ypos == 22
+Message 1024
+endif
+
+if  Xpos == 60 && Ypos == 21
+Message 1024
+else
+endif

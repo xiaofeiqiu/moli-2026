@@ -1,0 +1,10 @@
+block item 50870 >= 1
+endwindow "\n\n请小心别随意碰它...就全拜托你了."
+
+
+block
+window "\n\n唔...你是...被派来救我们的吗?我们...在演练的过程中发现了这枚奇怪的水晶,随后一阵强光从水晶中迸发出来...我的士兵们都消失了,我是幸存下来的唯一一个...请小心翼翼的把这枚水晶带回去给负责人研究吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 50870

@@ -1,0 +1,11 @@
+block item 86625 >= 1 && item 86626 >= 1 && item 86627 >= 1 && item 86628 >= 1
+window "\n\n汝等下人，竟来此处.受死吧！",ok
+window_ok
+killitem 86625
+killitem 86626
+killitem 86627
+killitem 86628
+Encount 2|0,1000,233,78||0|||||0|86291|||||||||
+
+block
+endwindow "\n\n..................."

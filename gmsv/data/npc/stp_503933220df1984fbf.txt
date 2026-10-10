@@ -1,0 +1,25 @@
+block item 87782 == 1
+endwindow "\n\n放心我和切斯塔一会就弄好，麻烦你叫我妹妹拖延下时间！"
+
+block item 87780 == 1 && item 87781 == 1
+window "\n\n哈哈~~这次收获不小，这么一大只野猪。够我和切斯塔2家吃很长时间了。",next
+window "\n\n我得赶快回家以免父母责怪，你回去跟我妹妹说声等我把野猪拿去宰杀分好就立马回家。",ok
+window_ok
+killitem 87780
+killitem 87781
+giveitem 87782
+
+block item 87780 == 1
+endwindow "\n\n你要和切斯塔配合好哦~~机会只有一次。"
+
+block item 87779 == 1
+window "\n\n这不是我妹妹阿美的布娃娃吗？啊~~家里要开饭啦！我得马上回去不能让父母知道我是溜出来打猎的。",next
+window "\n\n难得看见一头野猪不能让到嘴边的肉给跑掉，你能帮忙吗？这样就能尽快逮到它，我就可以赶快回家吃饭了。",yes,no
+window_no
+window_yes
+killitem 87779
+giveitem 87780
+endwindow "\n\n这个捕猎器你拿着和切斯塔负责捕抓野猪，我负责把它赶出来。"
+
+block
+endwindow "\n\n奇怪了，我们一路围追一头野猪到此，结果一无所获！"

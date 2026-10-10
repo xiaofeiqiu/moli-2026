@@ -1,0 +1,28 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【恶魔螃蟹】吗？",ok
+			Window_ok
+Luac stp:legacy:8be861ba5c4455363904
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【水晶螃蟹】吗？",ok
+			Window_ok
+Luac stp:legacy:41befda835b13aeb0f9b
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【铁剪螃蟹】吗？",ok
+			Window_ok
+Luac stp:legacy:79c00441681ccca94112
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【黄金螃蟹】吗？",ok
+			Window_ok
+Luac stp:legacy:a5d9471ae5170f1de636
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【巨螯螃蟹】吗？",ok
+			Window_ok
+Luac stp:legacy:57d44178cf481fadfbf4
+				endif
+

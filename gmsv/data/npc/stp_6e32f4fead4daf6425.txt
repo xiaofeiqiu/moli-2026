@@ -1,0 +1,16 @@
+block item 60003 >= 1
+window "\n\n哎呦～这么快回来了.",ok
+window_ok
+leavegroup
+Warp 0,19050,49,84
+
+
+
+block item 60001 >= 1
+window "\n\n别东看西看的我在这,快点老大等得不耐烦了.",ok
+window_ok
+leavegroup
+Warp 0,19050,49,84
+
+block
+endwindow "\n\n......."

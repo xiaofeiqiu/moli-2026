@@ -1,0 +1,11 @@
+block Luac stp:legacy:20b0e52c7c8057b4ce81 >= 1
+	Window "\n\n　你已经准备好接受神的洗礼了吧？",next
+	Window "\n\n　只有有足够的勇气！前进的道路才会开启。",next
+	Window "\n\n　好好提升你现在的实力，我相信你一定能够坚持到最后，成为和我一样超越神的存在。",yes,no
+	window_yes
+	leavegroup
+	Warp 0,125,7,12
+	window_no
+	window"不想成为超越神的存在吗......",OK
+block
+	Window "\n\n　我没什么可教你的。找别人吧！",ok

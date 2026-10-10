@@ -1,0 +1,13 @@
+
+block item 15683 == 1
+window "\n\n\n@c谢谢你救了我,这不是我哥哥的封印戒指么,原来你是我哥哥请来救我的,那么这个戒指就送给你了,你可以找到我们的妈妈,将他解封.",yes,no
+window_no
+endwindow "\n\n\n@c那就当是个纪念品送给你吧."
+window_yes itemspace < 1
+endwindow "\n\n\n@c你的背包满啦!"
+window_yes
+giveitem 15684
+window "\n\n\n@c你现在就去找我们的妈妈吧,把这个交给她,她就会明白的.",ok
+window_ok
+leavegroup
+Warp 0,15688,58,163

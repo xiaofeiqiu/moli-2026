@@ -1,0 +1,10 @@
+block item 88028 == 1 && item 88029 == 1
+window 501009,next
+window 501010,ok
+window_ok
+LeaveGroup
+killitem 88029
+Warp 0,27543,58,60
+
+block
+endwindow 501011

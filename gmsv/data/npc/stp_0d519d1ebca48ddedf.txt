@@ -1,0 +1,74 @@
+######################################阿尔萨斯的阴谋##########################################
+		
+block level >= 100 && endevent 56 == 1 && item 3808 == 1
+Window "\n\n干的好开启者!",next
+Window "\n\n现在我授予你我国最高荣誉勋章",OK
+Window_OK itemspace >= 1
+killitem 3808,1
+giveitem (1000249%1,1000250%1)
+endWindow "\n\n多谢您拯救了我的国家"
+
+block level >= 100 && endevent 64 == 1 && item 3808 == 1
+Window "\n\n干的好开启者!",next
+Window "\n\n现在我授予你我国最高荣誉勋章",OK
+Window_OK itemspace >= 1
+killitem 3808,1
+giveitem (1000249%1,1000250%1)
+endWindow "\n\n多谢您拯救了我的国家"
+################################################################################
+
+
+
+
+#
+#??? ? ?? ? ??? ?? ??
+#?? ??
+#
+
+################################################################################
+#
+################################################################################
+
+###　???? ??? ?? ??　###
+block Item 16223 >= 1
+	Window 21661,next
+	Window 21662,next
+	Window 21663,OK
+		Window_OK
+		KillItemall 16223
+		NowEvent 560 = 1
+
+### ?５? ???? ?? ###
+
+#? ?５? ??? ???
+block EndEvent 581 == 1
+	Window 22598,next
+	Window 22599,OK
+		Window_OK
+			KillItemAll 16395
+			GiveItem 16402,1
+			EndEvent 580 = 1
+			NowEvent 561 = 0
+			EndEvent 581 = 0
+			CheckTitle
+#??? ??? ??? ???
+block Item 16396 >= 1
+	EndWindow 22600,OK
+#??? ??? ??? ???
+block Item 16395 >= 1
+	EndWindow 22601,OK
+#??? ?５? ???? ?? ????
+block NowEvent 561 == 1
+	Window 22602,next
+	Window 22603,next
+	Window 22604,next
+	Window 22605,OK
+		Window_OK ItemSpace == 0
+			EndWindow 10000
+		Window_OK
+			GiveItem 16395,1
+
+###　###
+block
+#\n\n　??, ??? ???. ? ???. ???? ?? ???? ??? ?? ???.
+	EndWindow 15493,OK

@@ -1,0 +1,27 @@
+block
+	LocalCount0 = random 5,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【盗贼】吗？",ok
+			Window_ok
+Luac stp:legacy:fab3991cc33eba39c436
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【山贼】吗？",ok
+			Window_ok
+Luac stp:legacy:b5b34c4af120d395dad2
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【海盗】吗？",ok
+			Window_ok
+Luac stp:legacy:2a63b0a7127238330e35
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【破坏狂】吗？",ok
+			Window_ok
+Luac stp:legacy:84a48bcb8fffc931411b
+				endif
+	if localcount0==5
+		window "\n\n@c要将随从的形象永久变为【带刀侍卫】吗？",ok
+			Window_ok
+Luac stp:legacy:f55e3a4b54eda620192c
+				endif

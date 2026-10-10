@@ -1,0 +1,6 @@
+block Item 800085 == 1
+	Window"\n\n你们竟然敢进到我的巢穴里来！",next
+	Window"\n\n小小人类，受死吧！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18082,38,62|800085|||||||800040|||||||||

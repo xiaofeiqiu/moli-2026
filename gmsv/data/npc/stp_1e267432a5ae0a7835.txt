@@ -1,0 +1,29 @@
+block	item 191710>=1||item 191711>=1
+window"\n\n去问清楚真相吧...",ok
+window_ok
+leavegroup
+Warp 0,23265,6,7
+block	itemspace<1
+Endwindow"\n\n\n@c 你身上的东西满了哦!"
+block	item 360022>=1||item 360023>=1
+window"\n\n等等，你包里的是希望的水晶吧？这个东西我见过，只是它太低级了，我给你换成更强大的吧！",yes,no
+window_no
+giveitem 191710,1
+leavegroup
+Warp 0,23265,6,7
+window_yes	item 360022>=1
+killitem 360022,1
+Giveitem 191711,1
+leavegroup
+Warp 0,23265,6,7
+window_yes	item 360023>=1
+killitem 360023,1
+Giveitem 171711,1
+leavegroup
+Warp 0,23265,6,7
+block
+window"\n\n去问清楚真相吧...",ok
+window_ok
+Giveitem 191710,1
+leavegroup
+Warp 0,23265,6,7

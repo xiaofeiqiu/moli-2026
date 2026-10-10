@@ -1,0 +1,50 @@
+block item 86926 == 1 && item 86928 == 1
+window "\n\n你说这是你从海魔身上得到的东西？这东西隐藏着强大的能量，如果把其附魔进魔珠会加强其能力，不过你得帮我去收集德特家的布*5，魔族的水晶*5，钢骑之矿*2，蓝龙之鳞*1，浑浊的水*1，还有10000附魔费用。",ok
+window_ok item 18453 >= 5 && item 18450 >= 5 && item 18449 >= 2 && item 18452 >= 1 && item 18451 >= 1 && gold >= 10000
+leavegroup
+addgold -10000
+killitem 86926
+killitem 86928
+killitem 18453,5
+killitem 18405,5
+killitem 18449,2
+killitem 18452,1
+killitem 18451,1
+giveitem 86929
+
+block item 86926 == 1
+window "\n\n你说你用这武器杀死了海魔之后便发出了这奇怪的光芒？真是奇怪的事，武器上居然又出现了一种禁制，我帮你解除这层禁制吧，不过你得帮我去收集德特家的布*5，魔族的水晶*5，钢骑之矿*2，蓝龙之鳞*1，浑浊的水*1，还有10000附魔费用。",ok
+window_ok item 18453 >= 5 && item 18450 >= 5 && item 18449 >= 2 && item 18452 >= 1 && item 18451 >= 1 && gold >= 10000
+leavegroup
+addgold -10000
+killitem 86926
+killitem 18453,5
+killitem 18405,5
+killitem 18449,2
+killitem 18452,1
+killitem 18451,1
+giveitem 86927
+
+block item 86924 == 1
+endwindow "\n\n如果再碰到需要附魔的情况，可以再来找我。"
+
+block item 86923 == 1 && item 86922 == 1
+window "\n\n恩？你说有给我的信？奇怪，会是谁给我写的呢？",next
+window "\n\n原来是那个老呆子啊，话说我们真的好多年没见了呢，他在信上说你有东西要给我看？",yes,no
+window_no
+window_yes
+window "\n\n果然是把精品，不过这似乎并不是它完全的面貌，我可以帮你解除上面的禁制，展现它真正的能力。不过你得帮我收集德特家的布*5，魔族的水晶*5，钢骑之矿*2，火焰之魂*1，誓言之证*1还有10000的附魔费用。",ok
+window_ok item 18453 >= 5 && item 18450 >= 5 && item 18449 >= 2 && item 18452 >= 1 && item 18451 >= 1 && gold >= 10000
+leavegroup
+addgold -10000
+killitem 86923
+killitem 86922
+killitem 18453,5
+killitem 18405,5
+killitem 18449,2
+killitem 18452,1
+killitem 18451,1
+giveitem 86924
+
+block
+endwindow "\n\n......................"

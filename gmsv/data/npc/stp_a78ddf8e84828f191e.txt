@@ -1,0 +1,99 @@
+block gold < 200000
+EndWindow"\n\n@c 这里不是穷人来的地方哦 ……"
+block gold > 600000
+EndWindow"\n\n@c 身上的钱请不要大于 60 万，否则无法给予奖励……"
+
+###5000
+block StrCmpChat == 897001
+window"\n\n@c 请确定,您要参与 200000 MB的 博彩.\n\n 压一赔二, 赢了您将得到 400000 MB.\n\n 选是开始.",yes,no
+window_no
+Endwindow"\n\n@c难道你来只是为了调戏我一下么？"
+window_yes gold < 200000
+Endwindow"\n\n@c 这里不是穷人来的地方哦 ……"
+window_yes itemSpace < 1
+Endwindow"\n\n@c 你身上那么多的道具都是给我的么…"
+window_yes gold > 200000 && itemSpace >= 1
+window"\n\n@c系统将随即分配给您一个筛子\n\n请到迷宫内找随即出现的3个博彩员兑换!\n\n 那3个博彩员分别是大,中,小.赢,看你RP了!!",ok
+window_ok
+addgold -200000
+Giveitem (893000%20,893001%1,893002%1,893003%1,893004%1,893005%1)
+LeaveGroup
+Warp 0,89,17,1
+
+####10000
+
+block StrCmpChat == 897002
+window"\n\n@c 请确定,您要参与 500000 MB的 博彩.\n\n 压一赔二, 赢了您将得到 1k.\n\n 选是开始.",yes,no
+window_no
+Endwindow"\n\n@c难道你来只是为了调戏我一下么？"
+window_yes gold < 500000
+Endwindow"\n\n@c 这里不是穷人来的地方哦 ……"
+window_yes itemSpace < 1
+Endwindow"\n\n@c 你身上那么多的道具都是给我的么…"
+window_yes gold > 500000 && itemSpace >= 1
+window"\n\n@c系统将随即分配给您一个筛子\n\n请到迷宫内找随即出现的3个博彩员兑换!\n\n 那3个博彩员分别是大,中,小.赢,看你RP了!!",ok
+window_ok
+addgold -500000
+Giveitem (893000%20,893001%1,893002%1,893003%1,893004%1,893005%1)
+LeaveGroup
+Warp 0,89,17,5
+
+####20000
+
+652104
+
+
+block StrCmpChat == 897003
+window"\n\n@c 请确定,您要参与 1 k的 博彩.\n\n 压一赔二, 赢了您将得到 2 k.\n\n 选是开始.",yes,no
+window_no
+Endwindow"\n\n@c难道你来只是为了调戏我一下么？"
+window_yes item 652104 < 1
+Endwindow"\n\n@c 这里不是穷人来的地方哦 ……"
+window_yes itemSpace < 1
+Endwindow"\n\n@c 你身上那么多的道具都是给我的么…"
+window_yes item 652104 >= 1 && itemSpace >= 1
+window"\n\n@c系统将随即分配给您一个筛子\n\n请到迷宫内找随即出现的3个博彩员兑换!\n\n 那3个博彩员分别是大,中,小.赢,看你RP了!!",ok
+window_ok
+killitem 652104,1
+Giveitem (893000%20,893001%1,893002%1,893003%1,893004%1,893005%1)
+LeaveGroup
+Warp 0,89,17,9
+
+#####50000
+
+block StrCmpChat == 897004
+window"\n\n@c 请确定,您要参与 5 k的 博彩.\n\n 压一赔二, 赢了您将得到 10 k.\n\n 选是开始.",yes,no
+window_no
+Endwindow"\n\n@c难道你来只是为了调戏我一下么？"
+window_yes item 652104 < 4
+Endwindow"\n\n@c 这里不是穷人来的地方哦 ……"
+window_yes itemSpace < 1
+Endwindow"\n\n@c 你身上那么多的道具都是给我的么…"
+window_yes item 652104 >= 5 && itemSpace >= 1
+window"\n\n@c系统将随即分配给您一个筛子\n\n请到迷宫内找随即出现的3个博彩员兑换!\n\n 那3个博彩员分别是大,中,小.赢,看你RP了!!",ok
+window_ok
+killitem 652104,5
+Giveitem (893000%20,893001%1,893002%1,893003%1,893004%1,893005%1)
+LeaveGroup
+Warp 0,89,17,13
+
+
+####100000
+block StrCmpChat == 897005
+window"\n\n@c 请确定,您要参与 10 k的 博彩.\n\n 压一赔二, 赢了您将得到 20 k.\n\n 选是开始.",yes,no
+window_no
+Endwindow"\n\n@c难道你来只是为了调戏我一下么？"
+window_yes item 652104 < 9
+Endwindow"\n\n@c 这里不是穷人来的地方哦 ……"
+window_yes itemSpace < 1
+Endwindow"\n\n@c 你身上那么多的道具都是给我的么…"
+window_yes item 652104 >= 10 && itemSpace >= 1
+window"\n\n@c系统将随即分配给您一个筛子\n\n请到迷宫内找随即出现的3个博彩员兑换!\n\n 那3个博彩员分别是大,中,小.赢,看你RP了!!",ok
+window_ok
+killitem 652104,10
+Giveitem (893000%20,893001%1,893002%1,893003%1,893004%1,893005%1)
+LeaveGroup
+Warp 0,89,17,17
+
+block
+Endwindow"\n@c  您好，欢迎光临暗黑魔力博彩系统\n\n 在这里统一为 压一赔二 .\n\n请选择您要压的钱数：\n 输入数字1为,200000MB\n输入数字2为,500000MB\n输入数字3为,1K\n输入数字4为,5K\n输入数字5为,10K.",ok

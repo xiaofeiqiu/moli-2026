@@ -1,0 +1,9 @@
+block item 86920 == 1
+ChangePal 0,120
+window "\n\n怎么回事，到了你所说的岛屿附近海域，突然海流就变化了！还突然出现了暴风雨！这怎么回事？",next
+window "\n\n船员：不好，我们触礁了！",ok
+window_ok
+leavegroup
+setlp -100
+systemmessage 85722
+Warp 0,28369,70,103

@@ -1,0 +1,63 @@
+#【一等奖 M L D O N E】
+block Item 778924 >= 1 && Item 778925 >= 1 && Item 778926 >= 1 && Item 778927 >= 1 && Item 778928 >= 1 && Item 778929 >= 1
+	Window "\n\n  恭喜你哦.抽到一等奖品.\n  奖品缎带,杀戮之戒,Q零件随即一个，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778924,1
+	KillItem 778925,1
+	KillItem 778927,1
+	KillItem 778926,1
+	KillItem 778928,1
+	KillItem 778929,1
+	giveitem (39712%20,39715%50,778903%1)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+
+#【二等奖 M L D O N】
+block Item 778924 >= 1 && Item 778925 >= 1 && Item 778926 >= 1 && Item 778927 >= 1 && Item 778928 >= 1
+	Window "\n\n  恭喜你哦.抽到二等奖品.\n  奖品鬼灵改造图(ABCDE),斩首改造图(ABCDE),神盾改造图(ABCDE)30万魔币卷,随即一个，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778924,1
+	KillItem 778925,1
+	KillItem 778926,1
+	KillItem 778927,1
+	KillItem 778928,1
+	giveitem (39663%80,39664%70,39665%50,39666%30,39667%10,39668%80,39669%70,39670%50,39671%30,39672%10,39673%80,39674%70,39675%50,39676%30,39677%10,19577%50)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+
+#【三等奖 M L D O】
+block Item 778924 >= 1 && Item 778925 >= 1 && Item 778926 >= 1 && Item 778927 >= 1
+	Window "\n\n  恭喜你哦.抽到三等奖品.\n  尖利之牙,羊首雕像,10万魔币卷随即一个，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778924,1
+	KillItem 778925,1
+	KillItem 778926,1
+	KillItem 778927,1
+	giveitem (39713%20,39714%10,19578%50)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+
+#【四等奖 M L D 】
+block Item 778924 >= 1 && Item 778925 >= 1 && Item 778926 >= 1
+	Window "\n\n  恭喜你哦.抽到四等奖品.\n  如月沙罗戒,随即一个，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778924,1
+	KillItem 778925,1
+	KillItem 778926,1
+	giveitem 18662,1
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+#【五等奖 M L】
+block Item 778924 >= 1 && Item 778925 >= 1
+	Window "\n\n  恭喜你哦.抽到五等奖品.\n  完美水晶（地）,完美水晶（水）,完美水晶（火）,完美水晶（风）随即一个，要兑换奖品吗？",ok
+	Window_ok
+	KillItem 778924,1
+	KillItem 778925,1
+	giveitem (39716%60,39717%60,39718%60,39719%60)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+#【六等奖 M】  
+block item 778924 == 1
+	Window "\n\n  您只有字母M。\n  奖品是1级宝石一个，要兑换奖品吗？",ok
+	Window_ok
+		KillItem 778924,1
+		giveitem (13600%45,13610%50,13620%55,13630%50,13640%60,13650%55,13660%40)
+	Window "\n\n  请妥善保管您的奖品及物品，感谢您对一起的支持与信任！",ok
+
+block
+Window "\n\n  我只负责MLONE!",ok

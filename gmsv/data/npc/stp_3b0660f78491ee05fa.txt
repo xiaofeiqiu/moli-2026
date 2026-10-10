@@ -1,0 +1,9 @@
+#洗礼3任务添加#持有【线索卡片2】获得【线索卡片3】
+block item 730037 >= 1
+Window "\n\n哦!你是来调查那件事情的.",ok
+Window_ok item 730037 >= 1
+killitem 730037
+giveitem 730038
+
+Block
+Message 10768

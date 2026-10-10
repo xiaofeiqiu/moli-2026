@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【史莱姆】吗？",ok
+			Window_ok
+Luac stp:legacy:669b80226905c5f5241b
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【液态史莱姆】吗？",ok
+			Window_ok
+Luac stp:legacy:ffee88ad513b08bc7a36
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【果冻史莱姆】吗？",ok
+			Window_ok
+Luac stp:legacy:c21872e9ab0c3cdfe0ce
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【布丁史莱姆】吗？",ok
+			Window_ok
+Luac stp:legacy:626e4fc490bdbf9ead6a
+				endif
+

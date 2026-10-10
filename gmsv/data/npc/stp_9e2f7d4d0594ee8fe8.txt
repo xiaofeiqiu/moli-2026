@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【葛雷基殴】吗？",ok
+			Window_ok
+Luac stp:legacy:aa9391dc119296627f73
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【葛雷洛比】吗？",ok
+			Window_ok
+Luac stp:legacy:1a9b148329d85e31fffc
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【葛雷吉鲁】吗？",ok
+			Window_ok
+Luac stp:legacy:39a44883ddbb72fa3011
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【葛雷马恩】吗？",ok
+			Window_ok
+Luac stp:legacy:958ba869512602983070
+				endif
+

@@ -1,0 +1,101 @@
+#############■情人节活动,服饰店老板欧萝丝
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+window "\n\n哇,真美啊,穿上这件衣服,你变得好像大明星一样啊!好有气质,好棒,真不知道该怎么形容耶,想当年我年轻的时候...唉呀,不说我了,你们继续去逛逛吧!",ok
+Window_OK BBImage >= 100250 && BBImage <= 100423 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+Warp 0,32642,36,36
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+window "\n\n哇,真美啊,穿上这件衣服,你变得好像大明星一样啊!好有气质,好棒,真不知道该怎么形容耶,想当年我年轻的时候...唉呀,不说我了,你们继续去逛逛吧!",ok
+Window_OK BBImage >= 105250 && BBImage <= 105423 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+Warp 0,32642,36,36
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+window "\n\n哇,真美啊,穿上这件衣服,你变得好像大明星一样啊!好有气质,好棒,真不知道该怎么形容耶,想当年我年轻的时候...唉呀,不说我了,你们继续去逛逛吧!",ok
+Window_OK BBImage >= 106250 && BBImage <= 106423 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+Warp 0,32642,36,36
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+endwindow "\n\n帮你的女朋友换上礼服吧,美丽的衣服送给美丽的人,真好!"
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+endwindow "\n\n帮你的女朋友换上礼服吧,美丽的衣服送给美丽的人,真好!"
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715232 >= 1 && Item 715228 == 1 && Item 715229 == 1 && Item 715219 == 0 && Group ==2
+endwindow "\n\n帮你的女朋友换上礼服吧,美丽的衣服送给美丽的人,真好!"
+
+block ItemSpace == 0
+endwindow "\n\n你的背包满啦!"
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715232 == 0 && Item 715219 == 0
+window "\n\n这位帅哥,买件漂亮的礼服给你的阿娜达吧!这件白色的高雅,紫色的那件神秘,另外看看这件黑缎面礼服......你女朋友穿起来铁定性感又美丽.今天情人节,算你10000就好了啦!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 100000 && BBImage <= 100173 && Group == 2 && Gold >= 10000 && Item 715232 == 0 && Item 715219 == 0
+AddGold -10000
+GiveLeak1Item 715232
+endwindow "\n\n你真是个大方的帅哥,我女儿如果有一个像你一样的男朋友该有多好啊～"
+Window_YES ItemSpace > 0 && BBImage >= 100000 && BBImage <= 100173 && Group == 2 && Gold < 10000
+endwindow "\n\n不会吧!?看你那么帅居然没钱!果然中看不中用......"
+
+Window_NO Group == 2
+Encount 3|0,32642,36,36||0|||||0|613173|||||||||
+
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0 && Item 715219 == 0
+window "\n\n这位帅哥,买件漂亮的礼服给你的阿娜达吧!这件白色的高雅,紫色的那件神秘,另外看看这件黑缎面礼服......你女朋友穿起来铁定性感又美丽.今天情人节,算你10000就好了啦!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 105000 && BBImage <= 105173 && Group == 2 && Gold >= 10000 && Item 715219 == 0 && Item 715219 == 0
+AddGold -10000
+GiveLeak1Item 715232
+endwindow "\n\n你真是个大方的帅哥,我女儿如果有一个像你一样的男朋友该有多好啊～"
+Window_YES ItemSpace > 0 && BBImage >= 105000 && BBImage <= 105173 && Group == 2 && Gold < 10000
+endwindow "\n\n不会吧!?看你那么帅居然没钱!果然中看不中用......"
+
+Window_NO Group == 2
+Encount 3|0,32642,36,36||0|||||0|613173|||||||||
+
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715230 == 0 && Item 715219 == 0
+window "\n\n这位帅哥,买件漂亮的礼服给你的阿娜达吧!这件白色的高雅,紫色的那件神秘,另外看看这件黑缎面礼服......你女朋友穿起来铁定性感又美丽.今天情人节,算你10000就好了啦!",yes,no
+Window_YES ItemSpace > 0 && BBImage >= 106000 && BBImage <= 106173 && Group == 2 && Gold >= 10000 && Item 715219 == 0 && Item 715219 == 0
+AddGold -10000
+GiveLeak1Item 715232
+endwindow "\n\n你真是个大方的帅哥,我女儿如果有一个像你一样的男朋友该有多好啊～"
+Window_YES ItemSpace > 0 && BBImage >= 106000 && BBImage <= 106173 && Group == 2 && Gold < 10000
+endwindow "\n\n不会吧!?看你那么帅居然没钱!果然中看不中用......"
+
+Window_NO Group == 2
+Encount 3|0,32642,36,36||0|||||0|613173|||||||||
+
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715232 == 0
+endwindow "\n\n情人节穿新衣喔!请你男朋友帮你买件小礼服吧!"
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715232 == 0
+endwindow "\n\n情人节穿新衣喔!请你男朋友帮你买件小礼服吧!"
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715228 == 1 && Item 715229 == 1 && Group == 2 && Item 715232 == 0
+endwindow "\n\n情人节穿新衣喔!请你男朋友帮你买件小礼服吧!"
+
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715232 >= 1 && Group == 1
+endwindow "\n\n快把礼服送给你的女朋友,情人节表心意,送礼服最适合了啦!"
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715232 >= 1 && Group == 1
+endwindow "\n\n快把礼服送给你的女朋友,情人节表心意,送礼服最适合了啦!"
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715232 >= 1 && Group == 1
+endwindow "\n\n快把礼服送给你的女朋友,情人节表心意,送礼服最适合了啦!"
+
+block BBImage >= 100250 && BBImage <= 100423 && Item 715232 >= 1 && Group == 1
+endwindow "\n\n你怎么落单了呢?快去把你的男朋友揪出来!"
+
+block BBImage >= 105250 && BBImage <= 105423 && Item 715232 >= 1 && Group == 1
+endwindow "\n\n你怎么落单了呢?快去把你的男朋友揪出来!"
+
+block BBImage >= 106250 && BBImage <= 106423 && Item 715232 >= 1 && Group == 1
+endwindow "\n\n你怎么落单了呢?快去把你的男朋友揪出来!"
+
+block Group > 2
+endwindow "\n\n这个年头都变了...三角恋爱、多角恋爱层出不穷啊,你们这些年轻人哟～唉～"
+
+block
+endwindow "\n\n今天情人节,买件礼服好过节,不但让女朋友更美,穿礼服还可以御寒喔!也请把两张优待券给我看."

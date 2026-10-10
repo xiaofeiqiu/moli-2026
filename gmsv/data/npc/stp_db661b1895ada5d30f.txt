@@ -1,0 +1,25 @@
+block Item 360310 == 0 && Item 9601 == 0 && Item 9602 == 0 && Item 10002 == 0
+	Window 33374,Next
+	Window 33375,Next
+	Window 33376,Next
+	EndWindow 33377,OK
+
+block Item 360310 < 3 && Item 9601 < 100 && Item 9602 < 40 && Item 10002 < 40
+	EndWindow 33378,OK
+
+block ItemCreateTime 360310 >=60
+EndWindow 33385,OK
+	
+block Item 360310 >= 3 && Item 9601 >= 100 && Item 9602 >= 40 && Item 10002 >= 40  ItemCreateTime 360310 <=60
+	Window "\n\n 哦你真是太慷慨了我的朋友！\n\n 我想你一定很愿意获得这份圣诞礼物不是吗?",YES,NO
+        	Window_NO
+        	EndWindow "\n\n\n@c　不要?那我省了啊...不过也得祝你圣诞快乐！
+		Window_yes
+		KillItem 360310,3
+		KillItem 9601,50
+		KillItem 9602,30
+		KillItem 10002,20
+		GiveItem 1000787,1
+		GiveItem 360308,3
+		GiveItem 360311,1
+		GiveItem 360317,1

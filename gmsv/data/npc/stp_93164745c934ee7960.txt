@@ -1,0 +1,7 @@
+block
+	Window "\n\n\n\n@c是否使用晋职水晶快速达到一转？",YES,NO
+	Window_yes
+		KillItem 60427,1
+		EndEvent 607 = 1
+		SystemMessage 831168
+	Window_no

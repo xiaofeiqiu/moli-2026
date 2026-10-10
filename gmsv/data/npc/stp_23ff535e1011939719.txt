@@ -1,0 +1,7 @@
+block Endevent 647==1
+window"\n\n\n@c 进去吧！",ok
+window_ok
+	leavegroup
+	Warp 0,34100,350,78
+block
+Endwindow"\n\n@c 依你的能力现在还不适合进去！"

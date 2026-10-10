@@ -1,0 +1,14 @@
+block item 200515 >= 1
+endwindow "\n\n波板糖很受孩子们的喜爱,估计你是买给你的儿子或女儿的吧."
+
+
+
+block item 200513 >= 1
+window "\n\n你要波板糖啊,有的是,我这里最好吃的就属波板糖.",ok
+window_ok
+killitem 200513
+giveitem 200515
+
+
+block
+endwindow "\n\n买糖果啦～买糖果啦～刚出炉的波板糖."

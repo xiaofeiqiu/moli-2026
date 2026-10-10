@@ -1,0 +1,12 @@
+block item 88353 == 1
+window "\n\n你就是增派来的士兵？请出示兵团长的军令！",yes,no
+window_no
+window_yes
+window "\n\n进入后请速速与大侦探汉斯报道！",ok
+window_ok
+LeaveGroup
+killitem 88353
+Warp 0,14294,12,56
+
+block
+endwindow "\n\n今天博物馆停止对外开放！"

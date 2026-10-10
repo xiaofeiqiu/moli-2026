@@ -1,0 +1,15 @@
+block item 3878 >= 1
+endwindow "\n\n\n\n　　　　　···一个冰冷的石碑···"
+
+
+block
+window "\n\n『发现了一个奇怪的东西...』",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 3878
+leavegroup
+Warp 0,57526,74,18
+
+
+

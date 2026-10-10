@@ -1,0 +1,30 @@
+block item 730049 >= 1
+EndWindow "\n\n请把信件送到汉克那里去吧"
+
+block item 730043 >= 1 && item 730044 >= 1 && item 730045 >= 1 && item 730046 >= 1
+Window "\n\n哦哦哦,比我想象中的速度快很多嘛!看来那二位所言不差.恭喜你完成考验.",ok
+Window_ok item 730043 >= 1 && item 730044 >= 1 && item 730045 >= 1 && item 730046 >= 1
+killitem 730042
+killitem 730043
+killitem 730044
+killitem 730045
+killitem 730046
+giveitem 730049
+
+#持有【线索卡片6】获得【收集品清单】
+block item 730041 >= 1
+Window "\n\n你好,在卡片的指引下,你终于来到了这里.",next
+Window "\n\n我叫萨尔瓦洛,是一名炼金术士.如你所见,我也是传承密保的守护族人之一.",next
+Window "\n\n很早就听说蒂娜村的村民受到奇怪的诅咒,所以我专程前来这里调查并采集相关物品,希望能解开这个诅咒,造福人们.",next
+Window "\n\n之前,我收到了几位传承族人的来信,说你们值得将秘密托付,那么请协助我一起收集吧.",next
+Window "\n\n在这下面我发现了一个古代遗迹,里面藏有着蕴含力量的物品,但都被魔物霸占着,请按照字条上的名称数量打倒魔物并收集完毕后交给我.",next
+Window "\n\n这些物品可以用来合成解咒的药.如果你们能够完成这个委托,我将承认你们的实力.",next
+Window "\n\n对了,这里我通过炼金术制造了一名补给护士,如果你们需要可以回来这里补给.",ok
+Window_ok item 730041 >= 1
+killitem 730041
+giveitem 730042
+LeaveGroup
+Warp 0,57217,19,21
+
+block item 730049 >= 1
+EndWindow "\n\n我叫萨尔瓦洛,是一名炼金术士."

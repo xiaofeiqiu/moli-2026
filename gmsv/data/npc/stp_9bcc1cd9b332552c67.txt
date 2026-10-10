@@ -1,0 +1,10 @@
+block Item 60467 >= 1
+endWindow "\n\n路上小心"
+
+
+block
+Window "\n\n如果能得到『女神的恩赐』,主教就有救了......",next
+Window "\n\n@n:让我去吧",next
+Window "\n\n孩子,你纯真善良的心灵可以洗涤一切邪恶,谢谢你,我送你过去,路上小心",ok
+Window_ok
+Warp 0,64077,251,586

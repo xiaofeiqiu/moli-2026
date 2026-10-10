@@ -1,0 +1,15 @@
+block item 70027 == 1
+window 910444,next
+window 910445,next
+window 910446,next
+window 910447,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 70027
+GiveItem 70028
+Warp 0,25013,24,73
+window_ok ItemSpace < 1
+endwindow 910448
+#####################
+block item 70022 != 0
+endwindow 910449,OK

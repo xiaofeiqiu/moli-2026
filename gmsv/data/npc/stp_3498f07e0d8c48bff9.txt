@@ -1,0 +1,44 @@
+
+block endevent 520 == 1 && item 3811 >= 1 && item 3812 >= 1 && item 3813 >= 1 && item 3814 >= 1 && item 3815 >= 1 && item 3816 >= 1
+window "\n\n谢谢你替我们送圣水过去,我果然没有看错你.这一路下来一定很累吧?不过,你还能回忆起曾经第一次去那些地方的时光吗?",ok
+window_ok
+killitem 3811
+killitem 3812
+killitem 3813
+killitem 3814
+killitem 3815
+killitem 3816
+giveitem 3817
+
+
+block item 3811 >= 1 && item 3812 >= 1 && item 3813 >= 1 && item 3814 >= 1 && item 3815 >= 1 && item 3816 >= 1
+window "\n\n谢谢你替我们送圣水过去,我果然没有看错你.这一路下来一定很累吧?不过,你还能回忆起曾经第一次去那些地方的时光吗?",ok
+window_ok
+killitem 3811
+killitem 3812
+killitem 3813
+killitem 3814
+killitem 3815
+killitem 3816
+giveitem 3817
+endevent 520 = 1
+checktitle
+
+
+block item 3811 >= 1
+endwindow "\n\n那些地方是:腐朽的祠堂,哈巴鲁东边洞窟,流星山丘,沙漠之祠,积雪的山路."
+
+
+block
+window "\n\n你好,冒险者.我是这里的牧师,可否替我们去一些地方吗?那些曾经辉煌过的地方,有没有你的回忆呢?由于现在很少人去处理那些地方的魔族,那里的魔族变得比曾经更狂暴了.带上圣水,把它交给那里的传教士们.",next
+window "\n\n那些地方是:腐朽的祠堂,哈巴鲁东边洞窟,流星山丘,沙漠之祠,积雪的山路.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3811
+
+
+
+
+
+

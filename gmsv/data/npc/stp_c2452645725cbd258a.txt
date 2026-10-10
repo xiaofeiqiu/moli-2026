@@ -1,0 +1,4 @@
+block
+endwindow "\n\n公主身体欠安,谢绝宾客来访."
+
+

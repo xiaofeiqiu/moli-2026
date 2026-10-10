@@ -1,0 +1,9 @@
+block Item 1000519 >=1
+	Window "\n\n\n@c死字你都不知道怎么写吗？？",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c赶快滚.",OK
+	Window_YES
+	KillItem 1000519,1
+Encount 2|||0|||||0|6000148|||||||||
+block
+Window "\n\n  滚远点，卑劣的人类...",ok

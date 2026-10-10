@@ -1,0 +1,15 @@
+block item 200563 >= 1
+endwindow "\n\n文物黑市就在村中最西面的房子里."
+
+
+
+block StrCmpChat == 210066 && item 200562 >= 1
+window "\n\n卡纳鲁德?不错他是找过我,他没回家不关我事,我只是个中间人.",next
+window "\n\n邀请卡纳鲁德的是文物黑市商人巴依老爷,不过文物黑市要晚上才能进去,你要小心里面的人了,可不好惹.",ok
+window_ok
+killitem 200562
+giveitem 200563
+
+
+block
+endwindow "\n\n我就是传说中的中介."

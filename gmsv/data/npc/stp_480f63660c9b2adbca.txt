@@ -1,0 +1,10 @@
+block item 3809 == 1
+	Window "\n\n这就是统帅之符",next
+	Window "\n\n快拿它去杀掉凯尔苏扎德吧",OK
+		Window_OK
+			killitem 3809,1
+			giveitem 3806,1
+block
+	window "\n\n诶?村民的娃娃呢?",next
+	Window "\n\n没有村民的娃娃没办法拿统帅之符的,快回去拿吧!",OK
+		window_OK

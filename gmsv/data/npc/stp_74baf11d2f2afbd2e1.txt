@@ -1,0 +1,5 @@
+block
+window "\n\n颤闯我墓地者,必死无葬身之地.",ok
+window_ok
+leavegroup
+Warp 0,55,130,17

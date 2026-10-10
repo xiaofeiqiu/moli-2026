@@ -1,0 +1,14 @@
+block item 500122 == 1
+endwindow "\n\n我想你听我一人之词肯定不信，不如你去魔法大学里找汉斯吉求证下吧。"
+
+block item 500121 == 1
+window "\n\n雪妖？那个传说是真的！我年轻的时候在雪山上亲眼所见不会错的，不过那时我吓晕了而已。",next
+window "\n\n不过与我同行的汉斯吉可以为我作证，要不是他拼死把我背下山的话，今天可能你就看不见我了。",ok
+window_ok ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_ok
+giveitem 500122
+endwindow "\n\n我想你听我一人之词肯定不信，不如你去魔法大学里找汉斯吉求证下吧。"
+
+block
+endwindow "\n\n孩子想不想听我讲故事？"

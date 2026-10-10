@@ -1,0 +1,8 @@
+block item 22002 == 1 && endevent 162 == 1
+	window "\n你们果然来了......",yes
+	window_yes item 22002 == 1 && endevent 162 == 1
+	killitem 22002,1
+Encount 3|0,7219,6,6|||||0|||410313|||||||||
+
+block
+	endwindow "\n　　..."

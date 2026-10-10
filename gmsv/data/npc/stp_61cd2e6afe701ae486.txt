@@ -1,0 +1,24 @@
+#清明节任务.
+#作者：Get out
+#时间：2008.04.05
+block
+\n\n\n\n\n@cˇˇ我的男朋友ˇˇNEXT
+\n\n\n\n\n@cˇˇ在去年在苏之国对抗魔族的时候牺牲了ˇˇNEXT
+\n\n\n\n\n@cˇˇ这个时候是鬼魂和天使还有人类可以互相见到时候ˇˇNEXT
+\n\n\n\n\n@cˇˇ我想知道在哪里可以和鬼魂见面ˇˇNEXT
+\n\n\n\n\n@cˇˇ可以帮我去调查嘛？5555555ˇˇYse,No
+Window_Yes
+Setaction 16
+GiveItem 6001501,1
+\n\n\n\n\n@cˇˇ那么麻烦你了ˇˇNEXT
+\n\n\n\n\n@cˇˇ建议你去找法兰城的加尔盖唯茨了解一下情况ˇˇNEXT
+\n\n\n\n\n@cˇˇ他是个很封建的老头!!ˇˇOK
+Window_No
+Setaction 16
+\n\n\n\n\n@cˇˇ看来我还是另找别人吧!ˇˇOK
+
+block 6001504 >= 1
+\n\n\n\n\n@cˇˇ他在那边过的还好么....ˇˇNEXT
+\n\n\n\n\n@cˇˇ既然他过的好.我就满足了.....ˇˇOK
+Window_OK
+GiveItem 6001503,1

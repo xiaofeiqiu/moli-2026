@@ -1,0 +1,12 @@
+block
+	window 7019343,YES,NO
+		window_YES gold < 500000
+			endwindow 7019347
+		window_YES ItemSpace==0
+			endwindow 7019348
+		window_YES gold>=500000 && ItemSpace!=0
+			addgold -500000
+			giveItem (661013%100)
+			endwindow 7019349
+		WINDOW_NO
+			endwindow 7019346

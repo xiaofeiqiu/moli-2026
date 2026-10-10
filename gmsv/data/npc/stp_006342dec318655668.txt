@@ -1,0 +1,7 @@
+block
+	Window "\n\n\n@c我这里有火之毁灭你要吗?",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c欢迎下次再来哦!",OK
+	Window_YES
+	GiveItem 39726,1
+	Warp 0,1000,242,100

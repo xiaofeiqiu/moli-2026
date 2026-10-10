@@ -1,0 +1,17 @@
+block  nowevent 579 == 1
+endwindow"\n\n\n@c调查怎么样了?知道犯人了吗?"
+
+block  nowevent 578 == 1
+window"\n\n\n@c调查信? 你就是松田找来帮忙的吗?",yes
+window_yes
+window"\n\n\n@c基拉,英文,killer 我们完全不知道他是谁,调查部的人员都快被杀光了",next
+window"\n\n\n@c请你们一定要帮我们解决这个问题.",ok
+window_OK
+leavegroup
+Warp 0,12580,10,13
+
+
+block
+window"\n\n\n@c我正在调查关于法兰城连环杀人的事",ok
+window_OK
+endwindow"\n\n\n@c话说....这是哪?"

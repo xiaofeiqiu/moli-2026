@@ -1,0 +1,7 @@
+block
+	window 7019422,ok
+	window_ok itemspace>=2
+	leavegroup
+	giveitem 6610401
+	giveitem (661044%12,661045%2,661046%4,661047%4)
+	Warp 0,1000,162,146

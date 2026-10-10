@@ -1,0 +1,5 @@
+block Item 1000195 >= 1
+gawindow "\n\n把恶魔之箱留下，你可以走了。",next
+gawindow "\n\n为什么不离开？那我只好动用武力了！",ok
+window_ok
+Encount 3|0,1619,12,25||||||||360128|||||||||

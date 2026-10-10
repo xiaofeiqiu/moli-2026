@@ -1,0 +1,12 @@
+block item 200100 >= 1
+endwindow "\n\n..."
+
+
+block
+window "\n\n发现了一本书,要捡起来吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200100
+
+

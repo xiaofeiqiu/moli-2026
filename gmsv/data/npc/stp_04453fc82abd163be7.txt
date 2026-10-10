@@ -1,0 +1,7 @@
+block item 86236 >= 1
+window "\n\nÊÇË­ÔÚÕÙ»½ÎÒ!",ok
+window_ok item 86236 >= 1
+Encount 2|0,28081,71,52|||||||0|86054|5|0|||||5|0|
+
+block
+Endwindow "\n\n.................."

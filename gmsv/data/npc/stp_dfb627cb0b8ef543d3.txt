@@ -1,0 +1,11 @@
+block item 86522 == 1
+window "\n\n这不是冥界之匙吗？你哪来的？交给我吧，交给我你就可以进入通往黑暗的国度地之冥界。",yes,no
+window_no
+endwindow "那好吧，怕死的胆小鬼，滚回去吧！"
+window_yes
+leavegroup
+killitem 86522
+Warp 0,28291,4,6
+
+block
+endwindow "\n\n..................."

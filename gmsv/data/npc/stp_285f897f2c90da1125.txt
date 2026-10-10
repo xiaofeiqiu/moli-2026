@@ -1,0 +1,10 @@
+block
+window "\n\n　你是哪里来的？不要打扰我们寻宝。",yes,no
+window_yes
+endwindow "\n\n　算你识相"
+window_no
+window "\n\n　怎么？你想来硬的？",yes,no
+window_yes
+Encount 3|0,60184,10,9|||||0|||800120|||||||||
+window_no
+endwindow "\n\n　那就快滚吧！"

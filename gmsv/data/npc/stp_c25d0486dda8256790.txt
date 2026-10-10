@@ -1,0 +1,29 @@
+block itemspace <= 1
+	endwindow "\n\n把背包清理下再来找我吧。"
+block item 1000324 >= 1
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 1000324,1
+block item 60417 >= 1
+	window"\n\n谢谢你们……我们会得到救赎……",ok
+	window_ok
+		LeaveGroup
+		Warp 0,2100,28,85
+block item 60409 >= 1 && item 60412 >= 1
+	window"\n\n谢谢你……请你们带上所有的灵核碎片去乌克兰拯救小圆吧……",ok
+		window_ok
+			killitem 60412,1
+			giveitem 60417,1
+			LeaveGroup
+			Warp 0,2100,28,85
+block item 60415 >= 1
+	window"\n\n你们真的很强，也许你们可以帮助我冒险者……，不要再帮丘比收集灵核了！",next
+	window"\n\n原来是你伤害丘比……",next
+	window"\n\n你们不明白！丘比对我们做了什么！它……",next
+	window"\n\n精神世界渐渐消散了……",ok
+		window_ok
+			giveitem 60421,1
+			LeaveGroup
+			Warp 0,1000,129,143
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

@@ -1,0 +1,7 @@
+block item 18418 >= 1 && job >= 205
+window "\n\n我师傅乃邪神的御用制作师,可惜他退休了,和我一起住在这里\n\n你想去拜师吗?",yes,no
+window_yes
+killitem 18418,1
+LeaveGroup
+Warp 0,23,2,10
+window_no

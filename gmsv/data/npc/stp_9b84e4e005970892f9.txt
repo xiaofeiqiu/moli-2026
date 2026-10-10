@@ -1,0 +1,21 @@
+block item 88216 == 1
+window 501579,ok
+window_ok
+LeaveGroup
+Warp 0,27704,1,5
+
+block item 88214 == 1
+window 501580,ok
+window_ok
+LeaveGroup
+Warp 0,27704,1,5
+
+block item 88201 == 1
+window 501581,ok
+window_ok
+LeaveGroup
+killitem 88201
+Encount 2|0,45248,1,5||0|||||0|88300|||||||||
+
+block
+endwindow 501582

@@ -1,0 +1,7 @@
+block	Item 940069 == 1  
+	window "\n\n@n 哇.这不是我的玩具么？你已经见过她了吗？",yes,no
+	window_yes
+	KillItem 940069,1
+	GiveItem 940071,1
+	window_no
+	Endwindow"\n\n	看来你是不能帮我了，就这样再见	

@@ -1,0 +1,6 @@
+block
+Window"\n\n要进入异次元挑战的下一层吗?",yes,no
+Window_no
+Window_yes
+LeaveGroup
+Warp 0,57246,7,46

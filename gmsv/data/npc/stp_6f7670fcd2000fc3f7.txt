@@ -1,0 +1,15 @@
+block item 200536 >= 1
+endwindow "\n\n别磨磨蹭蹭的,上路吧."
+
+
+
+block item 200535 >= 1
+window "\n\n就差你了～法拉在上面等我们呢,我们也赶紧爬上展望台.",ok
+window_ok
+killitem 200535
+leavegroup
+Warp 0,27563,13,8
+
+
+block
+endwindow "\n\n这么晚了, 你在本村瞎晃悠做什么."

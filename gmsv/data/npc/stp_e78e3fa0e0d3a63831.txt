@@ -1,0 +1,9 @@
+block item 200151 >= 1
+endwindow "\n\n宝箱已经被打开了."
+
+
+block item 200150 >= 1
+window "\n\n是否要打开宝箱.",yes,no
+window_yes
+killitem 200150
+giveitem 200151

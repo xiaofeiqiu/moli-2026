@@ -1,0 +1,10 @@
+block item 87614 == 1
+Encount 2|0,29729,184,54||0|||||0|86768|||||||||
+
+block item 87610 == 1
+window "\n\n无关的人类！消灭目击者！",ok
+window_ok
+Encount 2|0,29729,184,54||0|||||0|86768|||||||||
+
+block
+endwindow "\n\n人类离我远点！"

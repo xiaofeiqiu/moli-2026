@@ -1,0 +1,11 @@
+block item 500147 == 1
+window "\n\n你是来给那老不死出头的吧。他的东西我是不会还的，还不走开想吃老子一拳？",ok
+window_ok Group >= 2
+endwindow "\n\n你们想以多欺少啊！"
+window_ok
+LeaveGroup
+killitem 500147
+Encount 2|||0|||||0|1200107|||||||||
+
+block
+endwindow "\n\n我怎会想到在这里抢劫，连个鬼影都没！"

@@ -1,0 +1,7 @@
+#ĞÂÊÖ´øÁ·NPC
+block	level != 1
+	window 9050038,ok
+	window_ok
+block	level == 1
+	Setfeverflg 1
+Encount 2|||0|10503||||0|952|

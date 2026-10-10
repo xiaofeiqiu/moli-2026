@@ -1,0 +1,58 @@
+block Luac stp:legacy:079a89a92c88b3ee437b >= 1
+	Window "\n\n雷卡斯的圣殿剑士竟然跑这来了！！受死吧！",OK
+	Window_OK
+Encount 3|0,1000,242,85|||||0|||100050|||||||||
+block Luac stp:legacy:5e8599ce8af2a34e8f7e >= 1
+	Window "\n\n　你好，伟大的黑暗骑士大人！我听说最近神族有意图攻击我们，这个您拿着！做防身之用！",ok
+	Window_ok
+        giveitem 795017,1
+        leavegroup
+        Warp 0,1000,242,85
+block Luac stp:legacy:98d9c9b51b51e52accb2 >= 1 && item 700087 >= 1
+	Window "\n\n黑暗纹章？您是朱里安大人的亲信吗？！",yes,no
+	Window_YES item 700087 >= 1
+        Window "\n\n由于神族最近准备攻击我们，冥王大人还没复活呢！所以大家还是隐蔽的好！纹章给我吧！这个给你防身！",ok
+        Window_ok
+        killitem 700087,1
+        giveitem 795017,1
+        leavegroup
+        Warp 0,1000,242,85
+        Window_no
+        Window "\n\n不是？那你受死吧！",ok
+        Window_ok
+Encount 3|0,1000,242,85|||||0|||100050|||||||||
+block Luac stp:legacy:9a3489a012bc2310ecce >= 1 && item 700087 >= 1
+	Window "\n\n黑暗纹章？您是朱里安大人的亲信吗？！",yes,no
+	Window_YES item 700087 >= 1
+        Window "\n\n由于神族最近准备攻击我们，冥王大人还没复活呢！所以大家还是隐蔽的好！纹章给我吧！这个给你防身！",ok
+        Window_ok
+        killitem 700087,1
+        giveitem 795017,1
+        leavegroup
+        Warp 0,1000,242,85
+        Window_no
+        Window "\n\n不是？那你受死吧！",ok
+        Window_ok
+Encount 3|0,1000,242,85|||||0|||100050|||||||||
+block Luac stp:legacy:27825c93f5c1a1c7f6e3 >= 1
+	Window "\n\n人类？黑暗的信徒吗？！",yes,no
+	Window_YES
+        Window "\n\n愿黑暗之神保佑你！",ok
+        Window_ok
+        leavegroup
+        Warp 0,1000,242,85
+        Window_no
+        Window "\n\n不是？那你受死吧！",ok
+        Window_ok
+Encount 3|0,1000,242,85|||||0|||100050|||||||||
+block Luac stp:legacy:88549694c07cff593745 >= 1
+	Window "\n\n人类？黑暗的信徒吗？！",yes,no
+	Window_YES
+        Window "\n\n愿黑暗之神保佑你！",ok
+        Window_ok
+        leavegroup
+        Warp 0,1000,242,85
+        Window_no
+        Window "\n\n不是？那你受死吧！",ok
+        Window_ok
+Encount 3|0,1000,242,85|||||0|||100050|||||||||

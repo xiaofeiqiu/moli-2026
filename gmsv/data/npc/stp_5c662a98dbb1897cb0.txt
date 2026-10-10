@@ -1,0 +1,7 @@
+block item 87797== 1
+endwindow "\n\n关闭机关的步骤跟刚才一样！"
+
+block
+window "\n\n看来这里比刚才的还要大，也就是难度也比刚才大。不过步骤依旧，但是这里点错顺序的话就必须重新再点！",ok
+window_ok
+giveitem 87797

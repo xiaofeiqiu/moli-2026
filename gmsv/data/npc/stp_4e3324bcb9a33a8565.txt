@@ -1,0 +1,17 @@
+block item 800142 >= 1
+window "\n\n勇士,你回来了,我带你到村长的地下室吧.",yes,no
+window_no
+window_yes item 800142 >= 1
+leaveGroup
+Warp 0,22,2,4
+
+
+block
+window "\n\n勇士,我在这里,快来救救我.",next
+window "\n\n谢谢你,你好,我是曙光骑士团成员,我们早就听说这个村子有古怪,并且高层派遣了我们一个小队来这里调查.",next
+window "\n\n但是刚进入村子就被村长他们打晕并被他们关押起来.",next
+window "\n\n请先随我回总部报平安吧.",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,64018,18,59

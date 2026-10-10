@@ -1,0 +1,7 @@
+block item 61181 >= 1
+window 1900516,ok
+window_ok
+Encount 3|0,23359,57,46||0|||||0|61056|
+
+block
+endwindow 1900518

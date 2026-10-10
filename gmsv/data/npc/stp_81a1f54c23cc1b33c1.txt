@@ -1,0 +1,5 @@
+Block
+Window"\n\n我输了,但是我没错...\n\n我是新世界的神,我是基拉...",ok
+Window_ok
+Giveleak1item 361041,1
+Warp 0,1000,233,78

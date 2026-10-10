@@ -1,0 +1,6 @@
+block item 516 >= 1
+window "\n\n既然来了,就试试来自地狱的挑战吧!\n\n我会让你感受到黑暗的恐惧",yes,no
+window_yes
+killitem 516,1
+Encount 2|0,51101,16,22||0|||||0|3104|||||||||
+window_no

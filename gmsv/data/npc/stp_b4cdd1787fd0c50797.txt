@@ -1,0 +1,8 @@
+block itemspace == 0 || petspace == 0
+	window"物品栏或宠物栏已满！",ok
+
+block item 660142 == 1
+	window"要打开12级宝石兑换卡么？",yes,no
+	window_yes
+	killitem 660142
+	giveitem (660102%12,660105%12,660108%12,660111%13,660114%13,660117%13,660120%12,660123%13)

@@ -1,0 +1,22 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【口袋龙】吗？",ok
+			Window_ok
+Luac stp:legacy:6fd4e8274949d95c07e2
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【迷你龙】吗？",ok
+			Window_ok
+Luac stp:legacy:56f86cb09511633bd3fc
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【雏龙】吗？",ok
+			Window_ok
+Luac stp:legacy:64854e5ff0f5e048fd82
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【穴龙】吗？",ok
+			Window_ok
+Luac stp:legacy:a9576e8f05e458dff59f
+				endif

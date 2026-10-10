@@ -1,0 +1,5 @@
+block
+window "\n\nºð.......",ok
+window_ok
+killitem 123003,10
+Encount 3|0,63229,2,4|||||0|||28054|||||||||

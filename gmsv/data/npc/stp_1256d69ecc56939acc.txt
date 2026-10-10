@@ -1,0 +1,13 @@
+block endevent 584 == 1
+Window "\n\n我是风灵的守护者,在你们取走风灵后不久,魔族就来到了这里,乘着我能力衰弱之际攻击我,我想我的兄弟也遭到了同等的待遇\n\n勇者啊......希望能得到你的帮助",yes,no
+Window_no
+Window_yes endevent 584 == 1
+endEvent 584 = 0
+Warp 0,64077,741,55
+
+block endevent 584 == 0
+Window "\n\n风之精灵情况不对,要帮忙吗?",yes,no
+Window_no
+Window_yes endevent 584 == 0
+endEvent 584 = 1
+Encount 3||||||0|||900029|||||||||

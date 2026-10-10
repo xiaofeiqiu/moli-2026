@@ -1,0 +1,12 @@
+block item 60505 >= 1
+window "\n\n门上有个奇怪的小孔,要用宝藏密匙试一下吗?",yes,no
+window_no
+window_yes item 60505 >= 1
+killitem 60505
+leavegroup
+Warp 0,64078,10,13
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+block item 39820 >= 1
+endwindow "\n\n快拿回去给那个少女吧."
+
+
+
+block item 39819 >= 1
+window "\n\n恩?找我有什么事情吗?",next
+window "\n\n哦,来寻找黄金粽子拯救病弱的少女么,确实是个善良的人!想得到黄金粽子,你需要向我证明你的实力!",yes,no
+window_no
+endwindow "\n\n原来你不是善良的人."
+window_yes
+Encount 2|0,64095,2,4||0|||||0|21269|||||||||
+
+
+block
+endwindow "\n\n恩?找我有什么事情吗?"
+
+

@@ -1,0 +1,9 @@
+block itemspace < 1
+endwindow "\n\n身上不够位置了!"
+
+block
+window "\n\n要打开这个纪念礼包吗?",yes,no
+window_no
+window_yes
+killitem 600031,1
+giveitem (600033%1,600034%1,600035%1)

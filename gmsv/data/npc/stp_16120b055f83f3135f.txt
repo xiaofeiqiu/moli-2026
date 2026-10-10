@@ -1,0 +1,51 @@
+block item 22220014==1
+
+window "\n\n  事实证明，你确实是一个无所畏惧的勇者！这是你应该得到的......",ok
+	killitem 22220014
+	GiveItem 22220005
+
+block item 22220000==1
+
+Endwindow "  愣着干嘛?赶紧撒丫子去啊!~",ok
+
+block item 22220001==1
+
+Endwindow "  愣着干嘛?赶紧撒丫子去啊!~",ok
+
+block item 22220002==1
+
+Endwindow "  愣着干嘛?赶紧撒丫子去啊!~",ok
+
+block item 22220003==1
+
+Endwindow "  愣着干嘛?赶紧撒丫子去啊!~",ok
+
+block item 22220004==1
+
+Endwindow "  愣着干嘛?赶紧撒丫子去啊!~",ok
+
+block  
+window "\n\n  居然是是传说中的勇者!那好,我有有个古老的传说,您愿意听吗?",yes,no
+window_no
+Endwindow "  无知幼稚的人类啊......",ok
+
+window_yes
+window "\n\n  在剑与魔法横行的年代 ,形成世界的真地、真风、真火、真水 4个水晶被夺走, 失去光辉的世界为黑暗所包围 !逐渐荒凉...... 然后4个水晶分别放在东南西北4个地方",next
+window "  夺走水晶的是魔物统治者堕落天使路西法!而他手下有地狱七魔君!",next
+window "  这七个魔君分别代表骄傲 贪婪 愤怒 欲望 暴食 嫉妒 懒惰!",next
+window "  被他们夺走的4个水晶由地魔龙 水魔龙 火魔龙 风魔龙看管着!",next
+window "  既然是勇者我想您一定会去勇敢的夺回这些水晶吧,最后我会送您一件神秘的宝物作谢礼的!",yes,no
+
+window_no
+Endwindow "  滚蛋吧,你木有小JJ.....",ok
+
+window_yes
+window "\n\n  很好,我的勇士!拿着我的信物启程吧!记住夺取水晶的顺序——地——风——水——火",next
+window "\n\n  我想我的一些朋友会给你一些方便的,分别在哈村、阿巴尼斯、亚村和维村。祝你好运......",next
+window "\n\n  请您拿著这个信物,只要有了它,我那些朋友就会帮助你的......",yes
+	Window_yes Itemspace >= 1
+	 GiveItem 22220000
+window "\n\n  请您一定要拿回那四块水晶,并且阻止他们的邪恶势力!他们很厉害的,请您加倍小心......",ok
+window_ok 
+	Window_yes Itemspace <= 1
+Endwindow "  但您好像没有空位哩!",ok

@@ -1,0 +1,8 @@
+block globalFlag 295 == 0 && level >= 5
+window 900498,ok
+window_ok
+LeaveGroup
+globalFlag 295 = 1
+
+block
+endwindow 900499

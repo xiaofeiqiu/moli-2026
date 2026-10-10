@@ -1,0 +1,6 @@
+block	block floor == 1000 && Xpos == 229 && Ypos == 56 && level >= 20
+	window "\n\n  地下好像有东西哦。。\n  你要挖掘吗？",yes,no
+	window_yes "\n\n  挖掘完毕。。",ok
+	giveitem (600006%10,600007%10)
+	killitem 600005,1
+	killitem 600008,1

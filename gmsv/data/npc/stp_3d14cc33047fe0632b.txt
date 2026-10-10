@@ -1,0 +1,7 @@
+block
+window "\n\n你好,冒险者.我们的研究所实验田最近遭到了害虫的袭击,为了保证土地不受污染我们只能人工除虫,但是我们人手不够,研究所正在招募打工者,你有兴趣参加吗?",yes,no
+window_no
+endwindow "\n\n哎~人手不够啊!"
+window_yes
+leavegroup
+Warp 0,57057,71,38

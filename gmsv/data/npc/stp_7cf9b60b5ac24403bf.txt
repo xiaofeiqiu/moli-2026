@@ -1,0 +1,19 @@
+block Level >= 30
+window "\n\n嘿~法兰城的勇者,《狩猎嘉年华》活动突袭法兰城,入场费500G,有没有兴趣来参加啊?",yes,no
+window_no
+EndWindow "\n\n哎~这么火爆的活动你不参加太可惜了."
+window_yes gold < 500
+endwindow "\n\n对不起,你的钱没有带够."
+window_yes
+Window "\n\n很好,欢迎你的加入,规则很简单我会把你传送到梦之森安全区,当你离开安全区会随机遇到各种野兽的袭击,打败他们会掉落狩猎证明累积一定数量回到安全区与我的助手拉瑞对话可以换取相应的奖励,并且你在梦之森有可能会遇到火柴小精灵等有趣的事情.",next
+Window "\n\n祝你好运!",ok
+Window_ok
+leaveGroup
+addgold -500
+Warp 0,57318,66,104
+
+
+block
+endwindow "\n\n嘿朋友,想参加狩猎嘉年华吗?奖品多多哦\n\n小贴士:必须30级以上才能参加哦"
+
+

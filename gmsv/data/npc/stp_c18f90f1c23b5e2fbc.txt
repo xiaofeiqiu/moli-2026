@@ -1,0 +1,10 @@
+block item 86901 == 1
+window "\n\n咦~~这不是我喜欢吃的东东...看来米雪儿还是蛮喜爱我的，算了我还是回去吧！",ok
+window_ok
+leavegroup
+killitem 86901
+giveitem 86902
+Warp 0,1000,233,78
+
+block
+Warp 0,1000,233,78

@@ -1,0 +1,17 @@
+block Item 39662 >= 1 && itemcreatetime 39662 >= 14400 && petspace >= 1
+window "\n\n蛋壳开始破裂...",ok
+window_ok
+KillItem 39662,(206808)
+givepet 715,(206803)
+
+
+block Item 39662 >= 1 && itemcreatetime 39662 >= 14400 && petspace == 0
+endwindow "\n\n虽然蛋壳已经开始破裂...\n\n但是现在身上没格子放宠物了!"
+
+
+block Item 39662 >= 1 && itemcreatetime 39662 >= 12000
+endwindow "\n\n从里面好像感觉到震动..."
+
+
+block Item 39662 >= 1
+endwindow "\n\n好像还没有变化的样子."

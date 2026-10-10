@@ -1,0 +1,9 @@
+block item 652595 >= 1
+window "\n\n虽然我无法阻挡你前进的脚步,但阿尔杰斯达人的计划是不会被你轻易破坏的!",ok
+window_ok item 652595 >= 1
+killitem 652595
+giveitem 652597
+leavegroup
+Warp 0,44690,106,86
+
+

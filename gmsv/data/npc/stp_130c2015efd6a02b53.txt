@@ -1,0 +1,10 @@
+block item 200702 >= 1
+endwindow "\n\n...."
+
+
+block
+window "\n\n什么人,胆敢闯入我领地.",ok
+window_ok
+Encount 2|0,60008,249,250||0|||||0|50651|||||||||
+
+

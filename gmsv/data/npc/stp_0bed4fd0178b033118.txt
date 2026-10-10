@@ -1,0 +1,10 @@
+block
+window "\n\n滚开!不要靠近我!好不容易逃离了那里,我不要再碰到火焰,滚开!!",next
+window "\n\n是否离开这里",yes,no
+window_yes
+leavegroup
+Warp 0,300,569,234
+window_no
+Encount 2|0,44910,6,5||0|||||0|613037|||||||||
+
+

@@ -1,0 +1,5 @@
+block
+window "\n\n\n@c***感觉到强大的力量,将自己带入神秘的通道***",OK
+window_ok
+leavegroup
+Warp 0,15680,121,54

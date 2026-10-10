@@ -1,0 +1,8 @@
+block item 200123 >= 1
+window "\n\n（啊…）看上去很疼的样子.",next
+window "\n\n那么大的家伙,跟个小孩子一样.",ok
+window_ok
+killitem 200123
+giveitem 200124
+leavegroup
+Warp 0,33200,179,180

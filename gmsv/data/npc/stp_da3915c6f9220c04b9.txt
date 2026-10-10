@@ -1,0 +1,5 @@
+block item 39680 == 1 && item 39679 == 1
+killitem 39679
+killitem 39680
+giveitem 39681
+endwindow "\n\n把熊血涂在了卫兵服上."

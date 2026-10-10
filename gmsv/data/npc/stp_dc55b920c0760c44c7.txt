@@ -1,0 +1,4 @@
+block Item 670040 == 1 && Item 18541 == 1 && Item 18375 == 1 && Item 18542 == 1
+	Window 670048,yes,no
+	window_yes
+Encount 3|0,1000,233,78||0|||||0|670125|

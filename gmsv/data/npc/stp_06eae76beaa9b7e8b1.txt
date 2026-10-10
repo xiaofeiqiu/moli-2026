@@ -1,0 +1,14 @@
+block item 1000499 >= 1 && item 39547 >= 5
+	window"\n 超越时间和空间的旅人，由于你的出现这里将再度浮现这个幻象之塔。接受这座塔的审判吧！",ok
+	window_ok
+	killitem 1000499
+	killitem 39547
+	killitem 39547
+	killitem 39547
+	killitem 39547
+	killitem 39547
+	LeaveGroup
+        Warp 0,609,19,21
+block
+	window"\n 需要某种力量才能打开这个传送!",ok
+	

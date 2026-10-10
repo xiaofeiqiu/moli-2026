@@ -1,0 +1,11 @@
+block item 200790 >= 1
+window "\n\n此乃地火精界入口,你是否要进入呢.",yes,no
+window_yes item 200790 >= 1
+leavegroup
+Warp 0,57155,28,30
+window_no
+endwindow "\n\n想好了再来."
+
+
+block
+endwindow "\n\n此乃地火精界入口,凡人莫入."

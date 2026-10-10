@@ -1,0 +1,10 @@
+block item 87089 == 1
+LeaveGroup
+Warp 0,25115,151,165
+
+block
+window "\n\n这把杖交给你，你只要带着杖给守卫看就能直接来见我了！",ok
+window_ok
+LeaveGroup
+giveitem 87089
+Warp 0,25115,151,165

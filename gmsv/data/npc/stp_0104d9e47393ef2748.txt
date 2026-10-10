@@ -1,0 +1,11 @@
+
+
+
+block
+window "\n\n你想离开这里吗?",yes,no
+window_yes
+leavegroup
+Warp 0,2400,33,82
+
+
+

@@ -1,0 +1,64 @@
+block Endevent 648==1
+window"\n\n 这就是成神之路的磨练.\n\n只有绝对的力量,才能一直的走下去!",next
+window"\n\n 勇者,你能打倒我就说明你现在已经有一定的能力了.\n\n去吧,去追逐你所需要的吧...",ok
+window_ok
+leavegroup
+Warp 0,36503,108,110
+block item 591255>=1||item 591256>=1||item 591257>=1
+window"\n\n 这就是成神之路的磨练.\n\n只有绝对的力量,才能一直的走下去!",next
+window"\n\n 勇者,你能打倒我就说明你现在已经有一定的能力了.\n\n去吧,去追逐你所需要的吧...",ok
+Window_OK Item 591255>=1&&item 591256>=1&&item 591257>=1
+killitem 591255,10
+killitem 591256,10
+killitem 591257,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+Window_OK Item 591255>=1&&item 591256>=1
+killitem 591255,10
+killitem 591256,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+Window_OK Item 591255>=1&&item 591257>=1
+killitem 591255,10
+killitem 591257,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+Window_OK Item 591256>=1&&item 591257>=1
+killitem 591256,10
+killitem 591257,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+Window_OK Item 591255>=1
+killitem 591255,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+Window_OK Item 591256>=1
+killitem 591256,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+Window_OK Item 591257>=1
+killitem 591256,10
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110
+block
+window"\n\n 这就是成神之路的磨练.\n\n只有绝对的力量,才能一直的走下去!",next
+window"\n\n 勇者,你能打倒我就说明你现在已经有一定的能力了.\n\n去吧,去追逐你所需要的吧...",ok
+window_ok
+Endevent 648=1
+CheckTitle
+leavegroup
+Warp 0,36503,108,110

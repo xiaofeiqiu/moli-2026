@@ -1,0 +1,19 @@
+block item 200020 >= 1 && floor == 25200 && Xpos == 160 && Ypos == 355
+window "\n\n角笛传出了清脆的声音,仿佛来到了另一个地方.",ok
+window_ok
+leavegroup
+Warp 0,25206,53,369
+
+
+block item 200006 >= 1 && item 200007 >= 1 && floor == 25200 && Xpos == 160 && Ypos == 355
+window "\n\n角笛传出了清脆的声音,仿佛来到了另一个地方.",ok
+window_ok
+leavegroup
+Warp 0,25206,53,369
+
+
+block item 200006 >= 1 && floor == 25200 && Xpos == 160 && Ypos == 355
+window "\n\n角笛传出了清脆的声音,仿佛来到了另一个地方.",ok
+window_ok
+leavegroup
+Warp 0,25206,148,327

@@ -1,0 +1,7 @@
+block item 70029 == 1
+window 910292,next
+window 910293,next
+window 910294,next
+window 910295,ok
+window_ok
+Encount 2|0,25076,8,28||0|||||0|70053|||||||||

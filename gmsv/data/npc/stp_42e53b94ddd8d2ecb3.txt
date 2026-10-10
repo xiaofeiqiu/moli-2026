@@ -1,0 +1,29 @@
+
+block item 715302 > 0
+killitem 715302,1
+GiveLeak1Item 715303,1
+window "\n\n这文字\n曾在村子的古文书见过\n我会好好了解它.",next
+endwindow "\n\n对了\n这是给我妹妹的书信与生活费\n请您拿给她吧!"
+
+block item 715304 > 0
+endwindow "\n\n我想留这里,看看能不能找到灭村的资料."
+
+block item 715299 > 0
+window "\n\n妹妹在蒂纳村呀～～\n那太好了～～",next
+window "\n\n我们的村子\n过去十几年\n因为发现水晶而开始富有.",next
+window "\n\n但是从那时起\n就陆续发生一些奇怪的现象.",next
+window "\n\n这次灭村前\n刚好有矿物商人来村子讨论.",next
+window "\n\n要大规模开采水晶\n才开采三天就．．．．",next
+window "\n\n山崩灭村．．．．",next
+window "\n\n我想留这里,看看能不能找到灭村的资料.",next
+window "\n\n您是否方便帮我到村子的矿坑看看吗?",yes,no
+Window_yes item 715299 > 0
+killitem 715299,1
+GiveLeak1Item 715300,1
+endwindow "\n\n谢谢你!"
+window_yes
+Window_no
+endblock
+
+block 
+endwindow "\n\n我想留这里,看看能不能找到灭村的资料."

@@ -1,0 +1,164 @@
+############## 城城的武器强化系统 ##############
+#剑1
+block StrCmpChat == 700
+	Window "\n\n\n@c　你是否要将神器强化？",yes,no
+
+	window_yes item 900001 ==1 && item 999999>=10
+		killitem 900001,1
+		killitem 999999,10
+		giveitem (900002%50,999999%50)
+	window_yes item 900001 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <10
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+#剑2
+block StrCmpChat == 701
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 900002 ==1 && item 999999>=50
+		killitem 900002,1
+		killitem 999999,50
+		giveitem (900003%20,999999%80)
+	window_yes item 900002 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <50
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+#斧1
+block StrCmpChat == 702
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 90001 ==1 && item 999999>=10
+		killitem 90001,1
+		killitem 999999,10
+		giveitem (900012%50,999999%50)
+	window_yes item 90001 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <10
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+#斧2
+block StrCmpChat == 703
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 900012 ==1 && item 999999>=50
+		killitem 900012,1
+		killitem 999999,50
+		giveitem (900013%20,999999%80)
+	window_yes item 900012 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <50
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+#枪1
+block StrCmpChat == 704
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 900021 ==1 && item 999999>=10
+		killitem 900021,1
+		killitem 999999,10
+		giveitem (900022%50,999999%50)
+	window_yes item 900021 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <10
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+#枪2
+block StrCmpChat == 705
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 900022 ==1 && item 999999>=50
+		killitem 900022,1
+		killitem 999999,50
+		giveitem (900023%20,999999%80)
+	window_yes item 900022 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <50
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+#弓1
+block StrCmpChat == 706
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 90003 ==1 && item 999999>=10
+		killitem 90003,1
+		killitem 999999,10
+		giveitem (900032%50,999999%50)
+	window_yes item 90003 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <10
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+#弓2
+block StrCmpChat == 707
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 900032 ==1 && item 999999>=50
+		killitem 900032,1
+		killitem 999999,50
+		giveitem (900033%20,999999%80)
+	window_yes item 900032 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <50
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+#杖1
+block StrCmpChat == 708
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 90004 ==1 && item 999999>=10
+		killitem 90004,1
+		killitem 999999,10
+		giveitem (900042%50,999999%50)
+	window_yes item 90004 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <10
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+#杖2
+block StrCmpChat == 709
+	Window "\n\n\n@c　你是否要将神器再次强化？",yes,no
+
+	window_yes item 900042 ==1 && item 999999>=50
+		killitem 900042,1
+		killitem 999999,50
+		giveitem (900043%20,999999%80)
+	window_yes item 900042 >=2
+		EndWindow "\n\n@c	你带的神器太多勒！无法强化！",ok
+	window_yes item 999999 <50
+		EndWindow "\n\n@c	你的强化宝石数量不足",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+#星之纹章
+block StrCmpChat == 710
+	Window "\n\n\n@c　你是否要合成星之纹章？",yes,no
+
+	window_yes item 900009 ==1 && item 900010>=1
+		killitem 900009,1
+		killitem 900010,1
+		giveitem (900100%50,999999%50)
+	window_yes item item 900009 !=1 && item 900010!=1
+		EndWindow "\n\n@c	你带的材料过多或者缺少！无法强化！",ok
+	window_no
+		EndWindow "\n\n@c	期待你的下次光临！\n\n城城制作强化武器系统",ok
+
+
+block
+#\n\n　咯扁辑绰 酒福墨叼酒 烤 悼傈阑 岗柳 版前苞 背券秦靛府绊 乐嚼聪促.
+	Endwindow "\n\n@c	这里可以用强化宝石强化你的武器\n请用键盘输入告诉我您想强一把武器,如:要把剑强1就输入剑1,要强首饰就输入首饰名字"

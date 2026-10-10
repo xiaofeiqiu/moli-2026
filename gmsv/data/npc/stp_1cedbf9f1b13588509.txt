@@ -1,0 +1,11 @@
+block item 54011 >=1 ||54012 >=1||54008>=1||54013>=1||54009>=1
+	endwindow "\n\n\n\n@c 你已经参加过比赛了~"
+block item 54006 >= 1
+	endwindow "\n\n\n\n@c 你已经参加过比赛了~"
+block
+	window"\n\n\n@c客人你要参加爬楼比赛吗？",yes,no
+	window_no
+	window_yes
+	giveitem 54002
+	leavegroup
+	Warp 0,5407,9,18

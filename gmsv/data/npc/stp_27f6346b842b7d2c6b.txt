@@ -1,0 +1,14 @@
+block item 87089 == 1
+LeaveGroup
+Warp 0,25158,9,23
+
+block item 87041 == 1
+window "\n\n你们是来找雅典娜大人的吗？她已经预料到有人会来找她，不过你们要接受雅典娜大人的考验！",next
+window "\n\n考验内容就是闯过我们黄道十二守护神把守的宫殿，你愿意接受这项考验吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+Warp 0,25133,16,4
+
+block
+endwindow "\n\n闲人莫入！"

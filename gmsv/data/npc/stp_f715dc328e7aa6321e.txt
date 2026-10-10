@@ -1,0 +1,11 @@
+block item 200587 >= 1
+endwindow "\n\n您已经取出该雕像上的灵石了."
+
+
+
+block
+window "\n\n你要取出雕像上的灵石吗?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 200587

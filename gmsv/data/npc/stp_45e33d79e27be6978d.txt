@@ -1,0 +1,26 @@
+block EndEvent 567 == 1
+window "\n\n『空间裂隙水晶闪耀着奇异的光芒,是否使用水晶进行空间转移?这会使你失去750金币』",yes,no
+window_no
+window_yes gold < 750
+endwindow "\n\n你的钱不够"
+window_yes
+addgold -750
+leavegroup
+Warp 0,101,41,80
+
+
+block EndEvent 18 == 1 && EndEvent 19 == 1
+window "\n\n『空间裂隙水晶闪耀着奇异的光芒,是否使用水晶进行空间转移?这会使你失去750金币』",yes,no
+window_no
+window_yes gold < 750
+endwindow "\n\n你的钱不够"
+window_yes
+EndEvent 567 = 1
+checktitle
+addgold -750
+leavegroup
+Warp 0,101,41,80
+
+
+block
+endwindow "\n\n以你的能力似乎无法使用空间裂隙水晶!"

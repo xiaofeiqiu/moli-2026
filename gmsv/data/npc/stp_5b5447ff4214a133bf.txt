@@ -1,0 +1,9 @@
+block item 87695 == 1 && item 87696 == 1 && item 87697 == 1 && item 87698 == 1
+leavegroup
+Warp 0,29938,55,83
+
+block item 87690 == 1
+window "\n\n你要使用缆绳爬上去吗？",ok
+window_ok
+leavegroup
+Warp 0,29938,55,83

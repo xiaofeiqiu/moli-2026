@@ -1,0 +1,9 @@
+block item 86906 == 1 && item 86907 < 1
+window "\n\n哥拉尔附近有许多穴龙，当听说最近有人捕捉穴龙，将其非法走私到阿凯鲁法村，进行特殊的实验，请务必阻止他们！",ok
+window_ok
+leavegroup
+killitem 86906
+giveitem 86907
+
+block
+endwindow "\n\n.................."

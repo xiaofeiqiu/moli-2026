@@ -1,0 +1,13 @@
+block EndEvent 513 == 1 && item 141192 >= 1
+Window "\n\n这...这个是...!你把我们之间的秘密告诉给了别人!?",next
+Window "\n\n我的主人会为此生气的...我非常惧怕主人.好吧...我决定保持中立,如果你想调查这座岛屿,我会随时带你过来,我会化作人形在你们的城市周围出现.",next
+Window "\n\n最后要告诉你的是...我很难过.",ok
+Window_ok item 141192 >= 1
+killitem 141192
+EndEvent 515 = 1
+CheckTitle
+LeaveGroup
+Warp 0,1000,141,148
+
+block
+EndWindow "\n\n你为何事又前来此地?"

@@ -1,0 +1,4 @@
+block globalFlag 353 == 1 && globalFlag 352 == 1 && item 70018 >= 1
+window 910154,ok
+window_ok
+Encount 3|0,25050,31,23||0|||||0|70027|||||||||

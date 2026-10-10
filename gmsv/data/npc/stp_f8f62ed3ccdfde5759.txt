@@ -1,0 +1,10 @@
+block item 800141 >= 1
+window "\n\n那个村民不在了,我们的调查员说,这个村子也到处都是僵尸,和瓦尼尔村的情况一样",next
+window "\n\n看来要找到那个村民才能知道这里到底发生了什么",next
+window "\n\n我们分开行动,我带人去净化两个村子的疾病,你去找去那个村民,完事之后在村里见",yes,no
+window_no
+window_yes item 800141 >= 1
+killitem 800141
+nowevent 555 = 1
+leavegroup
+Warp 0,2056,396,216

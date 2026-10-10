@@ -1,0 +1,20 @@
+block item 88084 == 1 && item 88085 == 1 && item 88086 == 1 && item 88087 == 1 && item 88092 == 1
+endwindow 501372
+
+block item 88092 == 1
+endwindow 501373
+
+block item 88083 == 1
+window 501374,next
+window 501375,next
+window 501376,yes,no
+window_no
+window_yes
+killitem 88083
+giveitem 88092
+
+block item 88092 == 0
+window 501377,ok
+window_ok
+giveitem 88083
+Warp 0,45141,67,168

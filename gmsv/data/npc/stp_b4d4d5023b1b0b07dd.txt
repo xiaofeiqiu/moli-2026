@@ -1,0 +1,8 @@
+block
+window "\n\n你在迁跃中发现了一个机关,要扳动它么??",yes,no
+window_no
+Warp 0,31507,130,5
+window_yes
+Warp 0,31504,4,8
+
+

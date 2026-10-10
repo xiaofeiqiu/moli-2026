@@ -1,0 +1,12 @@
+block item 1000614 >= 1
+window 7020438,yes,no
+window_no
+window_yes
+killitem 1000614
+window 7020439,ok
+window_ok
+LeaveGroup
+giveitem 1000615
+
+block
+endwindow 7020440

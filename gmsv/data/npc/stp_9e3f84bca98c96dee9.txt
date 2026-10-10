@@ -1,0 +1,9 @@
+block item 3821 >= 1 && petlevel 31 == 1
+window 9843,yes,no
+window_no
+endwindow 9844,ok
+window_yes
+killitem 3821
+killpetl 31
+givepet 12411
+endwindow 9845,ok

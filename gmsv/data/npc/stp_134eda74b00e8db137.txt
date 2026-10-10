@@ -1,0 +1,26 @@
+block	Visitor>=100
+Endwindow"\n\n\n@c 本次兑换的100名额已经满啦！\n\n 等魔力内的下一天,再来兑换吧!"
+block	item 591140>=1&&Visitor<100
+window"\n\n\n@c 嗯？ 任务完成啦！ 现在就要换取奖励么？",yes,no
+window_no
+window_yes
+window"\n\n@c 换取奖励后是要传送出去的哦！\n\n 再次确认要换取奖励么?",yes,no
+window_no
+window_yes
+killitem 591140,1
+Giveitem 591141,1
+SetVisitor +1
+	LeaveGroup
+	Warp 0,1500,36,50
+block	item 591136>=1||item 591137>=1||item 591138>=1||item 591139>=1
+window"\n\n@c 你的任务还未完成,你要出去么?",yes,no
+window_no
+window_yes
+	LeaveGroup
+	Warp 0,1500,36,50
+block
+Endwindow"\n\n@c 咿?   你还没有领取菜单呀? \n\n 那么你现在要出去么?",yes,no
+window_no
+window_yes
+	LeaveGroup
+	Warp 0,1500,36,50

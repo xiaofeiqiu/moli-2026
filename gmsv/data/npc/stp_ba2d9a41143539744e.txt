@@ -1,0 +1,9 @@
+block
+window 501219,yes,no
+window_no
+window_yes gold >= 5000
+LeaveGroup
+addgold -5000
+Warp 0,45142,36,5
+window_yes gold < 5000
+endwindow 501220

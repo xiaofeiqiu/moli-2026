@@ -1,0 +1,9 @@
+block globalFlag 328 == 1 && globalFlag 329 == 0
+window 900553,ok
+window_ok
+LeaveGroup
+globalFlag 329 = 1
+globalFlag 328 = 0
+
+block
+endwindow 900554

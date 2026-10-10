@@ -1,0 +1,23 @@
+
+block EndEvent 597 == 1 && Item 39652 >= 1 && Xpos == 2 && Ypos == 13
+LeaveGroup
+Warp 0,45100,45,67
+
+
+block Item 39654 >= 1 && Item 39655 >= 1 && Xpos == 2 && Ypos == 13
+LeaveGroup
+Warp 0,45101,45,67
+
+
+block EndEvent 596 == 1 && Item 39652 >= 1 && Xpos == 2 && Ypos == 13
+LeaveGroup
+Warp 0,45099,45,67
+
+
+block EndEvent 596 == 1 && Item 39654 >= 1 && Xpos == 2 && Ypos == 13
+LeaveGroup
+Warp 0,45099,45,67
+
+
+block Xpos == 2 && Ypos == 13
+Warp 0,30011,45,67

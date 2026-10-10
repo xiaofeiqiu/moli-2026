@@ -1,0 +1,24 @@
+block item 86908 == 1
+window "\n\n你找到我的穴龙宝宝了？这是它给我的信？原来我自己顾着和伙伴玩忽略了它，真的是我的错。不过还是要谢谢你的帮助，这是小小意思请收下！",ok
+window_ok
+leavegroup
+killitem 86908
+giveitem 86909
+
+block item 86902 == 1
+window "\n\n真的吗？我的穴龙宝宝自己马上就会回到我身边，太好了。我得马上回到奈尔身边免的她着急！",ok
+window_ok
+leavegroup
+killitem 86902
+giveitem 86903
+
+block
+window "\n\n就算是奈尔阿姨喊我回家吃饭也不管用！我必须要找到我的宝宝！除非你肯帮我...",yes,no
+window_no item 86904 == 1 && item 86905 < 1
+leavegroup
+killitem 86904
+giveitem 86905
+window_yes item 86900 == 1 && item 86901 < 1
+leavegroup
+killitem 86900
+giveitem 86901

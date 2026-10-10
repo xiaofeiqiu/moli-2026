@@ -1,0 +1,6 @@
+Block
+Window "你带来了界神的信。我将精灵之羽交给你，请进入内殿继续交谈。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:5c0832648307e6e7be10

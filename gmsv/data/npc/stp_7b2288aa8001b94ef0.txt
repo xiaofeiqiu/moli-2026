@@ -1,0 +1,32 @@
+block gold >= 500000
+endwindow "\n\n身上魔币必须少于50万才能打开礼包."
+
+
+block
+LocalCount8 = random 4,0
+
+if LocalCount8 == 0
+killitem 715338
+addgold 100000
+endif
+
+
+if LocalCount8 == 1
+killitem 715338
+addgold 150000
+endif
+
+if LocalCount8 == 2
+killitem 715338
+addgold 200000
+endif
+
+if LocalCount8 == 3
+killitem 715338
+addgold 250000
+endif
+
+if LocalCount8 == 4
+killitem 715338
+addgold 300000
+endif

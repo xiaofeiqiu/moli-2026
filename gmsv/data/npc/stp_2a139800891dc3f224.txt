@@ -1,0 +1,18 @@
+block item 812303 == 1
+	window "\n\n\n@c 谢谢你送来大小姐的信.....",next
+	window "\n\n\n@c 大小姐的意思我知道了...\n\n@c 可惜我现在受伤了....",next
+	window "\n\n\n@c 如果可以 请去我们家的医生那拿下药",ok,no
+	window_ok
+	killitem 812303,1
+	giveitem 812304,1
+	giveitem 1000825,1
+	window "请速去速回.....",ok
+block item 812304 == 1
+	endwindow "\n\n@c 你怎么还没拿来药....."
+block item 812305 == 1
+	window "\n\n@c 谢谢你帮我拿药我现在就送你们去主人那",ok,no
+	window_ok
+	leavegroup
+	Warp 0,750,35,44
+block item 812305 == 0
+	endwindow "\n\n\n@c 你怎么还没拿来药....."

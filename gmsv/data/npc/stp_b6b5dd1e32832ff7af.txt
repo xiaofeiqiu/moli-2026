@@ -1,0 +1,21 @@
+block item 795111 == 1 && item 795113 == 0
+window "\n\n求救信?嗯···事情发展到这个地步,已经不能再拖延时间了.现在我命令你,讨伐狂战将军.希望你不要让我失望.",yes,no
+window_no
+endwindow "\n\n国难当前,你的回答令我太失望了!"
+window_yes item 795111 == 1
+killitem 795111
+giveitem 795113 
+endwindow "\n\n这是我的亲笔信,快去送到雷克塔尔镇.然后听从镇长艾列斯的指示."
+
+
+block item 795117 == 1 && PetSpace != 0
+window "\n\n击败了逆袭者狂战吗?很好,你没令我失望,这是奖赏,本祭祀亲自授予你.",ok
+window_ok item 795117 == 1
+killitem 795117
+giveitem 795118
+givepet	(304%95,105%5)
+endwindow "\n\n希望你有更优秀的表现,退下吧."
+
+
+block item 795117 == 1 && PetSpace == 0
+endwindow "\n\n你成功了!我要给你奖赏,检查下宠物栏是否满了!"

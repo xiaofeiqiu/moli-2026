@@ -1,0 +1,11 @@
+block
+			Changepal 15,120
+	Window "\n\n站在那里的年轻人,等一等.你是不是看到我脚下的圈圈了?",yes,no
+		Window_no
+			EndWindow "\n\n什么?!你竟然敢说我长得丑?!可恶的家伙!"
+		Window_yes
+			Window "\n\n果然有眼光,闭上眼睛,你马上就能体会到最经典的对战魅力.",ok
+				Window_ok
+	LeaveGroup
+	giveitem 652300,1
+					Warp 0,310,24,12

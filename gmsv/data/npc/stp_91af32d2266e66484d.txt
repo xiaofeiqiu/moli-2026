@@ -1,0 +1,33 @@
+block StrCmpChat == 220000
+window "\n\n请吃!请吃!这是之前一位戴着南瓜头套的巫师交给我的,吃得开心点..",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200802
+
+
+#本仿伙市阑N瓦市正 14029,4:2012 12 6
+
+########## 穴左扑□失及澎饼互肣月 ##########
+block Item 18294 >= 1
+
+	Window 20667,OK
+	Window_OK ItemSpace == 0
+	EndWindow 20698,OK
+	Window_OK Itemspace >= 1 && Item 18294 >= 1
+	KillItem 18294
+	GiveItem 18295
+	
+
+########## 丢永本□斥它奶件玉它钒##########
+block
+	#\n\n﹛?注窖奶□伙ㄒ
+	Window 11311,NEXT,CANCEL
+	#\n\n﹛闲ㄣ?央件皮伙弘?ㄒ蛭绝ㄣ?ㄨ瓒匋ㄒ
+	Window 11309,NEXT,CANCEL
+	#\n\n﹛迋ㄠㄑ?A脾ㄔ?
+	Window 11310,NEXT,CANCEL
+	#\n\n﹛ㄑ蛭绝ㄑ?丐ㄑ伉亘□玄ㄘ﹜甩□田伙鳞笼?˙????ㄒ
+	Window 11331,NEXT,CANCEL
+	#\n\n﹛丑□ㄙ籁
+	EndWindow 11332

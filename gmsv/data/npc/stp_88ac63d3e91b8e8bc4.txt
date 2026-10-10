@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【牙骨】吗？",ok
+			Window_ok
+Luac stp:legacy:4cbb907e915b346df5ab
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【颚牙】吗？",ok
+			Window_ok
+Luac stp:legacy:b690612a7ecc6a68e1ce
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【巨牙】吗？",ok
+			Window_ok
+Luac stp:legacy:19da855c2dd9f147b57b
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【利牙】吗？",ok
+			Window_ok
+Luac stp:legacy:c99fe2cd430cee0480df
+				endif
+

@@ -1,0 +1,9 @@
+block item 22802 == 1
+
+	Window  "\n\n	里面很危险,你还要进去吗?",OK
+
+	Window_OK
+
+		LeaveGroup
+
+		Warp 0,62067,9,2

@@ -1,0 +1,13 @@
+#洗礼3开始#
+
+block item 730035 >= 1
+EndWindow "\n\n想要新称号的话就去冒险者旅馆前问问汉克吧."
+
+#持有【洗礼2旗标】获得【调查委托信】
+block EndEvent 555 == 1
+Window "\n\n嗯...我也想不出更好的称号了,想要新称号的话就去冒险者旅馆前问问汉克吧.",ok
+Window_ok
+giveitem 730035
+
+Block
+Message 70702

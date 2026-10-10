@@ -1,0 +1,12 @@
+block ItemCreateTime 87530 >= 10 && item 87530 == 1
+window "\n\n现在我们的船到了你航海图所标的地方，没想到这里还有座岛？",ok
+window_ok
+LeaveGroup
+killitem 87530
+Warp 0,29705,90,15
+
+block ItemCreateTime 87530 < 10
+endwindow "\n\n真的事好远啊~~趁这时间你们不如在甲板上决斗吧！我想看看呢！"
+
+block
+EndWindow "\n\n你是偷渡上船的吗？"

@@ -1,0 +1,27 @@
+block	level >= 110 && item 52267 < 1
+
+window"\n告诉你个事,我看见有个阿克瑞斯在东边的岛屿和几头龙撕杀呢,好厉害,连龙都逃跑了！",OK
+
+window_OK
+
+window"\n\n@c请你相信我说的话吧！真的是这样的！",yes,no
+
+window_yes
+
+giveitem 52267,1
+
+endwindow"\n\n@c你看,这是龙的眼睛，就是那几个陌生人把龙刺杀的！你拿着这个龙眼可以去调查下！"
+
+window_NO
+
+endwindow"\n\n@c那算了吧，你当我没说过"
+
+
+block	item 52267 >= 1
+
+window"\n\n\n@c怎么？还在这里逗留？",ok
+
+
+block
+
+window"\n\n\n@c真不知道阿克瑞斯是那个家伙为什么这么强",ok

@@ -1,0 +1,68 @@
+#第三次#
+block item 141211 >= 1 && ItemCreateTime 141211 >= 1440 && item 141208 >= 100 && item 141209 >= 1
+Window "\n\n嘿嘿,即将诞生了!你是它的新主人～!呐～我们有机会再见吧...唔嘿嘿嘿嘿.",ok
+Window_ok item 141208 >= 100 && item 141209 >= 1
+killitem 141208,100
+killitem 141209
+giveitem 141212
+LeaveGroup
+Warp 0,1530,15,6
+
+block item 141211 >= 1 && ItemCreateTime 141211 >= 1440 && item 141209 >= 1
+EndWindow "\n\n唔嘿嘿嘿嘿,今天是第三天了,它马上就会吃饱的～",
+
+#第二次#
+block item 141210 >= 1 && ItemCreateTime 141210 >= 1440 && item 141208 >= 100 && item 141209 >= 1
+Window "\n\n嘿嘿,现在就可以喂它吃饭啦～还剩最后一天了,明天再来吧.",ok
+Window_ok item 141208 >= 100 && item 141209 >= 1
+killitem 141208,100
+killitem 141210
+giveitem 141211
+LeaveGroup
+Warp 0,1530,15,6
+
+block item 141210 >= 1 && ItemCreateTime 141210 >= 1440 && item 141209 >= 1
+EndWindow "\n\n唔嘿嘿嘿嘿,今天是第二天,加油啊～",
+
+#第一次#
+block item 141209 >= 1 && item 141208 >= 100
+Window "\n\n嘿嘿,现在就可以喂它吃饭啦～明天再来吧.",ok
+Window_ok itemspace < 1
+EndWindow "\n\n抱歉,你的物品栏满了.",
+Window_ok item 141209 >= 1 && item 141208 >= 100
+killitem 141208,100
+giveitem 141210
+LeaveGroup
+Warp 0,1530,15,6
+
+block item 141209 >= 1
+Window "\n\n唔嘿嘿嘿嘿,这个饥饿的小家伙需要吞噬300个人类的灵魂,成长到足够强大的时候才肯诞生呐!今天你就去弄来100个灵魂好了～",ok
+Window_ok
+LeaveGroup
+Warp 0,57484,13,36
+
+block EndEvent 513 == 1 && EndEvent 514 == 1 && EndEvent 516 == 1 && EndEvent 517 == 1 && item 141206 >= 1
+Window "\n\n唔嘿嘿嘿嘿,别来无恙啊.我们又见面了,很......... ",next
+Window "\n\n『话说一半时荷特普抹除了你小部分记忆...』",next
+ChangePal 20,50
+Window "\n\n.........不可思议对不对?嘿嘿嘿嘿,呐～!“玩具”已经坏掉了,我也不想再“修理”那个家伙了,话太少的家伙我可不喜欢,唔嘿嘿嘿～",next
+ChangePal 0,50
+Window "\n\n既然已经不在了...那么这个职位......",next
+Window "\n\n就由你来当吧!唔嘿嘿嘿嘿嘿嘿～",next
+Window "\n\n今天玩得真开心～为了奖赏你,临走前送你个小家伙,它很饥饿呐～想要喂饱它的话就再来找我,只要轻轻抚摸一下它就能再见到我了!唔嘿嘿嘿嘿～",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏满了.",
+Window_ok item 141206 >= 1
+killitem 141206
+EndEvent 513 = 0
+EndEvent 514 = 0
+EndEvent 516 = 0
+EndEvent 517 = 0
+EndEvent 518 = 1
+CheckTitle
+giveitem 141209
+LeaveGroup
+Warp 0,1530,15,6
+
+block
+EndWindow "\n\n唔嘿嘿嘿嘿,别来无恙啊.",

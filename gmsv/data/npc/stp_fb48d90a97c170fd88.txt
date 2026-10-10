@@ -1,0 +1,23 @@
+block item 200566 >= 1
+window "\n\n哈哈～你办事效率还挺快的,我的酒来咯～咕噜咕噜～小酒喝一喝赛过似神仙,可以美滋滋打个盹了.",ok
+window_ok
+killitem 200566
+leavegroup
+Warp 0,27642,3,13
+
+
+
+block item 200565 >= 1
+endwindow "\n\n愣着干什么,还不快去,小心我把你扔进大牢."
+
+
+
+block item 200564 >= 1
+window "\n\n呀～难得有人来这里,过来你拿着这瓶子去村里给大爷我打一壶酒来.",yes,no
+window_yes
+killitem 200564
+giveitem 200565
+
+
+block
+endwindow "\n\n走开,这里没有赛利鲁村长之命禁止进入."

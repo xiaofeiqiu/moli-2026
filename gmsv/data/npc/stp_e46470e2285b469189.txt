@@ -1,0 +1,8 @@
+block item 87443 == 1
+Warp 0,400,553,213
+
+block
+window "\n\n乘其不备摘其花朵。",ok
+window_ok
+giveitem 87443
+Warp 0,400,553,213

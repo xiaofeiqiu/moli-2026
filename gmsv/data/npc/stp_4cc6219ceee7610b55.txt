@@ -1,0 +1,10 @@
+block Item 591252 >= 1 && petlevel 2050 == 1
+window"\n\n@c 你要对改造水蜘蛛使用催化剂么？.\n\n 那样子将回使水蜘蛛的基因变异！",yes,no
+window_no
+window_yes Item 591252 >= 1 && petlevel 2050 == 1
+killitem 591252,1
+killpetl 2050,1
+Givepet 2031
+Endwindow"\n\n@c 水蜘蛛变异了.."
+block
+Endwindow"\n\n@c 身上没有携带1级的改造水蜘蛛.."

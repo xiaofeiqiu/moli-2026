@@ -1,0 +1,6 @@
+block item 795151 == 1 && item 795152 == 0
+window "\n\n你们是救援军吗?敌人真的太强了...我们无力抵抗...这是他们头目的画像...请一定...一定要要阻止他们...",ok
+window_ok itemspace == 0
+endwindow "\n\n你的东西太多了"
+window_ok item 795151 == 1
+giveitem 795152

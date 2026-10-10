@@ -1,0 +1,18 @@
+block Level >= 50 && ItemSpace >= 1 &&  Item 940111 == 1 &&  Item 940116 == 1 &&  Item 940117 == 1
+window "\n\n\n恩!不错,给我吧.",ok
+window_ok
+killItem 940116,1
+giveItem 940118,1
+endwindow "\n\n\n哼!老不死弄了个假东西!杀了他!!!"
+
+
+block Level >= 50 && Item 940111 == 1 && Item 940117 == 1 && Item 940119 == 1
+killItem 940111,1
+killItem 940117,1
+killItem 940119,1
+giveItem 940112,1
+endwindow "\n\n\n不错不错,是它,给你属于你的东西吧."
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

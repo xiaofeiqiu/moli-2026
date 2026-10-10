@@ -1,0 +1,8 @@
+# Preserve existing GBK/UTF-8 files and server map bytes exactly.
+* -text
+
+*.exe binary
+*.dll binary
+*.db3 binary
+/gmsv/data/map/* binary
+/gmsv/data/material_map/* binary

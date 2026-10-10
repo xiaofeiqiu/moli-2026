@@ -1,0 +1,17 @@
+block itemspace <= 1
+	endwindow "\n\n　把背包清理下再来找我吧。"
+block item 1000322 >= 2
+	window"\n\n你身上好像有多余的东西，要我帮忙清理下吗？",ok
+	window_ok
+		killitem 1000322,1
+block item 1000322 == 1
+	window"\n\n是诚惠先生让你们来交给我的吗？",next
+	window"\n\n（埃露戴娜看了信的内容……余光扫了下周围……）",next
+	window"\n\n真是个腹黑的人，我明白了，丘比的伤还很重，先用绷带帮它处理下伤口吧。听说艾泽尔也回来了，如果有新的线索可以去法兰城东南的角落寻找他。",ok
+	window_ok
+		killitem 1000322,1
+		giveitem 1000325,1
+block
+	window "\n\n长相很奇特的猫，法兰的周围从来没见过这样的的生物，它的伤势比较严重，有魔法和利刃的痕迹，你们想帮助它吗？好吧，如果有什么疑惑可以去请教下贤者奎因先生，他应该在城西的角落。",ok
+		window_ok
+			EndWindow "\n\n	祝你好运冒险者。"

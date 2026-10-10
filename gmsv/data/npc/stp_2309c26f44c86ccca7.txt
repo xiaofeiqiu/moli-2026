@@ -1,0 +1,4 @@
+block item 88088 == 1 && StrCmpChat == 278956
+LeaveGroup
+killitem 88088
+Warp 0,45227,2,23

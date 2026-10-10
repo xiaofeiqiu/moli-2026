@@ -1,0 +1,28 @@
+block item 1000162 == 1
+EndWindow "\n\n万圣夜快乐哦,军方那边正在征集参加战斗训练的人员,有兴趣的话去看看吧."
+
+
+block item 1000157 == 1 && item 1000158 == 1 && item 1000159 == 1 && item 1000160 == 1
+Window "\n\n非常感谢!来吧,接受这份心的糖果吧!",next
+Window "\n\n军方那边正在征集参加战斗训练的人员,有兴趣的话去看看吧.",next
+Window "\n\n那么,万圣快乐!",ok
+Window_ok item 1000157 == 1 && item 1000158 == 1 && item 1000159 == 1 && item 1000160 == 1
+killitem 1000157
+killitem 1000158
+killitem 1000159
+killitem 1000160
+giveitem 1000161
+giveitem 1000162
+
+
+block
+Window "\n\n你好啊,每年一度的万圣狂欢夜来到啦!",next
+Window "\n\n大家分享糖果享受节日才是狂欢夜的精髓!那么,来帮忙碌的我们将糖果送到要分发的村庄吧,如何,你要参加活动么?",yes,no
+Window_no
+EndWindow "\n\n随时欢迎你来帮我进行实地调查."
+Window_yes itemspace == 0
+endWindow "\n\n你的背包满啦"
+Window_yes
+Window "\n\n很好,将这包裹送到伊尔村、圣拉鲁卡村、亚留特村的工作人员手中,然后把回执带来给我就可以得到奖励啦!",ok
+Window_ok
+giveitem 1000157

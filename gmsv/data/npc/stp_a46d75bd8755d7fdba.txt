@@ -1,0 +1,29 @@
+block item 730106 >= 1
+endwindow "\n\n请和我旁边的同事聊一下吧."
+
+
+
+block item 730104 >= 1 && item 730105 >= 1
+window "\n\n辛苦了.这样诅咒的净化基本就算完成了.相信中了诅咒的队员很快就应当恢复正常了.不过呢，还有些问题是需要你来解决的,请和我旁边的同事聊一下吧.",ok
+window_ok item 730104 >= 1 && item 730105 >= 1
+killitem 730104
+killitem 730105
+giveitem 730106
+
+
+
+block item 730104 >= 1
+endwindow "\n\n请去找守卫谈一下吧,他应当就会指引你去往神殿区了."
+
+
+block item 730103 >= 1
+window "\n\n呀.你终于到了,冒险家.具体的经过上边已经通知我们了,我们一定会全力配合你的行动的.",next
+window "\n\n根据调查的结果,目前最可疑的地方就是这里主建筑区的神殿,通向那里道路的清理工作也做完了,请去找守卫谈一下吧,他应当就会指引你去往神殿区了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 730103 >= 1
+giveitem 730104
+
+
+block
+endwindow "\n\n我们要团结一致!"

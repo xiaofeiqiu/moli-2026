@@ -1,0 +1,15 @@
+block
+window "\n\n是否要使用传送全开卡?",yes,no
+window_yes
+killitem 999993
+nowevent 512 = 1
+nowevent 513 = 1
+nowevent 514 = 1
+nowevent 515 = 1
+nowevent 516 = 1
+nowevent 517 = 1
+nowevent 518 = 1
+nowevent 519 = 1
+nowevent 520 = 1
+endwindow "\n\n祝您游戏愉快"
+

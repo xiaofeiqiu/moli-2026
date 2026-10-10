@@ -1,0 +1,103 @@
+block item 81021 >= 1 && item 81022 >= 1 && item 81023 >= 1 && item 81024 >= 1 && item 81025 >= 1 && item 81026 >= 1 && item 81027 >= 1
+	window "\n\n@c哦？这是大巫师的信，亏这老家伙还记得我。",next
+	window "\n\n@c信我看过了，你现在可以把这些碎片晶石交给我了，我会为你制作出一个完整的晶石。",next
+	window "\n\n@c哎呦...果然是强大的晶石啊\n\n你还真是好运气，这些魔族的晶石能力非凡，看来不单单是解除屏障这么简单...哈哈，请善用此物吧。",ok
+	window_ok item 81021 >= 1 && item 81022 >= 1 && item 81023 >= 1 && item 81024 >= 1 && item 81025 >= 1 && item 81026 >= 1 && item 81027 >= 1
+	killitem 81021,1
+	killitem 81022,1
+	killitem 81023,1
+	killitem 81024,1
+	killitem 81025,1
+	killitem 81026,1
+	killitem 81027,1
+	giveitem (81028%1,81029%1,81030%1,81031%1)
+
+block item 8001 >= 1 && item 40043 >= 1 && item 81006 >= 1
+	window "\n\n@c法兰城的首饰果真名不虚传。\n\n把它们交给我，结合圣龙的能量。让它们变得更完美。",yes,no
+	window_no
+
+	window_yes item 8001 >= 1 && item 40043 >= 1 && item 81006 >= 1
+	killitem 8001,1
+	killitem 40043,1
+	killitem 81006,1
+	giveitem (81007%1,81008%1,81009%1,81010%1)
+
+block item 18236 >= 1 && item 40042 >= 1 && item 81006 >= 1
+	window "\n\n@c法兰城的首饰果真名不虚传。\n\n把它们交给我，结合圣龙的能量。让它们变得更完美。",yes,no
+	window_no
+
+	window_yes item 18236 >= 1 && item 40042 >= 1 && item 81006 >= 1
+	killitem 18236,1
+	killitem 40042,1
+	killitem 81006,1
+	giveitem 81011,1
+
+block item 18396 >= 1 && item 40020 >= 1 && item 81006 >= 1
+	window "\n\n@c法兰城的首饰果真名不虚传。\n\n把它们交给我，结合圣龙的能量。让它们变得更完美。",yes,no
+	window_no
+
+	window_yes item 18396 >= 1 && item 40020 >= 1 && item 81006 >= 1
+	killitem 18396,1
+	killitem 40020,1
+	killitem 81006,1
+	giveitem 81012,1
+
+block item 18565 >= 1 && item 40022 >= 1 && item 81006 >= 1
+	window "\n\n@c法兰城的首饰果真名不虚传。\n\n把它们交给我，结合圣龙的能量。让它们变得更完美。",yes,no
+	window_no
+
+	window_yes item 18565 >= 1 && item 40022 >= 1 && item 81006 >= 1
+	killitem 18565,1
+	killitem 40022,1
+	killitem 81006,1
+	giveitem 81013,1
+
+block item 18335 >= 1 && item 40021 >= 1 && item 81006 >= 1
+	window "\n\n@c法兰城的首饰果真名不虚传。\n\n把它们交给我，结合圣龙的能量。让它们变得更完美。",yes,no
+	window_no
+
+	window_yes item 18335 >= 1 && item 40021 >= 1 && item 81006 >= 1
+	killitem 18335,1
+	killitem 40021,1
+	killitem 81006,1
+	giveitem 81014,1
+
+block item 18985 >= 1 && item 18986 >= 1 && item 18987 >= 1
+	window "\n\n@c法兰城的首饰果真名不虚传。\n\n把它们交给我，结合圣龙的能量。让它们变得更完美。",yes,no
+	window_no
+
+	window_yes item 18985 >= 1 && item 18986 >= 1 && item 18987 >= 1 && item 81006 >= 1
+	killitem 18985,1
+	killitem 18986,1
+	killitem 18987,1
+	killitem 81006,1
+	giveitem 81015,1
+
+block item 8001 >= 1
+	Endwindow "\n\n@c唔，不幸的戒指……\n\n这个戒指看起来不错，如果再加入魔力手环的魔法能力一同打造相信它会更棒一些。"
+block item 40043 >= 1
+	Endwindow "\n\n@c唔，魔力手环……\n\n这个手环看起来不错，如果能再加入不幸的戒指的能力一同打造相信它会更棒一些。"
+block item 18236 >= 1
+	Endwindow "\n\n@c唔，祈祷的耳饰……\n\n这个耳饰看起来不错，如果能再加入天使之泪的能力一同打造相信它会更棒一些。"
+block item 40042 >= 1
+	Endwindow "\n\n@c唔，天使之泪……\n\n这个耳环看起来不错，如果能再加入祈祷的耳饰的能力一同打造相信它会更棒一些。"
+block item 18396 >= 1
+	Endwindow "\n\n@c唔，疾风的戒指……\n\n这个戒指看起来不错，如果能再加入跃动的项链的能力一同打造相信它的会更棒一些。"
+block item 40020 >= 1
+	Endwindow "\n\n@c唔，跃动的项链……\n\n这个项链看起来不错，如果能再加入疾风的戒指的能力一同打造相信它会更棒一些。"
+block item 18565 >= 1
+	Endwindow "\n\n@c唔，梦幻头巾……\n\n这个头巾看起来不错，如果能再加入天使的守护的能力一同打造相信它会更棒一些。"
+block item 40022 >= 1
+	Endwindow "\n\n@c唔，天使的守护……\n\n这个耳环看起来不错，如果能再加入梦幻头巾的能力一同打造相信它会更棒一些。"
+block item 18335 >= 1
+	Endwindow "\n\n@c唔，鬼的标志……\n\n这个手环看起来不错，如果能再加入武神的臂环的能力一同打造相信它会更棒一些。"
+block item 40021 >= 1
+	Endwindow "\n\n@c唔，武神的臂环……\n\n这个臂环看起来不错，如果能再加入鬼的标志的能力一同打造相信它会更棒一些。"
+block item 18985 >= 1 || item 18986 >= 1 || item 18987 >= 1
+	Endwindow "\n\n@c唔。心头灭却……早有耳闻。\n\n如果能凑齐一套一同打造，相信它会更棒一些。"
+
+block
+	window "\n\n@c哦，原来你是法兰城的冒险者。我是本村的工匠，我的家族世世代代都是以制作饰品而闻名。",next
+	window "\n\n@c我对法兰王国的饰品很感兴趣，如果你也对饰品有兴趣的话，我可以对你说说我的想法。",next
+	window "\n\n@c本村外的圣龙是古老的龙族，其身上的鳞片具有增强饰品能力的神器力量。在星灵界，用圣龙之鳞制作的饰品都很强大。听说法兰王国也有很多精美的饰品，相信我可以组合其中一些饰品，再加上圣龙之鳞的加持，肯定可以制作出前所未有的完美首饰。",next
+	Endwindow "\n\n@c哈哈，听起来是不是很诱人啊？你只要收集到1个圣龙鳞片，再把你想打造的精美首饰一起给我。"

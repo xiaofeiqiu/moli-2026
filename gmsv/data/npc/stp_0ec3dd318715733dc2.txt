@@ -1,0 +1,9 @@
+block item 87472 == 1
+Warp 0,33000,504,362
+
+block item 87445  == 1
+window "\n\n我不知道会不会传染，我已经不属于这世界了。\n我将与这怪物一起被毁灭。\n你要采我的血液那赶快吧，希望能救助外面被感染的人。",ok
+window_ok
+killitem 87445
+giveitem 87472
+Warp 0,33000,504,362

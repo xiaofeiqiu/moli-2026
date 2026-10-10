@@ -1,0 +1,5 @@
+block	level>=75&&level<=120
+leavegroup
+Warp 0,1000,244,74
+block
+Endwindow"\n\n\n@c 你的等级已经超过本任务的限制!"

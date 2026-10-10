@@ -1,0 +1,12 @@
+block Item 6518 >= 1
+	Window "\n\n看来某些人已经突破了这个世界的束缚,可以涉及到你那个世界呢,哪里出现差错了呢?",NEXT
+	Window "\n\n难道我所掌控的一切出现?\n\n...",OK
+	Window_OK
+	LeaveGroup
+	Warp 0,6747,12,6
+
+block
+	Window "\n\n神秘的声音好象在倾诉什么...",OK
+	Window_OK
+	LeaveGroup
+	Warp 0,30010,175,172

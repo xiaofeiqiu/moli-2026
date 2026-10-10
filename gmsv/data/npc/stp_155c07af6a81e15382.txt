@@ -1,0 +1,9 @@
+block item 87928 == 1 && StrCmpChat == 278761
+window 933497,next
+window 933498,ok
+window_ok
+LeaveGroup
+Warp 0,27208,444,503
+
+block
+endwindow 933499

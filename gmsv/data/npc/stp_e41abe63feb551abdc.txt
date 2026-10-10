@@ -1,0 +1,7 @@
+block petspace == 0
+	EndWindow "\n\n　请整理下您的物品栏。",OK
+block petspace >= 1
+	Window "\n\n　是否开启华丽的宝石袋，可以随机获得各种宝石。",OK
+	Window_OK
+	KillItem 60196,1
+	Giveitem (60186%10,60187%9,60188%8,60189%7,60190%6,60191%5,60192%4,60193%3,60194%2,60195%1)

@@ -1,0 +1,12 @@
+block item 666071==1
+endwindow "\n\n 许可已经给你了,快去把,位置记录在许可上.",ok
+
+
+block item 666071==0 && Level >= 120
+window "\n\n 那个墓地太恐怖了,但听说那里有不少好东西啊,不知是不是真的.",next
+window "\n\n 勇者,你好像很强的样子!\n\n 可不可以帮我去那个墓地找点有价值的宝物来呢?",yes,no
+window_no
+endwindow "\n\n 算了.算了.你也帮不上什么忙得",ok
+window_yes
+giveitem 666071,1
+endwindow "\n\n 这东西给你,希望可以帮你忙~!",ok

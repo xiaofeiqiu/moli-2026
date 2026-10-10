@@ -1,0 +1,17 @@
+
+block Item 1000814 == 1
+	Window "\n\n　这是妈妈的胸针,谢谢你",next
+	Window "\n\n　这个送给你，谢谢你的帮助",OK
+		Window_OK
+			KILLITEM 1000814
+			giveitem 1000815
+
+block item 1000799 == 1
+	window "\n\n  快点帮我找到妈妈吧！",OK
+		window_ok
+block
+	Window "\n\n　我好想我的妈妈！55555555555!",next
+	Window "\n\n　妈妈看到这个娃娃后,就会相信你了",next
+	Window "\n\n　谢谢你帮我,好心人",OK
+		Window_OK
+			giveitem 1000799

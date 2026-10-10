@@ -1,0 +1,6 @@
+Block
+Window "古宅怪物：请通过我的试炼，胜利后领取调查信物。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:ab35db3903c4d14b168e

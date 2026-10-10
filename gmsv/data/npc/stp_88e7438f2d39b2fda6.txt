@@ -1,0 +1,24 @@
+block petlevel 831 == 150 && petlevel 832 == 150 && petlevel 833 == 150 && petlevel 834 == 150 && petlevel 835 == 150
+	window"\n\n 您身上竟然有着那么多品种的鸟人.我这有只新品种,换给你吧!希望你能挽救它的生命!",yes,no
+	window_yes
+	killpetl 831
+	killpetl 832
+	killpetl 833
+	killpetl 834
+	killpetl 835
+	givepet 837
+	window_no"\n\n 算勒，现在的年轻人啊，真是一点爱心都没有！ ",ok
+block petlevel 831 <= 119 || petlevel 832 <= 119 || petlevel 833 <= 119 || petlevel 834 <= 119 || petlevel 835 <= 119
+	window"\n\n 您身上竟然有着那么多品种的鸟人.我这有只新品种,换给你吧!希望你能挽救它的生命!",yes,no
+	window_yes
+	killpetl 831
+	killpetl 832
+	killpetl 833
+	killpetl 834
+	killpetl 835
+	givepet 836
+
+block
+	window"\n\n 看！这本鸟类大全实在是太养眼了！\n如果你能把5种鸟人都带给我，我可以考虑送你只邪恶鸟人噢！",ok
+	window_ok
+	endwindow

@@ -1,0 +1,77 @@
+block strCmpChat == 60307
+window "\n\n您确认要捐献10000金币么?",yes,no
+window_yes gold < 10000
+endwindow "\n\n请不要愚弄骑士,否则后果不是你所能承担的!!"
+window_yes itemspace < 1
+endwindow "\n\n请在身上留出一个空位来接受骑士团的回馈吧!"
+window_yes
+addgold -10000
+giveitem 600025
+endwindow "\n\n感谢您的捐助,曙光会永远照耀在你身上的."
+window_no
+endwindow "\n\请不要挑战骑士团的耐心!!"
+
+
+block strCmpChat == 60306
+window "\n\n您确认要捐献8000金币么?",yes,no
+window_yes gold < 8000
+endwindow "\n\n请不要愚弄骑士,否则后果不是你所能承担的!!"
+window_yes itemspace < 1
+endwindow "\n\n请在身上留出一个空位来接受骑士团的回馈吧!"
+window_yes
+addgold -8000
+giveitem 600024
+endwindow "\n\n感谢您的捐助,曙光会永远照耀在你身上的."
+window_no
+endwindow "\n\请不要挑战骑士团的耐心!!"
+
+
+block strCmpChat == 60305
+window "\n\n您确认要捐献5000金币么?",yes,no
+window_yes gold < 5000
+endwindow "\n\n请不要愚弄骑士,否则后果不是你所能承担的!!"
+window_yes itemspace < 1
+endwindow "\n\n请在身上留出一个空位来接受骑士团的回馈吧!"
+window_yes
+addgold -5000
+giveitem 600023
+endwindow "\n\n感谢您的捐助,曙光会永远照耀在你身上的."
+window_no
+endwindow "\n\请不要挑战骑士团的耐心!!"
+
+
+block strCmpChat == 60304
+window "\n\n您确认要捐献3000金币么?",yes,no
+window_yes gold < 3000
+endwindow "\n\n请不要愚弄骑士,否则后果不是你所能承担的!!"
+window_yes itemspace < 1
+endwindow "\n\n请在身上留出一个空位来接受骑士团的回馈吧!"
+window_yes
+addgold -3000
+giveitem 600022
+endwindow "\n\n感谢您的捐助,曙光会永远照耀在你身上的."
+window_no
+endwindow "\n\请不要挑战骑士团的耐心!!"
+
+
+block strCmpChat == 60303
+window "\n\n您确认要捐献1000金币么?",yes,no
+window_yes gold < 1000
+endwindow "\n\n请不要愚弄骑士,否则后果不是你所能承担的!!"
+window_yes itemspace < 1
+endwindow "\n\n请在身上留出一个空位来接受骑士团的回馈吧!"
+window_yes
+addgold -1000
+giveitem 600021
+endwindow "\n\n感谢您的捐助,曙光会永远照耀在你身上的."
+window_no
+endwindow "\n\请不要挑战骑士团的耐心!!"
+
+
+
+block
+window "\n\n正义维护也是需要金钱的.你愿意为正义奉献自己的金钱么?",yes,no
+window_no
+endwindow "\n\n曙光会保佑你的."
+window_yes
+endwindow "\n\n捐献的金钱可以是1000金币/3000金币/5000金币/8000金币/10000金币请说出想要捐献的数额."

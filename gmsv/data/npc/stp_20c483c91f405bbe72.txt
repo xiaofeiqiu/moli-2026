@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物抗睡能力1点！",ok
+	window_ok
+Luac stp:legacy:d6dcbec06da7afaa2c8d
+		killitem 60272,1

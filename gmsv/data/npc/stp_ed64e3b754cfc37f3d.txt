@@ -1,0 +1,14 @@
+block item 86318 >= 1 && item 18570 >= 1 && item 86319 < 1
+window 85397,next
+window 85398,yes,no
+window_no
+window_yes
+window 85399,ok
+window_ok
+leavegroup
+killitem 86318
+killitem 18570
+giveitem 86319
+
+block item 86318 >= 1
+endwindow 85400

@@ -1,0 +1,38 @@
+block item 70032 >= 1
+endwindow 910157
+
+block item 70031 >= 1
+window 910158,next
+window 910159,next
+window 910160,next
+window 910161,next
+window 910162,next
+window 910163,next
+window 910164,next
+window 910165,next
+window 910166,next
+window 910167,next
+window 910168,next
+window 910169,next
+window 910170,next
+window 910171,next
+window 910172,next
+window 910173,next
+window 910174,next
+window 910175,next
+window 910176,next
+window 910177,next
+window 910178,next
+window 910179,next
+window 910180,next
+window 910181,next
+window 910182,ok
+window_ok ItemSpace >= 1
+leavegroup
+killitem 70031
+GiveItem 70032
+window_ok ItemSpace < 1
+endwindow 910183
+
+block 
+endwindow 910184

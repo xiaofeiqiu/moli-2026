@@ -1,0 +1,13 @@
+block item 1000045 >= 1
+window "\n\nX月X日:季风吹起了,船只已经可以出发了.",next
+window "\n\nX月X日:一路上虽然平静,但我总是有不好的预感.",next
+window "\n\nX月X日: 天气很坏,海面上起了大雾,我们只能放慢航行速度.",next
+window "\n\nX月X日:这几天不断有怪物来袭击,已经有很多水手受伤了,船体也受到了损害.",next
+window "\n\nX月X日:无法再前进了,许多水手被袭击的怪物抓走,我命令商船返航,希望诸神保佑,能让我们剩下的人回到家乡.",ok
+window_ok item 1000045 >= 1
+killitem 1000045
+giveitem 1000046
+leavegroup
+Warp 0,400,321,500
+
+

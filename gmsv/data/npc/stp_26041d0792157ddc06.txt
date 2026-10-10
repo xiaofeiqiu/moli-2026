@@ -1,0 +1,48 @@
+block item 500141 == 1
+endwindow "\n\n真是一场人间悲剧！"
+
+block item 500140 == 1
+window "\n\n你来晚了...威廉他...病情突然恶化，我们束手无策结果离开人世了。",next
+window "\n\n威廉的遗体已经被火化了。麻烦你把他的骨灰带回给阿巴尼斯村的小豆丁吧！",ok
+window_ok
+killitem 500140
+giveitem 500141
+
+block item 500132 == 1
+window "\n\n露水你拿来了吗？嗯~威廉只要喝了这个再调理下身体即可痊愈！",ok
+window_ok
+LeaveGroup
+killitem 500132
+Warp 0,14208,3,4
+
+block item 500131 == 1
+window "\n\n露水你拿来了吗？嗯~威廉只要喝了这个再调理下身体即可痊愈！",ok
+window_ok
+LeaveGroup
+killitem 500131
+Warp 0,14207,3,4
+
+block item 500129 == 1
+endwindow "\n\n你别以为他是普通的花，他可是千年长成的有生命的怪物"
+
+block item 500125 == 1 && item 500128 == 1
+window "\n\n墨迹科尔毒素......谁这么狠心啊！中这种毒素的人类轻度会像威廉那样成为植物人，重则人体会产生变异。",next
+window "\n\n不应该啊，这种毒素一遇到极冷的环境是根本没用的。除非人为的提炼才行......先不管这个，我知道如何救治威廉了！",next
+window "\n\n墨迹科尔毒素出自墨迹科尔花蕾中，恰巧治愈这种毒素的是这种花瓣上的露水。至于墨迹科尔花在哪里么，你可以去杰诺瓦镇问问。",ok
+window_ok
+killitem 500128
+giveitem 500129
+
+block item 500127 == 1
+endwindow "\n\n那实在是太感谢您了！如果能恢复威廉的神智小豆丁知道了肯定很开心！"
+
+block item 500125 == 1 && item 500126 == 1
+window "\n\n你就是他们说的那个把威廉从雪妖洞窟救出来的英雄吗？",next
+window "\n\n没想到你年纪这么轻。呵呵，你是来了解威廉的情况的吧？目前虽然无生命之忧，但是看上去大脑一片空白，按我们的话说这就是植物人！",next
+window "\n\n不过在对其血液进行检验时发现了很多不明物质，不知道是否是有这东西引起的。你能帮个忙把这血液样本交给法兰里谢里雅堡的昆特博士？",ok
+window_ok
+killitem 500126
+giveitem 500127
+
+block
+endwindow "\n\n来眼睛请看我的手指...."

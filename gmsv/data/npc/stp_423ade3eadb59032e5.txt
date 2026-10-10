@@ -1,0 +1,11 @@
+block item 87507 == 1
+endwindow "\n\n别磨叽磨叽了，不然老板要降低你的待遇了。"
+
+block item 87506 == 1
+window "\n\n你就是新来的？老板已经关照了，叫你马上前往位于竞技场治愈广场的俱乐部。",next
+window "\n\n不要废话了，还不赶快去，这是进入俱乐部的钥匙。",ok
+window_ok
+giveitem 87507
+
+block
+endwindow "\n\n.................."

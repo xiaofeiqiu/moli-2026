@@ -1,0 +1,9 @@
+block item 200753 >= 1
+window "\n\n逮捕令你们已经拿到啦,他们的秘密研究所就在附近,我带你们去.",ok
+window_ok
+leavegroup
+Warp 0,28321,22,17
+
+
+block
+endwindow "\n\n你好,有没有在附近看见一群陌生人."

@@ -1,0 +1,28 @@
+block item 730026 >= 1
+EndWindow "\n\n赶紧拿去给安其摩酒吧主人吧,估计他都等急了."
+
+block item 730025 >= 1
+Window "\n\n哦哦,药草囊取回来了啊～～辛苦你了!",next
+Window "\n\n你说琳达?呵呵,她刚才已经回来,看上去吓的不轻,这会儿去沐浴了...如果你再见到她时别笑话她哦,这孩子自尊心很强的.",next
+Window "\n\n真是太感谢你了,把琳达安全送回来,这是醒酒汤,赶紧拿去给安其摩酒吧主人吧,估计他都等急了.",ok
+Window_ok item 730025 >= 1
+killitem 730025
+giveitem 730026
+
+block item 730024 >= 1
+EndWindow "\n\n琳达这会应该在哈巴鲁东边洞穴里,你去那应该能找到她了."
+
+block item 730023 >= 1
+Window "\n\n哦,是安其摩酒吧的老板要醒酒汤啊稍等我叫副手取几份过来...",next
+Window "\n\n琳达!琳达～麻烦取几份醒酒汤过来哦～琳达琳达～～",next
+Window "\n\n哎呀!瞧我这记性,因为药材不够,一大早就叫琳达去采集药材了,你一说我才想起来,话说这都什么时候了,她也该回来了啊,真叫人担心啊!你能帮我去找下她吗?",yes,no
+Window_no
+EndWindow "\n\n琳达还不回来啊,我很担心啊..."
+Window_yes
+Window "\n\n真是太感谢你了,琳达这会应该在哈巴鲁东边洞穴里,你去那应该能找到她了.",ok
+Window_ok item 730023 >= 1
+killitem 730023
+giveitem 730024
+
+block
+EndWindow "\n\n········"

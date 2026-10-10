@@ -1,0 +1,18 @@
+block item 88095 == 1
+givepet 21
+endwindow 501200
+
+block item 88094 == 1
+endwindow 501201
+
+block item 88096 == 1
+window 501202,next
+window 501203,next
+window 501204,ok
+window_ok
+killitem 88096
+giveitem 88094
+endwindow 501205
+
+block
+endwindow 501206

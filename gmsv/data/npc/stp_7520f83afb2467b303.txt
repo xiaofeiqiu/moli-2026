@@ -1,0 +1,8 @@
+block
+window "\n\n击倒凶恶红龙的强力冒险者已经登场了,他们又将在邪眼的魔力下支撑多久呢?真是让人期待啊!",next
+window "\n\n那么!TheShowTime!ReadyGo!",ok
+window_ok
+Encount 2|0,24075,9,37||0|||||0|613077|||||||||
+
+
+

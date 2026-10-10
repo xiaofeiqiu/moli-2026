@@ -1,0 +1,18 @@
+block item 86557 == 1 && item 86558 < 1
+window "\n\n天作孽，犹可违；人作孽，不可活！罪犯已经尝到应有的天罚，这件事情可以告一段落了。我代表女骑士团感谢你的相助！谢谢",ok
+window_ok
+leavegroup
+killitem 86557
+giveitem 86558
+
+block item 86555 == 1 && item 86556 < 1
+window "\n\n根据苏米的情报显示，现在已经到了抓捕的时机，幸亏在法兰境内不然手续比较麻烦了！",next
+window "\n\n奈尔鲁会在奇利村的东门外等你，请尽快赶到！拜托了！",ok
+window_ok
+leavegroup
+killitem 86555
+giveitem 86556
+endwindow "\n\n这是逮捕令有了这你就能逮捕那个非法研究员了！"
+
+block
+endwindow "\n\n女骑士团正在世界各地进行资料搜集，你先到阿凯鲁法村找“卡娜特”询问一下她那边的任务进展吧！"

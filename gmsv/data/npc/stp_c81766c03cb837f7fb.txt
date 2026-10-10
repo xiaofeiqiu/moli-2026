@@ -1,0 +1,33 @@
+block Endevent 656 == 1 && Endevent 657 == 0
+	window "\n\n要启动枢纽进入试炼之村吗\n\n本次操作需消耗100魔币。",yes,no
+	window_no
+
+	window_yes Endevent 656 == 1 && Endevent 657 == 0 && gold < 100
+	Endwindow "\n\n@c很抱歉，您携带的魔币不足。"
+
+	window_yes Endevent 656 == 1 && Endevent 657 == 0 && gold >= 100
+	addgold -100
+	LeaveGroup
+	Warp 0,230,29,20
+
+block Endevent 657 == 1
+	window "\n星空枢纽已启动，请您选择您想要去的地方：\n\n选　[是]　进入星灵之镇\n\n选　[否]　进入试炼之村\n\n本次操作需消耗100魔币。",yes,no,cancel
+	window_cancel
+	window_yes Endevent 657 == 1 && gold < 100
+	Endwindow "\n\n@c很抱歉，您携带的魔币不足。"
+
+	window_yes Endevent 657 == 1 && gold >= 100
+	addgold -100
+	LeaveGroup
+	Warp 0,214,203,216
+
+	window_no Endevent 657 == 1 && gold < 100
+	Endwindow "\n\n@c很抱歉，您携带的魔币不足。"
+
+	window_no Endevent 657 == 1 && gold >= 100
+	addgold -100
+	LeaveGroup
+	Warp 0,230,29,20
+
+block
+	Endwindow "\n\n您还没有启动星空枢纽的权限。"

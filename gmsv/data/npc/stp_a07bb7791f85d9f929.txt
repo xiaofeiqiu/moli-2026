@@ -1,0 +1,253 @@
+#万能传送NPC脚本
+#作者:⌒ō⌒
+##########相关说明##########
+#判断金钱及扣费
+#	window_yes gold < 100
+#	window "您的钱不够!",OK
+#	window_yes
+#	addgold -100
+#判断当前时间
+#	window_yes nowtime != 1
+#	EndWindow "晚上无法使用!"
+#判断等级
+#	Window_YES Level < 32
+#	EndWindow "您的等级太低,还是在练练吧!"
+#
+##################脚本开始###################
+#A 阿凯鲁法村
+block	StrCmpChat == 800029 || StrCmpChat == 800055
+	window "\n\n\n\n@c@n,您将传送到阿凯鲁法,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,33200,99,165
+	window_no
+#B风洞
+block	StrCmpChat == 800030 || StrCmpChat == 800056
+	window "\n\n\n\n@c@n,您将传送到风洞,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,59670,176,133
+	window_no
+#C火山
+block	StrCmpChat == 800031 || StrCmpChat == 800057
+	window "\n\n\n\n@c@n,您将传送到火山,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,48000,25,27
+	window_ok
+#D蒂娜村
+block	StrCmpChat == 800032 || StrCmpChat == 800058
+	window "\n\n\n\n@c@n,您将传送到蒂娜村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,4299,5,5
+	window_no
+#E乌克兰
+block	StrCmpChat == 800033 || StrCmpChat == 800059
+	window "\n\n\n\n@c@n,您将传送到乌克兰,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,100,348,379
+	window_no
+#F法兰城
+block	StrCmpChat == 800034 || StrCmpChat == 800060
+	window "\n\n\n\n@c@n,您将传送到法兰城,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,1000,233,78
+	window_no
+#G哥拉尔城
+block	StrCmpChat == 800035 || StrCmpChat == 800061
+	window "\n\n\n\n@c@n,您将传送到哥拉尔城,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,43100,120,107
+	window_no
+#H哈贝鲁村
+block	StrCmpChat == 800036 || StrCmpChat == 800062
+	window "\n\n\n\n@c@n,您将传送到哈贝鲁村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,3100,68,35
+	window_no
+#I UD
+block	StrCmpChat == 800037 || StrCmpChat == 800063
+	window "\n\n\n\n@c@n,您将传送到UD,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,24001,10,10
+	window_no
+#J加纳村
+block	StrCmpChat == 800038 || StrCmpChat == 800064
+	window "\n\n\n\n@c@n,您将传送到加纳村,确定要传送么?",yes,no
+	window_yes item 251014 == 0 ||item 18440 == 0
+	addgold -100
+	Warp 0,3099,14,7
+	window_no
+#K坎那贝拉村
+block	StrCmpChat == 800039 || StrCmpChat == 800065
+	window "\n\n\n\n@c@n,您将传送到坎那贝拉村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,33500,22,28
+	window_no
+#L里谢里雅堡
+block	StrCmpChat == 800040 || StrCmpChat == 800066
+	window "\n\n\n\n@c@n,您将传送到里谢里雅堡,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,1500,41,76
+	window_no
+#M魔法大学
+block	StrCmpChat == 800041 || StrCmpChat == 800067
+	window "\n\n\n\n@c@n,您将传送到魔法大学,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,4400,106,54
+	window_no
+#N鲁米那斯
+block	StrCmpChat == 800042 || StrCmpChat == 800068
+	window "\n\n\n\n@c@n,您将传送到鲁米那斯,确定要传送么?",yes,no
+	window_yes
+	addgold -1000
+	Warp 0,43600,65,27
+	window_no
+#O米诺基亚
+block	StrCmpChat == 800043 || StrCmpChat == 800069
+	window "\n\n\n\n@c@n,您将传送到米诺基亚,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,43500,22,84
+	window_no
+#P雷克塔尔
+block	StrCmpChat == 800044 || StrCmpChat == 800070
+	window "\n\n\n\n@c@n,您将传送到雷克塔尔,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,43700,59,43
+	window_no
+#Q奇利村
+block	StrCmpChat == 800045 || StrCmpChat == 800071
+	window "\n\n\n\n@c@n,您将传送到奇利村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,3299,13,9
+	window_no
+#R雪山
+block	StrCmpChat == 800046 || StrCmpChat == 800072
+	window "\n\n\n\n@c@n,您将传送到雪山,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,402,83,193
+	window_no
+#S圣拉鲁卡村
+block	StrCmpChat == 800047 || StrCmpChat == 800073
+	window "\n\n\n\n@c@n,您将传送到圣拉鲁卡村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,2399,15,4
+	window_no
+#T天空之城
+block	StrCmpChat == 800048 || StrCmpChat == 800074
+	window "\n\n\n\n@c@n,您将传送到天空之城,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,59519,26,15
+	window_no
+#U艾尔莎
+block	StrCmpChat == 800049 || StrCmpChat == 800075
+	window "\n\n\n\n@c@n,您将传送到艾尔莎,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,59520,140,105
+	window_no
+#V亚留特村
+block	StrCmpChat == 800050 || StrCmpChat == 800076
+	window "\n\n\n\n@c@n,您将传送到亚留特村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,2499,5,15
+	window_no
+#W维诺亚村
+block	StrCmpChat == 800051 || StrCmpChat == 800077
+	window "\n\n\n\n@c@n,您将传送到维诺亚村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,2199,5,5
+	window_no
+#X杰诺瓦村
+block	StrCmpChat == 800052 || StrCmpChat == 800078
+	window "\n\n\n\n@c@n,您将传送到杰诺瓦村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,4099,6,7
+	window_no
+#Y伊尔村
+block	StrCmpChat == 800053 || StrCmpChat == 800079
+	window "\n\n\n\n@c@n,您将传送到伊尔村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,2099,20,10
+	window_no
+#Z阿巴尼斯村
+block	StrCmpChat == 800054 || StrCmpChat == 800080
+	window "\n\n\n\n@c@n,您将传送到阿巴尼斯村,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,4399,5,14
+	window_no
+#1转任务
+block	StrCmpChat == 800081
+	window "\n\n\n\n@c@n,您将传送到数精长老面前,确定要传送么?",yes,no
+	window_yes
+	leavegroup
+	addgold -100
+	GiveItem 18315
+	Warp 0,15507,29,14
+	window_no
+#2转任务
+block	StrCmpChat == 800082
+	window "\n\n\n\n@c@n,您将传送到神兽面前,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,16511,26,28
+	window_no
+#3转任务
+block	StrCmpChat == 800083
+	window "\n\n\n\n@c@n,您将传送到双王面前,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,24068,21,19
+	window_no
+#誓言之花
+block	StrCmpChat == 800086
+	window "\n\n\n\n@c@n,您将传送到四转任务前,确定要传送么?",yes,no
+	window_yes
+	addgold -100
+	Warp 0,59506,170,80
+	window_no
+#8开始打卡
+block	StrCmpChat == 800084
+	window "\n\n\n\n@c@n,您确定要开始打卡么?",yes,no
+	window_yes
+	Setfeverflg 1
+	window_no
+#3停止打卡
+block	StrCmpChat == 800085
+	window "\n\n\n\n@c@n,您确定要停止打卡么",yes,no
+	window_yes
+	Setfeverflg 0
+	window_no
+#Npc对话框
+#block	level >= 1
+#	window 800028,OK
+#	window_OK
+
+#Npc对话框
+block	gold >= 100
+	window 800028,OK
+	window_OK
+#Npc对话框
+block	gold < 100
+	window "\n\n\n@c@n,您的金钱少于1000,无法传送!",OK
+	window_OK

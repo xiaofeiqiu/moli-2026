@@ -1,0 +1,12 @@
+block	item 591001	>=	1
+Endwindow"\n\n\n@c 快去城堡里吧!"
+block	item 591000	>=	1
+window"\n\n\n@c 看来你需要去测试一下了。",ok
+window_ok	item 591000	>=	1
+killitem 591000,1
+Giveitem 591001,1
+block
+window"\n\n听说了吗？ 传说中的魅影翼龙出现了!\n\n皇家骑士团正在选拔最优秀的5名骑士,\n他们将代表法兰王国前去捕捉这号称最强之龙!\n怎么你想去试试么?",yes,no
+window_no
+window_yes
+Endwindow"\n\n勇气可嘉!但不是任何人都有资格参加这个测试的!\n先让我看看你的实力吧...\n\n知道索奇亚岛的流行山丘吗?那里出现了怪物!\n知道该怎么做了吧?我等你的好消息!"

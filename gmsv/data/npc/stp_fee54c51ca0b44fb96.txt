@@ -1,0 +1,7 @@
+block
+window"\n\n\n@c ÄãÒªÊ¹ÓÃ³ÆºÅÂğ£¬°¡°¡~~ ",yes,no
+window_no
+window_yes
+killitem 591450,1
+EndEvent 636=1
+Checktitle

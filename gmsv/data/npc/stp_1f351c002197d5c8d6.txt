@@ -1,0 +1,10 @@
+block item 1000507 == 1 && itemcreatetime 500000 < 30
+	EndWindow "\n\n@c您的挂机时间还没到30分钟!",ok
+block item 1000507 == 1 && itemcreatetime 500000 >= 30 && itemcreatetime 500000 < 60
+	EndWindow "\n\n@c您的挂机时间为30-60分钟!",ok
+block item 1000507 == 1 && itemcreatetime 500000 >= 60 && itemcreatetime 500000 < 180
+	EndWindow "\n\n@c您的挂机时间为60-180分钟!",ok
+block item 1000507 == 1 && itemcreatetime 500000 >= 180
+	EndWindow "\n\n@c您的挂机时间已经超过180分钟!",ok
+block item 1000507 < 1
+	EndWindow "\n\n@c我是积分时间查看员，抱歉你好像还没卡吧？",ok

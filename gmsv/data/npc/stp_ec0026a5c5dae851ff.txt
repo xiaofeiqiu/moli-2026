@@ -1,0 +1,16 @@
+block globalFlag 326 == 1 && item 61101 >= 1
+window 900664,ok
+window_ok
+LeaveGroup
+killitem 61101
+giveitem 61102
+
+block globalFlag 325 == 0 && globalFlag 326 == 0
+window 900665,yes,no
+window_yes
+LeaveGroup
+globalFlag 325 = 0
+window_no
+
+block
+endwindow 900666

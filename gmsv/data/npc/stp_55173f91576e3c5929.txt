@@ -1,0 +1,6 @@
+block
+Window "\n\n你要回龙神之里么?那么抓紧了.",yes,no
+Window_no
+Window_yes
+LeaveGroup
+Warp 0,57126,43,63

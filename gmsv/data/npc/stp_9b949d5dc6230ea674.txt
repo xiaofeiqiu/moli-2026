@@ -1,0 +1,3 @@
+block
+endwindow "\n\n人怎么可能击败神....."
+

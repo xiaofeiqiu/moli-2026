@@ -1,0 +1,14 @@
+block Luac stp:legacy:7e7a9de1e3946765a7e5 >= 1
+window "\n\n想体验攻击的快感吗?",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800197 >= 1
+endwindow "\n\n你已经有一个了!"
+window_ok
+giveitem 800197
+endwindow "\n\n快去击溃敌人吧!"
+
+block
+endwindow "\n\n我将为帕鲁凯斯大人奉献毕生的心血!推翻帝王!消灭帝国!"
+
+

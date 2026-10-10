@@ -1,0 +1,9 @@
+block
+Window "\n\n地上放着一本名册,要捡起来吗?",yes,no
+Window_no
+Window_yes itemspace == 0
+endwindow "\n\n你的背包满啦"
+Window_yes item 39691 == 1
+endwindow "\n\n你已经有一本名册了."
+Window_yes
+giveitem 39691

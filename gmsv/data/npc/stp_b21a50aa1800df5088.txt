@@ -1,0 +1,13 @@
+block	item 591430>=1
+Endwindow"\n\n\n@c 真是太谢谢了！"
+block	item 591422>=1&&item 591423>=1
+window"\n\n哦？是格兰叫你们来找我的",next
+window"\n\n几个月前我听说这个洞里有奇怪的怪物出现，于是我几次来这里寻找原因，但是怪物很强大，每次我都没到达洞底便逃回去了。",next
+window"\n\n 既然你是优秀的冒险家，能不能帮帮我调查一下，这个洞底到底发生了什么呢？",ok
+window_ok
+killitem 591422,1
+killitem 591423,1
+Giveitem 591430,1
+Endwindow"\n\n\n@c 真是太谢谢了！"
+block
+Endwindow"\n\n\n@c 这个洞穴好黑啊！"

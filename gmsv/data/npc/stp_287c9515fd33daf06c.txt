@@ -1,0 +1,112 @@
+block item 200101 >= 1
+endwindow "\n\n建议你去请教哥拉尔的希缇博士..."
+
+
+block item 200100 >= 1
+window "\n\n年轻人,你也对这些神话故事感兴趣吗?",yes,no
+window_yes
+window "\n\n但是有的神话,也是可以追溯到起因的,如果你想深入研究的话,建议你去请教哥拉尔的希缇博士?",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200101
+
+
+#
+#オ樊弁巨旦玄
+#犯伙甩永玄ヲ衔
+
+######### 蕞?谛巨件犯奴件弘 ########
+block NowEvent 544 == 1
+#\n\n﹛＿＿公丹井﹜支匀天曰云缯今氏互?谛元扎卅井匀凶午中丹歹仃元扎卅﹝公丹元扎午合丹午匀凶方﹝丹氏丹氏﹜丐氏凶今允互甩件弁及踞澎今氏分友尹﹝
+	EndWindow 14954,OK
+
+######### 失术立?谛巨件犯奴件弘 ########
+block EndEvent 539 == 1
+#\n\n﹛卅氏元扎午″〝缯抯互?谛元扎匀凶匀切文丹氏井云厄仄〝歹仄扎耨元午日氏互卅﹜云引尹今氏心凶中卅支勾反呺简方曰凶切互鬼中冗﹝
+	EndWindow 14955,OK
+
+######### 升仁 ########
+block NowEvent 537 == 1 && StrCmpChat == 14912
+#\n\n﹛匚及勾仁曰井凶互坌井木壬澎互井曰卞卅月午合匀凶氏元扎互＿＿引今井公及剪诮螂药互漆手升仇井匹戏五化云月午中丹歹仃匹手丐月引中﹝
+	EndWindow 14956,OK
+
+######### 仿件 ########
+block NowEvent 537 == 1 && StrCmpChat == 14910
+#\n\n﹛爵刭凛医及剪诮螂药井＿歹仄扎公匀切及幻丹卞反谢仁化及丹﹝抩蟆仁日中妏中凶仇午反丐月互＿
+	EndWindow 14957,OK
+
+#########  ########
+block NowEvent 537 == 1
+#\n\n﹛公丹井＿仇中勾互矛仿玉件瓜及匚井＿＿﹛仄井仄﹜公木分仃元扎仪瘀及澎互井曰卞反卅日氏及丹﹝
+	EndWindow 14958,OK
+
+######### 匚卅中 ########
+block EndEvent 531 == 1 && Item 18553 == 0
+	NowEvent 535 = 0
+	EndEvent 530 = 0
+	NowEvent 536 = 0
+	EndEvent 531 = 0
+	NowEvent 537 = 0
+	EndEvent 532 = 0
+	NowEvent 538 = 0
+	EndEvent 533 = 0
+	NowEvent 539 = 0
+	EndEvent 534 = 0
+	NowEvent 540 = 0
+	EndEvent 535 = 0
+	NowEvent 541 = 0
+	EndEvent 536 = 0
+	NowEvent 542 = 0
+	EndEvent 537 = 0
+	NowEvent 543 = 0
+	EndEvent 538 = 0
+	NowEvent 544 = 0
+	EndEvent 539 = 0
+#\n\n﹛筑褐卅扔件皿伙毛拑仁允午反卅卞仍午元扎″﹛职及樊卞俇戈午允月井＿
+	Window 14959,NEXT
+#\n\n﹛﹛﹋◢﹌邀荦卞褐厘卅整陴互?戏仄引仄凶﹝\n\n﹛﹛﹛﹛﹛﹛﹛﹛﹛邀荦撩ヘ匹允﹝\n\n﹛﹛﹛﹛愈赓井日邀荦仄卅云仄化仁分今中﹝
+	EndWindow 14944,OK
+
+######### 匚丐月 ########
+block EndEvent 531 == 1 && Item 18553 == 1
+#\n\n﹛扑件玉壬丐今氏卞?仃化仁木方﹝
+	EndWindow 14960,OK
+
+######### 市瓜奶 ########
+block NowEvent 536 == 1 && StrCmpChat == 14917
+#\n\n﹛丐丐﹜夫升中狪元扎﹝丐氏卅韶卞杅毛仄凶日唬今木凶云缯今氏手井歹中公丹元扎﹝手切欠氏﹜歹仄扎缯抯互?谛分卅氏化耨元切扎中卅中冗﹝
+	EndWindow 14961,OK
+
+######### 失术立 ########
+block NowEvent 536 == 1 && StrCmpChat == 14916
+#\n\n﹛诮今木凶元中今氏及缯抯元扎卅﹝垫杅尕抸午中丹狪元扎互﹜歹仄扎公及阂互?谛午反谗瓖合尹氏及元扎﹝
+	EndWindow 14962,OK
+
+######### 升仁 ########
+block NowEvent 536 == 1 && StrCmpChat == 14912
+#\n\n﹛丐丐﹜引匀凶仁中支卅仪瘀元扎卅﹝公丹﹜匚元扎方﹝升丹中丹匚分井今匀天曰歹井日氏﹝
+	Window 14963,NEXT
+#\n\n﹛公丹元扎″泔喀及?琼仄凶本仿伙市卞垫仃壬﹜窒井歹井月井手仄木氏卅″云厄仄﹜手仄方仃木壬俇引木化仁木氏井及丹﹝
+	Window 14964,YES,NO
+	Window_NO
+#\n\n﹛孔丹戈﹜仄井凶丐月引中﹝职及谛棉卞凶及戈午允月井﹝
+	EndWindow 14965,OK
+	Window_YES ItemSpace == 0
+#\n\n\n\n﹛﹋◢﹌邀荦卞优邰卅失奶泛丞毛欐公丹午仄化中引允﹝赭儅圴毛帮咥仄化仁分今中﹝
+	EndWindow 14930,OK
+	Window_YES ItemSpace != 0
+	GiveItem 18553
+	EndEvent 531 = 1
+#\n\n﹛云云﹜俇引木化仁木月井″\n﹛匹反仇及杽锁及匚毛儅匀化本仿伙市及泔管阁扑件玉壬丐今氏卞?仃化仁木﹝扑件玉壬丐今氏反恌泔手狮泔手襞月仇及崭及戏侬娄元扎﹝五匀午窒井?苇仄化仁木月元扎欠丹﹝
+	EndWindow 14966,OK
+
+#########  ########
+block NowEvent 536 == 1
+#\n\n﹛引匀凶仁″仇木分仃凤恔毛注匀化手匚及潘挀互冂烂匹五氏及元扎″冂溃卅岳坌互银歹木化云月仇午反棉啜中卅中氏元扎互＿＿
+	EndWindow 14967,OK
+
+#########  ########
+block
+#\n\n﹛侄仄中氏元扎﹜狪井仃氏匹仁木﹝
+	EndWindow 14968,OK

@@ -1,0 +1,19 @@
+###dodo_gm_1051481.txt
+###心美玩家胜利后,给予心美的团员金卡.
+###身上有日月组织团员金卡
+
+
+block Item 715248 >= 1 
+window "\n\n我输了!\n看来我是无法帮我爷爷复仇了.\n但是我不会放弃的\n总有一天我会让你们知道我的厉害.\n这是我失败的证据,拿去吧!",ok
+Window_OK ItemSpace < 1 
+endwindow "\n\n你的身上物品携带的太多了."
+
+Window_OK Item 715248 >= 1 && ItemSpace >= 1
+GiveLeak1Item 715254 
+Warp 0,32385,61,64  
+
+
+block 
+window "\n\n虽然你打败了我!\n但是你无法阻止我们的计划!\n我们依然会成功.",ok
+Window_OK 
+Warp 0,1000,233,78 

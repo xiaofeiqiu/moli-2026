@@ -1,0 +1,10 @@
+######传送到【矿洞】
+block item 50963 >= 1
+Window "\n\n附近的怪物受邪气的影响,厉害了很多,请多加小心.",ok
+Window_ok item 50963 >= 1
+LeaveGroup
+Warp 0,57127,25,23
+
+
+block
+Endwindow"\n\n\n快去找到采矿队伍吧,这里被魔族占领,太危险了."

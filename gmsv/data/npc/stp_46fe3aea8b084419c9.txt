@@ -1,0 +1,19 @@
+block item 1000129 >= 1 && item 1000128 >= 1
+endwindow "\n\n赶快回去报告给罗赛特先生吧."
+
+
+block item 1000129 >= 1 && item 1000127 >= 1
+endwindow "\n\n看上去你还有其他货物要送吧?路上请小心啊."
+
+
+block item 1000126 >= 1
+window "\n\n你好,请问你找有什么事情么?",next
+window "\n\n啊,我等罗赛特先生的这批货已经很久了,还好赶上了,真是谢天谢地,那么我接下来就要开始工作了.",next
+window "\n\n这些金币请替我带给罗赛特先生,并请告诉他:“他的线质量很好,我以后还会大量订的.”",ok
+window_ok item 1000126 >= 1
+killitem 1000126
+giveitem 1000129
+
+
+block
+endwindow "\n\n罗赛特的货怎么还没有送来呢?不知道发生了什么,真是让人着急啊."

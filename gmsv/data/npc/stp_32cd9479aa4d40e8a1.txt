@@ -1,0 +1,15 @@
+block item 87632 == 1
+endwindow "\n\n欲望之水对非咒术师来说是极度危险之物，请慎用！"
+
+block item 87631 == 1 && item 18375 >= 5 && item 18464 >= 2
+window "\n\n陌生人你果然守信诺，这瓶欲望之水你就拿去吧！",ok
+window_ok
+killitem 87631
+killitem 18375,5
+killitem 18464,2
+giveitem 87632
+
+block item 87631 == 1
+window "\n\n欲望之水？居然会有人知道这东西，欲望之水对我们咒术师能力来说就是催化剂。",next
+window "\n\n但是想跟我要欲望之水就得拿东西来换，我要的东西是流星山丘上的流星5个沙漠红星2个。",ok
+window_ok

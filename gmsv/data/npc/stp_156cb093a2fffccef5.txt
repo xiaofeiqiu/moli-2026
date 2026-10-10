@@ -1,0 +1,10 @@
+block ItemCreateTime 81019 >= 60 && ItemCreateTime 81019 < 120
+	Endwindow "\n\n@c符咒的冷却时间还剩最后一个小时了..."
+
+block ItemCreateTime 81019 < 120
+	Endwindow "\n\n@c为抵制魔族能量破坏，已开启自我冷却保护，冷却时间2小时，请耐心等待..."
+
+block ItemCreateTime 81019 >= 120
+	killitem 81019,1
+	giveitem 81018,1
+	Endwindow "\n\n@c传送功能已恢复，请使用。"

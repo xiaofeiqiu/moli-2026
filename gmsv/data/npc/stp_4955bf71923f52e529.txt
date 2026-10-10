@@ -1,0 +1,5 @@
+block
+	Window 7020536,OK
+	Window_OK
+	Warp 0,9201,5,10
+	

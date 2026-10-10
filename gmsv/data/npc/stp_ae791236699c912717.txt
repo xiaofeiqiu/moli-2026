@@ -1,0 +1,5 @@
+block item 200556 >= 1 && item 200560 >= 1
+window "\n\n没路了,瞧这块石头能推动不,要不要试试.",yes,no
+window_yes
+leavegroup
+Warp 0,27623,7,15

@@ -1,0 +1,5 @@
+block
+window "\n\n可恶的小偷,竟敢打研究成果的主意!",ok
+Window_ok
+Encount 2|0,32196,15,15||0|||||0|613191|||||||||
+endblock

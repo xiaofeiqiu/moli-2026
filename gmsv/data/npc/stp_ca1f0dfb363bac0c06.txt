@@ -1,0 +1,11 @@
+block item 87960 == 1
+endwindow 933682
+
+block item 87959 == 1 && StrCmpChat == 278808
+window 933683,ok
+window_ok
+killitem 87959
+giveitem 87960
+
+block
+endwindow 933684

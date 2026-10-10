@@ -1,0 +1,9 @@
+block Item 715179 >= 1
+Window "\n\n加蒂斯河深处?你跳下去就到深处了!笨!算啦,我送你一程吧!嘿!(捕鱼的少年一脚把你踢到了河里.)",ok
+Window_ok
+LeaveGroup
+PlaySE 207,320,240
+Warp 0,44905,25,30
+
+block
+Endwindow "\n\n由于法兰城的打渔禁令,我们只好到这里打渔!"

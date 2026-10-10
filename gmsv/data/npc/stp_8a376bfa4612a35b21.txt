@@ -1,0 +1,4 @@
+block
+window"\n\n@c ¡­¡­Ï×³öÄãµÄÉúÃü",OK
+window_OK
+Warp 0,12649,15,18

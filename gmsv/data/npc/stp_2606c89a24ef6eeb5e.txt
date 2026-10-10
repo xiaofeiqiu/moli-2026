@@ -1,0 +1,8 @@
+block
+window "\n\n虽然汝成功的将轮回之路的缝隙修复,但汝等的任务并未结束切记.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200759
+leavegroup
+Warp 0,33500,39,22

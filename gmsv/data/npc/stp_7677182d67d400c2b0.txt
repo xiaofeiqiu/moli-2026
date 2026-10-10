@@ -1,0 +1,14 @@
+block item 652104 >= 1
+Window "\n\n  小子!你哪死进来的?什么?门口那胖小妹把你放进来的??这个死Y头啊，不是我不给她钱花,你看我这自己穷的这样了.你看你是不是也该..",Yes,No
+	Window_YES
+		Window "\n\n  不错，你小子很厚道,来,让老头子我把你的宠物强化下",ok
+	Window_ok
+                killitem 652104,1
+		LeaveGroup
+	        Warp 0,146,3,26
+	Window_No
+		Window "\n\n  你小子，看我老头子把你打出去",ok
+	Window_ok
+Encount 3|0,146,3,26|||||0|||448001|||||||||
+block 
+	EndWindow "\n\n  小子!你哪死进来的?什么?门口那胖小妹把你放进来的??这个死Y头啊！真不顾家啊!"

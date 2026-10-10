@@ -1,0 +1,9 @@
+block
+window "\n\n沙漏中流动的沙砾好象有种不可思议的感觉...",next
+changepal 15,90
+window "\n\n意识渐渐开始模糊了起来...",ok
+window_ok Group != 1
+endwindow "\n\n我的法力只能传诵一个勇者过去,请解散队伍."
+window_ok Group == 1
+LeaveGroup
+Warp 0,1632,19,21

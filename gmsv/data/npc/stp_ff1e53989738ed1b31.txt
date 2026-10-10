@@ -1,0 +1,5 @@
+block item 50863 == 1
+EndWindow "\n\n哈哈哈哈哈哈哈哈~!"
+
+block
+EndWindow "\n\n哔,哈哈哈我是小古内心的一部分「愉快」,是为了在任何时候也不忘笑容的.哈哈哈."

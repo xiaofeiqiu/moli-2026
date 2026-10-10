@@ -1,0 +1,9 @@
+block item 86310 >= 1 && item 86311 >= 1
+window 85386,ok
+window_ok
+leavegroup
+killitem 86310
+killitem 86311
+giveitem 86312
+systemmessage 85345
+Warp 0,28175,4,16

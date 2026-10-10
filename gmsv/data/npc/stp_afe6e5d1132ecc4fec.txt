@@ -1,0 +1,6 @@
+Block
+Window "远古树根·黄金大树精：请通过我的试炼，胜利后领取调查信物。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:8de24809e471591f6a74

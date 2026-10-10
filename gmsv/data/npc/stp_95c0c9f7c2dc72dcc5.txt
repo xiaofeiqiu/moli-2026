@@ -1,0 +1,7 @@
+block item 1000049 >= 1
+window "\n\n这,这些怪物太多了,船体也受到了严重损害了,已经无法再航向北方大陆了,只能暂时先返航了.",ok
+window_ok item 1000049 >= 1
+killitem 1000049
+giveitem 1000050
+leavegroup
+Warp 0,400,649,314

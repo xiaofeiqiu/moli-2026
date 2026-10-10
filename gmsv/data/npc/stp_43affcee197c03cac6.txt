@@ -1,0 +1,11 @@
+block item 86516 < 1
+endwindow "\n\n..............."
+
+block item 86514 >= 1
+window "\n\n哦？找研究员？好吧，希望不是坏事吧！你拿这个去找研究员吧！",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86516
+Warp 0,15505,44,38
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"

@@ -1,0 +1,13 @@
+block item 730083 >= 1
+window "\n\n察觉到了来意,月见草温柔的伸出了叶片,月光的精华盛满了容器.",ok
+window_ok item 730083 >= 1
+killitem 730083
+giveitem 730084
+
+
+block
+endwindow "\n\n月光光~照地亮~绿芽芽~快快长~"
+
+
+
+

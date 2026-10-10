@@ -1,0 +1,10 @@
+######Ê¥µ®ÈÎÎñ½±ÀøNPC######
+block ItemCreateTime 670006 >= 117 && ItemCreateTime 670006 <= 123
+	KillItem 670006
+	GiveItem (670001%19,670002%19,670003%19,670004%19,670005%19,670007%5)
+	LeaveGroup
+	Warp 0,1000,233,78
+	EndWindow 670005
+
+block ItemCreateTime 670006 <= 116 || ItemCreateTime 670006 >= 124
+	EndWindow 670008,OK

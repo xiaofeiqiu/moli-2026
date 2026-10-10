@@ -1,0 +1,6 @@
+block Item 800094 == 1
+	Window"\n\n你们是什么人？！",next
+	Window"\n\n想知道女神的下落？！做梦！",ok
+		Window_ok
+		Setaction 5
+Encount 3|0,18086,7,9|800094|||||||800041|||||||||

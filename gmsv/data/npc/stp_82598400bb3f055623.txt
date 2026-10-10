@@ -1,0 +1,18 @@
+block PetSpace == 0
+	Window "\n\n你身上的宠物太多了,这样是无法将萌子带走的!",OK
+	Window_OK
+
+block Item 6521 >= 1 && Item 6529 >= 1 && PetSpace >= 1
+	Window "巫师吉娜\n\n我的力量已经消耗尽了,我以我最后的力量送你和萌子离开这里,请保重吧,萌子就交给你了...",NEXT
+	Window "\n\n史雷普尼尔大人啊,请让我来陪伴您吧...",NEXT
+	Window "萌子\n\n谢谢你,开启者,宾拉他一直在找我吗?谢谢...",OK
+	Window_OK Item 6521 >= 1 && Item 6529 >= 1
+	KillItem 6521
+	KillItem 6529
+	GivePet 83047
+	LeaveGroup
+	Warp 0,6733,8,5
+	
+block
+	Window "\n\n你好象还没有完全打破结界,还缺少某种介质...",OK
+	Window_OK

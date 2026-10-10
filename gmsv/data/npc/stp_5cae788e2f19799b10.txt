@@ -1,0 +1,6 @@
+block item 70004 >= 1 && globalFlag 356 == 1
+killitem 70004
+Encount 3|0,25021,10,16||0|||||0|6000184|
+
+block globalFlag 356 == 1
+Encount 3|0,25021,10,16||0|||||0|6000185|

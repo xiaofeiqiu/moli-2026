@@ -1,0 +1,11 @@
+block item 200794 >= 1 && item 200796 >= 1
+window "\n\n四精之道源远流长,心之所向既为天道所向.",ok
+window_ok item 200794 >= 1 && item 200796 >= 1
+killitem 200794
+killitem 200796
+EndEvent 548 = 1
+CheckTitle
+
+
+block
+endwindow "\n\n四精的呢喃既为天之声,寻求四精之道既可领会天之道,天道无常,请进入四精之路努力体会吧."

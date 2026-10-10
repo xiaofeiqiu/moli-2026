@@ -1,0 +1,5 @@
+block EndEvent 517 == 1
+Window "\n\n『上面刻满了奇怪的文字:有来无回!死神的陷阱在等待着你...你能否看清前方的“路”呢?呵呵呵呵呵...』",ok
+Window_ok
+LeaveGroup
+Warp 0,57481,13,36

@@ -1,0 +1,10 @@
+block item 87691 == 1
+endwindow "\n\n有了捆魔绳的话你对付那魔族长老必定事半功倍。"
+
+block item 87690 == 1
+window "\n\n我们能力有限快支持不住了，哇...这...缆绳，缆绳是不是用四属性洞窟里四种蜘蛛所吐得丝而制？",next
+window "\n\n那实在是太好了，只要我们向其注入神力就会变成捆魔绳，让那魔族长老使不出全力来！你愿意让我们把他制成捆魔绳吗？",yes,no
+window_no
+window_yes
+killitem 87690
+giveitem 87691

@@ -1,0 +1,10 @@
+block
+window "\n\n朋友想不想出去？我在进来之前可是个神偷，什么门我都能开。如果你想出去可以给我一点好处费。你原意给我钱走出这个牢房吗？",yes,no
+window_no
+endwindow "\n\n看来你想在这里陪我啦！"
+window_yes item 500125 == 1
+LeaveGroup
+killitem 500125
+Warp 0,14209,31,27
+window_yes
+endwindow "\n\n看来你是个穷鬼哩。上天安排你留在这里陪我呢！除非你能跟周围的人借到钱给我呢？"

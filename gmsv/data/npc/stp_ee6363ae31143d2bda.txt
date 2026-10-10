@@ -1,0 +1,14 @@
+	
+########巧克力换取戒指############
+block Item 940139 >= 1
+	KillItemall 940139
+	giveitem 940140
+	EndWindow 800128,OK
+#############接任务 ######################
+block
+	Window 800125,yes,no
+Window_NO
+Window_YES
+	addgold -10000
+	GiveItem 940138
+			

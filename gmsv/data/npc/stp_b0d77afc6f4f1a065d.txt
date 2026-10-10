@@ -1,0 +1,13 @@
+block Item 715177 >= 1
+EndWindow "\n\n箬竹,禾本科的竹类植物,它的叶子可以用来包粽子."
+
+block Item 715176 >= 1
+Window "\n\n小心翼翼地撕下一片箬竹叶子放到背包内.",ok
+Window_ok itemspace < 1
+EndWindow "\n\n你的背包满啦!",ok
+Window_ok
+giveitem 715177
+
+
+block
+EndWindow "\n\n箬竹,禾本科的竹类植物,它的叶子可以用来包粽子."

@@ -1,0 +1,14 @@
+block item 141194 >= 1
+window "\n\n是否确定要恢复全部生命力并传送至未知领域召唤失去的灵魂?",yes,no
+window_yes item 141194 >= 1
+killitem 141194
+setlp +999999
+Luac stp:legacy:6f344eeb8b499ceb1641
+Luac stp:legacy:bf41f781b7679d098293
+LeaveGroup
+Warp 0,57405,54,20
+
+
+
+
+

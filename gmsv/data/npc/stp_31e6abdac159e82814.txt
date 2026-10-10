@@ -1,0 +1,8 @@
+block job >=351 && job >=354
+Window "\n\n你也是来找我购买材料的?",yes,no
+Window_yes
+LeaveGroup
+Warp 0,44907,6,14
+
+block
+EndWindow "\n\n忙死了,连阿猫阿狗都来捣乱!"

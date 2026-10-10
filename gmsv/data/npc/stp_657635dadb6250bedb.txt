@@ -1,0 +1,24 @@
+block item 86630 == 1
+window "\n\n哎~~昔日强大的圣殿骑士就像人间蒸发了。当时到底发生了什么事情呢？",next
+window "\n\n算了，反正没有解不开的迷。这是为了答谢你成功完成任务的奖励，请收好~~",ok
+window_ok
+leavegroup
+killitem 86630
+giveitem 86631
+
+block item 86624 >= 1
+endwindow "\n\n如果你找到骑士团的踪迹，请务必联系我们！"
+
+block havetitle == 1048
+window "\n\n你是开启者吗？",next
+window "\n\n最近国王颁布勇者召集令，寻找各地勇者前去寻找圣殿骑士团的踪迹，你想报名么？",yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86624
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+
+block
+endwindow "\n\n30年前法兰国王为了寻找恶魔的财富而派了8位骑士前去寻找，命名为-圣殿骑士，此去就是N年~，骑士团音信全无！有人说：他们在寻找恶魔财富的途中被恶魔所杀！也有人说：他们找到了恶魔的财富，而把财富埋在了****！现今有士兵发现了骑士团的踪迹，国王特下勇者召集令，望有勇之士前去寻找骑士团！"

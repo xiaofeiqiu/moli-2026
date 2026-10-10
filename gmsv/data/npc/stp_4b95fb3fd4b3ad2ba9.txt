@@ -1,0 +1,6 @@
+Block
+Window "空灵耳饰的线索指向古墓。我允许你继续调查，务必小心古墓之巫。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:7b7b93bfad6a0daa4d4c

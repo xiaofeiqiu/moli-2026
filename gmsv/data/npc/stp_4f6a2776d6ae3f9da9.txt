@@ -1,0 +1,27 @@
+block item 87534 == 1
+window "\n\n时光机器终于完成了。要找到圣鸟可以通过时间机器回到过去找瑞娜就行了。",next
+window "\n\n时间机器就在地下实验室里，我已经调制完毕，你能立刻使用。",ok
+window_ok
+LeaveGroup
+Warp 0,29712,7,17
+
+block item 87533 == 1
+window "\n\n你找到零件啦！我现在可以告诉你，这零件就是我制造的时光机器所缺的零件。至于用途有空我会告诉你的。",next
+window "\n\n这个小小的回报请收下。",ok
+window_ok
+killitem 87533
+giveitem 87534
+
+block item 87532 == 1
+endwindow "\n\n其实我通过探测仪知道零件大致在哪，可惜那里面的生物太强了。"
+
+block item 87531 == 1
+window "\n\n哈哈，十几年了再次看到生面孔，看来上次的船把我们岛的方位报给法兰了，什么...什么...他们遇海难了？太....不过还好法兰终于知道我们的方位了。",next
+window "\n\n巧克力？可定是瑞娜的父亲让你来套我话，看看我在弄什么吗！暂时我还不能透露，既然你们相伴忙的话...能否帮我找样机器零件，它在十几年前的海啸中弄没了。",ok
+window_ok
+killitem 87531
+giveitem 87532
+endwindow "\n\n这个金属探测仪可以帮你找到零件的下落。"
+
+block
+endwindow "\n\n....................."

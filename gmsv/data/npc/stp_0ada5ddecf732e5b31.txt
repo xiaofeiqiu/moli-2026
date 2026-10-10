@@ -1,0 +1,6 @@
+Block
+Window "你通过了古墓试炼。这两件信物是星灵对勇士的谢礼。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:0cc484d69447fa30d381

@@ -1,0 +1,13 @@
+block item 800012 == 1 || item 800010 == 1 || item 800011 == 1
+	Window"\n\n您好，您需要传送去虚幻世界·掠食者平原开始您的旅程吗？",yes,no
+		window_no
+		Window_yes
+			Leavegroup
+			Warp 0,45138,599,168
+
+block item 800036 == 1 || item 800037 == 1 || item 800038 == 1
+	Window"\n\n您好，您需要传送去虚幻世界·掠食者平原开始您的旅程吗？",yes,no
+		window_no
+		Window_yes
+			Leavegroup
+			Warp 0,45138,599,168

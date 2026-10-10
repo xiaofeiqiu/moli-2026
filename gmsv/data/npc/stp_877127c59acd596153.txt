@@ -1,0 +1,16 @@
+#1万银票脚本
+block
+#对话框
+	window 7019344,ok,cancel
+#条件判断
+	window_ok gold>990000
+#系统提示消息
+		systemmessage 7019345
+#条件判断
+	window_ok item 661014!=0 && gold<=990000
+#减道具
+		killitem 661014,1
+#提取金币
+		addgold 10000
+#系统提示
+		systemmessage 800026

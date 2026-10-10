@@ -1,0 +1,11 @@
+block
+window "\n\n啊啊啊～!你太强了,我还是找一些弱小的人来好了…啊啊!没什么.按照约定我会把分身赠予你,但是能不能拿到就看你的运气了,再见.万圣节快乐～!",next
+window "\n\n『鬼魂?对你释放了遗忘魔法及传送魔法…』",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+EndEvent 549 = 1
+CheckTitle
+GiveItem (200803%10,200804%20,200805%35,200806%35)
+leavegroup
+Warp 0,1000,141,148

@@ -1,0 +1,16 @@
+block item 730086 >= 1
+endwindow "\n\n请去法兰城皇宫找管理官,只有经过他们的同意,我们才可以进行协助活动."
+
+
+block item 730085 >= 1
+window "\n\n寻求我们的帮助?你不知道我们都是些什么人吧?总之,想寻求我们的帮助,请去法兰城皇宫找管理官,只有经过他们的同意,我们才可以进行协助活动.",ok
+window_ok item 730085 >= 1
+killitem 730085
+giveitem 730086
+
+
+
+
+block
+endwindow "\n\n......"
+

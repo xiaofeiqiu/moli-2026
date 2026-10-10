@@ -1,0 +1,8 @@
+block item 730076 >= 1
+window "\n\n将复制祭品放到了台子的凹槽中,周围响起了不吉利的低语声,一阵炫目的闪光过后,台子上的复制祭祀器具消失了,只剩下一颗奇怪的宝石.",ok
+window_ok item 730076 >= 1
+killitem 730076
+giveitem 730077
+leavegroup
+Warp 0,57037,25,20
+

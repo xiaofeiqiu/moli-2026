@@ -1,0 +1,16 @@
+block Luac stp:legacy:1e33e88c3fac62b245a3 >= 1
+window "\n\n拥有仁爱之心的传教士啊!我将赐予你更强的能力.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800200 >= 1
+endwindow "\n\n你已经有一个了!"
+window_ok
+giveitem 800200
+
+block
+endwindow "\n\n如果你是一名传教士，或许我能助你一臂之力."
+
+
+
+
+

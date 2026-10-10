@@ -1,0 +1,21 @@
+block item 1000241 >= 1
+window "\n\n该死的威克,不就问他借了点钱没还么!!到现在还记得!真是个该死的家伙!",next
+window "\n\n等我喝完这杯就去教训他!",next
+window "\n\n你还站着做什么,把纸条给我,顺便拿1000G来,秘密都是很贵重的!!",yes,no
+window_no
+endwindow "\n\n你不是来问事情的啊......来!!陪我喝上一杯.当然是你请客!!!"
+window_yes gold < 1000
+endwindow "\n\n没钱也想知道秘密,去你大爷的"
+window_yes
+killitem 1000241
+addgold -1000
+giveitem 1000242
+endwindow "\n\n跟聪明人说话就是省事.拿着它,去大圣堂后面说[追寻过去]就可以了.\n老板!!!再来一杯!!!"
+
+
+block
+endwindow "\n\n这酒真好喝...你也来杯吧!"
+
+
+
+

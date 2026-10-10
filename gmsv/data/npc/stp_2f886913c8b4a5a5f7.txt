@@ -1,0 +1,168 @@
+
+
+block item 200106 >= 1
+endwindow "\n\n快去吧,我们的队员都处于水深火热之中."
+
+
+block item 200105 >= 1
+window "\n\n是这样啊, 可是风力那么强劲,我们也束手无策,该如何是好呢.",next
+window "\n\n对了,也许你可以去寻找索奇亚的猎人凯尔,他或许可以帮到我们.",ok
+window_ok
+killitem 200105
+giveitem 200106
+
+
+block EndEvent 540 == 1
+endwindow "\n\n赶紧去奇力村找回研究报告来给我..."
+
+
+block item 200103 >= 1
+window "\n\n历经了上一次的冒险,我们都增长了见识，证实了一些事物的存在.",next
+window "\n\n现在,准备好我们的下一次探索了吗?",yes,no
+window_yes
+window "\n\n那么,根据我们生物研究协会的会员们的探索,又有了新的发现,你现在火速赶往奇力村,拿回最新的研究报告来给我.",ok
+window_ok
+EndEvent 540 = 1
+
+
+block item 200102 >= 1
+endwindow "\n\n我们走吧..."
+
+
+block item 200100 >= 1 && item 200101 >= 1
+window "\n\n你是要让我帮你解读吗?",yes,no
+window_yes
+window "\n\n这是一本记载着神话故事中镇守四方之一的神兽朱雀的一部分历史记载.",next
+window "\n\n哥拉尔一直流传着一个神话..「贝尼恰斯火山-火之力量的来源」意思就是说由于神兽朱雀的存在贝尼恰斯火山才能形成的.",next
+window "\n\n当前,这可能只是一个传送,我也一直没有依据去证实这一点.",next
+window "\n\n如果你想要去探查的话,带上我一起去吧,也许可以给予你一些帮助.",ok
+window_ok
+killitem 200101
+giveitem 200102
+
+
+#庄趸弘伉白巧件忯凯弁巨旦玄“扑泛奴白央奶ヲ衔
+#厘妐侬﹜凝妐侬及嗉帎反卅中
+#'_'反厶心?壬仄
+
+###########﹛弘伉白巧件必永玄碧心﹛##############
+block endevent 85 == 1
+
+	EndWindow 206860,OK
+
+
+###########﹛弘伉白巧件必永玄及锉肣曰﹛##############
+block Item 18956 >= 1 || Item 18962 >= 1
+
+	Window 206857,NEXT
+	Window 206858,NEXT
+	Window 206859,OK
+	Window_OK
+	setaction 16
+
+###########﹛瑹酷喘仃碧心﹛##############
+block Item 18954 >= 1
+
+	EndWindow 206856,OK
+
+###########﹛杬卫迕瑹肣曰﹛##############
+block Item 18953 >= 1
+
+	EndWindow 206856,OK
+
+###########﹛宎衔仄壬井木詨﹛##############
+block nowevent 83 == 1
+
+	EndWindow 206855,OK
+
+###########﹛杬匚撩ヘ詨﹛##############
+block endevent 82 == 1
+
+	EndWindow 206854,OK
+
+###########﹛杬匚酷喘仃碧心﹛##############
+block Item 18952 >= 1
+
+	EndWindow 206853,OK
+
+###########﹛杬匚及授肣曰﹛##############
+block Item 18951 >= 1
+
+	EndWindow 206852,OK
+
+###########﹛弘伉白巧件霞奥詨﹛##############
+block nowevent 548 == 1 && Item 18950 == 0
+
+	Window 206952,OK
+	Window_OK
+	leavegroup
+	GiveItem 18950,3
+
+block nowevent 548 == 1
+
+	EndWindow 206851,OK
+
+###########﹛弘伉白巧件及惟漪肣曰﹛##############
+block Item 18949 >= 1
+
+	Window 206845,NEXT
+	Window 206846,NEXT
+	Window 206847,NEXT
+	Window 206848,NEXT
+	Window 206849,OK
+	Window_OK Itemspace >= 2
+	KillItem 18949
+	GiveItem 18950,3
+	GiveItem 18957
+	nowevent 548 = 1
+	Window_OK Itemspace <= 1
+	EndWindow 206850,OK
+
+###########﹛舅罹屯日木詨﹛##############
+block endevent 79 == 1
+
+	EndWindow 206844,OK
+
+###########﹛白件?苇詨﹛##############
+block nowevent 547 == 1
+
+	EndWindow 206843,OK
+
+###########﹛白件肣曰﹛##############
+block Item 18947 >= 1
+
+	setaction 13
+	Window 206842,OK
+	Window_OK
+	KillItem 18947
+	nowevent 547 = 1
+
+###########﹛沓洼?苇詨﹛##############
+block nowevent 546 == 1
+
+	EndWindow 206841,OK
+
+###########﹛沓洼肣曰﹛##############
+block Item 18946 >= 1
+
+	Window 206840,OK
+	Window_OK
+	KillItem 18946
+	nowevent 546 = 1 
+
+###########﹛娄五熬仃詨﹛##############
+block endevent 78 == 1
+
+	EndWindow 206839,OK
+
+###########﹛窒手卅仄﹋伊矛伙30动晓﹌﹛##############
+block level >= 30
+
+	EndWindow 206838,OK
+
+###########﹛窒手卅仄﹋伊矛伙29动票﹌﹛##############
+block level <= 29
+
+	EndWindow 206837,OK
+
+

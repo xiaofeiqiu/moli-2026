@@ -1,0 +1,9 @@
+block level >= 170
+	Window "\n\n　决意想要闯入冥界的愚蠢的人啊，让我的我的无上魔法把你带入地狱的深渊吧！",ok
+	window_ok
+        leavegroup
+        Warp 0,1020,162,146
+block level < 160
+        Window "\n\n　就凭你也想闯冥界？滚一边去！",ok
+	window_ok
+        

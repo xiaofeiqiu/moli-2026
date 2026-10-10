@@ -1,0 +1,3 @@
+block
+Window "\n\n站住!\n\n什么人?",next
+endWindow "\n\n晚上城里危险,请不要随意走动!"

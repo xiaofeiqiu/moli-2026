@@ -1,0 +1,7 @@
+block
+window "\n\n你要携带着伙伴一起去怀念吗?",yes,no
+window_no
+Endwindow "\n\n你再想想吧!"
+window_yes
+killitem 652301
+Warp 0,317,23,21

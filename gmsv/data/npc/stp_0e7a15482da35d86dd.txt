@@ -1,0 +1,43 @@
+################### 魔力情人 月下老人
+
+
+block Item 715227 >= 1
+endwindow "\n\n你.........\n你怎么又来了?"
+
+
+block Group >= 4
+window "\n\n(惊!)",next
+window "\n\n(月下老人往后退了一步!)",next
+endwindow "\n\n哇!哇!哇!\n吓坏我老人家了!\n你们这么多人一起围上来做什么?!\n一对一对来吧!"
+
+
+block Group == 3
+endwindow "\n\n嗯? 三...三个人?\n能不能一对一对上来呢?\n莫非.........\n你们三人的关系非比寻常?"
+
+
+block Group == 2 && Item 715225 >= 2
+endwindow "\n\n嗯.这年头真的是变了.........\n别怪我这老顽固\n我实在是很难接受‘男男’的观念啊!"
+
+
+block Group == 2 && Item 715226 >= 2
+endwindow "\n\n嗯.这年头真的是变了.........\n别怪我这老顽固\n我实在是很难接受‘女女’的观念啊!"
+
+
+block Group == 2 && Item 715225 == 1 && Item 715226 == 1
+window "\n\n呵......呵......呵......\n在星空下所有的爱情将会成真!\n祝福的红线将牵系着你们俩一生一世!",next
+KillItem 715225
+KillItem 715226
+GiveLeak1Item 715227,2
+Warp 0,30010,148,116
+
+
+block Group == 1
+endwindow "\n\n咦?\n你的另一半呢?\n她没跟你一起来吗?"
+
+
+block Item 715225 >= 1 || Item 715226 >= 1
+endwindow "\n\n咦?\n你的另一半呢?\n她怎么没跟你一起来吗?\n当你们组队时你必需拿着两张证书哦!"	
+
+
+block
+endwindow "\n\n咦?\n你的爱情证书呢?\n弄丢了可就太不小心啰!"

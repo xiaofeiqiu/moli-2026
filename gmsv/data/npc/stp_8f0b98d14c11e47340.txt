@@ -1,0 +1,13 @@
+#############■情人节活动,情侣由此去
+
+block Item 715228 == 1 && Item 715229 == 1 && Group == 2
+window "\n\n此路是我开,此树是我栽,二月十四日,情侣都爱来.我要问你们,是否要进来?",yes,no
+Window_YES Group == 2
+Warp 0,32647,10,39 
+
+
+block Group > 2
+endwindow "\n\n此路是我开,此树是我栽,你们人太多,门不为你开."
+
+block
+endwindow "\n\n此路是我开,此树是我栽,情侣由此去,其他人别来."

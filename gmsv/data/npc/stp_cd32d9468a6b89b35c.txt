@@ -1,0 +1,4 @@
+block item 50967 >= 1
+Window "\n\n嗷呜呜,该死的人类,滚出森林!",ok
+Window_ok item 50967 >= 1
+Encount 3|0,57125,148,46|||||0|||6000038|

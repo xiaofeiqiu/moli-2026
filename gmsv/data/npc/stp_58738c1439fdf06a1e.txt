@@ -1,0 +1,13 @@
+block item 800051 >= 10 && item 800052 == 0 && item 800050 == 1
+	Window"\n\n多谢你的帮助，有了这些防具，我们的抵御外敌力量又可以增强了。",next
+	Window"\n\n我想请你见见我们组长。",ok
+	Window_ok item 800051 >= 10 && item 800052 == 0
+		killitem 800051,10
+		killitem 800050
+		giveitem 800052
+
+block item 800043 == 1
+	Window"\n\n你是谁！！！海盗！！！必须死！！！",ok
+		Window_ok item 800043 == 1 && Group == 1
+		Setaction 5
+Encount 3|0,18044,24,20|800043|||||||800021|||||||||

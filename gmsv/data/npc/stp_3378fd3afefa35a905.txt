@@ -1,0 +1,9 @@
+block	petspace<1
+Endwindow"\n\n\n@c 您的宠物栏满了。"
+block	item 591090>=1
+window"\n\n\n@c您要开启这神秘的蛋么?",yes,no
+window_no
+window_yes	item 591090>=1	&&	petspace>=1
+killitem 591090,1
+Givepet 531061
+Endwindow"\n\n\n@c 打开宠物栏看看开到了什么!"

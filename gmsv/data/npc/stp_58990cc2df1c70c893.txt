@@ -1,0 +1,4 @@
+block item 86514 >= 1 && item 86515 >= 1
+leavegroup
+killitem 86515
+Warp 0,28289,15,23

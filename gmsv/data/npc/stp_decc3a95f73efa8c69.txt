@@ -1,0 +1,15 @@
+block item 730051 == 1
+Window "\n\n冒险者,你的表现充分证明了你的实力.",next
+Window "\n\n我们虽然表面是这里的守护者,但实质的身份就是你们要找的第四传承守护氏族的族人,看到你们来到了这里,我们就放心了.",next
+Window "\n\n你符合作为传承的继承者的要求.不过很不幸,我们也不知道最后的守护氏族后裔在哪里.这还需要你们继续寻找.",next
+Window "\n\n在你们来之前,我们已经感觉到这里有股邪恶的力量正在不断升腾着,看来现在它爆发了.",next
+Window "\n\n我们会继续在这里镇压即将爆发的邪恶!你们一定要找到最后的守护者!",ok
+Window_ok ItemSpace < 1
+EndWindow "\n\n抱歉,你的物品栏不够了."
+Window_ok item 730051 == 1
+killitem 730051
+giveitem 730056
+EndEvent 556 = 1
+CheckTitle
+LeaveGroup
+Warp 0,1530,15,6

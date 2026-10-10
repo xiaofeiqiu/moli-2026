@@ -1,0 +1,8 @@
+block item 400073 == 1
+	Window"\n\n你要下去调查吗？很危险，你要小心！",ok
+		Window_ok item 400073 == 1
+			Leavegroup
+			Warp 0,18062,24,9
+
+block 
+	endWindow"\n\n请不要靠的太近，这里很危险！"

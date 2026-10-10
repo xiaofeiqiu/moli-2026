@@ -1,0 +1,12 @@
+block
+window "\n\n要回去了么?",yes,no
+window_no
+endwindow "\n\n路上请小心."
+window_yes
+window "\n\n坐稳啦.",ok
+window_ok
+leavegroup
+Warp 0,3000,90,74
+
+
+

@@ -1,0 +1,33 @@
+block item 730094 >= 1 && itemcreatetime 730094 >= 3
+window "\n\n我来看看......",next
+window "\n\n啊,温度不好,失败了!",ok
+window_ok item 730094 >= 1
+killitem 730094
+giveitem 730095
+
+
+block item 730094 >= 1
+endwindow "\n\n注意时间."
+
+
+block item 730093 >= 1
+window "\n\n想见识一下炼金术?没问题呀.",next
+window "\n\n我是负责研究各种药剂的.要知道,不仅仅是材料,调制的手法,原料混合后在容器中制作时的温度和时间也是非常重要的.你就来见识一下炼金药剂制作的过程吧.",next
+window "\n\n第一、药剂制作的过程最多五分钟,从你得到空的药剂瓶时开始计时.",next
+window "\n\n第二、我这里调制容器中的温度会逐步升高到制作药剂最合适的温度,然后会以同样的速度降低到最开始的温度.",next
+window "\n\n第三、请在最合适的时间携带空的药剂瓶和我对话得到成品药剂.",next
+window "\n\n第四、成品药剂的品质和制作时的温度有关,最合适的温度将会给予你最好品质的药剂,所以请好好把握.",next
+window "\n\n好了,规则如上,那么,你要来见识一下药剂制作的过程么?请注意,每次参与制作都要消耗一张[参观票]哦.",yes,no
+window_no
+endwindow "\n\n什么时候有兴趣了欢迎再来."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+window "\n\n注意时间.",ok
+window_ok
+killitem 730093,1
+giveitem 730094
+
+
+block
+endwindow "\n\n欢迎来到炼金之馆."

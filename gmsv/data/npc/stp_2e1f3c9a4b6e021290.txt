@@ -1,0 +1,5 @@
+block
+window "\n\n你要进去找女骑士团团长费力希亚吗?",yes,no
+window_yes
+leavegroup
+Warp 0,28320,8,14

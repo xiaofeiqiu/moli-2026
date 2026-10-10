@@ -1,0 +1,9 @@
+block item 39706 >= 1 && item 39707 >= 1
+window "\n\n咦?我们好像见过哦?算啦.",next
+window "\n\n哎呀,你救了那个士兵了?我还特意把钥匙留给他,然后放魔物去追他玩呢~~",next
+window "\n\n既然你把钥匙带回来了,那就由你陪我玩捉迷藏吧~~记得要先找到眼石才能开门哦~~",ok
+window_ok item 39706 >= 1 && item 39707 >= 1
+killitem 39706
+killitem 39707
+leavegroup
+Warp 0,64090,12,6

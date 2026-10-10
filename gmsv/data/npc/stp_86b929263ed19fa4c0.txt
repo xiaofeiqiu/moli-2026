@@ -1,0 +1,14 @@
+block item 39713 >= 1
+window "\n\n哼哼,老家伙自己不来让你来了么.钱付的倒是很痛快.",next
+window "\n\n他家的小丫头已经放回去了,不过这事儿没完呐,哼哼.把这封信带给老家伙吧.",ok
+window_ok
+killitem 39713
+giveitem 39714
+
+
+
+
+
+
+
+

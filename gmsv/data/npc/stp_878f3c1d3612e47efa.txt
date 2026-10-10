@@ -1,0 +1,7 @@
+block	petspace>=1
+window"\n\n@c闭上眼睛，宠物蛋要孵化了...",ok
+window_ok
+killitem 591016,1
+Givepet	(98810%10,98811%10,98812%10,98813%10,420000%1,2031%10)
+block
+Endwindow"\n\n\n@c 宠物栏满了么?"

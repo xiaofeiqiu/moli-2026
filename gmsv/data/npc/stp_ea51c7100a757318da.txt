@@ -1,0 +1,31 @@
+#族长
+#粗糙石头
+
+##########  ##########
+block Item 900016 == 1 && Item 18989 != 0
+	Window 900046,NEXT
+        Window 900047,OK
+	Window_OK
+	Killitem 900016
+        Giveitem 900017
+	Warp 0,1000,242,85
+
+	
+	
+block Item 900027 == 1 && Item 18989 != 0 && Item 900028 == 0 && Item 900029 == 0
+	Window 900049,NEXT
+        Window 900050,OK
+	Window_OK
+	Giveitem 900028
+	Warp 0,1000,242,85
+
+block Item 900027 == 1 && Item 18989 != 0 && Item 900028 == 0 && Item 900029 == 1
+	Window 900049,NEXT
+        Window 900050,OK
+	Window_OK
+	Killitem 900027
+        Giveitem 900028
+	Warp 0,1000,242,85
+
+block
+        EndWindow 900051,OK

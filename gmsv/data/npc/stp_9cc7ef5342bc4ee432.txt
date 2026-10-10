@@ -1,0 +1,5 @@
+block item 141184 >= 1
+Window "\n\n(你将纸条按在了机器上,随后闭上了眼睛...)",ok
+Window_ok item 141184 >= 1
+LeaveGroup
+Warp 0,57181,19,21

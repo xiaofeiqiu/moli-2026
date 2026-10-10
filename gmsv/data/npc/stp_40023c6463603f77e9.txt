@@ -1,0 +1,43 @@
+block item 1000709 >= 1 && itemcreatetime 1000709 >= 480
+window "\n\n　你要兑换在线8个小时的奖励吗？",yes,no
+window_no
+window_yes item 1000709 >= 1 && itemcreatetime 1000709 >= 480
+killitem 1000709
+giveitem (1002079%10,1002080%15,100208%15,1002082%15,1002083%15,1002084%15,1002086%15),1
+
+block item 1000709 >= 1 && itemcreatetime 1000709 >= 300
+window "\n\n　你要兑换在线5个小时的奖励吗？",yes,no
+window_no
+window_yes item 1000709 >= 1 && itemcreatetime 1000709 >= 300
+killitem 1000709
+giveitem (1002085%15,1002076%30,1002077%30,1002078%25),1
+
+block item 1000709 >= 1 && itemcreatetime 1000709 >= 180
+window "\n\n　你要兑换在线3个小时的奖励吗？",yes,no
+window_no
+window_yes item 1000709 >= 1 && itemcreatetime 1000709 >= 180
+killitem 1000709
+giveitem (1002073,1002074,1002075),1
+
+block item 1000709 >= 1 && itemcreatetime 1000709 >= 120
+window "\n\n　你要兑换在线2个小时的奖励吗？",yes,no
+window_no
+window_yes item 1000709 >= 1 && itemcreatetime 1000709 >= 120
+killitem 1000709
+giveitem (1002070%40,100207%40,1002072%20),1
+
+block item 1000709 >= 1 && itemcreatetime 1000709 >= 60
+window "\n\n　你要兑换在线1个小时的奖励吗？",yes,no
+window_no
+window_yes item 1000709 >= 1 && itemcreatetime 1000709 >= 60
+killitem 1000709
+giveitem (1002040,1002044,1002045,1002046,1002047,1002048,1002049),1
+
+block item 1000709 >= 1 && itemcreatetime 1000709 < 60
+endwindow "\n\n　最少需要1个小时才能领取奖励哦"
+
+block
+window "\n\n　你要泡点吗？\n　只要在线1，2，3，5，8小时就能得到的奖励哦。",yes,no
+window_no
+window_yes item 1000709 == 0
+giveitem 1000709

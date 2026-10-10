@@ -1,0 +1,7 @@
+block item 88323 == 1
+window "\n\n根据奇异博士提供的线索，要进入研究室吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88323
+Warp 0,14173,24,45

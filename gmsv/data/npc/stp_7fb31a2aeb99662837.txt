@@ -1,0 +1,13 @@
+Block item 800180 >= 1
+Window "\n\n好像能把贤者之石放进去,要尝试一下吗?",yes,no
+window_yes item 800180 >= 1
+Window "\n\n贤者之石和凹槽的大小有很大的差别...突然,贤者之石改变了形态,成为了液态融入于凹槽中.",ok
+window_ok
+killitem 800180
+giveitem 800181,1
+
+
+
+
+Block
+EndWindow "\n\n回去吧."

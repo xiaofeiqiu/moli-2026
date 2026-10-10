@@ -1,0 +1,17 @@
+block item 730073 >= 1 && item 730074 >= 1
+window "\n\n恩?你就是护送重要物品给探险队的冒险家么?商船上的位置有限,请多加小心!那么,你是否准备好要出发了么?",yes,no
+window_no
+endwindow "\n\n快点决定吧!"
+window_yes
+window "\n\n出发啦,希望一路顺风.",ok
+window_ok item 730073 >= 1 && item 730074 >= 1
+killitem 730073
+giveitem 730075
+leavegroup
+Warp 0,57034,43,25
+
+block
+endwindow "\n\n要赶快装船了,我们必须在天气变坏前起航!"
+
+
+

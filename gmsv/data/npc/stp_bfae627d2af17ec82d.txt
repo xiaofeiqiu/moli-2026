@@ -1,0 +1,4 @@
+block item 1000826== 0 && level >= 180
+	Window"\n\n看到一本古老的书，拿了起来。",ok
+		Window_ok
+			giveitem 1000826,1

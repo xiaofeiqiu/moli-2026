@@ -1,0 +1,9 @@
+block item 730106 >= 1
+window "\n\n宝石旋转着，再次打开了时空裂隙，力量将你送回了原来的时空中。",ok
+window_ok item 730106 >= 1
+killitem 730106
+giveitem 730107
+leavegroup
+Warp 0,57047,113,131
+
+

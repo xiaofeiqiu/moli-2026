@@ -1,0 +1,11 @@
+block item 652104 >= 1
+Window "\n\n  师傅不让外人进我们家！不过他都不给我零用钱，我好穷哦！你要是给我点钱花，我就让你进去学东西哦！",Yes,No
+	Window_YES
+		killitem 652104,1
+		LeaveGroup
+	        Warp 0,141,13,2
+	Window_No
+		Window "\n\n  小气鬼，真不厚道",ok
+	
+block 
+	EndWindow "\n\n  师傅他太小气了，别的女孩子都有钱买好东西的！"

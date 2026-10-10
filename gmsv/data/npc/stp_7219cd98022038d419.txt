@@ -1,0 +1,10 @@
+block item 86530 >= 1
+endwindow "\n\n快去给艾诺雅解开锁链吧！"
+
+block
+window "\n\n哈哈哈，虽然对不起光明精灵的族长，不过我们黑精灵也是在为求生而努力罢了，谢谢你们，艾诺雅还有理智的冒险家们。新一代的黄金树，我们会好好照顾的！",ok
+window_ok ItemSpace >= 1
+leavegroup
+giveitem 86530
+window_ok ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"

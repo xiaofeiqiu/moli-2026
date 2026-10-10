@@ -1,0 +1,13 @@
+block nowevent 567 == 0 && HaveTitle == 12922
+	Window"\n\n这里怪物肆虐，你能帮我减少一下它们的数量吗？",next
+	Window"\n\n怪物很多，你要小心一些！",ok
+		Window_ok
+		nowevent 567 = 1
+
+block nowevent 567 == 1
+	Window"\n\n你必须穿过魔龙沼泽，找到屠魔者·利剑！",ok
+		Window_ok
+
+block
+	Window"\n\n你好冒险者，外面很危险不要轻易出村！",ok
+		Window_ok

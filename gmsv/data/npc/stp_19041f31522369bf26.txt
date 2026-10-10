@@ -1,0 +1,5 @@
+block item 400065 == 1
+	Window"\n\n发现雪堆下有条密道。",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18009,246,226

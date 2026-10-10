@@ -1,0 +1,8 @@
+block item 50866 >= 1
+EndWindow "\n\n集齐我们4名队员的胜利证明就可以回去拿给队长看了."
+
+block
+Window "\n\n真是后生可畏啊...",ok
+Window_ok
+LeaveGroup
+Encount 2|||0|||||0|6000025|||||||||

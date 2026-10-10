@@ -1,0 +1,23 @@
+block
+	LocalCount0 = random 4,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【左迪洛斯】吗？",ok
+			Window_ok
+Luac stp:legacy:d7276037c475ff834d03
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【巴朵兰恩】吗？",ok
+			Window_ok
+Luac stp:legacy:852a99ae95c92dcd9b7d
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【帖拉所伊朵】吗？",ok
+			Window_ok
+Luac stp:legacy:834ebb8a9787b3c3180d
+				endif
+	if localcount0==4
+		window "\n\n@c要将随从的形象永久变为【斑尼迪克】吗？",ok
+			Window_ok
+Luac stp:legacy:1a0ad08e9e18c0297ea5
+				endif
+

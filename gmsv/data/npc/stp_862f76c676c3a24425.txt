@@ -1,0 +1,8 @@
+	
+#战斗系
+block
+window "\n\n你们果然来了......",ok
+window_ok
+Encount 3||730002|-1|||0||5|83004|||||||||
+block
+Endwindow "\n\n···········"

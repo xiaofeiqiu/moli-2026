@@ -1,0 +1,10 @@
+block Item 60454 == 1
+EndWindow "\n\n不能再摘了..."
+
+
+block
+Window "\n\n要摘取树枝吗?",yes,no
+Window_no
+Window_yes ItemSpace >= 1
+GiveItem 60454,1
+EndWindow"\n\n掉落了一些树叶"

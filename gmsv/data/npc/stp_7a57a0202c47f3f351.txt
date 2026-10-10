@@ -1,0 +1,7 @@
+block	Item 940070 == 1 
+	window "\n\n@n 5555555，这个玩具是我在外面玩耍的时候捡到的，拿着玩具去见我的阿蒙哥哥？",yes,no
+	window_yes
+	KillItem 940070,1
+	GiveItem 940069,1
+	window_no
+	Endwindow"\n\n	5555555你连这都不帮我，哼

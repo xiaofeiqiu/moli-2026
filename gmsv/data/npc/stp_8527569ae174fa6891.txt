@@ -1,0 +1,17 @@
+block item 800175 >= 1 && item 800187 >= 1 && item 800194 >= 1 && item 800199 >= 1
+Window "\n\n你选择了与他对峙,但你就确信四大元素所说肯定是正确的?在你面对他之前,仔细考虑一下吧.",ok
+window_ok item 800175 >= 1 && item 800187 >= 1 && item 800194 >= 1 && item 800199 >= 1
+leaveGroup
+Warp 0,44969,32,54
+
+
+block item 800170 == 1
+Window "\n\n往前走就是通往邪灵鸟人所在地的小路了,你已经做好准备了吗?请务必小心!",ok
+window_ok item 800170 == 1
+leaveGroup
+Warp 0,44880,32,54
+
+
+
+block
+EndWindow "\n\n你没有与我说话的资格,退下吧!",ok

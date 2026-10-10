@@ -1,0 +1,9 @@
+block item 500121 == 1 && item 500123 == 1
+window "\n\n天色已暗，雪又这么大，还好有你陪我在这里，不然......",ok
+window_ok
+LeaveGroup
+killitem 500123
+Warp 0,14182,9,8
+
+block
+endwindow "\n\n外面雪好大啊，看来今晚只能在这将就一晚了！"

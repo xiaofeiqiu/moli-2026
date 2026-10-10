@@ -1,0 +1,19 @@
+block item 86252 >= 1
+window "\n\n要尝试打开这道门吗?",yes,no
+window_no
+window_yes item 86252 >= 1
+leavegroup
+Warp 0,28095,17,25
+
+block
+window "\n\n靠近门后.听到门的另外一边有一个男人和一个女人在对话.",next
+window "\n\n女人:“请认真一点!这个计划对我们很重要!”",next
+window "\n\n男人:“你放心,新源体已经准备好了,很快就能与容器结合.”",next
+window "\n\n女人:“汉克最近盯得很紧,在没完成之前,不能让其他人知道.”",next
+window "\n\n男人:“让他查吧!我的杰作需要观众!哇哈哈哈哈哈!”",next
+window "\n\n女人:“记住,不可以让我们失望!时间有限,我先走了!”",next
+window "\n\n听到石板的关闭声后,门的外另一边安静了下来.要尝试打开这道门吗?",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,28089,17,25

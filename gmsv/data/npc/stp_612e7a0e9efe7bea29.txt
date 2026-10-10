@@ -1,0 +1,30 @@
+
+###小章收取1000元与5张树精卡,给予暗号纸条、蓝魔宝箱套装与告知第二次秘密集会地点在竞技场后台.
+
+block Group > 1 
+endwindow "\n\n请解散队伍!"
+
+
+block Item 715246 >= 1 || Item 715247 >= 1
+endwindow "\n\n真是辛苦你了.\n希望你继续为我们日月组织努力."
+
+
+block Item 715244 >= 1
+window "\n\n你来啦!\n跟你收取情报所需费用1000元\n以及你应该带来的树精卡片3张.",ok
+Window_OK Gold < 1000
+endwindow "\n\n你身上带的钱不够!\n请把钱带足够后再来."
+Window_OK Item 14875 < 5
+endwindow "\n\n你的东西没有准备齐全!\n这点小事都做不好.\n在给你一次机会,快去收集吧!"
+Window_OK Gold >=1000 && Item 14875 >= 5
+window "\n\n下次集合地点在“竞技场的后台”\n这张是记载暗号的纸条.\n记得穿上这套衣服啊!",ok
+Window_OK Gold >=1000 && Item 14875 >= 5
+AddGold -1000
+KillItem 14875,5 
+GiveLeak1Item 715246
+GiveLeak1Item 715247
+
+
+block
+endwindow "\n\n你找我有什么事情?\n我在等人,请你不要打扰我."
+
+ 

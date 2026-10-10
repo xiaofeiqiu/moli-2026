@@ -1,0 +1,15 @@
+block checkskillslot > 13
+    endwindow "\n\n　你已经使用过该级别的技能栏..."ok
+
+block checkskillslot == 13
+	Window 800207,Yes,No
+		Window_Yes Item 900007 > 1
+			Window "\n\n	本物品一次只能携带一个。",ok	
+		Window_Yes Item 900007 == 1
+			KillItem 900007,1
+			AddSkillSlot
+			SystemMessage 800208
+	Window_No
+	
+block
+    endwindow "\n\n　你没有使用前面所需要的技能栏..."ok

@@ -1,0 +1,75 @@
+#######################领取奖励################
+###########检测宠物栏##
+
+block petspace == 0
+endwindow"宠物栏起码留一个位置放置奖励"
+
+############获取奖励##
+block group == 1 && item 366514 == 1 && item 366515 == 1 && item 366516 == 1 && item 366517 == 1 && item 366518 == 1
+window"\n\n\n@c 恭喜您获得五张资格书,您的奖励是 狮王傲天一只 以及 称号首饰一个",ok
+window_ok item 366514 == 1 && item 366515 == 1 && item 366516 == 1 && item 366517 == 1 && item 366518 == 1
+killitem 366514
+killitem 366515
+killitem 366516
+killitem 366517
+killitem 366518
+givepet 880101
+giveitem 18673,1
+leavegroup
+Warp 0,1000,229,64
+
+
+block group == 1 && item 366514 == 1
+window"\n\n\n@c 恭喜您获得青之资格书,您的奖励是黑暗大公鸡 请收好",ok
+window_ok item 366514 == 1
+killitem 366514
+givepet 400309
+leavegroup
+Warp 0,1000,229,64
+
+block group == 1 && item 366515 == 1
+window"\n\n\n@c 恭喜您获得赤之资格书,您的奖励是黑暗蝙蝠 请收好",ok
+window_ok item 366515 == 1
+killitem 366515
+givepet 314800
+leavegroup
+Warp 0,1000,229,64
+
+block group == 1 && item 366516 == 1
+window"\n\n\n@c 恭喜您获得橘之资格书,您的奖励是冥卫 请收好",ok
+window_ok item 366516 == 1
+killitem 366516
+givepet 600314
+leavegroup
+Warp 0,1000,229,64
+
+block group == 1 && item 366517 == 1
+window"\n\n\n@c 恭喜您获得蓝之资格书,您的奖励是凯头盔 请收好",ok
+window_ok item 366517 == 1
+killitem 366517
+giveitem 18673
+leavegroup
+Warp 0,1000,229,64
+
+block group == 1 && item 366518 == 1
+window"\n\n\n@c 恭喜您获得绿之资格书,您的奖励是凯头盔 请收好",ok
+window_ok item 366518 == 1
+killitem 366518
+giveitem (660103%1,660106%1,660109%1,660112%1,660115%1,660118%1,660121%1,660124%1)
+leavegroup
+Warp 0,1000,229,64
+
+
+########################活动开启######################
+#block group == 1
+window"\n\n\n@c  想要进去参加活动并且挑战迷宫之塔吗?",yes,no
+window_yes
+leavegroup
+Warp 0,21550,1,5
+
+block
+Warp 0,1000,229,64
+
+#block
+endwindow"\n\n\n@c  活动未开启!!!请注意论坛:\n@c bbs.darkml.cn"
+

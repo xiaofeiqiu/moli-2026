@@ -1,0 +1,11 @@
+block item 86448 >= 1 && item 86457 >= 1 && item 86454 >=1 && item 86458 < 1 && item 86449 >= 1
+window 85688,ok
+window_ok
+leavegroup
+killitem 86457
+killitem 86454
+giveitem 86458
+
+
+block
+endwindow 85681

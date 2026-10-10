@@ -1,0 +1,5 @@
+block
+	window"\n\n使用后将永久性提升人物抗石能力1点！",ok
+	window_ok
+Luac stp:legacy:e17110f50b0a4ccc8071
+		killitem 60273,1

@@ -1,0 +1,28 @@
+block item 652598 >= 1
+endwindow "\n\n神族的力量太强大了,不知道后面我们还要面对什么样的强大挑战?"
+
+
+block item 652597 >= 1
+window "\n\n神族的力量太强大了,不知道后面我们还要面对什么样的强大挑战呢?感谢你,冒险者,请收下这个吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 652597 >= 1
+giveitem 652598
+
+
+block item 652595 >= 1
+endwindow "\n\n请去广场上找到奥得,他会负责把你送到旧日之塔的."
+
+
+block
+window "\n\n战斗的号角已经吹响了,神域中出现三座直耸入云的高塔.联军的部队还在集结之中,目前人手不足呀,冒险者呀,不知道你愿不愿意帮我们去塔中寻找到此次事件的源头呢?",yes,no
+window_no
+endwindow "\n\n唉,果然敢于向神族挑战的人还是不多呀."
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 652595
+endwindow "\n\n十分感谢,请去广场上找到奥得,他会负责把你送到旧日之塔的."
+
+
+

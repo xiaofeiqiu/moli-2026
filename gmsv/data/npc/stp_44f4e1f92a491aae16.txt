@@ -1,0 +1,5 @@
+block 
+	Window"\n\nÒªÈ¥¾ø±Ú´åÂð£¿",ok
+		Window_ok
+			Leavegroup
+			Warp 0,18023,16,7

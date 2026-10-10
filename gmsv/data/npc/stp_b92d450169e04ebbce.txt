@@ -1,0 +1,10 @@
+block item 86425 >= 1 && item 86426 >= 1 && item 86427 < 1
+window "\n\n这个是在北部发现的东西吗？嗯，交给我吧，我给你写一份完整的记录。",ok
+window_ok
+leavegroup
+killitemall 86425
+killitemall 86426
+giveitem 86427
+
+block
+endwindow "\n\n..............."

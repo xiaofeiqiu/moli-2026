@@ -1,0 +1,34 @@
+
+
+block item 200217 >= 1
+endwindow "\n\n快去吧,我的英雄."
+
+
+
+block item 200216 >= 1
+window "\n\n没想到又是黑巫师那帮人在暗地里搞鬼,难怪他们很紧张这批物资.",next
+window "\n\n还好我们没有做什么查处没收之类的行动,按流程那些物资在港口物资寄存店放着,店长已经换成我们的人了,正等着提货人上钩呢.",next
+window "\n\n你赶快去店里找店长,让他给你个运货员的差事,看能不能混进提货人队伍里.",ok
+window_ok
+killitem 200216
+giveitem 200217
+
+
+block item 200215 >= 1
+endwindow "\n\n总觉得这玩意长的那么恐怖,绝不是好东西."
+
+
+
+block item 200214 >= 1 && ItemCreateTime 200214 >= 60
+window "\n\n听国王陛下说过,您就是解决拉迪斯洛坑道黑巫术事件的英雄,我替那些受害的矿工及家属感谢你.",next
+window "\n\n最近听巡逻队报告说,晚上在城内外均有装扮可疑的人在徘徊,估计跟我们前段时间在港口查到的神秘货物有关.",next
+window "\n\n不过我们没有全部没收该货物,只是取了几件货物中的样品,以供参详其用途,可惜至今毫无结果,你是外国来的,见多识广或许你能知道它的来历及用途.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200215
+
+
+
+block
+endwindow "\n\n你是什么人,竟敢闯入皇宫."

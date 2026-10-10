@@ -1,0 +1,16 @@
+block item 60405==1
+
+Endwindow "你给我记住!!!我们一定会回来报仇的......",ok
+
+block item 60402==0
+
+Endwindow "别烦我!!!",ok
+
+block item 60402==1
+
+window "你身上好像有一些宝物,那就留下性命和宝物吧!!!",yes
+        window_yes
+        KillItem 60402
+Encount 3|||0|||||0|9993|
+
+

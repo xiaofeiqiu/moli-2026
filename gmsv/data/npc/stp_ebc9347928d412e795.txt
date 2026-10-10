@@ -1,0 +1,39 @@
+block item 22197==0 && itemspace==0
+
+	window "\n身上没足够空间了!"
+
+block item 22197==0 && itemspace>=1
+
+	window "\n这里是环岛路线一,有兴趣么,奖励丰厚哦!\n规则很简单\n拿上环岛手册去5个地方找到我,领取另外5份环岛手册,然后到我这交任务\n提示:\n无头将军,白色之巅,水果蝙蝠,迷路之穴,深绿的山路",yes,no
+
+	window_yes 
+
+		giveitem 22197
+
+	window_no "那算了!"
+
+block item 22197==1 && item 22198==1 && item 22199==1 && item 22200==1 && item 22201==1 && item 22202==1
+
+	window "\n\n那么快就收集齐了哇,需要现在就领取奖励么?",yes,no
+
+	window_yes 
+
+		killitem 22197,1
+
+		killitem 22198,1
+
+		killitem 22199,1
+
+		killitem 22200,1
+
+		killitem 22201,1
+
+		killitem 22202,1
+
+		giveitem 18310,1
+
+		giveitem 18310,1
+
+		giveitem (1%10,2%10,3%10,4%10,5%10,6%10,7%10,8%10,9%10,10%10)
+
+	window_no "那算了!"		

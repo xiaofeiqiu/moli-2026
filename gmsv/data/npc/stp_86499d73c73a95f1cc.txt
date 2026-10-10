@@ -1,0 +1,13 @@
+block NowEvent 551 == 1
+endwindow "\n\n你已经为南希丈夫的墓供一张抚慰符了."
+
+
+block item 730112 >= 1
+window "\n\n要为南希丈夫的墓供一张抚慰符吗?",yes,no
+window_no
+window_yes
+NowEvent 551 = 1
+
+
+block
+EndWindow 15123,OK

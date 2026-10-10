@@ -1,0 +1,25 @@
+block item 1000562 >= 1
+endwindow 7019592 
+
+block  item 1000559 >= 1 && item 1000561 >= 1
+window 7019592,next
+window 7019593,next
+window 7019594,ok
+window _ok
+LeaveGroup
+killitem 1000559
+
+block item 1000559 < 1 && item 1000561 < 1 && item 1000563 < 1 && item 1000564 < 1
+window 7019595,next
+window 7019596,next
+window 7019597,next
+window 7019598,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000559
+endwindow 7019599
+window_ok ItemSpace < 1
+endwindow 7019600
+
+block
+endwindow 7019601

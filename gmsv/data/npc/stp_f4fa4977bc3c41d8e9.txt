@@ -1,0 +1,41 @@
+block Luac stp:legacy:d131b16c2e33230dffba >= 1 || Luac stp:legacy:a38a05bc09b611044ecc >= 1 || petlevel 832032 >= 1
+window "\n\n还不满足吗?难道你想把它熔炼成武器?",yes,no
+window_yes itemspace == 0 && gold < 10000
+endwindow "\n\n要么你的背包满啦,要么就是不够钱"
+window_yes Luac stp:legacy:1622a2ca30ce67922c4b >= 1
+addgold -10000
+killpetl 401
+giveitem 50894,1
+endwindow "\n\n真是无法满足的人类"
+window_yes Luac stp:legacy:d2fb21a95fa051159ff2 >= 1
+addgold -10000
+killpetl 501
+giveitem 50895,1
+endwindow "\n\n真是无法满足的人类"
+window_yes petlevel 832032 >= 1
+addgold -10000
+killpetl 832032
+giveitem 50896,1
+endwindow "\n\n真是无法满足的人类"
+
+block item 50891 >= 1 || item 50892 >= 1 || item 50893 >= 1
+endwindow "\n\n你身上的东西,看起来很眼熟,不过好像缺少了什么"
+
+block item 50891 >= 1 && item 50892 >= 1 && item 50893 >= 1 && Luac stp:legacy:7ceb0b05255555037e26 == 1
+window "\n\n想不到你能找来这些东西\n\n我一直在寻找,却未能得到.",yes,no
+window_yes gold < 200000
+endwindow "\n\n你的钱好像不够哦,我使用忍术是要收费的"
+window_yes
+window "\n\n交给我吧.我利用上古忍术来幻化他们,但是不能保证一定成功",next
+killpetl 21
+killitem 50891
+killitem 50892
+killitem 50893
+window "\n\n...(使用忍术中)",next
+window "\n\n......(好像有反应了)",next
+window "\n\n.........(应该成功了)",next
+givepet (211%20,301%30,401%50)
+endwindow "\n\n真费劲,我的身体吃不消了,今天消耗查克拉太多了"
+
+block
+endwindow "\n\n我对一般的事物和人类是无兴趣的.\n\n比如你."

@@ -1,0 +1,33 @@
+block item 880014 == 1
+endwindow "\n\n好了,拿着它,去找我的神官朋友给这戒指加强封印吧!"
+
+block item 880012 == 1
+endwindow "\n\n快去找我的神官朋友吧"
+
+block item 880011 == 1
+window "\n\n恩?你找我什么事?",next
+window "\n\n啊,是我的老朋友介绍你来的呀,我看看是什么事.",next
+window "\n\n...(阅读中)",next
+window "\n\n......(阅读中)",next
+window "\n\n.........(阅读中)",next
+window "\n\n原来如此,我明白了,拿着这本书去雷克塔尔镇找一个研究古文的人,我的朋友,他会告诉你需要准备的一些重要材料!我先去做下其他准备,早点收集好呀!",ok
+window_ok
+killitem 880011
+giveitem 880012
+
+block item 16404 == 1 && item 16405 == 1 && item 16406 == 1 && item 880013 == 1
+window "\n\n材料收集好了?我看看信里写了什么...",next
+window "\n\n啊...原来是制作的方法...我明白了,我来为你制作吧",ok
+window_ok item 16404 == 1 && item 16405 == 1 && item 16406 == 1 && item 880013 == 1
+killitem 16404
+killitem 16405
+killitem 16406
+killitem 880013
+window "\n\n稍等片刻,我现在就开始制作能强化封印的秘药...",ok
+window_ok
+giveitem 880014
+endwindow "\n\n好了,拿着它,去找我的神官朋友给这戒指加强封印吧!"
+
+block
+endwindow "\n\n你是谁?我们好像在哪见过?"
+

@@ -1,0 +1,13 @@
+block item 200581 >= 10
+window "\n\n迪米斯晶石碎片是我的食粮,把你的碎片都送给我吃吧,或许你会得到你心目中的宝物.",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+killitem 200581,10
+giveitem 200582
+leavegroup
+Warp 0,27631,104,63
+
+
+block item 200581 >= 1
+endwindow "\n\n哇唔～我要吃迪米斯晶石碎片."

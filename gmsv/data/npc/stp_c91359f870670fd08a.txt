@@ -1,0 +1,34 @@
+block item 61058 >= 1
+window 900398,next
+window 900399,ok
+window_ok ItemSpace >= 5
+LeaveGroup
+killitem 61058
+giveitem 14493,5
+globalFlag 314 = 1
+window_ok ItemSpace < 5
+endwindow "900317"
+
+block StrCmpChat == 900171 && item 61062 >= 1
+window 900400,next
+window 900401,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 61062
+giveitem 14492,1
+globalFlag 314 = 1
+window_ok ItemSpace < 1
+endwindow 900317
+
+block globalFlag 314 == 0 && item 61059 < 1
+window 900402,next
+window 900403,next
+window 900404,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61059
+window_ok ItemSpace < 1
+endwindow 900317
+
+block
+endwindow 900402

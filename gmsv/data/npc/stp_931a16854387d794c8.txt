@@ -1,0 +1,8 @@
+block
+window "\n\n阿尔杰斯大人的计划不能被你们干扰,虽然不甘心,但是还是借助一下那个人的力量吧.",ok
+window_ok
+leavegroup
+Warp 0,44710,6,8
+
+
+

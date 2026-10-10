@@ -1,0 +1,279 @@
+block	Luac stp:legacy:231d6bb33cab1f96a706 >= 120 && item 60566 >= 1 && item 60556 >= 8
+	window "\n\n这是？你完成了8个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60566,1
+			killitem 60556,8
+			giveitem 60377,5
+			addgold 11000
+block	Luac stp:legacy:e17df0068cba8c29d90a >= 120 && item 60567 >= 1 && item 60557 >= 8
+	window "\n\n这是？你完成了8个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60567,1
+			killitem 60557,8
+			giveitem 60377,5
+			addgold 11000
+block	Luac stp:legacy:88dcdd8bff1513ef5bf6 >= 120 && item 60568 >= 1 && item 60558 >= 5
+	window "\n\n这是？你完成了5个龙骨（中）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60568,1
+			killitem 60558,5
+			giveitem 60377,5
+			addgold 14000
+block	Luac stp:legacy:1bcaa98af2da80a9c898 >= 120 && item 60569 >= 1 && item 60559 >= 1
+	window "\n\n这是？你完成了1个龙骨（大）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60569,1
+			killitem 60559,1
+			giveitem 60377,5
+			addgold 20000
+block	Luac stp:legacy:4ba3dc3030954c7f8dbb >= 90 && item 60566 >= 1 && item 60556 >= 8
+	window "\n\n这是？你完成了8个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60566,1
+			killitem 60556,8
+			addgold 5000
+Luac stp:legacy:feffe368330adc654d6f
+block	Luac stp:legacy:24cb71ac7fe337399a92 >= 90 && item 60567 >= 1 && item 60557 >= 8
+	window "\n\n这是？你完成了8个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60567,1
+			killitem 60557,8
+			giveitem 60377,4
+			addgold 5000
+Luac stp:legacy:6fdb8f708182edb7bfb0
+block	Luac stp:legacy:69ef7b0a712cf8135660 >= 90 && item 60568 >= 1 && item 60558 >= 5
+	window "\n\n这是？你完成了5个龙骨（中）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60568,1
+			killitem 60558,5
+			giveitem 60377,4
+			addgold 7000
+Luac stp:legacy:5070b5718bd5c831ea23
+block	Luac stp:legacy:8ed5bb7029fa67a773b2 >= 90 && item 60569 >= 1 && item 60559 >= 1
+	window "\n\n这是？你完成了1个龙骨（大）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60569,1
+			killitem 60559,1
+			giveitem 60377,4
+			addgold 10000
+Luac stp:legacy:cfcd5d5ef865764b267c
+block	Luac stp:legacy:1f0229f19f7173834291 >= 80 && item 60563 >= 1 && item 60556 >= 5
+	window "\n\n这是？你完成了5个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60563,1
+			killitem 60556,5
+			giveitem 60377,3
+			addgold 3000
+Luac stp:legacy:63dce9f8aab58316f1f8
+block	Luac stp:legacy:92bc67bbf238fe5a426b >= 80 && item 60564 >= 1 && item 60557 >= 5
+	window "\n\n这是？你完成了5个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60564,1
+			killitem 60557,5
+			giveitem 60377,3
+			addgold 3000
+Luac stp:legacy:7dc78472a904c55f9442
+block	Luac stp:legacy:5560399d3134fc70c51c >= 80 && item 60565 >= 1 && item 60558 >= 3
+	window "\n\n这是？你完成了3个龙骨（中）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60565,1
+			killitem 60558,3
+			giveitem 60377,3
+			addgold 4000
+Luac stp:legacy:5c3c54cc197311e5b5b3
+block	Luac stp:legacy:d299d51791505dcbc45b >= 70 && item 60563 >= 1 && item 60556 >= 5
+	window "\n\n这是？你完成了5个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60563,1
+			killitem 60556,5
+			giveitem 60377,3
+			addgold 3000
+Luac stp:legacy:51b22406a82bea99dee2
+block	Luac stp:legacy:a4afde693196a2de6753 >= 70 && item 60564 >= 1 && item 60557 >= 5
+	window "\n\n这是？你完成了5个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60564,1
+			killitem 60557,5
+			giveitem 60377,3
+			addgold 3000
+Luac stp:legacy:c72eef91c9d070a0f3a6
+block	Luac stp:legacy:dd7ad86a3e9d9d718b15 >= 70 && item 60565 >= 1 && item 60558 >= 3
+	window "\n\n这是？你完成了3个龙骨（中）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60565,1
+			killitem 60558,3
+			giveitem 60377,3
+			addgold 4000
+Luac stp:legacy:237e43db8183a21e3735
+block	Luac stp:legacy:d61acdfbbbff1086f805 >= 60 && item 60563 >= 1 && item 60556 >= 5
+	window "\n\n这是？你完成了5个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60563,1
+			killitem 60556,5
+			giveitem 60377,3
+			addgold 4000
+Luac stp:legacy:12f4b95af3a328e3966c
+block	Luac stp:legacy:2d85553850f0ce8845fa >= 60 && item 60564 >= 1 && item 60557 >= 5
+	window "\n\n这是？你完成了5个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60564,1
+			killitem 60557,5
+			giveitem 60377,3
+			addgold 4000
+Luac stp:legacy:5615034dcab431bd4532
+block	Luac stp:legacy:f6bf144341ee22abd421 >= 60 && item 60565 >= 1 && item 60558 >= 3
+	window "\n\n这是？你完成了3个龙骨（中）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60565,1
+			killitem 60558,3
+			giveitem 60377,3
+			addgold 4000
+Luac stp:legacy:bbea8c879df0dd58e5c0
+block	Luac stp:legacy:c4a0f954d2b55a2e20c4 >= 50 && item 60563 >= 1 && item 60556 >= 5
+	window "\n\n这是？你完成了5个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60563,1
+			killitem 60556,5
+			giveitem 60377,3
+			addgold 3000
+Luac stp:legacy:b7acf1ac46d720ebf00f
+block	Luac stp:legacy:5d71179f9e86d86689f3 >= 50 && item 60564 >= 1 && item 60557 >= 5
+	window "\n\n这是？你完成了5个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60564,1
+			killitem 60557,5
+			giveitem 60377,3
+			addgold 3000
+Luac stp:legacy:d2e0dab37712195db422
+block	Luac stp:legacy:6edca444b30d82f9508c >= 50 && item 60565 >= 1 && item 60558 >= 3
+	window "\n\n这是？你完成了3个龙骨（中）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60565,1
+			killitem 60558,3
+			giveitem 60377,3
+			addgold 4000
+Luac stp:legacy:926953428451b1bec4e7
+block	Luac stp:legacy:d16f9a21c5585f8320ec >= 40 && item 60561 >= 1 && item 60556 >= 3
+	window "\n\n这是？你完成了3个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60561,1
+			killitem 60556,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:81057de3c414b9e3dd93
+block	Luac stp:legacy:91c10142ccc0e60b3fd3 >= 40 && item 60562 >= 1 && item 60557 >= 3
+	window "\n\n这是？你完成了3个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60562,1
+			killitem 60557,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:f4ad36415dfc3c572176
+block	Luac stp:legacy:c79934dbb21b7f9bccf4 >= 30 && item 60561 >= 1 && item 60556 >= 3
+	window "\n\n这是？你完成了3个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60561,1
+			killitem 60556,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:cb14785dd3f28d87fe44
+block	Luac stp:legacy:2ee3edc490268f971078 >= 30 && item 60562 >= 1 && item 60557 >= 3
+	window "\n\n这是？你完成了3个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60562,1
+			killitem 60557,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:48effe5fa9d1191dba29
+block	Luac stp:legacy:3bfaae9bf5c11dfea2e3 >= 20 && item 60561 >= 1 && item 60556 >= 3
+	window "\n\n这是？你完成了3个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60561,1
+			killitem 60556,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:f6caa8e0e2f6b3d21e69
+block	Luac stp:legacy:7b8daa7802754992ac8a >= 20 && item 60562 >= 1 && item 60557 >= 3
+	window "\n\n这是？你完成了3个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60562,1
+			killitem 60557,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:5ec46b8ab30763d0e4bd
+block	Luac stp:legacy:d994584105ea746dcea3 >= 10 && item 60561 >= 1 && item 60556 >= 3
+	window "\n\n这是？你完成了3个野兽之骨的委托，要交付吗？",ok
+		Window_ok
+			killitem 60561,1
+			killitem 60556,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:27bb7c289f782de15557
+block	Luac stp:legacy:6573db5bd4d2b4944730 >= 10 && item 60562 >= 1 && item 60557 >= 3
+	window "\n\n这是？你完成了3个龙骨（小）的委托，要交付吗？",ok
+		Window_ok
+			killitem 60562,1
+			killitem 60557,3
+			giveitem 60377,2
+			addgold 2000
+Luac stp:legacy:0aa9de0ca392aeaa7783
+block	item 60561 >= 1 || item 60562 >= 1 || item 60563 >= 1 || item 60564 >= 1 || item 60565 >= 1 || item 60566 >= 1 || item 60567 >= 1 || item 60568 >= 1 || item 60569 >= 1
+	window "\n\n快去完成委托，我在这里等你,50级以上请扔掉下级委托书，90级以上请扔掉中级委托书，重新接任务。",ok
+		Window_ok
+block	Luac stp:legacy:675c569a9998d1559d61 >= 90
+	window "\n\n要领取上级讨伐任务吗？120级前完成任务将获得金钱和经验的奖励，120级后会获得大量金钱。",next
+		LocalCount4 = random 4,0
+		if localcount4==4
+			window "\n\n我需要1个龙骨（大），能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60569,1 
+					endif
+		if localcount4==3
+			window "\n\n我需要5个龙骨（中），能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60568,1 
+					endif
+		if localcount4==2
+			window "\n\n我需要8个野兽之骨，能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60566,1 
+					endif
+		if localcount4==1
+			window "\n\n我需要8个龙骨（小），能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60567,1 
+					endif
+block	Luac stp:legacy:deec87d275c88b3933e5 >= 50
+	window "\n\n要领取中级讨伐任务吗？120级前完成任务将获得金钱和经验的奖励，120级后会获得大量金钱。",next
+		LocalCount3 = random 3,0
+		if localcount3==3
+			window "\n\n我需要3个龙骨（中），能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60565,1 
+					endif
+		if localcount3==2
+			window "\n\n我需要5个野兽之骨，能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60563,1 
+					endif
+		if localcount3==1
+			window "\n\n我需要5个龙骨（小），能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60564,1 
+					endif
+block	Luac stp:legacy:8e2b05994d47c6ca7206 >= 10
+	window "\n\n要领取下级讨伐任务吗？120级前完成任务将获得金钱和经验的奖励，120级后会获得大量金钱。",next
+		LocalCount2 = random 2,0
+		if localcount2==2
+			window "\n\n我需要3个野兽之骨，能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60561,1 
+					endif
+		if localcount2==1
+			window "\n\n我需要3个龙骨（小），能帮我取来吗？",ok
+				Window_ok
+					GiveItem 60562,1 
+					endif
+block
+	window "10级以上的冒险者可以在这里领取讨伐任务，任务的难度将根据等级的提升有所变更，完成任务将获得金钱和经验的奖励",ok
+		Window_ok

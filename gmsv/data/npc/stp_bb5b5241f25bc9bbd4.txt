@@ -1,0 +1,8 @@
+block item 87913 == 1
+endwindow 933464
+
+block item 87912 == 1
+window 933465,ok
+window_ok
+giveitem 87913
+Warp 0,27340,22,22

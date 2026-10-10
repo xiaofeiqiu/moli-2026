@@ -1,0 +1,36 @@
+block item 1002005 == 1 && ItemCreateTime 1002005 > 2880 && item 1001008 >=1
+window "\n\n　你确定要浇水吗？",yes,no
+window_yes petspace != 0 && item 1001008 >= 1 && item 1002005 == 1
+killitem 1001008
+killitem 1002005
+givepet (111%80,211%20)
+leavegroup
+Warp 0,60156,78,100
+block item 1002005 == 1 && ItemCreateTime 1002005 > 2160 && item 1001008 >=1
+window "\n\n　你确定要浇水吗？",yes,no
+window_yes petspace != 0 && item 1001008 >= 1 && item 1002005 == 1
+killitem 1001008
+killitem 1002005
+givepet (111%80,211%20)
+leavegroup
+Warp 0,60156,78,100
+block item 1002005 == 1 && ItemCreateTime 1002005 > 1440 && item 1001008 >=1
+window "\n\n　你确定要浇水吗？",yes,no
+window_yes petspace != 0 && item 1001008 >= 1 && item 1002005 == 1
+killitem 1001008
+killitem 1002005
+givepet 1005004
+leavegroup
+Warp 0,60156,78,100
+block item 1002005 == 1 && ItemCreateTime 1002005 > 720 && item 1001008 >=1
+window "\n\n　你确定要浇水吗？",yes,no
+window_yes petspace != 0 && item 1001008 >= 1 && item 1002005 == 1
+killitem 1001008
+killitem 1002005
+givepet 31
+leavegroup
+Warp 0,60156,78,100
+block item 1002005 == 1
+endwindow "\n\n　要种植成功不浇水是不行的。"
+block
+endwindow "\n\n　地上种了一棵树。"

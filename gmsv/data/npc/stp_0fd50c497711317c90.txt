@@ -1,0 +1,11 @@
+block nowevent 571 == 1
+endwindow"\n\n\n@c …………"
+
+block item 40584 >= 1
+window"\n\n     被选中的人!!吾主在里面等你",ok
+window_ok
+leavegroup
+Warp 0,32703,16,25
+
+block 
+endwindow"\n\n\n@c …………"

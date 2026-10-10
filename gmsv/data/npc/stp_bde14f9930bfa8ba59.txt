@@ -1,0 +1,15 @@
+block item 81002 >= 1
+	Endwindow "\n\n布已经卖完了，明天再来吧。"
+
+block item 81000 >= 1 && item 81002 == 0
+	window "\n\n@c圣拉鲁卡村的布是最美丽的，只要1000块一尺，要买一尺吗？",yes,no
+	window_no
+	window_yes gold < 1000
+	Endwindow "\n\n1000块一尺哟，你给我5毛是哪个意思?"
+
+	window_yes gold >= 1000 && item 81000 >= 1 && item 81002 == 0
+	addgold -1000
+	giveitem 81002,1
+
+block
+	Endwindow "\n\n@c……唉，这作坊的生意太好了，总是供不应求。"

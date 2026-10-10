@@ -1,0 +1,22 @@
+#女生路线
+
+##############  ##############
+block NowEvent 570 == 1
+	EndWindow 900037,OK
+
+##############  ##############
+block ItemSpace >= 1 && NowEvent 570 == 0
+	Window 900038,OK
+	Window_OK ItemSpace >= 1 && NowEvent 570 == 0
+	NowEvent 570 = 1
+	GiveItem 18496
+	Window_OK
+
+##############  ##############
+block ItemSpace == 0 && NowEvent 570 == 0
+	EndWindow 900039,OK
+
+##############  ##############
+block NowEvent 570 == 0
+	EndWindow 900040,OK
+

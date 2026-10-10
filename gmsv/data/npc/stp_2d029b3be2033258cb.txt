@@ -1,0 +1,7 @@
+block item 200125 >= 1
+window "\n\n看上去有能量波动.",next
+window "\n\n跟四兽奥义差不多.",next
+window "\n\n那就把它跟石碑放近一些试试.",next
+window "\n\n感觉有点异常,大家小心.",ok
+window_ok
+Encount 2|0,17206,1,8||0|||||0|50115|||||||||

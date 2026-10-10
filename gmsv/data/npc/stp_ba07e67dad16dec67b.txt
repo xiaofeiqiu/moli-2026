@@ -1,0 +1,115 @@
+block globalFlag 290 == 1 && globalFlag 291 == 0
+window 1900343,ok
+window_ok gold <= 995000
+LeaveGroup
+addgold 5000
+globalFlag 291 = 1
+window_ok gold > 995000
+endwindow 1900344
+
+block globalFlag 287 == 1 && globalFlag 288 == 0
+window 1900345,ok
+window_ok
+LeaveGroup
+globalFlag 288 = 1
+
+block item 61164 >= 1
+window 1900346,next
+window 1900347,ok
+window_ok
+LeaveGroup
+killitem 61164
+giveitem 61165
+
+block item 61163 >= 1
+endwindow 1900348
+
+block item 61162 >= 1
+killitem 61162
+window 1900349,next
+window 1900350,yes,no
+window_yes
+LeaveGroup
+giveitem 61163
+window_no
+
+block globalFlag 286 == 1 && item 61161 >= 1 && globalFlag 287 == 0
+window 1900351,next
+window 1900352,ok
+window_ok
+LeaveGroup
+killitem 61161
+globalFlag 287 = 1
+
+block globalFlag 283 == 1 && HaveLeak1Item == 13644 && item 61148 < 1
+window 1900353,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 13644
+giveitem 61148
+window_ok ItemSpace < 1
+endwindow 1900354
+
+block globalFlag 282 == 1 && globalFlag 283 == 0 && petlevel 61025 >= 1
+window 1900355,yes,no
+window_no
+window_yes
+LeaveGroup
+Killpeth 61025,1
+window 1900356,ok
+window_ok
+LeaveGroup
+globalFlag 283 = 1
+
+block globalFlag 280 == 1 && globalFlag 281 == 0 && item 61147 >= 1
+window 1900357,ok
+window_ok
+LeaveGroup
+killitem 61147
+window 1900358,next
+window 1900359,yes,no
+window_yes
+LeaveGroup
+globalFlag 281 = 1
+window_no
+
+block globalFlag 278 == 1  && globalFlag 279 == 0 && item 61146 >= 1
+window 1900360,yes,no
+window_yes
+killitem 61146
+globalFlag 279 = 1
+endwindow 1900361
+window_no
+
+block globalFlag 276 == 1 && globalFlag 277 == 0 && StrCmpChat == 1900319
+window 1900362,ok
+window_ok
+LeaveGroup
+globalFlag 277 = 1
+
+block globalFlag 274 == 1 && globalFlag 275 == 0 && StrCmpChat == 1900318
+window 1900363,ok
+window_ok
+LeaveGroup
+globalFlag 275 = 1
+
+block globalFlag 272 == 1 && globalFlag 273 == 0 && StrCmpChat == 1900317
+window 1900364,ok
+window_ok
+LeaveGroup
+globalFlag 273 = 1
+
+block ItemCreateTime 61145 >= 2880 && globalFlag 271 == 0
+window 1900365,yes,no
+window_yes
+window 1900366,ok
+window_ok gold <= 996000
+LeaveGroup
+killitem 61145
+addgold 4000
+globalFlag 271 = 1
+window_ok gold > 996000
+endwindow 1900367
+
+block
+endwindow 1900368

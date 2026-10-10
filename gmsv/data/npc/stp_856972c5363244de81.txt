@@ -1,0 +1,5 @@
+block
+window 1900654,yes,no
+window_no
+window_yes
+Warp 0,23385,11,7

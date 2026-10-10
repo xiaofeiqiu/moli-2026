@@ -1,0 +1,10 @@
+block
+window "\n\n你要使用传送石前往哈依帝鲁贝堡吗?费用是2500G.",yes,no
+window_yes gold < 2500
+endwindow "\n\n你的金币不够."
+window_yes
+AddGold -2500
+leavegroup
+Warp 0,27501,36,5
+window_no
+endwindow "\n\n欢迎你再度使用."

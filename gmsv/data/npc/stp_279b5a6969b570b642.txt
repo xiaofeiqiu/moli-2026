@@ -1,0 +1,5 @@
+block
+window "\n\n别在这里晃悠,被统领抓到要挨打的...",ok
+window_ok
+leavegroup
+Warp 0,27961,256,102

@@ -1,0 +1,5 @@
+block item 86252 >= 1
+window "\n\n好像能藏在这里的样子!尝试着往里钻...还差一点儿!嗯!使劲...该减肥了...唔!～全进去了!",ok
+window_ok item 86252 >= 1
+leavegroup
+Warp 0,28096,23,17

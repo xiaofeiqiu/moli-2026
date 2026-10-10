@@ -1,0 +1,8 @@
+block item 730027 >= 1
+Window "\n\n【石门后面传来了声音...】",next
+Window "\n\n『放开我!救命啊!谁来救救我!诺伦科...』",next
+Window "\n\n『那个懦弱的男人不会来救你了!该死,看来还要想其它的办法了......你就老老实实的闭眼等死吧!』",next
+Window "\n\n【要推开门吗?】",yes,no
+Window_yes item 730027 >= 1
+leavegroup
+Warp 0,57192,13,11

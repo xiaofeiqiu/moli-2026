@@ -1,0 +1,13 @@
+block item 86520 == 1 && item 86521 < 1
+window "\n\n你好，开启者我一直坚信我的歌声能穿透这个阴暗冰冷的灵堂，传到你的心中，我是伟大的里雍大人的女仆，自从他封印了邪神李贝留斯后，伟大的里雍大人就变了，他变的不再信任朋友，变的残忍无情，我知道他一直都是一个伟大的男人，一定是有什么原因让他变成这样，请你帮我调查事情的真相好吗？",yes,no
+window_no
+endwindow "\n\n看来你也认为里雍大人是罪有应得啊!"
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86521
+endwindow "\n\n可以去加纳阿夏夫的守墓者谈谈，或许他了解事情的真相。"
+window_yes ItemSpace < 1
+endwindow "\n\n\n　　你的物品栏已满！"
+
+block
+endwindow "\n\n............."

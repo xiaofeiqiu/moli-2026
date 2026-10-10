@@ -1,0 +1,6 @@
+block item 1000829 == 0
+	Window"没错 其实黄金剑就是我 你战胜了我 我将跟随你!",ok
+		Window_ok
+			giveitem 1000829,1
+			Leavegroup
+			Warp 0,4467,27,89

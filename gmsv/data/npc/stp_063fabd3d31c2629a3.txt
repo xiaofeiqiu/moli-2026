@@ -1,0 +1,13 @@
+block 
+    window "这是法老王的宝箱,拿取里的宝物会受到法老王的诅咒的~!",yes,no
+    window_no
+    window "不拿就对了,不然你会受到法老王的诅咒的~!",ok
+    window_ok
+    Leavegroup
+    Warp 0,1000,233,78
+    window_yes
+	addgold 10000
+	Leavegroup
+	Warp 0,1000,233,78
+
+#奖励你看着给

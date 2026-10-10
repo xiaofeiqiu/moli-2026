@@ -1,0 +1,2 @@
+block
+endwindow"\n\n@c 怎么处理这条鱼好呢?"

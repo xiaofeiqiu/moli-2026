@@ -1,0 +1,8 @@
+block item 87521 < 1
+window "\n\n你要捡起地上的书籍吗？",ok
+window_ok
+giveitem 87521
+Warp 0,43700,69,91
+
+block
+Warp 0,43700,69,91

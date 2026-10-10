@@ -1,0 +1,18 @@
+block item 39678 == 1
+Endwindow "\n\n天黑以后到维诺亚东边的山后来找我,我把你引见给大哥."
+
+block globalFlag 262 == 1
+Window "\n\n行啊小子,我的东西你也敢偷,胆子不小啊.",next
+Window "\n\n身手还真有两把刷子,在这做这种小偷小摸的生意可惜了,兄弟我有单大买卖,有没有兴趣?",next
+Window "\n\n『你作势赶紧点头.』",next
+Window "\n\n看你小子身手不错,怎么没在道儿上听说过你啊,新入行的?",next
+Window "\n\n『你继续点头.』",next
+Window "\n\n行,还挺上道儿,以后肯定是个好帮手,我现在手边有别的事,你别掺合.",next
+Window "\n\n拿着这个,天黑以后到维诺亚东边的山后来找我,我把你引见给大哥,我先走一步.",ok
+Window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+Window_ok
+globalFlag 262 = 0
+giveitem 39678
+LeaveGroup
+Warp 0,1182,9,3

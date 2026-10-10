@@ -1,0 +1,7 @@
+block SkillLevel 209 == 10
+window"\n\n\n@c 即将学习 10C铠 暗黑铠甲 制作！",ok
+window_ok
+	KillItem 591265,1
+	GiveRecipe 1131
+block
+Endwindow"\n\n\n@c 你的造铠技能还未10级，无法学习！"

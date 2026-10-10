@@ -1,0 +1,18 @@
+block
+	LocalCount0 = random 3,0
+	if localcount0==1
+		window "\n\n@c要将随从的形象永久变为【九尾灵狐】吗？",ok
+			Window_ok
+Luac stp:legacy:338a5f2f412aa5371c5d
+				endif
+	if localcount0==2
+		window "\n\n@c要将随从的形象永久变为【九尾天狐】吗？",ok
+			Window_ok
+Luac stp:legacy:e2fcd5afb123f90e9711
+				endif
+	if localcount0==3
+		window "\n\n@c要将随从的形象永久变为【九尾妖狐】吗？",ok
+			Window_ok
+Luac stp:legacy:f4d3ddac5ebd3765fed5
+				endif
+

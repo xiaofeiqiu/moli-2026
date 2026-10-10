@@ -1,0 +1,10 @@
+block
+window "\n\n你确定要召唤出奇美拉吗?",yes,no
+window_yes
+killitem 385,1
+killpetl 5201,1
+killpetl 5202,1
+killpetl 5203,1
+killpetl 5204,1
+givepet (330010%1,330011%1,330012%1,330013%1)
+window_no

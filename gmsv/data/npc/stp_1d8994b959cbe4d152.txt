@@ -1,0 +1,12 @@
+block item 795377 == 1
+endWindow "\n\n你已经有一个帮手募集信了."
+
+block
+Window "\n\n新年到啦，在新的一年中,希望大家都可以快快乐乐的!",next
+Window "\n\n为此我们特别准备了礼物送给你哦!",next
+Window "\n\n带上这个东西,去喷水池旁寻找新年使者吧!",OK
+Window_OK itemspace == 0 || gold < 1000
+endWindow "\n\n你的背包满啦或者魔币不够啊."
+Window_OK
+addgold -1000
+giveitem 795377

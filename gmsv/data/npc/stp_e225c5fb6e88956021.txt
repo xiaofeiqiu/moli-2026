@@ -1,0 +1,7 @@
+block	item 60396 ==1
+    window "\n\n 这是我的戒指,拿着去找阿修顿.快去...",yes,no
+    Window_yes
+	killitem 60396,1
+	giveitem 60397,1
+	leavegroup
+	Warp 0,1000,242,88

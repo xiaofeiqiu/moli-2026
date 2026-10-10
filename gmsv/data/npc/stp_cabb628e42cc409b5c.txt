@@ -1,0 +1,20 @@
+block itemspace < 1
+endwindow "\n\n背包不够位置了!"
+
+
+block ItemDur 60532 == 1
+window "\n\n你要打开补给包么?",yes,no
+window_no
+window_yes
+killitem 60532
+giveitem (60533%10,15611%40$3,15205%40$3)
+
+
+block ItemDur 60532 >= 2
+window "\n\n你要打开补给包么?",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+setdur 60532,-1
+giveitem (60533%10,15611%40$3,15205%40$3)

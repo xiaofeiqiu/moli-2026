@@ -1,0 +1,7 @@
+block item 18440 == 1
+endwindow"\n\n\n@c 还不去吗??"
+
+block
+window"\n\n@c 冒险者，你好！！我有一封紧急书信要送到法兰的姆克斯那里，如果你能够帮我送过去 我会给你小小的惊喜哦。",ok
+window_ok
+giveitem 18440

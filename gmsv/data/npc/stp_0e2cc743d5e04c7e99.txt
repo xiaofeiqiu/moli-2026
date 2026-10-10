@@ -1,0 +1,9 @@
+block	itemspace<2
+Endwindow"\n\n@c 任务提示：物品空格不足！"
+block
+window"\n\n此时此刻,龙族的力量不再是最强大的了!\n\n 它们将沉睡... 消失...  一直到 他们再度崛起归来!",ok
+window_ok
+Giveitem 591033,1
+Giveitem (591015%75,591014%25)
+leavegroup
+Warp 0,23334,15,15

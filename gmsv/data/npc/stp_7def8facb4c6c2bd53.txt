@@ -1,0 +1,23 @@
+block itemspace < 1
+endwindow "\n\n你的背包满了"
+
+
+block bbimage == 120069
+window "\n\n我们不会就此罢休的...",ok
+window_ok
+giveitem 39718
+leavegroup
+Warp 0,30001,333,579
+
+
+block item 39715 >= 1
+window "\n\n开什么玩笑,你知道海盗团解散后我们吃了多少苦么?为了向他报复,我不惜变成了不死的冤魂!现在你来告诉我那个混蛋想做好人就要让我们不在伤害别人!哪儿会有这么天真的事情!",ok
+window_ok
+killitem 39715
+giveitem 39716
+leavegroup
+Warp 0,30001,333,579
+
+
+
+

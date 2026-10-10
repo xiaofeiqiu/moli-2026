@@ -1,0 +1,8 @@
+block
+Window"\n\n这就是开启者吗?",ok
+window_ok ItemSpace < 1
+EndWindow"\n\n抱歉,你的物品栏不够了."
+Window_ok
+LeaveGroup
+giveitem 730043
+Warp 0,57217,19,21

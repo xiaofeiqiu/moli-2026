@@ -1,0 +1,7 @@
+block
+window "\n\n 马上夜幕就要降临了，这里让人感觉很冷……",next
+window "\n\n 过会再来找我好吗？" ,yes,no
+window_no "\n\n 算了……算了……"
+window_yes
+leavegroup
+Warp 0,6200,60,60

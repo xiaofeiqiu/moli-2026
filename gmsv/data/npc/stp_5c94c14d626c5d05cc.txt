@@ -1,0 +1,11 @@
+block item 61060 >= 1
+window 900717,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+killitem 61060
+giveitem 61061
+window_ok ItemSpace < 1
+endwindow 900718
+
+block
+endwindow 900719

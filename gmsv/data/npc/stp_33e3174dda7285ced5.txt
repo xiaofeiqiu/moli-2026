@@ -1,0 +1,32 @@
+block item 200223 >= 1
+endwindow "\n\n希望黑巫师不要打公主的坏主意."
+
+
+
+block item 200222 >= 1
+window "\n\n你手上怎么会有我心爱的莉莉丝公主的画像.",next
+window "\n\n你在哪里找到的,那还不赶快向国王禀报.",ok
+window_ok
+killitem 200222
+giveitem 200223
+
+
+
+
+block item 200208 >= 1
+endwindow "\n\n白巫师公会就在城北的大屋子,很好找的哦."
+
+
+block item 200207 >= 1
+window "\n\n原来你就是那个外面传的沸沸扬扬的摘榜人啊,果然,我没有看错你,绝对不是泛泛之辈.",next
+window "\n\n我看你的表情,肯定是被这坑道的事给难住了,不过我能给你介绍个人,或许能帮上你的忙.",next
+window "\n\n你拿这封去城里的白巫师公会,找切露西婆婆她能帮你解开部分谜题.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200208
+
+
+block
+endwindow "\n\n谢谢你上次的帮忙,我才能成为圣迦尔德王国的禁卫军,能守护我最敬爱的莉莉丝公主."
+

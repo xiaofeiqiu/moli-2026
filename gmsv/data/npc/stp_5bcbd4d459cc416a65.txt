@@ -1,0 +1,60 @@
+block globalFlag 353 == 1 && globalFlag 352 == 1 && item 70019 >= 1
+window 910380,next
+window 910381,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+globalFlag 353 = 0
+globalFlag 352 = 0
+giveitem 70020
+window_ok ItemSpace < 1
+endwindow 910382
+
+block item 70009 >= 1 && item 70014 >= 1 && globalFlag 355 == 1 && globalFlag 354 == 1 
+window 910383,yes,no
+window_yes ItemSpace >= 1
+killitem 70009
+killitem 70014
+LeaveGroup
+globalFlag 355 = 0
+globalFlag 354 = 0
+globalFlag 353 = 1
+giveitem 70016,1
+window_yes ItemSpace < 1
+endwindow 910384
+window_no
+
+block item 70009 >= 1 && globalFlag 355 == 1 && globalFlag 354 == 1
+window 910385,yes,no
+window_yes ItemSpace >= 1
+killitem 70009
+killitem 70014
+LeaveGroup
+giveitem 70015,1
+globalFlag 355 = 0
+globalFlag 354 = 0
+globalFlag 353 = 1
+window_yes ItemSpace < 1
+endwindow 910386
+window_no
+
+block item 70009  >= 1 && globalFlag 355 == 1 && globalFlag 354 == 0 && globalFlag 353 == 0
+endwindow 910387
+
+block globalFlag 355 == 0 && globalFlag 354 == 0 && globalFlag 353 == 0
+window 910388,next
+window 910389,next
+window 910390,next
+window 910391,next
+window 910392,yes ,no
+window_yes ItemSpace >= 1
+window 910393,ok
+window_ok
+LeaveGroup
+giveitem 70009 
+globalFlag 355 = 1
+window_yes ItemSpace < 1
+endwindow 910394
+window_no
+
+block
+endwindow 910395

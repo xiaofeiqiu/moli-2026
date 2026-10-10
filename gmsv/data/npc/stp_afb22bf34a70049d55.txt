@@ -1,0 +1,11 @@
+block Item 6515 >= 1
+EndWindow "\n\n赶紧出发吧,请拿好我的介绍信,不要弄丢了."
+
+block
+Window "\n\n最近听说通往哥拉尔的船上有人目击到一艘神秘而又充满死亡气息的船,我现在实在无暇分身去调查此事,你能帮我这个忙吗?",YES,NO
+Window_NO
+EndWindow "\n\n这样啊.看来我得拜托其他人了..."
+Window_YES
+Window "\n\n谢谢你的帮忙,请拿着这个去见通往哥拉尔的船上的船长吧.",OK
+Window_OK
+GiveItem 6515,1

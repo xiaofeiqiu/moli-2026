@@ -1,0 +1,18 @@
+block item 60476 >= 1
+endwindow "\n\n魔族能量可以通过魔族的水晶获取."
+
+block havetitle == 1013 || havetitle == 1021
+window "\n\n法兰国王所说的冒险家就是你吗?在这里能够遇到你真是太好了.",next
+window "\n\n库鲁克斯岛发生了异常情况,艾尔菲娜丝女王非常的焦急,特别派我来法兰求援.国王说你一定可以胜任,希望你能帮助我.",yes,no
+window_no
+endwindow "\n\n看来你不是个热心肠的人!"
+window_yes
+window "\n\n不愧是连法兰国王都认可的冒险家.这个是艾尔菲娜丝女王殿下交付的,上面寄宿者魔力,可以直接传送到那个异常能量场的内部,但目前还缺少重要的动力源--魔族能量.现在我就把它先交托于你了.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 60476
+
+block
+endwindow "\n\n有空到我们艾尔巴尼亚旅游一下,那里的风景跟法兰国是不同的!"
+

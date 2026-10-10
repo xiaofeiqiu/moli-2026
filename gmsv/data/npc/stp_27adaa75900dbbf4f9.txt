@@ -1,0 +1,10 @@
+block item 87704 == 1
+Warp 0,29966,11,4
+
+block item 87703 == 1
+window "\n\n你要拿起雕像下的制造图吗？",yes,no
+window_no
+window_yes
+killitem 87703
+giveitem 87704
+Warp 0,29966,11,4

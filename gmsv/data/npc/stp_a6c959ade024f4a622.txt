@@ -1,0 +1,9 @@
+block item 800000 == 1 && item 800001 == 1
+	Window"”–«Æ «¥Û“Ø~",ok
+		Window_ok
+		killitem 800000
+		endevent 655 = 1
+		checktitle
+
+
+	

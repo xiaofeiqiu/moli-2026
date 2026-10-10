@@ -1,0 +1,17 @@
+block Item 3800 == 1
+window "厄~魔族的人已经来了,在港口...",next
+window "他们魔化了海贼头目...原本他的名字叫ONe PIeCe",next
+window "你到底是不是歌姬派来的勇者?",yes,no
+window_no
+window_yes Item 3800 == 1
+LeaveGroup
+window "\n\n赶紧把诅咒的戒指给我\n\n这个东西不能被魔化怪物拿到\n\n请让我与诅咒之戒一起消失吧!",ok
+window_ok
+ChangePal 10,1
+killitem 3800,1
+giveitem 3801,1
+endwindow "\n\n你拿着魔化的戒指去挑战他们\n\n有时正义的力量也不足以打败魔王"
+
+
+block
+endwindow "\n\n歌姬的意念正在法兰城内求救,哎..."

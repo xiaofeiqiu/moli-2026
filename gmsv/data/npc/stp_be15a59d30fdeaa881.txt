@@ -1,0 +1,10 @@
+block item 800126 >= 1 && itemspace >= 1
+window "\n\n原来如此,那个村子已经完全尸变了,可是为什么如此近的距离,西比尔村却相安无事呢?",next
+window "\n\n我会再去调查人员去的,我们先来做一下净化尸变的准备吧.",next
+window "\n\n在这片大陆,有个古老的神祗,应该可以净化这种疾病,但是要通过神祗的试炼他才会帮助我们",next
+window "\n\n你要去试试么,也许可以让你变得更强也说不定",yes,no
+window_yes item 800126 >= 1 && itemspace >= 1
+killitem 800126,1
+giveitem 800128,4
+leaveGroup
+Warp 0,27001,52,49

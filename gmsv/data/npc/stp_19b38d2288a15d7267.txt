@@ -1,0 +1,33 @@
+block EndEvent 512 == 1
+EndWindow "\n\n再次谢谢你们!"
+
+
+block item 141175 >= 1
+Window "\n\n喔喔!你们已经解决此事啦?真不愧是冒险者呀!这样村民们就不必担惊受怕了.",next
+Window "\n\n什么?你说那个亡魂不是坏人?唔...是这样啊...此事好奇怪啊.",next
+Window "\n\n嗯?我的好运符不见了?没关系的,我母亲会再帮我做一个的,我这里还有个礼物要送给你.",next
+Window "\n\n对了!你带回来的这条项链,我隐约闻到有股淡淡的奇怪的味道.我要拿给相关人员看下!",ok
+Window_ok item 141175 >= 1
+killitem 141175
+giveitem 141176
+EndEvent 512 = 1
+CheckTitle
+
+block item 141174 >= 1
+EndWindow "\n\n快些出发吧!据说一到了白天就听不到怪声了.",ok
+
+
+block level >= 50
+Window "\n\n你好!你看起来很强,你愿意接受一个调查委托吗?",yes,no
+Window_no
+EndWindow "\n\n好吧,我再找找其他人,如果你改变心意了,请来找我."
+Window_yes
+Window "\n\n先谢谢你了!蒂娜村的信使送来情报,说村民近些天半夜经常听到屋外有『呜呜呜』的哭泣声,但是当村民透过窗户向外看时却什么人也没有,非常诡异!希望你今晚就过去调查此事吧,越快越好!",next
+Window "\n\n对了!送你一个好运符吧,这是我母亲特意为我制作的,它可以驱逐不好的事情!调查清楚以后请回来报告情况,祝你好运.",ok
+Window_ok itemspace < 1
+EndWindow "\n\n你的背包满啦!",ok
+Window_ok
+giveitem 141174
+
+block
+EndWindow "\n\n我正在募集有实力冒险者执行一项任务,显然你还不够资格...等你变得更强大的时候再来吧,我可不想让人做无谓的牺牲.",ok

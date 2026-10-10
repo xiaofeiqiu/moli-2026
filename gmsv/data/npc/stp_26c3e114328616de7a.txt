@@ -1,0 +1,12 @@
+block level >= 60
+window 900409,next
+window 900410,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 61103
+window_ok ItemSpace < 1
+endwindow 900317
+
+
+block
+endwindow 900411

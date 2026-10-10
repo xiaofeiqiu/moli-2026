@@ -1,0 +1,5 @@
+block item 86287 >= 1 && item 86291 >= 1
+window 85306,ok
+window_ok
+leavegroup
+Warp 0,28144,8,24

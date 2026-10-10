@@ -1,0 +1,8 @@
+block item 60290 >= 200
+	window "\n\n您好，200个【任务完结证明】可以兑换【转生药水】1瓶，要兑换吗？",yes,no
+		Window_yes
+			killitem 60290,200
+			GiveItem 60376,1
+block
+	window "\n\n冒险者如若您凑齐200个【任务完结证明】，可以在此处兑换【转生药水】1瓶",ok
+		Window_ok

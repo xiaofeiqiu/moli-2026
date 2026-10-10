@@ -1,0 +1,5 @@
+block item 86920 == 1
+window "\n\n你这图一点都不准确，不过还好我厉害，大致找到了你想要去的地方，不过真奇怪，那个地方有岛屿吗？",ok
+window_ok
+leavegroup
+Warp 0,28368,42,25

@@ -1,0 +1,16 @@
+block item 800086 == 1 && item 800087 == 0 
+	Window"\n\n真的！？你们杀死了魔龙·努牙！",next
+	Window"\n\n你们真的好强，你把这个交给屠魔者，他会明白的！",ok
+window_ok
+killitem 800086,1
+giveitem 800087,1
+
+block item 800084 == 1 && item 800085 == 0 
+	Window"\n\n嗯？是雷奥让你来找我的吗？有信吗？交给我看一下。",next
+	Window"\n\n好。明白了，魔龙·怒牙的事，就靠你们了！",ok
+window_ok
+killitem 800084,1
+giveitem 800085,1
+
+block item 800085 == 1
+	Window"\n\n魔龙的巢穴就在沼泽神殿里！",ok

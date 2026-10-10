@@ -1,0 +1,11 @@
+block item 86554 == 1 && item 86555 < 1
+window "\n\n我一路跟踪他们到这。发现此地并不是他们的目的地。",next
+window "\n\n可惜我的行踪已经暴露了，已经不能再跟下去了，不过刚刚奈尔鲁传消息过来，她发现了他们的秘密研究所。",next
+window "\n\n你赶快回法兰找我们团长申请逮捕令，这回我们能人赃并获了，呵呵~~",ok
+window_ok
+leavegroup
+killitem 86554
+giveitem 86555
+
+block
+endwindow "\n\n我们女骑士团的情报能力全法兰第一！"

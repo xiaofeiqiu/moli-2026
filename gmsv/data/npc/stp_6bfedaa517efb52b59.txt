@@ -1,0 +1,15 @@
+block item 730068 >= 1
+window "\n\n援军终于到了么!如你所见,这个遗迹里的怪物异常的多,与你这样经验丰富的冒险家相比,我们已经无力再前进了,看来后边的探索,只能辛苦你了!怎么样,你准备好了么?",yes,no
+window_no
+endwindow "\n\n好好休息一下再来找我吧."
+window_yes
+window "\n\n一路小心!",ok
+window_ok item 730068 >= 1
+killitem 730068
+leavegroup
+Warp 0,57033,33,9
+
+
+
+
+

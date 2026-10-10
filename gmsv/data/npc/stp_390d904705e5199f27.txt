@@ -1,0 +1,10 @@
+block Item 60464 >= 1 && Item 60465 >= 1 && Item 60466 >= 1
+Window "\n\n呼呼.....既然被你们发现了,那就受死吧",ok
+Window_ok
+KillItem 60466,1
+KillItem 60465,1
+KillItem 60464,1
+Encount 3|0,64062,12,22|||||0|||900027|||||||||
+
+block
+endWindow "\n\n呼......\n这里没有嫌疑犯,你们找错地方了......"

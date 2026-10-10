@@ -1,0 +1,4 @@
+block globalFlag 355 == 1
+window 910433,ok
+window_ok
+Encount 3|0,25041,23,34||0|||||0|70016|||||||||

@@ -1,0 +1,23 @@
+block item 800018 == 1
+	Window"\n\n这东西我先收下了，多谢你帮忙除掉那头野兽。",next
+	Window"\n\n你想继续前进吗？往西面走上很长的一段路，说不定能找到那个地方，我还得待在这里。",ok
+		Window_ok item 800018 == 1
+		killitem 800018
+		giveitem 800019
+
+block item 800016 == 1
+	Window"\n\n这个应该是某位战士的遗物吧，请你把它埋葬在它的墓碑前吧。",ok
+		Window_ok item 800016 == 1
+		killitem 800016
+		giveitem 800017
+
+block item 800015 == 1
+	endWindow"\n\n那头野兽名为碎牙，夜晚出现在你来的路上，有一处稻田和墓碑的地方附近。"
+
+block item 800014 == 1
+	Window"\n\n什么？！我的朋友受伤了。。。我会派人去救他的！",next
+	Window"\n\n为了攻略这个世界的任务，我们临时组建了这只团队，当然还存在一些各种方面的小问题。",next
+	Window"\n\n我这里还是人数不足，现已查明出没于附近危害极大的一头野兽没人能去收拾它，你能帮我去干掉它吗？",ok
+		Window_ok item 800014 == 1
+		killitem 800014
+		giveitem 800015

@@ -1,0 +1,10 @@
+block item 88222 == 1 && item 88223 == 1 && item 88224 == 1 && item 88225 == 1
+window 501562,yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88222
+killitem 88223
+killitem 88224
+killitem 88225
+Warp 0,27756,1,10

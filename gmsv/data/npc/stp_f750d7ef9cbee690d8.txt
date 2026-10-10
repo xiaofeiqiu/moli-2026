@@ -1,0 +1,7 @@
+block item 88310 == 1
+window "\n\n嘿~~买卖来了！",ok
+window_ok
+Encount 3|||0|||||3|88375|||||||||
+
+block
+endwindow "\n\n嘿~~买卖来了！"

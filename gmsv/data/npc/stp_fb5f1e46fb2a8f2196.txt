@@ -1,0 +1,6 @@
+block item 60409 >= 1 && item 60412 >= 1
+	window"\n\n…………",ok
+		window_ok
+Encount 2|0,45115,2,4||||||||6000063|||||||||
+block
+	endwindow "\n\n丘比的罪行……要付出代价。"

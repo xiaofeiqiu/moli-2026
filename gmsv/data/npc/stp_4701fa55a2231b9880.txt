@@ -1,0 +1,12 @@
+block item 87201 == 1
+window "\n\n虽然你们借助神剑侥幸打败沃坦，但他是不会就此罢休的！",next
+window "\n\n如果齐格蒙德与齐格琳德还是执意在一起的话，沃坦可能为了掩盖这件丑闻而对他们产生杀机。",next
+window "\n\n你回去告诉齐格蒙德为了他两的安全，齐格琳德暂时由我看护。至于你那把断了的诺顿剑我会帮你找到修缮的方法。",ok
+window_ok
+LeaveGroup
+killitem 87201
+giveitem 87202
+Warp 0,25179,35,261
+
+block
+Warp 0,25179,35,261

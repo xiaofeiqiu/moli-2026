@@ -1,0 +1,6 @@
+block
+window"\n\n@c 奇怪! \n@c 这个房子,……",next
+window"\n\n@c 这个感觉,难道这个房子里有?",next
+window"\n\n\n@c …………",next
+window"\n\n\n@c …………",next
+endwindow"\n\n@c 果然是那个!得去告诉那个人..."

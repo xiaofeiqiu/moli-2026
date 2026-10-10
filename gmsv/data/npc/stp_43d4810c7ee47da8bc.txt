@@ -1,0 +1,8 @@
+block item 591114>=1
+window"\n\n@c 进去吧，务必要小心！",ok
+window_ok
+killitem 591114,1
+leavegroup
+Warp 0,23297,0,20
+block
+EndWindow "\n\n@c这里是通过祭坛的洞穴,没有通行证是不可以进入的."

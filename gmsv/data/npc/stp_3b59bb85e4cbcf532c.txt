@@ -1,0 +1,58 @@
+block nowevent 569 == 1
+	endWindow"\n\n卡尔米应该在城里巡逻。"
+
+block item 400075 == 1
+	Window"\n\n@c勇士，我果然没有看错你。",next
+	Window"\n@c欢迎你加入炽天使军团，成为炽天使屠魔者！",ok
+	Window_ok item 400064 == 1
+		killitem 400075
+	Window_ok item 400036 == 1 && item 400075 == 1		
+		killitem 400075
+		endevent 652 = 1
+		checktitle
+		killitem 400036
+		giveitem 400076
+
+block item 400075 == 1
+	Window"\n\n@c勇士，我果然没有看错你。",next
+	Window"\n@c欢迎你加入炽天使军团，成为炽天使屠魔者！",ok
+	Window_ok item 400064 == 1
+		killitem 400075
+	Window_ok item 400037 == 1 && item 400075 == 1		
+		killitem 400075
+		endevent 652 = 1
+		checktitle
+		killitem 400037
+		giveitem 400077
+
+block item 400075 == 1
+	Window"\n\n@c勇士，我果然没有看错你。",next
+	Window"\n@c欢迎你加入炽天使军团，成为炽天使屠魔者！",ok
+	Window_ok item 400064 == 1
+		killitem 400075
+	Window_ok item 400038 == 1 && item 400075 == 1		
+		killitem 400075
+		endevent 652 = 1
+		checktitle
+		killitem 400038
+		giveitem 400078
+
+block nowevent 569 == 0 && item 400064 >= 1
+	Window"\n\n这个城市之所以安全是因为一直收到了炽天使军团的保护。",next
+	Window"\n我知道你已经经历过一段艰难的旅程，如果你想再进阶自己的实力，我推荐你加入炽天使军团。",next
+	Window"\n你想加入吗？",yes,no
+		Window_no
+	endWindow"\n看来你还没下定决心。"
+		Window_yes
+		nowevent 569 = 1
+	endWindow"\n你先去找到游荡的卡尔米，他会给你某些提示。"
+
+block nowevent 569 == 0 && item 400038 == 1 || item 400037 == 1 || item 400036 == 1 
+	Window"\n\n@c这个城市之所以安全是因为一直收到了炽天使军团的保护。",next
+	Window"\n我知道你已经经历过一段艰难的旅程，如果你想再进阶自己的实力，我推荐你加入炽天使军团。",next
+	Window"\n你想加入吗？",yes,no
+		Window_no
+	endWindow"\n看来你还没下定决心。"
+		Window_yes
+		nowevent 569 = 1
+	endWindow"\n你先去找到游荡的卡尔米，他会给你某些提示。"

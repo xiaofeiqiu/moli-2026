@@ -1,0 +1,13 @@
+block level >= 60
+Window"\n\n王国下令组建了魔物讨伐队,你有兴趣加入我们的部队吗?",yes,no
+window_yes
+Window"\n\n请随我来!我将带你去我们的指挥部.",ok
+window_ok
+leavegroup
+Warp 0,44882,7,14
+
+
+
+
+block
+endWindow"\n\n王国下令要求我们必须尽快找出魔物增多的原因,消灭那些可恶的魔物!"

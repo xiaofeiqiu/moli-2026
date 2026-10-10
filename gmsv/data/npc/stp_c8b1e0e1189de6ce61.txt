@@ -1,0 +1,9 @@
+block
+window "\n\n孩子们～感谢你们,让心灵水晶重新绽放光芒,我想赛利鲁国也会重新复兴的,大伙们瞧外面终日下雪的天气已经不复存在,迎接我们的将是晴朗的四季.",next
+window "\n\n随着心灵水晶的光芒,我们国家的子民将重新拥有神赐予给我们的超能力,这是你们击败泽洛母后掉落的东西,或许这是神对你们的恩赐.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200593
+leavegroup
+Warp 0,27500,67,168

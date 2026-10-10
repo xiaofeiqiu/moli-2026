@@ -1,0 +1,23 @@
+block globalFlag 305 == 1 && globalFlag 306 == 1 && item 1000625 >= 1
+window 7020346,ok
+window_ok gold <= 996000
+LeaveGroup
+killitem 1000625
+addgold 4000
+window_ok gold > 996000
+endwindow 7020347
+
+block item 1000623 >= 1
+endwindow 7020348
+
+block globalFlag 305 == 0  && globalFlag 306 == 0
+window 7020349,yes,no
+window_no
+window_yes
+window 7020350,ok
+window_ok
+LeaveGroup
+giveitem 1000623
+
+block
+endwindow 7020351

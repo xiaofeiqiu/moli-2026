@@ -1,0 +1,21 @@
+block item 18447 >= 1
+window "\n\n你要把黑暗之戒放入雕像凹槽吗?",yes,no
+window_no
+window_yes item 18447 >= 1
+killitem 18447
+giveitem 60503
+window "\n\n突然从雕像口中掉下来一串钥匙.",ok
+window_ok
+leavegroup
+Warp 0,57083,29,10
+
+block item 18447 == 0
+window "\n\n继续前进吧!勇者!",ok
+window_ok
+leavegroup
+Warp 0,57083,29,10
+
+block
+endwindow "\n\n雕像额头有个像戒指的凹槽!"
+
+

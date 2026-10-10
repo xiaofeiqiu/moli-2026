@@ -1,0 +1,5 @@
+block item 60005>= 1
+window "\n\n你要捡起地上的纸条吗?",yes,no
+window_yes
+killitem 60005
+giveitem 60006

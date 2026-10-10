@@ -1,0 +1,8 @@
+block item 50863 == 1
+Window"\n\n你已经将勇气找回来了,我们赶紧离开梦境吧!",ok
+Window_ok
+LeaveGroup
+Warp 0,57452,66,86
+
+block
+EndWindow "\n\n刚才的水虽然很难喝,但是好神奇啊,我们又见面了.魔物就在南方的洞窟里面."

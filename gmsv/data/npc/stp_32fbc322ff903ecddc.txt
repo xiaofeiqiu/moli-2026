@@ -1,0 +1,17 @@
+block item 86535 == 1 && item 86536 == 1 && item 86537 == 1
+window "\n\n嗯~~我看材料都凑齐了,现在我们就可以做雄黄酒了,请你稍等片刻...",ok
+window_ok item 86535 == 1 && item 86536 == 1 && item 86537 == 1
+leavegroup
+killitem 86535
+killitem 86536
+killitem 86537
+giveitem 86538
+endwindow "\n\n你拿着这酒去村外找格拉,他正在搜寻蛇的巢穴."
+
+block item 86535 == 1
+window "\n\n这不是雄黄酒的配方么?能给我看看吗?",next
+endwindow "\n\n嗯~~根据配方上的材料目前我这还缺雄黄和白酒两样,不过这两样东西需要去找鲁伊和乌莉."
+
+
+block
+endwindow "\n\n要驱逐蛇只要有雄黄酒就行了,可是我这没那配方."

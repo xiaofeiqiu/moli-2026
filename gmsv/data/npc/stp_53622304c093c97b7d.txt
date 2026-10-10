@@ -1,0 +1,4 @@
+block
+window"\n\n\n@c欢迎来到维拉村,看你的身形,好象不是本地人吧",next
+window"\n\n\n@c呵呵,我可是这个村子里历年来最年轻的村长喔.",next
+endwindow"\n\n\n@c你可别小看我呐~既然来了,那你就随便观赏下吧"

@@ -1,0 +1,10 @@
+block item 21017 == 1
+	endwindow "\n仙人掌好像已经瘦了许多."
+block item 21020 == 1 && item 21016 >= 1
+	window "\n@n拿出针筒对准肥胖部位就插.\n因为插的针头插的太深.反而自己的手仙人掌的刺被扎了一下",next
+	window "\n抽了差不多了.拔出来吧.",ok
+	window_ok item 21020 == 1 && item 21016 >= 1
+	killitem 21016,1
+	giveitem 21017,1
+	setlp -100
+	endwindow "\n得到了酷似水元素的东西?\n\n\n\n\n　　系统提示:对了,忘记扣你血了"

@@ -1,0 +1,6 @@
+block
+window "\n\n统一四界黑暗之王,依循着您的碎片之缘，藉由您所有的力量,赐予我更强的魔力吧.",next
+window "\n\n大地与大气的精灵啊,请依照古契约,使我完成那义务,天地暴烈.",ok
+window_ok
+leavegroup
+Warp 0,25263,1,8

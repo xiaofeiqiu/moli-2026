@@ -1,0 +1,2 @@
+block 
+	window "\n\n\n\n@c你好.请问需要喝点什么吗？",ok

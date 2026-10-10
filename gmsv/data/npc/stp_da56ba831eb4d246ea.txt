@@ -1,0 +1,3 @@
+block item 87438 == 1
+killitem 87438
+Warp 0,29636,28,20

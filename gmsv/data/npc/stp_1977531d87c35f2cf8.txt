@@ -1,0 +1,7 @@
+block
+window "\n\n你确定要前往[古树之森]吗?",yes,no
+window_no
+window_yes
+killitem 800145
+leaveGroup
+Warp 0,64035,2,6

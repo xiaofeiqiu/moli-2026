@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至被封闭的祭坛 ？",yes,no
+		Window_yes
+			KillItem 60229,1
+			Warp 0,402,377,31
+		Window_no

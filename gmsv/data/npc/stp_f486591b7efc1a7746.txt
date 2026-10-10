@@ -1,0 +1,12 @@
+block	item 599142	>=	1
+window"\n\n 你们是来帮(汉克)拿猪菌的吧？",next
+ChangePal 30,6
+window"\n\n\n 那你们就拿去把....",ok
+window_ok
+killitem 599142,1
+Giveitem 599143,1
+LeaveGroup
+Warp 0,1000,242,80
+block
+LeaveGroup
+Warp 0,1000,242,80

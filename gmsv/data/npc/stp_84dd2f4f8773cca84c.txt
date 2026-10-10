@@ -1,0 +1,8 @@
+block item 88318 == 1 && item 88319 == 1 && floor == 33000 && xpos == 404 && Ypos == 149
+window "\n\n你要使用绷带假装伤患吗？",yes,no
+window_no
+window_yes
+LeaveGroup
+killitem 88318
+killitem 88319
+Warp 0,14166,17,36

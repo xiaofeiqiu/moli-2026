@@ -1,0 +1,16 @@
+block item 200219 >= 1
+endwindow "\n\n辛苦你跑一趟了."
+
+
+block item 200218 >= 1
+window "\n\n你好!我是来提货的.",next
+window "\n\n我年纪大了,你能跟你们老板打个招呼吗?",next
+window "\n\n让你帮我送一下货,这是提货单.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200219
+
+
+block
+endwindow "\n\n看着我这个老太婆做什么."

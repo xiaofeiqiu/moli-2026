@@ -1,0 +1,8 @@
+block item 800133 >= 1 && itemspace >= 1
+window "\n\n干得好,祝贺你通过试炼,拿着这个,继续前进吧!",yes,no
+window_no
+window_yes item 800133 >= 1
+killitem 800133
+giveitem 800137,1
+leaveGroup
+Warp 0,45088,530,260

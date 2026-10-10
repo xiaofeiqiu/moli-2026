@@ -1,0 +1,20 @@
+block item 800106 == 1 && itemspace >= 2
+	window "\n\n原来是这样啊,早知道我自己去了\n\n不过还是要谢谢你,拿去吧\n\n这可是苏之国的秘密噢",ok
+  window_ok item 800106 == 1
+  killitem 800106
+  giveitem 800111
+
+block item 800109 == 1
+	window "\n\n快去调查吧!傻屌",ok
+
+
+block level >= 70
+	window "\n\n我们怎么会这么倒霉\n\n这次的深绿山道附近的奇怪事件让我来调查!",next
+	window "\n\n我看你很强壮哦,要不然你替我去调查吧\n\n有奖励的,嘻嘻",yes,no
+	window_no
+	endwindow "\n\n什么嘛,法兰的勇者也不过如此\n\n都是胆小鬼!",ok
+	window_yes
+	window "\n\n好,那把这个给你,拜托你了\n\n记住要找回证据噢",ok
+	window_ok
+	giveitem 800109
+	

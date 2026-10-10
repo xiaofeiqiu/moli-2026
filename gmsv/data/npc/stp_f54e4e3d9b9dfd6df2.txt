@@ -1,0 +1,928 @@
+#728=A
+#729=B
+#730=C
+#731=D
+#732=E
+#733=F
+#734=G
+#735=H
+#736=I
+#737=J
+#738=K
+#739=L
+#740=M
+#741=N
+#742=O
+#743=P
+#744=Q
+#745=R
+#746=S
+#747=T
+#748=U
+#749=V
+#750=W
+#751=X
+#752=Y
+#753=Z
+
+
+######################################开始编写############################
+#A.阿凯鲁法
+block StrCmpChat == 728
+if gold < 10000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到阿凯鲁法城需要10000G"
+endif
+if gold >= 10000 && group == 5
+addgold -10000
+Warp 0,33200,99,165
+endif
+if gold < 8000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到阿凯鲁法城需要8000G"
+endif
+if gold >= 8000 && group == 4
+addgold -8000
+Warp 0,33200,99,165
+endif
+if gold < 6000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到阿凯鲁法城需要6000G"
+endif
+if gold >= 6000 && group == 3
+addgold -6000
+Warp 0,33200,99,165
+endif
+if gold < 4000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到阿凯鲁法城需要4000G"
+endif
+if gold >= 4000 && group == 2
+addgold -4000
+Warp 0,33200,99,165
+endif
+if gold < 2000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到阿凯鲁法城需要2000G"
+endif
+if gold >= 2000 && group == 1
+addgold -2000
+Warp 0,33200,99,165
+endif
+
+
+#B.哥拉尔城
+block StrCmpChat == 729
+if gold < 10000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到哥拉尔城需要10000G"
+endif
+if gold >= 10000 && group == 5
+addgold -10000
+Warp 0,43100,120,107
+endif
+if gold < 8000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到哥拉尔城需要8000G"
+endif
+if gold >= 8000 && group == 4
+addgold -8000
+Warp 0,43100,120,107
+endif
+if gold < 6000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到哥拉尔城需要6000G"
+endif
+if gold >= 6000 && group == 3
+addgold -6000
+Warp 0,43100,120,107
+endif
+if gold < 4000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到哥拉尔城需要4000G"
+endif
+if gold >= 4000 && group == 2
+addgold -4000
+Warp 0,43100,120,107
+endif
+if gold < 2000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到哥拉尔城需要2000G"
+endif
+if gold >= 2000 && group == 1
+addgold -2000
+Warp 0,43100,120,107
+endif
+
+#C.圣拉鲁卡村
+block StrCmpChat == 730
+if gold < 500 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到圣拉鲁卡村需要500G"
+endif
+if gold >= 500 && group == 5
+addgold -500
+Warp 0,2399,15,4
+endif
+if gold < 400 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到圣拉鲁卡村需要400G"
+endif
+if gold >= 400 && group == 4
+addgold -400
+Warp 0,2399,15,4
+endif
+if gold < 300 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到圣拉鲁卡村需要300G"
+endif
+if gold >= 300 && group == 3
+addgold -300
+Warp 0,2399,15,4
+endif
+if gold < 200 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到圣拉鲁卡村需要200G"
+endif
+if gold >= 200 && group == 2
+addgold -200
+Warp 0,2399,15,4
+endif
+if gold < 100 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到圣拉鲁卡村需要100G"
+endif
+if gold >= 100 && group == 1
+addgold -100
+Warp 0,2399,15,4
+endif
+
+
+#D.伊尔村
+block StrCmpChat == 731
+if gold < 500 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到伊尔村需要500G"
+endif
+if gold >= 500 && group == 5
+addgold -500
+Warp 0,2099,20,10
+endif
+if gold < 400 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到伊尔村需要400G"
+endif
+if gold >= 400 && group == 4
+addgold -400
+Warp 0,2099,20,10
+endif
+if gold < 300 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到伊尔村需要300G"
+endif
+if gold >= 300 && group == 3
+addgold -300
+Warp 0,2099,20,10
+endif
+if gold < 200 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到伊尔村需要200G"
+endif
+if gold >= 200 && group == 2
+addgold -200
+Warp 0,2099,20,10
+endif
+if gold < 100 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到伊尔村需要100G"
+endif
+if gold >= 100 && group == 1
+addgold -100
+Warp 0,2099,20,10
+endif
+
+
+#E.亚留特村
+block StrCmpChat == 732
+if gold < 1250 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到亚留特村需要1250G"
+endif
+if gold >= 1250 && group == 5
+addgold -1250
+Warp 0,2499,5,15
+endif
+if gold < 1000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到亚留特村需要1000G"
+endif
+if gold >= 1000 && group == 4
+addgold -1000
+Warp 0,2499,5,15
+endif
+if gold < 750 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到亚留特村需要750G"
+endif
+if gold >= 750 && group == 3
+addgold -750
+Warp 0,2499,5,15
+endif
+if gold < 500 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到亚留特村需要500G"
+endif
+if gold >= 500 && group == 2
+addgold -500
+Warp 0,2499,5,15
+endif
+if gold < 250 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到亚留特村需要250G"
+endif
+if gold >= 250 && group == 1
+addgold -250
+Warp 0,2499,5,15
+endif
+
+
+#F.维诺亚村
+block StrCmpChat == 733
+if gold < 1250 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到维诺亚村需要1250G"
+endif
+if gold >= 1250 && group == 5
+addgold -1250
+Warp 0,2199,5,5
+endif
+if gold < 1000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到维诺亚村需要1000G"
+endif
+if gold >= 1000 && group == 4
+addgold -1000
+Warp 0,2199,5,5
+endif
+if gold < 750 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到维诺亚村需要750G"
+endif
+if gold >= 750 && group == 3
+addgold -750
+Warp 0,2199,5,5
+endif
+if gold < 500 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到维诺亚村需要500G"
+endif
+if gold >= 500 && group == 2
+addgold -500
+Warp 0,2199,5,5
+endif
+if gold < 250 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到维诺亚村需要250G"
+endif
+if gold >= 250 && group == 1
+addgold -250
+Warp 0,2199,5,5
+endif
+
+
+#G.奇利村
+block StrCmpChat == 734
+if gold < 2500 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到奇利村需要2500G"
+endif
+if gold >= 2500 && group == 5
+addgold -2500
+Warp 0,3299,13,9
+endif
+if gold < 2000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到奇利村需要2000G"
+endif
+if gold >= 2000 && group == 4
+addgold -2000
+Warp 0,3299,13,9
+endif
+if gold < 1500 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到奇利村需要1500G"
+endif
+if gold >= 1500 && group == 3
+addgold -1500
+Warp 0,3299,13,9
+endif
+if gold < 1000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到奇利村需要1000G"
+endif
+if gold >= 1000 && group == 2
+addgold -1000
+Warp 0,3299,13,9
+endif
+if gold < 500 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到奇利村需要500G"
+endif
+if gold >= 500 && group == 1
+addgold -500
+Warp 0,3299,13,9
+endif
+
+
+#H.加纳村
+block StrCmpChat == 735
+if gold < 3000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到加纳村需要3000G"
+endif
+if gold >= 3000 && group == 5
+addgold -3000
+Warp 0,3099,14,7
+endif
+if gold < 2400 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到加纳村需要2400G"
+endif
+if gold >= 2400 && group == 4
+addgold -2400
+Warp 0,3099,14,7
+endif
+if gold < 1800 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到加纳村需要1800G"
+endif
+if gold >= 1800 && group == 3
+addgold -1800
+Warp 0,3099,14,7
+endif
+if gold < 1200 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到加纳村需要1200G"
+endif
+if gold >= 1200 && group == 2
+addgold -1200
+Warp 0,3099,14,7
+endif
+if gold < 600 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到加纳村需要600G"
+endif
+if gold >= 600 && group == 1
+addgold -600
+Warp 0,3099,14,7
+endif
+
+
+#I.杰诺瓦镇
+block StrCmpChat == 736
+if gold < 3750 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到杰诺瓦镇需要3750G"
+endif
+if gold >= 3750 && group == 5
+addgold -3750
+Warp 0,4099,6,7
+endif
+if gold < 3000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到杰诺瓦镇需要3000G"
+endif
+if gold >= 3000 && group == 4
+addgold -3000
+Warp 0,4099,6,7
+endif
+if gold < 2250 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到杰诺瓦镇需要2250G"
+endif
+if gold >= 2250 && group == 3
+addgold -2250
+Warp 0,4099,6,7
+endif
+if gold < 1500 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到杰诺瓦镇需要1500G"
+endif
+if gold >= 1500 && group == 2
+addgold -1500
+Warp 0,4099,6,7
+endif
+if gold < 750 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到杰诺瓦镇需要750G"
+endif
+if gold >= 750 && group == 1
+addgold -750
+Warp 0,4099,6,7
+endif
+
+
+
+#J.蒂娜村
+block StrCmpChat == 737
+if gold < 4500 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到蒂娜村需要4500G"
+endif
+if gold >= 4500 && group == 5
+addgold -4500
+Warp 0,4299,5,5
+endif
+if gold < 3600 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到蒂娜村需要3600G"
+endif
+if gold >= 3600 && group == 4
+addgold -3600
+Warp 0,4299,5,5
+endif
+if gold < 2700 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到蒂娜村需要2700G"
+endif
+if gold >= 2700 && group == 3
+addgold -2700
+Warp 0,4299,5,5
+endif
+if gold < 1800 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到蒂娜村需要1800G"
+endif
+if gold >= 1800 && group == 2
+addgold -1800
+Warp 0,4299,5,5
+endif
+if gold < 900 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到蒂娜村需要900G"
+endif
+if gold >= 900 && group == 1
+addgold -900
+Warp 0,4299,5,5
+endif
+
+
+#K.阿巴尼斯村
+block StrCmpChat == 738
+if gold < 3750 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到阿巴尼斯村需要3750G"
+endif
+if gold >= 3750 && group == 5
+addgold -3750
+Warp 0,4399,5,14
+endif
+if gold < 3000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到阿巴尼斯村需要3000G"
+endif
+if gold >= 3000 && group == 4
+addgold -3000
+Warp 0,4399,5,14
+endif
+if gold < 2250 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到阿巴尼斯村需要2250G"
+endif
+if gold >= 2250 && group == 3
+addgold -2250
+Warp 0,4399,5,14
+endif
+if gold < 1500 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到阿巴尼斯村需要1500G"
+endif
+if gold >= 1500 && group == 2
+addgold -1500
+Warp 0,4399,5,14
+endif
+if gold < 750 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到阿巴尼斯村需要750G"
+endif
+if gold >= 750 && group == 1
+addgold -750
+Warp 0,4399,5,14
+endif
+
+
+#L.坎那贝拉村
+block StrCmpChat == 739
+if gold < 15000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到坎那贝拉村需要15000G"
+endif
+if gold >= 15000 && group == 5
+addgold -15000
+Warp 0,33500,22,28
+endif
+if gold < 12000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到坎那贝拉村需要12000G"
+endif
+if gold >= 12000 && group == 4
+addgold -12000
+Warp 0,33500,22,28
+endif
+if gold < 9000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到坎那贝拉村需要9000G"
+endif
+if gold >= 9000 && group == 3
+addgold -9000
+Warp 0,33500,22,28
+endif
+if gold < 6000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到坎那贝拉村需要6000G"
+endif
+if gold >= 6000 && group == 2
+addgold -6000
+Warp 0,33500,22,28
+endif
+if gold < 3000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到坎那贝拉村需要3000G"
+endif
+if gold >= 3000 && group == 1
+addgold -3000
+Warp 0,33500,22,28
+endif
+
+
+#M.鲁米那斯村
+block StrCmpChat == 740
+if gold < 25000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到鲁米那斯村需要25000G"
+endif
+if gold >= 25000 && group == 5
+addgold -25000
+Warp 0,43600,61,29
+endif
+if gold < 20000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到鲁米那斯村需要20000G"
+endif
+if gold >= 20000 && group == 4
+addgold -20000
+Warp 0,43600,61,29
+endif
+if gold < 15000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到鲁米那斯村需要15000G"
+endif
+if gold >= 15000 && group == 3
+addgold -15000
+Warp 0,43600,61,29
+endif
+if gold < 10000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到鲁米那斯村需要10000G"
+endif
+if gold >= 10000 && group == 2
+addgold -10000
+Warp 0,43600,61,29
+endif
+if gold < 5000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到鲁米那斯村需要5000G"
+endif
+if gold >= 5000 && group == 1
+addgold -5000
+Warp 0,43600,61,29
+endif
+
+
+#N.米诺基亚村
+block StrCmpChat == 741
+if gold < 25000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到米诺基亚村需要25000G"
+endif
+if gold >= 25000 && group == 5
+addgold -25000
+Warp 0,43541,21,15
+endif
+if gold < 20000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到米诺基亚村需要20000G"
+endif
+if gold >= 20000 && group == 4
+addgold -20000
+Warp 0,43541,21,15
+endif
+if gold < 15000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到米诺基亚村需要15000G"
+endif
+if gold >= 15000 && group == 3
+addgold -15000
+Warp 0,43541,21,15
+endif
+if gold < 10000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到米诺基亚村需要10000G"
+endif
+if gold >= 10000 && group == 2
+addgold -10000
+Warp 0,43541,21,15
+endif
+if gold < 5000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到米诺基亚村需要5000G"
+endif
+if gold >= 5000 && group == 1
+addgold -5000
+Warp 0,43541,21,15
+endif
+
+
+#O.雷克塔尔镇
+block StrCmpChat == 742
+if gold < 25000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到雷克塔尔镇需要25000G"
+endif
+if gold >= 25000 && group == 5
+addgold -25000
+Warp 0,43700,76,105
+endif
+if gold < 20000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到雷克塔尔镇需要20000G"
+endif
+if gold >= 20000 && group == 4
+addgold -20000
+Warp 0,43700,76,105
+endif
+if gold < 15000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到雷克塔尔镇需要15000G"
+endif
+if gold >= 15000 && group == 3
+addgold -15000
+Warp 0,43700,76,105
+endif
+if gold < 10000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到雷克塔尔镇需要10000G"
+endif
+if gold >= 10000 && group == 2
+addgold -10000
+Warp 0,43700,76,105
+endif
+if gold < 5000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到雷克塔尔镇需要5000G"
+endif
+if gold >= 5000 && group == 1
+addgold -5000
+Warp 0,43700,76,105
+endif
+
+
+#P.蕾欧娜村
+block StrCmpChat == 743
+if gold < 6000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到蕾欧娜村需要6000G"
+endif
+if gold >= 6000 && group == 5
+addgold -6000
+Warp 0,30333,5,14
+endif
+if gold < 4800 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到蕾欧娜村需要4800G"
+endif
+if gold >= 4800 && group == 4
+addgold -4800
+Warp 0,30333,5,14
+endif
+if gold < 3600 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到蕾欧娜村需要3600G"
+endif
+if gold >= 3600 && group == 3
+addgold -3600
+Warp 0,30333,5,14
+endif
+if gold < 2400 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到蕾欧娜村需要2400G"
+endif
+if gold >= 2400 && group == 2
+addgold -2400
+Warp 0,30333,5,14
+endif
+if gold < 1200 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到蕾欧娜村需要1200G"
+endif
+if gold >= 1200 && group == 1
+addgold -1200
+Warp 0,30333,5,14
+endif
+
+
+#Q.尼维尔海村
+block StrCmpChat == 744
+if gold < 1500 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到尼维尔海村需要1500G"
+endif
+if gold >= 1500 && group == 5
+addgold -1500
+Warp 0,30203,13,13
+endif
+if gold < 1200 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到尼维尔海村需要1200G"
+endif
+if gold >= 1200 && group == 4
+addgold -1200
+Warp 0,30203,13,13
+endif
+if gold < 900 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到尼维尔海村需要900G"
+endif
+if gold >= 900 && group == 3
+addgold -900
+Warp 0,30203,13,13
+endif
+if gold < 600 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到尼维尔海村需要600G"
+endif
+if gold >= 600 && group == 2
+addgold -600
+Warp 0,30203,13,13
+endif
+if gold < 300 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到尼维尔海村需要300G"
+endif
+if gold >= 300 && group == 1
+addgold -300
+Warp 0,30203,13,13
+endif
+
+
+#R.克瑞村
+block StrCmpChat == 745
+if gold < 2500 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到克瑞村需要2500G"
+endif
+if gold >= 2500 && group == 5
+addgold -2500
+Warp 0,30268,6,6
+endif
+if gold < 2000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到克瑞村需要2000G"
+endif
+if gold >= 2000 && group == 4
+addgold -2000
+Warp 0,30268,6,6
+endif
+if gold < 1500 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到克瑞村需要1500G"
+endif
+if gold >= 1500 && group == 3
+addgold -1500
+Warp 0,30268,6,6
+endif
+if gold < 1000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到克瑞村需要1000G"
+endif
+if gold >= 1000 && group == 2
+addgold -1000
+Warp 0,30268,6,6
+endif
+if gold < 500 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到克瑞村需要500G"
+endif
+if gold >= 500 && group == 1
+addgold -500
+Warp 0,30268,6,6
+endif
+
+
+#S.摩顿村
+block StrCmpChat == 746
+if gold < 2000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到摩顿村需要2000G"
+endif
+if gold >= 2000 && group == 5
+addgold -2000
+Warp 0,30313,30,4
+endif
+if gold < 1600 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到摩顿村需要1600G"
+endif
+if gold >= 1600 && group == 4
+addgold -1600
+Warp 0,30313,30,4
+endif
+if gold < 1200 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到摩顿村需要1200G"
+endif
+if gold >= 1200 && group == 3
+addgold -1200
+Warp 0,30313,30,4
+endif
+if gold < 800 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到摩顿村需要800G"
+endif
+if gold >= 800 && group == 2
+addgold -800
+Warp 0,30313,30,4
+endif
+if gold < 400 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到摩顿村需要400G"
+endif
+if gold >= 400 && group == 1
+addgold -400
+Warp 0,30313,30,4
+endif
+
+
+#T.乌克兰村
+block StrCmpChat == 747
+if gold < 50000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到乌克兰村需要50000G"
+endif
+if gold >= 50000 && group == 5
+addgold -50000
+Warp 0,2200,50,60
+endif
+if gold < 40000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到乌克兰村需要40000G"
+endif
+if gold >= 40000 && group == 4
+addgold -40000
+Warp 0,2200,50,60
+endif
+if gold < 30000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到乌克兰村需要30000G"
+endif
+if gold >= 30000 && group == 3
+addgold -30000
+Warp 0,2200,50,60
+endif
+if gold < 20000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到乌克兰村需要20000G"
+endif
+if gold >= 20000 && group == 2
+addgold -20000
+Warp 0,2200,50,60
+endif
+if gold < 10000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到乌克兰村需要10000G"
+endif
+if gold >= 10000 && group == 1
+addgold -10000
+Warp 0,2200,50,60
+endif
+
+
+#U.魔法大学
+block StrCmpChat == 748
+if gold < 4000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到魔法大学需要4000G"
+endif
+if gold >= 4000 && group == 5
+addgold -4000
+Warp 0,402,118,103
+endif
+if gold < 3200 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到魔法大学需要3200G"
+endif
+if gold >= 3200 && group == 4
+addgold -3200
+Warp 0,402,118,103
+endif
+if gold < 2400 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到魔法大学需要2400G"
+endif
+if gold >= 2400 && group == 3
+addgold -2400
+Warp 0,402,118,103
+endif
+if gold < 1600 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到魔法大学需要1600G"
+endif
+if gold >= 1600 && group == 2
+addgold -1600
+Warp 0,402,118,103
+endif
+if gold < 800 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到魔法大学需要800G"
+endif
+if gold >= 800 && group == 1
+addgold -800
+Warp 0,402,118,103
+endif
+
+
+#V.内心传送
+block StrCmpChat == 749
+if gold < 5000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到马斯的内心世界需要5000G"
+endif
+if gold >= 5000 && group == 5
+addgold -5000
+Warp 0,30192,7,9
+endif
+if gold < 4000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到马斯的内心世界需要4000G"
+endif
+if gold >= 4000 && group == 4
+addgold -4000
+Warp 0,30192,7,9
+endif
+if gold < 3000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到马斯的内心世界需要3000G"
+endif
+if gold >= 3000 && group == 3
+addgold -3000
+Warp 0,30192,7,9
+endif
+if gold < 2000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到马斯的内心世界需要2000G"
+endif
+if gold >= 2000 && group == 2
+addgold -2000
+Warp 0,30192,7,9
+endif
+if gold < 1000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到马斯的内心世界需要1000G"
+endif
+if gold >= 1000 && group == 1
+addgold -1000
+Warp 0,30192,7,9
+endif
+
+
+#W.雪拉威森塔
+block StrCmpChat == 750
+if gold < 5000 && group == 5
+endwindow "\n\n您的魔币不够.\n\n5人传送到雪拉威森塔需要5000G"
+endif
+if gold >= 5000 && group == 5
+addgold -5000
+Warp 0,59801,33,99
+endif
+if gold < 4000 && group == 4
+endwindow "\n\n您的魔币不够.\n\n4人传送到雪拉威森塔需要4000G"
+endif
+if gold >= 4000 && group == 4
+addgold -4000
+Warp 0,59801,33,99
+endif
+if gold < 3000 && group == 3
+endwindow "\n\n您的魔币不够.\n\n3人传送到雪拉威森塔需要3000G"
+endif
+if gold >= 3000 && group == 3
+addgold -3000
+Warp 0,59801,33,99
+endif
+if gold < 2000 && group == 2
+endwindow "\n\n您的魔币不够.\n\n2人传送到雪拉威森塔需要2000G"
+endif
+if gold >= 2000 && group == 2
+addgold -2000
+Warp 0,59801,33,99
+endif
+if gold < 1000 && group == 1
+endwindow "\n\n您的魔币不够.\n\n单人传送到雪拉威森塔需要1000G"
+endif
+if gold >= 1000 && group == 1
+addgold -1000
+Warp 0,59801,33,99
+endif
+
+
+block
+endwindow 727

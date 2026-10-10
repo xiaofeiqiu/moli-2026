@@ -1,0 +1,14 @@
+block globalFlag 353 == 1 && globalFlag 352 == 0
+window 910439,next
+window 910440,next
+window 910441,next
+window 910442,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+globalFlag 352 = 1
+giveitem 70018
+Warp 0,25006,9,1
+window_ok ItemSpace < 1
+endwindow 910443
+
+

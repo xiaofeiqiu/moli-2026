@@ -1,0 +1,8 @@
+block	item 591338>=1
+killitemall 591338
+Giveitem 591339,1
+	LeaveGroup
+	Warp 0,402,184,164
+block
+	LeaveGroup
+	Warp 0,402,184,164

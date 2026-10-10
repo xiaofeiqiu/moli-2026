@@ -1,0 +1,8 @@
+Block Item 661200>=1
+EndWindow"\n\n\n@c那就谢谢你了！勇者！"
+Block
+Window"\n\n\n传说中的勇者 光明与黑暗交战的时代即将来临 守护主城的12神已经被邪魔军团全部剿灭我们的兵力已经不足够和他们对抗,你们是否愿意协助我们？",yes,no
+Window_no
+Window_yes
+GiveItem 661200
+EndWindow"\n\n\n@c那就谢谢你了！勇者！"

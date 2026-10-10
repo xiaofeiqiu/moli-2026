@@ -1,0 +1,11 @@
+#冥界系列任务脚本 CloudyBoy编写于20070814 http://www.CloudyBoy.com
+
+############## 任务内容开始 ##############
+block Level >= 10 && Item 1000778 == 1
+
+	KillItem 1000778,1
+	GiveItem 1000774,1
+	EndWindow "\n\n\n@c　很好。。。你有资格加入我。恩。去吧。"
+
+block
+	EndWindow "\n\n\n@c　你好。有什么可以服务的么？"

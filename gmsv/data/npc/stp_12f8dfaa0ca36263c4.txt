@@ -1,0 +1,18 @@
+block item 800174 >= 1 && item 800188 >= 1
+endwindow "\n\n快去吧"
+
+block item 800174 >= 1
+window "\n\n原来大巫师冯奴的两位孙子失踪与诱拐事件无关.唉~看来还要留在奇利村继续做调查!",next
+window "\n\n前大巫师冯奴赠予了我一枚恢复之晶,我现在把它送给你,留在我这里并没有多大用处.",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok item 800174 >= 1
+giveitem 800188,1
+endwindow "\n\n大巫师冯奴说,这枚恢复之晶能够将除自己以外的、已经逝去的灵魂,重新召回人间,但只能使用一次,你可要好好保存啊!"
+
+block
+endwindow "\n\n我正在调查,别打扰我"
+
+
+
+

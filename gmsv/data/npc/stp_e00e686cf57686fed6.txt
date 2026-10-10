@@ -1,0 +1,22 @@
+block item 652605 >= 1
+window "\n\n神族的力量太强大了,恐怕接下来联军还是需要你的帮助的!感谢你,冒险者,请收下这个吧.",ok
+window_ok item 652605 >= 1
+killitem 652605
+giveitem 652606
+
+
+block item 652604 >= 1
+endwindow "\n\n去吧,未来之塔就是岛的东北方向."
+
+
+block item 652598 >= 1
+window "\n\n啊,勇敢的冒险者呀,感谢你帮助联军解决了旧日之塔的问题.这几天肯吉罗岛上居然出现了一座未来之塔,你是否还有勇气去探询神族的意图呢?",yes,no
+window_no
+window_yes item 652598 >= 1
+killitem 652598
+giveitem 652604
+endwindow "\n\n好样的,我就知道你的勇气是不可小视的.去吧,未来之塔就是岛的东北方向."
+
+
+block
+endwindow "\n\n未来之塔呀,找不到能够进去探察的勇者真是个头痛的问题呀."

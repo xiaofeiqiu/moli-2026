@@ -1,0 +1,16 @@
+block Item 3801 == 1
+window "\n\n我不想成为李贝留斯",next
+window "\n\n我只是神指派来的使者",next
+window "\n\n你愿意帮我达成歌姬的使命吗?",yes,no
+window_no
+window_yes
+window "\n\n赶紧把魔化的戒指给我\n\n我会赋予你海贼真正的力量",ok
+window_ok Item 3801 == 1
+changePal 2,1
+killitem 3801,1
+LeaveGroup
+Warp 0,60300,50,54
+	
+	
+block
+endwindow "\n\n歌姬的意念正在法兰城内求救,哎...",ok

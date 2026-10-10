@@ -1,0 +1,15 @@
+block item 88326 == 1
+Warp 0,33000,353,358
+
+block item 88324 == 1
+window "\n\n你要捡起地上的犄角吗？",yes,no
+window_no
+window_yes ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_yes
+LeaveGroup
+giveitem 88326
+Warp 0,33000,353,358
+
+block
+Warp 0,33000,353,358

@@ -1,0 +1,49 @@
+block item 200589 >= 1
+endwindow "\n\n你爷爷看见你现在这么能干肯定很高兴."
+
+
+
+block item 200588 >= 1
+window "\n\n辛格告诉你一个好消息,你爷爷伤势痊愈了,他好像有话要告诉你,你快去医院看他吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200589
+
+
+
+
+block item 200574 >= 1
+endwindow "\n\n祝你们好运."
+
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1 && item 200571 >= 1 && item 200573 >= 1
+window "\n\n你们从炎之地洞回来啦,心灵长老都告诉我了,我已经找村里的能工巧匠为你们制作了氧气面罩.",next
+window "\n\n有了它就能解决你们冰水下生存的问题了,我和心灵长老也只能帮你们到这里了,剩下的就全靠你们了.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200574
+
+
+block item 200570 >= 1
+endwindow "\n\n这几样宝物你要收好了,赛利鲁国的复兴就靠你和这几样宝物了."
+
+
+
+block item 200567 >= 1 && item 200568 >= 1 && item 200569 >= 1
+window "\n\n辛格你终于来啦,老朽在此等侯多时了,今天老朽就来解开你心中的疑问.",next
+window "\n\n你听好了～原本我们是法达利亚最北端的一个小国,但是我们赛利鲁国的人民却有这大陆独一无二的超能力…心灵感应.",next
+window "\n\n或许这项超能力受到了上天的嫉妒,在20年前的一个晚上,整个赛利鲁国全境突降暴雪,没过多久赛利鲁的王宫宫殿被冰封在现在本村四面的冰湖中.",next
+window "\n\n我们在心灵长老基德姆的带领下,抱着刚满月的你跳出了宫殿,你的真实身份就是我们赛利鲁国的王子殿下,你还有一个姐姐依依纳公主,由于当时场面混乱没有救出,结果永远与宫殿一起长眠了.",next
+window "\n\n至于你手中拿着的东西乃是本国上古宝物,至于作用你就得找心灵长老了,她就住在村子最西的塔里,快去吧孩子.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200570
+
+
+
+block
+endwindow "\n\n欢迎你来到赛利鲁村,觉得我们村的雪景如何啊."

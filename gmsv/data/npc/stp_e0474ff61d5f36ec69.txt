@@ -1,0 +1,9 @@
+block NowEvent 549 == 1
+endwindow "\n\n你已经向心美的墓碑献过花了."
+
+
+block item 730110 >= 1
+window "\n\n要向心美的墓碑献花吗?",yes,no
+window_no
+window_yes
+NowEvent 549 = 1

@@ -1,0 +1,6 @@
+block
+window "\n\n你确定要打开这个计划书吗?",yes,no
+window_yes
+killitem 800111
+giveitem (800100%1,800101%1,800102%1,800103%1,800104%1)
+window_no

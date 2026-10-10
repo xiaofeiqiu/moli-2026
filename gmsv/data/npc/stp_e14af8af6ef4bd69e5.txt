@@ -1,0 +1,15 @@
+
+block petspace == 0
+endwindow "\n\n你的宠物栏满啦."
+
+
+
+
+block
+window "\n\n要剥开橘子吗?",yes,no
+window_yes
+killitem 715332
+givepet 200191
+
+
+

@@ -1,0 +1,21 @@
+
+
+block
+LocalCount8 = random 3,0
+
+if LocalCount8 == 1
+killitem 715320
+giveitem 715321
+endif
+
+if LocalCount8 == 2
+killitem 715320
+giveitem 715322
+endif
+
+
+if LocalCount8 == 3
+killitem 715320
+givepet 200180
+endif
+

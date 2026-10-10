@@ -1,0 +1,8 @@
+block Level >= 50 && Item 940111 == 1 && Item 940117 == 1 && Item 940118 == 1
+killItem 940118,1
+giveItem 940119,1
+endwindow "这一天终于来了."
+
+
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

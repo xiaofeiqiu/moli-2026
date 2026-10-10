@@ -1,0 +1,7 @@
+block Item 670045 == 1
+	Window "\n\n　谢谢你救了我",next
+	Window "\n\n　把这个给你，我儿子会给你一个礼物",OK
+		Window_OK
+			killitem 670045
+			giveitem 670046
+			Warp 0,1000,238,88

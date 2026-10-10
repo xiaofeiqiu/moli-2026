@@ -1,0 +1,38 @@
+block endevent 569 == 1
+endwindow "\n\n由衷的感谢你,大家的灵魂一定会在彼端祝福你的."
+
+
+block item 730110 >= 1 && item 730111 >= 1 && item 730112 >= 1 && item 730113 >= 1 && NowEvent 549 == 1 && NowEvent 550 == 1 && NowEvent 551 == 1 && NowEvent 552 == 1
+window "\n\n由衷的感谢你,大家的灵魂一定会在彼端祝福你的.",ok
+window_ok item 730110 >= 1 && item 730111 >= 1 && item 730112 >= 1 && item 730113 >= 1
+killitem 730110
+killitem 730111
+killitem 730112
+killitem 730113
+giveitem 730114
+NowEvent 549 = 0
+NowEvent 550 = 0
+NowEvent 551 = 0
+NowEvent 552 = 0
+endevent 569 = 1
+checktitle
+
+
+block item 730110 >= 1 || item 730111 >= 1 || item 730112 >= 1 || item 730113 >= 1
+endwindow "\n\n好人一生平安."
+
+
+block
+window "\n\n清明时节雨纷纷,路上行人欲断魂.每年这个时候,我会去各个地方扫墓,不过今年呢...我的膝盖又出了点问题,无法自由走动了.咦?我为什么要说又呢?",next
+window "\n\n今年你能否再替我去一趟呢?",yes,no
+window_no
+endwindow "\n\n哎,真没爱心."
+window_yes
+window "\n\n谢谢,这些是祭品,请带上吧,用完记得把剩下的带回来给我.",ok
+window_ok itemspace < 4
+endwindow "\n\n你的背包满啦,请留出4个位置."
+window_ok
+giveitem 730110
+giveitem 730111
+giveitem 730112
+giveitem 730113

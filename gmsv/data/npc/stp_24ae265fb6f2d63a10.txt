@@ -1,0 +1,17 @@
+block petspace == 5
+	window"\n\n您的宠物栏是空的。",ok
+	window_ok
+block
+	window"\n\n要将随从成长将变为【血24档】【攻24档】【防24档】【敏24档】【魔24档】吗，变更后等级还原为1级，且各种培养奖励点数重新计算。",yes,no
+	window_yes
+Luac stp:legacy:a8afffe87f1639a18f53
+Luac stp:legacy:3c00c36986376c18c481
+Luac stp:legacy:5a67ba623c950ab9945a
+Luac stp:legacy:5b8e5b89430b3fbf1bef
+Luac stp:legacy:f675c3455a72d1eab575
+Luac stp:legacy:38493eef1a08b3590520
+Luac stp:legacy:9bffffcaa04325c0f7c1
+Luac stp:legacy:541ecc688b5a1471a393
+Luac stp:legacy:eae265d65940c8b87503
+		KillItem 60297,1
+	window_no

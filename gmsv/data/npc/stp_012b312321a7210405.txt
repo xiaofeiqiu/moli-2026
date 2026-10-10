@@ -1,0 +1,4 @@
+block item 87588 == 1
+LeaveGroup
+killitem 87588
+Warp 0,29724,3,9

@@ -1,0 +1,8 @@
+block	Endevent 649==1
+window"\n\n\n@c 你是我们蓝斯镇所信任的人，你要去我们镇吗?",yes,no
+window_no
+window_yes
+leavegroup
+Warp 0,36503,108,110
+block
+Endwindow"\n\n\n@c 我们蓝斯镇的人是最友好的!"

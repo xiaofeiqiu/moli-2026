@@ -1,0 +1,46 @@
+block item 730071 >= 1
+endwindow "\n\n把这些送回法兰城总部吧,那里的研究人员应该可以解析这些物品的."
+
+
+
+block item 730069 >= 1 && item 730070 >= 1
+window "\n\n这些是?从遗迹深处得到的么?",next
+window "\n\n很遗憾,我这里的人手不够分析这些遗迹品的,再辛苦你一次,把这些送回法兰城总部吧,那里的研究人员应该可以解析这些物品的.",ok
+window_ok item 730069 >= 1 && item 730070 >= 1
+killitem 730069
+killitem 730070
+giveitem 730071
+
+
+
+block item 730068 >= 1
+endwindow "\n\n到遗迹的深处和先出发的探险队会合吧.一路小心!"
+
+
+block item 730067 >= 1
+window "\n\n辛苦你帮忙运送物资了.实际上呢,现在我们的探险队正面临着人手不足的问题,不知道你是否愿意帮忙呢?",yes,no
+window_yes
+window "\n\n太好了,这个是你运送物资的奖励.请带着这个,到遗迹的深处和先出发的探险队会合吧.一路小心!",ok
+window_ok gold >= 999800
+endwindow "\n\n你的钱太多了!"
+window_ok item 730067 >= 1
+killitem 730067
+giveitem 730068
+addgold 200
+window_no
+window "\n\n太遗憾了.这个是你运送物资的奖励.有机会再见吧.",ok
+window_ok gold >= 999800
+endwindow "\n\n你的钱太多了!"
+window_ok
+killitem 730067
+addgold 200
+
+
+block
+endwindow "\n\n人手不够啊."
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+block Item 1000514 >=1
+	Window "\n\n\n@c谁说魔无情？？人和神难道有情了？",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c胆小鬼.",OK
+	Window_YES
+	KillItem 1000514,1
+Encount 2|||0|||||0|6000147|||||||||
+block
+Window "\n\n  滚开。卑劣的人类...",ok

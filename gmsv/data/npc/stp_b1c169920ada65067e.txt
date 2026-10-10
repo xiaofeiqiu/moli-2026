@@ -1,0 +1,19 @@
+##################检测物品栏###############
+#block itemspace == 0
+endwindow"物品栏起码留一个位置放置传送卷轴"
+
+##################检测考验####################
+#block item 17200 >= 1 && group == 1 
+window"\n\n\n@c 你的智慧无比强大,请收好最终层的传送卷",ok
+window_ok
+killitem 17200
+giveitem 366513,1
+leavegroup
+Warp 0,1000,229,64
+
+
+#block group == 1
+endwindow"\n\n\n@c  很抱歉!!您身上没有考验物品或者宠物"
+
+block
+Warp 0,1000,229,64

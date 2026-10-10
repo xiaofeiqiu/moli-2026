@@ -1,0 +1,14 @@
+block globalFlag 259 == 1
+Endwindow"\n\n没事就快走开,我好不容易在这伪装好的."
+
+
+block StrCmpChat == 9111 && item 39674 == 1
+Window "\n\n飓风!",next
+Window "\n\n是队长派你来的吗?",next
+Window "\n\n嘘,轻点,别被别人注意到我.",next
+Window "\n\n这村子基本上与外界隔绝了,村民基本上都还算是良善,而且这里也很少有外人来.",next
+Window "\n\n可是最近这里来过两个维诺亚口音的人,看起来不像善类,他们在这屋里呆了将近2个小时.",next
+Window "\n\n离开的时候行踪诡秘,我本来想着他们两个,结果刚到井下的通道就被他们发现异常了.",next
+Window "\n\n没办法,我只好撤回来了,真是太可惜了,咱们有自己人在维诺亚村那边收集情报,你去找他看看,暗号照旧.",ok
+Window_ok item 39674 == 1
+globalFlag 259 = 1

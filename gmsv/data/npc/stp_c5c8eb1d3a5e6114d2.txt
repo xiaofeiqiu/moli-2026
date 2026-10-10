@@ -1,0 +1,10 @@
+block item 124 >= 1
+endwindow "\n\n热得好像太阳从天上掉下来了..."
+
+
+block item 119 == 1
+window "\n\n奇怪,这里是怎么毁灭的呢?你知道么?我还捡到了这个~给你看看.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 124,1

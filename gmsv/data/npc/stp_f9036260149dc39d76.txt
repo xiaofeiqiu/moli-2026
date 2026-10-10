@@ -1,0 +1,4 @@
+block	item 591003	>=	1
+Endwindow"\n\n\n@c那股海贼就在村东附近活动，快去执行任务吧！"
+block
+Endwindow"\n\n\n@c 很小声的说：我在执行任务哦。"

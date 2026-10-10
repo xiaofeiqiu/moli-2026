@@ -1,0 +1,20 @@
+block ItemCreateTime 61092 < 420 && item 1000708 >= 1
+endwindow 7020113
+
+block ItemCreateTime 61092 >= 420 && item 1000708 >= 1
+window 7020114,ok
+window_ok
+LeaveGroup
+killitem 1000708
+globalFlag 321 = 1
+
+block globalFlag 320 == 1 && globalFlag 322 == 0 && globalFlag 321 == 0
+window 7020115,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+giveitem 1000707
+window_ok ItemSpace < 1
+endwindow 7020116
+
+block
+endwindow 7020117

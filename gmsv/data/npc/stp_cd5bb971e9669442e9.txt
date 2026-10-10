@@ -1,0 +1,24 @@
+block item 730066 >= 1 || item 730067 >= 1 || item 730068 >= 1 || item 730069 >= 1 || item 730070 >= 1 || item 730071 >= 1
+endwindow "\n\n探险队那边就拜托你了."
+
+
+block item 730065 >= 1
+endwindow "\n\n请去法兰城陶欧食品店找联络官取物资吧."
+
+block
+window "\n\n还少两组柠檬草,料理的数量也不够!",next
+window "\n\n啊,你看起来不忙呢!如你所见,遗迹探险队正在莎莲娜岛展开调查,不过因为联络上的失误,部分物资没有送到,不知道你是否愿意帮忙运送这批遗漏的物资呢?",yes,no
+window_no
+endwindow "\n\n想帮忙的时候再来找我吧."
+window_yes
+window "\n\n请去法兰城陶欧食品店找联络官取物资吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 730065
+
+
+
+
+
+

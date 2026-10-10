@@ -1,0 +1,5 @@
+block
+Window "\n\n陌生人,我知道你来要做什么.不必多言,到我背上来,我带你去找他.",ok
+Window_ok
+LeaveGroup
+Warp 0,57214,34,47

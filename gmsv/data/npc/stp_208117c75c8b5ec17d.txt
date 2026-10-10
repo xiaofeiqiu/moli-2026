@@ -1,0 +1,4 @@
+block
+window "\n\n你要进去找女骑团团长费力希亚吗？那你们进去吧！",ok
+window_ok
+Warp 0,28320,8,14

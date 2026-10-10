@@ -1,0 +1,7 @@
+block	item 60394 ==1
+    window "\n\n 吾....这个配方要去雪山小屋寻找药剂师千里才能看懂,我重新写一张给你吧",yes,no
+    Window_yes
+	killitem 60394,1
+	giveitem 60395,1
+	leavegroup
+	Warp 0,300,222,222

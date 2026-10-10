@@ -1,0 +1,12 @@
+block	item 795018 >=1
+window"\n\n@c这戒指。。我族啊修罗王的戒指！你是怎么得到他的？难道说？我王并未死？",next
+window"\n\n@c虽然我不知道你是谁，但是这个戒指代表了啊修罗族的最高象征！我想你既然得到了它！你必然有和我族有缘！愿意接受我族的试练吗？",yes,no
+window_yes
+KillItem 795018,1
+giveitem 795019,1
+window"\n\n\n@c我已经用我族的法印奖这个戒指进行了净化，你可以感觉到它的力量了！",OK
+window_no
+window"\n\n\n@c既然不愿意那就算了",OK
+
+block
+window"\n\n\n@c真是阳光明媚的一天啊",OK

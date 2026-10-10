@@ -1,0 +1,11 @@
+block EndEvent 515 == 1
+Window "\n\n『阿鲁卡那斯看到你衣服上的子嗣羽毛,似乎明白发生了什么一样』",next
+Window "\n\n我派我的子嗣去向他汇报之前的种种情况,希望得到他的宽恕,没想到会变成这样.",next
+Window "\n\n绝对不可饶恕!就算是身为死神的他,也不允许对我的子嗣做出这样的事!他的名字叫芒(Mung),他在我来这岛屿之前就已经在这里了,我曾听命与他,现在我只想报仇!",next
+Window "\n\n『阿鲁卡那斯向天愤怒地长鸣』",ok
+Window_ok
+EndEvent 515 = 0
+EndEvent 516 = 1
+CheckTitle
+LeaveGroup
+Warp 0,1000,141,148

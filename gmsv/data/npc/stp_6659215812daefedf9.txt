@@ -1,0 +1,9 @@
+block
+window "\n\n啊...是我输了...我将...化作虚空...",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 800143,1
+leaveGroup
+Warp 0,64035,2,6

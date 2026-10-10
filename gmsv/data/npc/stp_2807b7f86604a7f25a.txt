@@ -1,0 +1,43 @@
+block item 39724 >= 1
+window "\n\n你钓到了『鲜活的鳗鱼』,要兑换5个『钓鱼奖币』么?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满了."
+window_yes
+window "\n\n请继续努力.",ok
+window_ok item 39724 >= 1
+killitem 39724,1
+giveitem 39727,5
+
+
+block item 39723 >= 1
+window "\n\n你钓到了『珍贵的鱼』,要兑换3个『钓鱼奖币』么?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满了."
+window_yes
+window "\n\n请继续努力.",ok
+window_ok item 39723 >= 1
+killitem 39723,1
+giveitem 39727,3
+
+
+block item 39722 >= 1
+window "\n\n你钓到了『普通的鱼』,要兑换1个『钓鱼奖币』么?",yes,no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+window "\n\n请继续努力.",ok
+window_ok item 39722 >= 1
+killitem 39722,1
+giveitem 39727,1
+
+
+
+block
+endwindow "\n\n你好,我是钓鱼比赛裁判员.如果你想参加钓鱼比赛的话,就去找旁边的工作人员购买钓饵然后去码头开始参赛吧!然后可以用钓到的鱼来找我交换兑换奖品的奖币."
+
+
+
+
+
+
+

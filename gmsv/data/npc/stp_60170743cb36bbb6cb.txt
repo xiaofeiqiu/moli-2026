@@ -1,0 +1,27 @@
+################### 魔力情人 牛郎
+
+block Group > 1
+window "\n\n解散队伍.",ok
+Window_ok
+LeaveGroup
+
+block Item 715223 >= 1 || Item 715224 >= 1
+endwindow "\n\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!"
+
+block BBImage >= 100000 && BBImage <= 100173 && Item 715221 >= 1
+window "\n\n咦?!是他们要你带这颗宝石过来的吗?\n这颗宝石不就是我送给他们的那颗吗?\n\n让我把它镶成戒指送给你吧!\n希望你们也一样幸福!\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!",next
+KillItem 715221
+GiveLeak1Item 715223
+
+block BBImage >= 105000 && BBImage <= 105173 && Item 715221 >= 1
+window "\n\n咦?!是他们要你带这颗宝石过来的吗?\n这颗宝石不就是我送给他们的那颗吗?\n\n让我把它镶成戒指送给你吧!\n希望你们也一样幸福!\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!",next
+KillItem 715221
+GiveLeak1Item 715223
+
+block BBImage >= 106000 && BBImage <= 106173 && Item 715221 >= 1
+window "\n\n咦?!是他们要你带这颗宝石过来的吗?\n这颗宝石不就是我送给他们的那颗吗?\n\n让我把它镶成戒指送给你吧!\n希望你们也一样幸福!\n愿流星划过天际的那一刹那\n化为永恒爱情的见证!",next
+KillItem 715221
+GiveLeak1Item 715223
+
+block
+endwindow "\n\n我曾经送给一对真挚情侣很珍贵的宝石\n我们曾经约定50年后要在那夜的星空下相见\n不知他们现在过的如何?"

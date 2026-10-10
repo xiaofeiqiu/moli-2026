@@ -1,0 +1,8 @@
+block
+window "\n\n感谢你伟大“开启者”啊,我终于可以离开这该死的地方了",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满了."
+window_ok
+giveitem 60522
+leavegroup
+Warp 0,45081,383,254

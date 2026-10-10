@@ -1,0 +1,20 @@
+
+block item 715331 >= 100
+window "\n\n这么快就採到一百个了吗?那就给我把,这个惊喜也许你会喜欢!",yes,no
+window_yes
+killitem 715331,100
+giveitem 715332
+
+
+
+block
+window "\n\n人老了～\n上不了山了～\n整山的橘子红了可怎么办!",next
+window "\n\n我家孙子说可以开放当观光橘园.\n想上山的话收您1000G就可以了.",next
+window "\n\n对了～～\n如果你採满一百个橘子给我～\n我会给你一个惊喜喔～～",next
+window "\n\n要付1000G进入橘山吗?",yes,no
+window_yes gold < 1000
+endwindow "\n\n你的钱不够."
+window_yes
+addgold -1000
+leavegroup
+Warp 0,31870,33,82

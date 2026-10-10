@@ -1,0 +1,11 @@
+block itemspace<1
+Endwindow"\n\n@c 提示:你的物品已经满了!"
+block item 591114>=1
+Endwindow"\n\n@c 真是感谢你了,快上路吧!"
+block
+window"\n\n 你是说村子西北放的那个洞穴么?\n\n那里本来是一个祭坛!可是在上次真神之间的第xx次战斗中..\n\n那里坍塌了!",next
+window"\n\n 近些日子村子里出现晃动!那里形成了一个洞穴!\n\n而且好像洞穴内有股较强的气息...",next
+window"\n\n 勇者,你能去探索个究竟么? 真不希望再有真神出现在这里...",yes,no
+window_no
+window_yes
+Giveitem 591114,1

@@ -1,0 +1,14 @@
+Block Item 60484 >= 1
+Window "\n\n这里有什么...在呼唤我...你,带了什么东西...",Next
+Window "\n\n头好疼...我到底是谁...",Next
+Window "\n\n啊...我好像稍微记起来一些,那是...",Ok
+Window_Ok Item 60484 >= 1
+killitem 60484
+leavegroup
+Warp 0,57068,54,44
+
+Block
+EndWindow "\n\n你好~你是谁?"
+
+
+

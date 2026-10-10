@@ -1,0 +1,12 @@
+block Level >= 70 && Item 940112 == 1
+window "\n\n\n你们来了!一起上吧.看看你们的实力!",ok
+window_ok Item 940112 == 1
+Encount 3|0,2307,14,10|||||0|||360070|||||||||
+
+
+block Item 940112 == 1
+endwindow "\n\n\n你好,有什么可以服务的么?"
+
+	
+block
+endwindow "\n\n\n你好,有什么可以服务的么?"

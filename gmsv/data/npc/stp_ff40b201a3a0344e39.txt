@@ -1,0 +1,21 @@
+block globalFlag 335 == 1 && item 15210 >= 1 && item 15215 >= 1 && item 15218 >= 1 && item 1000742 >=1
+window 7020225,next
+window 7020226,next
+window 7020227,ok
+window_ok
+LeaveGroup
+killitem 15210
+killitem 15215
+killitem 15218
+globalFlag 336 = 1
+
+block globalFlag 334 == 1 && item 1000742 >=1 && globalFlag 335 == 0
+window 7020228,yes,no
+window_yes
+window 7020229,ok
+window_ok
+LeaveGroup
+globalFlag 335 = 1
+
+block
+endwindow 7020230

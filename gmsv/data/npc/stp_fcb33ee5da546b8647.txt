@@ -1,0 +1,15 @@
+block item 3820 >= 1
+endwindow "\n\n『已经拿不了更多的狗粮了』"
+
+
+block item 3819 >= 1
+window "\n\n『从袋子中拿了一罐狗粮』",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 3819 >= 1
+killitem 3819
+giveitem 3820
+
+
+block
+endwindow "\n\n『好像是一大袋狗粮』"

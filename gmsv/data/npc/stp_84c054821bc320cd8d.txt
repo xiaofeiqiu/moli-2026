@@ -1,0 +1,2 @@
+block item 86514 >= 1 && item 86516 >= 1 && item 86517 >= 1
+endwindow "\n\n帮助我捉回那些复制体？好！去吧，他们分别在XXX PPP。"

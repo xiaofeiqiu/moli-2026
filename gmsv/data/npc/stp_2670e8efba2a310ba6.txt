@@ -1,0 +1,11 @@
+block
+window "\n\n恭喜你,真正的强者!欢迎下次再来!",ok
+window_ok itemspace < 1
+endwindow "\n\n你拿不下奖励了!"
+window_ok
+giveitem 39745,2
+leavegroup
+Warp 0,1500,52,88
+
+
+

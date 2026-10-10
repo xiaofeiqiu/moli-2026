@@ -1,0 +1,10 @@
+block
+window "\n\n对不起!我刚刚只是饿得精神不正常,现在感觉好多了!不要再打我了!",next
+window "\n\n作为补偿,我就大发慈悲的给你签个名吧!还有还有,你一定很渴了吧?我们来喝一杯!",next
+window "\n\n『你感到眼皮一沉,似乎忘记了刚才发生的事』...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 666057
+leaveGroup
+Warp 0,1000,233,78

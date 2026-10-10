@@ -1,0 +1,10 @@
+block item 70034 == 1
+endwindow 910124
+########################
+block
+window 910125,ok
+window_ok ItemSpace >= 1
+leavegroup
+GiveItem 70034
+window_ok ItemSpace < 1
+endwindow 910126

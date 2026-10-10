@@ -1,0 +1,4 @@
+block floor == 33500 && xpos == 40 && Ypos == 21
+LeaveGroup
+killitem 87648
+Warp 0,29825,12,40

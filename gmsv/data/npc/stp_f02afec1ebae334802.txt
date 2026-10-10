@@ -1,0 +1,7 @@
+block item 800099 == 1 && endevent 654 != 1
+	Window"\n\n感谢你勇士，他们并没有伤到我。我在这里感化它们。",next
+	Window"\n\n女神保佑着你。",ok
+	Window_ok
+			killitem 800099,1
+			endevent 654 = 1
+			checktitle

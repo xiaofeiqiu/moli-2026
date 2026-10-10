@@ -1,0 +1,11 @@
+block item 39708 >= 1
+endwindow "\n\n你已经有一个钥匙了"
+
+
+block
+window "\n\n好像里面有什么东西,要拿出来吗?",yes,no
+window_no
+window_yes itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_yes
+giveitem 39708

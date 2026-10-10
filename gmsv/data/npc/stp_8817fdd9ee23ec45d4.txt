@@ -1,0 +1,12 @@
+block item 200530 >= 1
+window "\n\n天空之神你来啦～我们兄弟几个等你很久了,有你在对付魔族小菜一碟.",next
+window "\n\n准备好了吗?咋们上吧～我来帮你撑着这面旗帜.",ok
+window_ok
+killitem 200530
+leavegroup
+Warp 0,27543,58,60
+
+
+
+block
+endwindow "\n\n前面是魔族魔宫所在入口,无关人员请勿靠近,平民则按当地保安队的指示进行避难."

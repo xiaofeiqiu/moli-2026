@@ -1,0 +1,11 @@
+block item 500135 == 1
+LeaveGroup
+Warp 0,4418,23,9
+
+block
+window "\n\n你带回来的露水不足以让威廉痊愈啊，现在他的情况越来越糟糕了。",next
+window "\n\n现在只有一个办法了，就是前往流星山丘求助于神医斐谢尔，这封是我写的威廉的病情报告记录，希望神医看了有医治的方法。",ok
+window_ok
+LeaveGroup
+giveitem 500135
+Warp 0,4418,23,9

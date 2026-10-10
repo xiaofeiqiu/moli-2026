@@ -1,0 +1,9 @@
+block item 500124 == 1
+endwindow "\n\n不听我的劝言你们会后悔的... ...！"
+
+block
+window "\n\n你们不能把他带走，他...还差...少许...就能...",ok
+window_ok
+LeaveGroup
+giveitem 500124
+Warp 0,402,82,191

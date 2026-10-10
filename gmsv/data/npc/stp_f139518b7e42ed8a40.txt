@@ -1,0 +1,10 @@
+block item 660144 >= 1
+	Window "\n@c你手上的东西是什么啊？？好象很好吃的样子哦，可以给么，我带你进去玩。。",YES,NO
+	Window_NO
+	EndWindow "\n\n\n@c小气鬼！",OK
+	Window_YES
+       	killitem 660144,1
+        Warp 0,350,111,31
+block item 660144 < 1
+	Window "\n\n@c这里是地精灵神以前修炼的地方，禁止别人进入",ok
+	Window_ok

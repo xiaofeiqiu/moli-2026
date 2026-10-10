@@ -1,0 +1,28 @@
+block item 87908 == 1
+endwindow 933694
+
+block item 87907 == 1
+window 933695,next
+window 933696,next
+window 933697,ok
+window_ok
+LeaveGroup
+killitem 87907
+giveitem 87908
+
+block item 87903 == 1
+endwindow 933698
+
+block level >= 60
+window 933699,next
+window 933700,next
+window 933701,next
+window 933702,yes,no
+window_no
+endwindow 933703
+window_yes
+giveitem 87903
+endwindow 933704
+
+block
+endwindow 933705

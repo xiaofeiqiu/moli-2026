@@ -1,0 +1,2 @@
+block
+endwindow "\n\n最近那些鱼人出现的频率越来越高了."

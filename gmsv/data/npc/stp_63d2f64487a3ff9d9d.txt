@@ -1,0 +1,9 @@
+block item 200115 >= 1 && floor == 4409 && Xpos == 49 && Ypos == 49
+window "\n\n啊...发着耀眼光芒的翼龙被吸引出来了.",ok
+window_ok
+killitem 200115
+Encount 2|0,62701,37,27||0|||||0|50110|||||||||
+
+
+block
+endwindow "\n\n请到青龙之巢,在（49.49）处使用..."

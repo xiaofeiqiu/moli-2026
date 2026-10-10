@@ -1,0 +1,16 @@
+block item 70009 >= 1 && item 70012 >= 1 && globalFlag 355 == 1
+endwindow 910475
+
+block item 70009 >= 1 && item 70011 >= 1 && globalFlag 355 == 1
+window 910476,next
+window 910477,next
+window 910478,yes,no
+window_yes ItemSpace >= 1
+killitem 70011
+giveitem 70012 
+window_yes ItemSpace < 1
+endwindow 910479
+window_no
+
+block
+endwindow 910480

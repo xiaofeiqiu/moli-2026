@@ -1,0 +1,43 @@
+block item 88075 == 1
+window 501283,ok
+window_ok
+Warp 0,45167,57,54
+
+block item 88074 == 1
+window 501284,next
+window 501285,next
+window 501286,next
+window 501287,yes,no
+window_no
+LeaveGroup
+killitem 88074
+window_yes
+window 501288,next
+window 501289,next
+window 501290,ok
+window_ok
+LeaveGroup
+killitem 88074
+giveitem 88075
+Warp 0,45167,57,54
+
+block item 88073 == 1
+endwindow 501291
+
+block
+window 501292,next
+window 501293,next
+window 501294,next
+window 501295,next
+window 501296,next
+window 501297,next
+window 501298,next
+window 501299,next
+window 501300,next
+window 501301,next
+window 501302,ok
+window_ok
+LeaveGroup
+giveitem 88073
+Warp 0,45167,57,54
+endwindow 501303

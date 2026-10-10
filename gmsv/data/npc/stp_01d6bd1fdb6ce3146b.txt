@@ -1,0 +1,24 @@
+block endevent 558 == 1
+window "\n\n哦,你就是管理官介绍来的强力冒险家么,战船就要出发了,请带着这个上船吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 1000053
+leavegroup
+Warp 0,63403,43,25
+
+
+
+block item 1000052 >= 1
+window "\n\n哦,你就是管理官介绍来的强力冒险家么,战船就要出发了,请带着这个上船吧.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 1000052 >= 1
+giveitem 1000053
+leavegroup
+Warp 0,63403,43,25
+
+
+block
+endwindow "\n\n北方大陆,一定会很冷吧.『嘀咕嘀咕』"
+

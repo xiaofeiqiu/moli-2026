@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至阿鲁巴斯的洞窟 ？",yes,no
+		Window_yes
+			KillItem 60223,1
+			Warp 0,300,216,223
+		Window_no

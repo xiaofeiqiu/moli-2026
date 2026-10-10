@@ -1,0 +1,9 @@
+block
+window "\n\n再见啦～宿命之子,我从你身上看到了,我主人戴克罗夫特刚正不阿的身影,你要贯彻天空之神的意志,把魔族彻底赶回黑暗的深渊.",next
+window "\n\n永别了～未来的天空之神.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 200528
+leavegroup
+Warp 0,27503,28,19

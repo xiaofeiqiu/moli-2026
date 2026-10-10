@@ -1,0 +1,12 @@
+block Item 652301 == 1
+	Endwindow "\n\n去证明你的实力吧!!!"
+block Item 652300 == 1
+Window "强大的勇者啊,能战斗到这里.我已经很欣慰了...",next
+Window "可是,怀念归怀念,后面的战斗,或许有点强了\n\n现在你有两条路走\n\n选(是)一个人继续前进\n\n选(否)拿记忆去寻找帮手",yes,no
+		Window_yes
+		killitem 652300
+EndWindow "\n\n祝福你..."
+				Window_no Item 652300 == 1
+	killitem 652300
+	giveitem 652301,1
+					Warp 0,1000,237,77

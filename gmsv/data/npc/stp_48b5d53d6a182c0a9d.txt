@@ -1,0 +1,8 @@
+block	item 7000187	>=	2	||	PetSpace == 0
+endwindow"\n\n\n 请检查身上是否有相同的物品或者宠物满了",ok
+block	item 7000187	==	1
+window"\n\n\n 你要打开神奇的蛋么？",yes,no
+window_no
+window_yes
+killitem 7000187,1
+Givepet	(25%20,511%20,512%20,513%20,514%20)

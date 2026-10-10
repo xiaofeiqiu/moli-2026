@@ -1,0 +1,14 @@
+block  item 1000562 >= 1
+window 7019537,yes,no
+window_no
+window_yes
+window 7019538,ok
+window_ok
+LeaveGroup
+killitem 1000562
+giveitem (1000563%50,1000564%50)
+givepet 211
+endwindow 7019539
+
+block
+endwindow 7019540

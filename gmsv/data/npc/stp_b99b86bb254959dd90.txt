@@ -1,0 +1,7 @@
+block item 86920 == 1
+window "\n\n将被龙息加热至发红的“未淬火的珠子”插入魔龙的尸体中，完成铸造。",ok
+window_ok
+leavegroup
+killitem 86920
+giveitem 86922
+Warp 0,1000,233,78

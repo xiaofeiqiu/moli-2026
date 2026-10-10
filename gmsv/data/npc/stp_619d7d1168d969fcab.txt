@@ -1,0 +1,26 @@
+block item 86402 >= 1 &&  StrCmpChat == 85619 && item 86403 < 1
+window 85625,next
+window 85626,ok
+window_ok
+leavegroup
+killitem 86402
+giveitem 86403
+
+block item 86402 >= 1
+window 85627,next
+window 85628,ok
+window_ok
+
+block  havetitle == 61 && level >= 50 && item 86401 < 1 && item 86403 < 1
+window 85629,yes,no
+window_no
+endwindow 85630
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86401
+endwindow 85631
+window_yes ItemSpace < 1
+endwindow 85632
+
+block
+endwindow 85633

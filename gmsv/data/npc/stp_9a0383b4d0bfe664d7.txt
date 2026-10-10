@@ -1,0 +1,26 @@
+#本脚本 饕饕不绝 编写 
+block Item 90901 >= 1
+	endwindow "你已经接受了阿尔卡迪亚的古钱的委托了么。。。、\n\n 不过你们那么弱小真的可以了？。。。\n(汗，当初看到我为虾米不这么说？=。=)"	
+
+
+block Item 90900 <= 0	
+	window	"阿尔卡迪亚的古钱大人最近在寻找一批勇者。不知道你有没有兴趣哦！",YES,NO
+	
+	window_yes gold <= 999999
+	
+		endwindow "看来你身上的钱不够哦！"
+	
+	window_yes gold == 1000000
+					
+		window	"我就知道你是个懂行情的人，介绍信你拿去吧!",OK
+		WINDOW_OK itemspace >= 1
+		 addgold -1000000
+		 giveitem 90900
+		window_OK itemspace <= 0
+		endwindow "你的东西满了！"
+	window_no	
+	
+		endwindow "你们可是失去了一个大好的机会哦！"
+
+block item 90900 >= 1
+	endwindow "什么？阿尔卡迪亚的古钱在哪？\n不得不佩服你的眼力。他就在对面呀！"

@@ -1,0 +1,8 @@
+block
+window "\n\n呜~QAQ(年兽似乎是腿很疼的样子...)",ok
+window_ok itemspace == 0
+endwindow "\n\n你的背包满啦"
+window_ok
+giveitem 666049
+leaveGroup
+Warp 0,43000,257,396

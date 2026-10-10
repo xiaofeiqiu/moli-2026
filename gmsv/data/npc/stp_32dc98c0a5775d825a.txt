@@ -1,0 +1,8 @@
+block Item 798204 >= 1 
+        Window "\n\n\@n\n\n@c　真的要打开远古妖姬的蛋吗?",Yes,No
+        Window_Yes Item 798204 >= 1 && Petspace >= 1
+        KillItem 798204
+        GivePet 454020
+        
+	Window_Yes Item 798204 >= 1 && Petspace == 0
+	Endwindow "你的宠物栏满了!"

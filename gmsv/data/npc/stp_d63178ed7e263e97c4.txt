@@ -1,0 +1,10 @@
+block item 3504 >= 1 && item 3505 >= 1
+window "\n你赢了!不代表我会屈服你,但是东西你拿走吧",ok
+window_OK item 3504 >= 1 && item 3505 >= 1
+killitem 3504,1
+killitem 3505,1
+giveitem 3510,1
+leaveGroup
+Warp 0,1000,233,78
+block 
+endWindow "\n &^*((^&(^&(^(&^(^&(( ",ok

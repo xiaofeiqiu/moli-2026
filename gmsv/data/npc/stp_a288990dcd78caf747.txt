@@ -1,0 +1,12 @@
+block item 88321 == 1
+Warp 0,33200,99,165
+
+block
+window "\n\n别打了...别打了...一看你就是父王或总管派来找我的。一场误会误会~~",next
+window "\n\n勇士我已经从森林之王老爷爷手中求得一种稀有的果树苗子，现在我 可以回宫了，不过这个果苗先放你那。回到阿凯鲁法城的时候请尽快进宫找我，就这么说定了我先走啦，哈哈~",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+LeaveGroup
+giveitem 88321
+Warp 0,33200,99,165

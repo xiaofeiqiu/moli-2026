@@ -1,0 +1,18 @@
+block Luac stp:legacy:a78b87bac56f75c95a06 == 1 && Luac stp:legacy:a78b87bac56f75c95a06 == 1 && Luac stp:legacy:a78b87bac56f75c95a06 == 1 && Luac stp:legacy:a78b87bac56f75c95a06 == 1 && Luac stp:legacy:a78b87bac56f75c95a06 == 1 && item 1000200 >= 1
+window "\n\n确定要交出所有火精合成巴特温吗?",yes,no
+window_no
+window_yes Luac stp:legacy:1006e7715666471e08ea == 1 || Luac stp:legacy:e4178879badcfef2e361 == 1 || Luac stp:legacy:a8891a66ae53100241c7 == 1 || petspace >= 1
+endwindow "\n\n携带5个火精才能合成!"
+window_yes Luac stp:legacy:f8f101682bbd355fa0df == 1 && Luac stp:legacy:f8f101682bbd355fa0df == 1 && Luac stp:legacy:f8f101682bbd355fa0df == 1 && Luac stp:legacy:f8f101682bbd355fa0df == 1 && Luac stp:legacy:f8f101682bbd355fa0df == 1 && item 1000200 >= 1
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killpetl 330056
+killitem 1000200,1
+givepet 330069
+endwindow "\n\n恭喜你合成了巴特温!"
+
+
+block
+endwindow "\n\n似乎缺少了某些宠物,无法使用!"

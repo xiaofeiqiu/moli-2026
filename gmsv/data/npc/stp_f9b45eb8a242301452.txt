@@ -1,0 +1,19 @@
+block item 88372 == 1
+endwindow "\n\n你手上的火把已经被点燃了！"
+
+block item 88371 == 1
+window "\n\n你要用炉灶内的火点燃火把吗？",yes,no
+window_no
+window_yes
+killitem 88371
+giveitem 88372
+
+block item 88370 == 1
+endwindow "\n\n你手上的火把已经被点燃了！"
+
+block item 88365 == 1
+window "\n\n你要用炉灶内的火点燃火把吗？",yes,no
+window_no
+window_yes
+killitem 88365
+giveitem 88370

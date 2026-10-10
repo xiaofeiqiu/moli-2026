@@ -1,0 +1,8 @@
+block
+window "\n\n既然亚诺曼城已经没有了国王,从今天开始你就是亚诺曼城的国王了!",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 3798,1
+leavegroup
+Warp 0,1000,233,78

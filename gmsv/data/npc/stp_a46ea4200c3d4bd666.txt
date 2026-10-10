@@ -1,0 +1,165 @@
+block EndEvent 612 == 0 && EndEvent 613 == 0 && EndEvent 614 == 0 && EndEvent 615 == 0 && EndEvent 616 == 0
+	window "\n\n\n\n　　您似乎还没有加入佣兵工会，请在服务人员处办理一下手续。",ok
+		Window_ok
+block item 60808 >= 1 && item 18318 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60808,1
+			killitem 18318,1
+			GiveItem 60290,3
+			addgold 3000
+			EndEvent 628 = 0
+block item 60809 >= 1 && item 18231 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60809,1
+			killitem 18231,1
+			GiveItem 60290,3
+			addgold 3000
+			EndEvent 628 = 0
+block item 60810 >= 1 && item 18326 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60810,1
+			killitem 18326,1
+			GiveItem 60290,3
+			addgold 3500
+			EndEvent 628 = 0
+block item 60811 >= 1 && item 18403 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60811,1
+			killitem 18403,1
+			GiveItem 60290,2
+			addgold 2000
+			EndEvent 628 = 0
+block item 60812 >= 1 && item 18464 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60812,1
+			killitem 18464,1
+			GiveItem 60290,5
+			addgold 3000
+			EndEvent 628 = 0
+block item 60813 >= 1 && item 40028 >= 1 && item 40029 >= 1 && item 40030 >= 1 && item 40031 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60813,1
+			killitem 40028,1
+			killitem 40029,1
+			killitem 40030,1
+			killitem 40031,1
+			GiveItem 60290,3
+			addgold 3000
+			EndEvent 628 = 0
+block item 60814 >= 1 && item 18973 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60814,1
+			killitem 18973,1
+			GiveItem 60290,4
+			addgold 4000
+			EndEvent 628 = 0
+block item 60815 >= 1 && item 18976 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60815,1
+			killitem 18976,1
+			GiveItem 60290,4
+			addgold 5000
+			EndEvent 628 = 0
+block item 60816 >= 1 && item 18404 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60816,1
+			killitem 18404,1
+			GiveItem 60290,4
+			addgold 5000
+			EndEvent 628 = 0
+block item 60817 >= 1 && item 18565 >= 1 && EndEvent 628 == 1
+	window "\n\n\n\n@c　　您已经完成了委托要交任务吗？",ok
+		Window_ok
+			killitem 60817,1
+			killitem 18565,1
+			GiveItem 60290,3
+			addgold 3000
+			EndEvent 628 = 0
+block EndEvent 628 == 1
+	window "\n\n\n\n@c　　　请完成任务后再来接受新的委托。",ok
+		Window_ok
+block itemspace < 1
+	window "\n\n\n\n@c您的背包空间不足，请清理一下。",ok
+		Window_ok
+block EndEvent 628 == 0
+	window "\n\n\n　　要领取C级佣兵任务吗？\n\n　　完成接受的任务后，才可领取下个佣兵任务。",next
+		LocalCount10 = random 10,0
+		if localcount10==10
+			window "\n\n　　【任务】长老树精的末日\n\n　　【概要】前往叹息的森林击败长老树精并获得生命之花\n\n　　【任务物品】生命之花\n\n　　【奖励】金币3000G　　任务完成证明*3",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60808,1
+				endif
+			Window_no
+		if localcount10==9
+			window "\n\n　　【任务】牛鬼的洞窟\n\n　　【概要】前往伊尔村帮助泰勒找回被牛鬼抓走的女儿\n\n　　【任务物品】赖光的头盔\n\n　　【奖励】金币3000G　　任务完成证明*3",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60809,1
+				endif
+			Window_no
+		if localcount10==8
+			window "\n\n　　【任务】旅馆的调查任务\n\n　　【概要】完成夜间旅馆的调查任务获取诅咒的首饰\n\n　　【任务物品】诅咒的首饰\n\n　　【奖励】金币3500G　　任务完成证明*3",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60810,1
+				endif
+			Window_no		
+		if localcount10==7
+			window "\n\n　　【任务】杀熊者传说\n\n　　【概要】前往哈鲁巴东边洞窟击败杀熊者欧兹那克\n\n　　【任务物品】欧兹那克的戒指\n\n　　【奖励】金币2000G　　任务完成证明*2",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60811,1
+				endif
+			Window_no		
+		if localcount10==6
+			window "\n\n　　【任务】沙漠之祠\n\n　　【概要】前往索奇亚沙漠的沙漠之祠为考古学家吉村收集物品\n\n　　【任务物品】砂漠的红星\n\n　　【奖励】金币3000G　　任务完成证明*5",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60812,1
+				endif
+			Window_no		
+		if localcount10==5
+			window "\n\n　　【任务】沉睡的精灵\n\n　　【概要】进入马斯少爷的内心世界收集四本书籍\n\n　　【任务物品】万物之源、理性主义、恒常变化、元素力量\n\n　　【奖励】金币3000G　　任务完成证明*3",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60813,1
+				endif
+			Window_no
+		if localcount10==4
+			window "\n\n　　【任务】土之洞窟\n\n　　【概要】前往土之洞窟击败土之斗神并获得土之乐谱\n\n　　【任务物品】土之乐谱\n\n　　【奖励】金币4000G　　任务完成证明*4",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60814,1
+				endif
+			Window_no
+		if localcount10==3
+			window "\n\n　　【任务】风之洞窟\n\n　　【概要】前往风之洞窟击败风之斗神并获得风之乐谱\n\n　　【任务物品】风之乐谱\n\n　　【奖励】金币5000G　　任务完成证明*4",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60815,1
+				endif
+			Window_no
+		if localcount10==2
+			window "\n\n　　【任务】热沙欧兹尼克\n\n　　【概要】前往维诺亚村外的海底洞窟击败地下二楼的热沙欧兹尼克\n\n　　【任务物品】欧兹尼克的戒指\n\n　　【奖励】金币5000G　　任务完成证明*4",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60816,1
+				endif
+			Window_no
+		if localcount10==1
+			window "\n\n　　【任务】梦幻头巾\n\n　　【概要】前往魔法大学的实验室帮助奇夏尔收集仓库内的零件\n\n　　【任务物品】梦幻头巾\n\n　　【奖励】金币3000G　　任务完成证明*3",yes,no
+			Window_yes
+				EndEvent 628 = 1
+				GiveItem 60817,1
+				endif
+			Window_no

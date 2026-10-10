@@ -1,0 +1,7 @@
+block
+	window "\n\n@c 谢谢你 勇士 \n\n@c 我们又空一定会去看他们的\n\n@c这是给你的礼物",ok
+	window_ok
+	giveitem 812345,1
+	leavegroup
+	Warp 0,1000,233,88
+	

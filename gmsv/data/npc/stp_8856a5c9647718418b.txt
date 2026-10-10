@@ -1,0 +1,15 @@
+block item 61085 >= 1
+window 900350,next
+window 900351,yes,no
+window_yes item 15213 >= 1
+LeaveGroup
+killitem 61085
+killitem 15213
+giveitem 61086
+endwindow 900352
+window_yes
+endwindow 900353
+window_no
+
+block
+endwindow 900354

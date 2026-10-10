@@ -1,0 +1,6 @@
+block
+	Window "\n\n　是否传送至深渊奇怪的坑道 ？",yes,no
+		Window_yes
+			KillItem 60228,1
+			Warp 0,400,369,359
+		Window_no

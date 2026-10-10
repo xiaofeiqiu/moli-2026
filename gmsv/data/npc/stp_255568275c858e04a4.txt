@@ -1,0 +1,15 @@
+block globalFlag 351 == 0
+Endwindow 910127
+
+block Group != 1
+Endwindow 910128
+
+block 
+Window 910129,YES,NO
+Window_YES Gold < 5000 && globalFlag 351 == 1
+EndWindow 910130
+Window_YES Group == 1 && Gold >= 5000 && globalFlag 351 == 1
+AddGold -5000
+Warp 0,25013,24,73
+Window_NO
+Endwindow 910131

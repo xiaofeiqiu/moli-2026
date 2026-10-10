@@ -1,0 +1,5 @@
+block
+window "\n\n你要推开这扇石门吗？",yes,no
+window_no
+window_yes
+Warp 0,14317,4,24

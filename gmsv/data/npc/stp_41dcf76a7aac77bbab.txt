@@ -1,0 +1,16 @@
+
+
+block Item 715144 >= 1
+endwindow "\n\n吃饭的时候不能说话你不知道吗?\n．．．．．．."
+
+
+block Item 715143 >= 1
+window "\n\n饭团便当!\n是小茜拜托你拿来的啊.\n那这是我刚刚画好的设计图,就交给你啰.",ok
+Window_OK
+KillItem 715143
+GiveLeak1Item 715144
+endblock
+
+
+block
+endwindow "\n\n肚子好饿啊!\n刚刚出门忘记带便当了.\n现在好饿喔!"

@@ -1,0 +1,14 @@
+block Endevent 647==1
+Endwindow"\n\n\n@c 原来你已经探索过那个洞穴啦！\n\n真庆幸你还活着."
+block item 591115>=1
+Endwindow"\n\n@c 祝你好运."
+block
+window"\n\n\n@c 最近发现了一种新的魔族物种!\n\n你要这个钥匙去那边遗迹里看看吧...",ok
+window_ok
+window"\n\n这个钥匙费了我不少心思, 收你3000Ｇ好了.",yes,no
+window_no
+window_yes gold<3000
+Endwindow"\n\n你的钱不够了!"
+window_yes gold>=3000
+addgold-3000
+Giveitem 591115,1

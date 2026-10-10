@@ -1,0 +1,9 @@
+block
+window "\n\n谢谢你帮我们法兰除去这个女魔。你不用担心我，每当月圆之夜我就会恢复原样，这个时候我就能陪伴着父王。",next
+window "\n\n或许这座冰雪皇宫就是我的归宿吧，好坏不用为冰雪皇后干那些龌龊的事了。反正这里也很清静无人打扰，你们有空要多来看我哦。这份小小礼物就送你们留个纪念吧！",ok
+window_ok ItemSpace < 1
+endwindow "\n\n您的物品栏已满！"
+window_ok
+LeaveGroup
+killitem 500156
+Warp 0,1530,15,6

@@ -1,0 +1,25 @@
+block item 86317 < 1
+window 85411,yes,no
+window_no
+window_yes
+window 85412,yes,no
+window_no
+window_yes
+window 85413,next
+window 85414,next
+window 85415,next
+window 85416,next
+window 85417,next
+window 85418,next
+window 85419,next
+window 85420,next
+window 85421,yes,no
+window_no
+window_yes ItemSpace >= 1
+leavegroup
+giveitem 86317
+window_yes ItemSpace < 1
+endwindow 85422
+
+block
+endwindow 85423

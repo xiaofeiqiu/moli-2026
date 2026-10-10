@@ -1,0 +1,9 @@
+block item 795060 >= 1
+window "\n\n啊...居然被发现了!我要速战速决才行!",ok
+window_ok item 795060 >= 1
+killitem 795060
+Encount 3|0,60267,7,11|||||0|||800006|||||||||
+
+
+block 
+endwindow "\n\n这里没你的事,快走开."

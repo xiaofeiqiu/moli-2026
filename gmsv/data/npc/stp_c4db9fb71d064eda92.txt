@@ -1,0 +1,19 @@
+block ItemDur 60502 == 1
+window "\n\n要使用羁绊之石飞往神秘的小房间吗?",ok
+window_ok ItemDur 60502 == 1
+killitem 60502
+leavegroup
+Warp 0,57086,9,11
+
+block ItemDur 60502 >= 2
+window "\n\n要使用羁绊之石飞往神秘的小房间吗?",ok
+window_ok
+SetDur 60502,-1
+leavegroup
+Warp 0,57086,9,11
+
+
+
+
+
+

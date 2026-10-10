@@ -1,0 +1,20 @@
+block item 730106 >= 1
+window "\n\n宝石旋转着,在你面前打开了一道时空裂缝,一股力量将你拖到里面.",ok
+window_ok item 730106 >= 1
+leavegroup
+Warp 0,57048,35,134
+
+
+
+
+
+block item 730103 >= 1
+window "\n\n宝石放射出神圣的力量,将整个神殿中的邪气一扫而光.",ok
+window_ok item 730103 >= 1
+killitem 730103
+giveitem 730105
+leavegroup
+Warp 0,57047,113,131
+
+
+

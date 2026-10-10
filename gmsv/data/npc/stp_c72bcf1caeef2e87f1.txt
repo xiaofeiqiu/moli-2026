@@ -1,0 +1,26 @@
+block item 88378 == 1
+endwindow "\n\n欢迎下次再来！"
+
+block item 88376 == 1 && item 88377 == 1 && item 10409 >= 10 && item 10403 >=14 && item 18211 >= 20 && item 9618 >= 20 && item 12811 >= 15
+window "\n\n嗯~~嗯~~这些材料足够给你做身礼服了，工钱我也收下了正好是这个数，请稍等片刻！",ok
+window_ok
+killitem 88376
+killitem 88377
+killitem 10409,10
+killitem 10403,14
+killitem 18211,20
+killitem 9618,20
+killitem 12811,15
+giveitem 88378
+
+block item 88376 == 1
+window "\n\n你要买衣服？孩子不好意思我这只做衣服不卖现成的啊！",next
+window "\n\n不过你有做衣服的材料的话，凭借我几十年的手艺是分分钟的事哦！",next
+window "\n\n你要做出席公共场合的服装？那不就是礼服嘛！这样吧，我给你开个材料单，等你凑齐了再来找我做好吗？。",ok
+window_ok ItemSpace < 1
+endwindow "\n\n你的物品栏已满！"
+window_ok
+giveitem 88377
+
+block
+endwindow "\n\n孩子你衣服破了，要我给你做身新的吗？"

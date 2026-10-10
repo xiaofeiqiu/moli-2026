@@ -1,0 +1,29 @@
+block item 123200 >= 1
+Endwindow "\n\n............"
+
+block item 123199 >= 1
+window "\n\n看在洛萨的面子上我帮你转化吧,只收你1W魔币",yes,no
+window_no
+window_yes gold < 10000
+Endwindow "\n\n钱呢?"
+window_yes
+addgold -10000
+window "\n\n％◎＃￥◎￥＃＃…※×￥＃",next
+window "\n\n好了拿去吧.",next
+killitem 123199
+giveitem 123200,1
+Endwindow "\n\n恶魔城就在芙蕾亚的某处角落里."
+
+block item 123198 >= 1
+Endwindow "\n\n......................."
+block item 123197 >= 1
+window "\n\n啊啊,是洛萨叫你来的?",yes,no
+window_no
+window_yes
+window "\n\n要去恶魔城.关于恶魔城我们这个时代的人并没有亲眼见过,只是听听传说而已.",next
+window "\n\n我这里有一本关于恶魔城历史的书你拿去看吧,说不定对你有帮助.",ok
+window_ok item 123197 >= 1
+killitemall 123197
+giveitem 123198,1
+block
+Endwindow "\n\n......................."

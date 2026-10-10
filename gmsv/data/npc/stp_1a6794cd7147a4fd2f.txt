@@ -1,0 +1,29 @@
+
+
+
+
+block item 39819 >= 1
+endwindow "\n\n神秘仙人白天才会出现在乌克兰村."
+
+
+
+
+block item 39818 >= 1
+window "\n\n你是什么人,找我有什么事?",next
+window "\n\n受可怜少女的嘱托来寻找传说中的黄金粽子吗?你还真是善良.",next
+window "\n\n不过呢,想要黄金粽子,只有带着我的证明去乌克兰村找到神秘仙人才可以!",next
+window "\n\n想要我的证明信么,那么来战个痛快吧!",yes,no
+window_no
+endwindow "\n\n胆小鬼...我又不会吃了你."
+window_yes
+Encount 2|0,64094,2,4||0|||||0|21268|||||||||
+
+
+
+
+
+
+block
+endwindow "\n\n你是什么人,找我有什么事?"
+
+

@@ -1,0 +1,10 @@
+block level >= 40
+window "要购买通行证进入睿奇洞窟吗?",yes,no
+window_no
+window_yes gold < 1000
+endwindow "\n\n你的金币不够."
+window_yes
+addgold -1000
+giveitem 795165
+leaveGroup
+Warp 0,32501,8,7

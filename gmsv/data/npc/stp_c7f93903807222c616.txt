@@ -1,0 +1,11 @@
+block
+	window "\n\n\n   你确定要合成纯白吗,50%机会合成成功! \n  合成失败将变为一只哥不林!  \n  你确定吗?",YES,NO
+	window_YES item 60321 >= 10
+	KillItem 60321,10
+	KillItem 60322,1
+	KillItem 9236,1
+	givepet (616%50,801%50)
+	window_YES
+	Endwindow "\n\n  您材料不够!合成此需要的材料是\n  【宠物化石蛋10个】【地风水晶5:5】"
+	window_NO
+	Endwindow "\n\n\n   你考虑清楚后在使用我吧"

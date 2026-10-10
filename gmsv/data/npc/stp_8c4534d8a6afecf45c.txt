@@ -1,0 +1,8 @@
+
+block item 15683 == 1
+window "\n\n\n@c那是封印戒指,拿命来.",yes,no
+window_no
+KillItem 15683
+endwindow "\n\n\n@c胆小鬼,你不配拥有这戒指."
+window_yes
+Encount 3|0,15682,13,1||0|||||0|15680|||||||||

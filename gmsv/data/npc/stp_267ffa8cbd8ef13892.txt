@@ -1,0 +1,13 @@
+block item 533 >= 1
+window "\n\n你居然真的敢来到这里,你的勇气值得称赞,但是既然已经来了,就放弃一切希望吧",next
+window "\n\n你看,这里充斥的元素力量就是我,我即是元素之主",ok
+window_ok item 533 >= 1
+Encount 2|0,64003,73,23||0|||||0|28034|||||||||
+
+
+block item 529 >= 1
+window "\n\n就是你放跑了火之域和地之域?",next
+window "\n\n没关系,我已经抽取了他们一部分力量",next
+window "\n\n来感受一下精灵们的力量吧",ok
+window_ok item 529 >= 1
+Encount 2|0,64003,73,23||0|||||0|28030|||||||||

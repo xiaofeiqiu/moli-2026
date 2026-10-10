@@ -1,0 +1,22 @@
+block EndEvent 526 == 1
+endwindow "\n\n清明节可是祭祀先辈的传统节日."
+
+block item 60009 >= 1
+window "\n\n没想到还被你挖出个邪教组织,厉害～这是国王对你的奖赏.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+killitem 60009
+giveitem 60010
+
+block item 60000 >= 1
+endwindow "\n\n去伊尔村找一下士兵队长."
+
+block
+window "\n\n清明节当日,国王宣布将前往法兰皇家陵墓祭扫先皇,但是最近匪患猖狂,为了能顺利祭扫,准备招募义务勇士辅助剿匪兵团剿匪,你愿意吗?",yes,no
+window_yes
+window "\n\n详细事宜请找剿匪士兵队长,他会安排的详细工作.",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok
+giveitem 60000

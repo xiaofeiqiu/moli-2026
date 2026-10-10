@@ -1,0 +1,20 @@
+block level >= 90
+window 900658,next
+window 900659,yes,no
+window_yes ItemSpace >= 1
+LeaveGroup
+addgold -30000
+giveitem 61129
+window_yes ItemSpace < 1
+endwindow 900660
+window_no
+window 900661,ok
+window_ok ItemSpace >= 1
+LeaveGroup
+addgold -15000
+giveitem 61129
+window_ok ItemSpace < 1
+endwindow 900662
+
+block
+endwindow 900663

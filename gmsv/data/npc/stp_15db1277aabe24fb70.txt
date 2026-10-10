@@ -1,0 +1,14 @@
+block item 800137 >= 1 && item 800138 >= 1 && item 800139 >= 1 && item 800140 >= 1
+window "\n\n你收集齐了碎片么?很好,那么去见见最高神祗吧!",yes,no
+window_no
+window_yes item 800137 >= 1 && item 800138 >= 1 && item 800139 >= 1 && item 800140 >= 1
+leaveGroup
+Warp 0,1874,2,6
+
+
+block item 800136 >= 1 && itemspace >= 1
+window "\n\n干得好,祝贺你通过试炼,拿着这个,继续前进吧!",yes,no
+window_no
+window_yes item 800136 >= 1
+killitem 800136
+giveitem 800140,1

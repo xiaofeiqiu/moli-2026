@@ -1,0 +1,21 @@
+block item 800040 == 0 && item 800033 >= 1 && item 800040 == 0
+	Window"\n\n想加入我们的旅团吗，只靠自己才能创造奇迹，我们信奉孤高王者。",next
+	Window"\n\n你必须单独作战才能走出这里，组队会惹来不必要的麻烦。",ok
+		Window_ok item 800033 >= 1
+		giveitem 800040
+
+block item 800040 == 0 && item 800055 == 0 && item 800047 == 0 && item 800010 == 1 || item 800011 == 1 || item 800012 == 1
+	Window"\n\n想假如我们的旅团吗，只靠自己才能创造奇迹，我们信奉孤高王者。",next
+	Window"\n\n你必须单独作战才能走出这里，组队会惹来不必要的麻烦。",ok
+		Window_ok item 800010 == 1 || item 800011 == 1 || item 800012 == 1
+		giveitem 800040
+
+block item 800040 == 0 &&  && item 800055 == 0 && item 800047 == 0 && item 800036 == 1 || item 800037 == 1 || item 800038 == 1
+	Window"\n\n想假如我们的旅团吗，只靠自己才能创造奇迹，我们信奉孤高王者。",next
+	Window"\n\n你必须单独作战才能走出这里，组队会惹来不必要的麻烦。",ok
+		Window_ok item 800036 == 1 || item 800037 == 1 || item 800038 == 1
+		giveitem 800040
+
+block 
+	Window"\n\n想加入我们的旅团吗，只靠自己才能创造奇迹，我们信奉孤高王者。",next
+	Window"\n\n你必须单独作战才能走出这里，组队会惹来不必要的麻烦而且只能做一次。",ok

@@ -1,0 +1,7 @@
+block
+	window"\n\n\n@c客人你要回到大殿吗？",yes,no
+	window_no
+	window_yes
+	killitem 54002
+	leavegroup
+	Warp 0,5401,21,1

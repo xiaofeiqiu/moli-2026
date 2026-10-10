@@ -1,0 +1,9 @@
+block item 86448 >= 1 && item 86450 >= 1 && item 86451 < 1 &&  StrCmpChat == 85672 && item 86449 >= 1
+window 85674,ok
+window_ok
+leavegroup
+killitem 86450
+giveitem 86451
+
+block
+endwindow 85675

@@ -1,0 +1,16 @@
+block item 61103 >= 1 && globalFlag 327 == 1
+window 900422,next
+window 900423,ok
+window_ok
+LeaveGroup
+killitem 61103
+window 900424,yes
+window_yes
+ChangePal 0,120
+LeaveGroup
+giveitem 61104
+globalFlag 327 = 0
+Warp 0,23298,16,13
+
+block
+endwindow 900425

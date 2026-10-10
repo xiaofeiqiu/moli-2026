@@ -1,0 +1,6 @@
+Block
+Window "会动的蜡像：请通过我的试炼，胜利后领取调查信物。",YES,NO
+Window_NO
+EndWindow "准备好再来。"
+Window_YES
+Luac stp:73accc7f4f382f1b4a6c

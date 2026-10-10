@@ -1,0 +1,5 @@
+block
+	Window "\n\n\n@c    欢迎来到可可特村，需要将登陆点变更为本村吗？",yes,no
+		Window_yes
+			SetLoginPoint 4
+		Window_no

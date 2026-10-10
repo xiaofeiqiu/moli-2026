@@ -1,0 +1,42 @@
+
+block EndEvent 597 == 1 && Item 39652 >= 1 && Xpos == 6 && Ypos == 18
+LeaveGroup
+Warp 0,45100,44,50
+
+block EndEvent 597 == 1 && Item 39652 >= 1 && Xpos == 19 && Ypos == 18
+LeaveGroup
+Warp 0,45100,50,50
+
+
+block Item 39654 >= 1 && Item 39655 >= 1 && Xpos == 6 && Ypos == 18
+LeaveGroup
+Warp 0,45101,44,50
+
+block Item 39654 >= 1 && Item 39655 >= 1 && Xpos == 19 && Ypos == 18
+LeaveGroup
+Warp 0,45101,50,50
+
+
+block EndEvent 596 == 1 && Item 39652 >= 1 && Xpos == 6 && Ypos == 18
+LeaveGroup
+Warp 0,45099,44,50
+
+block EndEvent 596 == 1 && Item 39652 >= 1 && Xpos == 19 && Ypos == 18
+LeaveGroup
+Warp 0,45099,50,50
+
+
+block EndEvent 596 == 1 && Item 39654 >= 1 && Xpos == 6 && Ypos == 18
+LeaveGroup
+Warp 0,45099,44,50
+
+block EndEvent 596 == 1 && Item 39654 >= 1 && Xpos == 19 && Ypos == 18
+LeaveGroup
+Warp 0,45099,50,50
+
+
+block Xpos == 6 && Ypos == 18
+Warp 0,30011,44,50
+
+block Xpos == 19 && Ypos == 18
+Warp 0,30011,50,50

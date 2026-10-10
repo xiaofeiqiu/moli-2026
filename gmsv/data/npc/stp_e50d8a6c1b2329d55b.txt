@@ -1,0 +1,9 @@
+block item 60508 >= 10
+window "\n\n无法战胜我的话,就成为亡魂永远徘徊此处吧!",ok
+window_ok item 60508 >= 10
+killitem 60508,10
+Encount 2|0,57091,32,10||0|||||0|50205|||||||||
+
+
+block
+endwindow "\n\n无知的人类,这里不是你该来的地方!"

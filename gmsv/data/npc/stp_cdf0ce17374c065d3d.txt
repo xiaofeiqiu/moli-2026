@@ -1,0 +1,2 @@
+block item 800002 == 0
+		giveitem 800002

@@ -1,0 +1,12 @@
+block Luac stp:legacy:e4ab0de4e494aa0ce459 >= 1 && item 57726 >= 1
+        window"\n竟然是瓦特金属！传说中机械化士兵战争的必备品！跟我来吧！你会得到你想要的东西！.",ok
+
+        Window_ok item 57726 >= 1
+
+   killitem 57726,1
+   LeaveGroup
+   Warp 0,8817,12,16
+
+block
+
+	window"这个时代的真正光靠肉体是行不通的",OK

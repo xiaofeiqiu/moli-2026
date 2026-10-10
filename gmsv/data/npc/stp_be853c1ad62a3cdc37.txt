@@ -1,0 +1,23 @@
+block item 730061 >= 1
+window "\n\n不要老是盯着人家看啊,讨厌~!",next
+window "\n\n你怎么又来了呀?是不是又想变成小老鼠了呢?",next
+window "\n\n哇哇!是迪尔哈特爷爷写的介绍信?我曾经还以为他对我们家族的巫术偏方视为异类呢,没想到这么看重我们呀!哈哈(^o^)",next
+window "\n\n绿色口臭鬼的毒啊?很容易解喔!只要让中毒者回想起一些最重要的事就自动解除啦!你要问如何才能回想起?当然要用我祖传的巫术啦!只需要100G,要试试吗?",yes,no
+window_no
+endwindow "\n\n连100G都付不起吗?出门帮我清理下大地鼠就有钱啦!"
+window_yes
+window "\n\n嗯~!嗯~!拿去吧~!",ok
+window_ok gold < 100
+endwindow "\n\n你的钱不够"
+window_ok
+addgold -100
+killitem 730061
+giveitem 730062
+
+
+block
+endwindow "\n\n不要老是盯着人家看啊,讨厌~!"
+
+
+
+

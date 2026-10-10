@@ -1,0 +1,30 @@
+#mayko_gm_1102647.txt  白虎大人
+
+
+#1110754	\n\n\n　　　　想到公主殿下就会头痛～\n　　　　只有睡一下才会好～	1
+#1110755	\n\n\n\n@c头还是好痛～我要睡觉了～	1
+
+#1110745	\n\n\n\n@c另外这小东西也送你～
+
+
+#Window_YES ItemSpace == 0
+
+block item 1000292 >0
+	 window 7019148,ok
+	 window_ok
+	 Warp 0,13001,79,9
+	 endblock
+block 
+	window 7019147,next
+
+	window 7019137,ok
+	Window_ok ItemSpace < 2
+	
+	endwindow 7019128
+	Window_ok
+	GiveLeak1Item 1000292,1
+	window 7019138,ok
+	Window_ok 
+	GiveLeak1Item 1000293,1
+	Warp 0,13001,78,10
+	endwindow 7019148	 

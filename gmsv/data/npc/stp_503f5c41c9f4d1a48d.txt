@@ -1,0 +1,12 @@
+block item 141207 >= 1
+Window "\n\n呵呵呵...能走到这里,你还挺有能耐的嘛.想见主人吗?可以是可以,先献出灵魂就能见到了...",ok
+Window_ok item 141207 >= 1
+killitem 141207
+Encount 2|0,57486,143,355||0|||||0|83046|||||||||
+
+
+block
+Window "\n\n你没有资格见到主人!退下吧!...",ok
+Window_ok
+leavegroup
+Warp 0,57471,3,11

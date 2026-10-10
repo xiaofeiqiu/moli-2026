@@ -1,0 +1,26 @@
+block item 87658 == 1
+endwindow "\n\n您好，欢迎光临安其摩酒吧！"
+
+block item 87657 == 1
+endwindow "\n\n您好，欢迎光临安其摩酒吧！"
+
+block item 87656 == 1
+endwindow "\n\n您好，欢迎光临安其摩酒吧！"
+
+block item 87655 == 1
+endwindow "\n\n您好，欢迎光临安其摩酒吧！"
+
+block item 87654 == 1
+endwindow "\n\n您好，欢迎光临安其摩酒吧！"
+
+block item 87653 == 1
+endwindow "\n\n您好，欢迎光临安其摩酒吧！"
+
+block item 87652 == 1
+endwindow "\n\n我们要想办法让他戒酒！"
+
+block
+window "\n\n您好，欢迎光临安其摩酒吧！",next
+window "\n\n您说哪个人？哦！他啊...天呐，别提了，这家伙天天喝的烂醉，我老婆照顾他了，连正常的生意都没办法照顾了...您找他有事情？先帮我去大圣堂找僧侣特伦要一份醒酒汤来吧！",ok
+window_ok
+giveitem 87652

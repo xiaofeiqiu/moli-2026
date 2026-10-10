@@ -1,0 +1,10 @@
+block item 1000053 >= 1 && ItemCreateTime 700009 >= 2
+window "\n\n真不容易,我们到了.",ok
+window_ok item 1000053 >= 1
+killitem 1000053
+leavegroup
+Warp 0,63404,25,61
+
+
+block item 1000053 >= 1
+endwindow "\n\n绕过直达航路,我们将在大陆的西方登陆,航程不算短,耐心点吧."

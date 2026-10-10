@@ -1,0 +1,9 @@
+德鬼任务脚本小叶编写 QQ 94452739
+block	item 950300 == 1
+	window "\n\n　你是谁？想打劫？我身上的神器是上个礼拜天打劫一个过路客的，还不错哦",next
+	window "\n\n　@n　小子你想打劫？想要的话就用实力说话把。。。",yes,no
+	window_no
+	window "\n\n···原来你是这样没用的的人··快离开吧····下次不要点我哦",ok
+	window_yes
+Encount 3|0||0|||||0|950955|||||||||
+		EndBlock

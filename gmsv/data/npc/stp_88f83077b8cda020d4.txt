@@ -1,0 +1,14 @@
+block item 87531 == 1 && item 15210 >= 1
+killitem 15210
+window "\n\n嗯~~果然很香！走吧，坐我背上...",ok
+window_ok
+LeaveGroup
+Warp 0,29706,25,40
+
+
+block item 87531 == 1
+window "\n\n你肯定是跟上回那老头一样在找什么东西吧。是不是想进入我身后的海底啊。",next
+endwindow "\n\n哼哼~~那老头呆的大屋子里有种叫什么鳗鱼饭团的我想尝尝，等我吃饱了我会带你下去的。"
+
+block
+endwindow "\n\n我好饿啊..."

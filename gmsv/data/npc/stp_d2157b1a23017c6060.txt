@@ -1,0 +1,6 @@
+block
+ChangePal 0,120
+window "\n\n¡¡ÄãÖğ½¥ÇåĞÑÁË",ok
+window_ok
+setlp -100
+Warp 0,60154,82,123

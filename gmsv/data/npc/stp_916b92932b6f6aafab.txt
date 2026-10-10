@@ -1,0 +1,27 @@
+block StrCmpChat == 210015 && item 200793 >= 1 && petlevel 511 == 1
+window "\n\n你是否要进行火精能量灌注?如果你身上有两只火精的话,我就随便选一只灌注了.",yes,no
+window_yes
+window "\n\n祝你好运.",ok
+window_ok 200793 >= 1 && petlevel 511 == 1
+killitem 200793
+KillPetl 511,1
+GivePet 200833
+window_no
+endwindow "\n\n等你想好了再来."
+
+
+block StrCmpChat == 210014 && item 200793 >= 1 && petlevel 512 == 1
+window "\n\n你是否要进行风精能量灌注?如果你身上有两只风精的话,我就随便选一只灌注了.",yes,no
+window_yes
+window "\n\n祝你好运.",ok
+window_ok item 200793 >= 1 && petlevel 512 == 1
+killitem 200793
+KillPetl 512,1
+GivePet 200832
+window_no
+endwindow "\n\n等你想好了再来."
+
+
+block
+window "\n\n如果你有【四精魔石】和任意一只风精或火精的话,我就可以帮你把能力灌注入其中,强化它们的力量.",next
+endwindow "\n\n要能量灌注的时候,请说出你要能量灌注的宠物名称,例如【火精】."

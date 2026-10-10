@@ -1,0 +1,10 @@
+block item 145 >= 1
+endwindow "\n\n旺财,出来,盯着我干嘛,又自作多情了,没叫你~~~"
+
+	
+block item 119 == 1
+window "\n\n听说旺财在这里...不过黑洞洞的我什么也看不清楚...给你东西...",ok
+window_ok itemspace < 1
+endwindow "\n\n你的背包满啦!"
+window_ok item 119 == 1
+giveitem 145,1

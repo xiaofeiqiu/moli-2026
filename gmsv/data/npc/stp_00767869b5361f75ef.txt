@@ -1,0 +1,19 @@
+
+
+block
+window "\n\n欢迎,冒险者,这里是元素试炼迷宫传送点,你做好参加试炼的准备了么?",yes,no
+window_no
+endwindow "\n\n作好准备的话,请来找我吧."
+window_yes
+window "\n\n祝你好运.",ok
+window_ok
+leavegroup
+Warp 0,44990,25,12
+
+
+
+
+
+
+
+

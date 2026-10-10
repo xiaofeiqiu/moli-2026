@@ -1,0 +1,24 @@
+
+block item 87196 == 1
+endwindow "\n\n不错吧，我家祖传之物！"
+
+block item 87195 == 1 && item 87193 == 1
+window "\n\n不错~~这是我的黄金，放心我会答应的奖赏给你的。",ok
+window_ok
+LeaveGroup
+killitem 87195
+killitem 87193
+giveitem 87196
+
+block item 87194 == 1
+endwindow "\n\n我的奖赏是什么？先透露下是我家族遗留下来的宝物！"
+
+block item 87193 == 1
+window "\n\n你们是来抢我黄金的吗？哼~~跟我同类的人真多，可惜你来晚一步。已经被一个神秘人强行抢走了！",next
+window "\n\n这是那神秘人的肖像，如果你们帮我抢回来我重重有赏！",ok
+window_ok
+LeaveGroup
+giveitem 87194
+
+block
+endwindow "\n\n找我有事吗？"

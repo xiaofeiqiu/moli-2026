@@ -1,0 +1,10 @@
+block endevent 565 == 1
+window "\n\n敬礼,指挥官!请您自由的使用设施吧.",ok
+window_ok
+leavegroup
+Warp 0,57119,13,41
+
+
+
+block
+endwindow "\n\n你好,这里是军官专用的房间."

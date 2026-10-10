@@ -1,0 +1,3 @@
+block
+Setaction 6
+endwindow"\n\n\n@c à»~¡­¡­à»~¡­¡­£¨±¯Ãù£©"

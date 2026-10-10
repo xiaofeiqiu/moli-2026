@@ -1,0 +1,8 @@
+block	item 591430>=1
+killitem 591430,1
+Giveitem 591424,1
+	leavegroup
+	Warp 0,36503,175,150
+block
+	leavegroup
+	Warp 0,36503,175,150

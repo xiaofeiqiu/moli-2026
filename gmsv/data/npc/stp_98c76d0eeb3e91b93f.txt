@@ -1,0 +1,3 @@
+block item 400065 == 1
+killitem 400065,1
+giveitem 400066,1
