@@ -296,7 +296,7 @@ function M:onLoad()
  end)
  self.serviceSessions={}
  if by['stp:services'] then
-  local n=self:NPC_createNormal('Ô¶Õ÷ºóÇÚ¹Ù',14058,{mapType=0,map=1000,x=158,y=112,direction=4})
+  local n=self:NPC_createNormal('Ô¶Õ÷ºóÇÚ¹Ù',14058,{mapType=0,map=1000,x=151,y=114,direction=4})
   assert(n>=0,'shared task services creation failed');self.services=n
   self:NPC_regTalkedEvent(n,function(n,p) self:serviceMenu(n,p) end)
   self:NPC_regWindowTalkedEvent(n,Func.bind(self.serviceAnswer,self))
