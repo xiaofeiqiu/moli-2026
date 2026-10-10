@@ -25,3 +25,5 @@ loadModule('sharedTaskRoutes')
 loadModule('sharedTaskGuide')
 
 loadModule('gameQoL')
+
+loadModule('autoStat')
