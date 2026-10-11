@@ -150,20 +150,29 @@ def stage():
         (priority if len(r)>3 and r[3].isdigit() and int(r[3]) in canonical else extras).append(line)
     techbytes=b''.join(priority)+b''.join(b'\t'.join(r)+b'\r\n' for r in newtech)+b''.join(extras)
     # Only rows belonging to actual jobs are opened; zero means forbidden.
+    pet_only={d['id'] for d in defs if d.get('source_tech') and d.get('source_marker')!=50}
     changed=0; outlimit=[]
     for line in raw['skilllv.txt'].splitlines(keepends=True):
         r=line.rstrip(b'\r\n').split(b'\t')
         if len(r)>=4 and r[1].isdigit() and r[2].isdigit() and r[3].isdigit() and int(r[2]) in jobs:
             sid,jid,cap=int(r[1]),int(r[2]),int(r[3])
-            if sid in eligible and (cap>0 or (31<=jid<=37 and sid in mage | knight_extra)):
+            if sid in pet_only:
+                r[3]=b'0';changed+=int(cap!=0);line=b'\t'.join(r)+(b'\r\n' if line.endswith(b'\r\n') else b'\n')
+            elif sid in eligible and (cap>0 or (31<=jid<=37 and sid in mage | knight_extra)):
                 r[3]=b'30';changed+=int(cap!=30);line=b'\t'.join(r)+(b'\r\n' if line.endswith(b'\r\n') else b'\n')
         outlimit.append(line)
+    for r in cap_additions:
+        if r[1] in pet_only:r[3]=0
     outlimit.extend(encoded(r) for r in cap_additions)
     limit_pairs={(int(r[1]),int(r[2])) for r in limits if r[1].isdigit() and r[2].isdigit()}
-    for sid in knight_extra:
+    for sid in knight_extra-pet_only:
         if sid in {int(s[1]) for s in skill_additions}:continue
         for jid in range(31,38):
             if (sid,jid) not in limit_pairs:outlimit.append(encoded([names[sid],sid,jid,30]))
+    existing=limit_pairs | {(r[1],r[2]) for r in cap_additions}
+    for sid in sorted(pet_only):
+        for jid in sorted(jobs):
+            if (sid,jid) not in existing:outlimit.append(encoded([names[sid],sid,jid,0]))
     outskill=[]
     for line in raw['skill.txt'].splitlines(keepends=True):
         r=line.rstrip(b'\r\n').split(b'\t')

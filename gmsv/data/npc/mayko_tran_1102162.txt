@@ -11,7 +11,7 @@ block Group > 1
 ################### 传送点没开
 
 ################### 战斗系&游民 50级以上 && 开过传送石
-block  Job < 170 && Level >=50 && EndEvent 155 == 1 && Item 40706>=1
+block  Luac msjob:6b7c08fd82530795fb06 >= 1 && Level >=50 && EndEvent 155 == 1 && Item 40706>=1
 	 ##1102466	\n这是通往汉米顿送石，要使用吗？\n费用是3000元。
 	 Window 1102463,YES,NO 
 	 	 Window_YES Gold >=3000 && Group ==1 && Item 40706>=1

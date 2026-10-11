@@ -1,4 +1,4 @@
-"""Install only the verified, opt-in Lua feature, retaining original configuration."""
+"""Install only the verified default-on Lua feature, retaining original configuration."""
 import hashlib,json,re,shutil
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
@@ -42,7 +42,7 @@ setup.write_bytes(raw)
 manifest={'module_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
  'native_checks':len(report['checks']),'native_lifecycle_checks':len(life['checks']),
  'native_follow_checks':len(follow['checks']),'follow_fix_installed':True,
- 'native_turns':report['turns'],'client_verified':False,'default_enabled':False,
+ 'native_turns':report['turns'],'client_verified':False,'default_enabled':True,
  'npc':{'name':'五宠指挥官','map':1000,'x':151,'y':112},
  'dummy_capacity':capacity,'requires_server_restart':True,
  'database_modified_by_installer':False,'backup':str(original)}

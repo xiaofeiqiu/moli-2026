@@ -1,0 +1,4068 @@
+[
+  {
+    "kind": "untranslated_command",
+    "script": "EV_mag_6329.txt",
+    "line": 15,
+    "command": "killdrugdish",
+    "source": "killdrugdish"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_mag_6329.txt",
+    "line": 31,
+    "command": "killdrugdish",
+    "source": "killdrugdish"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_mag_6473.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/经典剧情/10_六曜之塔与最终决战.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_rk_7odr08.txt",
+    "line": 3,
+    "command": "",
+    "source": "?????�瑗x?"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_7odr08.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_rk_7odr14.txt",
+    "line": 10,
+    "command": "winodw_ok",
+    "source": "Winodw_OK"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/资料片剧情/03_坎那贝拉与米特拉.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_4odr18.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_4odr19.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_4odr20.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_4odr21.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_4odr22.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/资料片剧情/04_哥拉尔调查.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_rk_3odr08.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_rk_1odr14.txt",
+    "line": 10,
+    "command": "endwinodw",
+    "source": "EndWinodw 10000,OK"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tane_ruins_200.txt",
+    "line": 45,
+    "command": "killpetl",
+    "source": "KillPetl 300002,1"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_main1_501.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/资料片剧情/12_天界主线神官与遗迹.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_rebthW_001.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tane_rebthE_300.txt",
+    "line": 1,
+    "command": "",
+    "source": "300#伉田□旦母件斥亦件﹛tuchi 晓莱﹛伉田□旦及酦及谛"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tomita_BatKai_000.txt",
+    "line": 34,
+    "command": "killpetl",
+    "source": "KillPetL 310000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tomita_BatKai_000.txt",
+    "line": 128,
+    "command": "killpeth",
+    "source": "KillPetH 313400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tomita_BatKai_000.txt",
+    "line": 195,
+    "command": "killpeth",
+    "source": "KillPetH 313700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tomita_MonRide003.txt",
+    "line": 70,
+    "command": "killpeth",
+    "source": "KillPetH 304201,10"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_tomita_gobsuba_001.txt",
+    "line": 134,
+    "command": "ok",
+    "source": "OK"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_kaza_401.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_kaza_503.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_newskill_200.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_himuro_201.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_newskill_203.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_tane_newskill_204.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/EV_nemoto_homare004.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_machida_smon.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "KillPetL 602,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_machida_smon.txt",
+    "line": 34,
+    "command": "killpetl",
+    "source": "KillPetL 303700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_machida_smon.txt",
+    "line": 56,
+    "command": "killpetl",
+    "source": "KillPetL 303201,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "EV_machida_smon.txt",
+    "line": 78,
+    "command": "killpetl",
+    "source": "KillPetL 311800,1"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/资料片剧情/19_天界其他剧情与前置.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "killpetl 5803"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 18,
+    "command": "killpetl",
+    "source": "killpetl 603"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 30,
+    "command": "killpetl",
+    "source": "killpetl 5401"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 42,
+    "command": "killpetl",
+    "source": "killpetl 253"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 54,
+    "command": "killpetl",
+    "source": "killpetl 34"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 66,
+    "command": "killpetl",
+    "source": "killpetl 504"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 78,
+    "command": "killpetl",
+    "source": "killpetl 702"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 90,
+    "command": "killpetl",
+    "source": "killpetl 311"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a7fdc076cabccd5af8.txt",
+    "line": 102,
+    "command": "killpetl",
+    "source": "killpetl 123"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_77b6fe6b5ab83eeb67.txt",
+    "line": 27,
+    "command": "killpetl",
+    "source": "KillPetl 8603,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_93d8a390c58f63e662.txt",
+    "line": 55,
+    "command": "killpetl",
+    "source": "killpetl 401"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a1ac22eeb9dea026b2.txt",
+    "line": 14,
+    "command": "killpetl",
+    "source": "killpetl 304"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a1ac22eeb9dea026b2.txt",
+    "line": 28,
+    "command": "killpetl",
+    "source": "killpetl 80165"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a1ac22eeb9dea026b2.txt",
+    "line": 41,
+    "command": "killpetl",
+    "source": "killpetl 80165"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "KillPetl 37178"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 25,
+    "command": "killpetl",
+    "source": "KillPetl 37180"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 38,
+    "command": "killpetl",
+    "source": "KillPetl 37179"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 51,
+    "command": "killpetl",
+    "source": "KillPetl 37177"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 79,
+    "command": "killpetl",
+    "source": "KillPetl 37180"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 92,
+    "command": "killpetl",
+    "source": "KillPetl 37179"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 105,
+    "command": "killpetl",
+    "source": "KillPetl 37177"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 131,
+    "command": "killpetl",
+    "source": "KillPetl 37179"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 144,
+    "command": "killpetl",
+    "source": "KillPetl 37177"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_271232df296185b251.txt",
+    "line": 168,
+    "command": "killpetl",
+    "source": "KillPetl 37177"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 27,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 42,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 57,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 72,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 87,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 102,
+    "command": "killpetl",
+    "source": "killpetl 616"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 117,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 132,
+    "command": "killpetl",
+    "source": "killpetl 304"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3f09089b097975a3ad.txt",
+    "line": 147,
+    "command": "killpetl",
+    "source": "killpetl 666032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_916b92932b6f6aafab.txt",
+    "line": 7,
+    "command": "killpetl",
+    "source": "KillPetl 511,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_916b92932b6f6aafab.txt",
+    "line": 19,
+    "command": "killpetl",
+    "source": "KillPetl 512,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_9116f21ae110f09fc9.txt",
+    "line": 7,
+    "command": "killpetl",
+    "source": "KillPetl 513,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_9116f21ae110f09fc9.txt",
+    "line": 19,
+    "command": "killpetl",
+    "source": "KillPetl 514,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_17d97d06b40849dcf0.txt",
+    "line": 5,
+    "command": "",
+    "source": "有【联络信】【冒险者徽章】时"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_17d97d06b40849dcf0.txt",
+    "line": 20,
+    "command": "",
+    "source": "有【联络信】时"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_b87502318e044d3139.txt",
+    "line": 33,
+    "command": "killpeth",
+    "source": "killpeth 31"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_eb5da08f2e3f2ae858.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "KillPetl 2000092"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_eb5da08f2e3f2ae858.txt",
+    "line": 52,
+    "command": "killpetl",
+    "source": "KillPetl 2000091,40"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_eb5da08f2e3f2ae858.txt",
+    "line": 55,
+    "command": "killpetl",
+    "source": "KillPetl 2000091,40"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_eb5da08f2e3f2ae858.txt",
+    "line": 97,
+    "command": "killpetl",
+    "source": "KillPetl 2000090,20"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_eb5da08f2e3f2ae858.txt",
+    "line": 100,
+    "command": "killpetl",
+    "source": "KillPetl 2000090,20"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 20,
+    "command": "killpeth",
+    "source": "killpetH 721,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 25,
+    "command": "killpeth",
+    "source": "killpetH 721,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 49,
+    "command": "killpeth",
+    "source": "killpetH 722,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 54,
+    "command": "killpeth",
+    "source": "killpetH 722,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 78,
+    "command": "killpeth",
+    "source": "killpetH 723,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 83,
+    "command": "killpeth",
+    "source": "killpetH 723,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 107,
+    "command": "killpeth",
+    "source": "killpetH 724,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 112,
+    "command": "killpeth",
+    "source": "killpetH 724,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 136,
+    "command": "killpeth",
+    "source": "killpetH 701,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 141,
+    "command": "killpeth",
+    "source": "killpetH 701,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 165,
+    "command": "killpeth",
+    "source": "killpetH 702,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 170,
+    "command": "killpeth",
+    "source": "killpetH 702,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 194,
+    "command": "killpeth",
+    "source": "killpetH 703,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 199,
+    "command": "killpeth",
+    "source": "killpetH 703,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 223,
+    "command": "killpeth",
+    "source": "killpetH 704,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8a1c40dac9765a071a.txt",
+    "line": 228,
+    "command": "killpeth",
+    "source": "killpetH 704,1"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "任务步骤/stp_bdcfc1ef7380eb3ac8.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/自制与共享任务/141_斯诺克的回忆.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f4fa4977bc3c41d8e9.txt",
+    "line": 7,
+    "command": "killpetl",
+    "source": "killpetl 401"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f4fa4977bc3c41d8e9.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "killpetl 501"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f4fa4977bc3c41d8e9.txt",
+    "line": 17,
+    "command": "killpetl",
+    "source": "killpetl 832032"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f4fa4977bc3c41d8e9.txt",
+    "line": 30,
+    "command": "killpetl",
+    "source": "killpetl 21"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 9,
+    "command": "killpetl",
+    "source": "killpetl 531,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 10,
+    "command": "killpetl",
+    "source": "killpetl 533,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 11,
+    "command": "killpetl",
+    "source": "killpetl 2047,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "killpetl 2052,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 23,
+    "command": "killpetl",
+    "source": "killpetl 531,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 24,
+    "command": "killpetl",
+    "source": "killpetl 533,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 25,
+    "command": "killpetl",
+    "source": "killpetl 2047,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1cbf471bdf773c6d0b.txt",
+    "line": 26,
+    "command": "killpetl",
+    "source": "killpetl 2052,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8737cb3183b6051c0c.txt",
+    "line": 9,
+    "command": "killpetl",
+    "source": "killpetl 100083"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8737cb3183b6051c0c.txt",
+    "line": 10,
+    "command": "killpetl",
+    "source": "killpetl 100084"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8737cb3183b6051c0c.txt",
+    "line": 11,
+    "command": "killpetl",
+    "source": "killpetl 100085"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8737cb3183b6051c0c.txt",
+    "line": 12,
+    "command": "killpetl",
+    "source": "killpetl 100086"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_9b643c4282fa838d11.txt",
+    "line": 7,
+    "command": "killpetl",
+    "source": "KillPetl 2000103"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_2cbc26d7ce51296c26.txt",
+    "line": 9,
+    "command": "killpetl",
+    "source": "KillPetl 2000110"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_dd26e0d1f2d6523805.txt",
+    "line": 8,
+    "command": "killpetl",
+    "source": "KillPetl 2000117"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_aa9e0b7e7e8e548abb.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "KillPetl 200126"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_b5fe678df954a8a2a6.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "KillPetl 200126"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0724dfc1cfad1589e6.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "KillPetl 200126"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_acd81fb77b7a73c85f.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "KillPetl 200126"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_9e334854994e5bc713.txt",
+    "line": 16,
+    "command": "killpetl",
+    "source": "KillPetl 200148"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_c1850661b548a8b149.txt",
+    "line": 15,
+    "command": "killpeth",
+    "source": "KillPeth 83043,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1c1edc0e9494557751.txt",
+    "line": 15,
+    "command": "killpetl",
+    "source": "killpetl 206"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1c1edc0e9494557751.txt",
+    "line": 19,
+    "command": "killpetl",
+    "source": "killpetl 204"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3213d9d375a5014b7c.txt",
+    "line": 5,
+    "command": "killpetl",
+    "source": "killpetl 330010"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3213d9d375a5014b7c.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "killpetl 330011"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3213d9d375a5014b7c.txt",
+    "line": 7,
+    "command": "killpetl",
+    "source": "killpetl 330012"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3213d9d375a5014b7c.txt",
+    "line": 8,
+    "command": "killpetl",
+    "source": "killpetl 330013"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1459bab2253870b8b1.txt",
+    "line": 81,
+    "command": "killpeth",
+    "source": "KillPetH 101039,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1459bab2253870b8b1.txt",
+    "line": 91,
+    "command": "killpeth",
+    "source": "KillPetH 101039,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_71e13f41fb1b70fe5d.txt",
+    "line": 7,
+    "command": "sethouse",
+    "source": "SetHouse 4,365"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_71e13f41fb1b70fe5d.txt",
+    "line": 17,
+    "command": "sethouse",
+    "source": "SetHouse 4,365"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_71e13f41fb1b70fe5d.txt",
+    "line": 27,
+    "command": "sethouse",
+    "source": "SetHouse 4,365"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_71e13f41fb1b70fe5d.txt",
+    "line": 37,
+    "command": "sethouselimit",
+    "source": "SetHouseLimit +365"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_71e13f41fb1b70fe5d.txt",
+    "line": 50,
+    "command": "sethouse",
+    "source": "SetHouse 4,365"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0305923a31aa3626b2.txt",
+    "line": 7,
+    "command": "",
+    "source": "0"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0305923a31aa3626b2.txt",
+    "line": 17,
+    "command": "",
+    "source": "0"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_1ed9652f65ff07d40b.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_5bcd18048d6f6705c1.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_568f39aa897ab5f46e.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_fe220bb2f58a153340.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_059b539f4b49b38898.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_116181cc5044f5c6c5.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_5245001b08d3674c02.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_8c65dbc1a94b1ad337.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_bcfb64bb2e1f3c0691.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get修改系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_395f42b69bb3001329.txt",
+    "line": 1,
+    "command": "",
+    "source": "〓Get制作系列脚本〓"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_93332b68c9ca03ed09.txt",
+    "line": 6,
+    "command": "killpeth",
+    "source": "killpeth 602,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d42b0d3969d9e8e996.txt",
+    "line": 13,
+    "command": "killpeth",
+    "source": "killpeth 70018"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d42b0d3969d9e8e996.txt",
+    "line": 14,
+    "command": "killpeth",
+    "source": "killpeth 70019"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d42b0d3969d9e8e996.txt",
+    "line": 15,
+    "command": "killpeth",
+    "source": "killpeth 70020"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d42b0d3969d9e8e996.txt",
+    "line": 16,
+    "command": "killpeth",
+    "source": "killpeth 70021"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_c2a2c519d4a7ab3f6d.txt",
+    "line": 27,
+    "command": "killdrugdish",
+    "source": "killdrugdish"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 4,
+    "command": "killpetl",
+    "source": "killpetl 831"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 5,
+    "command": "killpetl",
+    "source": "killpetl 832"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "killpetl 833"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 7,
+    "command": "killpetl",
+    "source": "killpetl 834"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 8,
+    "command": "killpetl",
+    "source": "killpetl 835"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 14,
+    "command": "killpetl",
+    "source": "killpetl 831"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 15,
+    "command": "killpetl",
+    "source": "killpetl 832"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 16,
+    "command": "killpetl",
+    "source": "killpetl 833"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 17,
+    "command": "killpetl",
+    "source": "killpetl 834"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_88e7438f2d39b2fda6.txt",
+    "line": 18,
+    "command": "killpetl",
+    "source": "killpetl 835"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_6e7f8aae54a4ef5fd7.txt",
+    "line": 3,
+    "command": "",
+    "source": "\",ok"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_53f5bb26f128270ccb.txt",
+    "line": 6,
+    "command": "killpetl",
+    "source": "killpetl 602"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_5452e3a2acdb6e6302.txt",
+    "line": 9,
+    "command": "killpetl",
+    "source": "KillPetl 401,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_a78ddf8e84828f191e.txt",
+    "line": 43,
+    "command": "",
+    "source": "652104"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d5bf9db9180d78e1dd.txt",
+    "line": 2,
+    "command": "killdrugdish",
+    "source": "killdrugdish"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f16a9aa480dede0d60.txt",
+    "line": 57,
+    "command": "addpet",
+    "source": "addpet 101114"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_ba07e67dad16dec67b.txt",
+    "line": 58,
+    "command": "killpeth",
+    "source": "Killpeth 61025,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_58523d311791f8ece6.txt",
+    "line": 5,
+    "command": "killpeth",
+    "source": "Killpeth 61036,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_e8f8fdaffa5c7b0946.txt",
+    "line": 57,
+    "command": "addpet",
+    "source": "addpet 101114"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_05fb229192adfe947a.txt",
+    "line": 58,
+    "command": "killpeth",
+    "source": "Killpeth 2000323,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0634716fc101e1b267.txt",
+    "line": 5,
+    "command": "killpeth",
+    "source": "Killpeth 2000334,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 15,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 16,
+    "command": "item",
+    "source": "item 661054>=1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 27,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 28,
+    "command": "item",
+    "source": "item 661059>=1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 39,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 40,
+    "command": "item",
+    "source": "item 661060>=1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 51,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 52,
+    "command": "item",
+    "source": "item 661061>=1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 63,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 64,
+    "command": "item",
+    "source": "item 661065>=1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 75,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 76,
+    "command": "item",
+    "source": "item 661066>=1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 87,
+    "command": "strcmpchat",
+    "source": "StrCmpChat == 800186"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_3584d8449099abdf20.txt",
+    "line": 88,
+    "command": "item",
+    "source": "item 661067>=1"
+  },
+  {
+    "kind": "source_encoding",
+    "page": "主线任务/自制与共享任务/260_百人道场.md",
+    "note": "部分原始名称、对话或指令不能按 UTF-8/GBK 完整解码；页面标为原文编码不明"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5799e94bef8f890c0.txt",
+    "line": 43,
+    "command": "killpetl",
+    "source": "KillPetl 323,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5799e94bef8f890c0.txt",
+    "line": 56,
+    "command": "killpetl",
+    "source": "KillPetl 11,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5799e94bef8f890c0.txt",
+    "line": 69,
+    "command": "killpetl",
+    "source": "KillPetl 621,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5799e94bef8f890c0.txt",
+    "line": 82,
+    "command": "killpetl",
+    "source": "KillPetl 835,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5799e94bef8f890c0.txt",
+    "line": 95,
+    "command": "killpetl",
+    "source": "KillPetl 616,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5799e94bef8f890c0.txt",
+    "line": 108,
+    "command": "killpetl",
+    "source": "KillPetl 34,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_82cee02ef938ca4387.txt",
+    "line": 1,
+    "command": "",
+    "source": "德鬼任务脚本小叶编写 QQ 94452739"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0aeaa2b9d4b143720a.txt",
+    "line": 1,
+    "command": "",
+    "source": "德鬼任务脚本小叶编写 QQ 94452739"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_fa802da11f06a63245.txt",
+    "line": 1,
+    "command": "",
+    "source": "德鬼任务脚本 2008年12月30日小叶编写 QQ 94452739"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_fa802da11f06a63245.txt",
+    "line": 10,
+    "command": "killpeth",
+    "source": "KillPeth 2000366,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_b4281dce5fa38b7829.txt",
+    "line": 1,
+    "command": "",
+    "source": "德鬼任务脚本 2008年12月30日小叶编写 QQ 94452739"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d66010718fcb36c35a.txt",
+    "line": 1,
+    "command": "",
+    "source": "德鬼任务脚本 2008年12月30日小叶编写 QQ 94452739"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_760580f908d4e60c51.txt",
+    "line": 1,
+    "command": "",
+    "source": "德鬼任务脚本 2008年12月30日小叶编写 QQ 94452739"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 5,
+    "command": "killpeth",
+    "source": "killpeth 57121,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 6,
+    "command": "killpeth",
+    "source": "killpeth 57111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 7,
+    "command": "killpeth",
+    "source": "killpeth 57131,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 8,
+    "command": "killpeth",
+    "source": "killpeth 57141,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 11,
+    "command": "killpeth",
+    "source": "killpeth 57121,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 12,
+    "command": "killpeth",
+    "source": "killpeth 57131,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 13,
+    "command": "killpeth",
+    "source": "killpeth 57111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 14,
+    "command": "killpeth",
+    "source": "killpeth 57141,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 20,
+    "command": "killpeth",
+    "source": "killpeth 57128,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 21,
+    "command": "killpeth",
+    "source": "killpeth 57129,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 22,
+    "command": "killpeth",
+    "source": "killpeth 57132,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 23,
+    "command": "killpeth",
+    "source": "killpeth 57133,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 24,
+    "command": "killpeth",
+    "source": "killpeth 57134,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 31,
+    "command": "killpeth",
+    "source": "killpeth 57111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 32,
+    "command": "killpeth",
+    "source": "killpeth 57121,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 38,
+    "command": "killpeth",
+    "source": "killpeth 57121,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 39,
+    "command": "killpeth",
+    "source": "killpeth 57131,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 45,
+    "command": "killpeth",
+    "source": "killpeth 57141,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 46,
+    "command": "killpeth",
+    "source": "killpeth 57131,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 52,
+    "command": "killpeth",
+    "source": "killpeth 57111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 53,
+    "command": "killpeth",
+    "source": "killpeth 57141,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 59,
+    "command": "killpeth",
+    "source": "killpeth 57121,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 60,
+    "command": "killpeth",
+    "source": "killpeth 57141,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 66,
+    "command": "killpeth",
+    "source": "killpeth 57111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 67,
+    "command": "killpeth",
+    "source": "killpeth 57131,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 73,
+    "command": "killpeth",
+    "source": "killpeth 57126,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 74,
+    "command": "killpeth",
+    "source": "killpeth 57127,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 80,
+    "command": "killpeth",
+    "source": "killpeth 57122,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 81,
+    "command": "killpeth",
+    "source": "killpeth 57124,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 87,
+    "command": "killpeth",
+    "source": "killpeth 57123,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_d3c38aa4e8d6c7361b.txt",
+    "line": 88,
+    "command": "killpeth",
+    "source": "killpeth 57125,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 5,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ我的男朋友ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 6,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ在去年在苏之国对抗魔族的时候牺牲了ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 7,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ这个时候是鬼魂和天使还有人类可以互相见到时候ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 8,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ我想知道在哪里可以和鬼魂见面ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 9,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ可以帮我去调查嘛？5555555ˇˇYse,No"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 13,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ那么麻烦你了ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 14,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ建议你去找法兰城的加尔盖唯茨了解一下情况ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 15,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ他是个很封建的老头!!ˇˇOK"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 18,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ看来我还是另找别人吧!ˇˇOK"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 21,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ他在那边过的还好么....ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_61cd2e6afe701ae486.txt",
+    "line": 22,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ既然他过的好.我就满足了.....ˇˇOK"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_6a4cee900efc36f8e8.txt",
+    "line": 5,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ你手上的是........ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_6a4cee900efc36f8e8.txt",
+    "line": 6,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ她原来一直还在想着我.......ˇˇNEXT"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_6a4cee900efc36f8e8.txt",
+    "line": 7,
+    "command": "",
+    "source": "\\n\\n\\n\\n\\n@cˇˇ谢谢你为我传达消息..........ˇˇOK"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5c944c2d28cdf4a05.txt",
+    "line": 5,
+    "command": "killpet",
+    "source": "killpet 21,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5c944c2d28cdf4a05.txt",
+    "line": 13,
+    "command": "killpet",
+    "source": "killpet 21,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_f5c944c2d28cdf4a05.txt",
+    "line": 14,
+    "command": "petlevel",
+    "source": "petlevel 14,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 10,
+    "command": "killpetl",
+    "source": "KillPetl 1,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 22,
+    "command": "killpetl",
+    "source": "KillPetl 2,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 34,
+    "command": "killpetl",
+    "source": "KillPetl 3,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 46,
+    "command": "killpetl",
+    "source": "KillPetl 4,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 58,
+    "command": "killpetl",
+    "source": "KillPetl 5,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 70,
+    "command": "killpetl",
+    "source": "KillPetl 6,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 82,
+    "command": "killpetl",
+    "source": "KillPetl 1,11"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 94,
+    "command": "killpetl",
+    "source": "KillPetl 12,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 106,
+    "command": "killpetl",
+    "source": "KillPetl 13,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 118,
+    "command": "killpetl",
+    "source": "KillPetl 14,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 130,
+    "command": "killpetl",
+    "source": "KillPetl 15,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 142,
+    "command": "killpetl",
+    "source": "KillPetl 21,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 154,
+    "command": "killpetl",
+    "source": "KillPetl 22,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 166,
+    "command": "killpetl",
+    "source": "KillPetl 23,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 178,
+    "command": "killpetl",
+    "source": "KillPetl 24,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 190,
+    "command": "killpetl",
+    "source": "KillPetl 25,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 202,
+    "command": "killpetl",
+    "source": "KillPetl 26,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 214,
+    "command": "killpetl",
+    "source": "KillPetl 31,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 226,
+    "command": "killpetl",
+    "source": "KillPetl 32,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 238,
+    "command": "killpetl",
+    "source": "KillPetl 33,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 250,
+    "command": "killpetl",
+    "source": "KillPetl 34,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 262,
+    "command": "killpetl",
+    "source": "KillPetl 101,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 274,
+    "command": "killpetl",
+    "source": "KillPetl 102,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 286,
+    "command": "killpetl",
+    "source": "KillPetl 103,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 298,
+    "command": "killpetl",
+    "source": "KillPetl 104,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 310,
+    "command": "killpetl",
+    "source": "KillPetl 105,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 322,
+    "command": "killpetl",
+    "source": "KillPetl 111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 334,
+    "command": "killpetl",
+    "source": "KillPetl 112,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 346,
+    "command": "killpetl",
+    "source": "KillPetl 113,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 358,
+    "command": "killpetl",
+    "source": "KillPetl 114,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 370,
+    "command": "killpetl",
+    "source": "KillPetl 115,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 382,
+    "command": "killpetl",
+    "source": "KillPetl 121,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 394,
+    "command": "killpetl",
+    "source": "KillPetl 122,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 406,
+    "command": "killpetl",
+    "source": "KillPetl 123,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 418,
+    "command": "killpetl",
+    "source": "KillPetl 124,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 430,
+    "command": "killpetl",
+    "source": "KillPetl 201,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 442,
+    "command": "killpetl",
+    "source": "KillPetl 202,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 454,
+    "command": "killpetl",
+    "source": "KillPetl 203,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 466,
+    "command": "killpetl",
+    "source": "KillPetl 204,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 478,
+    "command": "killpetl",
+    "source": "KillPetl 205,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 490,
+    "command": "killpetl",
+    "source": "KillPetl 206,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 502,
+    "command": "killpetl",
+    "source": "KillPetl 211,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 514,
+    "command": "killpetl",
+    "source": "KillPetl 212,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 526,
+    "command": "killpetl",
+    "source": "KillPetl 213,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 538,
+    "command": "killpetl",
+    "source": "KillPetl 214,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 550,
+    "command": "killpetl",
+    "source": "KillPetl 241,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 562,
+    "command": "killpetl",
+    "source": "KillPetl 242,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 574,
+    "command": "killpetl",
+    "source": "KillPetl 243,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 586,
+    "command": "killpetl",
+    "source": "KillPetl 244,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 598,
+    "command": "killpetl",
+    "source": "KillPetl 245,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 610,
+    "command": "killpetl",
+    "source": "KillPetl 246,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 622,
+    "command": "killpetl",
+    "source": "KillPetl 251,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 634,
+    "command": "killpetl",
+    "source": "KillPetl 252,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 646,
+    "command": "killpetl",
+    "source": "KillPetl 253,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 658,
+    "command": "killpetl",
+    "source": "KillPetl 254,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 670,
+    "command": "killpetl",
+    "source": "KillPetl 255,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 682,
+    "command": "killpetl",
+    "source": "KillPetl 301,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 694,
+    "command": "killpetl",
+    "source": "KillPetl 302,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 706,
+    "command": "killpetl",
+    "source": "KillPetl 303,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 718,
+    "command": "killpetl",
+    "source": "KillPetl 304,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 730,
+    "command": "killpetl",
+    "source": "KillPetl 311,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 742,
+    "command": "killpetl",
+    "source": "KillPetl 312,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 754,
+    "command": "killpetl",
+    "source": "KillPetl 313,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 766,
+    "command": "killpetl",
+    "source": "KillPetl 314,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 778,
+    "command": "killpetl",
+    "source": "KillPetl 315,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 790,
+    "command": "killpetl",
+    "source": "KillPetl 321,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 802,
+    "command": "killpetl",
+    "source": "KillPetl 322,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 814,
+    "command": "killpetl",
+    "source": "KillPetl 323,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 826,
+    "command": "killpetl",
+    "source": "KillPetl 324,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 838,
+    "command": "killpetl",
+    "source": "KillPetl 325,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 850,
+    "command": "killpetl",
+    "source": "KillPetl 331,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 862,
+    "command": "killpetl",
+    "source": "KillPetl 332,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 874,
+    "command": "killpetl",
+    "source": "KillPetl 333,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 886,
+    "command": "killpetl",
+    "source": "KillPetl 334,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 898,
+    "command": "killpetl",
+    "source": "KillPetl 401,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 910,
+    "command": "killpetl",
+    "source": "KillPetl 402,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 922,
+    "command": "killpetl",
+    "source": "KillPetl 403,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 934,
+    "command": "killpetl",
+    "source": "KillPetl 404,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 946,
+    "command": "killpetl",
+    "source": "KillPetl 405,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 958,
+    "command": "killpetl",
+    "source": "KillPetl 406,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 970,
+    "command": "killpetl",
+    "source": "KillPetl 411,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 982,
+    "command": "killpetl",
+    "source": "KillPetl 412,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 994,
+    "command": "killpetl",
+    "source": "KillPetl 413,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1006,
+    "command": "killpetl",
+    "source": "KillPetl 414,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1018,
+    "command": "killpetl",
+    "source": "KillPetl 421,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1030,
+    "command": "killpetl",
+    "source": "KillPetl 422,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1042,
+    "command": "killpetl",
+    "source": "KillPetl 423,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1054,
+    "command": "killpetl",
+    "source": "KillPetl 424,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1066,
+    "command": "killpetl",
+    "source": "KillPetl 431,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1078,
+    "command": "killpetl",
+    "source": "KillPetl 432,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1090,
+    "command": "killpetl",
+    "source": "KillPetl 433,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1102,
+    "command": "killpetl",
+    "source": "KillPetl 434,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1114,
+    "command": "killpetl",
+    "source": "KillPetl 435,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1126,
+    "command": "killpetl",
+    "source": "KillPetl 501,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1138,
+    "command": "killpetl",
+    "source": "KillPetl 502,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1150,
+    "command": "killpetl",
+    "source": "KillPetl 503,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1162,
+    "command": "killpetl",
+    "source": "KillPetl 504,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1174,
+    "command": "killpetl",
+    "source": "KillPetl 511,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1186,
+    "command": "killpetl",
+    "source": "KillPetl 512,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1198,
+    "command": "killpetl",
+    "source": "KillPetl 513,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1210,
+    "command": "killpetl",
+    "source": "KillPetl 514,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1222,
+    "command": "killpetl",
+    "source": "KillPetl 521,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1234,
+    "command": "killpetl",
+    "source": "KillPetl 522,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1246,
+    "command": "killpetl",
+    "source": "KillPetl 523,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1258,
+    "command": "killpetl",
+    "source": "KillPetl 524,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1270,
+    "command": "killpetl",
+    "source": "KillPetl 525,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1282,
+    "command": "killpetl",
+    "source": "KillPetl 531,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1294,
+    "command": "killpetl",
+    "source": "KillPetl 532,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1306,
+    "command": "killpetl",
+    "source": "KillPetl 533,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1318,
+    "command": "killpetl",
+    "source": "KillPetl 534,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1330,
+    "command": "killpetl",
+    "source": "KillPetl 601,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1342,
+    "command": "killpetl",
+    "source": "KillPetl 602,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1354,
+    "command": "killpetl",
+    "source": "KillPetl 603,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1366,
+    "command": "killpetl",
+    "source": "KillPetl 604,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1378,
+    "command": "killpetl",
+    "source": "KillPetl 611,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1390,
+    "command": "killpetl",
+    "source": "KillPetl 612,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1402,
+    "command": "killpetl",
+    "source": "KillPetl 613,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1414,
+    "command": "killpetl",
+    "source": "KillPetl 614,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1426,
+    "command": "killpetl",
+    "source": "KillPetl 615,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1438,
+    "command": "killpetl",
+    "source": "KillPetl 616,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1450,
+    "command": "killpetl",
+    "source": "KillPetl 621,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1462,
+    "command": "killpetl",
+    "source": "KillPetl 622,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1474,
+    "command": "killpetl",
+    "source": "KillPetl 623,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1486,
+    "command": "killpetl",
+    "source": "KillPetl 624,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1498,
+    "command": "killpetl",
+    "source": "KillPetl 631,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1510,
+    "command": "killpetl",
+    "source": "KillPetl 632,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1522,
+    "command": "killpetl",
+    "source": "KillPetl 633,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1534,
+    "command": "killpetl",
+    "source": "KillPetl 634,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1546,
+    "command": "killpetl",
+    "source": "KillPetl 701,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1558,
+    "command": "killpetl",
+    "source": "KillPetl 702,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1570,
+    "command": "killpetl",
+    "source": "KillPetl 703,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1582,
+    "command": "killpetl",
+    "source": "KillPetl 704,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1594,
+    "command": "killpetl",
+    "source": "KillPetl 711,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1606,
+    "command": "killpetl",
+    "source": "KillPetl 712,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1618,
+    "command": "killpetl",
+    "source": "KillPetl 713,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1630,
+    "command": "killpetl",
+    "source": "KillPetl 714,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1642,
+    "command": "killpetl",
+    "source": "KillPetl 715,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1654,
+    "command": "killpetl",
+    "source": "KillPetl 721,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1666,
+    "command": "killpetl",
+    "source": "KillPetl 722,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1678,
+    "command": "killpetl",
+    "source": "KillPetl 723,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1690,
+    "command": "killpetl",
+    "source": "KillPetl 724,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1702,
+    "command": "killpetl",
+    "source": "KillPetl 801,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1714,
+    "command": "killpetl",
+    "source": "KillPetl 802,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1726,
+    "command": "killpetl",
+    "source": "KillPetl 803,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1738,
+    "command": "killpetl",
+    "source": "KillPetl 804,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1750,
+    "command": "killpetl",
+    "source": "KillPetl 811,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1762,
+    "command": "killpetl",
+    "source": "KillPetl 812,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1774,
+    "command": "killpetl",
+    "source": "KillPetl 813,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1786,
+    "command": "killpetl",
+    "source": "KillPetl 814,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1798,
+    "command": "killpetl",
+    "source": "KillPetl 821,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1810,
+    "command": "killpetl",
+    "source": "KillPetl 822,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1822,
+    "command": "killpetl",
+    "source": "KillPetl 823,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1834,
+    "command": "killpetl",
+    "source": "KillPetl 824,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1846,
+    "command": "killpetl",
+    "source": "KillPetl 831,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1858,
+    "command": "killpetl",
+    "source": "KillPetl 832,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1870,
+    "command": "killpetl",
+    "source": "KillPetl 833,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1882,
+    "command": "killpetl",
+    "source": "KillPetl 834,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1894,
+    "command": "killpetl",
+    "source": "KillPetl 835,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1906,
+    "command": "killpetl",
+    "source": "KillPetl 5001,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1918,
+    "command": "killpetl",
+    "source": "KillPetl 5002,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1930,
+    "command": "killpetl",
+    "source": "KillPetl 5003,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1942,
+    "command": "killpetl",
+    "source": "KillPetl 5004,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1954,
+    "command": "killpetl",
+    "source": "KillPetl 5011,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1966,
+    "command": "killpetl",
+    "source": "KillPetl 5012,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1978,
+    "command": "killpetl",
+    "source": "KillPetl 5013,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 1990,
+    "command": "killpetl",
+    "source": "KillPetl 5014,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2002,
+    "command": "killpetl",
+    "source": "KillPetl 5101,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2014,
+    "command": "killpetl",
+    "source": "KillPetl 5102,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2026,
+    "command": "killpetl",
+    "source": "KillPetl 5103,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2038,
+    "command": "killpetl",
+    "source": "KillPetl 5104,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2050,
+    "command": "killpetl",
+    "source": "KillPetl 5111,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2062,
+    "command": "killpetl",
+    "source": "KillPetl 5112,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2074,
+    "command": "killpetl",
+    "source": "KillPetl 5113,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2086,
+    "command": "killpetl",
+    "source": "KillPetl 5114,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2098,
+    "command": "killpetl",
+    "source": "KillPetl 5201,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2110,
+    "command": "killpetl",
+    "source": "KillPetl 5202,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2122,
+    "command": "killpetl",
+    "source": "KillPetl 5203,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2134,
+    "command": "killpetl",
+    "source": "KillPetl 5204,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2146,
+    "command": "killpetl",
+    "source": "KillPetl 5211,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2158,
+    "command": "killpetl",
+    "source": "KillPetl 5212,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2170,
+    "command": "killpetl",
+    "source": "KillPetl 5213,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2182,
+    "command": "killpetl",
+    "source": "KillPetl 5214,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2194,
+    "command": "killpetl",
+    "source": "KillPetl 5301,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2206,
+    "command": "killpetl",
+    "source": "KillPetl 5302,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2218,
+    "command": "killpetl",
+    "source": "KillPetl 5303,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2230,
+    "command": "killpetl",
+    "source": "KillPetl 5304,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2242,
+    "command": "killpetl",
+    "source": "KillPetl 5401,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2254,
+    "command": "killpetl",
+    "source": "KillPetl 5402,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2266,
+    "command": "killpetl",
+    "source": "KillPetl 5403,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2278,
+    "command": "killpetl",
+    "source": "KillPetl 5404,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2290,
+    "command": "killpetl",
+    "source": "KillPetl 5501,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2302,
+    "command": "killpetl",
+    "source": "KillPetl 5502,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2314,
+    "command": "killpetl",
+    "source": "KillPetl 5503,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2326,
+    "command": "killpetl",
+    "source": "KillPetl 5504,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2338,
+    "command": "killpetl",
+    "source": "KillPetl 5601,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2350,
+    "command": "killpetl",
+    "source": "KillPetl 5602,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2362,
+    "command": "killpetl",
+    "source": "KillPetl 5603,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2374,
+    "command": "killpetl",
+    "source": "KillPetl 5604,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2386,
+    "command": "killpetl",
+    "source": "KillPetl 5611,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2398,
+    "command": "killpetl",
+    "source": "KillPetl 5612,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2410,
+    "command": "killpetl",
+    "source": "KillPetl 5613,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2422,
+    "command": "killpetl",
+    "source": "KillPetl 5614,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2434,
+    "command": "killpetl",
+    "source": "KillPetl 5701,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2446,
+    "command": "killpetl",
+    "source": "KillPetl 5702,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2458,
+    "command": "killpetl",
+    "source": "KillPetl 5703,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2470,
+    "command": "killpetl",
+    "source": "KillPetl 5704,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2482,
+    "command": "killpetl",
+    "source": "KillPetl 5711,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2494,
+    "command": "killpetl",
+    "source": "KillPetl 5712,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2506,
+    "command": "killpetl",
+    "source": "KillPetl 5713,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2518,
+    "command": "killpetl",
+    "source": "KillPetl 5714,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2530,
+    "command": "killpetl",
+    "source": "KillPetl 5801,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2542,
+    "command": "killpetl",
+    "source": "KillPetl 5802,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2554,
+    "command": "killpetl",
+    "source": "KillPetl 5803,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2566,
+    "command": "killpetl",
+    "source": "KillPetl 5804,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2578,
+    "command": "killpetl",
+    "source": "KillPetl 300002,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2590,
+    "command": "killpetl",
+    "source": "KillPetl 300000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2602,
+    "command": "killpetl",
+    "source": "KillPetl 300000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2614,
+    "command": "killpetl",
+    "source": "KillPetl 300200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2626,
+    "command": "killpetl",
+    "source": "KillPetl 300300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2638,
+    "command": "killpetl",
+    "source": "KillPetl 300402,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2650,
+    "command": "killpetl",
+    "source": "KillPetl 300501,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2662,
+    "command": "killpetl",
+    "source": "KillPetl 300602,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2674,
+    "command": "killpetl",
+    "source": "KillPetl 300701,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2686,
+    "command": "killpetl",
+    "source": "KillPetl 300801,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2698,
+    "command": "killpetl",
+    "source": "KillPetl 300901,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2710,
+    "command": "killpetl",
+    "source": "KillPetl 301000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2722,
+    "command": "killpetl",
+    "source": "KillPetl $,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2734,
+    "command": "killpetl",
+    "source": "KillPetl 301200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2746,
+    "command": "killpetl",
+    "source": "KillPetl 301300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2758,
+    "command": "killpetl",
+    "source": "KillPetl 301400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2770,
+    "command": "killpetl",
+    "source": "KillPetl 301500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2782,
+    "command": "killpetl",
+    "source": "KillPetl 301600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2794,
+    "command": "killpetl",
+    "source": "KillPetl 301700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2806,
+    "command": "killpetl",
+    "source": "KillPetl 301801,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2818,
+    "command": "killpetl",
+    "source": "KillPetl 301900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2830,
+    "command": "killpetl",
+    "source": "KillPetl 302001,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2842,
+    "command": "killpetl",
+    "source": "KillPetl 302000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2854,
+    "command": "killpetl",
+    "source": "KillPetl 302102,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2866,
+    "command": "killpetl",
+    "source": "KillPetl 302202,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2878,
+    "command": "killpetl",
+    "source": "KillPetl 302300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2890,
+    "command": "killpetl",
+    "source": "KillPetl 302400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2902,
+    "command": "killpetl",
+    "source": "KillPetl 302401,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2914,
+    "command": "killpetl",
+    "source": "KillPetl 302400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2926,
+    "command": "killpetl",
+    "source": "KillPetl 302500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2938,
+    "command": "killpetl",
+    "source": "KillPetl 302800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2950,
+    "command": "killpetl",
+    "source": "KillPetl 302900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2962,
+    "command": "killpetl",
+    "source": "KillPetl 303201,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2974,
+    "command": "killpetl",
+    "source": "KillPetl 303300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2986,
+    "command": "killpetl",
+    "source": "KillPetl 303400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 2998,
+    "command": "killpetl",
+    "source": "KillPetl 303500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3010,
+    "command": "killpetl",
+    "source": "KillPetl 303600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3022,
+    "command": "killpetl",
+    "source": "KillPetl 303700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3034,
+    "command": "killpetl",
+    "source": "KillPetl 303801,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3046,
+    "command": "killpetl",
+    "source": "KillPetl 303900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3058,
+    "command": "killpetl",
+    "source": "KillPetl 304000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3070,
+    "command": "killpetl",
+    "source": "KillPetl 304101,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3082,
+    "command": "killpetl",
+    "source": "KillPetl 304201,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3094,
+    "command": "killpetl",
+    "source": "KillPetl 306400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3106,
+    "command": "killpetl",
+    "source": "KillPetl 306500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3118,
+    "command": "killpetl",
+    "source": "KillPetl 306600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3130,
+    "command": "killpetl",
+    "source": "KillPetl 306700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3142,
+    "command": "killpetl",
+    "source": "KillPetl 306800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3154,
+    "command": "killpetl",
+    "source": "KillPetl 306900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3166,
+    "command": "killpetl",
+    "source": "KillPetl 307000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3178,
+    "command": "killpetl",
+    "source": "KillPetl 307100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3190,
+    "command": "killpetl",
+    "source": "KillPetl 307200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3202,
+    "command": "killpetl",
+    "source": "KillPetl 307300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3214,
+    "command": "killpetl",
+    "source": "KillPetl 307400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3226,
+    "command": "killpetl",
+    "source": "KillPetl 307500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3238,
+    "command": "killpetl",
+    "source": "KillPetl 307600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3250,
+    "command": "killpetl",
+    "source": "KillPetl 307700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3262,
+    "command": "killpetl",
+    "source": "KillPetl 307800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3274,
+    "command": "killpetl",
+    "source": "KillPetl 307900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3286,
+    "command": "killpetl",
+    "source": "KillPetl 308000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3298,
+    "command": "killpetl",
+    "source": "KillPetl 308100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3310,
+    "command": "killpetl",
+    "source": "KillPetl 308200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3322,
+    "command": "killpetl",
+    "source": "KillPetl 308300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3334,
+    "command": "killpetl",
+    "source": "KillPetl 308400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3346,
+    "command": "killpetl",
+    "source": "KillPetl 308500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3358,
+    "command": "killpetl",
+    "source": "KillPetl 308600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3370,
+    "command": "killpetl",
+    "source": "KillPetl 308700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3382,
+    "command": "killpetl",
+    "source": "KillPetl 308800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3394,
+    "command": "killpetl",
+    "source": "KillPetl 308900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3406,
+    "command": "killpetl",
+    "source": "KillPetl 309000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3418,
+    "command": "killpetl",
+    "source": "KillPetl 309100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3430,
+    "command": "killpetl",
+    "source": "KillPetl 309200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3442,
+    "command": "killpetl",
+    "source": "KillPetl 309300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3454,
+    "command": "killpetl",
+    "source": "KillPetl 309400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3466,
+    "command": "killpetl",
+    "source": "KillPetl 309500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3478,
+    "command": "killpetl",
+    "source": "KillPetl 309600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3490,
+    "command": "killpetl",
+    "source": "KillPetl 309700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3502,
+    "command": "killpetl",
+    "source": "KillPetl 309800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3514,
+    "command": "killpetl",
+    "source": "KillPetl 309900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3526,
+    "command": "killpetl",
+    "source": "KillPetl 310000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3538,
+    "command": "killpetl",
+    "source": "KillPetl 310100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3550,
+    "command": "killpetl",
+    "source": "KillPetl 310200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3562,
+    "command": "killpetl",
+    "source": "KillPetl 310300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3574,
+    "command": "killpetl",
+    "source": "KillPetl 310400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3586,
+    "command": "killpetl",
+    "source": "KillPetl 310500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3598,
+    "command": "killpetl",
+    "source": "KillPetl 310600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3610,
+    "command": "killpetl",
+    "source": "KillPetl 310700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3622,
+    "command": "killpetl",
+    "source": "KillPetl 310800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3634,
+    "command": "killpetl",
+    "source": "KillPetl 310900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3646,
+    "command": "killpetl",
+    "source": "KillPetl 311000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3658,
+    "command": "killpetl",
+    "source": "KillPetl 311100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3670,
+    "command": "killpetl",
+    "source": "KillPetl 311200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3682,
+    "command": "killpetl",
+    "source": "KillPetl 311300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3694,
+    "command": "killpetl",
+    "source": "KillPetl 311400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3706,
+    "command": "killpetl",
+    "source": "KillPetl 311500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3718,
+    "command": "killpetl",
+    "source": "KillPetl 311600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3730,
+    "command": "killpetl",
+    "source": "KillPetl 311700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3742,
+    "command": "killpetl",
+    "source": "KillPetl 311800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3754,
+    "command": "killpetl",
+    "source": "KillPetl 311900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3766,
+    "command": "killpetl",
+    "source": "KillPetl 312000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3778,
+    "command": "killpetl",
+    "source": "KillPetl 312100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3790,
+    "command": "killpetl",
+    "source": "KillPetl 312200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3802,
+    "command": "killpetl",
+    "source": "KillPetl 312300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3814,
+    "command": "killpetl",
+    "source": "KillPetl 312400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3826,
+    "command": "killpetl",
+    "source": "KillPetl 312500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3838,
+    "command": "killpetl",
+    "source": "KillPetl 312600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3850,
+    "command": "killpetl",
+    "source": "KillPetl 312700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3862,
+    "command": "killpetl",
+    "source": "KillPetl 312800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3874,
+    "command": "killpetl",
+    "source": "KillPetl 312900,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3886,
+    "command": "killpetl",
+    "source": "KillPetl 313000,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3898,
+    "command": "killpetl",
+    "source": "KillPetl 313100,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3910,
+    "command": "killpetl",
+    "source": "KillPetl 313200,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3922,
+    "command": "killpetl",
+    "source": "KillPetl 313300,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3934,
+    "command": "killpetl",
+    "source": "KillPetl 313400,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3946,
+    "command": "killpetl",
+    "source": "KillPetl 313500,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3958,
+    "command": "killpetl",
+    "source": "KillPetl 313600,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3970,
+    "command": "killpetl",
+    "source": "KillPetl 313700,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3982,
+    "command": "killpetl",
+    "source": "KillPetl 313800,1"
+  },
+  {
+    "kind": "untranslated_command",
+    "script": "stp_0b71614202c0ad0833.txt",
+    "line": 3994,
+    "command": "killpetl",
+    "source": "KillPetl 313900,1"
+  }
+]

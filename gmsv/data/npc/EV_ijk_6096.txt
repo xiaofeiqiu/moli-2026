@@ -8,7 +8,7 @@ block Group == 1
 	#\n\n这里是给商人和生产系职业的人才能优先通过的通道。\n因为里面很窄，所以非得限制人数不可。
 	Window 11439,OK
 ##战斗系
-	Window_OK Job >= 10 && Job < 170 && Group == 1
+	Window_OK Luac msjob:e01712b8532cc4ae1969 >= 1 && Group == 1
 	#\n\n很抱歉你不能利用此通道。\n因为这里是商人和生产系职业的人才能优先通过的。	8
 	EndWindow 11440
 ##炼金术士追加	

@@ -93,7 +93,7 @@ block NowEvent 7 == 1
 	EndWindow 14899,OK
 
 #### 邀荦钒铵白仿弘卅仄↓LV20恍坢及爵衔烟 ###
-block NowEvent 7 == 0 && Level < 20 && Job >= 0 && Job <= 157
+block NowEvent 7 == 0 && Level < 20 && Luac msjob:1ca28bf1e08863fa14c7 >= 1
 #\n\n﹛孔丹戈﹜台反中引か仄中仪瘀毛邀荦仄化中月及分互﹜楝及伊矛伙匹反引分澎鳗中反拑咥分卅﹝
 	EndWindow 15124,OK
 

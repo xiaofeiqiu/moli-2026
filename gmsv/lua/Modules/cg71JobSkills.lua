@@ -15,10 +15,11 @@ local function set(p, name, v) return Char.SetData(p, C(name), v) end
 local function contains(xs, n) for _, v in ipairs(xs) do if v==n then return true end end return false end
 local function job(p) return get(p,'CHAR_职业') end
 local function family(p) return math.floor(job(p)/10)*10 end
+local function allProfessions(p) return job(p)>=181 and job(p)<=187 end
 local function level(p, id)
   if p<0 or not Char.IsPlayer(p) then return 0 end
   local s = specs[id]
-  if s and not contains(s.families,family(p)) then return 0 end
+  if s and family(p)~=10 and not allProfessions(p) and not contains(s.families,family(p)) then return 0 end
   local slot = Char.HaveSkill(p,id)
   if slot<0 then return 0 end
   local lv = Char.GetSkillLevel(p,slot)
@@ -28,6 +29,7 @@ end
 local function tell(p,msg) NLG.SystemMessage(p,msg) end
 
 function M:prerequisite(p,s)
+  if allProfessions(p) then return s.prerequisite end
   local f=family(p)
   if s.effect=='gather' then return ({[450]=225,[460]=226,[470]=227,[1010]=2000})[f] end
   if s.effect=='packing' then return f==350 and 215 or 216 end
@@ -50,6 +52,11 @@ function M:learn(p,id)
   if not s then return false,'技能不存在。' end
   if Char.GetBattleIndex(p)>=0 then return false,'请先结束战斗。' end
   if Char.HaveSkill(p,id)>=0 then self:giveRecipes(p,id); return false,'你已经学会这个技能。' end
+  if allProfessions(p) then
+    local library=getModule('skillLibrary')
+    if not library then return false,'技能库暂时不可用。' end
+    return library:learn(p,id)
+  end
   if s.kind~='trial' and not contains(s.families,family(p)) then return false,'当前职业不能学习这个专属技能。' end
   local cap=Skill.GetMaxSkillLevelOfJob(Skill.GetSkillIndex(id),job(p))
   if cap<=0 then return false,'当前职阶尚未开放此技能。' end
@@ -101,7 +108,7 @@ end
 function M:eligible(p)
   local ids={}
   for _,s in ipairs(D.skills) do
-    if s.id>=2200 and contains(s.families,family(p)) then ids[#ids+1]=s.id end
+    if s.id>=2200 and (allProfessions(p) or contains(s.families,family(p))) then ids[#ids+1]=s.id end
   end
   return ids
 end
@@ -112,13 +119,36 @@ function M:near(npc,p)
      and Char.GetBattleIndex(p)<0
 end
 
-function M:menu(npc,p,f)
+function M:menu(npc,p,f,page)
   if not self:near(npc,p) then return end
+  if not f and allProfessions(p) then
+    local ids=self:eligible(p);local pages=math.max(1,math.ceil(#ids/5))
+    page=math.max(1,math.min(page or 1,pages))
+    local options,actions={},{}
+    local function add(label,action) options[#options+1]=label;actions[#actions+1]=action end
+    for i=(page-1)*5+1,math.min(page*5,#ids) do
+      local id=ids[i];local cost=Skill.GetData(Skill.GetSkillIndex(id),CONST.SKILL_COST)
+      add(specs[id].name..'（'..cost..'金）',{id=id})
+    end
+    if page>1 then add('上一页',{page=page-1}) end
+    if page<pages then add('下一页',{page=page+1}) end
+    add('打开永久技能库',{library=true})
+    self.sessions[p]={npc=npc,kind='all_professions',actions=actions,expires=os.time()+60}
+    NLG.ShowWindowTalked(p,npc,2,2,7101,self:NPC_buildSelectionText('魔剑士全职业进阶技能 '..page..'/'..pages..'；学习后到技能库装配',options))
+    return
+  end
   local options
   if f then options={'就职（提交练习宠饰，5000金）','晋阶','学习本职制造（1000金）','学习宠物饰品制作（1000金）','学习宠装锻造体验（免费）','补领已达等级的配方','查看规则'}
   else
     options={}; for _,id in ipairs(self:eligible(p)) do options[#options+1]=specs[id].name..'（10000金）' end
-    if #options==0 then tell(p,'本职业没有新增进阶技能。'); return end
+    if #options==0 then
+      local title=job(p)==1 and '你目前是游民，尚未就职。\\n请先选择职业并完成就职，进阶技能会按本职显示。'
+        or '当前职业暂未配置本职进阶技能。'
+      self.sessions[p]={npc=npc,kind='no_advanced',expires=os.time()+60}
+      NLG.ShowWindowTalked(p,npc,2,2,7101,self:NPC_buildSelectionText(title,
+        {'打开永久技能库','查看职业与BOSS导师位置','查看宠装职业就职说明'}))
+      return
+    end
   end
   self.sessions[p]={npc=npc,family=f,ids=f and nil or self:eligible(p),expires=os.time()+60}
   NLG.ShowWindowTalked(p,npc,2,2,7101,self:NPC_buildSelectionText(f and '宠装制造公会' or '职业进阶导师',options))
@@ -130,6 +160,19 @@ function M:answer(npc,p,seq,select,data)
   local choice=tonumber(data)
   if not choice then return end
   local ok,msg=false,'无效选择。'
+  if a.kind=='all_professions' then
+    local action=a.actions[choice];if not action then return end
+    if action.page then self:menu(npc,p,nil,action.page)
+    elseif action.library then local library=getModule('skillLibrary');if library then library:show(p,'home') end
+    elseif action.id then local learned,message=self:learn(p,action.id);tell(p,message) end
+    return
+  end
+  if a.kind=='no_advanced' then
+    if choice==1 then local library=getModule('skillLibrary');if library then library:show(p,'home') end
+    elseif choice==2 then tell(p,'圣殿同一房间内生产系、物理战斗系、法系各一排，导师中间空一格，每个职业独立导师；BOSS导师在34,18，每页10个技能。宠物导师在36,18，负责宠物学习与遗忘。人物不能学习宠物技能，实际学习按当前职业许可。')
+    elseif choice==3 then tell(p,'宠装制造导师在圣殿16,26至28,26。游民可免费学习宠装锻造体验，用3个铜条和6个印度轻木制作练习宠饰R1，再提交作品及5000魔币就职；这不会自动替你更换职业。') end
+    return
+  end
   if not a.family then local id=a.ids[choice]; if id then ok,msg=self:learn(p,id) end
   elseif choice==1 then ok,msg=self:join(p,a.family)
   elseif choice==2 then ok,msg=self:promote(p,a.family)
@@ -201,7 +244,7 @@ function M:damage(p,q,ori,dmg,b,c1,c2,c3,dc1,dc2,dc3,flag)
   else increase=increase+self:buff(b,p,'physical')*0.05+self:buff(b,p,'reckless')*0.10 end
   local use=techs[c3]
   if c3>=200200 and c3<=200209 then increase=increase+self:buff(b,p,'bomb')*0.08 end
-  local value=math.max(1,math.floor(dmg*(1+increase)*(1+self:buff(b,q,'curse')*0.06+self:buff(b,q,'reckless')*0.04)*(1-math.min(0.90,self:buff(b,q,'barrier')*0.05))))
+  local value=math.max(1,math.floor(dmg*(1+increase)*(1+self:buff(b,q,'curse')*0.06+self:buff(b,q,'reckless')*0.04)*(1-self:buff(b,q,'barrier')*0.05)))
   if use and use.spec.effect=='nonlethal' then return math.max(0,math.min(value,get(q,'CHAR_血')-1)) end
   return value
 end
@@ -219,9 +262,10 @@ end
 function M:train(p,id,xp)
   local lv=level(p,id); if lv<=0 then return end
   local slot=Char.HaveSkill(p,id)
-  -- The library applies explicit level transitions using native thresholds.
+  -- The archive performs level transitions as well as progress updates.
   local library=getModule('skillLibrary')
-  if library then library:gainExperience(p,id,xp) else Char.SetSkillExp(p,slot,Char.GetSkillExp(p,slot)+xp,0) end
+  if library then library:gainExperience(p,id,xp)
+  else Char.SetSkillExp(p,slot,Char.GetSkillExp(p,slot)+xp,0) end
 end
 function M:merge(p,sid,slv,item,jewel)
   self:giveRecipes(p,sid)

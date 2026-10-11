@@ -1,13 +1,14 @@
 -- Character preference; the party leader chooses the next PvE battle's tier.
 local M=ModuleBase:createModule('gameDifficulty')
 local KEY='GameDifficultyV1'
-local DEFAULT=2
+local DEFAULT=6
 local TIERS={
  {name='正常',hp=1,damage=1,defense=1,agility=1},
  {name='困难',hp=1.30,damage=1.20,defense=1.15,agility=1.10},
  {name='极难',hp=1.80,damage=1.50,defense=1.30,agility=1.15},
  {name='地狱',hp=2.50,damage=2,defense=1.50,agility=1.20},
  {name='炼狱',hp=4,damage=3,defense=2,agility=1.30},
+ {name='深渊',hp=6,damage=4,defense=4,agility=1.50},
 }
 M.tiers=TIERS
 local function get(p,k) local field=assert(CONST[k],k);return Char.GetData(p,field) end
@@ -62,18 +63,21 @@ function M:talk(p,msg)
   local mine=self:preference(p)
   if not mine then NLG.SystemMessage(p,'难度设置暂时无法读取，请稍后重试。');return 0 end
   local leader=self:leader(p);local effective=self:preference(leader) or DEFAULT
-  NLG.SystemMessage(p,'个人难度：'..TIERS[mine].name..'。'..(leader~=p and '组队当前跟随队长：'..TIERS[effective].name..'。' or '下一场战斗使用此档位。'))
-  NLG.SystemMessage(p,'用法：/difficulty 1～5；1 正常，2 困难，3 极难，4 地狱，5 炼狱（最难）。')
+  local state=self.battles[Char.GetBattleIndex(p)]
+  local current=state and state.tier or effective
+  NLG.SystemMessage(p,'当前难度：'..current..' '..TIERS[current].name..'（'..(state and '本场战斗' or '下场 PvE')..'）。')
+  NLG.SystemMessage(p,'个人难度：'..mine..' '..TIERS[mine].name..'。'..(leader~=p and '组队跟随队长：'..effective..' '..TIERS[effective].name..'。' or ''))
+  NLG.SystemMessage(p,'用法：/difficulty 1～6；1 正常，2 困难，3 极难，4 地狱，5 炼狱，6 深渊（默认、最难）。')
   for n in ipairs(TIERS) do NLG.SystemMessage(p,describe(n)) end
   return 0
  end
- local selected=args:match('^[1-5]$') and tonumber(args)
- if not selected then NLG.SystemMessage(p,'请输入 /difficulty 1～5；1 正常，5 炼狱（最难）。');return 0 end
+ local selected=args:match('^[1-6]$') and tonumber(args)
+ if not selected then NLG.SystemMessage(p,'请输入 /difficulty 1～6；1 正常，6 深渊（默认、最难）。');return 0 end
  if get(p,'CHAR_BattleMode')~=0 or Char.GetBattleIndex(p)>=0 then
   NLG.SystemMessage(p,'请结束当前战斗后再切换难度。');return 0
  end
  if not self:savePreference(p,selected) then NLG.SystemMessage(p,'难度保存失败，原设置保留，请稍后重试。');return 0 end
- NLG.SystemMessage(p,'个人难度已设为【'..TIERS[selected].name..'】，从下一场战斗生效。')
+ NLG.SystemMessage(p,'个人难度已设为【'..selected..' '..TIERS[selected].name..'】，从下一场战斗生效。')
  NLG.SystemMessage(p,describe(selected))
  if self:leader(p)~=p then NLG.SystemMessage(p,'组队时跟随队长难度；离队后使用你的个人设置。') end
  return 0
@@ -174,7 +178,7 @@ function M:onLoad()
   if not remains then self.battles[b]=nil end
  end)
  for _,event in ipairs({'LoginEvent','LogoutEvent'}) do self:regCallback(event,function(p) self.configs[p]=nil end) end
- self:logInfo('Five difficulty tiers ready; default is hard; no NPC added')
+ self:logInfo('Six difficulty tiers ready; default is abyss (tier 6); no NPC added')
 end
 
 function M:onUnload() self.configs={} end

@@ -6,7 +6,7 @@ petpickchecklv=5
 //0：1级怪计算平均等级 1：1级怪不计算平均等级，默认值：0
 avglvmode=0
 //默认最高忠诚锁，默认值：60
-defaultloyalty=60
+defaultloyalty=100
 //魔法暴击开关1为开启，默认:0 
 magiccrit=0
 //魔法爆率修正比率百分比，默认:100
@@ -212,16 +212,16 @@ useenemyexplist=0
 //是否启用自定义组队经验(设置0使用官方设置.设置1为启动)默认0
 usepartyexplist=0
 //设置战斗获得的经验倍数,最低为1
-baseexprate=1
+baseexprate=20
 //设置战斗技能经验倍数,最低为1
-battleskillexprate=1
+battleskillexprate=20
 //设置生成采集技能经验倍数,最低为1
-productskillexprate=1
+productskillexprate=20
 #################################其他设置#####################################
 //人物升级点数,默认4
-charuppoint=4
+charuppoint=10
 //宠物升级点数,默认1
-petuppoint=1
+petuppoint=2
 //可以免费使用护士加血的等级(默认为10,表示当前等级小于等于10级时免费)
 checkfplp0gold=10
 //医院加血加魔的价格,默认1倍表示1金币加2血1魔,例如设置4倍则为4金币加2血1魔
@@ -248,7 +248,7 @@ initint=50
 //初始人物的最大技能栏数量(默认是10个)
 initcharskillslot=15
 //初始人物的声望值（默认为1000）
-initfame=1000
+initfame=200999
 #################################人物声望设置#################################
 //角色声望最大值（台服默认最大值为200999,韩服最大值1000001）
 maxfame=200999

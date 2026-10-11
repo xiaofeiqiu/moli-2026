@@ -8,8 +8,8 @@ function M:canEquip(player, itemIndex)
   local item = items[Item.GetData(itemIndex, CONST['道具_ID'])]
   if not item then return 0 end
   local job = Char.GetData(player, CONST['CHAR_职业'])
-  if job < 31 or job > 37 then
-    NLG.SystemMessage(player, '这套魔骑装备需要骑士职业。')
+  if not ((job >= 11 and job <= 17) or (job >= 31 and job <= 37)) then
+    NLG.SystemMessage(player, '这套装备需要剑士或骑士职业。')
     return -1
   end
   if Char.GetData(player, CONST['CHAR_等级']) < item.min_level then
@@ -70,11 +70,14 @@ function M:onLoad()
       {mapType=0,map=1000,x=p.x,y=p.y,direction=4},
       {buyRate=100,sellRate=20,shopType=CONST.SHOP_TYPE_SELL,sellTypes={}},shop.items)
     assert(npc>=0,'Could not create '..shop.name)
+    -- Placement may be redirected to the sanctuary by NPCPart.
+    p={x=Char.GetData(npc,CONST.CHAR_X),y=Char.GetData(npc,CONST.CHAR_Y)}
+    p.approach={x=p.x,y=p.y+1}
     self.shops[#self.shops+1]={npc=npc,name=shop.name,min_level=shop.min_level,
       max_level=shop.max_level,x=p.x,y=p.y,approach=p.approach,items=shop.items}
   end
   self:regCallback('ItemAttachEvent',Func.bind(self.canEquip,self))
-  self:logInfo('Loaded '..#self.shops..' knight equipment shops near 153,139')
+  self:logInfo('Loaded '..#self.shops..' equipment shops in sanctuary placement')
 end
 
 return M

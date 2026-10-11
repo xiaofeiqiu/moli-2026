@@ -9,7 +9,7 @@ block Group > 1
 	 	 	 Window_NO 
 	 	 	 
 ################### 游民与战斗系 50级以上 && 开过传送石
-block Job < 170 && Level >=50 && NowEvent 244 == 1 
+block Luac msjob:6b7c08fd82530795fb06 >= 1 && Level >=50 && NowEvent 244 == 1 
 	 ##1200943	\n这是通往雷欧娜村的传送石，要使用吗？\n费用是1200元。
 	 Window 1200943,YES,NO 
 	 	 Window_YES Gold >=1200 && Group ==1 && Item 18660>=1

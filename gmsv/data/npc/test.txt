@@ -95,7 +95,7 @@ block SkillLevel_11 >= 2
 	Message 10020
 
 ########## 缜仅互苇莲痿衔及桦宁 ##########
-block Job == 11
+block Luac msjob:67c26bf00fa8ffec6230 >= 1
 	#伊矛伙互ㄢㄟ卞卅匀凶日手丹域蘸侳月互方中﹝
 	Message 10021
 

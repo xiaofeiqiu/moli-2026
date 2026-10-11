@@ -15,7 +15,7 @@ block EndEvent 155 == 0
 	 EndWindow 1102465
 
 ################### 战斗系 50级以上 && 开过传送石
-block  Job < 170 && Level >=50 && EndEvent 155 == 1 && Item 40706>=1
+block  Luac msjob:6b7c08fd82530795fb06 >= 1 && Level >=50 && EndEvent 155 == 1 && Item 40706>=1
 	 ##1102466	\n这是通往亚诺曼城的传送石，要使用吗？\n费用是1500元。
 	 Window 1102466,YES,NO 
 	 	 Window_YES Gold >=1500 && Group ==1 && Item 40706>=1

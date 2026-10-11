@@ -8,7 +8,7 @@
 ##1111778	\n\n　　　你现在已经正职了，\n　　　就再努力一点吧，\n　　　等级LV25可以前往莎莲那。	1
 #1111779	\n\n　　　等可以去莎莲那，\n　　　你再准备去打神兽，\n　　　LV50或本职技能LV6，\n　　　再找双王晋阶吧！！	1
 
-block  job == 12 II job == 22 || job == 32 || job == 42 || job == 52 || job ==62 || job == 72 || job == 82 
+block  Luac msjob:7c7f0fcb74422db419af >= 1 
 	window 1111778,next
 	endwindow 1111779
 	
@@ -23,7 +23,7 @@ block level <20
 #1111765	\n\n　　　战斗系，医生护士与爆弹师，\n　　　等级需满20级才能进去。	1
 	window 1111764,next
 	endwindow 1111765
-block EndEvent 93 == 1	&& job == 11 && title < 7
+block EndEvent 93 == 1	&& Luac msjob:67c26bf00fa8ffec6230 >= 1 && title < 7
 	endwindow 1111774
 block EndEvent 93 == 1	&& job == 21 && title < 7
 	endwindow 1111774	
@@ -35,7 +35,7 @@ block EndEvent 93 == 1	&& job == 51 && title < 7
 	endwindow 1111774
 block EndEvent 93 == 1	&& job == 61 && title < 7
 	endwindow 1111774	
-block EndEvent 93 == 1	&& job == 71 && title < 7
+block EndEvent 93 == 1	&& Luac msjob:1f4a5d867a8e76c2702f >= 1 && title < 7
 	endwindow 1111774	
 block EndEvent 93 == 1	&& job == 81 && title < 7
 	endwindow 1111774	

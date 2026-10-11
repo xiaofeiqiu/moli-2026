@@ -3,9 +3,11 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+!/AGENTS.md
 !/gmsv/
 !/tools/
 !/docs/
+!/攻略/
 !/lua参考/
 
 # Server executable, source, static game data, and configuration templates.
@@ -36,11 +38,13 @@
 !/tools/five-pet/
 !/tools/five-pet-probe/
 !/tools/game-qol/
+!/tools/game-guide/
 !/tools/jobskill-pack/
 !/tools/knight-gear/
 !/tools/module-reload/
 !/tools/npc-overlap/
 !/tools/skill-library/
+!/tools/sanctuary/
 /tools/cg71-pets/export_previews.py
 /tools/content-audit/audit_client_installer.py
 

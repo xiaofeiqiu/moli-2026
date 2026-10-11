@@ -33,7 +33,7 @@ block
 	Window 14159,YES,NO
 
 ############## ¾ô¢ÈÑÌÆ¥ÒÁÃ¬»ï»¥óïÔ»Ø¦ÖÐèëÄþ ##############
-	Window_YES Group == 1 && Job >=11 && Job <= 167 && Level < 36
+	Window_YES Group == 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Level < 36
 #\n\n©xÊ§»ïÓÉÉúµ©¼°ÇÌ±åØ¤Ø¦Ð×¼°ÒÁÃ¬»ïÆ¥µæ¾®Ä¾ÔÂ¼°·´ÔüÝ«Æ¥ÔÊ©zÒýÐ×ÔÆÐýØÆÈÊ·Ö½ñÖÐ©z
 	EndWindow 14158
 
@@ -43,26 +43,26 @@ block
 	EndWindow 14158
 
 ############## ¾ô¢ÈÑÌÆ¥°×Øø¡õÓÉµ©ÒøåÃ ##############
-	Window_YES Group == 1 && Item 18660 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+	Window_YES Group == 1 && Item 18660 >= 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Level >= 36
 #\n\n©x°×Øø¡õÓÉµ©Ã«ÔÆƒ}ÇÐÆ¥ÔÊÓÑ©z\n©x¹«Ä¾Æ¥·´Éýµ¤Èß©z
 	Window 15427,OK
-	Window_OK Item 18660 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+	Window_OK Item 18660 >= 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Level >= 36
 	LeaveGroup
 	Warp 0,4399,5,14
 	Window_OK
 
 ############## ¾ô¢ÈÑÌÆ¥¼ÔÐÑ±ÔÒøåÃ ##############
-	Window_YES Group == 1 && Item 18448 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+	Window_YES Group == 1 && Item 18448 >= 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Level >= 36
 #\n\n©x¼ÔÐÑ±ÔÃ«ÔÆƒ}ÇÐÆ¥ÔÊÓÑ©z\n©x¹«Ä¾Æ¥·´Ò½àÅ¼°¾®´õÔ»±å¨àßÏÔÆÆg¾®Ô»ÚÛØÆÒýÔÊ©z
 	Window 14657,OK
-	Window_OK Item 18448 >= 1 && Job >=11 && Job <= 167 && Level >= 36
+	Window_OK Item 18448 >= 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Level >= 36
 	KillItem 18448,1
 	LeaveGroup
 	Warp 0,4399,5,14
 	Window_OK
 
 ############## ¾ô¢ÈÑÌÆ¥ÔÆàÅ»¥óïÔ»Ø¦ÖÐèëÄþ ##############
-	Window_YES Group == 1 && Job >=11 && Job <= 167 && Gold < 750
+	Window_YES Group == 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Gold < 750
 #\n\n©xÔÆàÅ»¥óïÔ»ÒýÁùÊÏ©z
 	EndWindow 10005
 
@@ -91,7 +91,7 @@ block
 	EndWindow 10005
 
 ############## ¾ô¢ÈÑÌÆ¥ÍÖðöÃ«ˆmÐ×ØÆ»¯ÖÐÔÂèëÄþ ##############
-	Window_YES Group == 1 && Job >=11 && Job <= 167 && Gold >= 750 && Level >= 36
+	Window_YES Group == 1 && Luac msjob:a1c30246a05c675584ba >= 1 && Gold >= 750 && Level >= 36
 	AddGold -750
 	LeaveGroup
 	Warp 0,4399,5,14

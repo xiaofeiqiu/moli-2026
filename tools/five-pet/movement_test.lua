@@ -17,6 +17,7 @@ local ok,err=xpcall(function()
  assert(p>=0)
  for slot=0,4 do assert(Char.GivePet(p,3004,1)>=0) end
  Char.SetPetDepartureState(p,0,2)
+ M:setEnabled(p,false)
  M:menu(p);local menu=M.menus[p]
  M:answer(M.npc,p,menu.seq,1,'1')
  check(M.active[p]~=nil,'NPC enable button creates session')

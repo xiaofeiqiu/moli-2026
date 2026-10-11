@@ -1,6 +1,13 @@
 ---@class NPCPart: ModulePart
 local NPCPart = ModuleBase:createPart('NpcPart');
 
+local placementLoader=loadfile('lua/Modules/sanctuaryData.lua');
+local sanctuary=placementLoader and placementLoader() or {positions={}};
+local function positionFor(name,original)
+  return sanctuary.positions[name] or original;
+end
+
+
 local function fillShopSellType(tb)
   local all = tb == 'all';
   local ret = {}
@@ -21,6 +28,7 @@ end
 ---@param items number[] 20¸öÎïÆ·id
 ---@return CharIndex
 function NPCPart:NPC_createShop(name, image, positionInfo, shopBaseInfo, items)
+  positionInfo = positionFor(name, positionInfo);
   local shopNpcPrefix = table.join({
     shopBaseInfo.buyRate or 100,
     shopBaseInfo.sellRate or 100,
@@ -48,6 +56,7 @@ end
 ---@param items {id:number,price:number,qty:number}[] 
 ---@return CharIndex
 function NPCPart:NPC_createShopCrystal(name, image, positionInfo, shopBaseInfo, items)
+  positionInfo = positionFor(name, positionInfo);
   local shopNpcPrefix = table.join({
     shopBaseInfo.buyRate or 100,
     shopBaseInfo.sellRate or 100,
@@ -80,6 +89,7 @@ end
 ---@param type string
 ---@return CharIndex
 function NPCPart:NPC_createArgNpc(type, name, image, positionInfo, args)
+  positionInfo = positionFor(name, positionInfo);
   local ret = NL.CreateArgNpc(type, args, name, image,
     positionInfo.mapType, positionInfo.map, positionInfo.x, positionInfo.y, positionInfo.direction);
   if ret >= 0 then
@@ -94,6 +104,7 @@ end
 ---@param initCallback fun(charIndex:number):boolean
 ---@return CharIndex
 function NPCPart:NPC_createNormal(name, image, positionInfo, initCallback)
+  positionInfo = positionFor(name, positionInfo);
   local initFn, cbIndex, fnIndex = self:regCallback(initCallback or function()
     return true
   end)
@@ -155,14 +166,20 @@ end
 ---@param title string
 ---@param options string[]
 ---@return string
-function NPCPart:NPC_buildSelectionText(title, options)
-  local line = #(string.split(title, '\\n') or {}) or 1;
+function NPCPart:NPC_buildSelectionText(title, options, optionLimit)
+  -- Count the same lines that the client renders, regardless of Lua's newline
+  -- representation. Otherwise a title row becomes option 1 and shifts clicks.
+  title = title:gsub('\r\n', '\n'):gsub('\r', '\n'):gsub('\n', '\\n');
+  local _, breaks = title:gsub('\\n', '');
+  local line = breaks + 1;
   local msg = line .. '\\n' .. title .. '\\n'
-  for i = 1, 8 do
+  for i = 1, optionLimit or 8 do
     if options[i] == nil then
       return msg;
     end
-    msg = msg .. options[i] .. '\\n'
+    -- A selectable label must occupy one row and retain its action index.
+    local label = options[i]:gsub('\\n', ' '):gsub('\r\n', ' '):gsub('[\r\n]', ' ');
+    msg = msg .. label .. '\\n'
   end
   return msg;
 end

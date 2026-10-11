@@ -23,100 +23,100 @@
 
 
 ##水面上的小草+5000﹋0%℅25%﹌+1250
-block Job >= 11 && Job <= 167 && Fame >= 5001 && Fame <= 6250 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 5001 && Fame <= 6250 && HaveTitle == 6
 	EndWindow 15480
 ##水面上的小草+5000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 6251 && Fame <= 7500 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 6251 && Fame <= 7500 && HaveTitle == 6
 	EndWindow 15481
 ##水面上的小草+5000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 7501 && Fame <= 8750 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 7501 && Fame <= 8750 && HaveTitle == 6
 	EndWindow 15482
 ##水面上的小草+5000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 8751 && Fame <= 9999 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 8751 && Fame <= 9999 && HaveTitle == 6
 	EndWindow 15483
 ##水面上的小草+5000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && HaveTitle == 6 && Fame >= 10000
+block Luac msjob:a1c30246a05c675584ba >= 1 && HaveTitle == 6 && Fame >= 10000
 	EndWindow 15492
 
 ##呢喃的歌声+10000﹋0%℅25%﹌+2500
-block Job >= 11 && Job <= 167 && Fame >= 10001 && Fame <= 12500 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 10001 && Fame <= 12500 && HaveTitle == 7
 	EndWindow 15480
 ##呢喃的歌声+10000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 12501 && Fame <= 15000 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 12501 && Fame <= 15000 && HaveTitle == 7
 	EndWindow 15481
 ##呢喃的歌声+10000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 15001 && Fame <= 17500 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 15001 && Fame <= 17500 && HaveTitle == 7
 	EndWindow 15482
 ##呢喃的歌声+10000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 17501 && Fame <= 19999 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 17501 && Fame <= 19999 && HaveTitle == 7
 	EndWindow 15483
 ##呢喃的歌声+10000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 20000 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 20000 && HaveTitle == 7
 	EndWindow 15492
 
 ##地上的月影+13000﹋0%℅25%﹌+3250
-block Job >= 11 && Job <= 167 && Fame >= 20001 && Fame <= 23250 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 20001 && Fame <= 23250 && HaveTitle == 8
 	EndWindow 15480
 ##地上的月影+13000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 23251 && Fame <= 26500 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 23251 && Fame <= 26500 && HaveTitle == 8
 	EndWindow 15481
 ##地上的月影+13000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 26501 && Fame <= 29750 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 26501 && Fame <= 29750 && HaveTitle == 8
 	EndWindow 15482
 ##地上的月影+13000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 29751 && Fame <= 32999 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 29751 && Fame <= 32999 && HaveTitle == 8
 	EndWindow 15483
 ##地上的月影+13000﹋100%℅%﹌
-block Job >= 11 && Job <= 167 && Fame >= 33000 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 33000 && HaveTitle == 8
 	EndWindow 15492
 
 ##奔跑的春风+17000﹋0%℅25%﹌+4250
-block Job >= 11 && Job <= 167 && Fame >= 33001 && Fame <= 37250 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 33001 && Fame <= 37250 && HaveTitle == 9
 	EndWindow 15480
 ##奔跑的春风+17000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 37251 && Fame <= 41500 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 37251 && Fame <= 41500 && HaveTitle == 9
 	EndWindow 15481
 ##奔跑的春风+17000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 41501 && Fame <= 45750 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 41501 && Fame <= 45750 && HaveTitle == 9
 	EndWindow 15482
 ##奔跑的春风+17000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 45751 && Fame <= 49999 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 45751 && Fame <= 49999 && HaveTitle == 9
 	EndWindow 15483
 ##奔跑的春风+17000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 50000 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 50000 && HaveTitle == 9
 	EndWindow 15492
 
 ##苍之风云+20000﹋0%℅25%﹌+5000
-block Job >= 11 && Job <= 167 && Fame >= 50001 && Fame <= 55000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 50001 && Fame <= 55000 && HaveTitle == 10
 	EndWindow 15480
 ##苍之风云+20000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 55001 && Fame <= 60000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 55001 && Fame <= 60000 && HaveTitle == 10
 	EndWindow 15481
 ##苍之风云+20000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 60001 && Fame <= 65000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 60001 && Fame <= 65000 && HaveTitle == 10
 	EndWindow 15482
 ##苍之风云+20000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 65001 && Fame <= 69999 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 65001 && Fame <= 69999 && HaveTitle == 10
 	EndWindow 15483
 ##苍之风云+20000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 70000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 70000 && HaveTitle == 10
 	EndWindow 15492
 
 
 ##摇曳的金星+30000﹋0%℅25%﹌+7500
-block Job >= 11 && Job <= 167 && Fame >= 70001 && Fame <= 77500 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 70001 && Fame <= 77500 && HaveTitle == 11
 	EndWindow 15480
 ##摇曳的金星+30000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 77501 && Fame <= 85000 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 77501 && Fame <= 85000 && HaveTitle == 11
 	EndWindow 15481
 ##摇曳的金星+30000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 85001 && Fame <= 92500 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 85001 && Fame <= 92500 && HaveTitle == 11
 	EndWindow 15482
 ##摇曳的金星+30000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 92501 && Fame <= 99999 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 92501 && Fame <= 99999 && HaveTitle == 11
 	EndWindow 15483
 ##摇曳的金星+30000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 100000 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 100000 && HaveTitle == 11
 	EndWindow 15492
 
 
@@ -126,58 +126,58 @@ block Job >= 11 && Job <= 167 && Fame >= 100000 && HaveTitle == 11
 
 
 ##欢喜的慈雨+30000﹋0%℅25%﹌+7500
-block Job >= 11 && Job <= 167 && Fame >= 100001 && Fame <= 107500 && HaveTitle == 12
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 100001 && Fame <= 107500 && HaveTitle == 12
 	EndWindow 15480
 ##欢喜的慈雨+30000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 107501 && Fame <= 115000 && HaveTitle == 12
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 107501 && Fame <= 115000 && HaveTitle == 12
 	EndWindow 15481
 ##欢喜的慈雨+30000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 115001 && Fame <= 122500 && HaveTitle == 12
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 115001 && Fame <= 122500 && HaveTitle == 12
 	EndWindow 15482
 ##欢喜的慈雨+30000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 122501 && Fame <= 129999 && HaveTitle == 12
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 122501 && Fame <= 129999 && HaveTitle == 12
 	EndWindow 15483
 ##欢喜的慈雨+30000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 130000 && HaveTitle == 12
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 130000 && HaveTitle == 12
 	EndWindow 15492
 
 
 ##蕴含的太阳+30000﹋0%℅25%﹌+7500
-block Job >= 11 && Job <= 167 && Fame >= 130001 && Fame <= 137500 && HaveTitle == 86
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 130001 && Fame <= 137500 && HaveTitle == 86
 	EndWindow 15480
 ##蕴含的太阳+30000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 137501 && Fame <= 145000 && HaveTitle == 86
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 137501 && Fame <= 145000 && HaveTitle == 86
 	EndWindow 15481
 ##蕴含的太阳+30000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 145001 && Fame <= 152500 && HaveTitle == 86
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 145001 && Fame <= 152500 && HaveTitle == 86
 	EndWindow 15482
 ##蕴含的太阳+30000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 152501 && Fame <= 159999 && HaveTitle == 86
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 152501 && Fame <= 159999 && HaveTitle == 86
 	EndWindow 15483
 ##蕴含的太阳+30000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 160000 && HaveTitle == 86
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 160000 && HaveTitle == 86
 	EndWindow 15492
 
 
 ##敬畏的极静+30000﹋0%℅25%﹌+10000
-block Job >= 11 && Job <= 167 && Fame >= 160001 && Fame <= 170000 && HaveTitle == 87
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 160001 && Fame <= 170000 && HaveTitle == 87
 	EndWindow 15480
 ##敬畏的极静+30000﹋26%℅50%﹌
-block Job >= 11 && Job <= 167 && Fame >= 170001 && Fame <= 180000 && HaveTitle == 87
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 170001 && Fame <= 180000 && HaveTitle == 87
 	EndWindow 15481
 ##敬畏的极静+30000﹋51%℅75%﹌
-block Job >= 11 && Job <= 167 && Fame >= 180001 && Fame <= 190000 && HaveTitle == 87
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 180001 && Fame <= 190000 && HaveTitle == 87
 	EndWindow 15482
 ##敬畏的极静+30000﹋76%℅99%﹌
-block Job >= 11 && Job <= 167 && Fame >= 190001 && Fame <= 199999 && HaveTitle == 87
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 190001 && Fame <= 199999 && HaveTitle == 87
 	EndWindow 15483
 ##敬畏的极静+30000﹋100%℅﹌
-block Job >= 11 && Job <= 167 && Fame >= 200000 && HaveTitle == 87
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 200000 && HaveTitle == 87
 	EndWindow 15492
 
 
 ##无际的青空
-block Job >= 11 && Job <= 167 && Fame >= 200000
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 200000
 	Window 15485,next
 	EndWindow 3007287
 ###

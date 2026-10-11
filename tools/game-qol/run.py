@@ -60,7 +60,7 @@ def run(probe):
 def stage():
     OUT.mkdir(parents=True,exist_ok=True)
     originals=BASE/'original/gmsv'
-    paths=('cgmsv.cf','data/itemset.txt','lua/ModuleConfig.lua','lua/Modules/gameQoL.lua','lua/Modules/gameQoLData.lua')
+    paths=('cgmsv.cf','data/itemset.txt','lua/ModuleConfig.lua','lua/Modules/gameQoL.lua','lua/Modules/gameQoLData.lua','lua/Modules/commandHelp.lua')
     for rel in paths:
         src=ROOT/'gmsv'/rel;dest=originals/rel
         if src.exists() and not dest.exists():
@@ -96,6 +96,7 @@ def stage():
         config=config.rstrip()+b"\r\n\r\nloadModule('gameQoL')\r\n"
     files={'data/itemset.txt':itemset,'cgmsv.cf':cf,'lua/ModuleConfig.lua':config,
            'lua/Modules/gameQoL.lua':(HERE/'gameQoL.lua').read_text('utf-8').encode('gbk'),
+           'lua/Modules/commandHelp.lua':(HERE/'commandHelp.lua').read_text('utf-8').encode('gbk'),
            'lua/Modules/gameQoLData.lua':data.encode('ascii')}
     manifest={'stack_limit':999,'stack_definitions':len(stack_ids),'changed':changes,
               'stone_ids':stone_ids,'pages':4,'gold_limit':int(limit[1])*10000,'files':{}}

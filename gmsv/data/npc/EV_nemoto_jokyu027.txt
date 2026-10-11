@@ -6,7 +6,7 @@
 
 #### Aºë»ï¡õÃóÒýÐ×·´Bºë»ï¡õÃó
 ## ðôÖî¸ó?¶¯Ïþ
-block Job >= 14 && Job <= 19
+block Luac msjob:51677abe38e1c98d25aa >= 1
 
 	GoToF case1
 
@@ -36,7 +36,7 @@ block Job >= 64 && Job <= 69
 	GoToF case1
 
 ## ËüÅ«°Ç¡õÓñ¶¯Ïþ©j…ëÖî¸ó©k
-block Job >= 74 && Job <= 79
+block Luac msjob:902b746373fbbf81ee06 >= 1
 
 	GoToF case1
 

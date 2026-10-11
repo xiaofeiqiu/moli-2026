@@ -2,6 +2,8 @@
 local AdminCommands = ModuleBase:createModule('adminCommands')
 -- gm√¸¡Ó
 local commands = {}
+AdminCommands.commandHandlers = commands;
+AdminCommands.extraHelpCommands = { walkTest = true, walkTestOff = true };
 
 
 function commands.addGold(charIndex, args)

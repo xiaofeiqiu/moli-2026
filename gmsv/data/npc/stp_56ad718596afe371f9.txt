@@ -13,7 +13,7 @@ Warp 0,1530,15,6
 window_yes itemspace == 0
 endwindow "\n\n你的物品栏满啦!"
 #####剑士#####
-window_yes job == 15 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+window_yes Luac msjob:832711e3eb9bab110157 >= 1 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
 killitem 800143
 giveitem 800144
 addgold -1000000
@@ -73,7 +73,7 @@ checktitle
 leaveGroup
 Warp 0,1530,15,6
 #####魔法师#####
-window_yes job == 75 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
+window_yes Luac msjob:dd9016d4f9d682d441bc >= 1 && gold >= 1000000 && item 800143 >= 1 && itemspace >= 1
 killitem 800143
 giveitem 800144
 addgold -1000000

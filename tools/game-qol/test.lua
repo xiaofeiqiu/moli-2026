@@ -44,7 +44,8 @@ local ok,err=xpcall(function()
  Char.SetData(p,CONST['CHAR_道具栏'],28)
  M:expandBags(p);check(c('CHAR_道具栏')==88,'old twenty-slot character expands to all four backpacks')
  check(M:settings(p).autoidentify and M:settings(p).autosell and M:settings(p).autoclock and M:settings(p).autostack,'requested automatic features enabled by default')
- for _,key in ipairs({'autoidentify','autosell','autoclock','autostack'}) do send('/'..key..' off');check(not M:settings(p)[key],'toggle disables '..key) end
+ check(M:settings(p).autosort and M:settings(p).autorepair,'after-battle sort and repair enabled by default')
+ for _,key in ipairs({'autoidentify','autosell','autoclock','autostack','autosort','autorepair'}) do send('/'..key..' off');check(not M:settings(p)[key],'toggle disables '..key) end
  local D=dofile('lua/Modules/gameQoLData.lua')
  local ids={};for id in pairs(D.stackIds) do ids[#ids+1]=id end;table.sort(ids)
  local material

@@ -4,10 +4,9 @@ local D=dofile('lua/Modules/gameQoLData.lua')
 local SIZE=20
 local PREF='GameQoL_v1_'
 local CONFIG_KEY='GameQoLConfigV1'
-local DEFAULT={autostack=true,autosort=false,autoidentify=true,autosell=true,autoclock=true}
-local COMMANDS={backpack=true,bag=true,sort=true,stack=true,identify=true,sellstones=true,
- autostack=true,autosort=true,autoidentify=true,autosell=true,autoclock=true,clock=true,
- petmax=true,petbp=true,where=true,qol=true,help=true}
+local DEFAULT={autostack=true,autosort=true,autoidentify=true,autosell=true,autoclock=true,autorepair=true}
+local Help=dofile('lua/Modules/commandHelp.lua')
+local COMMANDS=Help:commandSet('gameQoL')
 local ART={CONST['宠档_体成'],CONST['宠档_力成'],CONST['宠档_强成'],CONST['宠档_敏成'],CONST['宠档_魔成']}
 
 local function num(p,key) return tonumber(Char.GetData(p,CONST[key])) or 0 end
@@ -76,6 +75,73 @@ function M:ready(p,quiet)
   if not quiet then message(p,'战斗或摆摊期间无法操作背包和宠物。') end
   return false
  end
+ return true
+end
+
+-- Lock both the saved base value and the engine's calculated loyalty.
+-- Do not recalculate status here: this also runs inside the status callback.
+function M:lockPetLoyalty(pet)
+ if type(pet)~='number' or pet<0 or not Char.IsValidCharIndex(pet) or not Char.IsPet(pet) then return false end
+ local changed=false
+ for _,key in ipairs({'宠物_基础忠诚','宠物_忠诚'}) do
+  if num(pet,key)~=100 then Char.SetData(pet,CONST[key],100);changed=true end
+ end
+ return changed
+end
+
+function M:maintainPetLoyalty(p)
+ if not valid(p) then return end
+ for slot=0,4 do
+  local pet=Char.GetPet(p,slot)
+  if pet>=0 and Char.IsValidCharIndex(pet) and Char.IsPet(pet) and Pet.GetOwner(pet)==p then
+   if self:lockPetLoyalty(pet) then Pet.UpPet(p,pet) end
+  end
+ end
+end
+
+function M:battlePetLoyalty(b)
+ for pos=0,19 do
+  local q=Battle.GetPlayer(b,pos)
+  if q>=0 and Char.IsValidCharIndex(q) then
+   if Char.IsPet(q) then self:lockPetLoyalty(q)
+   elseif Char.IsPlayer(q) then self:maintainPetLoyalty(q) end
+  end
+ end
+end
+
+function M:heal(p)
+ if not self:ready(p,true) then
+  if valid(p) then message(p,'战斗或摆摊期间无法治疗。') end
+  return false
+ end
+ local five=getModule('fivePet');local squad=five and five.active[p]
+ if squad and squad.battle then message(p,'五宠战斗结算尚未完成，请稍后再治疗。');return false end
+ local pets={}
+ for slot=0,4 do
+  local pet=Char.GetPet(p,slot)
+  if pet>=0 and Char.IsValidCharIndex(pet) and Char.IsPet(pet) and Pet.GetOwner(pet)==p then
+   -- Pets can retain an old battle index/mode after combat. Only an
+   -- actual roster entry proves this pet is still participating.
+   local battle=Char.GetBattleIndex(pet)
+   if battle>=0 then for pos=0,19 do
+    if Battle.GetPlayer(battle,pos)==pet then
+     message(p,'宠物仍在战斗中，请结束战斗后再治疗。');return false
+    end
+   end end
+   pets[#pets+1]=pet
+  end
+ end
+ -- Clear injury before recalculating maxima, then restore the resulting HP/MP.
+ local function restore(q)
+  Char.SetData(q,CONST['CHAR_受伤'],0)
+  Char.UpCharStatus(q)
+  Char.SetData(q,CONST['CHAR_血'],num(q,'CHAR_最大血'))
+  Char.SetData(q,CONST['CHAR_魔'],num(q,'CHAR_最大魔'))
+ end
+ restore(p);NLG.UpChar(p)
+ for _,pet in ipairs(pets) do restore(pet);Pet.UpPet(p,pet) end
+ if squad then for _,row in ipairs(squad.rows) do if five:owned(p,row) then five:refresh(row) end end end
+ message(p,'治疗完成：人物及 '..#pets..' 只携带宠物已恢复满生命、满魔力，受伤已清除（免费）。')
  return true
 end
 
@@ -203,11 +269,52 @@ function M:startClock(p)
  return Char.FeverStart(p)==1
 end
 
-function M:maintain(p)
+function M:fillClock(p)
+ local file=io.open('cgmsv.cf','rb')
+ local hours
+ if file then
+  for line in file:lines() do
+   local value=line:match('^%s*fevermax%s*=%s*(%d+)%s*$')
+   if value then hours=tonumber(value);break end
+  end
+  file:close()
+ end
+ if not hours or hours<=0 then message(p,'无法读取卡时上限，请检查 fevermax 配置。');return false end
+ Char.SetData(p,CONST['CHAR_卡时'],hours*3600)
+ local started=self:startClock(p)
+ if not Char.IsDummy(p) then Char.SaveToDb(p) end
+ message(p,started and ('卡时已补满至 '..hours..' 小时，打卡已开启，使用原生卡时双倍经验。') or '卡时已补满，但打卡开启失败，请重试 /clock on。')
+ return started
+end
+
+function M:repairEquipment(p)
+ local repaired=0
+ -- Equipment occupies slots 0-7; backpack items must not be repaired.
+ for slot=0,7 do
+  local i=Char.GetItemIndex(p,slot)
+  if i>=0 then
+   local current=tonumber(idata(i,'道具_耐久'))
+   local maximum=tonumber(idata(i,'道具_最大耐久'))
+   -- Strictly below 85%: exactly 85% is left alone. Preserve maximum durability.
+   if current and maximum and maximum>0 and current>=0 and current*100<maximum*85 then
+    Item.SetData(i,CONST['道具_耐久'],maximum)
+    if tonumber(idata(i,'道具_耐久'))==maximum then
+     repaired=repaired+1;Item.UpItem(p,slot)
+    end
+   end
+  end
+ end
+ if repaired>0 then NLG.UpChar(p);message(p,'战后自动修理完成：'..repaired..' 件装备已恢复满耐久。') end
+ return repaired
+end
+
+function M:maintain(p,afterBattle)
+ self:maintainPetLoyalty(p)
  if not self:ready(p,true) then return end
  self:expandBags(p)
  local cfg=self:settings(p)
  if not cfg then return end
+ if afterBattle and cfg.autorepair then self:repairEquipment(p) end
  local identified=cfg.autoidentify and self:identify(p) or 0
  local sold,gold,full=0,0,false
  if cfg.autosell then sold,gold,full=self:sellStones(p) end
@@ -218,7 +325,7 @@ function M:maintain(p)
   if i>=0 then self:normalize(i);parts[#parts+1]=slot..':'..i..':'..idata(i,'道具_堆叠数') end
  end
  local signature=table.concat(parts,';')
- if self.signatures[p]~=signature then
+ if afterBattle or self.signatures[p]~=signature then
   for page=0,CONST.EXTBAGPAGE do
    if cfg.autosort then self:sortPage(p,page)
    elseif cfg.autostack then self:mergePage(p,page) end
@@ -230,6 +337,18 @@ function M:maintain(p)
  if sold>0 then message(p,'自动出售魔石 '..sold..' 个，获得 '..gold..' 金币。') end
  if full and not self.goldFull[p] then message(p,'金币接近携带上限，剩余魔石已保留。') end
  self.goldFull[p]=full
+ return true
+end
+
+function M:flushAfterBattle()
+ for p in pairs(self.pendingBattle) do
+  if not valid(p) then self.pendingBattle[p]=nil
+  elseif self:ready(p,true) then
+   local ok,done=pcall(self.maintain,self,p,true)
+   if ok and done then self.pendingBattle[p]=nil
+   elseif not ok then self:logError('after-battle upkeep: '..tostring(done)) end
+  end
+ end
 end
 
 function M:petRanks(p,slot,fill)
@@ -259,11 +378,8 @@ function M:petRanks(p,slot,fill)
  return true
 end
 
-function M:help(p)
- message(p,'/backpack 0~3 切换背包；/backpack 查看各页；/sort [all] 整理；/stack [all] 合并。')
- message(p,'/identify 鉴定所有背包；/sellstones 卖魔石；/petmax 0~4|all 满档；/petbp 0~4|all 查看档数。')
- message(p,'/autoidentify、/autosell、/autostack、/autosort、/autoclock on|off 开关；/clock on|off 打卡。')
- message(p,'/qol 查看自动功能；/where 查看位置；/fight 原地遇敌；背包和宠物编号均从 0 开始。')
+function M:help(p,query)
+ Help:show(p,query)
 end
 
 function M:handleTalk(p,msg)
@@ -275,11 +391,14 @@ function M:handleTalk(p,msg)
  local args={};for arg in tail:gmatch('%S+') do args[#args+1]=arg:lower() end
  if not valid(p) then return 0 end
  self:expandBags(p)
- if command=='help' then self:help(p);return 0 end
+ if command=='help' then
+  if #args>1 then message(p,'用法：/help [命令名|gm]') else self:help(p,args[1]) end
+  return 0
+ end
  if command=='qol' then
   local cfg=self:settings(p);local list={}
   if not cfg then message(p,'自动功能设置暂时无法读取，请稍后重试。');return 0 end
-  for _,key in ipairs({'autostack','autosort','autoidentify','autosell','autoclock'}) do list[#list+1]=key..'='..(cfg[key] and 'on' or 'off') end
+  for _,key in ipairs({'autostack','autosort','autoidentify','autosell','autoclock','autorepair'}) do list[#list+1]=key..'='..(cfg[key] and 'on' or 'off') end
   message(p,table.concat(list,' '));message(p,'打卡='..(Char.IsFeverTime(p)==1 and 'on' or 'off')..'，剩余卡时 '..math.floor(num(p,'CHAR_卡时')/60)..' 分钟。');return 0
  end
  if command=='where' then
@@ -293,6 +412,10 @@ function M:handleTalk(p,msg)
   message(p,command..' 已'..(args[1]=='on' and '开启。' or '关闭。'))
   if args[1]=='on' then self:maintain(p) end
   return 0
+ end
+ if command=='heal' then
+  if #args>0 then message(p,'用法：/heal（不带参数）');return 0 end
+  self:heal(p);return 0
  end
  if not self:ready(p,false) then return 0 end
  if command=='backpack' or command=='bag' then
@@ -324,9 +447,10 @@ function M:handleTalk(p,msg)
   local count,gold,full=self:sellStones(p)
   message(p,'出售魔石 '..count..' 个，获得 '..gold..' 金币。'..(full and '金币上限不足，剩余魔石已保留。' or ''))
  elseif command=='clock' then
-  if #args>1 or (args[1] and args[1]~='on' and args[1]~='off') then message(p,'用法：/clock on|off');return 0 end
+  if #args>1 or (args[1] and args[1]~='on' and args[1]~='off' and args[1]~='full') then message(p,'用法：/clock [on|off|full]');return 0 end
   if args[1]=='off' then
    if self:setSetting(p,'autoclock',false) then Char.FeverStop(p);message(p,'打卡和自动打卡已关闭。') end
+  elseif args[1]=='full' then self:fillClock(p)
   elseif args[1]=='on' then message(p,self:startClock(p) and '打卡已开启，使用原生卡时双倍经验。' or '卡时不足，无法打卡。')
   else message(p,'打卡='..(Char.IsFeverTime(p)==1 and 'on' or 'off')..'，卡时 '..math.floor(num(p,'CHAR_卡时')/60)..' 分钟。') end
  elseif command=='petmax' or command=='petbp' then
@@ -338,18 +462,50 @@ function M:handleTalk(p,msg)
 end
 
 function M:onLoad()
- self.signatures={};self.goldFull={};self.stalls={};self.configs={}
+ self.signatures={};self.goldFull={};self.stalls={};self.configs={};self.pendingBattle={}
+ self:regCallback('AfterCalcCharaStatusEvent',function(q) self:lockPetLoyalty(q) end)
+ self:regCallback('BeforeCharaSaveEvent',Func.bind(self.maintainPetLoyalty,self))
+ self:regCallback('BattleStartEvent',function(b) self:battlePetLoyalty(b);return 0 end)
+ self:regCallback('BeforeBattleTurnEvent',function(b) self:battlePetLoyalty(b) end)
+ self:regCallback('AfterBattleTurnEvent',function(b) self:battlePetLoyalty(b) end)
+ self:regCallback('ResetCharaBattleStateEvent',function(q)
+  self:lockPetLoyalty(q);self:maintainPetLoyalty(q)
+ end)
+ self:regCallback('BattlePetLeaveCheckEvent',function(b,pet,kind,com1,com2,com3)
+  if Char.IsValidCharIndex(pet) and Char.IsPet(pet) then
+   self:lockPetLoyalty(pet)
+   -- In this native build, type 6 skips PNO (disobedience) and pet departure.
+   -- The engine changes the command before this callback; restore its inputs.
+   -- Type 8 still emits PNO. Leave the existing type 1 branch unchanged.
+   if kind==0 or (kind>=2 and kind<=7) then
+    Char.SetData(pet,CONST.CHAR_BattleCom1,com1)
+    Char.SetData(pet,CONST.CHAR_BattleCom2,com2)
+    Char.SetData(pet,CONST.CHAR_BattleCom3,com3)
+    return 6
+   end
+  end
+  return kind
+ end)
  self:regCallback('TalkEvent',Func.bind(self.handleTalk,self))
  self:regCallback('LoginEvent',function(p) self.signatures[p]=nil;self.configs[p]=nil;self:maintain(p) end)
  for _,event in ipairs({'LogoutEvent','DropEvent'}) do self:regCallback(event,function(p)
-  self.signatures[p]=nil;self.goldFull[p]=nil;self.stalls[p]=nil;self.configs[p]=nil
+  self.signatures[p]=nil;self.goldFull[p]=nil;self.stalls[p]=nil;self.configs[p]=nil;self.pendingBattle[p]=nil
  end) end
  self:regCallback('CharaStallStartEvent',function(p) self.stalls[p]=true end)
  self:regCallback('CharaStallEndEvent',function(p) self.stalls[p]=nil end)
  self:regCallback('ItemInitEvent',function(p,i) if i>=0 then self:normalize(i) end end)
  self:regCallback('ItemOverLapEvent',function(p,a,b) return self:sameStack(a,b) and 0 or 1 end)
+ self:regCallback('BattleExitEvent',function(p)
+  self:lockPetLoyalty(p);self:maintainPetLoyalty(p)
+  if valid(p) and not Char.IsDummy(p) then self.pendingBattle[p]=true end
+ end)
+ -- BattleExitEvent can run before the engine clears battle state. Defer until
+ -- the player is really out of combat, then apply /sort all and repair once.
+ self:AddInterval(250,Func.bind(self.flushAfterBattle,self),1)
  self:AddInterval(2000,function()
-  for _,p in ipairs(NLG.GetPlayer() or {}) do
+  local online=NLG.GetPlayer()
+  -- The native API returns a numeric sentinel when no players are online.
+  for _,p in ipairs(type(online)=='table' and online or {}) do
    if valid(p) and not Char.IsDummy(p) then
     local ok,err=pcall(self.maintain,self,p)
     if not ok then self:logError('automatic inventory task: '..tostring(err)) end

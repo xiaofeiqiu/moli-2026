@@ -220,7 +220,7 @@ block nowevent28 == 1
 #花了三天三夜也找不到出口，害我都快饿死了！\n对了！我给你钱，你可以帮我买面包来吗？	1
 
 
-block Job == 0 || Job == 1 || Job == 11 || Job == 21 || Job == 31 || Job == 41 || Job == 51 || Job == 61 || Job == 71 || Job == 81 || Job == 91 || Job == 101 || Job == 111 || Job == 121 || Job == 131 || Job == 141 || Job == 151 || Job == 161 || Job == 201 || Job == 211 || Job == 221 || Job == 231 || Job == 241 || Job == 251 || Job == 261 || Job == 271 || Job == 281 || Job == 291 || Job == 301 || Job == 301 || Job == 311 || Job == 321 || Job == 331 || Job == 341 || Job == 351 || Job == 361 || Job == 371 || Job == 381 || Job == 391 || Job == 401 || Job == 411 || Job == 421 || Job == 431 || Job == 441 || Job == 451 || Job == 461 || Job == 471 || Job == 1001 || Job == 1011
+block Luac msjob:653331e04500a631c4ea >= 1
 
 	Window 20652,YES,NO
 

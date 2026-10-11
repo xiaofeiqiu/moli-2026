@@ -18,7 +18,7 @@ block Item 622063 >= 1 && Item 622064 >= 1 && Item 622065 >= 1 && Item 622066 >=
 		#Window_YES Job >= 1000 && Job <= 1007
 		Window_YES JobAncestry == 1000
 			GoToF case2
-		Window_YES JobAncestry <= 50
+		Window_YES Luac msjob:33804eeb644dc477018b >= 1
 
 			GoToF case2
 
@@ -31,7 +31,7 @@ block Item 622063 >= 1 && Item 622064 >= 1 && Item 622065 >= 1 && Item 622066 >=
 			GoToF case2
 
 ######## YES,¸²ÀÞçÇ½ö
-		Window_YES JobAncestry >= 60 && JobAncestry <= 110
+		Window_YES Luac msjob:d216c79f353ef05f99b2 >= 1
 
 			GoToF case1
 

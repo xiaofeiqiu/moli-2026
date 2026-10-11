@@ -1,0 +1,733 @@
+{
+  "msjob:05a636e37562eb7b777b": {
+    "tests": [
+      [
+        ">=",
+        11
+      ],
+      [
+        "<=",
+        17
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 11 && Job <= 17"
+  },
+  "msjob:21ff38e29663d3dcea9f": {
+    "tests": [
+      [
+        ">=",
+        71
+      ],
+      [
+        "<=",
+        77
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 71 && Job <= 77"
+  },
+  "msjob:e01712b8532cc4ae1969": {
+    "tests": [
+      [
+        ">=",
+        10
+      ],
+      [
+        "<",
+        170
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 10 && Job < 170"
+  },
+  "msjob:a1c30246a05c675584ba": {
+    "tests": [
+      [
+        ">=",
+        11
+      ],
+      [
+        "<=",
+        167
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 11 && Job <= 167"
+  },
+  "msjob:de2771356fb05814bad5": {
+    "tests": [
+      [
+        ">=",
+        10
+      ],
+      [
+        "<",
+        20
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 10 && Job < 20"
+  },
+  "msjob:da4de88356f42778d252": {
+    "tests": [
+      [
+        ">=",
+        70
+      ],
+      [
+        "<",
+        80
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 70 && Job < 80"
+  },
+  "msjob:1b71615ae85ae13a4c9a": {
+    "tests": [
+      [
+        ">=",
+        0
+      ],
+      [
+        "<=",
+        169
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 0 && Job <= 169"
+  },
+  "msjob:3d4ba99dd56fe2458663": {
+    "tests": [
+      [
+        ">=",
+        15
+      ],
+      [
+        "<=",
+        19
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 15 && Job <= 19"
+  },
+  "msjob:8493fb42a21e1a41689f": {
+    "tests": [
+      [
+        ">=",
+        75
+      ],
+      [
+        "<=",
+        79
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 75 && Job <= 79"
+  },
+  "msjob:1ca28bf1e08863fa14c7": {
+    "tests": [
+      [
+        ">=",
+        0
+      ],
+      [
+        "<=",
+        157
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 0 && Job <= 157"
+  },
+  "msjob:653331e04500a631c4ea": {
+    "tests": [
+      [
+        "==",
+        0
+      ],
+      [
+        "==",
+        1
+      ],
+      [
+        "==",
+        11
+      ],
+      [
+        "==",
+        21
+      ],
+      [
+        "==",
+        31
+      ],
+      [
+        "==",
+        41
+      ],
+      [
+        "==",
+        51
+      ],
+      [
+        "==",
+        61
+      ],
+      [
+        "==",
+        71
+      ],
+      [
+        "==",
+        81
+      ],
+      [
+        "==",
+        91
+      ],
+      [
+        "==",
+        101
+      ],
+      [
+        "==",
+        111
+      ],
+      [
+        "==",
+        121
+      ],
+      [
+        "==",
+        131
+      ],
+      [
+        "==",
+        141
+      ],
+      [
+        "==",
+        151
+      ],
+      [
+        "==",
+        161
+      ],
+      [
+        "==",
+        201
+      ],
+      [
+        "==",
+        211
+      ],
+      [
+        "==",
+        221
+      ],
+      [
+        "==",
+        231
+      ],
+      [
+        "==",
+        241
+      ],
+      [
+        "==",
+        251
+      ],
+      [
+        "==",
+        261
+      ],
+      [
+        "==",
+        271
+      ],
+      [
+        "==",
+        281
+      ],
+      [
+        "==",
+        291
+      ],
+      [
+        "==",
+        301
+      ],
+      [
+        "==",
+        301
+      ],
+      [
+        "==",
+        311
+      ],
+      [
+        "==",
+        321
+      ],
+      [
+        "==",
+        331
+      ],
+      [
+        "==",
+        341
+      ],
+      [
+        "==",
+        351
+      ],
+      [
+        "==",
+        361
+      ],
+      [
+        "==",
+        371
+      ],
+      [
+        "==",
+        381
+      ],
+      [
+        "==",
+        391
+      ],
+      [
+        "==",
+        401
+      ],
+      [
+        "==",
+        411
+      ],
+      [
+        "==",
+        421
+      ],
+      [
+        "==",
+        431
+      ],
+      [
+        "==",
+        441
+      ],
+      [
+        "==",
+        451
+      ],
+      [
+        "==",
+        461
+      ],
+      [
+        "==",
+        471
+      ],
+      [
+        "==",
+        1001
+      ],
+      [
+        "==",
+        1011
+      ]
+    ],
+    "joins": [
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job == 0 || Job == 1 || Job == 11 || Job == 21 || Job == 31 || Job == 41 || Job == 51 || Job == 61 || Job == 71 || Job == 81 || Job == 91 || Job == 101 || Job == 111 || Job == 121 || Job == 131 || Job == 141 || Job == 151 || Job == 161 || Job == 201 || Job == 211 || Job == 221 || Job == 231 || Job == 241 || Job == 251 || Job == 261 || Job == 271 || Job == 281 || Job == 291 || Job == 301 || Job == 301 || Job == 311 || Job == 321 || Job == 331 || Job == 341 || Job == 351 || Job == 361 || Job == 371 || Job == 381 || Job == 391 || Job == 401 || Job == 411 || Job == 421 || Job == 431 || Job == 441 || Job == 451 || Job == 461 || Job == 471 || Job == 1001 || Job == 1011"
+  },
+  "msjob:51677abe38e1c98d25aa": {
+    "tests": [
+      [
+        ">=",
+        14
+      ],
+      [
+        "<=",
+        19
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 14 && Job <= 19"
+  },
+  "msjob:902b746373fbbf81ee06": {
+    "tests": [
+      [
+        ">=",
+        74
+      ],
+      [
+        "<=",
+        79
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 74 && Job <= 79"
+  },
+  "msjob:1231ebe54b8d89d7160c": {
+    "tests": [
+      [
+        "==",
+        14
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job == 14"
+  },
+  "msjob:147608ebd99235f1b6d5": {
+    "tests": [
+      [
+        "==",
+        74
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job == 74"
+  },
+  "msjob:33804eeb644dc477018b": {
+    "tests": [
+      [
+        "<=",
+        50
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "family",
+    "source": "JobAncestry <= 50"
+  },
+  "msjob:d216c79f353ef05f99b2": {
+    "tests": [
+      [
+        ">=",
+        60
+      ],
+      [
+        "<=",
+        110
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "family",
+    "source": "JobAncestry >= 60 && JobAncestry <= 110"
+  },
+  "msjob:832711e3eb9bab110157": {
+    "tests": [
+      [
+        "==",
+        15
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "job == 15"
+  },
+  "msjob:1a8c458a2bdec7b75475": {
+    "tests": [
+      [
+        "==",
+        16
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job == 16"
+  },
+  "msjob:f11f3d2b7ce37533b65c": {
+    "tests": [
+      [
+        "==",
+        17
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job == 17"
+  },
+  "msjob:61a018a60cb15603b89c": {
+    "tests": [
+      [
+        "==",
+        10
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "family",
+    "source": "JobAncestry == 10"
+  },
+  "msjob:7c7f0fcb74422db419af": {
+    "tests": [
+      [
+        "==",
+        12
+      ],
+      [
+        "==",
+        22
+      ],
+      [
+        "==",
+        32
+      ],
+      [
+        "==",
+        42
+      ],
+      [
+        "==",
+        52
+      ],
+      [
+        "==",
+        62
+      ],
+      [
+        "==",
+        72
+      ],
+      [
+        "==",
+        82
+      ]
+    ],
+    "joins": [
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||",
+      "||"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "job == 12 II job == 22 || job == 32 || job == 42 || job == 52 || job ==62 || job == 72 || job == 82"
+  },
+  "msjob:67c26bf00fa8ffec6230": {
+    "tests": [
+      [
+        "==",
+        11
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job == 11"
+  },
+  "msjob:1f4a5d867a8e76c2702f": {
+    "tests": [
+      [
+        "==",
+        71
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "job == 71"
+  },
+  "msjob:6b7c08fd82530795fb06": {
+    "tests": [
+      [
+        "<",
+        170
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job < 170"
+  },
+  "msjob:dd9016d4f9d682d441bc": {
+    "tests": [
+      [
+        "==",
+        75
+      ]
+    ],
+    "joins": [],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "job == 75"
+  },
+  "msjob:656a0fe3aae706ea5706": {
+    "tests": [
+      [
+        ">=",
+        13
+      ],
+      [
+        "<",
+        20
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 13 && Job < 20"
+  },
+  "msjob:1b1ded71a65f95f714c3": {
+    "tests": [
+      [
+        ">=",
+        73
+      ],
+      [
+        "<",
+        80
+      ]
+    ],
+    "joins": [
+      "&&"
+    ],
+    "reject": false,
+    "nativeMagic": false,
+    "field": "job",
+    "source": "Job >= 73 && Job < 80"
+  }
+}

@@ -10,8 +10,11 @@ function Fight:handleTalk(charIndex, msg)
   if not command or command:lower() ~= 'fight' then
     return 1
   end
-  if args:match('%S') then
-    NLG.SystemMessage(charIndex, '用法：/fight，在当前位置遇敌一次。')
+  if args~='' and not args:match('^%s') then return 1 end
+  args=args:match('^%s*(.-)%s*$')
+  local count=args~='' and args:match('^%d+$') and tonumber(args) or nil
+  if args~='' and (not count or count<1 or count>10) then
+    NLG.SystemMessage(charIndex, '用法：/fight [1~10]，不带数字按地图正常遇敌，例如 /fight 10。')
     return 0
   end
 
@@ -29,7 +32,9 @@ function Fight:handleTalk(charIndex, msg)
     return 0
   end
 
+  self.encounterCounts[charIndex]=count
   local ok, battleIndex = pcall(Battle.Encount, charIndex, charIndex)
+  self.encounterCounts[charIndex]=nil
   if not ok or type(battleIndex) ~= 'number' or battleIndex < 0 then
     -- This engine can leave a stale battle index after a failed encounter.
     if Char.GetData(charIndex, CONST.CHAR_BattleMode) == 0 then
@@ -45,7 +50,23 @@ function Fight:handleTalk(charIndex, msg)
   return 0
 end
 
+-- Resize only this synchronous command encounter. Reuse native monster IDs.
+function Fight:enemyList(charIndex,groupId,enemyNum,enemies)
+  local count=self.encounterCounts[charIndex]
+  if not count or type(enemies)~='table' or #enemies==0 then return enemies end
+  local selected={}
+  for _,id in ipairs(enemies) do
+    if type(id)=='number' and id>=0 then selected[#selected+1]=id end
+  end
+  if #selected==0 then return enemies end
+  local result={}
+  for i=1,10 do result[i]=i<=count and selected[(i-1)%#selected+1] or -1 end
+  return result
+end
+
 function Fight:onLoad()
+  self.encounterCounts={}
+  self:regCallback('VSEnemyCreateEvent',Func.bind(self.enemyList,self))
   self:regCallback('TalkEvent', Func.bind(self.handleTalk, self))
   self:logInfo('load')
 end

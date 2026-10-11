@@ -12,7 +12,7 @@ block Job == 1
 	 EndWindow 1053908
 	 
 ###################■职业：剑士
-block Job >= 11 && Job <= 17
+block Luac msjob:05a636e37562eb7b777b >= 1
 	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
 	 Window 1053909,YES,NO 
 	 	 Window_NO 
@@ -480,7 +480,7 @@ block Job >= 61 && Job <= 67
 			 EndWindow 1053910
 
 ###################■职业：魔术师
-block Job >= 71 && Job <= 77
+block Luac msjob:21ff38e29663d3dcea9f >= 1
 	 ##1053909	\n\n\n\n\n@c使用初心者之钥生成适合你职业以及等级的装备吗？	1																																																																																																			
 	 Window 1053909,YES,NO 
 	 	 Window_NO 

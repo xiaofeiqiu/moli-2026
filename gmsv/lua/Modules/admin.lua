@@ -2,6 +2,7 @@
 local Admin = ModuleBase:createModule('admin')
 -- gm√¸¡Ó
 local commands = {}
+Admin.commandHandlers = commands;
 --GM’À∫≈¡–±Ì
 local gmList = { '123456', 'test' };
 local gmDict = {};

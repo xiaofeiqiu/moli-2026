@@ -15,81 +15,81 @@
 #	¾ô¢ÈÑÌ
 ######################################################################
 ##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j0%¨G25%©k+1250
-block Job >= 11 && Job <= 167 && Fame >= 5001 && Fame <= 6250 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 5001 && Fame <= 6250 && HaveTitle == 6
 	EndWindow 15480,OK
 ##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j26%¨G50%©k
-block Job >= 11 && Job <= 167 && Fame >= 6251 && Fame <= 7500 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 6251 && Fame <= 7500 && HaveTitle == 6
 	EndWindow 15481,OK
 ##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j51%¨G75%©k
-block Job >= 11 && Job <= 167 && Fame >= 7501 && Fame <= 8750 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 7501 && Fame <= 8750 && HaveTitle == 6
 	EndWindow 15482,OK
 ##Ð×¶·Ð×µ¤ÁÊã×¨G½ñ½é»§ÈÊÍ³ë¢ +5000©j76%¨G99%©k
-block Job >= 11 && Job <= 167 && Fame >= 8751 && Fame <= 9999 && HaveTitle == 6
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 8751 && Fame <= 9999 && HaveTitle == 6
 	EndWindow 15483,OK
 
 ##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j0%¨G25%©k+2500
-block Job >= 11 && Job <= 167 && Fame >= 10001 && Fame <= 12500 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 10001 && Fame <= 12500 && HaveTitle == 7
 	EndWindow 15480,OK
 ##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j26%¨G50%©k
-block Job >= 11 && Job <= 167 && Fame >= 12501 && Fame <= 15000 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 12501 && Fame <= 15000 && HaveTitle == 7
 	EndWindow 15481,OK
 ##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j51%¨G75%©k
-block Job >= 11 && Job <= 167 && Fame >= 15001 && Fame <= 17500 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 15001 && Fame <= 17500 && HaveTitle == 7
 	EndWindow 15482,OK
 ##½ñ½é»§ÈÊÍ³ë¢¨G»©±å»ûÅÅ +10000©j76%¨G99%©k
-block Job >= 11 && Job <= 167 && Fame >= 17501 && Fame <= 19999 && HaveTitle == 7
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 17501 && Fame <= 19999 && HaveTitle == 7
 	EndWindow 15483,OK
 
 ##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j0%¨G25%©k+3250
-block Job >= 11 && Job <= 167 && Fame >= 20001 && Fame <= 23250 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 20001 && Fame <= 23250 && HaveTitle == 8
 	EndWindow 15480,OK
 ##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j26%¨G50%©k
-block Job >= 11 && Job <= 167 && Fame >= 23251 && Fame <= 26500 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 23251 && Fame <= 26500 && HaveTitle == 8
 	EndWindow 15481,OK
 ##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j51%¨G75%©k
-block Job >= 11 && Job <= 167 && Fame >= 26501 && Fame <= 29750 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 26501 && Fame <= 29750 && HaveTitle == 8
 	EndWindow 15482,OK
 ##»©±å»ûÅÅ¨GÍ¿Øê?ÈÊµ÷ë® +13000©j76%¨G99%©k
-block Job >= 11 && Job <= 167 && Fame >= 29751 && Fame <= 32999 && HaveTitle == 8
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 29751 && Fame <= 32999 && HaveTitle == 8
 	EndWindow 15483,OK
 
 ##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j0%¨G25%©k+4250
-block Job >= 11 && Job <= 167 && Fame >= 33001 && Fame <= 37250 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 33001 && Fame <= 37250 && HaveTitle == 9
 	EndWindow 15480,OK
 ##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j26%¨G50%©k
-block Job >= 11 && Job <= 167 && Fame >= 37251 && Fame <= 41500 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 37251 && Fame <= 41500 && HaveTitle == 9
 	EndWindow 15481,OK
 ##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j51%¨G75%©k
-block Job >= 11 && Job <= 167 && Fame >= 41501 && Fame <= 45750 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 41501 && Fame <= 45750 && HaveTitle == 9
 	EndWindow 15482,OK
 ##Í¿Øê?ÈÊµ÷ë®¨G°åÎåë®ÍÆ +17000©j76%¨G99%©k
-block Job >= 11 && Job <= 167 && Fame >= 45751 && Fame <= 49999 && HaveTitle == 9
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 45751 && Fame <= 49999 && HaveTitle == 9
 	EndWindow 15483,OK
 
 ##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j0%¨G25%©k+5000
-block Job >= 11 && Job <= 167 && Fame >= 50001 && Fame <= 55000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 50001 && Fame <= 55000 && HaveTitle == 10
 	EndWindow 15480,OK
 ##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j26%¨G50%©k
-block Job >= 11 && Job <= 167 && Fame >= 55001 && Fame <= 60000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 55001 && Fame <= 60000 && HaveTitle == 10
 	EndWindow 15481,OK
 ##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j51%¨G75%©k
-block Job >= 11 && Job <= 167 && Fame >= 60001 && Fame <= 65000 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 60001 && Fame <= 65000 && HaveTitle == 10
 	EndWindow 15482,OK
 ##°åÎåë®ÍÆ¨GÐ×Ø¦Ì«ÈÊàÅÃÖ +20000©j76%¨G99%©k
-block Job >= 11 && Job <= 167 && Fame >= 65001 && Fame <= 69999 && HaveTitle == 10
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 65001 && Fame <= 69999 && HaveTitle == 10
 	EndWindow 15483,OK
 
 ##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j0%¨G25%©k+7500
-block Job >= 11 && Job <= 167 && Fame >= 70001 && Fame <= 77500 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 70001 && Fame <= 77500 && HaveTitle == 11
 	EndWindow 15480,OK
 ##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j26%¨G50%©k
-block Job >= 11 && Job <= 167 && Fame >= 77501 && Fame <= 85000 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 77501 && Fame <= 85000 && HaveTitle == 11
 	EndWindow 15481,OK
 ##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j51%¨G75%©k
-block Job >= 11 && Job <= 167 && Fame >= 85001 && Fame <= 92500 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 85001 && Fame <= 92500 && HaveTitle == 11
 	EndWindow 15482,OK
 ##Ð×Ø¦Ì«ÈÊàÅÃÖ¨GÔø¼õØ¦ÔÂ¼óã± +30000©j76%¨G99%©k
-block Job >= 11 && Job <= 167 && Fame >= 92501 && Fame <= 99999 && HaveTitle == 11
+block Luac msjob:a1c30246a05c675584ba >= 1 && Fame >= 92501 && Fame <= 99999 && HaveTitle == 11
 	EndWindow 15483,OK
 
 ######################################################################

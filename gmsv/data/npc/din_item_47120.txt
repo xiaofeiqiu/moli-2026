@@ -23,7 +23,7 @@ block Job == 1
 	 
 	 
 ###################■职业：剑士
-block Job >= 11 && Job <= 17
+block Luac msjob:05a636e37562eb7b777b >= 1
 	 ##1053839	\n\n  要从背包领取适合你职业以及等级的装备吗？	1
 	 Window 1053839,YES,NO 
 	 	 Window_NO 
@@ -491,7 +491,7 @@ block Job >= 61 && Job <= 67
 			 EndWindow 1053840
 
 ###################■职业：魔术师
-block Job >= 71 && Job <= 77
+block Luac msjob:21ff38e29663d3dcea9f >= 1
 	 ##1053839	\n\n  要从背包领取适合你职业以及等级的装备吗？	1
 	 Window 1053839,YES,NO 
 	 	 Window_NO 

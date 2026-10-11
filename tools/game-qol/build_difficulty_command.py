@@ -156,7 +156,7 @@ def install():
             assert digest((batch / 'native_runtime/gmsv' / path.removeprefix('gmsv/')).read_bytes()) == hashes['after']
     for path in m['files']:
         shutil.copy2(batch / 'staged' / path, ROOT / path)
-    m.update(status='PASS', tiers=5, default_tier=2, scope='character; party follows leader',
+    m.update(status='PASS', tiers=6, default_tier=6, scope='character; party follows leader',
              requires_server_restart=True, production_database_modified=False)
     (OUT / 'command_installed.json').write_text(json.dumps(m, indent=2), 'utf-8')
     prior_path = OUT / 'installed.json'
@@ -164,7 +164,7 @@ def install():
         prior = json.loads(prior_path.read_text('utf-8'))
         prior['superseded_by'] = 'command_installed.json'
         prior_path.write_text(json.dumps(prior, ensure_ascii=False, indent=2), 'utf-8')
-    print(json.dumps({'installed': True, 'tiers': 5, 'default_tier': 2, 'requires_server_restart': True}), flush=True)
+    print(json.dumps({'installed': True, 'tiers': 5, 'default_tier': 5, 'requires_server_restart': True}), flush=True)
 
 
 def refresh():

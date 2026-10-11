@@ -1,4 +1,4 @@
-"""Stage the opt-in five-pet module and make an isolated native test server."""
+"""Stage the default-on five-pet module and make an isolated native test server."""
 import json,re,shutil,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]

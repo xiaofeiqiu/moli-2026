@@ -57,15 +57,15 @@ PRE:regCallback('DamageCalculateEvent',OrderedCallback(function(a,d,ori,damage,b
 end,100))
 local success,error=xpcall(function()
  M=assert(loadModule('gameDifficulty'))
- check(M.configs~=nil and #M.tiers==5,'five difficulty tiers loaded')
+ check(M.configs~=nil and #M.tiers==6,'six difficulty tiers loaded')
  check(#(M.npcList or {})==0,'command module creates no NPC')
  check(getModule('fivePet') and getModule('skillLibrary') and getModule('knightHybridGear'),'existing gameplay modules coexist')
  check(SQL.QueryEx('DELETE FROM hook_charaext WHERE cdKey=? AND sKey=?','DIFF_CMD_PERSIST','GameDifficultyV1').status==0,'reset isolated preference fixtures')
  p=dummy(0);member=dummy(1)
- check(M:preference(p)==2,'initial preference preserves hard challenge')
+ check(M:preference(p)==6,'initial preference defaults to abyss')
  check(TalkEvent(p,'ordinary chat',0,0,0)==1 and TalkEvent(p,'/difficultyx 4',0,0,0)==1,'unrelated chat untouched')
  command(p,'/difficulty');command(p,'/difficulty help')
- for tier=1,5 do
+ for tier=1,6 do
   local messageStart=#R.messages
   command(p,'/difficulty '..tier);check(M:preference(p)==tier,'tier saved '..tier)
   local expected={
@@ -73,7 +73,8 @@ local success,error=xpcall(function()
    '2 困难：怪物生命 ×1.3，伤害 ×1.2，防御 ×1.15，敏捷 ×1.1。',
    '3 极难：怪物生命 ×1.8，伤害 ×1.5，防御 ×1.3，敏捷 ×1.15。',
    '4 地狱：怪物生命 ×2.5，伤害 ×2，防御 ×1.5，敏捷 ×1.2。',
-   '5 炼狱：怪物生命 ×4，伤害 ×3，防御 ×2，敏捷 ×1.3。'}
+   '5 炼狱：怪物生命 ×4，伤害 ×3，防御 ×2，敏捷 ×1.3。',
+   '6 深渊：怪物生命 ×6，伤害 ×4，防御 ×4，敏捷 ×1.5。'}
   local printed=false;for i=messageStart+1,#R.messages do if R.messages[i]==expected[tier] then printed=true end end
   check(printed,'confirmation prints selected attribute multipliers '..tier)
   local control=snapshot(p);local pet=Char.GivePet(p,3004,1);check(pet>=0,'pet fixture '..tier)
@@ -101,13 +102,13 @@ local success,error=xpcall(function()
   R.tiers[#R.tiers+1]={tier=tier,name=t.name,before=base,after=actual,physical_damage=physical,magic_damage=magic}
   leave(p);Char.DelSlotPet(p,0)
  end
- for _,arg in ipairs({'0','6','-1','2.5','2 extra','01','normal'}) do command(p,'/difficulty '..arg);check(M:preference(p)==5,'invalid input retains tier '..arg) end
+ for _,arg in ipairs({'0','7','-1','2.5','2 extra','01','normal'}) do command(p,'/difficulty '..arg);check(M:preference(p)==6,'invalid input retains tier '..arg) end
  command(member,'/difficulty 1')
  check(Char.JoinParty(member,p,true)==0,'native party join')
  check(M:leader(member)==p,'party member resolves leader')
  local b=Battle.PVE(p,p,nil,{1},{60},{0});check(b>=0,'native party PvE')
  initialize(b)
- check(M.battles[b].leader==p and M.battles[b].tier==5,'party follows leader despite member tier 1')
+ check(M.battles[b].leader==p and M.battles[b].tier==6,'party follows leader despite member tier 1')
  leave(p);leave(member);Char.LeaveParty(member);Char.LeaveParty(p)
  b=Battle.PVP(p,member);check(b>=0,'native PvP created')
  check(M.battles[b]==nil,'PvP is excluded')
@@ -120,16 +121,16 @@ local success,error=xpcall(function()
  check(restored.hp==base.hp and restored.defense==base.defense and restored.agility==base.agility,'capture removes temporary monster stat boosts')
  leave(p)
  reloadModule('gameDifficulty');M=assert(getModule('gameDifficulty'))
- check(M:preference(p)==5 and M:preference(member)==1,'separate characters persist across module reload')
+ check(M:preference(p)==6 and M:preference(member)==1,'separate characters persist across module reload')
  local saved=SQL.QueryEx('SELECT val FROM hook_charaext WHERE cdKey=? AND regNo=? AND sKey=?','DIFF_CMD_PERSIST',0,'GameDifficultyV1')
- check(saved.status==0 and saved.rows[1] and JSON.decode(saved.rows[1].val).tier==5,'difficulty is stored in native SQLite')
+ check(saved.status==0 and saved.rows[1] and JSON.decode(saved.rows[1].val).tier==6,'difficulty is stored in native SQLite')
  -- Previous immediate-exit fixtures still await an engine tick. A fresh actor
  -- keeps their delayed exit cleanup from clearing the live witness's battle.
- p=dummy(0);check(M:preference(p)==5,'fresh live witness loads saved highest tier')
+ p=dummy(0);check(M:preference(p)==6,'fresh live witness loads saved highest tier')
  liveBattle=Battle.PVE(p,p,nil,{1},{60},{0});check(liveBattle>=0,'live native combat')
  local liveEnemy=enemy(liveBattle)
  set(liveEnemy,'CHAR_命中',100);set(p,'CHAR_闪躲',0)
- local maxHP=M.battles[liveBattle] and get(liveEnemy,'CHAR_最大血') or round(get(liveEnemy,'CHAR_最大血')*4)
+ local maxHP=M.battles[liveBattle] and get(liveEnemy,'CHAR_最大血') or round(get(liveEnemy,'CHAR_最大血')*6)
  R.lifecycle={};R.native_apis={}
  for _,event in ipairs({'BattleStartEvent','BeforeBattleTurnStartEvent','BeforeBattleTurnEvent','BattleOverEvent','BattleExitEvent'}) do
   R.native_apis[event]=type(NL['Reg'..event])
@@ -141,7 +142,7 @@ local success,error=xpcall(function()
  POST:regCallback('DamageCalculateEvent',OrderedCallback(function(a,d,ori,damage,bi)
   if bi==liveBattle and Char.IsEnemy(a) and damage>0 and preDamage[a..':'..d] then
    R.damage_events[#R.damage_events+1]={before=preDamage[a..':'..d],after=damage}
-   check(damage==round(preDamage[a..':'..d]*3),'live enemy damage uses highest multiplier')
+   check(damage==round(preDamage[a..':'..d]*4),'live enemy damage uses highest multiplier')
   end
   return damage
  end,-100))
@@ -150,7 +151,7 @@ local success,error=xpcall(function()
   local ok,err=xpcall(function()
    R.turns=(R.turns or 0)+1
    R.enemy_turns[#R.enemy_turns+1]={max_hp=get(liveEnemy,'CHAR_最大血'),hp=get(liveEnemy,'CHAR_血'),expected_max_hp=maxHP}
-   check(M.battles[bi] and M.battles[bi].tier==5,'native lifecycle initializes highest tier '..R.turns)
+   check(M.battles[bi] and M.battles[bi].tier==6,'native lifecycle initializes highest tier '..R.turns)
    check(get(liveEnemy,'CHAR_最大血')==maxHP,'monster HP survives actual turn '..R.turns..' (actual '..tostring(get(liveEnemy,'CHAR_最大血'))..', expected '..maxHP..')')
    if R.turns==1 then
     reloadModule('gameDifficulty');M=assert(getModule('gameDifficulty'))

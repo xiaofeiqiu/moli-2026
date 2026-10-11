@@ -2,6 +2,7 @@
 local Admin = ModuleBase:createModule('admin')
 -- gm命令
 local commands = {}
+Admin.commandHandlers = commands;
 --GM账号列表
 local gmList = { '123456', 'test' };
 local gmDict = {};

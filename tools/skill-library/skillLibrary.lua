@@ -1,6 +1,15 @@
 -- Persistent skill archive. Native slots are only the currently equipped set.
 local M=ModuleBase:createModule('skillLibrary')
 local D=dofile('lua/Modules/skillLibraryData.lua')
+-- The categorized tutors extend the archive with installed quest skill IDs.
+local training=loadfile('lua/Modules/skillTrainingData.lua')
+local petOnly={}
+if training then
+  local catalog=training()
+  for _,s in ipairs(catalog.players) do if s.source=='pet' then petOnly[s.id]=true end end
+  local seen={};for _,s in ipairs(D.skills) do seen[s.id]=true end
+  for _,s in ipairs(catalog.library_additions) do if not seen[s.id] then D.skills[#D.skills+1]=s;seen[s.id]=true end end
+end
 local KEY='SkillLibraryV1'
 local specs={};for _,s in ipairs(D.skills) do specs[s.id]=s end
 local customTechs={};for _,s in ipairs(D.skills) do if s.behavior then for lv,tid in ipairs(s.techs) do customTechs[tid]={id=s.id,level=lv,behavior=s.behavior,options=s.source_options or ''} end end end
@@ -55,6 +64,7 @@ function M:persist(p,b,saveCharacter)
   return true
 end
 function M:allowed(p,id)
+  if petOnly[id] then return false end
   local ix=Skill.GetSkillIndex(id)
   return specs[id]~=nil and ix>=0 and Skill.GetMaxSkillLevelOfJob(ix,get(p,'CHAR_职业'))>0
 end
@@ -62,7 +72,7 @@ end
 -- does not level up; custom passive rewards need an explicit level transition.
 function M:gainExperience(p,id,amount)
   local slot=Char.HaveSkill(p,id);if slot<0 or amount<=0 then return end
-  local ix=Skill.GetSkillIndex(id);local cap=math.min(30,Skill.GetMaxSkillLevelOfJob(ix,get(p,'CHAR_职业')))
+  local ix=Skill.GetSkillIndex(id);local cap=math.min(specs[id].max_level or 30,Skill.GetMaxSkillLevelOfJob(ix,get(p,'CHAR_职业')))
   local lv=Char.GetSkillLevel(p,slot);if lv>=cap then return end
   local group=Skill.GetData(ix,CONST.SKILL_EXPTABLE)
   local thresholds=D.experience[group];if not thresholds then return end
@@ -171,6 +181,7 @@ function M:ready(p)
   self:capture(p,b);return b
 end
 function M:learn(p,id)
+  if petOnly[id] then return false,'宠物专用技能不能由人物学习，请找宠物技能导师。' end
   local b,err=self:ready(p);if not b then return false,err end
   if not self:allowed(p,id) then return false,'当前职业不能学习这个技能。' end
   local key=tostring(id)
@@ -265,7 +276,7 @@ function M:show(p,kind,page,selected)
   elseif kind=='learn' then
     for _,s in ipairs(D.skills) do if self:allowed(p,s.id) and not b.skills[tostring(s.id)] then list[#list+1]=s.id;labels[#labels+1]=s.name..'（'..s.cost..'金）' end end
   elseif kind=='view' or kind=='equip' then
-    for key,r in pairs(b.skills) do list[#list+1]=r.id end;table.sort(list)
+    for key,r in pairs(b.skills) do if kind=='view' or self:allowed(p,r.id) then list[#list+1]=r.id end end;table.sort(list)
     for _,id in ipairs(list) do local r=b.skills[tostring(id)];labels[#labels+1]=(specs[id] and specs[id].name or tostring(id))..' Lv'..r.level end
   elseif kind=='remove' then
     for _,r in ipairs(self:active(p)) do list[#list+1]=r.id;labels[#labels+1]=(specs[r.id] and specs[r.id].name or tostring(r.id))..' Lv'..r.level end
@@ -282,8 +293,8 @@ function M:show(p,kind,page,selected)
   local actions={}
   if kind=='home' then for i in ipairs(options) do actions[i]={kind='home',value=i} end
   else
-    local pages=math.max(1,math.ceil(#list/8));page=math.max(1,math.min(page,pages))
-    for i=(page-1)*8+1,math.min(#list,page*8) do options[#options+1]=labels[i];actions[#actions+1]={kind=kind,value=list[i]} end
+    local pages=math.max(1,math.ceil(#list/5));page=math.max(1,math.min(page,pages))
+    for i=(page-1)*5+1,math.min(#list,page*5) do options[#options+1]=labels[i];actions[#actions+1]={kind=kind,value=list[i]} end
     if page>1 then options[#options+1]='上一页';actions[#actions+1]={kind='page',value=page-1} end
     if page<pages then options[#options+1]='下一页';actions[#actions+1]={kind='page',value=page+1} end
     options[#options+1]='返回主菜单';actions[#actions+1]={kind='back'}
@@ -302,7 +313,7 @@ function M:answer(npc,p,seq,select,text)
   local choice=tonumber(text);local action=choice and a.actions[choice];if not action then return end
   local k,v=action.kind,action.value
   if k=='home' then
-    if v==7 then say(p,'技能永久保存；每套装配15个，战斗中不能切换。最高30级；制造高等级沿用现有产物。聊天输入 /技能库 可随时打开。')
+    if v==7 then say(p,'技能永久保存；每套装配15个，战斗中不能切换。人物不能学习或装配宠物技能。圣殿内生产系、物理战斗系、法系各一排，导师中间空一格；BOSS导师在34,18，每页10项；宠物导师在36,18负责学习与遗忘。魔剑士七职阶可学全部有效人物技能；费用照常，任务技能保留原上限。最高30级；聊天输入 /技能库 可随时打开。')
     else self:show(p,({'view','learn','equip','remove','save','profiles'})[v]) end
   elseif k=='page' then self:show(p,a.kind,v,a.selected)
   elseif k=='back' then self:show(p,'home')
@@ -345,17 +356,35 @@ function M:onLoad()
     end)
   end
   self.weakness={}
-  self.auras={}
+  self.auras={};self.executedMonsterSkills={}
+  -- Native commands are cleared before AfterBattleTurnEvent. Remember the
+  -- selected player Tech IDs before executing the turn, then award once.
+  self:regCallback('BeforeBattleTurnEvent',function(b)
+    local selected={}
+    for pos=0,19 do
+      local p=Battle.GetPlayer(b,pos)
+      if p>=0 and Char.IsPlayer(p) then
+        local id=monsterTechs[get(p,'CHAR_BattleCom3')]
+        if id then selected[p]=id end
+      end
+    end
+    self.executedMonsterSkills[b]=selected
+    return false
+  end)
+  for _,event in ipairs({'BattleStartEvent','BattleOverEvent'}) do
+    self:regCallback(event,function(b) self.executedMonsterSkills[b]=nil;return 0 end)
+  end
   self:regCallback('BattleStatusResistanceEvent',Func.bind(self.resistance,self))
   self:regCallback('AfterBattleTurnEvent',function(b)
     for pos=0,19 do
       local p=Battle.GetPlayer(b,pos)
       if p>=0 and Char.IsPlayer(p) then
-        local id=monsterTechs[get(p,'CHAR_BattleCom3')]
+        local id=self.executedMonsterSkills[b] and self.executedMonsterSkills[b][p]
         if id then self:gainExperience(p,id,30) end
         for _,s in ipairs(D.passive_resistance) do if Char.HaveSkill(p,s.id)>=0 and id~=s.id then self:gainExperience(p,s.id,30) end end
       end
     end
+    self.executedMonsterSkills[b]=nil
   end)
   self:regCallback('BattleLuaSkillEvent',function(b,p,skl,act)
     local use=customTechs[get(p,'CHAR_BattleCom3')];if use then self:customCast(b,p,use,skl,act) end

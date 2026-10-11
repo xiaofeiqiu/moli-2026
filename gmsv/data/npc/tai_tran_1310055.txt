@@ -9,7 +9,7 @@ block Group > 1
 	 	 	 Window_NO 
 	 	 	 
 ################### 战斗系 35级以上 && 开过传送石
-block Job < 170 && Level >=35 && NowEvent 243 == 1 
+block Luac msjob:6b7c08fd82530795fb06 >= 1 && Level >=35 && NowEvent 243 == 1 
 	 ##1200941	\n这是通往摩顿村的传送石，要使用吗？\n费用是400元。
 	 Window 1200941,YES,NO 
 	 	 Window_YES Gold >=400 && Group ==1 && Item 18660>=1

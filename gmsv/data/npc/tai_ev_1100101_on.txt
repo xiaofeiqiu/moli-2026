@@ -144,13 +144,13 @@ block Group > 1
 
 ################### 当身上的钱刚好 == 15000 && 是资深或是王宫以上职阶的人。
 ####剑士
-block Gold ==15000 && Job >= 13 && Job < 20
+block Gold ==15000 && Luac msjob:656a0fe3aae706ea5706 >= 1
 	 ##1100106 你有资格参加比赛，但是必须先缴交一笔保证金，详细关于保证金与比赛的资讯，会由旁边的解说员唯来为你说明。\n\n你确定要参加比赛吗？ 	 
 	 Window 1100106,YES,NO 
 	 	 Window_NO 
 	 	 	 ##这样啊！真是太可惜了！请你下次有机会一定要来参加哦！
 	 	 	 EndWindow 1100107
-		 Window_YES Gold ==15000 && Job >= 13 && Job < 20 && Group == 1
+		 Window_YES Gold ==15000 && Luac msjob:656a0fe3aae706ea5706 >= 1 && Group == 1
 		 	 ##交保证金 10000
 		 	 AddGold -14600
 		 	 ##得到豪腕商人参赛证明
@@ -250,13 +250,13 @@ block gold==15000 && Job >= 63 && Job < 70
 		 	 Warp 0,30221,2,17		 	 
 
 ####魔术师
-block gold==15000 && Job >= 73 && Job < 80		 	 
+block gold==15000 && Luac msjob:1b1ded71a65f95f714c3 >= 1		 	 
 	 ##1100106 你有资格参加比赛，但是必须先缴交一笔保证金，详细关于保证金与比赛的资讯，会由旁边的解说员唯来为你说明。\n\n你确定要参加比赛吗？ 	 
 	 Window 1100106,YES,NO 
 	 	 Window_NO 
 	 	 	 ##这样啊！真是太可惜了！请你下次有机会一定要来参加哦！
 	 	 	 EndWindow 1100107
-		 Window_YES gold==15000 && Job >= 73 && Job < 80 && Group == 1
+		 Window_YES gold==15000 && Luac msjob:1b1ded71a65f95f714c3 >= 1 && Group == 1
 		 	 ##交保证金 10000
 		 	 AddGold -14600
 		 	 ##得到豪腕商人参赛证明

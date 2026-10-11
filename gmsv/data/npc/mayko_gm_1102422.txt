@@ -8,7 +8,7 @@
 #JOBID   14、15、24、25、34 35才可学习
 
 ##剑士A  有家书
-block  Xpos==40 && Ypos == 51 && Job == 14 && Item 40924>0	 
+block  Xpos==40 && Ypos == 51 && Luac msjob:1231ebe54b8d89d7160c >= 1 && Item 40924>0	 
 	 Window 1110193,OK
 	 Window_OK Item 40924>0
 	 KillItem 40924,1
@@ -18,7 +18,7 @@ block  Xpos==40 && Ypos == 51 && Job == 14 && Item 40924>0
 	 Window_OK
 	 EndWindow 1110190
 ##剑士s阶  有家书	 
-block  Xpos==40 && Ypos == 51 && Job == 15 && Item 40924>0	 
+block  Xpos==40 && Ypos == 51 && Luac msjob:832711e3eb9bab110157 >= 1 && Item 40924>0	 
 	 Window 1110193,OK
 	 Window_OK Item 40924>0
 	 KillItem 40924,1
@@ -28,7 +28,7 @@ block  Xpos==40 && Ypos == 51 && Job == 15 && Item 40924>0
 	 Window_OK
 	 EndWindow 1110190 
 ##剑士s1阶  有家书	 
-block  Xpos==40 && Ypos == 51 && Job == 16 && Item 40924>0	 
+block  Xpos==40 && Ypos == 51 && Luac msjob:1a8c458a2bdec7b75475 >= 1 && Item 40924>0	 
 	 Window 1110193,OK
 	 Window_OK Item 40924>0
 	 KillItem 40924,1
@@ -38,7 +38,7 @@ block  Xpos==40 && Ypos == 51 && Job == 16 && Item 40924>0
 	 Window_OK
 	 EndWindow 1110190	 
 ##剑士s2阶  有家书	 
-block  Xpos==40 && Ypos == 51 && Job == 17 && Item 40924>0	 
+block  Xpos==40 && Ypos == 51 && Luac msjob:f11f3d2b7ce37533b65c >= 1 && Item 40924>0	 
 	 Window 1110193,OK
 	 Window_OK Item 40924>0
 	 KillItem 40924,1
@@ -128,7 +128,7 @@ block  Xpos==40 && Ypos == 51 && Job == 37 && Item 40924>0
 	 Window_OK
 	 EndWindow 1110190
 ####职级不够
-block Xpos==40 && Ypos == 51 && JobAncestry == 10 && Item 40924>0
+block Xpos==40 && Ypos == 51 && Luac msjob:61a018a60cb15603b89c >= 1 && Item 40924>0
 	 EndWindow 1110191
 block Xpos==40 && Ypos == 51 && JobAncestry == 20 && Item 40924>0
 	 EndWindow 1110191	 

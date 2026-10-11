@@ -9,7 +9,7 @@ block Group > 1
 	 	 	 Window_NO 
 	 	 	 
 ################### 战斗系&游民 35级以上 && 开过传送石
-block  Job < 170 && Level >=35 && NowEvent 241 == 1 
+block  Luac msjob:6b7c08fd82530795fb06 >= 1 && Level >=35 && NowEvent 241 == 1 
 	 ##1200933	\n这是通往尼维尔海村的传送石，要使用吗？\n费用是300元。	1
 	 Window 1200933,YES,NO 
 	 	 Window_YES Gold <300	 	 	 

@@ -1,5 +1,6 @@
 local M=ModuleBase:createModule('sharedTaskAdapters')
 local D=dofile('lua/Modules/sharedTaskAdaptersData.lua')
+local TaskJobs=dofile('lua/Modules/magicTaskJobs.lua')
 local by={};for _,v in ipairs(D) do by[v.key]=v end
 local function get(p,k) local field=assert(CONST[k],k);return Char.GetData(p,field) end
 local function set(p,k,v) local field=assert(CONST[k],k);return Char.SetData(p,field,v) end
@@ -177,6 +178,10 @@ function M:item(p,c)
  Char.DelItem(p,c.useItem,1,false);tell(p,'道具已使用。');return 1
 end
 function M:execute(n,p,text)
+ if TaskJobs.has(text) then
+  if not Char.IsPlayer(p) then return 0 end
+  return TaskJobs.check(get(p,'CHAR_职业'),text,get(p,'CHAR_职类ID'))
+ end
  local c=by[text];if not c then return end
  if not self:allowed(n,p,c) then return 0 end
  if c.kind=='legacy' then
@@ -186,9 +191,13 @@ function M:execute(n,p,text)
   local field=assert(CONST[c.field],c.field)
   local value=c.target=='item' and Item.GetData(who,field) or Char.GetData(who,field)
   if c.target=='item' and c.field=='道具_VAR1' then value=math.max(0,value) end
-  if c.jobRangeJobs then for _,id in ipairs(c.jobRangeJobs) do if value==id then return 1 end end;return 0 end
+  if c.jobRangeJobs then return TaskJobs.range(value,c.jobRangeJobs) end
   if c.value==nil then return tonumber(value) or 0 end
   value=c.mode==1 and value+c.value or c.value
+  if c.target=='player' and c.field=='CHAR_职业' then
+   local promoted=TaskJobs.promotedJob(get(p,'CHAR_职业'),value)
+   if promoted~=value then set(p,'CHAR_职类ID',180);value=promoted end
+  end
   if c.mode==1 and c.limit and c.limit>=0 then value=math.min(c.limit,value) end
   value=math.max(-2147483647,math.min(2147483647,value))
   if c.target=='item' then Item.SetData(who,field,value);Item.UpItem(p,8+(c.slot or 0))

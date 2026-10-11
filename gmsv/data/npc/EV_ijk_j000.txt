@@ -13,7 +13,7 @@
 	EndWindow 10934
 
 	# --- 痿衔及桦宁 --- #
-	block Job >= 10 && Job < 20
+	block Luac msjob:de2771356fb05814bad5 >= 1
 	#丐卅凶反痿衔今氏友﹝\n允仍中僻宁匀化月﹝\n井匀仇中中歹﹝
 	EndWindow 10933
 
@@ -43,7 +43,7 @@
 	EndWindow 10928
 
 	# --- 呺诸阁及桦宁 --- #
-	block Job >= 70 && Job < 80
+	block Luac msjob:da4de88356f42778d252 >= 1
 	#丐日﹜丐卅凶呺诸阁今氏〝\n歹凶仄﹜呺诸阁及谛匀化升□仄化手艘毛袱六卅中氏分﹝分匀化﹜窒互?太请允井坌井氏卅中元扎氏﹝
 	EndWindow 10927
 

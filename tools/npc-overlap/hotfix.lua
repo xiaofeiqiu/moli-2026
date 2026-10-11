@@ -28,8 +28,10 @@ local function checkTarget(p,ownNpc)
  end
 end
 local moves={}
+local refreshAdapters=false
 -- Resolve every NPC and validate every target before moving anything.
 for _,p in ipairs(plans) do
+ if p.refreshAdapters then refreshAdapters=true end
  local found={}
  for _,n in ipairs(occupants(p.before[1],p.before[2])) do
   if matches(n,p) then found[#found+1]={npc=n,old=true} end
@@ -65,6 +67,10 @@ end
 if R.moved>0 and getModule('sharedTaskGuide') then
  assert(reloadModule('sharedTaskGuide'),'NPC layout repair: guide reload failed')
  R.guide_reloaded=true
+end
+if refreshAdapters and getModule('sharedTaskAdapters') then
+ assert(reloadModule('sharedTaskAdapters'),'NPC layout repair: task adapter reload failed')
+ R.adapters_reloaded=true
 end
 R.status='PASS'
 print('NPC layout repair: moved '..R.moved..', already correct '..R.already_correct)

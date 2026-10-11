@@ -27,7 +27,7 @@ block Item 622043 >= 1 || Item 622044 >= 1 || Item 622045 >= 1 || Item 622046 >=
 
 ######## Aºë»ï¡õÃó ############################
 ## ðôÖî¸ó?
-block Job == 14
+block Luac msjob:1231ebe54b8d89d7160c >= 1
 
 	GoToF case1
 
@@ -52,7 +52,7 @@ block Job == 64
 	GoToF case1
 
 ## ËüÅ«°Ç¡õÓñ©j…ëÖî¸ó©k
-block Job == 74
+block Luac msjob:147608ebd99235f1b6d5 >= 1
 
 	GoToF case1
 
@@ -472,7 +472,7 @@ block Job == 1014
 
 ######## ÏþÝËçÇ///Aºë»ï¡õÃó ############################
 ## ðôÖî¸ó?¶¯Ïþ
-block Job >= 15 && Job <= 19
+block Luac msjob:3d4ba99dd56fe2458663 >= 1
 
 	GoToF case5
 
@@ -497,7 +497,7 @@ block Job >= 65 && Job <= 69
 	GoToF case5
 
 ## ËüÅ«°Ç¡õÓñ¶¯Ïþ©j…ëÖî¸ó©k
-block Job >= 75 && Job <= 79
+block Luac msjob:8493fb42a21e1a41689f >= 1
 
 	GoToF case5
 
