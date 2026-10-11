@@ -154,7 +154,7 @@ cap241=241
 // 属性折算率， 默认 0.3
 cap241rate=0.3
 // 宠物最多档位，默认63 
-maxallocpoint=63
+maxallocpoint=67
 // 深蓝九号等级检查配置， 1=原版设定，0=关闭，2=按怪物等级与玩家等级比值调整，默认：1 
 checkTohelosLevel=1
 // 最高制作技能上限，默认15，最大30
@@ -212,11 +212,11 @@ useenemyexplist=0
 //是否启用自定义组队经验(设置0使用官方设置.设置1为启动)默认0
 usepartyexplist=0
 //设置战斗获得的经验倍数,最低为1
-baseexprate=20
+baseexprate=30
 //设置战斗技能经验倍数,最低为1
-battleskillexprate=20
+battleskillexprate=50
 //设置生成采集技能经验倍数,最低为1
-productskillexprate=20
+productskillexprate=50
 #################################其他设置#####################################
 //人物升级点数,默认4
 charuppoint=10

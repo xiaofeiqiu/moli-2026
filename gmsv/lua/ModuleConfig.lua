@@ -36,3 +36,10 @@ loadModule('skillTraining')
 loadModule('sanctuary')
 
 loadModule('petSkillTutor')
+
+loadModule('sanctuaryShops')
+
+loadModule('petEquipment')
+
+loadModule('equipmentEnhance')
+loadModule('petSkillUpgrade')

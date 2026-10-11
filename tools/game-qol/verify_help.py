@@ -60,6 +60,9 @@ def verify():
         (HERE / 'fight.lua', ROOT / 'gmsv/lua/Modules/fight.lua'),
         (ROOT / 'tools/module-reload/admin.lua', ROOT / 'gmsv/lua/Modules/admin.lua'),
         (ROOT / 'tools/five-pet/fivePet.lua', ROOT / 'gmsv/lua/Modules/fivePet.lua'),
+        (ROOT / 'tools/five-pet/petSkillAI.lua', ROOT / 'gmsv/lua/Modules/petSkillAI.lua'),
+        (ROOT / 'tools/skill-library/petSkillUpgrade.lua', ROOT / 'gmsv/lua/Modules/petSkillUpgrade.lua'),
+        (ROOT / 'tools/sanctuary/sanctuaryData.lua', ROOT / 'gmsv/lua/Modules/sanctuaryData.lua'),
     ):
         assert source.read_text('utf-8') == runtime.read_bytes().decode('gbk').replace('\r\n', '\n'), \
             f'Source/runtime mismatch: {runtime.relative_to(ROOT)}'

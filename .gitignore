@@ -35,6 +35,8 @@
 !/tools/Cleanup-CG71Tests.ps1
 !/tools/cg71-pets/
 !/tools/content-audit/
+!/tools/custom-pets/
+!/tools/equipment-enhance/
 !/tools/five-pet/
 !/tools/five-pet-probe/
 !/tools/game-qol/

@@ -95,7 +95,7 @@ local function otherMenus(pet)
  m:show(n,p)
  local session=m.sessions[p];local lines=split(window.data)
  check(tonumber(lines[1])==2,'auto stat two-line title preserved')
- check(#session.actions==7,'auto stat main action count')
+ check(#session.actions==8,'auto stat main action count including bank entry')
  click(m.name,n,lines[tonumber(lines[1])+2]);check(m.sessions[p].ref=='player','auto stat player callback')
  rows({'全加体力','全加力量','全加强度','全加速度','全加魔法','自定义五项比例','开启已保存方案','返回人物和宠物列表'},'auto stat player plan')
  check(tonumber(split(window.data)[1])==3,'auto stat three-line title preserved')
@@ -211,8 +211,23 @@ local function sharedMenus()
    if page*5<#d[kind] then labels[#labels+1]='下一页' end
    labels[#labels+1]='返回';rows(labels,'expedition '..kind..'/'..page)
    if kind=='jobs' then
-    click(m.name,n,labels[1]);rows({'确认登记：5000魔币','返回'},'job confirmation')
-    click(m.name,n,'返回');check(m.serviceSessions[p].actions[1].group=='jobs','job confirmation return callback')
+    for i=(page-1)*5+1,math.min(page*5,#d.jobs) do
+     m:serviceMenu(n,p,kind,page)
+     click(m.name,n,d.jobs[i].name);rows({'确认登记：5000魔币','返回'},'job confirmation '..i)
+     -- The client wraps long titles; protocol-only row decoding missed this.
+     local titleLines=split(window.data);check(tonumber(titleLines[1])==4,'explicit confirmation title rows')
+     for row=2,5 do check(#titleLines[row]<=24,'confirmation title fits client row '..row) end
+     local job,family,gold=get(p,'CHAR_职业'),get(p,'CHAR_职类ID'),Char.GetGold(p)
+     click(m.name,n,'返回');rows(labels,'job confirmation return '..i)
+     check(m.serviceSessions[p].actions[1].index==(page-1)*5+1,'job confirmation returns to original page')
+     check(get(p,'CHAR_职业')==job and get(p,'CHAR_职类ID')==family and Char.GetGold(p)==gold,'return preserves profession and gold')
+     click(m.name,n,d.jobs[i].name)
+     click(m.name,n,'确认登记：5000魔币')
+     check(get(p,'CHAR_职业')==d.jobs[i].ranks[1].id and get(p,'CHAR_职类ID')==d.jobs[i].family,'displayed confirmation registers job '..i)
+     check(Char.GetGold(p)==gold-5000 and m.serviceSessions[p]==nil,'confirmation charges once and consumes session')
+     local callback=assert(_G[m.name..'_npc_'..n..'_WindowTalkedEvent'])
+     callback(n,p,7292,0,'1');check(Char.GetGold(p)==gold-5000,'replayed confirmation does not charge')
+    end
    end
   end
  end

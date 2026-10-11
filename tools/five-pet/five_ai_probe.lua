@@ -30,7 +30,7 @@ T:regCallback('BattleBeforeActionEvent',function(bi,q,extra)
  if bi==b then
   R.trace=R.trace or {};local guardian={}
   for i=0,9 do local a=Battle.GetPlayer(b,i);if a>=0 then guardian[tostring(i)]={Battle.GetEntryData(b,a,CONST.BATTLE_ENTRY_GUARDIAN),get(a,'CHAR_血')} end end
-  R.trace[#R.trace+1]={actor=q,command=get(q,'CHAR_BattleCom1'),target=get(q,'CHAR_BattleCom2'),guardian=guardian}
+  R.trace[#R.trace+1]={actor=q,turn=Battle.GetTurn(bi),command=get(q,'CHAR_BattleCom1'),target=get(q,'CHAR_BattleCom2'),guardian=guardian}
  end
  return 0
 end)
@@ -49,6 +49,10 @@ T:regCallback('BeforeBattleTurnStartEvent',function(bi)
   local e=Battle.GetPlayer(b,10)
   set(e,'CHAR_BattleCom1',CONST.BATTLE_COM.BATTLE_COM_ATTACK);set(e,'CHAR_BattleCom2',Battle.GetPos(b,pets[1]));set(e,'CHAR_BattleCom3',7300)
   R.before_turns=R.before_turns or {};R.before_turns[#R.before_turns+1]={turn=Battle.GetTurn(bi),enemy=e,hp=e>=0 and get(e,'CHAR_血') or -1}
+  local q=rows[4].proxy;local guard=rounds<2
+  check(get(q,'CHAR_BattleCom1')==(guard and CONST.BATTLE_COM.BATTLE_COM_GUARD or CONST.BATTLE_COM.BATTLE_COM_ATTACK),'full-defense first slot / resumed attack round '..(rounds+1))
+  check(get(q,'CHAR_Battle2Com1')==CONST.BATTLE_COM.BATTLE_COM_NONE,'full-defense / attack second slot stays empty round '..(rounds+1))
+  check(get(q,'CHAR_Battle2Com2')==-1 and get(q,'CHAR_Battle2Com3')==-1,'second slot target and tech round '..(rounds+1))
   R.guard_before_mp=get(rows[2].proxy,'CHAR_魔')
   R.spell_before_mp=get(rows[3].proxy,'CHAR_魔')
  end
@@ -59,6 +63,13 @@ T:regCallback('AfterBattleTurnEvent',function(bi)
  local ok,err=xpcall(function()
   R.after_turns=R.after_turns or {};local e=Battle.GetPlayer(bi,10);R.after_turns[#R.after_turns+1]={turn=Battle.GetTurn(bi),enemy=e,hp=e>=0 and get(e,'CHAR_血') or -1}
   rounds=rounds+1;R.rounds=rounds;R.turns=R.turns or {};R.turns[#R.turns+1]=Battle.GetTurn(bi)
+  if rounds<=2 then
+   local defenses=0
+   for _,action in ipairs(R.trace) do
+    if action.actor==rows[4].proxy and action.turn==Battle.GetTurn(bi) and action.command==CONST.BATTLE_COM.BATTLE_COM_GUARD then defenses=defenses+1 end
+   end
+   check(defenses==1,'native full-defense executes once round '..rounds)
+  end
   local g=rows[2].command;local c=rows[3].command
   R.guard_command=g;R.guard_mp=get(rows[2].proxy,'CHAR_魔')
   check(g and g[1]==CONST.BATTLE_COM.BATTLE_COM_P_BODYGUARD and g[3]==730 and R.guard_mp==R.guard_before_mp-10,'bodyguard command executes and consumes native MP')
@@ -76,6 +87,7 @@ T:regCallback('AfterBattleTurnEvent',function(bi)
   for _,d in ipairs(R.damage) do if d.attacker==Battle.GetPlayer(b,10) and d.defender==rows[2].proxy then intercepted=true end end
   check(intercepted,'bodyguard intercepts native attack on lowest-HP ally')
   R.damage={}
+  if rounds==2 then M:saveAI(p,pets[4],{mode='attack',bossCombo=false}) end
   if rounds==1 then
    M:saveAI(p,pets[3],{mode='skill',tech=1930,target='weak',threshold=30,bossCombo=false})
   end
@@ -95,11 +107,11 @@ Cron.AddInterval(1800,function()
   check(Pet.AddSkill(pets[2],730)==1 and Pet.AddSkill(pets[3],1930)==1,'native bodyguard and spell learned')
   set(pets[2],'CHAR_敏捷',10000)
   M:petMenu(p,pets[2]);local menu=M.menus[p]
-  check(#menu.options==9,'pet configuration includes bodyguard fallback skill option')
+  check(#menu.options==8 and menu.options[6].action=='recovery','pet configuration includes bodyguard fallback skill option')
   M:answer(M.npc,p,menu.seq,0,'2');check(M.menus[p].kind=='skills','skill-priority mode opens explicit skill picker when unconfigured')
   menu=M.menus[p];check(menu.options[1].tech==730,'native bodyguard visible in skill picker')
   M:answer(M.npc,p,menu.seq,0,'1');check(M:ai(p,pets[2]).tech==730 and M:ai(p,pets[2]).mode=='skill','chosen skill activates and persists priority mode')
-  M:petMenu(p,pets[3]);menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'7')
+  M:petMenu(p,pets[3]);menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'7');menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'2')
   check(M:ai(p,pets[3]).bossCombo,'BOSS preference switch persists')
   M:saveAI(p,pets[3],{mode='skill',tech=1930,target='random',threshold=30,bossCombo=true})
   M.configs[p]=nil;check(M:ai(p,pets[3]).bossCombo and M:ai(p,pets[2]).tech==730,'configuration reread retains preference and chosen skill')
@@ -107,6 +119,7 @@ Cron.AddInterval(1800,function()
   enemyData=ix;originalTactics=Data.EnemyGetData(ix,CONST.DATA_ENEMY_TACTICSOPTION)
   Data.EnemySetData(ix,CONST.DATA_ENEMY_TACTICSOPTION,'at:100;1;1')
   Data.EnemySetData(ix,CONST.DATA_ENEMY_BOSS_FLG,1)
+  M:saveAI(p,pets[4],{mode='guard',bossCombo=false})
   check(M:enable(p),'automatic companions enabled')
   for _,r in ipairs(M.active[p].rows) do for i,q in ipairs(pets) do if r.pet==q then rows[i]=r end end end
   b=Battle.PVE(p,p,nil,{1},{100},{0});Data.EnemySetData(ix,CONST.DATA_ENEMY_BOSS_FLG,flag)

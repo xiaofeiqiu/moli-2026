@@ -123,7 +123,9 @@ function M:customCast(b,p,use,skl,act)
   if get(p,'CHAR_魔')<fp then return end
   Char.SetData(p,c('CHAR_魔'),get(p,'CHAR_魔')-fp);self:gainExperience(p,use.id,30)
   self.auras[b]=self.auras[b] or {}
-  skl(809)
+  -- Blood attack emits damage actions, which need an attack animation family.
+  -- 809 is the special-guard effect family; 309 is a native physical strike.
+  skl(kind=='blood' and 309 or 809)
   if kind=='summon' or kind=='barrier' then
     self.auras[b][p]=self.auras[b][p] or {};self.auras[b][p][kind]={level=lv,expires=Battle.GetTurn(b)+3}
     act(CONST.TechLua_ACT_EFFECT,Battle.GetPos(b,p),0);NLG.UpChar(p);return

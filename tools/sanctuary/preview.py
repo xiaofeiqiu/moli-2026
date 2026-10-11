@@ -125,7 +125,7 @@ def main():
             draw.text((sx-20, sy+15), text, font=font, fill='yellow', stroke_width=2, stroke_fill='black')
         canvas.crop((150, 0, 4900, 2450)).convert('RGB').save(out / 'room_preview.png')
         (out / 'visual_result.json').write_text(json.dumps(visibility, ensure_ascii=False, indent=2), 'utf-8')
-        assert len(visibility) == 86
+        assert len(visibility) == 93
         assert not any(row['wall_occlusion'] for row in visibility), 'Foreground wall obscures an NPC'
         print(out / 'room_preview.png')
 

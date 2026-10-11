@@ -53,3 +53,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    from shops_install import main as install_shops
+    install_shops()

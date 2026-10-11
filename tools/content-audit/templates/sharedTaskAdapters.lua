@@ -283,8 +283,10 @@ function M:serviceAnswer(n,p,seq,button,text)
  local data=by['stp:services']
  if a.kind=='page' then self:serviceMenu(n,p,a.group,a.page)
  elseif a.kind=='confirmJob' then
-  self.serviceSessions[p]={npc=n,expires=os.time()+90,actions={{kind='join',index=a.index},{kind='page'}}}
-  NLG.ShowWindowTalked(p,n,2,2,7292,self:NPC_buildSelectionText('确认转入 '..data.jobs[a.index].name..'？现有技能保留，技能上限随职业调整。',{'确认登记：5000魔币','返回'}))
+  self.serviceSessions[p]={npc=n,expires=os.time()+90,actions={{kind='join',index=a.index},{kind='page',group='jobs',page=math.floor((a.index-1)/5)+1}}}
+  -- Keep each title row short: client wrapping would shift selection indices.
+  local title='确认转入：\n'..data.jobs[a.index].name..'\n现有技能保留。\n技能上限随职业调整。'
+  NLG.ShowWindowTalked(p,n,2,2,7292,self:NPC_buildSelectionText(title,{'确认登记：5000魔币','返回'}))
  elseif a.kind=='join' then self:joinJob(p,data.jobs[a.index])
  elseif a.kind=='promote' then self:promote(p)
  elseif a.kind=='material' then

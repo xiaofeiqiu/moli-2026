@@ -1,6 +1,6 @@
 -- Run after native maps, static NPCs, and all configured Lua modules have loaded.
 local R={status='RUNNING',checks={},npcs={},overlaps={},production_accounts_used=false}
-local modules={'cg71JobSkills','skillLibrary','fivePet','knightHybridGear','sharedTaskAdapters','sharedTaskRoutes','sharedTaskGuide','autoStat','skillTraining','sanctuary','petSkillTutor'}
+local modules={'cg71JobSkills','skillLibrary','fivePet','knightHybridGear','sharedTaskAdapters','sharedTaskRoutes','sharedTaskGuide','autoStat','skillTraining','sanctuary','petSkillTutor','petSkillUpgrade','sanctuaryShops','petEquipment'}
 local routeData=dofile('lua/Modules/sharedTaskRoutesData.lua')
 local player=-1
 local function get(c,key) return Char.GetData(c,CONST[key]) end
@@ -50,7 +50,7 @@ local function inspect(phase)
     R.npcs[#R.npcs+1]=row
    end
   end
-  check(#R.npcs==288,phase..': all 288 custom NPCs created (two internal stones removed)')
+  check(#R.npcs==295,phase..': all 295 custom NPCs created (including pet upgrade tutor)')
 end
 local function finish(err)
  if err then R.status='FAIL';R.error=tostring(err) else R.status='PASS' end

@@ -15,6 +15,28 @@ local ok,err=xpcall(function()
  check(get('CHAR_卡时')==hours*3600,'empty card time filled to configured cap')
  check(Char.IsFeverTime(p)==1,'full immediately starts native fever')
  check(not M:settings(p).autoclock,'manual full preserves automatic clock preference')
+ send('/clock off');set('CHAR_卡时',2*3600)
+ check(Char.FeverStart(p)==1,'start old two-hour native countdown')
+ check(Char.IsFeverTime(p)==1 and get('CHAR_卡时')<=2*3600,'old countdown remains two hours')
+ send('/clock full')
+ check(Char.IsFeverTime(p)==1 and get('CHAR_卡时')==hours*3600,'running two-hour countdown replaced with full six hours')
+ local dummy,save=Char.IsDummy,Char.SaveToDb
+ local saved=0
+ Char.IsDummy=function(q) if q==p then return false end;return dummy(q) end
+ Char.SaveToDb=function(q)
+  check(q==p,'save only requesting player')
+  check(Char.IsFeverTime(q)==1,'save observes running native timer')
+  saved=get('CHAR_卡时');return 0
+ end
+ local called,result=pcall(M.fillClock,M,p)
+ Char.IsDummy=dummy;Char.SaveToDb=save
+ check(called and result==true and saved==hours*3600,'save synchronized full native countdown')
+ Char.IsDummy=function(q) if q==p then return false end;return dummy(q) end
+ Char.SaveToDb=function() return -1 end
+ called,result=pcall(M.fillClock,M,p)
+ Char.IsDummy=dummy;Char.SaveToDb=save
+ check(called and result==false,'save failure not reported as success')
+ check(captured[#captured]:find('保存失败',1,true)~=nil,'save failure explained')
  set('CHAR_卡时',100);send('/CLOCK FULL')
  check(get('CHAR_卡时')==hours*3600 and Char.IsFeverTime(p)==1,'running clock refills with case-insensitive command')
  set('CHAR_卡时',123)

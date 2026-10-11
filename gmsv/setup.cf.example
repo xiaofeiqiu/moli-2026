@@ -53,7 +53,7 @@ itemnum=170000
 ################################ NPC create num
 npccreatenum=120000
 ################################ dungeon num
-autodungeonnum=3000
+autodungeonnum=5000
 ################################ encount memory num
 encountmemorynum=16000
 ################################ house num

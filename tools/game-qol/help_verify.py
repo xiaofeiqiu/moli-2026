@@ -36,6 +36,11 @@ def main(probe_name='help'):
                 shutil.copy2(source, dest)
             return str(dest)
         shutil.copytree(ROOT / 'gmsv' / rel, RUN / rel, dirs_exist_ok=True, copy_function=copy_changed)
+    if probe_name == 'clock_limit':
+        cf = RUN / 'cgmsv.cf'
+        raw, count = re.subn(rb'(?m)^fevermax=\d+', b'fevermax=2', cf.read_bytes())
+        assert count == 1
+        cf.write_bytes(raw)
     for rel in ('store/itemcount', 'store/dungeon', 'store/house', 'log', 'Dengon', 'GMLog', 'dump', 'house'):
         (RUN / rel).mkdir(parents=True, exist_ok=True)
     setup = (RUN / 'setup.cf').read_bytes()
@@ -91,7 +96,7 @@ def main(probe_name='help'):
             assert report is not None, f'No probe report; exit={process.poll()}; see {log.name}'
             report['tested_sha256'] = {
                 rel: hashlib.sha256((RUN / rel).read_bytes()).hexdigest()
-                for rel in ('cgmsv.exe', 'lua/Modules/commandHelp.lua', 'lua/Modules/gameQoL.lua',
+                for rel in ('cgmsv.exe', 'cgmsv.cf', 'lua/Modules/commandHelp.lua', 'lua/Modules/gameQoL.lua',
                             'lua/Modules/admin.lua', 'lua/Modules/adminCommands.lua', 'lua/Modules/fivePet.lua',
                             'lua/Modules/gameDifficulty.lua', 'lua/Modules/fight.lua')
             }
@@ -107,6 +112,6 @@ def main(probe_name='help'):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('probe', nargs='?', default='help', choices=('help', 'autosell', 'petmax', 'heal', 'after_battle', 'regression', 'fivepet_default', 'fivepet_partial', 'fivepet_formation_lifecycle', 'fivepet_runtime', 'fivepet_death', 'clock_full', 'difficulty6', 'fight_count', 'fivepet_ai', 'fivepet_element', 'loyalty', 'pet_obedience', 'pet_animation'))
+    parser.add_argument('probe', nargs='?', default='help', choices=('help', 'autosell', 'petmax', 'heal', 'after_battle', 'regression', 'fivepet_default', 'fivepet_partial', 'fivepet_formation_lifecycle', 'fivepet_runtime', 'fivepet_death', 'clock_full', 'clock_limit', 'difficulty6', 'fight_count', 'fivepet_ai', 'fivepet_element', 'loyalty', 'pet_obedience', 'pet_animation'))
     args = parser.parse_args()
     main(args.probe)

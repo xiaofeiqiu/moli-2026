@@ -7,8 +7,9 @@ RUN=BASE/'native_runtime/gmsv'
 STAGE=BASE/'staged/gmsv'
 OUT=ROOT/'docs/five_pet'
 for p in (RUN,STAGE/'lua/Modules',OUT):p.mkdir(parents=True,exist_ok=True)
-source=(ROOT/'tools/five-pet/fivePet.lua').read_text(encoding='utf-8')
+source=(ROOT/'tools/five-pet/fivePet.lua').read_bytes().decode('utf-8')
 (STAGE/'lua/Modules/fivePet.lua').write_bytes(source.encode('gbk'))
+(STAGE/'lua/Modules/petSkillAI.lua').write_bytes((ROOT/'tools/five-pet/petSkillAI.lua').read_bytes().decode('utf-8').encode('gbk'))
 for name in ('cgmsv.exe','setup.cf','cgmsv.cf'):
  if name=='cgmsv.exe' and (RUN/name).exists():
   assert (RUN/name).read_bytes()==(ROOT/'gmsv'/name).read_bytes();continue

@@ -1,6 +1,7 @@
 local R={status='RUNNING',checks={},messages={},windows={},petUUIDs={},production_accounts_used=false,client_verified=false}
 local p,q=-1,-1
 local M=assert(getModule('autoStat'))
+local npcPosition={}
 local oldMessage,oldWindow=NLG.SystemMessage,NLG.ShowWindowTalked
 local fields={'CHAR_体力','CHAR_力量','CHAR_强度','CHAR_速度','CHAR_魔法'}
 local function get(c,k) return Char.GetData(c,CONST[k]) end
@@ -32,13 +33,15 @@ NLG.ShowWindowTalked=function(c,n,typ,button,seq,data)
 end
 local ok,err=xpcall(function()
  check(M.npc>=0 and #M.npcList==1,'one module-owned automatic stat NPC')
- check(get(M.npc,'CHAR_地图')==1000 and get(M.npc,'CHAR_X')==223 and get(M.npc,'CHAR_Y')==85,'NPC at east hospital (223,85)')
- check(Map.IsWalkable(0,1000,223,85)==1,'NPC tile is walkable')
+ npcPosition={get(M.npc,'CHAR_地图类型'),get(M.npc,'CHAR_地图'),get(M.npc,'CHAR_X'),get(M.npc,'CHAR_Y')}
+ check(npcPosition[2]==60003 and npcPosition[3]==24 and npcPosition[4]==34,'NPC at sanctuary (24,34)')
+ check(Map.IsWalkable(npcPosition[1],npcPosition[2],npcPosition[3],npcPosition[4])==1,'NPC tile is walkable')
  p=Char.CreateDummy({mapType=0,floor=1000,x=223,y=86,image=100002,name='AUTO_STAT_TEST'});check(p>=0,'isolated native player')
  set(p,'CHAR_账号','AUTO_STAT_PERSIST_WITNESS');set(p,'对象_RegistNumber',0)
  q=Char.CreateDummy({mapType=0,floor=1000,x=224,y=86,image=100002,name='AUTO_STAT_OTHER'});check(q>=0,'second isolated native player')
+ Char.Warp(p,npcPosition[1],npcPosition[2],npcPosition[3],npcPosition[4]+1)
  check(not M:settings(p).player and next(M:settings(p).pets)==nil,'new character defaults to manual allocation')
- talk();check(M.sessions[p] and #M.sessions[p].actions==7,'actual NPC talked callback offers character plus all five pet slots')
+ talk();check(M.sessions[p] and #M.sessions[p].actions==8,'actual NPC talked callback offers character, five pet slots, bank menu and help')
  menu(2);check(R.messages[#R.messages]:match('没有宠物')~=nil,'empty pet option handled')
  talk();menu(1);menu(6)
  check(M.sessions[p].seq==7311 and R.windows[#R.windows].type==CONST['窗口_输入框'],'custom ratio opens native input dialog')
@@ -112,7 +115,7 @@ local ok,err=xpcall(function()
  local credits=JSON.encode(M:settings(p).player.credit)
  reloadModule('autoStat');M=assert(getModule('autoStat'))
  check(JSON.encode(M:settings(p).player.credit)==credits,'fractional allocation credit survives module reload')
- check(#M.npcList==1 and get(M.npc,'CHAR_X')==223,'reload owns one NPC')
+ check(#M.npcList==1 and get(M.npc,'CHAR_X')==npcPosition[3],'reload owns one NPC')
  talk();menu(2);menu(6)
  local session=M.sessions[p]
  check(session.ref==R.petUUIDs[5],'pet menu resolves current slot to unique ID')
@@ -120,10 +123,10 @@ local ok,err=xpcall(function()
  M:answer(M.npc,p,7311,CONST['按钮_确定'],'0 1 0 0 0')
  check(M:settings(p).pets[R.petUUIDs[5]].weights[5]==1,'stale pet input cannot reconfigure a traded pet')
  check(not M:settings(q).pets[R.petUUIDs[5]],'new owner does not inherit previous owner automatic preferences')
- talk();menu(1);menu(6);set(p,'CHAR_X',230)
+ talk();menu(1);menu(6);set(p,'CHAR_X',npcPosition[3]+7)
  M:answer(M.npc,p,7311,CONST['按钮_确定'],'0 0 1 0 0')
  check(M:settings(p).player.weights[2]==2,'remote NPC response is rejected')
- set(p,'CHAR_X',223)
+ set(p,'CHAR_X',npcPosition[3])
  talk();menu(1);menu(6);M.sessions[p].expires=os.time()-1
  M:answer(M.npc,p,7311,CONST['按钮_确定'],'0 0 1 0 0')
  check(M:settings(p).player.weights[2]==2,'expired NPC response is rejected')
@@ -149,9 +152,9 @@ local ok,err=xpcall(function()
  M:AddInterval(600,function()
   local success,error=xpcall(function()
    check(get(p,'CHAR_升级点')==timerBP-10,'actual scheduled drain distributes a native upgrade award')
-   local _,objects=Obj.GetObject(0,1000,223,85);local count=0
+   local _,objects=Obj.GetObject(npcPosition[1],npcPosition[2],npcPosition[3],npcPosition[4]);local count=0
    for _,obj in ipairs(objects or {}) do if Obj.GetType(obj)==1 then local c=Obj.GetCharIndex(obj);if c>=0 and get(c,'CHAR_名字')=='自动加点师' then count=count+1 else error('NPC tile overlaps '..tostring(c)) end end end
-   check(count==1,'fully loaded native map has one NPC and no overlap at hospital tile')
+   check(count==1,'fully loaded native map has one NPC and no overlap at sanctuary tile')
   end,debug.traceback)
   finish(not success and error or nil)
  end,0)

@@ -22,7 +22,7 @@ def copy_changed(source, dest):
     return str(dest)
 
 
-def main():
+def main(probe='native_probe.lua', report_name='native_result'):
     RUN.mkdir(parents=True, exist_ok=True)
     OUT.mkdir(parents=True, exist_ok=True)
     for name in ('lua', 'data'):
@@ -44,16 +44,16 @@ def main():
     http.write_bytes(http.read_bytes().replace(b'Http.Start("0.0.0.0", 10086)', b'Http.Start("127.0.0.1", 19231)'))
     config = (ROOT / 'gmsv/lua/ModuleConfig.lua').read_bytes()
     (RUN / 'lua/ModuleConfig.lua').write_bytes(config + b"\r\ndofile('lua/sanctuary_probe.lua')\r\n")
-    result = OUT / 'native_result.json'
+    result = OUT / (report_name + '.json')
     result.unlink(missing_ok=True)
-    source = (HERE / 'native_probe.lua').read_text('utf-8').replace('__REPORT__', result.as_posix())
+    source = (HERE / probe).read_text('utf-8').replace('__REPORT__', result.as_posix())
     (RUN / 'lua/sanctuary_probe.lua').write_bytes(source.encode('gbk'))
     print('Loading complete server configuration on isolated ports 19230/19231.', flush=True)
-    with (OUT / 'native_result.log').open('wb') as log:
+    with (OUT / (report_name + '.log')).open('wb') as log:
         process = subprocess.Popen([str(RUN / 'cgmsv.exe')], cwd=RUN, stdin=subprocess.DEVNULL,
                                    stdout=log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
         try:
-            deadline = time.monotonic() + 55
+            deadline = time.monotonic() + 120
             report = None
             while process.poll() is None and time.monotonic() < deadline:
                 if result.exists():
@@ -73,7 +73,7 @@ def main():
             if report is None:
                 raise RuntimeError(f'Native probe did not complete; exit={process.poll()}; see {log.name}')
             report['source_sha256'] = {}
-            for rel in ('lua/ModuleConfig.lua', 'lua/Modules/sanctuary.lua', 'lua/Modules/sanctuaryData.lua', 'lua/Modules/battleState.lua', 'lua/libs/Module/Parts/Npc.lua', 'lua/Modules/fivePet.lua', 'lua/Modules/cg71JobSkills.lua', 'data/map/60003_sanctuary'):
+            for rel in ('lua/ModuleConfig.lua', 'lua/Modules/sanctuary.lua', 'lua/Modules/sanctuaryData.lua', 'lua/Modules/sanctuaryShops.lua', 'lua/Modules/petEquipment.lua', 'data/itemset.txt', 'lua/Modules/battleState.lua', 'lua/libs/Module/Parts/Npc.lua', 'lua/Modules/fivePet.lua', 'lua/Modules/cg71JobSkills.lua', 'data/map/60003_sanctuary'):
                 raw = (ROOT / 'gmsv' / rel).read_bytes()
                 assert raw == (config if rel == 'lua/ModuleConfig.lua' else (RUN / rel).read_bytes()), rel
                 report['source_sha256'][rel] = hashlib.sha256(raw).hexdigest()

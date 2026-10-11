@@ -59,9 +59,9 @@ Cron.AddInterval(1800,function()
   local _,objects=Obj.GetObject(0,60003,36,18);local npcs=0
   for _,o in ipairs(objects or {}) do if Obj.GetType(o)==1 then npcs=npcs+1 end end
   check(npcs==1,'new tutor does not overlap another NPC')
-  p=Char.CreateDummy({mapType=0,floor=60003,x=30,y=19,image=100002,name='PET_FORGET_TEST'})
+  p=Char.CreateDummy({mapType=0,floor=60003,x=36,y=19,image=100002,name='PET_FORGET_TEST'})
   check(p>=0,'isolated player created');Char.AddGold(p,100000)
-  home(m);check(#rows()==2,'no-pet menu has rules and close')
+  home(m);check(#rows()==3,'no-carried-pet menu has bank entry, rules and close')
   pet=Char.GivePet(p,3004,1);other=Char.GivePet(p,3004,1)
   check(pet>=0 and other>=0,'two owned native pets');set(pet,'宠物_技能栏',10)
   for i=0,9 do if Pet.GetSkill(pet,i)>=0 then Pet.DelSkill(pet,i) end end

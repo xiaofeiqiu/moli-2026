@@ -15,8 +15,8 @@ Cron.AddInterval(1800,function()
   check(Pet.AddSkill(pet,730)==1 and Pet.AddSkill(pet,1930)==1 and Pet.AddSkill(pet,6100)==1,'bodyguard, attack and healing skills learned')
   M:saveAI(p,pet,{mode='skill',tech=730,target='weak',threshold=30})
   M:petMenu(p,pet);local menu=M.menus[p]
-  check(#menu.options==9 and menu.options[8].action=='fallbackSkills','commander exposes fallback attack skill')
-  M:answer(M.npc,p,menu.seq,0,'8');menu=M.menus[p]
+  check(#menu.options==8 and menu.options[6].action=='recovery','commander exposes fallback attack skill')
+  M:answer(M.npc,p,menu.seq,0,'7');menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'3');menu=M.menus[p]
   check(menu.kind=='fallbackSkills','fallback selector opens')
   local choice
   for i,o in ipairs(menu.options) do
@@ -44,7 +44,7 @@ Cron.AddInterval(1800,function()
   M:saveAI(p,pet,{mode='cautious',tech=730,target='weak',threshold=30,fallbackTech=1930});M.configs[p]=nil
   check(M:ai(p,pet).mode=='skill' and M:ai(p,pet).lowHpGuard and M:ai(p,pet).fallbackTech==1930,'legacy cautious mode keeps skill and low-HP defense')
   M:saveAI(p,pet,saved)
-  M:petMenu(p,pet);menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'8');menu=M.menus[p]
+  M:petMenu(p,pet);menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'7');menu=M.menus[p];M:answer(M.npc,p,menu.seq,0,'3');menu=M.menus[p]
   M:answer(M.npc,p,menu.seq,0,'1');M.configs[p]=nil
   check(M:ai(p,pet).fallbackTech==0 and M:ai(p,pet).tech==730,'clearing fallback persists without changing primary bodyguard')
   M:saveAI(p,pet,saved)
@@ -126,9 +126,9 @@ Cron.AddInterval(1800,function()
   check(M:choose(b,row)[3]==1930,'physical immunity prevents normal replacement')
   Battle.SetBattleCharacterStatus(e1,CONST.战属_攻无,0);set(e1,'CHAR_防御力',2000)
   check(M:choose(b,row)[3]==1930,'insufficient conservative damage keeps attack skill')
-  set(e1,'CHAR_防御力',0);saved.tech=6100;M:saveAI(p,pet,saved);set(p,'CHAR_血',1)
+  set(e1,'CHAR_防御力',0);saved.tech=1930;saved.recoveryRules={heal={tech=6100,enabled=true,threshold=60}};M:saveAI(p,pet,saved);set(p,'CHAR_血',1)
   check(M:choose(b,row)[3]==6100,'healing remains first with killable enemy')
-  set(p,'CHAR_血',get(p,'CHAR_最大血'));saved.tech=730;M:saveAI(p,pet,saved)
+  set(p,'CHAR_血',get(p,'CHAR_最大血'));saved.tech=730;saved.recoveryRules.heal.enabled=false;M:saveAI(p,pet,saved)
   set(a,'CHAR_魔',0);check(M:choose(b,row)[1]==CONST.BATTLE_COM.BATTLE_COM_ATTACK,'no MP falls back to normal attack')
   set(a,'CHAR_魔',1000);set(e1,'CHAR_血',10000);saved.fallbackTech=6100;M:saveAI(p,pet,saved)
   check(M:choose(b,row)[1]==CONST.BATTLE_COM.BATTLE_COM_ATTACK,'saved support fallback cannot be cast')

@@ -116,7 +116,7 @@ function M:heal(p)
  end
  local five=getModule('fivePet');local squad=five and five.active[p]
  if squad and squad.battle then message(p,'五宠战斗结算尚未完成，请稍后再治疗。');return false end
- local pets={}
+ local pets={};local bankPets={};local seen={}
  for slot=0,4 do
   local pet=Char.GetPet(p,slot)
   if pet>=0 and Char.IsValidCharIndex(pet) and Char.IsPet(pet) and Pet.GetOwner(pet)==p then
@@ -128,7 +128,12 @@ function M:heal(p)
      message(p,'宠物仍在战斗中，请结束战斗后再治疗。');return false
     end
    end end
-   pets[#pets+1]=pet
+   pets[#pets+1]=pet;seen[pet]=true
+  end
+ end
+ for slot=0,3 do local pet=Char.GetPoolPet(p,slot)
+  if pet>=0 and Char.IsValidCharIndex(pet) and Char.IsPet(pet) and not seen[pet] then
+   pets[#pets+1]=pet;bankPets[pet]=true;seen[pet]=true
   end
  end
  -- Clear injury before recalculating maxima, then restore the resulting HP/MP.
@@ -139,9 +144,9 @@ function M:heal(p)
   Char.SetData(q,CONST['CHAR_魔'],num(q,'CHAR_最大魔'))
  end
  restore(p);NLG.UpChar(p)
- for _,pet in ipairs(pets) do restore(pet);Pet.UpPet(p,pet) end
- if squad then for _,row in ipairs(squad.rows) do if five:owned(p,row) then five:refresh(row) end end end
- message(p,'治疗完成：人物及 '..#pets..' 只携带宠物已恢复满生命、满魔力，受伤已清除（免费）。')
+ for _,pet in ipairs(pets) do restore(pet);if not bankPets[pet] then Pet.UpPet(p,pet) end end
+ if squad then for _,row in ipairs(five:actors(squad)) do if five:owned(p,row) then five:refresh(row) end end end
+ message(p,'治疗完成：人物及 '..#pets..' 只宠物（含银行前4栏）已恢复满生命、满魔力，受伤已清除（免费）。')
  return true
 end
 
@@ -280,9 +285,24 @@ function M:fillClock(p)
   file:close()
  end
  if not hours or hours<=0 then message(p,'无法读取卡时上限，请检查 fevermax 配置。');return false end
+ -- Fever uses an absolute end time while running. Merely changing CHAR_卡时
+ -- leaves that old deadline active; the next status refresh/save overwrites it.
+ if Char.IsFeverTime(p)==1 and Char.FeverStop(p)~=1 then
+  message(p,'无法停止旧打卡计时，卡时未补满，请稍后重试。');return false
+ end
  Char.SetData(p,CONST['CHAR_卡时'],hours*3600)
  local started=self:startClock(p)
- if not Char.IsDummy(p) then Char.SaveToDb(p) end
+ -- Synchronize the remaining value from the new native deadline before saving.
+ local active=Char.IsFeverTime(p)==1
+ local actual=num(p,'CHAR_卡时')
+ if not Char.IsDummy(p) then
+  local ok,result=pcall(Char.SaveToDb,p)
+  if not ok or result~=0 then message(p,'卡时保存失败，请稍后重试 /clock full。');return false end
+ end
+ if started and active and actual+2<hours*3600 then
+  message(p,'实际卡时只有 '..math.floor(actual/60)..' 分钟；请保存角色后重启服务端，加载 cgmsv.cf 的 fevermax='..hours..' 配置，再执行 /clock full。')
+  return false
+ end
  message(p,started and ('卡时已补满至 '..hours..' 小时，打卡已开启，使用原生卡时双倍经验。') or '卡时已补满，但打卡开启失败，请重试 /clock on。')
  return started
 end
@@ -351,9 +371,10 @@ function M:flushAfterBattle()
  end
 end
 
-function M:petRanks(p,slot,fill)
- local pet=Char.GetPet(p,slot)
- if pet<0 or not Char.IsPet(pet) then message(p,'宠物栏 '..slot..' 没有宠物。');return false end
+function M:petRanks(p,slot,fill,bank)
+ local pet=bank and Char.GetPoolPet(p,slot) or Char.GetPet(p,slot)
+ local label=(bank and '银行宠物栏 ' or '宠物栏 ')..slot
+ if pet<0 or not Char.IsPet(pet) then message(p,label..' 没有宠物。');return false end
  local ranks={}
  -- Validate all five species values before making the first change.
  for n,art in ipairs(ART) do
@@ -366,14 +387,37 @@ function M:petRanks(p,slot,fill)
  local loss=0
  for _,r in ipairs(ranks) do
   loss=loss+math.max(0,r.full-r.current)
-  if fill and r.current<r.full then Pet.SetArtRank(pet,r.art,r.full) end
  end
  if fill then
+  local changed={}
+  local function rollback()
+   for _,r in ipairs(changed) do Pet.SetArtRank(pet,r.art,r.current) end
+   Pet.UpPet(p,pet)
+  end
+  for n,r in ipairs(ranks) do if r.current<r.full then
+   changed[#changed+1]=r
+   local ok,result=pcall(Pet.SetArtRank,pet,r.art,r.full)
+   if not ok or result~=0 or Pet.GetArtRank(pet,r.art)~=r.full then
+    rollback()
+    message(p,'宠物栏 '..slot..' 补档失败：原生引擎未写入'..({'体','力','强','敏','魔'})[n]..'档 '..r.full..'（返回 '..tostring(result)..'），已撤销本次补档。')
+    if result==-4 then message(p,'请检查 cgmsv.cf 的 maxallocpoint 上限；修改后须重启服务端，单独重载 Lua 不会更新引擎上限。') end
+    return false
+   end
+  end end
   Pet.UpPet(p,pet)
+  for _,r in ipairs(ranks) do if Pet.GetArtRank(pet,r.art)<r.full then
+   rollback();message(p,'宠物栏 '..slot..' 刷新后仍有掉档，已撤销本次补档。');return false
+  end end
+  if loss>0 and not Char.IsDummy(p) then
+   local ok,result=pcall(Char.SaveToDb,p)
+   if not ok or result~=0 then
+    rollback();message(p,'宠物栏 '..slot..' 补档保存失败，已撤销本次补档，请稍后重试。');return false
+   end
+  end
   message(p,'宠物栏 '..slot..' 已补满成长档数（补回 '..loss..' 档），等级和已加点保留，后续升级按满档成长。')
  else
   local text={};for _,r in ipairs(ranks) do text[#text+1]=r.current..'/'..r.full end
-  message(p,'宠物栏 '..slot..'：体/力/强/敏/魔 '..table.concat(text,' ')..'，总掉档 '..loss..'。')
+  message(p,label..'：体/力/强/敏/魔 '..table.concat(text,' ')..'，总掉档 '..loss..'。')
  end
  return true
 end
@@ -384,7 +428,7 @@ end
 
 function M:handleTalk(p,msg)
  if type(msg)~='string' then return 1 end
- local command,tail=msg:match('^/([%w]+)(.*)$')
+ local command,tail=msg:match('^/(%S+)(.*)$')
  command=command and command:lower()
  if not COMMANDS[command] then return 1 end
  if tail~='' and not tail:match('^%s') then return 1 end
@@ -400,6 +444,26 @@ function M:handleTalk(p,msg)
   if not cfg then message(p,'自动功能设置暂时无法读取，请稍后重试。');return 0 end
   for _,key in ipairs({'autostack','autosort','autoidentify','autosell','autoclock','autorepair'}) do list[#list+1]=key..'='..(cfg[key] and 'on' or 'off') end
   message(p,table.concat(list,' '));message(p,'打卡='..(Char.IsFeverTime(p)==1 and 'on' or 'off')..'，剩余卡时 '..math.floor(num(p,'CHAR_卡时')/60)..' 分钟。');return 0
+ end
+ if command=='fame' or command=='声望' then
+  if #args>1 or (args[1] and args[1]~='max') then message(p,'用法：/fame [max] 或 /声望 [max]');return 0 end
+  if args[1]=='max' then
+   local file=io.open('cgmsv.cf','rb')
+   local maximum
+   if file then
+    for line in file:lines() do
+     local value=line:match('^%s*maxfame%s*=%s*(%d+)%s*$')
+     if value then maximum=tonumber(value);break end
+    end
+    file:close()
+   end
+   if not maximum or maximum<=0 or maximum>2147483647 then message(p,'无法读取声望上限，请检查 maxfame 配置。');return 0 end
+   Char.SetData(p,CONST['CHAR_声望'],maximum)
+   if num(p,'CHAR_声望')~=maximum then message(p,'声望设置失败，请检查 maxfame 配置。');return 0 end
+   if not Char.IsDummy(p) then Char.SaveToDb(p) end
+   message(p,'声望已设为配置上限：'..maximum..'。');return 0
+  end
+  message(p,'当前声望：'..num(p,'CHAR_声望')..'。');return 0
  end
  if command=='where' then
   message(p,'地图 '..num(p,'CHAR_地图')..'，类型 '..num(p,'CHAR_地图类型')..'，坐标 '..num(p,'CHAR_X')..','..num(p,'CHAR_Y'));return 0
@@ -453,7 +517,17 @@ function M:handleTalk(p,msg)
   elseif args[1]=='full' then self:fillClock(p)
   elseif args[1]=='on' then message(p,self:startClock(p) and '打卡已开启，使用原生卡时双倍经验。' or '卡时不足，无法打卡。')
   else message(p,'打卡='..(Char.IsFeverTime(p)==1 and 'on' or 'off')..'，卡时 '..math.floor(num(p,'CHAR_卡时')/60)..' 分钟。') end
- elseif command=='petmax' or command=='petbp' then
+ elseif command=='petbp' then
+  local bank=args[1]=='bank'
+  local target=bank and args[2] or args[1]
+  if #args~=(bank and 2 or 1) or (target~='all' and not integer(target,0,4)) then
+   message(p,'用法：/petbp 0~4|all 或 /petbp bank 0~4|all（0 是第一只宠物；all 含随身和银行，bank all 仅银行）');return 0
+  end
+  if target=='all' then
+   if not bank then for slot=0,4 do if Char.GetPet(p,slot)>=0 then self:petRanks(p,slot,false) end end end
+   for slot=0,4 do if Char.GetPoolPet(p,slot)>=0 then self:petRanks(p,slot,false,true) end end
+  else self:petRanks(p,tonumber(target),false,bank) end
+ elseif command=='petmax' then
   if #args~=1 or (args[1]~='all' and not integer(args[1],0,4)) then message(p,'用法：/'..command..' 0~4|all（0 是第一只宠物）');return 0 end
   if args[1]=='all' then for slot=0,4 do if Char.GetPet(p,slot)>=0 then self:petRanks(p,slot,command=='petmax') end end
   else self:petRanks(p,tonumber(args[1]),command=='petmax') end

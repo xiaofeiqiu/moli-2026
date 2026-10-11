@@ -2,6 +2,9 @@
 local M=ModuleBase:createModule('petSkillTutor')
 local D=dofile('lua/Modules/skillTrainingData.lua')
 local lessons={};for _,s in ipairs(D.pets) do lessons[s.id]=s end
+local STRONG_GUARD={}
+for level=1,10 do STRONG_GUARD[729+2*level]={level=level,native=699+level,cost=40+16*(level-1)} end
+function M:strongGuardTech(id) return STRONG_GUARD[id] end
 local SEQ=7320
 local CONFIRM_SEQ=7321
 local LEARN_SEQ=7322
@@ -17,18 +20,20 @@ function M:ready(n,p)
  if n~=self.npc or not Char.IsValidCharIndex(n) or not Char.IsPlayer(p) then return false end
  if get(n,'CHAR_地图类型')~=get(p,'CHAR_地图类型') or get(n,'CHAR_地图')~=get(p,'CHAR_地图')
   or math.max(math.abs(get(n,'CHAR_X')-get(p,'CHAR_X')),math.abs(get(n,'CHAR_Y')-get(p,'CHAR_Y')))>2 then return false end
- if Char.GetBattleIndex(p)>=0 or get(p,'CHAR_BattleMode')~=0 then say(p,'请在战斗结束后遗忘宠物技能。');return false end
+ if Char.GetBattleIndex(p)>=0 or get(p,'CHAR_BattleMode')~=0 then say(p,'请在战斗结束后学习或遗忘宠物技能。');return false end
  local qol=getModule('gameQoL')
- if qol and qol.stalls and qol.stalls[p] then say(p,'请先结束摆摊再遗忘宠物技能。');return false end
+ if qol and qol.stalls and qol.stalls[p] then say(p,'请先结束摆摊再学习或遗忘宠物技能。');return false end
  local five=getModule('fivePet');local squad=five and five.active[p]
  if squad and squad.battle then say(p,'五宠战斗结算尚未完成，请稍后再操作。');return false end
  return true
 end
 function M:pet(p,slot,uuid)
- if not integer(slot,0,4) then return nil,'无效的宠物栏位。' end
- local q=Char.GetPet(p,slot)
- if q<0 or not Char.IsValidCharIndex(q) or not Char.IsPet(q) or Pet.GetOwner(q)~=p then return nil,'该栏位没有携带宠物。' end
- if uuid and Pet.GetUUID(q)~=uuid then return nil,'携带宠物已改变，请重新选择。' end
+ if not integer(slot,0,9) then return nil,'无效的宠物栏位。' end
+ -- Slots 0..4 are carried; 5..9 address the five bank slots.
+ local bank=slot>=5
+ local q=bank and Char.GetPoolPet(p,slot-5) or Char.GetPet(p,slot)
+ if q<0 or not Char.IsValidCharIndex(q) or not Char.IsPet(q) or (not bank and Pet.GetOwner(q)~=p) then return nil,'该栏位没有宠物。' end
+ if uuid and Pet.GetUUID(q)~=uuid then return nil,'宠物已改变，请重新选择。' end
  local b=Char.GetBattleIndex(q)
  if b>=0 and Battle.GetPos(b,q)>=0 then return nil,'这只宠物仍在战斗中，请稍后操作。' end
  return q
@@ -49,7 +54,7 @@ function M:learnPet(n,p,slot,uuid,id)
  local capacity=math.min(10,math.max(0,get(q,'宠物_技能栏')));local free=false
  for i=0,capacity-1 do
   local known=Pet.GetSkill(q,i)
-  if known==id then return false,'这只宠物已经学会此技能，不会重复收费。' end
+  if known==id or (known==700826 and id==6350) then return false,'这只宠物已经学会此技能，不会重复收费。' end
   if known<0 then free=true end
  end
  if not free then return false,'宠物技能栏已满，请先遗忘一个技能。' end
@@ -114,8 +119,16 @@ function M:show(n,p,kind,page,slot,uuid,selected,category)
    add('宠物'..(i+1)..'：'..get(q,'CHAR_名字'),{kind='petHome',slot=i,uuid=Pet.GetUUID(q)})
   end end
   if #options==0 then title=title..'\n请先携带宠物。' end
+  add('选择银行宠物',{kind='bankPets'})
   add('查看学习与遗忘规则',{kind='rules'})
   add('关闭',{kind='close'})
+ elseif kind=='bankPets' then
+  title=title..'\n请选择银行宠物；可学习或遗忘技能。'
+  for i=0,4 do local q=self:pet(p,i+5);if q then
+   add('银行宠物'..(i+1)..'：'..get(q,'CHAR_名字'),{kind='petHome',slot=i+5,uuid=Pet.GetUUID(q)})
+  end end
+  if #options==0 then title=title..'\n银行中没有宠物。' end
+  add('返回随身宠物列表',{kind='pets'})
  else
   local q,msg=self:pet(p,slot,uuid)
   if not q then say(p,msg);self:show(n,p,'pets');return end
@@ -126,7 +139,7 @@ function M:show(n,p,kind,page,slot,uuid,selected,category)
     add('学习'..cat.name:gsub('导师',''),{kind='learning',category=cat.id})
    end end
    add('遗忘宠物技能',{kind='skills'})
-   add('返回宠物列表',{kind='pets'})
+   add('返回宠物列表',{kind=slot>=5 and 'bankPets' or 'pets'})
   elseif kind=='learning' then
    local list=self:lessons(category);local pages=math.max(1,math.ceil(#list/5));page=math.max(1,math.min(page,pages))
    title=title..'\n宠物可学技能 '..page..'/'..pages
@@ -191,6 +204,7 @@ function M:answer(n,p,seq,button,text)
  if not integer(choice,1,#a.actions) then return end
  local action=a.actions[choice]
  if action.kind=='pets' then self:show(n,p,'pets')
+ elseif action.kind=='bankPets' then self:show(n,p,'bankPets')
  elseif action.kind=='petHome' then self:show(n,p,'petHome',1,action.slot or a.slot,action.uuid or a.uuid)
  elseif action.kind=='skills' then self:show(n,p,'skills',1,a.slot,a.uuid)
  elseif action.kind=='learning' then self:show(n,p,'learning',1,a.slot,a.uuid,nil,action.category)
@@ -199,7 +213,7 @@ function M:answer(n,p,seq,button,text)
  elseif action.kind=='page' then self:show(n,p,'skills',action.page,a.slot,a.uuid)
  elseif action.kind=='confirm' then self:show(n,p,'confirm',a.page,a.slot,a.uuid,action)
  elseif action.kind=='rules' then
-  say(p,'这里只教授携带宠物的原生技能，每项1000魔币，需要空技能栏，重复学习不收费。遗忘单个技能免费，学习和遗忘均用是／否确认；遗忘不退还旧费用。人物不能学习宠物来源技能，请找六位人物导师。战斗、摆摊或五宠结算期间不可操作，换宠或技能改变需重新选择。')
+  say(p,'这里教授随身五栏和银行五栏宠物的原生技能；选择银行宠物后操作，每项1000魔币，需要空技能栏，重复学习不收费。遗忘单个技能免费，学习和遗忘均用是／否确认；遗忘不退还旧费用。人物不能学习宠物来源技能，请找六位人物导师。战斗、摆摊或五宠结算期间不可操作，换宠或技能改变需重新选择。')
   self:show(n,p,'pets')
  end
 end
@@ -216,13 +230,76 @@ function M:normalizeBattleTechs(b)
     local id=Char.GetData(q,CONST[prefix..'Com3'])
     if command==CONST.BATTLE_COM.BATTLE_COM_P_SPIRACLESHOT and id>=910400 and id<=910409 then
      Char.SetData(q,CONST[prefix..'Com3'],400+id-910400)
+    elseif command==CONST.BATTLE_COM.BATTLE_COM_P_HEAL and id==700826 then
+     -- Shared-data copy of native E1: identical AR:50, target and 48 MP.
+     -- Its copied ID selects client animation family 7008 instead of 63.
+     -- Preserve learned/saved IDs; normalize only the two executing pet slots.
+     Char.SetData(q,CONST[prefix..'Com3'],6350)
     end
    end
   end
  end
 end
+-- Native bodyguard supplies the animation, MP charge and interception rules.
+-- Before an enemy action, point its native guard stance at any of four bound allies.
+function M:strongGuardTargets(b,q,selected)
+ local side=Battle.GetPos(b,q)<10 and 0 or 10
+ local five=getModule('fivePet');local candidates={};local result={}
+ for pos=side,side+9 do
+  local p=Battle.GetPlayer(b,pos)
+  if p>=0 and p~=q and Char.IsValidCharIndex(p) and get(p,'CHAR_血')>0 then
+   candidates[#candidates+1]={pos=pos,p=p,human=not not (Char.IsPlayer(p) and not (five and five.proxies[p])),
+    ratio=get(p,'CHAR_血')/math.max(1,get(p,'CHAR_最大血'))}
+  end
+ end
+ table.sort(candidates,function(a,c)
+  if (a.pos==selected)~=(c.pos==selected) then return a.pos==selected end
+  if a.human~=c.human then return a.human end
+  if a.ratio~=c.ratio then return a.ratio<c.ratio end
+  return a.pos<c.pos
+ end)
+ for _,entry in ipairs(candidates) do
+  local guardian=Battle.GetEntryData(b,entry.p,CONST.BATTLE_ENTRY_GUARDIAN)
+  if not self:stronglyProtected(b,entry.pos,q) and (guardian==q or guardian<0 or not Char.IsValidCharIndex(guardian) or Char.GetBattleIndex(guardian)~=b or get(guardian,'CHAR_血')<=0) then
+   result[#result+1]=entry.pos
+   if #result==4 then break end
+  end
+ end
+ return result
+end
+function M:stronglyProtected(b,pos,except)
+ for q,a in pairs(self.strongTargets) do
+  if q~=except and a.executed and a.b==b and a.turn==Battle.GetTurn(b) and Char.IsValidCharIndex(q) and Char.GetBattleIndex(q)==b and get(q,'CHAR_血')>0 then
+   for _,target in ipairs(a.positions) do if target==pos then return true end end
+  end
+ end
+ return false
+end
+function M:finishStrongGuard(b,q)
+ local pending=self.strongPending[q];self.strongPending[q]=nil
+ if not pending or pending.b~=b or get(q,'CHAR_血')<=0 then return end
+ local target=Battle.GetPlayer(b,pending.target)
+ if target<0 or target==q or get(target,'CHAR_血')<=0 or (pending.target<10)~=(Battle.GetPos(b,q)<10) then return end
+ local positions=self:strongGuardTargets(b,q,pending.target)
+ local five=getModule('fivePet');local row=five and five.proxies[q]
+ self.strongTargets[q]={b=b,turn=Battle.GetTurn(b),positions=positions,executed=true,tech=pending.tech}
+ for _,pos in ipairs(positions) do
+  if row then row.guardTurn=Battle.GetTurn(b);row.guardTargets=row.guardTargets or {};row.guardTargets[pos]=true end
+ end
+end
 function M:onLoad()
  self.sessions={}
+ self.strongPending={}
+ self.strongTargets={}
+ self.strongStances={}
+ local copied=Tech.GetTechIndex(700826)
+ if copied>=0 then
+  local native=Tech.GetTechIndex(6350)
+  assert(native>=0,'Missing native E1 healing technique 6350')
+  for _,key in ipairs({'TECH_FUNCNAME','TECH_OPTION','TECH_NECESSARYLV','TECH_TARGET','TECH_FORCEPOINT'}) do
+   assert(Tech.GetData(copied,CONST[key])==Tech.GetData(native,CONST[key]),'E1 healing copy differs: '..key)
+  end
+ end
  local D=dofile('lua/Modules/sanctuaryData.lua')
  self.npc=self:NPC_createNormal('宠物技能导师',100008,assert(D.positions['宠物技能导师']))
  assert(self.npc>=0,'pet skill tutor creation failed')
@@ -231,7 +308,73 @@ function M:onLoad()
  self:regCallback('BeforeBattleTurnStartEvent',OrderedCallback(function(b)
   self:normalizeBattleTechs(b);return false
  end,-10000))
+ self:regCallback('BattleBeforeActionEvent',OrderedCallback(function(b,q)
+  self.strongStances[q]=nil
+  self.strongPending[q]=nil
+  local planned=self.strongTargets[q]
+  if planned and not planned.executed then self.strongTargets[q]=nil end
+  local five=getModule('fivePet')
+  local id=get(q,'CHAR_BattleCom3');local strong=self:strongGuardTech(id)
+  if (Char.IsPet(q) or (five and five.proxies[q])) and strong
+   and get(q,'CHAR_BattleCom1')==CONST.BATTLE_COM.BATTLE_COM_P_BODYGUARD
+   and Battle.GetBattleCharacterStatus(q,CONST['战属_忘'])<=0 then
+   self.strongPending[q]={b=b,target=get(q,'CHAR_BattleCom2'),tech=id}
+   -- Keep the strong rank's full MP cost, execute the matching native pet rank.
+   Char.SetData(q,CONST.CHAR_BattleCom3,strong.native)
+  end
+  return 0
+ end,-10000))
+ self:regCallback('BeforeBattleTurnStartEvent',OrderedCallback(function(b)
+  local five=getModule('fivePet')
+  for pos=0,19 do local q=Battle.GetPlayer(b,pos)
+   local id=q>=0 and get(q,'CHAR_BattleCom3');local strong=id and self:strongGuardTech(id)
+   if q>=0 and (Char.IsPet(q) or (five and five.proxies[q]))
+    and get(q,'CHAR_BattleCom1')==CONST.BATTLE_COM.BATTLE_COM_P_BODYGUARD and strong
+    and get(q,'CHAR_魔')>=strong.cost and get(q,'CHAR_血')>0 then
+    local usable=true
+    for _,key in ipairs({'战属_忘','战属_睡','战属_石'}) do if Battle.GetBattleCharacterStatus(q,CONST[key])>0 then usable=false end end
+    if usable then self.strongTargets[q]={b=b,turn=Battle.GetTurn(b),positions=self:strongGuardTargets(b,q,get(q,'CHAR_BattleCom2')),executed=false,tech=id} end
+   end
+  end
+  return false
+ end,-15000))
+ self:regCallback('BattleBeforeActionEvent',OrderedCallback(function(b,q)
+  local pos=get(q,'CHAR_BattleCom2');local side=Battle.GetPos(b,q)<10 and 0 or 10
+  if pos<0 or pos>19 or (pos>=side and pos<side+10) then return 0 end
+  for guardian,a in pairs(self.strongTargets) do
+   if a.b==b and a.turn==Battle.GetTurn(b) and Char.IsValidCharIndex(guardian) and Char.GetBattleIndex(guardian)==b and get(guardian,'CHAR_血')>0 then
+    for _,target in ipairs(a.positions) do if target==pos then
+     local saved=self.strongStances[q] or {};self.strongStances[q]=saved
+     saved[#saved+1]={q=guardian,com1=get(guardian,'CHAR_BattleCom1'),com2=get(guardian,'CHAR_BattleCom2'),com3=get(guardian,'CHAR_BattleCom3'),target=Battle.GetPlayer(b,pos),entry=Battle.GetEntryData(b,Battle.GetPlayer(b,pos),CONST.BATTLE_ENTRY_GUARDIAN)}
+     Battle.SetEntryData(b,Battle.GetPlayer(b,pos),CONST.BATTLE_ENTRY_GUARDIAN,guardian)
+     Char.SetData(guardian,CONST.CHAR_BattleCom1,CONST.BATTLE_COM.BATTLE_COM_P_BODYGUARD)
+     Char.SetData(guardian,CONST.CHAR_BattleCom2,pos)
+     Char.SetData(guardian,CONST.CHAR_BattleCom3,assert(self:strongGuardTech(a.tech)).native)
+     break
+    end end
+   end
+  end
+  return 0
+ end,-20000))
+ self:regCallback('CalcFpConsumeEvent',OrderedCallback(function(q,id,fp)
+  local strong=self:strongGuardTech(id) or (self.strongPending[q] and self:strongGuardTech(self.strongPending[q].tech))
+  if Char.IsPet(q) and strong then return strong.cost end
+  return fp
+ end,-20000))
+ self:regCallback('BeforeBattleTurnStartEvent',OrderedCallback(function(b)
+  for q,a in pairs(self.strongTargets) do if a.b==b then self.strongTargets[q]=nil end end
+  return false
+ end,20000))
+ self:regCallback('BattleAfterActionEvent',OrderedCallback(function(b,q)
+  local saved=self.strongStances[q];self.strongStances[q]=nil
+  for _,a in ipairs(saved or {}) do if Char.IsValidCharIndex(a.q) then
+   Char.SetData(a.q,CONST.CHAR_BattleCom1,a.com1);Char.SetData(a.q,CONST.CHAR_BattleCom2,a.com2);Char.SetData(a.q,CONST.CHAR_BattleCom3,a.com3)
+   Battle.SetEntryData(b,a.target,CONST.BATTLE_ENTRY_GUARDIAN,a.entry)
+  end end
+  self:finishStrongGuard(b,q);return 0
+ end,10000))
+ self:regCallback('ResetCharaBattleStateEvent',function(q) self.strongPending[q]=nil;self.strongTargets[q]=nil;return 0 end)
  for _,event in ipairs({'LogoutEvent','DropEvent'}) do self:regCallback(event,function(p) self.sessions[p]=nil;return 0 end) end
 end
-function M:onUnload() self.sessions={} end
+function M:onUnload() self.sessions={};self.strongPending={};self.strongTargets={};self.strongStances={} end
 return M

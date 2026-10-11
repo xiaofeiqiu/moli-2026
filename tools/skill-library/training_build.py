@@ -11,6 +11,8 @@ HERE = Path(__file__).resolve().parent
 OUT = ROOT / 'docs/skill_training'
 sys.path.insert(0, str(HERE))
 from build import lua
+from pet_support_install import PET_SUPPORT_NATIVE, lesson_name
+from pet_elemental_install import PET_ELEMENTAL_NATIVE, lesson_name as elemental_lesson_name
 
 
 def rows(name):
@@ -59,6 +61,8 @@ def category(sid, fn, marker=None):
 def build():
     from pet_qigong_install import install_techs
     install_techs()
+    from pet_physical_install import install_techs as install_physical_techs
+    install_physical_techs()
     skills = {int(r[1]): r for r in rows('skill.txt')}
     techs = rows('tech.txt')
     by = defaultdict(list)
@@ -97,13 +101,18 @@ def build():
     seen = set()
     for t in techs:
         # Native pets need original Tech IDs; never give them human Lua variants.
-        if t[12] != '0' or t[6] not in ('30', '50') or t[7] != '1' or not t[1] or t[1] == 'TECH_Lua':
+        support = t[3].isdigit() and int(t[3]) in PET_SUPPORT_NATIVE
+        elemental = t[3].isdigit() and int(t[3]) in PET_ELEMENTAL_NATIVE
+        if (not (support or elemental) and (t[12] != '0' or t[6] not in ('30', '50'))) or t[7] != '1' or not t[1] or t[1] == 'TECH_Lua':
             continue
         tid, sid = int(t[3]), int(t[5])
-        if tid in seen:
+        # Shared E1 healing copy uses an unsupported client animation family.
+        # Teach native 6350; the tutor normalizes already learned 700826 at cast time.
+        if tid == 700826 or tid in seen:
             continue
         seen.add(tid)
-        pets.append({'id': tid, 'name': t[0], 'category': category(sid, t[1], int(t[6])),
+        name = lesson_name(tid, t[0]) if support else (elemental_lesson_name(tid, t[0]) if elemental else t[0])
+        pets.append({'id': tid, 'name': name, 'category': category(sid, t[1], int(t[6])),
                      'source': 'boss' if t[6] == '50' else 'pet', 'cost': 1000})
     recipes = []
     items = {int(r[0]): r for r in rows('itemset.txt') if r[0].isdigit()}

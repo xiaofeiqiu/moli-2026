@@ -8,8 +8,8 @@ function M:canEquip(player, itemIndex)
   local item = items[Item.GetData(itemIndex, CONST['道具_ID'])]
   if not item then return 0 end
   local job = Char.GetData(player, CONST['CHAR_职业'])
-  if not ((job >= 11 and job <= 17) or (job >= 31 and job <= 37)) then
-    NLG.SystemMessage(player, '这套装备需要剑士或骑士职业。')
+  if not ((job >= 11 and job <= 17) or (job >= 31 and job <= 37) or (job >= 181 and job <= 187)) then
+    NLG.SystemMessage(player, '这套装备需要剑士、骑士或魔剑士职业。')
     return -1
   end
   if Char.GetData(player, CONST['CHAR_等级']) < item.min_level then

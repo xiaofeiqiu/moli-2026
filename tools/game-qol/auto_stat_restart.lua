@@ -10,7 +10,7 @@ local ok,err=xpcall(function()
  local f=assert(io.open('__OUTPUT__/auto_stat_test.json','rb'));local old=JSON.decode(f:read('*a'));f:close()
  check(cfg.pets[old.petUUIDs[1]] and not cfg.pets[old.petUUIDs[1]].enabled,'disabled pet scheme survives process restart')
  for i=2,5 do check(cfg.pets[old.petUUIDs[i]] and cfg.pets[old.petUUIDs[i]].weights[i]==1,'independent pet ratio survives restart '..i) end
- check(#M.npcList==1 and Char.GetData(M.npc,CONST['CHAR_X'])==223,'NPC automatically created on restart')
+ check(#M.npcList==1 and Char.GetData(M.npc,CONST['CHAR_X'])==24,'NPC automatically created at sanctuary on restart')
  -- A fresh owner's slot does not inherit a different pet's old plan.
  local pet=Char.GivePet(p,3004,0);check(pet>=0,'new pet after restart')
  check(not cfg.pets[tostring(Pet.GetUUID(pet))],'new pet in reused slot defaults to manual allocation')

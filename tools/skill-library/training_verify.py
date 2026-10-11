@@ -55,10 +55,10 @@ def main(probe='training'):
     print('Loading complete server configuration on isolated ports 19210/19211.', flush=True)
     with result.with_suffix('.log').open('wb') as log:
         process_type = subprocess.Popen
-        if probe == 'pet_qigong_battle':
+        if probe in ('pet_qigong_battle', 'pet_heal_battle', 'blood_battle'):
             sys.path.insert(0, str(ROOT / 'tools/game-qol'))
             from native_battle_capture import captured_process_type
-            process_type = captured_process_type(result, OUT / 'pet_qigong_capture_ack.json', RUN)
+            process_type = captured_process_type(result, OUT / (probe.replace('_battle', '') + '_capture_ack.json'), RUN)
         process = process_type([str(RUN / 'cgmsv.exe')], cwd=RUN, stdin=subprocess.DEVNULL,
                                    stdout=log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
         try:
@@ -103,6 +103,6 @@ def main(probe='training'):
 if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser()
-    parser.add_argument('probe', nargs='?', default='training', choices=('training', 'menus', 'magic_skills', 'magic_battle', 'pet_forget', 'separation', 'five_ai', 'pet_qigong', 'pet_qigong_battle'))
+    parser.add_argument('probe', nargs='?', default='training', choices=('training', 'menus', 'service_confirmation', 'magic_skills', 'magic_battle', 'pet_forget', 'separation', 'five_ai', 'pet_qigong', 'pet_qigong_battle', 'pet_heal_battle', 'pet_elemental', 'pet_physical', 'blood_battle', 'bank_services'))
     args = parser.parse_args()
     main(args.probe)
