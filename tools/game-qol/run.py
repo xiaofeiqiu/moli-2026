@@ -9,6 +9,23 @@ RUN = BASE / 'native_runtime/gmsv'
 STAGE = BASE / 'staged/gmsv'
 OUT = ROOT / 'docs/game_qol'
 
+def is_magic_stone(row):
+    return (len(row) == 102 and row[14] == b'26'
+            and row[1] == '魔石'.encode('gbk')
+            and row[0] in [name.encode('gbk') for name in ('魔石', '魔石？', '魔石?')]
+            and not any(row[2:11]))
+
+def refresh_stones():
+    ids = [int(row[11]) for line in (ROOT/'gmsv/data/itemset.txt').read_bytes().splitlines()
+           if is_magic_stone(row := line.split(b'\t'))]
+    path = ROOT/'gmsv/lua/Modules/gameQoLData.lua'
+    source = path.read_bytes()
+    value = b'stoneIds={' + ','.join(f'[{i}]=true' for i in ids).encode('ascii') + b'}'
+    updated, count = re.subn(rb'stoneIds=\{[^}]*\}', value, source)
+    assert count == 1, 'Expected one stoneIds table'
+    path.write_bytes(updated)
+    print(json.dumps({'magic_stone_definitions':len(ids)}))
+
 def prepare(probe):
     OUT.mkdir(parents=True, exist_ok=True)
     RUN.mkdir(parents=True, exist_ok=True)
@@ -73,7 +90,7 @@ def stage():
         row=line.rstrip(b'\r\n').split(b'\t')
         if len(row)==102 and not line.lstrip().startswith((b'#',b'//')):
             item_id=int(row[11]);typ=int(row[14] or b'0');old=int(row[22] or b'1')
-            stone=row[0]=='魔石'.encode('gbk') and row[1]=='魔石'.encode('gbk')
+            stone=is_magic_stone(row)
             if stone:stone_ids.append(item_id)
             # Retain equipment, furniture, unique scripted quest objects.
             ordinary=typ in consumables and not any(row[2:11]) and int(row[16] or b'0')==0
@@ -130,8 +147,9 @@ def install():
     print(json.dumps({'installed':True,'checks':len(report['checks']),'requires_restart':True,'backup':str(BASE/'original')}))
 
 if __name__ == '__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['explore','test','restart','battle','stage','install'])
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['explore','test','restart','battle','stage','install','refresh-stones'])
     args=ap.parse_args()
-    if args.action=='stage':stage()
+    if args.action=='refresh-stones':refresh_stones()
+    elif args.action=='stage':stage()
     elif args.action=='install':install()
     else:prepare(args.action);run(args.action)

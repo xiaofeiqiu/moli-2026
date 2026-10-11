@@ -107,6 +107,6 @@ def main(probe_name='help'):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('probe', nargs='?', default='help', choices=('help', 'heal', 'after_battle', 'regression', 'fivepet_default', 'fivepet_partial', 'fivepet_formation_lifecycle', 'fivepet_runtime', 'fivepet_death', 'clock_full', 'difficulty6', 'fight_count', 'fivepet_ai', 'fivepet_element', 'loyalty', 'pet_obedience', 'pet_animation'))
+    parser.add_argument('probe', nargs='?', default='help', choices=('help', 'autosell', 'petmax', 'heal', 'after_battle', 'regression', 'fivepet_default', 'fivepet_partial', 'fivepet_formation_lifecycle', 'fivepet_runtime', 'fivepet_death', 'clock_full', 'difficulty6', 'fight_count', 'fivepet_ai', 'fivepet_element', 'loyalty', 'pet_obedience', 'pet_animation'))
     args = parser.parse_args()
     main(args.probe)

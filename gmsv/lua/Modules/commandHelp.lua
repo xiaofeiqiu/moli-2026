@@ -16,7 +16,7 @@ H.groups={
   entry({'sort'},'/sort [all]','整理当前背包；all 整理全部背包'),
   entry({'stack'},'/stack [all]','合并当前背包堆叠；all 处理全部背包'),
   entry({'identify'},'/identify','免费鉴定所有背包道具'),
-  entry({'sellstones'},'/sellstones','出售已鉴定魔石，金币容量不足时保留'),
+  entry({'sellstones'},'/sellstones','出售全部背包内已鉴定的普通魔石，包含鉴定前名为魔石？的战斗掉落；金币容量不足时保留，任务魔石不出售'),
  }},
  {module='gameQoL',title='宠物档位',entries={
   entry({'petbp'},'/petbp 0~4|all','查看携带宠物档位；0 是第一只宠物'),
@@ -26,7 +26,7 @@ H.groups={
   entry({'autostack'},'/autostack on|off','自动合并堆叠，默认开启'),
   entry({'autosort'},'/autosort on|off','自动整理全部背包，战后执行 sort all，默认开启'),
   entry({'autoidentify'},'/autoidentify on|off','自动免费鉴定，默认开启'),
-  entry({'autosell'},'/autosell on|off','自动出售已鉴定魔石，默认开启'),
+  entry({'autosell'},'/autosell on|off','自动出售全部背包内已鉴定的普通魔石，默认开启；战后及每2秒检查，战斗或摆摊时暂停；自动鉴定开启时先鉴定再出售，金币容量不足时保留，任务魔石不出售；例如 /autosell on；此次魔石识别修复需 GM 重载 gameQoL 或重启生效'),
   entry({'autoclock'},'/autoclock on|off','有卡时时自动打卡，默认开启'),
   entry({'autorepair'},'/autorepair on|off','战后装备耐久低于 85% 自动免费修满，默认开启'),
  }},
